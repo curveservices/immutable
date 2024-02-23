@@ -1,7 +1,6 @@
 import { faEnvelope, faHome, faToolbox, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect,useState } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import './index.scss';
 import { useRef } from 'react';
@@ -26,10 +25,37 @@ const Navbar = () => {
         <header>
             <h1 className='logo'>Immutable Designs</h1>
             <nav className={scrolling ? 'navbar-scroll' : ''} ref={el}>
-                <NavLink to='/'><FontAwesomeIcon icon={faHome} /></NavLink>
-                <NavLink to='about'><FontAwesomeIcon icon={faUser} /></NavLink>
-                <NavLink to='services'><FontAwesomeIcon icon={faToolbox} /></NavLink>
-                <NavLink to='contact'><FontAwesomeIcon icon={faEnvelope}/></NavLink>
+                <NavLink
+                    to='/'
+                    className='home-link'
+                    activeclassname='active'
+                    exact='true'
+                >
+                    <FontAwesomeIcon icon={faHome} />
+                </NavLink>
+                <NavLink
+                    to='about'
+                    className='about-link'
+                    activeclassname='active'
+                    exact='true'
+                >
+                    <FontAwesomeIcon icon={faUser} />
+                </NavLink>
+                <NavLink
+                    to='services'
+                    className='services-link'
+                    activeclassname='active'
+                    exact='true'
+                >
+                    <FontAwesomeIcon icon={faToolbox} />
+                </NavLink>
+                <NavLink
+                    to='contact'
+                    className='contact-link'
+                    activeclassname='active'
+                    exact='true'>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                </NavLink>
             </nav>
         </header>
      );
