@@ -11,16 +11,16 @@
         text-decoration: none;
         color: #000;
     }
-
-    .crumb::after {
-        content: '>';
-        margin-left: 10px;
-
-        &:last-child {
-            &::after {
-                display: none;
-            }
+    
+    .crumb {
+        ::after {
+            content: '>';
+            margin-left: 10px;
+        }
+        :last-child::after {
+            display: none;
         }
     }
+
 }
 
