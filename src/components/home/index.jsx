@@ -12,7 +12,7 @@ import './index.scss';
 const Home = () => {
     return ( 
         <div className='home-page'>
-            <div className="stage-cube-cont">
+            <section className="stage-cube-cont">
                 <div className="cubespinner">
                     <div className="face1">
                         <FontAwesomeIcon icon={faHtml5}/>
@@ -33,7 +33,14 @@ const Home = () => {
                         <FontAwesomeIcon icon={faSass}/>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section className='right-hero'>
+                <h1 className='main-title'>Web Develoment Agency</h1>
+                <p>Immutable Studio is a leading web development agency comprising seasoned web designers,
+                    UX/UI specialists, and web developers who excel in crafting bespoke business websites. Our team is dedicated to delivering cutting-edge technology
+                    solutions tailored to help your company achieve its goals with utmost efficiency.
+                </p>
+            </section>
         </div>
      );
 }

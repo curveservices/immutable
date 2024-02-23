@@ -1,8 +1,37 @@
 .app {
-    height: 100vh;
+    width: 100%;
+    will-change: contents;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    font-family: 'Coolvetica';
 
-    .home-page {
+    .home-page,
+    .about-page {
         height: 100vh;
         background-color: var(--primary);
+
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            padding-right: 16px;
+            animation: pulse 1s;
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 1.2s ;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+        }
     }
 }

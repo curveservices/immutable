@@ -2,7 +2,7 @@ import './index.scss'
 
 const About = () => {
     return ( 
-        <div>ABOUT</div>
+        <div className='about-page'></div>
      );
 }
  
