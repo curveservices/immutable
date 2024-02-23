@@ -1,6 +1,6 @@
 :root {
-  --main-bg: #2D5FE1;
-  --second-bg: #F6F6F6;
+  --primary: #2D5FE1;
+  --secondary: #F6F6F6;
   --third-bg: #2D75E1;
   --services-link: #000 linear-gradient(90deg #2D5FE1, #f6f6f6, #2d5fe1 );
   
