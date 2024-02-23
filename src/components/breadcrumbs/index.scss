@@ -1,6 +1,7 @@
 .breadcrumbs {
     max-width: 100%;
-    margin: 20px;
+    padding-left: 20px;
+    background-color: var(--primary);
 
     > * {
         display: inline-block;
