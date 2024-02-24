@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return ( 
         <header>
-            <h1 className='logo'>Immutable Designs</h1>
+            <h1 className='logo'>&#123; Immutable Designs &#125;</h1>
             <nav className={scrolling ? 'navbar-scroll' : ''} ref={el}>
                 <NavLink
                     to='/'
