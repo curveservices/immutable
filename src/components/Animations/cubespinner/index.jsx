@@ -1,4 +1,4 @@
-import { faCss3Alt, faGitAlt, faHtml5, faNode, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt, faGitAlt, faHtml5, faJsSquare, faNode, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 
@@ -28,7 +28,7 @@ const CubeSpinner = () => {
                         <FontAwesomeIcon icon={faReact} />
                     </div>
                     <div className="face4">
-                        <FontAwesomeIcon icon={faNode} />
+                        <FontAwesomeIcon icon={faJsSquare} />
                     </div>
                     <div className="face5">
                         <FontAwesomeIcon icon={faGitAlt} />

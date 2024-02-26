@@ -5,7 +5,7 @@ const Button = ({ text, link }) => {
     
     return ( 
         <button className="flat-btn">
-            <Link to={ link }>{text}</Link>
+            <Link to={link}>{text}</Link>
         </button>
      );
 }

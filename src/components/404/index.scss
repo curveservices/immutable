@@ -18,7 +18,7 @@
         align-items: center;
         text-decoration: none;
         text-transform: uppercase;
-        color: #000;
+        color: #fff;
         font-weight: 800;
         width: 150px;
         height: 50px;
@@ -32,7 +32,7 @@
     
         &:hover {
             background-color: var(--primary);
-            color: #fff;
+            color: #000;
             border-color: var(--primary);
         }
     }

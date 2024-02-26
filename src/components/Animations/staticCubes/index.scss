@@ -1,0 +1,98 @@
+.cube-container {
+    position: absolute;
+    left: 80%;
+    display: flex;
+    gap: 10rem;
+    animation: bounce 12s infinite linear;
+    
+    .cube1 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 100%;
+        transform-style: preserve-3d;
+        transform: rotateX(240deg) rotateY(-5deg) rotateZ(-155deg);
+       
+
+        .side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            width: 80px;
+            height: 80px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            object-fit: cover;
+        }
+    
+        .top {
+            transform: translateZ(-80px) rotateY(180deg);
+            color: #cc6699;
+            background: #e1e1e1;
+        }
+    
+        .front {
+            transform: rotateX(90deg);
+            transform-origin: bottom;
+            color: #5ed4f4;
+            background: #808080;
+        }
+    
+        .left {
+            width: 80px;
+            transform: translateZ(-80px) rotateY(90deg);
+            transform-origin: right;
+            color: #f7df1e;
+            background: #a3a3a3;
+        }
+    }
+    
+    .cube2 {
+        width: 10px;
+        height: 100px;
+        position: absolute;
+        top: 100%;
+        left: 70%;
+        transform-style: preserve-3d;
+        transform: rotateX(240deg) rotateY(-5deg) rotateZ(-155deg);
+    
+        .side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            width: 60px;
+            height: 60px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            object-fit: cover;
+            opacity: 0.8;
+    
+        }
+    
+        .top {
+            transform: translateZ(-60px) rotateY(180deg);
+            background: #e1e1e1;
+            color: #5DAF48;
+        }
+    
+        .front {
+            transform: rotateX(90deg) rotateY(180deg);
+            transform-origin: bottom;
+            color: #f06529;
+            background: #808080;
+        }
+    
+        .left {
+            width: 60px;
+            transform: translateZ(-60px) rotateY(90deg) rotateX(360deg);
+            transform-origin: right;
+            color: #2965f1;
+            background: #a3a3a3;
+        }
+    }
+}
+

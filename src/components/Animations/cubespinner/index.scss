@@ -1,16 +1,15 @@
 .wrapper{
-    width: 60rem;
+    width: 50%;
+    height: 60%;
     aspect-ratio: 1;
-    display: grid;
     perspective: 100rem;
     
-}
     .circle {
         position: absolute;
         width: 30rem;
         left: 13%;
         aspect-ratio: 1;
-        border: 1px dashed rgba(0, 255, 255, 0.3);
+        border: 2px dashed rgba(0, 255, 255, 0.2);
         border-radius: 50%;
         transform-style: preserve-3d;
     }
@@ -101,7 +100,7 @@
             transform: rotateY(90deg) rotateX(450deg);
         }
     }
-
+}
 .stage-cube-cont {
     width: 50%;
     height: 60%;
@@ -120,7 +119,7 @@
     animation-duration: 12s;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
+    margin-left: calc(50% - 120px);
 
     div {
         position: absolute;
@@ -153,7 +152,7 @@
 
     .face4 {
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-        color: #3c873a;
+        color: #f7df1e;
     }
 
     .face5 {

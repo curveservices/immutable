@@ -1,6 +1,7 @@
 import Button from '../button/index'
 import CubeSpinner from '../Animations/cubespinner';
 import './index.scss';
+import StaticCubes from '../Animations/staticCubes';
 
 const Home = () => {
    
@@ -13,14 +14,17 @@ const Home = () => {
                     solutions tailored to help your company achieve its goals with utmost efficiency.
                 </p>
                 <Button link='contact' text='CONTACT US' />
-                <div className="letter-contianer" >
+                {/* <div className="letter-contianer" >
                     <div className='brackets'>&#123; &#125;</div>
                     <div className='symbol1'>&lt; &gt;</div>
                     <div className='symbol2'>&lt;&#47;&gt;</div>
-                </div>
+                </div> */}
             </section>
             <section className="left-hero">
                 <CubeSpinner />
+            </section>
+            <section className='second-section'>
+                <StaticCubes/>
             </section>
         </div>
      );
