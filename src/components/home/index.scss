@@ -28,4 +28,13 @@
         }
     }
     
+    .second-section {
+        height: inherit;
+        background: #f6f6f6;
+
+        .service-title {
+            margin: 0 5rem;
+            padding: 5rem;
+        }
+    }
 }
