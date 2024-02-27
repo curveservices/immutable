@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import './index.scss';
 
-const Button = ({ text, link }) => {
+const Button = ({ text, title, link }) => {
     
     return ( 
         <button className="flat-btn">
-            <Link to={link}>{text}</Link>
+            <Link to={link} title={title}>{text}</Link>
         </button>
      );
 }
