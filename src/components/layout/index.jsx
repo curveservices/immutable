@@ -10,7 +10,7 @@ const Layout = () => {
     
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 600) {
+            if (window.pageYOffset > 500) {
                 setShowButton(true)
             } else {
                 setShowButton(false)
@@ -25,20 +25,20 @@ const Layout = () => {
         })
     };
     return ( 
+        <>
         <div className="app">
             <Navbar />
             <Breadcrumbs />
             <main>
                 <Outlet />
-                          {showButton && (
-                <button className='back-to-top' onClick={scrollToTop}>
-                    &#11014;
-                </button>
-            )}
             </main>
-  
         </div>
-        
+          {showButton && (
+            <button className='back-to-top' onClick={scrollToTop}>
+                &#11014;
+            </button>
+            )}    
+       </> 
      );
 }
  

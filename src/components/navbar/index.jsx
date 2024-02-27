@@ -28,6 +28,7 @@ const Navbar = () => {
                 <NavLink
                     to='/'
                     className='home-link'
+                    title='Home page'
                     activeclassname='active'
                     exact='true'
                 >
@@ -35,6 +36,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                     to='about'
+                    title='About Us'
                     className='about-link'
                     activeclassname='active'
                     exact='true'
@@ -43,6 +45,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                     to='services'
+                    title='Our Services'
                     className='services-link'
                     activeclassname='active'
                     exact='true'
@@ -51,6 +54,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                     to='contact'
+                    title='Contact Us'
                     className='contact-link'
                     activeclassname='active'
                     exact='true'>
