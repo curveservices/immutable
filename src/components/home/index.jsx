@@ -5,10 +5,11 @@ import StaticCubes from '../Animations/staticCubes';
 import { accordionData } from '../utils/accordionData';
 import Accordion from '../utils/Accordion';
 import { useState } from 'react';
+import Symbols from '../Animations/symbols';
 
 
 const Home = () => {
-    const [activeAccordion, setActiveAccordion] = useState(null);
+    const [activeAccordion, setActiveAccordion] = useState(0);
 
     const handleAccordionClick = (accordionId) => {
         setActiveAccordion((prev) => (prev === accordionId ? null : accordionId));
@@ -23,14 +24,10 @@ const Home = () => {
                         solutions tailored to help your company achieve its goals with utmost efficiency.
                     </p>
                     <Button link='contact' text='CONTACT US' />
-                    {/* <div className="letter-contianer" >
-                        <div className='brackets'>&#123; &#125;</div>
-                        <div className='symbol1'>&lt; &gt;</div>
-                        <div className='symbol2'>&lt;&#47;&gt;</div>
-                    </div> */}
+                    <Symbols />
                 </div>
             </section>
-            <div className="left-hero">
+             <div className="left-hero">
                     <CubeSpinner />
                 </div>
             <section className='second-section'>

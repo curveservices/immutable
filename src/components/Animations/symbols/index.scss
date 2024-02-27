@@ -1,0 +1,31 @@
+.letter-contianer {
+    margin-top: 5rem;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'Coolvetica';
+    font-weight: bold;
+    font-size: 96px;
+    opacity: 0.4;
+
+    .brackets {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        transform: rotateZ(45deg);
+    }
+
+    .symbol1 {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        transform: rotateZ(-15deg);
+    }
+
+    .symbol2 {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: rotateZ(25deg);
+       
+    }
+}
+

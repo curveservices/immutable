@@ -12,6 +12,7 @@
     font-size: 20px;
     letter-spacing: 2px;
     transition: all 0.5s;
+    box-shadow: var(--global);
     cursor: pointer;
 
     &:hover {
@@ -19,6 +20,7 @@
         color: #000;
         border-color: var(--secondary);
         text-decoration: none;
+        box-shadow: none;
     }
 }
 

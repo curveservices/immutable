@@ -1,20 +1,25 @@
-import { faCss3Alt, faHtml5, faJsSquare, faNodeJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt, faFigma, faGit, faGitAlt, faHtml5, faJs, faNodeJs, faReact, faSquarespace,  faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.scss';
 
 const StaticCubes = () => {
     return ( 
         <div className="cube-container">
-             <div className="cube1">
-                <div className="side top"><FontAwesomeIcon icon={ faSass }/></div>
-                <div className="left side"><FontAwesomeIcon icon={ faJsSquare }/></div>
-            <div className="front side"><FontAwesomeIcon icon={ faReact }/></div>
-        </div>
-        <div className="cube2">
+            <div className="cube1">
+                <div className="side top"><FontAwesomeIcon icon={ faHtml5 }/></div>
+                <div className="left side"><FontAwesomeIcon icon={ faReact }/></div>
+                <div className="front side"><FontAwesomeIcon icon={ faJs }/></div>
+            </div>
+            <div className="cube2">
                 <div className="top side"><FontAwesomeIcon icon={ faNodeJs}/></div>
-                <div className="left side"><FontAwesomeIcon icon={ faCss3Alt } /></div>
-                <div className="front side"><FontAwesomeIcon icon={ faHtml5 }/></div>
-        </div>
+                <div className="left side"><FontAwesomeIcon icon={ faSquarespace } /></div>
+                <div className="front side"><FontAwesomeIcon icon={ faCss3Alt }/></div>
+            </div>
+            <div className="cube3">
+                <div className="top side"><FontAwesomeIcon icon={ faFigma}/></div>
+                <div className="left side"><FontAwesomeIcon icon={ faGitAlt } /></div>
+                <div className="front side"><FontAwesomeIcon icon={ faWordpress }/></div>
+            </div>
         </div>
 
      );

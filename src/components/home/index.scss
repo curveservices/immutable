@@ -1,5 +1,7 @@
 .home-page {
-    
+    .left-hero {
+        height: 100vh;
+    }
     .right-hero {
         color: #fff;
         position: absolute;
@@ -11,30 +13,23 @@
 
 
         .letter-contianer {
-            color: #fff;
+            color: rgba(255, 255, 255, 0.2);
             font-family: 'Coolvetica';
             font-weight: bold;
             font-size: 96px;
             opacity: 0.4;
         }
-        .brackets {
-            display: inline-block;
-            position: absolute;
-            left: 60%;
-            top: 50%;
-            transform: rotateZ(45deg);
-            -webkit-animation: pulse 2s infinite ease-in-out;
-            animation: pulse 2s infinite ease-in-out;
-        }
     }
-    
+
     .second-section {
         height: inherit;
-        background: #f6f6f6;
+        background: var(--secondary);
 
         .service-title {
+            width: 20%;
             margin: 0 5rem;
-            padding: 5rem;
+            padding: 3rem 2rem;
+            text-align: center;
         }
     }
 }

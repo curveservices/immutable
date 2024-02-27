@@ -8,8 +8,8 @@ const Accordion = ({id, title, subtitle, content, link, isActive, onAccordionCli
                 <h3>{title}</h3>
                 {isActive &&
                     <div className='content-container'>
-                    <div className='accordion-subtitle'>{subtitle}</div>
-                    <div className='accordion-content'>{content}</div>
+                    <h3 className='accordion-subtitle'>{subtitle}</h3>
+                    <p className='accordion-content'>{content}</p>
                         <Button text='READ MORE' link={`sevices/${link}`} />
                     </div>
                 }

@@ -1,8 +1,15 @@
 :root {
-  --primary: #2D5FE1;
-  --secondary: #F6F6F6;
+  --primary: linear-gradient(to right,
+    #2D5FE1,
+    #587bd3);
+  --secondary: linear-gradient(to right,
+    #F6F6F6,
+    #cacaca);
   --third-bg: #2D75E1;
-  --services-link: #000 linear-gradient(90deg #2D5FE1, #f6f6f6, #2d5fe1 );
+  --services-link: radial-gradient(#91d6f0, 40%,
+    #2D5FE1);
+  --global: 0px 10px 30px 0px rgba(0, 0, 0, 0.5);
+  --box: 0px 40px 40px 20px rgba(0, 0, 0, 0.5)
   
 }
 
