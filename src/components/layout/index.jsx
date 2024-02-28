@@ -7,6 +7,7 @@ import './index.scss';
 
 const Layout = () => {
     const [showButton, setShowButton] = useState(false)
+   
     
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -26,9 +27,9 @@ const Layout = () => {
     };
     return ( 
         <>
-        <div className="app">
-            <Navbar />
-            <Breadcrumbs />
+            <div className='app'>
+                <Navbar />
+               <Breadcrumbs />
             <main>
                 <Outlet />
             </main>

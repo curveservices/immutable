@@ -21,6 +21,7 @@ const Home = () => {
     const year = new Date().getFullYear();
 
     return ( 
+        
         <div className='home-page'>
             <section className='hero'>
                 <div className="text-box">

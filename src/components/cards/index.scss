@@ -2,16 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem auto;
-    gap: 5em;
+    margin: 0.5rem;
+    gap: 2em;
 }
 
 .card {
     position: relative;
     flex: 1 1 20%;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
-    max-width: calc(25% - 10px);
+    max-width: calc(30% - 10px);
     box-shadow: var(--global);
 
     .card-image {
