@@ -2,7 +2,7 @@
 .accordion {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 
     p {
     animation: none !important;
@@ -10,24 +10,53 @@
 
     .accordion-item {
         width: 25%;
-        background: var(--services-link);
+        height: 50px;
         margin: 0 5rem;
         text-align: center;
-        box-shadow: var(--global);
         cursor: pointer;
     }
 
+       .accordion-title {
+            --b: .1em;
+            --d: 10px;
+            
+            --_s: calc(var(--d) + var(--b));
+            width: 100%;
+           
+            border: solid #0000;
+            border-width: var(--b) var(--b) var(--_s) var(--_s);
+            background:  var(--services-link);
+            transform: translate(calc(var(--d)/-1), var(--d));
+            clip-path: polygon(var(--d) 0%,
+                var(--d) 0%,
+                100% 0%,
+                100% calc(100% - var(--d)),
+                100% calc(100% - var(--d)),
+                var(--d) calc(100% - var(--d)));
+            transition: 0.5s;
+
+            &:hover {
+                transform: translate(0, 0);
+                clip-path: polygon(0% var(--d),
+                    var(--d) 0%,
+                    100% 0%,
+                    100% calc(100% - var(--d)),
+                    calc(100% - var(--d)) 100%,
+                    0% 100%);
+            }
+        }
+        
     .content-container {
         position: absolute;
         left: 50%;
-        top: 105%;
+        top: 115%;
         width: 35%;
         max-height: 200px;
         text-align: justify;
     }
 
     .accordion-subtitle {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         
     }
 }

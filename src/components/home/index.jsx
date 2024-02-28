@@ -59,18 +59,20 @@ const Home = () => {
             <section className='third-section'>
                 <h1 className='title feature-title'>FEATURED WORK</h1>
                 <Card />
-                <div className="btn-container">
-                    <Button text='view more' link='' />
+                <div className="view-btn">
+                    <Button text='view more' link='featured-work' />
                 </div>
             </section>
             <section className='cta'>
-                <h2>Ready to get started?</h2>
-                <h3>Contact us to discuss your project, either a discovery call 
-                    with us or download our website starter kit to get started.
-                </h3>
+                <div className="text-container">
+                    <h2 className='cta-title'>Ready to get started?</h2>
+                    <h3 className='cta-p'>Contact us to discuss your project, either a discovery call
+                        with us or download our website starter kit to get started.
+                    </h3>
+                </div>
                 <div className="btn-container">
                     <Button text='book a call' link=''/>
-                    <Button text='click to download' link='' />
+                    <Button text='download kit' link='' />
                 </div>
             </section>
             <footer>

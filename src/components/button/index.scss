@@ -4,7 +4,7 @@
     width: 200px;
     height: 40px;
     padding: 5px;
-    margin-top: 2em;
+    margin-top: 1rem;
     border: 2px solid #000;
     border-radius: 50px;
     text-align: center;
@@ -17,20 +17,17 @@
     cursor: pointer;
 
     &:hover {
-        background-color: var(--secondary);
+        background-color: #636363;
         color: #000;
-        border-color: var(--secondary);
+        border: none;
         text-decoration: none;
         box-shadow: none;
+        transform: translateY(-3px);
     }
 }
 
 a {
     text-decoration: none;
     color: #fff;
-
-    &:hover {
-        color: black;
-    }
 }
 

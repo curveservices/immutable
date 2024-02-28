@@ -41,9 +41,12 @@ const Card = () => {
                     <div className="content">
                         <h3 className='name'>{item.name}</h3>
                         <p className="desc">{item.desc}</p>
-                        <button className="btn" onClick={() => window.open(item.live)}>
-                            VIEW
-                        </button>
+                            <div className="btn-container">
+                                <button className="btn" onClick={() => window.open(item.live)}>
+                                    VIEW
+                                </button>
+                            </div>    
+                       
                     </div>
                 </div>
                 )
