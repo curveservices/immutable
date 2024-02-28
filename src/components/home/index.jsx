@@ -6,6 +6,7 @@ import { accordionData } from '../utils/accordionData';
 import Accordion from '../utils/Accordion';
 import { useState } from 'react';
 import Symbols from '../Animations/symbols';
+import Card from '../cards';
 
 
 const Home = () => {
@@ -49,7 +50,9 @@ const Home = () => {
                    </div>
                 </div>
                 <StaticCubes />
-                
+            </section>
+            <section className='third-section'>
+                <h1 className='feature-title'>FEATURED WORK</h1>
             </section>
         </div>
      );
