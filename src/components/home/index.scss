@@ -1,8 +1,10 @@
 .home-page {
     .left-hero {
-        height: 100vh;
+        width: 50%;
+        height: inherit;
+       
     }
-    .right-hero {
+    .text-box {
         color: #fff;
         position: absolute;
         left: 45%;
@@ -11,16 +13,23 @@
         width: 50%;
         text-align: justify;
     }
+    .title {
+        width: 35%;
+        margin: 0 0rem;
+        padding: 3rem 0rem;
+        text-align: center;
+    }
 
     .second-section {
         height: inherit;
         background: var(--secondary);
+        box-shadow: var(--global);
 
-        .service-title {
-            width: 20%;
-            margin: 0 5rem;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
+        
+    }
+
+    .third-section {
+        height: inherit;
+        box-shadow: var(--global);
     }
 }
