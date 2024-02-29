@@ -1,17 +1,24 @@
 .home-page {
-    .left-hero {
-        width: 50%;
+    .hero {
+        display: flex;
+        justify-content: space-between;
         height: inherit;
+
+        .stage-cube-cont {
+            top: 15%;
+            left: 0;
+        }
+
+        .right-hero {
+            color: #fff;
+            padding: 4rem;
+            width: 40%;
+            text-align: justify;
+            margin-top: 4rem;
+        }
+
     }
-    .text-box {
-        color: #fff;
-        position: absolute;
-        left: 45%;
-        top: 20%;
-        padding: 12px;
-        width: 50%;
-        text-align: justify;
-    }
+   
     .title {
         width: 35%;
         margin: 0 0rem;
@@ -23,6 +30,16 @@
         height: inherit;
         background: var(--secondary);
         box-shadow: var(--global);
+
+        .cube-container {
+            top: 145%;
+        }
+
+        .content-container {
+            left: 50%;
+            top: 110%;
+        }
+        
     }
 
     .third-section {
