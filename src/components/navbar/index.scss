@@ -1,18 +1,23 @@
 header {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
     letter-spacing: 3px;
     padding: 0rem 2rem;
-    background-color: var(--primary);
-    transition: background-color 2s;
     color: #fff;
+    font-family: "Coolvetica";
+    background: var(--primary);
+    transition: all 0.3s;
 
     nav {
         display: flex;
         justify-content: space-around;
         text-align: center;
         width: 40%;
-        padding: 20px;
+        padding: 20px 30px;
 
         a {
             display: inline-block;
@@ -78,6 +83,20 @@ header {
             svg {
                color: #000;
             }
+        }
+    }
+}
+
+.navbar-scroll {
+    background: var(--secondary);
+    box-shadow: var(--global);
+    color: #000;
+
+    a {
+        color: #000;
+
+        &:hover {
+           color: #000;
         }
     }
 }

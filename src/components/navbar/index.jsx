@@ -6,8 +6,22 @@ import { NavLink } from 'react-router-dom';
 import './index.scss';
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            setIsScrolled(scrollY > 20);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return ( 
-        <header>
+        <header className={isScrolled ? 'navbar-scroll' : ''}>
             <h1 className='logo'>&#123; Immutable Studio &#125;</h1>
             <nav>
                 <NavLink
