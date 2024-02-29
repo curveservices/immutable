@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Breadcrumbs from '../breadcrumbs';
+import Footer from '../footer';
 import Navbar from '../navbar';
 import './index.scss';
 
@@ -26,20 +27,22 @@ const Layout = () => {
         })
     };
     return ( 
-        <>
-            <div className='app'>
-                <Navbar />
-               <Breadcrumbs />
-            <main>
+        <div >
+            <Navbar />
+            <main className='app'>
+                <Breadcrumbs />
                 <Outlet />
             </main>
-        </div>
+            <footer>
+                <Footer />
+            </footer>
           {showButton && (
             <button className='back-to-top' onClick={scrollToTop}>
                 &#11014;
             </button>
-            )}    
-       </> 
+            )}
+
+       </div> 
      );
 }
  
