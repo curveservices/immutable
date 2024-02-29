@@ -13,6 +13,20 @@
   
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#root {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+main {
+  position: relative;
+}
+
 body {
   background: var(--primary);
   margin: 0;

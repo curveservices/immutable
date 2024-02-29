@@ -1,12 +1,9 @@
 
 .accordion {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     gap: 3rem;
-
-    p {
-    animation: none !important;
-    }
+ 
 
     .accordion-item {
         width: 25%;
@@ -14,6 +11,20 @@
         margin: 0 5rem;
         text-align: center;
         cursor: pointer;
+    }
+
+    .content-container {
+        position: absolute;
+        left: 45%;
+        top: 30%;
+        max-width: 35%;
+        max-height: 200px;
+        text-align: justify;
+    }
+    
+    .accordion-subtitle {
+        margin-bottom: 2rem;
+    
     }
 
        .accordion-title {
@@ -46,15 +57,5 @@
             }
         }
         
-    .content-container {
-        position: absolute;
-        width: 35%;
-        max-height: 200px;
-        text-align: justify;
-    }
-
-    .accordion-subtitle {
-        margin-bottom: 2rem;
-        
-    }
+ 
 }

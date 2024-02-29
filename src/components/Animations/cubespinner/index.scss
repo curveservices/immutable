@@ -6,7 +6,7 @@
     
     .circle {
         position: absolute;
-        top: 10%;
+        top: 30%;
         left: 5rem;
         width: 30rem;
         aspect-ratio: 1;
@@ -103,15 +103,16 @@
     }
 }
 .stage-cube-cont {
-    width: 50%;
+    width: 48%;
     height: 500px;
     padding-top: 75px;
-    top: 10%;
-    position: absolute;
     overflow: hidden;
 }
 
 .cubespinner {
+    position: absolute;
+    left: -26%;
+    top: 12%;
     animation: spincube 12s ease-in-out infinite;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;

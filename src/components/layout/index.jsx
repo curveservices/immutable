@@ -27,22 +27,22 @@ const Layout = () => {
         })
     };
     return ( 
+        <>
         <div >
             <Navbar />
             <main className='app'>
                 <Breadcrumbs />
-                <Outlet />
+                <Outlet />           
             </main>
-            <footer>
-                <Footer />
-            </footer>
+            
           {showButton && (
             <button className='back-to-top' onClick={scrollToTop}>
                 &#11014;
             </button>
             )}
-
-       </div> 
+        </div> 
+            <Footer />
+        </>
      );
 }
  

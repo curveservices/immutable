@@ -11,11 +11,10 @@ import './index.scss';
 
 const Home = () => {
     const [activeAccordion, setActiveAccordion] = useState(0);
-
+   
     const handleAccordionClick = (accordionId) => {
-        setActiveAccordion((prev) => (prev === accordionId ? null : accordionId));
+        setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
     };
-
     return ( 
         
         <div className='home-page'>
@@ -24,11 +23,13 @@ const Home = () => {
                     <CubeSpinner />
                 </div>
                 <div className="right-hero">
-                    <h1 className='main-title'>Web Develoment Agency</h1>
-                    <p>Immutable Studio is a leading web development agency comprising seasoned web designers,
-                        UX/UI specialists, and web developers who excel in crafting bespoke business websites. Our team is dedicated to delivering cutting-edge technology
-                        solutions tailored to help your company achieve its goals with utmost efficiency.
-                    </p>
+                    <div className="text-box">
+                        <h1 className='main-title'>Web Develoment Agency</h1>
+                        <p>Immutable Studio is a leading web development agency comprising seasoned web designers,
+                            UX/UI specialists, and web developers who excel in crafting bespoke business websites. Our team is dedicated to delivering cutting-edge technology
+                            solutions tailored to help your company achieve its goals with utmost efficiency.
+                        </p>
+                    </div>
                     <Button link='contact' text='CONTACT US' />
                     <Symbols />
                 </div>
@@ -36,6 +37,7 @@ const Home = () => {
             
             <section className='second-section'>
                 <h1 className='title'>SERVICES</h1>
+                <StaticCubes />
                 <div className="service-container">
                     <div className="accordion" >
                         {accordionData.map(({ title, subtitle, content, id, link }) => (
@@ -50,17 +52,19 @@ const Home = () => {
                                 onAccordionClick={handleAccordionClick}
                             />
                         ))}
-                   </div>
+                    </div>
+                   
                 </div>
-                <StaticCubes />
+              
             </section>
             <section className='third-section'>
-                <h1 className='title feature-title'>FEATURED WORK</h1>
+                <h1 className='feature-title'>FEATURED WORK</h1>
                 <Card />
                 <div className="view-btn">
                     <Button text='view more' link='featured-work' />
                 </div>
             </section>
+            
             <section className='cta'>
                 <div className="text-container">
                     <h2 className='cta-title'>Ready to get started?</h2>

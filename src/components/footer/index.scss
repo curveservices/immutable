@@ -1,7 +1,37 @@
+
 footer {
     position: absolute;
-    top: 375%;
+    bottom: 0;
+    margin: 0;
+    height: 200px;
     width: 100%;
+    font-family: 'Coolvetica';
+    text-transform: uppercase;
     background: var(--primary);
     color: #fff;
+
+    .foot-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .link-container {
+        display: flex;
+        justify-content:flex-start;
+        gap: 50px;
+        width: 50%;
+        margin-left: 50px;
+        cursor: pointer;
+        
+        li {
+            list-style: none;
+        }
+    }
+
+    .copy {
+        padding-top: 100px;
+        padding-right: 30px;
+        float: right;
+    }
 }

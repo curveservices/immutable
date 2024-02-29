@@ -2,7 +2,7 @@ export const accordionData = [
     {
         id: 0,
         link: 'web-development',
-        title: 'WEBSITE DEVELOPMENT',
+        title: 'WEB DEVELOPMENT',
         subtitle: 'JavaScript - HTML 5 - CSS 3 - React - Node.js',
         content: "We will create custom corporate & startup websites to suit your needs. If you're looking for a landing page or promo site we have you covered. Our services also iclude CMS platforms such as wordpress, squarespace and webFlow."
     },
