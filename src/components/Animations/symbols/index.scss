@@ -9,21 +9,21 @@
     .brackets {
         position: absolute;
         top: 60%;
-        left: 70%;
+        left: 80%;
         transform: rotateZ(45deg);
     }
 
     .symbol1 {
         position: absolute;
-        top: 80%;
-        left: 20%;
+        top: 70%;
+        left: 60%;
         transform: rotateZ(-15deg);
     }
 
     .symbol2 {
         position: absolute;
-        top: 100%;
-        left: 50%;
+        top: 80%;
+        right: 0;
         transform: rotateZ(25deg);
        
     }

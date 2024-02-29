@@ -6,8 +6,9 @@
     
     .circle {
         position: absolute;
+        top: 10%;
+        left: 5rem;
         width: 30rem;
-        left: 13%;
         aspect-ratio: 1;
         border: 2px dashed rgba(0, 255, 255, 0.3);
         border-radius: 50%;
@@ -105,10 +106,8 @@
     width: 50%;
     height: 500px;
     padding-top: 75px;
-    top: 20%;
-    margin-left: 0;
+    top: 10%;
     position: absolute;
-    left: 0;
     overflow: hidden;
 }
 
