@@ -5,8 +5,7 @@ import './index.scss';
 
 const Socials = () => {
     return ( 
-        <div className="container">
-            <p>Follow Us!</p>
+        <>
             <ul className="iconList">
                 <li className="icons">
                     <a href='' target='_blank' rel='noreferer'>
@@ -24,7 +23,7 @@ const Socials = () => {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </>
      );
 }
  

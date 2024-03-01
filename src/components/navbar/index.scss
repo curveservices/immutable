@@ -3,6 +3,7 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    height: 75px;
     z-index: 9999;
     top: 0;
     letter-spacing: 3px;
@@ -11,11 +12,13 @@ header {
     font-family: "Coolvetica";
     background: var(--primary);
     transition: all 0.3s;
+    opacity: 0.95;
     cursor: pointer;
 
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        gap: 100px;
         text-align: center;
         width: 40%;
         padding: 20px 100px;

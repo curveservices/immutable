@@ -1,8 +1,10 @@
+import Socials from '../../socials';
 import './index.scss'
 
 const About = () => {
     return ( 
-        <div className='about-page'></div>
+        <div className='about-page'>
+        </div>
      );
 }
  

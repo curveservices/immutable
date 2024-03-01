@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
 import './index.scss';
-import notFound from '../../assets/images/404.png';
-import Button from '../button';
+import notFound from '../../../assets/images/404.png';
+import Button from '../../button';
+
 
 const NotFound = () => {
     return ( 

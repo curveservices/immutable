@@ -1,11 +1,11 @@
-import Button from '../button/index'
-import CubeSpinner from '../Animations/cubespinner';
-import StaticCubes from '../Animations/staticCubes';
-import { accordionData } from '../utils/accordionData';
-import Accordion from '../utils/Accordion';
+import Button from '../../button/index'
+import CubeSpinner from '../../Animations/cubespinner';
+import StaticCubes from '../../Animations/staticCubes';
+import { accordionData } from '../../utils/accordionData';
+import Accordion from '../../Accordion';
 import { useState } from 'react';
-import Symbols from '../Animations/symbols';
-import Card from '../cards';
+import Symbols from '../../Animations/symbols';
+import Card from '../../cards';
 import './index.scss';
 
 

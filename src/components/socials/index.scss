@@ -1,27 +1,30 @@
-.iconList {
-    display: flex;
-    top: 5px;
-    gap: 1em;
-    padding: 20px 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-}
 
-.icons {
-    a {
-        color: #29323e;
-        padding: 8px;
-        display: block;
-        font-size: 28px;
-        line-height: 20px;
-
-        &:hover svg {
-            color: #ec2d32;
-            transform: scale(1.2);
+    .iconList {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .icons {
+        a {
+            color: #fff;
+            padding: 8px;
+            display: block;
+            font-size: 28px;
+            line-height: 20px;
+    
+            &:hover svg {
+                color: #ec2d32;
+                transform: scale(1.2);
+            }
         }
     }
-}
+
+
 
 @media screen and (max-width: 800px) {
     .iconList {

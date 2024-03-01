@@ -5,11 +5,12 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import "./App.scss";
-import NotFound from "./components/404";
-import About from "./components/about";
-import Home from "./components/home";
+
+import About from "./components/pages/about";
+import Home from "./components/pages/home";
 import Layout from "./components/layout";
-import Services from "./components/Services-page";
+import Services from "./components/pages/Services-page";
+import NotFound from "./components/pages/404";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,7 +19,6 @@ const router = createBrowserRouter(
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />}/>
-            
             </Route>
             <Route path="*" element={<NotFound />} />
         </>

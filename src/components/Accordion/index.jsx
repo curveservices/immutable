@@ -1,4 +1,4 @@
-import Button from '../../button';
+import Button from '../button';
 import './index.scss';
 
 const Accordion = ({id, title, subtitle, content, link, isActive, onAccordionClick}) => {   

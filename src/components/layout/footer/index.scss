@@ -22,16 +22,20 @@ footer {
         gap: 50px;
         width: 50%;
         margin-left: 50px;
+        margin-top: 20px;
         cursor: pointer;
         
         li {
             list-style: none;
         }
     }
-
-    .copy {
-        padding-top: 100px;
-        padding-right: 30px;
+    .socials-container {
         float: right;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        width: 30%;
+        padding-right: 20px;
+      
     }
 }
