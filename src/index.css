@@ -1,10 +1,10 @@
 :root {
   --primary: linear-gradient(to right,
-    #2D5FE1,
-    #587bd3);
+    #064895,
+    #2B66A7);
   --secondary: linear-gradient(to right,
     #ffffff,
-    #e0e0e0);
+    #bbbbbb);
   --third-bg: #2D75E1;
   --services-link: radial-gradient(#91d6f0, 40%,
     #2D5FE1);
@@ -21,6 +21,7 @@
 #root {
   position: relative;
   padding-bottom: 20px;
+  min-height: 100vh;
 }
 
 main {
@@ -28,10 +29,10 @@ main {
 }
 
 body {
-  background: var(--primary);
   margin: 0;
   min-height: 100vh;
   letter-spacing: 3px;
+  background: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-oxs-font-smoothing: grayscale;
 }

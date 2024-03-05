@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Breadcrumbs from '../breadcrumbs';
-import Navbar from '../navbar';
+import Navbar from './navbar';
 import Footer from './footer';
 import './index.scss';
 

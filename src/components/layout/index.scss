@@ -3,20 +3,26 @@
     will-change: contents;
     transform-style: preserve-3d;
     font-family: 'Coolvetica';
-    min-height: 100vh;
+    background-image: url('../../assets/images/blue.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ 
     .home-page,
-    .about-page {
+    .about-page,
+    .serivces-page {
         h1 {
             font-size: 48px;
             font-weight: normal;
         }
 
         p {
-            font-size: 16px;
+            font-size: 18px;
             font-family: sans-serif;
             font-weight: 300;
             min-width: fit-content;
             padding-right: 16px;
+            font-weight: 900;
         }
     }
 }

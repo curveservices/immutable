@@ -11,6 +11,7 @@ import Home from "./components/pages/home";
 import Layout from "./components/layout";
 import Services from "./components/pages/Services-page";
 import NotFound from "./components/pages/404";
+import Contact from "./components/pages/contact";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,7 +19,8 @@ const router = createBrowserRouter(
         <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="services" element={<Services />}/>
+                <Route path="services" element={<Services />} />
+                <Route path="contact" element={<Contact /> } />
             </Route>
             <Route path="*" element={<NotFound />} />
         </>

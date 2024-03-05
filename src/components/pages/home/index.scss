@@ -1,4 +1,5 @@
-
+.home-page {
+position: relative;
     .hero {
         display: flex;
         justify-content: space-between;
@@ -12,7 +13,7 @@
         }
 
         .text-box {
-            animation: fadeInRight 1s;
+            animation: fadeInRight 2s;
         }
     }
 
@@ -24,8 +25,22 @@
 
     .second-section {
         height: 100vh;
-        background: var(--secondary);
+        background-image: url('../../../assets/images/light-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
         box-shadow: var(--global);
+
+        .contentAnim {
+            animation: fadeIn 1s;
+        }
+          
+        .cubeAnim {
+            animation: fadeInRight 4s;
+            animation: bounce 12s infinite linear;
+        }
+        
     }
 
     .third-section {
@@ -45,37 +60,10 @@
         }
     }
     .cta {
-        display: flex;
-        justify-content: center;
-        height: 450px;
-        background: var(--secondary);
-        box-shadow: var(--global);
-    
-        .text-container {
-            width: 60%;
-            height: auto;
-    
-            .cta-title {
-                margin: 0;
-                padding: 3rem 4rem;
-                font-size: 3rem;
-            }
-    
-            .cta-p {
-                font-family: sans-serif;
-                font-weight: normal;
-                margin-left: 4rem;
-            }
-        }
-    
-        .btn-container {
-            width: 40%;
-            height: 70%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-    
-        }
+        background-image: url('../../../assets/images/light-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
-
+}
     

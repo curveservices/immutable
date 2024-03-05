@@ -1,0 +1,41 @@
+.serivces-page {
+  position: relative;
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 4rem;
+    color: #fff;
+
+    .title {
+      width: 50%;
+      animation: fadeInLeft 2s;
+      padding: 3rem;
+    }
+
+    .cube-container {
+      top: 10%;
+      opacity: 0.9;
+    }
+  }
+
+ 
+
+ 
+  .second-section {
+    height: 100vh;
+        background-image: url('../../../assets/images/light-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+  }
+
+  .cta {
+    background-image: url('../../../assets/images/light-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 5rem;
+  }
+}

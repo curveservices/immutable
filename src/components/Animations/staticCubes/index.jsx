@@ -4,7 +4,7 @@ import './index.scss';
 
 const StaticCubes = () => {
     return ( 
-        <div className="cube-container">
+        <div className='cube-container'>
             <div className="cube1">
                 <div className="side top"><FontAwesomeIcon icon={ faHtml5 }/></div>
                 <div className="left side"><FontAwesomeIcon icon={ faReact }/></div>
