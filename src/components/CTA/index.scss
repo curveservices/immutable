@@ -1,0 +1,33 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+
+  box-shadow: var(--global);
+
+  .text-container {
+    width: 60%;
+    height: auto;
+
+    .cta-title {
+      margin: 0;
+      padding: 3rem 4rem;
+      font-size: 3rem;
+    }
+
+    .cta-p {
+      font-family: sans-serif;
+      font-weight: normal;
+      margin-left: 4rem;
+    }
+  }
+
+  .btn-container {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+}
