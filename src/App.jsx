@@ -14,6 +14,9 @@ import NotFound from "./components/pages/404";
 import Contact from "./components/pages/contact";
 import WebDev from "./components/pages/web-dev";
 import WebDesign from "./components/pages/web-design";
+import Packages from "./components/pages/packages";
+import Chatbots from "./components/pages/chat-bots"
+import SocialMarketing from "./components/pages/social-marketing";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,7 +26,10 @@ const router = createBrowserRouter(
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />}/>
                 <Route path=":id/web-development" element={<WebDev />} />
-                <Route path=":id/design-service" element={<WebDesign/>} />
+                <Route path=":id/design-service" element={<WebDesign />} />
+                <Route path=":id/packages" element={<Packages />} />
+                <Route path=":id/chat-bots" element={<Chatbots />} />
+                <Route path=":id/social-media-marketing" element={<SocialMarketing/> }/>
             <Route path="contact" element={<Contact /> } />
         </Route>
             <Route path="*" element={<NotFound />} />

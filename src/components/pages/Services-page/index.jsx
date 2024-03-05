@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import StaticCubes from '../../Animations/staticCubes';
+import Card from '../../cards/work';
 import CallToAction from '../../CTA';
 import './index.scss';
 
@@ -34,12 +35,12 @@ const Services = () => {
                             </NavLink>
                         </div>
                         <div className="service-link">
-                            <NavLink>
+                            <NavLink to="chat-bots">
                                 <h3>AI CHAT BOTS</h3>
                             </NavLink>
                         </div>
                         <div className="service-link">
-                            <NavLink>
+                            <NavLink to="social-media-marketing">
                                 <h3>SOCIAL MEDIA MARKETING</h3>
                             </NavLink>
                         </div>
@@ -50,51 +51,9 @@ const Services = () => {
             <section className='second-section'>
                 <div className="second-inner">
                     <h1>PRICING</h1>
+                    <p></p>
                     <div className="pricing">
-                        <div className="price-card">
-                            <h2></h2>
-                            <h3></h3>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div className="price-card">
-                            <h2></h2>
-                            <h3></h3>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div className="price-card">
-                            <h2></h2>
-                            <h3></h3>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div className="price-card">
-                            <h2></h2>
-                            <h3></h3>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </section>

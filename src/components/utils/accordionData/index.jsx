@@ -29,8 +29,8 @@ export const accordionData = [
     },
     {
         id: 4,
-        link: 'media-marketing',
-        title: 'SOCIAL MARKETING',
+        link: 'social-media-marketing',
+        title: 'SOCIAL MEDIA MARKETING',
         subtitle: 'Facebook - LinkedIn - X - Instagram',
         content: 'Our experienced media content team are on hand to help you set up ad campaigns and social content. We will help drive your social projects using latest trends and analyics'
     },

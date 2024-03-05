@@ -2,7 +2,8 @@ import './index.scss';
 
 const SocialMarketing = () => {
   return ( 
-    <></>
+    <>
+    </>
    );
 }
  

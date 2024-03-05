@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import { db } from '../../firbase';
+import { db } from '../../../firbase';
 import { getDocs, collection } from 'firebase/firestore';
-import Button from '../button';
 import './index.scss';
 
 
