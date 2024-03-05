@@ -1,24 +1,7 @@
-import { useEffect, useState } from 'react';
 import Button from '../button';
 import './index.scss';
 
 const Accordion = ({ id, title, subtitle, content, link, isActive, onAccordionClick }) => {  
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            setIsScrolled(scrollY > 40);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-    
-
     return ( 
         <div className="accordion-item">
             <div onClick={() => onAccordionClick(id)}>
@@ -26,13 +9,12 @@ const Accordion = ({ id, title, subtitle, content, link, isActive, onAccordionCl
                     <h3>{title}</h3>
                 </div>
                 {isActive &&
-                    <div className={`content-container ${isScrolled ? 'contentAnim' : ''}`}>
+                    <div className="content-container">
                     <h2 className='accordion-subtitle'>{subtitle}</h2>
                         <p className='accordion-content'>{content}</p>
                         <div className="read-btn">
                             <Button text='READ MORE' link={`services/${link}`} />
                         </div>
-                       
                     </div>
                 }
             </div>

@@ -4,7 +4,7 @@ import { db } from '../../../firbase';
 import Button from '../../button';
 import './index.scss';
 
-const PriceCard = (link) => {
+const PriceCard = () => {
   const [priceCard, setPriceCard] = useState([]);
 
   const fetchData = async () => {
@@ -17,6 +17,7 @@ const PriceCard = (link) => {
           id: element.id,
           title: data.title,
           price: data.price,
+          link: data.link,
           li1: data.li1,
           li2: data.li2,
           li3: data.li3,
@@ -51,8 +52,8 @@ const PriceCard = (link) => {
               <li>{item.li6}</li>
             </ul>
             <div className="btn-container">
-              <Button link={`services${link}`} text='Show more' />
-              <Button link="contact" text="Start now"/>
+              <Button link={`${item.link}`} text='Show more' />
+              <Button link="/contact" text="Start now"/>
             </div>
           </div>
         )

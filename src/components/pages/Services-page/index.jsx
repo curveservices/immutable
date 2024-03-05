@@ -15,7 +15,8 @@ const Services = () => {
                         We will turn your ideas into amazing solutions
                     </h1>
                         <p>We offer a full suite of website development,
-                        design and programming services, flexible pricing and outstanding service.      
+                            design and programming services, AI website chat bots and 
+                            social media marketing packages with flexible pricing and outstanding service.      
                         </p>
                     </div>
                     <div className="link-container" >

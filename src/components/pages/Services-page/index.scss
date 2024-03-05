@@ -1,8 +1,8 @@
 .serivces-page {
   .hero {
    .hero-inner {
-      margin: 5rem 3rem;
-      padding-top: 3rem;
+      margin: 4rem 3rem;
+      padding-top:2rem;
       height: 100vh;
       color: #fff;
       
@@ -40,7 +40,7 @@
         justify-content: center;
         width: 100%;
         height: 75px;
-        border: 1px solid #1144c6;
+        border: solid #0000;
         border-width: var(--b) var(--b) var(--_s) var(--_s);
         background: var(--services-link);
         transform: translate(calc(var(--d)/-1), var(--d));
