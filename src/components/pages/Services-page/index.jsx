@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import StaticCubes from '../../Animations/staticCubes';
-import Card from '../../cards/work';
+import PriceCard from '../../cards/price';
 import CallToAction from '../../CTA';
 import './index.scss';
 
@@ -53,7 +53,7 @@ const Services = () => {
                     <h1>PRICING</h1>
                     <p></p>
                     <div className="pricing">
-                        
+                        <PriceCard/>
                     </div>
                 </div>
             </section>

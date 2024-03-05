@@ -1,0 +1,17 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem;
+  gap: 2em;
+}
+
+.price-card {
+  position: relative;
+  flex: 1 20%;
+  height: 400px;
+  overflow: hidden;
+  max-width: calc(20% - 10px);
+  background: var(--primary);
+  box-shadow: var(--global);
+}
