@@ -13,6 +13,7 @@ import Services from "./components/pages/Services-page";
 import NotFound from "./components/pages/404";
 import Contact from "./components/pages/contact";
 import WebDev from "./components/pages/web-dev";
+import WebDesign from "./components/pages/web-design";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -21,9 +22,10 @@ const router = createBrowserRouter(
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />}/>
-            <Route path=":id/web-development" element={<WebDev />} />
+                <Route path=":id/web-development" element={<WebDev />} />
+                <Route path=":id/design-service" element={<WebDesign/>} />
             <Route path="contact" element={<Contact /> } />
-            </Route>
+        </Route>
             <Route path="*" element={<NotFound />} />
         </>
     ),

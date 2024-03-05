@@ -24,12 +24,12 @@ const Services = () => {
                             </NavLink>
                         </div>
                         <div className="service-link">
-                            <NavLink to='web-design'>
-                                <h3>WEB DESIGN</h3>
+                            <NavLink to='design-service'>
+                                <h3>DESIGN SERVICES</h3>
                             </NavLink>
                         </div>
                         <div className="service-link">
-                            <NavLink>
+                            <NavLink to='packages'>
                                 <h3>PACKAGES</h3>
                             </NavLink>
                         </div>

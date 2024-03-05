@@ -18,7 +18,7 @@ export const accordionData = [
         link: 'packages',
         title: 'PACKAGES',
         subtitle: "Multi page websites - Landing pages - Promo sites - SPA's",
-        content: "At Immutable Studio we believe in transparency and building strong relationships with our clients. That's why we offer straightforward and transparent pricing for our web development services. We understand the importance of budgeting and making informed decisions, which is why we provide a breakdown of our pricing right from the start. All of our packages can be expanded as your business grows so that you site always fits your needs."
+        content: "At Immutable Studio we believe in transparency and building strong relationships with our clients. That's why we offer straightforward and transparent pricing for our web development services. We understand the importance of budgeting, which is why we provide a breakdown of our pricing. All of our packages can be expanded as your business grows so that your site always fits your needs."
     },
     {
         id: 3,
