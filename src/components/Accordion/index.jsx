@@ -8,7 +8,7 @@ const Accordion = ({ id, title, subtitle, content, link, isActive, onAccordionCl
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            setIsScrolled(scrollY > 50);
+            setIsScrolled(scrollY > 40);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -29,7 +29,10 @@ const Accordion = ({ id, title, subtitle, content, link, isActive, onAccordionCl
                     <div className={`content-container ${isScrolled ? 'contentAnim' : ''}`}>
                     <h2 className='accordion-subtitle'>{subtitle}</h2>
                         <p className='accordion-content'>{content}</p>
-                        <Button text='READ MORE' link={`sevices/${link}`} />
+                        <div className="read-btn">
+                            <Button text='READ MORE' link={`services/${link}`} />
+                        </div>
+                       
                     </div>
                 }
             </div>

@@ -12,15 +12,17 @@ import Layout from "./components/layout";
 import Services from "./components/pages/Services-page";
 import NotFound from "./components/pages/404";
 import Contact from "./components/pages/contact";
+import WebDev from "./components/pages/web-dev";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
-        <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-                <Route path="services" element={<Services />} />
-                <Route path="contact" element={<Contact /> } />
+            <Route path="services" element={<Services />}/>
+            <Route path=":id/web-development" element={<WebDev />} />
+            <Route path="contact" element={<Contact /> } />
             </Route>
             <Route path="*" element={<NotFound />} />
         </>

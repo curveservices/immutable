@@ -33,7 +33,7 @@ const Navbar = () => {
                     activeclassname='active'
                     exact='true'
                 >
-                    <FontAwesomeIcon icon={faHome} />
+                    HOME
                 </NavLink>
                 <NavLink
                     to='about'
@@ -42,7 +42,7 @@ const Navbar = () => {
                     activeclassname='active'
                     exact='true'
                 >
-                    <FontAwesomeIcon icon={faUser} />
+                    ABOUT
                 </NavLink>
                 <NavLink
                     to='services'
@@ -51,7 +51,7 @@ const Navbar = () => {
                     activeclassname='active'
                     exact='true'
                 >
-                    <FontAwesomeIcon icon={faToolbox} />
+                    SERVICES
                 </NavLink>
                 <NavLink
                     to='contact'
@@ -59,7 +59,7 @@ const Navbar = () => {
                     className='contact-link'
                     activeclassname='active'
                     exact='true'>
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    CONTACT US
                 </NavLink>
             </nav>
         </header>

@@ -27,33 +27,34 @@
     
     }
 
-    .accordion-title {
-        --b: .1em;
-        --d: 10px;
-        
-        --_s: calc(var(--d) + var(--b));
-        width: 100%;
-        
-        border: 1px solid #1144c6;
-        border-width: var(--b) var(--b) var(--_s) var(--_s);
-        background:  var(--services-link);
-        transform: translate(calc(var(--d)/-1), var(--d));
-        clip-path: polygon(var(--d) 0%,
+    
+}
+.accordion-title {
+    --b: .1em;
+    --d: 10px;
+
+    --_s: calc(var(--d) + var(--b));
+    width: 100%;
+
+    border: 1px solid #1144c6;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background: var(--services-link);
+    transform: translate(calc(var(--d)/-1), var(--d));
+    clip-path: polygon(var(--d) 0%,
             var(--d) 0%,
             100% 0%,
             100% calc(100% - var(--d)),
             100% calc(100% - var(--d)),
             var(--d) calc(100% - var(--d)));
-        transition: 0.5s;
+    transition: 0.5s;
 
-        &:hover {
-            transform: translate(0, 0);
-            clip-path: polygon(0% var(--d),
+    &:hover {
+        transform: translate(0, 0);
+        clip-path: polygon(0% var(--d),
                 var(--d) 0%,
                 100% 0%,
                 100% calc(100% - var(--d)),
                 calc(100% - var(--d)) 100%,
                 0% 100%);
-        }
     }
 }
