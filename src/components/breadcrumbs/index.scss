@@ -1,8 +1,12 @@
 .breadcrumbs {
+    position: absolute;
     width: 100%;
-    padding-left: 20px;
-    background-color: var(--primary);
+    left: 0;
+    padding-left: 30px;
+    background: var(--primary);
     font-family: sans-serif;
+    margin-top: 4.5rem;
+    height: 20px;
 
     > * {
         display: inline-block;
@@ -11,7 +15,7 @@
 
     a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
     }
     
     .crumb {
@@ -23,6 +27,5 @@
             display: none;
         }
     }
-
 }
 

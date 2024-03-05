@@ -34,7 +34,7 @@
         --_s: calc(var(--d) + var(--b));
         width: 100%;
         
-        border: solid #0000;
+        border: 1px solid #1144c6;
         border-width: var(--b) var(--b) var(--_s) var(--_s);
         background:  var(--services-link);
         transform: translate(calc(var(--d)/-1), var(--d));

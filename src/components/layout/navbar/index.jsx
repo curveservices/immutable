@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 
 import { NavLink } from 'react-router-dom';
+import Breadcrumbs from '../../breadcrumbs';
 import './index.scss';
 
 const Navbar = () => {
@@ -23,6 +24,7 @@ const Navbar = () => {
     return ( 
         <header className={isScrolled ? 'navbar-scroll' : ''}>
             <h1 className='logo'>&#123; Immutable Studio &#125;</h1>
+            <Breadcrumbs />
             <nav>
                 <NavLink
                     to='/'

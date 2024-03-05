@@ -31,7 +31,6 @@ const Layout = () => {
         <div >
             <Navbar />
             <main className='app'>
-                <Breadcrumbs />
                 <Outlet />           
             </main>
             

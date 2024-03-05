@@ -11,6 +11,7 @@ header {
     color: #fff;
     font-family: "Coolvetica";
     background: var(--primary);
+    box-shadow: var(--global);
     transition: all 0.3s;
     opacity: 0.95;
     cursor: pointer;
@@ -96,7 +97,7 @@ header {
 
 .navbar-scroll {
     background: var(--secondary);
-    box-shadow: var(--global);
+ 
     color: #000;
     transition: all 0.5s ease-in-out;
 
