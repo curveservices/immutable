@@ -9,10 +9,7 @@
       .text-box {
         padding: 2rem 0rem 0 2rem;
         width: 45%;
-      
-        .title {
-          animation: slideInLeft 2s;
-        }
+        animation: slideInLeft 2s;
       }
 
       .cube-container {
@@ -69,11 +66,17 @@
   }
   
   .second-section {
-    height: 100vh;
     background-image: url('../../../assets/images/light-bg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
+    .second-inner {
+      height: 120vh;
+      margin: 5rem 3rem;
+      padding-top: 3rem;
+      
+    }
   }
 
   .cta {

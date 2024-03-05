@@ -51,7 +51,9 @@ const Services = () => {
             <section className='second-section'>
                 <div className="second-inner">
                     <h1>PRICING</h1>
-                    <p></p>
+                    <p>Take a look at our starting prices for for more pricing click show more
+                        
+                    </p>
                     <div className="pricing">
                         <PriceCard/>
                     </div>

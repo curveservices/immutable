@@ -52,7 +52,7 @@ const PriceCard = (link) => {
             </ul>
             <div className="btn-container">
               <Button link={`services${link}`} text='Show more' />
-              <Button link="contact" text="Start project"/>
+              <Button link="contact" text="Start now"/>
             </div>
           </div>
         )

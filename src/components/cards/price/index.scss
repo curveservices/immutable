@@ -9,9 +9,9 @@
 .price-card {
   position: relative;
   flex: 1 20%;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   max-width: calc(20% - 10px);
-  background: var(--primary);
+  background: var(--secondary);
   box-shadow: var(--global);
 }
