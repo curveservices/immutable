@@ -23,7 +23,6 @@ const PriceCard = () => {
           li3: data.li3,
           li4: data.li4,
           li5: data.li5,
-          li6: data.li6,
         });
       });
       setPriceCard(priceData);
@@ -41,18 +40,24 @@ const PriceCard = () => {
       {priceCard.map((item) => {
         return (
           <div className="price-card" key={item.id}>
-            <h2>{item.title}</h2>
-            <h3>{item.price}</h3>
+            <h2 className='price-title'>{item.title}</h2>
+            <h3 className='price'>{item.price}</h3>
             <ul>
               <li>{item.li1}</li>
+              <hr />
               <li>{item.li2}</li>
+              <hr />
               <li>{item.li3}</li>
+              <hr />
               <li>{item.li4}</li>
+              <hr />
               <li>{item.li5}</li>
-              <li>{item.li6}</li>
             </ul>
             <div className="btn-container">
-              <Button link={`${item.link}`} text='Show more' />
+              <Button
+                link={`${item.link}`}
+                text='Show more'
+                background='var(--primary)'/>
               <Button link="/contact" text="Start now"/>
             </div>
           </div>
