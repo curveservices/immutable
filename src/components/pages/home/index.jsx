@@ -8,6 +8,7 @@ import Symbols from '../../Animations/symbols';
 import Card from '../../cards/work';
 import './index.scss';
 import CallToAction from '../../CTA';
+import Featured from '../featured';
 
 
 const Home = () => {
@@ -16,7 +17,6 @@ const Home = () => {
         setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
     };
     return ( 
-        
         <div className='home-page'>
             <section className='hero'>
                 <div className="left-hero">
@@ -58,11 +58,7 @@ const Home = () => {
             </section>
             <section className='third-section'>
                 <div className="section-inner">
-                    <h1 className='feature-title'>FEATURED WORK</h1>
-                    <Card />
-                    <div className="view-btn">
-                        <Button text='view more' link='featured-work' />
-                    </div>
+                    <Featured />
                 </div>
             </section>
             
