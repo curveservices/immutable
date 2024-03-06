@@ -10,7 +10,7 @@
     #2D5FE1);
   --global: 0px 20px 40px 5px rgba(0, 0, 0, 0.7);
   --box: 0px 40px 40px 20px rgba(0, 0, 0, 0.5);
-  
+  --button-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 * {
