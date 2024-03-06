@@ -13,7 +13,11 @@ const Accordion = ({ id, title, subtitle, content, link, isActive, onAccordionCl
                     <h2 className='accordion-subtitle'>{subtitle}</h2>
                         <p className='accordion-content'>{content}</p>
                         <div className="read-btn">
-                            <Button text='READ MORE' link={`services/${link}`} />
+                            <Button
+                                text='READ MORE'
+                                link={`services/${link}`}
+                                background='var(--primary)'
+                            />
                         </div>
                     </div>
                 }

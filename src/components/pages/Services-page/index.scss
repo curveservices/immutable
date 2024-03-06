@@ -66,22 +66,25 @@
   }
   
   .second-section {
+    background-image: url('../../../assets/images/light-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     .second-inner {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      height: 150vh;
-      margin: 0rem 3rem;
+      
+      height: 175vh;
+      margin: 0rem;
       padding-top: 2rem;
 
       .text-box {
-        text-align: center;
-        padding-bottom: 3rem;
+        padding: 1rem 5rem;
         width: 50%;
-        color: #fff;
+        color: #000;
       }
 
-      .pricing {
+      .none {
         display: none;
       }
 
@@ -90,13 +93,17 @@
       }
 
       .contentAnim {
-        animation: fadeInUp 2s;     
+        animation: fadeInUp 2s;  
+        background: var(--primary);
+        margin: 0 2rem;
+        padding: 4rem 1rem;
       }
       
     }
   }
 
   .third-inner {
+    margin: 2rem;
     height: 100vh;
   }
 

@@ -13,7 +13,7 @@ const Services = () => {
     useEffect(() => {
         const handleScroll = () => {
           const scrollY = window.scrollY;
-            setIsScrolled(scrollY > 600);
+            setIsScrolled(scrollY > 500);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -75,7 +75,7 @@ const Services = () => {
                             for more options and pricing click to show more or contact us to start your project.
                         </p>
                     </div>
-                    <div className={`${isScrolled ? 'contentAnim' : 'pricing'}`}>
+                    <div className={`${isScrolled ? 'contentAnim' : 'none'}`}>
                         <PriceCard/>
                     </div>
                 </div>
