@@ -1,11 +1,29 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import StaticCubes from '../../Animations/staticCubes';
 import PriceCard from '../../cards/price';
 import CallToAction from '../../CTA';
+import Featured from '../featured';
 import './index.scss';
 
 
 const Services = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+   
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollY = window.scrollY;
+            setIsScrolled(scrollY > 600);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    
+    
     return ( 
         <div className="serivces-page">
             <section className='hero'>
@@ -51,13 +69,20 @@ const Services = () => {
             </section>
             <section className='second-section'>
                 <div className="second-inner">
-                    <h1>PRICING</h1>
-                    <p>Take a look at our starting prices for for more pricing click show more
-                        
-                    </p>
-                    <div className="pricing">
+                    <div className="text-box">
+                        <h1>STARTING PRICES</h1>
+                        <p>Take a look at our starting prices for professional web development, AI chat bots and social media marketing,
+                            for more options and pricing click to show more or contact us to start your project.
+                        </p>
+                    </div>
+                    <div className={`${isScrolled ? 'contentAnim' : 'pricing'}`}>
                         <PriceCard/>
                     </div>
+                </div>
+            </section>
+            <section className="third-section">
+                <div className="third-inner">
+                    <Featured/>
                 </div>
             </section>
             <section className='cta'>

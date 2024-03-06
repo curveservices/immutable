@@ -1,20 +1,20 @@
 .serivces-page {
   .hero {
    .hero-inner {
-      margin: 4rem 3rem;
+      margin: 2em 3rem;
       padding-top:2rem;
       height: 100vh;
       color: #fff;
       
       .text-box {
-        padding: 2rem 0rem 0 2rem;
-        width: 45%;
+        padding: 4rem 0rem 0 2rem;
+        width: 50%;
         animation: slideInLeft 2s;
       }
 
       .cube-container {
-        top: 13%;
-        left: 50%;
+        top: 10%;
+        left: 55%;
         opacity: 0.9;
       }
 
@@ -66,17 +66,38 @@
   }
   
   .second-section {
-    background-image: url('../../../assets/images/light-bg.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
     .second-inner {
-      height: 120vh;
-      margin: 5rem 3rem;
-      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 150vh;
+      margin: 0rem 3rem;
+      padding-top: 2rem;
+
+      .text-box {
+        text-align: center;
+        padding-bottom: 3rem;
+        width: 50%;
+        color: #fff;
+      }
+
+      .pricing {
+        display: none;
+      }
+
+      .price-card {
+        background: var(--secondary);
+      }
+
+      .contentAnim {
+        animation: fadeInUp 2s;     
+      }
       
     }
+  }
+
+  .third-inner {
+    height: 100vh;
   }
 
   .cta {
@@ -84,6 +105,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 5rem;
+    
   }
 }
