@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import StaticCubes from '../../Animations/staticCubes';
 import Symbols from '../../Animations/symbols';
+import Button from '../../button';
 import PriceCard from '../../cards/price';
 import CallToAction from '../../CTA';
 import Featured from '../featured';
@@ -38,7 +39,12 @@ const Services = () => {
                             design and programming services, AI website chat bots and 
                             social media marketing packages with flexible pricing and outstanding service.      
                         </p>
+                        <Button
+                            text='start now'
+                            link='contact'
+                        />
                     </div>
+                    
                     <Symbols/>
                     <div className="link-container" >
                         <div className='service-link'>
