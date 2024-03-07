@@ -3,7 +3,7 @@ import CubeSpinner from '../../Animations/cubespinner';
 import StaticCubes from '../../Animations/staticCubes';
 import { accordionData } from '../../utils/accordionData';
 import Accordion from '../../Accordion';
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import Symbols from '../../Animations/symbols';
 import Card from '../../cards/work';
 import './index.scss';
@@ -14,8 +14,11 @@ import Featured from '../featured';
 const Home = () => {
     const [activeAccordion, setActiveAccordion] = useState(0);
     const handleAccordionClick = (accordionId) => {
-        setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
+        setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId))
     };
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return ( 
         <div className='home-page'>
             <section className='hero'>
@@ -31,7 +34,7 @@ const Home = () => {
                         </p>
                     </div>
                     <Button link='contact' text='CONTACT US' />
-                    <Symbols />
+                   
                 </div>
             </section>
             

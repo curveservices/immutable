@@ -13,6 +13,7 @@ const Button = (props) => {
             className='flat-btn'
             to={props.link}
             style={buttonStyle}
+            type={props.type}
         >
             {props.text}
         </Link>

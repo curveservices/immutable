@@ -1,18 +1,16 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Breadcrumbs from '../breadcrumbs';
 import Navbar from './navbar';
 import Footer from './footer';
 import './index.scss';
 
 const Layout = () => {
     const [showButton, setShowButton] = useState(false)
-   
     
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 500) {
+            if (window.pageYOffset > 550) {
                 setShowButton(true)
             } else {
                 setShowButton(false)

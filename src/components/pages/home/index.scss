@@ -12,7 +12,8 @@
         }
 
         .text-box {
-            animation: fadeInRight 2s;
+            margin-bottom: 1rem;
+            animation: fadeInRightBig 2s;
         }
     }
 
@@ -24,7 +25,7 @@
 
     .second-section {
         height: 100vh;
-        background-image: url('../../../assets/images/light-bg.jpeg');
+        background-image: url('../../../assets/images/1746747.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -34,11 +35,11 @@
 
     .third-section {
         height: 120vh;
-        padding: 0;
+        padding: 3rem ;
     }
     
     .cta {
-        background-image: url('../../../assets/images/light-bg.jpeg');
+        background-image: url('../../../assets/images/1746747.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

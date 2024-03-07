@@ -9,7 +9,7 @@ import "./App.scss";
 import About from "./components/pages/about";
 import Home from "./components/pages/home";
 import Layout from "./components/layout";
-import Services from "./components/pages/Services-page";
+import Services from "./components/pages/services-page";
 import NotFound from "./components/pages/404";
 import Contact from "./components/pages/contact";
 import WebDev from "./components/pages/web-dev";
@@ -20,20 +20,20 @@ import SocialMarketing from "./components/pages/social-marketing";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <>
         <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="services" element={<Services />}/>
                 <Route path=":id/web-development" element={<WebDev />} />
                 <Route path=":id/design-service" element={<WebDesign />} />
                 <Route path=":id/packages" element={<Packages />} />
                 <Route path=":id/chat-bots" element={<Chatbots />} />
                 <Route path=":id/social-media-marketing" element={<SocialMarketing/> }/>
-            <Route path="contact" element={<Contact /> } />
-        </Route>
+            
             <Route path="*" element={<NotFound />} />
-        </>
+        </Route>
+            
     ),
 );
 

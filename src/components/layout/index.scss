@@ -10,11 +10,13 @@
  
     .home-page,
     .about-page,
-    .serivces-page {
-        animation: fadeIn 2s;
+    .serivces-page,
+    .contact-page {
+        animation: fadeIn 3s forwards;
         h1 {
             font-size: 48px;
             font-weight: normal;
+            margin: 0;
         }
 
         p {

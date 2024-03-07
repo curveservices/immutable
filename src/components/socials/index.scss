@@ -18,7 +18,7 @@
             line-height: 20px;
     
             &:hover svg {
-                color: #ec2d32;
+                color: var(--services-link);
                 transform: scale(1.2);
             }
         }

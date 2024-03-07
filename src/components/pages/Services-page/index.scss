@@ -9,7 +9,7 @@
       .text-box {
         padding: 4rem 0rem 0 2rem;
         width: 50%;
-        animation: slideInLeft 2s;
+        animation: fadeInLeftBig 2s;
       }
 
       .cube-container {
@@ -24,10 +24,10 @@
         width: 25%;
         position: absolute;
         right: 0;
-        top: 5%;
+        top: 4%;
         gap: 25px;
         margin: 0 3rem;
-        animation: fadeInDown 2s;
+        animation: bounceInDown 2s;
       }
 
       .service-link {
@@ -79,7 +79,7 @@
       padding-top: 2rem;
 
       .text-box {
-        padding: 1rem 5rem;
+        padding: 5rem;
         width: 100%;
         color: #000;
 
@@ -97,7 +97,7 @@
       }
 
       .contentAnim {
-        animation: fadeInUp 2s;  
+        animation: backInUp 1s forwards;  
         background: var(--primary);
         overflow: hidden;
         margin: 0 2rem;

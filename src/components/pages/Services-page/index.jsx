@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useLayoutEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import StaticCubes from '../../Animations/staticCubes';
+import Symbols from '../../Animations/symbols';
 import PriceCard from '../../cards/price';
 import CallToAction from '../../CTA';
 import Featured from '../featured';
@@ -9,11 +10,11 @@ import './index.scss';
 
 const Services = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-   
+  
     useEffect(() => {
         const handleScroll = () => {
           const scrollY = window.scrollY;
-            setIsScrolled(scrollY > 500);
+            setIsScrolled(scrollY > 600);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -23,6 +24,7 @@ const Services = () => {
         };
     }, []);
     
+  
     
     return ( 
         <div className="serivces-page">
@@ -37,6 +39,7 @@ const Services = () => {
                             social media marketing packages with flexible pricing and outstanding service.      
                         </p>
                     </div>
+                    <Symbols/>
                     <div className="link-container" >
                         <div className='service-link'>
                             <NavLink to='web-development'>

@@ -12,7 +12,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            setIsScrolled(scrollY > 500);
+            setIsScrolled(scrollY > 600);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -59,7 +59,7 @@ const Navbar = () => {
                     className='contact-link'
                     activeclassname='active'
                     exact='true'>
-                    CONTACT US
+                    CONTACT
                 </NavLink>
             </nav>
         </header>
