@@ -34,7 +34,7 @@ const Home = () => {
                         </p>
                     </div>
                     <Button link='contact' text='CONTACT US' />
-                   
+                   <Symbols/>
                 </div>
             </section>
             

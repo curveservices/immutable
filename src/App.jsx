@@ -20,6 +20,7 @@ import SocialMarketing from "./components/pages/social-marketing";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
+        <>
         <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
@@ -30,10 +31,9 @@ const router = createBrowserRouter(
                 <Route path=":id/packages" element={<Packages />} />
                 <Route path=":id/chat-bots" element={<Chatbots />} />
                 <Route path=":id/social-media-marketing" element={<SocialMarketing/> }/>
-            
-            <Route path="*" element={<NotFound />} />
         </Route>
-            
+        <Route path="*" element={<NotFound />} />
+        </> 
     ),
 );
 

@@ -21,7 +21,7 @@
 #root {
   position: relative;
   padding-bottom: 20px;
-  
+  min-height: 100vh;
 }
 
 main {
