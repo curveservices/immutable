@@ -80,9 +80,9 @@ const Services = () => {
                 <div className="second-inner">
                     <div className="text-box">
                         <h1>STARTING PRICES</h1>
-                        <h2>Take a look at our starting prices for professional web development, AI chat bots and social media marketing,
+                        <p>Take a look at our starting prices for professional web development, AI chat bots and social media marketing,
                             for more options and pricing click to show more or contact us to start your project.
-                        </h2>
+                        </p>
                     </div>
                     <div className={`${isScrolled ? 'contentAnim' : 'none'}`}>
                         <PriceCard/>
