@@ -1,53 +1,51 @@
 .app {
-    width: 100%;
-    will-change: contents;
-    transform-style: preserve-3d;
-    font-family: 'Coolvetica';
-    background-image: url('../../assets/images/blue.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
- 
-    .home-page,
-    .about-page,
-    .serivces-page,
-    .contact-page {
-        animation: fadeIn 3s forwards;
-        h1 {
-            font-size: 48px;
-            font-weight: normal;
-            margin: 0;
-        }
+  width: 100%;
+  will-change: contents;
+  transform-style: preserve-3d;
+  font-family: "Coolvetica";
+  background-image: url("../../assets/images/blue.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-        p {
-            font-size: 18px;
-            font-family: sans-serif;
-            font-weight: 300;
-            min-width: fit-content;
-            line-height: 1.5;
-            font-weight: 500;
-        }
+  .home-page,
+  .about-page,
+  .serivces-page,
+  .contact-page {
+    animation: fadeIn 3s forwards;
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+      margin: 0;
     }
+
+    p {
+      font-size: 18px;
+      font-family: sans-serif;
+      font-weight: 300;
+      min-width: fit-content;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+  }
 }
 .back-to-top {
-    position: fixed;
-    bottom: 15rem;
-    right: 0;
-    font-size: 28px;
-    background: #9d9d9d;
-    border-radius: 20% 0% 0% 20%;
-    width: 50px;
-    height: 50px;
-    border: none;
-    box-shadow: var(--button-shadow);
-    cursor: pointer;
-    animation: fadeInRight 2s;
-    transition: all 1s;
+  position: fixed;
+  bottom: 15rem;
+  right: 0;
+  font-size: 28px;
+  background: #9d9d9d;
+  border-radius: 20% 0% 0% 20%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+  animation: fadeInRight 2s;
+  transition: all 1s;
 
-    &:hover {
-        background: #636363;
-        color: #fff;
-        
-    }
+  &:hover {
+    background: #636363;
+    color: #fff;
+  }
 }
-

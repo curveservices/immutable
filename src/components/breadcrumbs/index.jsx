@@ -1,37 +1,41 @@
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './index.scss';
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./index.scss";
 
 const Breadcrumbs = () => {
-    const location = useLocation();
-    const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            setIsScrolled(scrollY > 600);
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setIsScrolled(scrollY > 600);
+    };
 
-        window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    let currentLink = "";
-    const crumbs = location.pathname
-        .split("/")
-        .filter((crumb) => crumb != "")
-        .map((crumb) => {
-            currentLink += `/${crumb}`;
-            return (
-                <div className="crumb" key={crumb}>
-                    <Link to={currentLink}>{crumb}</Link>
-                </div>
-            );
-        });
-    return <div className={`breadcrumbs ${isScrolled ? 'navbar-scroll' : ''}` }>{crumbs}</div>;
+  let currentLink = "";
+  const crumbs = location.pathname
+    .split("/")
+    .filter((crumb) => crumb != "")
+    .map((crumb) => {
+      currentLink += `/${crumb}`;
+      return (
+        <div className="crumb" key={crumb}>
+          <Link to={currentLink}>{crumb}</Link>
+        </div>
+      );
+    });
+  return (
+    <div className={`breadcrumbs ${isScrolled ? "navbar-scroll" : ""}`}>
+      {crumbs}
+    </div>
+  );
 };
- 
+
 export default Breadcrumbs;

@@ -1,43 +1,44 @@
-import './index.scss';
-import emailjs from '@emailjs/browser';
-import { useLayoutEffect, useRef } from 'react';
-import Socials from '../../socials';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
-
+import "./index.scss";
+import emailjs from "@emailjs/browser";
+import { useLayoutEffect, useRef } from "react";
+import Socials from "../../socials";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const Contact = () => {
   const refForm = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
-        'p.rossiter83@gmail.com',
-        'contact_form',
+        "p.rossiter83@gmail.com",
+        "contact_form",
         refForm.current,
-        'w1ULsXxchzrjhuclR'
+        "w1ULsXxchzrjhuclR",
       )
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          alert("Message successfully sent!");
+          window.location.reload(false);
         },
         () => {
-          alert(' Failed to send your message, pleease try again')
-        }
-      )
-  }
+          alert(" Failed to send your message, pleease try again");
+        },
+      );
+  };
   useLayoutEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   });
-  return ( 
-    <div className='contact-page'>
+  return (
+    <div className="contact-page">
       <section className="text-box">
         <h1>CONTACT US</h1>
-        <p>Ready to get your project started? 
-          wheather it's a large project, persnoal portfolio, landing page or website chat bot, 
-          We are able to help.</p>
+        <p>
+          Ready to get your project started? wheather it's a large project,
+          persnoal portfolio, landing page or website chat bot, We are able to
+          help.
+        </p>
         <p>
           However, don't hesitate to contact us with other requests or questions
           using the form below.
@@ -45,27 +46,27 @@ const Contact = () => {
         <div className="contact-form">
           <form ref={refForm} onSubmit={sendEmail}>
             <ul>
-              <li className='half'>
+              <li className="half">
                 <input
                   type="text"
-                  name='name'
-                  placeholder='Full Name'
+                  name="name"
+                  placeholder="Full Name"
                   required
                 />
               </li>
-              <li className='half'>
+              <li className="half">
                 <input
                   type="email"
-                  name='email'
-                  placeholder='Email address'
+                  name="email"
+                  placeholder="Email address"
                   required
                 />
               </li>
               <li>
                 <input
                   type="text"
-                  name='subject'
-                  placeholder='Subject'
+                  name="subject"
+                  placeholder="Subject"
                   required
                 />
               </li>
@@ -78,17 +79,13 @@ const Contact = () => {
                 ></textarea>
               </li>
               <li>
-                <input
-                  type="submit"
-                  className='flat-button'
-                  value='send'
-                />
+                <input type="submit" className="flat-button" value="send" />
               </li>
             </ul>
           </form>
         </div>
       </section>
-    
+
       <div className="info-map">
         Immutable Studio
         <br />
@@ -108,7 +105,7 @@ const Contact = () => {
         </MapContainer>
       </div>
     </div>
-   );
-}
- 
+  );
+};
+
 export default Contact;

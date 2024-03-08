@@ -1,139 +1,135 @@
 .cube-container {
+  position: absolute;
+  top: 36%;
+  left: 85%;
+  animation: bounce 12s infinite linear;
+
+  .cube1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(230deg) rotateY(-15deg) rotateZ(-155deg);
+    box-shadow: 90px 70px 60px 20px rgba(0, 0, 0, 0.5);
+
+    .side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 110px;
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      object-fit: cover;
+    }
+
+    .top {
+      transform: translateZ(-120px) rotateY(180deg);
+      color: #f06529;
+      background: #e1e1e1;
+    }
+
+    .front {
+      transform: rotateX(90deg) rotateY(180deg);
+      transform-origin: bottom;
+      color: #f7df1e;
+      background: #808080;
+    }
+
+    .left {
+      width: 120px;
+      transform: translateZ(-120px) rotateY(90deg);
+      transform-origin: right;
+      color: #5ed4f4;
+      background: #a3a3a3;
+    }
+  }
+
+  .cube2 {
     position: absolute;
-    top: 36%;
-    left: 85%;
-    animation: bounce 12s infinite linear;
+    top: 260%;
+    transform-style: preserve-3d;
+    transform: rotateX(230deg) rotateY(-15deg) rotateZ(-155deg);
+    box-shadow: 90px 70px 60px 60px rgba(0, 0, 0, 0.5);
 
-    .cube1 {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        transform-style: preserve-3d;
-        transform: rotateX(230deg) rotateY(-15deg) rotateZ(-155deg);
-        box-shadow: 90px 70px 60px 20px rgba(0,0,0,0.5);
-    
-        .side {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 110px;
-            width: 120px;
-            height: 120px;
-            top: 0;
-            left: 0;
-            position: absolute;
-            object-fit: cover;
-            
-        }
-    
-        .top {
-            transform: translateZ(-120px) rotateY(180deg);
-            color: #f06529;
-            background: #e1e1e1;
-        }
-    
-        .front {
-            transform: rotateX(90deg) rotateY(180deg);
-            transform-origin: bottom;
-            color: #f7df1e;
-            background: #808080;
-        }
-    
-        .left {
-            width: 120px;
-            transform: translateZ(-120px) rotateY(90deg);
-            transform-origin: right;
-            color: #5ed4f4;
-            background: #a3a3a3;
-        }
+    .side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 90px;
+      width: 100px;
+      height: 100px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      object-fit: cover;
+      opacity: 0.8;
     }
-    
-    .cube2 {
-        position: absolute;
-        top: 260%;
-        transform-style: preserve-3d;
-        transform: rotateX(230deg) rotateY(-15deg) rotateZ(-155deg);
-        box-shadow: 90px 70px 60px 60px rgba(0,0,0,0.5);
-    
-        .side {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 90px;
-            width: 100px;
-            height: 100px;
-            top: 0;
-            left: 0;
-            position: absolute;
-            object-fit: cover;
-            opacity: 0.8;
-    
-        }
-    
-        .top {
-            transform: translateZ(-100px) rotateY(180deg);
-            background: #e1e1e1;
-            color: #5DAF48;
-        }
-    
-        .front {
-            transform: rotateX(90deg) rotateY(180deg);
-            transform-origin: bottom;
-            color: #2965f1;
-            background: #808080;
-        }
-    
-        .left {
-            width: 100px;
-            transform: translateZ(-100px) rotateY(90deg) rotateX(360deg);
-            transform-origin: right;
-            color: #000;
-            background: rgb(163, 163, 163);
-        }
+
+    .top {
+      transform: translateZ(-100px) rotateY(180deg);
+      background: #e1e1e1;
+      color: #5daf48;
     }
-    .cube3 {
-        position: absolute;
-        top: 250%;
-        right: 400%;
-        transform-style: preserve-3d;
-        transform: rotateX(230deg) rotateY(-15deg) rotateZ(-155deg);
-        box-shadow: 90px 70px 60px 40px rgba(0, 0, 0, 0.5);
-    
-        .side {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 55px;
-            width: 70px;
-            height: 70px;
-            top: 0;
-            left: 0;
-            position: absolute;
-            object-fit: cover;
-            opacity: 0.8;
-    
-        }
-    
-        .top {
-            transform: translateZ(-70px) rotateY(180deg);
-            background: #e1e1e1;
-            color: #000;
-        }
-    
-        .front {
-            transform: rotateX(90deg) rotateY(180deg);
-            transform-origin: bottom;
-            color: #fff;
-            background: #21759b;
-        }
-    
-        .left {
-            width: 70px;
-            transform: translateZ(-70px) rotateY(90deg) rotateX(360deg);
-            transform-origin: right;
-            color: #fff;
-            background: #f34f29;
-        }
+
+    .front {
+      transform: rotateX(90deg) rotateY(180deg);
+      transform-origin: bottom;
+      color: #2965f1;
+      background: #808080;
     }
+
+    .left {
+      width: 100px;
+      transform: translateZ(-100px) rotateY(90deg) rotateX(360deg);
+      transform-origin: right;
+      color: #000;
+      background: rgb(163, 163, 163);
+    }
+  }
+  .cube3 {
+    position: absolute;
+    top: 250%;
+    right: 400%;
+    transform-style: preserve-3d;
+    transform: rotateX(230deg) rotateY(-15deg) rotateZ(-155deg);
+    box-shadow: 90px 70px 60px 40px rgba(0, 0, 0, 0.5);
+
+    .side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 55px;
+      width: 70px;
+      height: 70px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+
+    .top {
+      transform: translateZ(-70px) rotateY(180deg);
+      background: #e1e1e1;
+      color: #000;
+    }
+
+    .front {
+      transform: rotateX(90deg) rotateY(180deg);
+      transform-origin: bottom;
+      color: #fff;
+      background: #21759b;
+    }
+
+    .left {
+      width: 70px;
+      transform: translateZ(-70px) rotateY(90deg) rotateX(360deg);
+      transform-origin: right;
+      color: #fff;
+      background: #f34f29;
+    }
+  }
 }
-

@@ -1,31 +1,29 @@
 .letter-contianer {
-    margin-top: 5rem;
-    color: rgba(255, 255, 255, 0.2);
-    font-family: 'Coolvetica';
-    font-weight: bold;
-    font-size: 96px;
-    opacity: 0.4;
+  margin-top: 5rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Coolvetica";
+  font-weight: bold;
+  font-size: 96px;
+  opacity: 0.4;
 
-    .brackets {
-        position: absolute;
-        top: 18%;
-        left: 80%;
-        transform: rotateZ(45deg);
-    }
+  .brackets {
+    position: absolute;
+    top: 18%;
+    left: 80%;
+    transform: rotateZ(45deg);
+  }
 
-    .symbol1 {
-        position: absolute;
-        top: 22%;
-        left: 60%;
-        transform: rotateZ(-15deg);
-    }
+  .symbol1 {
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    transform: rotateZ(-15deg);
+  }
 
-    .symbol2 {
-        position: absolute;
-        top: 23%;
-        left: 90%;
-        transform: rotateZ(25deg);
-       
-    }
+  .symbol2 {
+    position: absolute;
+    top: 23%;
+    left: 90%;
+    transform: rotateZ(25deg);
+  }
 }
-

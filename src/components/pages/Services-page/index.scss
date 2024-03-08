@@ -1,22 +1,20 @@
 .serivces-page {
   .hero {
-   .hero-inner {
+    .hero-inner {
       margin: 2em 3rem;
-      padding-top:2rem;
+      padding-top: 2rem;
       height: 100vh;
       color: #fff;
-      
+
       .text-box {
         padding: 4rem 0rem 0 2rem;
         width: 50%;
         animation: fadeInLeftBig 2s;
-
       }
 
       .cube-container {
-        top: 10%;
+        top: 8%;
         left: 55%;
-        opacity: 0.9;
       }
 
       .link-container {
@@ -25,16 +23,16 @@
         width: 25%;
         position: absolute;
         right: 0;
-        top: 4%;
+        top: 2.8%;
         gap: 25px;
         margin: 0 3rem;
         animation: bounceInDown 2s;
       }
 
       .service-link {
-        --b: .1em;
+        --b: 0.1em;
         --d: 10px;
-      
+
         --_s: calc(var(--d) + var(--b));
         display: flex;
         align-items: center;
@@ -44,80 +42,111 @@
         border: solid #0000;
         border-width: var(--b) var(--b) var(--_s) var(--_s);
         background: var(--services-link);
-        transform: translate(calc(var(--d)/-1), var(--d));
-        clip-path: polygon(var(--d) 0%,
+        transform: translate(calc(var(--d) / -1), var(--d));
+        clip-path: polygon(
+          var(--d) 0%,
+          var(--d) 0%,
+          100% 0%,
+          100% calc(100% - var(--d)),
+          100% calc(100% - var(--d)),
+          var(--d) calc(100% - var(--d))
+        );
+        transition: 0.5s;
+
+        &:hover {
+          transform: translate(0, 0);
+          clip-path: polygon(
+            0% var(--d),
             var(--d) 0%,
             100% 0%,
             100% calc(100% - var(--d)),
-            100% calc(100% - var(--d)),
-            var(--d) calc(100% - var(--d)));
-        transition: 0.5s;
-      
-        &:hover {
-          transform: translate(0, 0);
-          clip-path: polygon(0% var(--d),
-              var(--d) 0%,
-              100% 0%,
-              100% calc(100% - var(--d)),
-              calc(100% - var(--d)) 100%,
-              0% 100%);
+            calc(100% - var(--d)) 100%,
+            0% 100%
+          );
         }
       }
     }
   }
-  
+
   .second-section {
-    background-image: url('../../../assets/images/1746747.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url("../../../assets/images/1746747.jpg");
+    box-shadow: var(--global);
+
     .second-inner {
       display: flex;
-      flex-direction: column;
-      
-      height: 175vh;
       margin: 0rem;
-      padding-top: 2rem;
+      padding: 4rem 1rem;
 
-      .text-box {
-        padding: 5rem;
-        width: 50%;
-        color: #000;
-
-        h2 {
-          font-family: sans-serif;
-        }
+      img {
+        width: 550px;
+        height: 400px;
+        object-fit: fill;
+        opacity: 0.9;
       }
 
+      .text-box {
+        padding: 0 2rem 0 5rem;
+        width: 70%;
+        color: #000;
+      }
+    }
+  }
+  .third-section {
+    height: 150vh;
+    .third-inner {
+      color: #fff;
+      margin: 2rem;
+      height: 100vh;
+
+      .title {
+        padding: 3rem;
+        text-align: center;
+      }
+
+      .element-container {
+        display: flex;
+        width: 100%;
+        flex-grow: 0;
+        align-self: initial;
+        gap: 5em;
+      }
+
+      .elem-card {
+        display: flex;
+        flex-flow: column wrap;
+        width: 40%;
+      }
+    }
+  }
+
+  .forth-section {
+    background-image: url("../../../assets/images/1746747.jpg");
+    box-shadow: var(--global);
+    height: 150vh;
+
+    .forth-inner {
       .none {
         display: none;
       }
 
       .price-card {
+        color: #000;
         background: var(--secondary);
       }
 
       .contentAnim {
-        animation: backInUp 1s forwards;  
+        animation: backInUp 1s forwards;
         background: var(--primary);
         overflow: hidden;
         margin: 0 2rem;
         padding: 4rem 1rem;
       }
-      
     }
   }
 
-  .third-inner {
-    margin: 2rem;
-    height: 100vh;
-  }
-
   .cta {
-    background-image: url('../../../assets/images/1746747.jpg');
+    background-image: url("../../../assets/images/1746747.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    
   }
 }

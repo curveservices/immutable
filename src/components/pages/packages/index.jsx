@@ -1,10 +1,7 @@
-import './index.scss';
+import "./index.scss";
 
 const Packages = () => {
-  return ( 
-    <>
-    </>
-   );
-}
- 
+  return <></>;
+};
+
 export default Packages;

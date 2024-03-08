@@ -1,10 +1,7 @@
-import './index.scss';
+import "./index.scss";
 
 const SocialMarketing = () => {
-  return ( 
-    <>
-    </>
-   );
-}
- 
+  return <></>;
+};
+
 export default SocialMarketing;

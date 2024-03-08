@@ -1,10 +1,7 @@
-import './index.scss';
+import "./index.scss";
 
 const ChatBots = () => {
-  return ( 
-    <>
-    </>
-   );
-}
- 
+  return <></>;
+};
+
 export default ChatBots;

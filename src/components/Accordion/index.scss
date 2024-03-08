@@ -1,60 +1,60 @@
 .accordion {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 3rem;
- 
+  display: flex;
+  flex-flow: column wrap;
+  gap: 3rem;
 
-    .accordion-item {
-        width: 25%;
-        height: 50px;
-        margin: 0 5rem;
-        text-align: center;
-        cursor: pointer;
-    }
+  .accordion-item {
+    width: 25%;
+    height: 50px;
+    margin: 0 5rem;
+    text-align: center;
+    cursor: pointer;
+  }
 
-    .content-container {
-        position: absolute;
-        left: 45%;
-        top: 30%;
-        max-width: 35%;
-        max-height: 200px;
-        text-align: left;
-        animation: fadeIn 2s;
-    }
-    
-    .accordion-subtitle {
-        margin-bottom: 2rem;
-    
-    }
+  .content-container {
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    max-width: 35%;
+    max-height: 200px;
+    text-align: left;
+    animation: fadeIn 2s;
+  }
 
-    
+  .accordion-subtitle {
+    margin-bottom: 2rem;
+  }
 }
 .accordion-title {
-    --b: .1em;
-    --d: 10px;
+  --b: 0.1em;
+  --d: 10px;
 
-    --_s: calc(var(--d) + var(--b));
-    width: 100%;
+  --_s: calc(var(--d) + var(--b));
+  width: 100%;
 
-    border: solid #0000;
-    border-width: var(--b) var(--b) var(--_s) var(--_s);
-    background: var(--services-link);
-    transform: translate(calc(var(--d)/-1), var(--d));
-    clip-path: polygon(var(--d) 0%,
-            var(--d) 0%,
-            100% 0%,
-            100% calc(100% - var(--d)),
-            100% calc(100% - var(--d)),
-            var(--d) calc(100% - var(--d)));
-    transition: 0.5s;
+  border: solid #0000;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background: var(--services-link);
+  transform: translate(calc(var(--d) / -1), var(--d));
+  clip-path: polygon(
+    var(--d) 0%,
+    var(--d) 0%,
+    100% 0%,
+    100% calc(100% - var(--d)),
+    100% calc(100% - var(--d)),
+    var(--d) calc(100% - var(--d))
+  );
+  transition: 0.5s;
 
-    &:hover {
-        transform: translate(0, 0);
-        clip-path: polygon(0% var(--d),
-                var(--d) 0%,
-                100% 0%,
-                100% calc(100% - var(--d)),
-                calc(100% - var(--d)) 100%,
-                0% 100%);
-    }
+  &:hover {
+    transform: translate(0, 0);
+    clip-path: polygon(
+      0% var(--d),
+      var(--d) 0%,
+      100% 0%,
+      100% calc(100% - var(--d)),
+      calc(100% - var(--d)) 100%,
+      0% 100%
+    );
+  }
 }

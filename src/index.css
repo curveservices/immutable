@@ -1,13 +1,8 @@
 :root {
-  --primary: linear-gradient(to right,
-    #064895,
-    #2B66A7);
-  --secondary: linear-gradient(to right,
-    #ffffff,
-    #bbbbbb);
-  --third-bg: #2D75E1;
-  --services-link: radial-gradient(#6a9eda, 40%,
-    #2D5FE1);
+  --primary: linear-gradient(to right, #064895, #2b66a7);
+  --secondary: linear-gradient(to right, #ffffff, #bbbbbb);
+  --third-bg: #2d75e1;
+  --services-link: radial-gradient(#6a9eda, 40%, #2d5fe1);
   --global: 0px 20px 40px 5px rgba(0, 0, 0, 0.7);
   --box: 0px 40px 40px 20px rgba(0, 0, 0, 0.5);
   --button-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
@@ -35,6 +30,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-oxs-font-smoothing: grayscale;
 }
-
-
-

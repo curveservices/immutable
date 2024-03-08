@@ -1,9 +1,9 @@
 .about-page {
- position: relative;
+  position: relative;
   .hero {
-    .inner-hero{
+    .inner-hero {
       margin: 3rem;
-      padding-top:2rem;
+      padding-top: 2rem;
       height: 100vh;
       color: #fff;
 
@@ -30,18 +30,17 @@
           width: 50%;
           padding: 0 5rem;
           animation: fadeInRight 2s;
-        } 
+        }
       }
-    }  
+    }
   }
 
- .second-section {
-   background-image: url('../../../assets/images/light-bg.jpeg');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   height: 200vh;
+  .second-section {
+    background-image: url("../../../assets/images/light-bg.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200vh;
     .second-inner {
-      
     }
- }
+  }
 }

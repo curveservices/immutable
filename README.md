@@ -2,10 +2,9 @@
 
 # Project:
 
-## Live Demo 👉 
+## Live Demo 👉
 
 ## PC View 👇
-
 
 ## Overview
 
@@ -13,14 +12,14 @@
 
 ## Assets
 
-- 
+-
 
 ## Obejective
 
-1. 
-2. 
-3. 
-4. 
+1.
+2.
+3.
+4.
 
 ## Extra
 
@@ -38,10 +37,8 @@
     <img width="100" alt="Webpack"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" /></a>
 <a href="https://react.dev/">
     <img width="100" alt="REACT" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></a>
-          
 
 
-***<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 00-00-2023***
-
+**_<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 00-00-2023_**
 
 [Back to top 👆](#project)

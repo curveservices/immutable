@@ -1,9 +1,7 @@
-import './index.scss';
+import "./index.scss";
 
 const WebDesign = () => {
-  return ( 
-    <div className="webdesign"></div>
-   );
-}
- 
+  return <div className="webdesign"></div>;
+};
+
 export default WebDesign;
