@@ -192,14 +192,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section className="fith-section">
-        <div className="fith-inner">
-          <React.Suspense fallback={<Loader type = "line-spin-fade-loader" />} >
-            <Featured />
-          </React.Suspense>
-          
-        </div>
-      </section>
       <section className="cta">
         <CallToAction />
       </section>
