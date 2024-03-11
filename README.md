@@ -38,7 +38,6 @@
 <a href="https://react.dev/">
     <img width="100" alt="REACT" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></a>
 
-
 **_<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 00-00-2023_**
 
 [Back to top 👆](#project)

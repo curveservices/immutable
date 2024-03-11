@@ -12,18 +12,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartLine,
   faMobileScreenButton,
+  faPeopleGroup,
   faScrewdriverWrench,
   faTrophy,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [whyScroll, setWhyScroll] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 1900);
+        const scrollY = window.scrollY;
+        const scrollWhy = window.scrollY;
+        setIsScrolled(scrollY > 2600);
+        setWhyScroll(scrollWhy > 1500);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -99,8 +103,15 @@ const Services = () => {
       </section>
       <section className="third-section">
         <div className="third-inner">
-          <h1 className="title">WHY CHOOSE &#123; IMMUTABLE STUDIO &#125;</h1>
-          <div className="element-container">
+          <h1 className="title">Why Choose &#123; IMMUTABLE STUDIO &#125;</h1>
+                  <div className="element-container">
+                      <div className="elem-card">
+                          <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
+                          <p className="elem-title">Excellent Client Service</p>
+                          <p>Customer service is more than a commitment at Immutable Studio, it's a guiding principle that shapes every aspect of our interactions.
+                              From the initial consultation to the final delivery, we prioritize understanding our clients' unique visions and objectives.
+                          </p>
+                      </div>
             <div className="elem-card">
               <FontAwesomeIcon className="icon" icon={faTrophy} />
               <p className="elem-title">Unparalleled Design Excellence</p>
@@ -112,7 +123,7 @@ const Services = () => {
                 visuals.
               </p>
             </div>
-            <div className="elem-card">
+              <div className="elem-card">
               <FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />
               <p className="elem-title">Customized Solutions</p>
               <p>
@@ -133,42 +144,45 @@ const Services = () => {
                 visitors engaged and inspire them to take action.
               </p>
             </div>
-            <div className="elem-card">
-              <FontAwesomeIcon className="icon" icon={faMobileScreenButton} />
-              <p className="elem-title">Mobile-First</p>
-              <p>
-                In today's mobile-driven world, a responsive website is
-                essential for success. Our designs are optimized for all
-                devices, ensuring a flawless experience on smartphones, tablets,
-                and desktops. Your website will look stunning and perform
-                flawlessly across all platforms.
-              </p>
-            </div>
-            <div className="elem-card">
-              <FontAwesomeIcon className="icon" icon={faChartLine} />
-              <p className="elem-title">Conversion-Oriented Design</p>
-              <p>
-                We go beyond creating visually appealing websites. Our designs
-                are strategically crafted to drive conversions and achieve your
-                business goals. From intuitive call-to-actions to persuasive
-                content placement, we employ industry best practices to boost
-                your online performance.
-              </p>
-            </div>
+          
+              <div className="elem-card">
+                <FontAwesomeIcon className="icon" icon={faMobileScreenButton} />
+                <p className="elem-title">Mobile-First</p>
+                <p>
+                  In today's mobile-driven world, a responsive website is
+                  essential for success. Our designs are optimized for all
+                  devices, ensuring a flawless experience on smartphones,
+                  tablets, and desktops. Your website will look stunning and
+                  perform flawlessly across all platforms.
+                </p>
+              </div>
+              <div className="elem-card">
+                <FontAwesomeIcon className="icon" icon={faChartLine} />
+                <p className="elem-title">Conversion-Oriented Design</p>
+                <p>
+                  We go beyond creating visually appealing websites. Our designs
+                  are strategically crafted to drive conversions and achieve
+                  your business goals. From intuitive call-to-actions to
+                  persuasive content placement, we employ industry best
+                  practices to boost your online performance.
+                </p>
+              </div>
+            
           </div>
         </div>
       </section>
       <section className="forth-section">
         <div className="forth-inner">
           <div className="text-box">
-            <h1>STARTING PRICES</h1>
+            <h1>Transparent Pricing</h1>
             <p>
-              Take a look at our starting prices for professional web
-              development, AI chat bots and social media marketing, for more
-              options and pricing click to show more or contact us to start your
-              project.
+                At Immutable Studio we believe in transparency and building strong relationships with our clients.
+                That's why we offer straightforward pricing for our services. We understand the importance of budgeting, which is why we provide a breakdown of our pricing.
+                All of our packages can be expanded as your business grows so that your site always fits your needs.
             </p>
           </div>
+          <hr />
+          <h1 className="price-title">Check out our starter packages</h1>
           <div className={`${isScrolled ? "contentAnim" : "none"}`}>
             <PriceCard />
           </div>

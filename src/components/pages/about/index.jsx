@@ -2,12 +2,13 @@ import { useLayoutEffect } from "react";
 import Symbols from "../../Animations/symbols";
 import Button from "../../button";
 import Socials from "../../socials";
+import paul from "../../../assets/images/paul (2)-UZaRP6S7.png"
 import "./index.scss";
 
 const About = () => {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  });
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // });
   return (
     <div className="about-page">
       <section className="hero">
@@ -26,7 +27,7 @@ const About = () => {
               <p>
                 We are a proud south east London design studio specialising in
                 web development, design, social media marketing, and AI chat
-                bots. We aim to apply the best of our skills and enthusiasm to
+                bots. We apply the best of our skills to
                 your challenges and ideas.
               </p>
               <p>
@@ -36,9 +37,8 @@ const About = () => {
 
               <p>
                 Paul created the company in 2022 and has been delivering amazing
-                websites and AI solutions ever since. His nephew Harvey fresh
-                from the Uni of Westminster has come on board to deliver social
-                media marketing and strategies for our clients
+                websites and AI solutions ever since. His nephew Harvey specailises in social
+                media marketing and strategies.
               </p>
             </div>
           </div>
@@ -49,7 +49,18 @@ const About = () => {
           <div className="text-box">
             <h1>MEET THE TEAM</h1>
           </div>
-          <div className="team-container"></div>
+          <div className="team-container">
+            <div className="team-card">
+              <img src={paul} alt="" />
+              <div className="text-box">
+                <div className="name">Paul Rossiter</div>
+                <div className="desc"></div>
+              </div>
+            </div>
+            <img src="" alt="" />
+            <div className="team-card">Harvey Connall</div>
+            <div className="desc"></div>
+          </div>
         </div>
       </section>
     </div>

@@ -2,18 +2,18 @@
   .hero {
     .hero-inner {
       margin: 2em 3rem;
-      padding-top: 2rem;
-      height: 100vh;
+      padding: 4rem 1rem;
+      min-height: 100vh;
       color: #fff;
 
       .text-box {
-        padding: 4rem 0rem 0 2rem;
+        padding: 2rem ;
         width: 50%;
         animation: fadeInLeftBig 2s;
       }
 
       .cube-container {
-        top: 8%;
+        top: 6%;
         left: 55%;
       }
 
@@ -23,7 +23,7 @@
         width: 25%;
         position: absolute;
         right: 0;
-        top: 2.8%;
+        top: 2%;
         gap: 25px;
         margin: 0 3rem;
         animation: bounceInDown 2s;
@@ -91,12 +91,13 @@
       }
     }
   }
+
   .third-section {
-    height: 150vh;
+    min-height: 100vh;
+
     .third-inner {
       color: #fff;
-      margin: 2rem;
-      height: 100vh;
+      padding: 2rem 1rem;
 
       .title {
         padding: 3rem;
@@ -104,17 +105,33 @@
       }
 
       .element-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+        grid-gap: 2em 3rem;
+        margin: 0;
         width: 100%;
-        flex-grow: 0;
-        align-self: initial;
-        gap: 5em;
-      }
+        height: 75%;
+        padding: 1rem 5rem;
 
-      .elem-card {
-        display: flex;
-        flex-flow: column wrap;
-        width: 40%;
+
+        .elem-card {
+          display: flex;
+          flex-flow: column;          
+          text-align: center;
+          background: var(--primary);
+          border: 2px solid;
+          border-radius: 10px;
+          padding: 1rem;
+          
+          .elem-title {
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+        
+          .icon {
+            font-size: 32px;
+          }
+        }
       }
     }
   }
@@ -122,11 +139,23 @@
   .forth-section {
     background-image: url("../../../assets/images/1746747.jpg");
     box-shadow: var(--global);
-    height: 150vh;
+    min-height: 180vh;
 
     .forth-inner {
+      padding: 2rem;
+
       .none {
         display: none;
+      }
+
+      .text-box {
+        padding: 2rem 5rem;
+        text-align: center;
+      }
+
+      .price-title {
+        padding: 2rem 5rem;
+        text-align: center;
       }
 
       .price-card {
@@ -135,12 +164,17 @@
       }
 
       .contentAnim {
-        animation: backInUp 1s forwards;
-        background: var(--primary);
-        overflow: hidden;
-        margin: 0 2rem;
-        padding: 4rem 1rem;
+        animation: fadeInUp 2s forwards;
+        margin: 2rem;
+        padding: 1rem 0rem;
       }
+    }
+  }
+
+  .fith-section {
+    min-height: 100vh;
+    .fith-inner {
+      padding: 3rem;
     }
   }
 
