@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import StaticCubes from "../../Animations/staticCubes";
-import Symbols from "../../Animations/symbols";
+import React from "react";
 import Button from "../../button";
-import PriceCard from "../../cards/price";
 import CallToAction from "../../CTA";
-import Featured from "../featured";
 import img1 from "../../../assets/images/service-1.jpeg";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,6 +14,11 @@ import {
   faTrophy,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
+import Loader from "react-loaders";
+const StaticCubes = React.lazy(() => import('../../Animations/staticCubes'));
+const Symbols = React.lazy(() => import('../../Animations/symbols'));
+const PriceCard = React.lazy(() => import('../../cards/price'));
+const Featured = React.lazy(() => import('../featured'))
 
 const Services = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -52,8 +54,7 @@ const Services = () => {
             </p>
             <Button text="start now" link="contact" />
           </div>
-
-          <Symbols />
+            <Symbols />
           <div className="link-container">
             <div className="service-link">
               <NavLink to="web-development">
@@ -184,13 +185,19 @@ const Services = () => {
           <hr />
           <h1 className="price-title">Check out our starter packages</h1>
           <div className={`${isScrolled ? "contentAnim" : "none"}`}>
-            <PriceCard />
+            <React.Suspense fallback={<Loader type="line-spin-fade-loader" />}>
+              <PriceCard />
+            </React.Suspense>
+            
           </div>
         </div>
       </section>
       <section className="fith-section">
         <div className="fith-inner">
-          <Featured />
+          <React.Suspense fallback={<Loader type = "line-spin-fade-loader" />} >
+            <Featured />
+          </React.Suspense>
+          
         </div>
       </section>
       <section className="cta">
