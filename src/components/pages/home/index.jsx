@@ -5,7 +5,6 @@ import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
 import { useLayoutEffect, useState } from "react";
 import Symbols from "../../Animations/symbols";
-import Card from "../../cards/work";
 import "./index.scss";
 import CallToAction from "../../CTA";
 import Featured from "../featured";
@@ -69,7 +68,7 @@ const Home = () => {
       <section className="cta">
         <CallToAction />
       </section>
-    </div>
+      </div>
   );
 };
 

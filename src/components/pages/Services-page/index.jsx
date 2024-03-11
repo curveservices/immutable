@@ -38,7 +38,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="serivces-page">
+      <div className="serivces-page">
       <section className="hero">
         <div className="hero-inner">
           <div className="text-box">

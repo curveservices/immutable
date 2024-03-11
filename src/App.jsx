@@ -4,28 +4,41 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import React from "react";
 import "./App.scss";
-
-import About from "./components/pages/about";
-import Home from "./components/pages/home";
 import Layout from "./components/layout";
-import Services from "./components/pages/services-page";
 import NotFound from "./components/pages/404";
-import Contact from "./components/pages/contact";
 import WebDev from "./components/pages/web-dev";
 import WebDesign from "./components/pages/web-design";
 import Packages from "./components/pages/packages";
 import Chatbots from "./components/pages/chat-bots";
 import SocialMarketing from "./components/pages/social-marketing";
+import Loader from "react-loaders";
+const Home = React.lazy(() => import('./components/pages/home'))
+const About = React.lazy(() => import('./components/pages/about'))
+const Services = React.lazy(() => import('./components/pages/services-page'))
+const Contact = React.lazy(() => import('./components/pages/contact'))
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="services" element={<Services />} />
+        <Route index element={
+          <React.Suspense fallback={<Loader type="line-spin-fade-loader"/> }>
+            <Home />
+        </React.Suspense>} />
+        <Route path="about" element={
+          <React.Suspense fallback={<Loader type="line-spin-fade-loader" />}>
+            <About />
+          </React.Suspense>} />
+        <Route path="contact" element={
+          <React.Suspense fallback={<Loader type="line-spin-fade-loader" />}>
+          <Contact />
+        </React.Suspense>} />
+        <Route path="services" element={
+          <React.Suspense fallback={<Loader type="line-spin-fade-loader" />}>
+          <Services />
+        </React.Suspense>} />
         <Route path=":id/web-development" element={<WebDev />} />
         <Route path=":id/design-service" element={<WebDesign />} />
         <Route path=":id/packages" element={<Packages />} />

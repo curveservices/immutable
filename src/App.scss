@@ -4,3 +4,20 @@
   font-family: "Coolvetica";
   src: url("./assets/fonts/CoolveticaRg-Regular.woff") format("woff");
 }
+
+@import 'loaders.css/src/animations/line-spin-fade-loader.scss';
+
+.loader-active {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 10%;
+  bottom: 0;
+  width: 50px;
+  height: auto;
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
