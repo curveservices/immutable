@@ -16,7 +16,7 @@ import SocialMarketing from "./components/pages/social-marketing";
 import Loader from "react-loaders";
 const Home = React.lazy(() => import('./components/pages/home'))
 const About = React.lazy(() => import('./components/pages/about'))
-const Services = React.lazy(() => import('./components/pages/services-page'))
+const Services = React.lazy(() => import('./components/pages/servicesPage'))
 const Contact = React.lazy(() => import('./components/pages/contact'))
 
 const router = createBrowserRouter(
