@@ -1,15 +1,20 @@
 .serivces-page {
+  position: relative;
   .hero {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    
     .hero-inner {
       margin: 2em 3rem;
       padding: 4rem 1rem;
-      min-height: 100vh;
+      
       color: #fff;
 
       .text-box {
-        padding: 2rem ;
+        padding: 2rem;
         width: 50%;
-        animation: fadeInLeftBig 2s;
+        animation: fadeInLeftBig 2s forwards;
       }
 
       .cube-container {
@@ -113,21 +118,20 @@
         height: 75%;
         padding: 1rem 5rem;
 
-
         .elem-card {
           display: flex;
-          flex-flow: column;          
+          flex-flow: column;
           text-align: center;
           background: var(--primary);
           border: 2px solid;
           border-radius: 10px;
           padding: 1rem;
-          
+
           .elem-title {
             font-weight: 900;
             text-transform: uppercase;
           }
-        
+
           .icon {
             font-size: 32px;
           }
@@ -184,3 +188,4 @@
     background-size: cover;
   }
 }
+

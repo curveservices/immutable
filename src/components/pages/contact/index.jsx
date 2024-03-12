@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { useLayoutEffect, useRef } from "react";
 import Socials from "../../socials";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import Loader from "react-loaders";
 
 const Contact = () => {
   const refForm = useRef();
@@ -31,6 +32,7 @@ const Contact = () => {
     window.scrollTo(0, 0);
   });
   return (
+    <>
     <div className="contact-page">
       <section className="text-box">
         <h1>CONTACT US</h1>
@@ -104,7 +106,9 @@ const Contact = () => {
           </Marker>
         </MapContainer>
       </div>
-    </div>
+      </div>
+      <Loader type="ball-spin-fade-loader"/>
+    </>
   );
 };
 

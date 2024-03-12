@@ -1,19 +1,20 @@
 .home-page {
+  position: relative;
   .hero {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
 
     .right-hero {
       color: #fff;
-      padding: 4rem;
+      padding: 4rem 1rem;
       width: 50%;
-      margin-top: 4rem;
+      margin: 4rem 1rem;
     }
 
     .text-box {
       margin-bottom: 1rem;
-      animation: fadeInRightBig 2s;
+      animation: fadeInRightBig 2s forwards;
     }
   }
 

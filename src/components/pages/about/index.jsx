@@ -2,14 +2,16 @@ import { useLayoutEffect } from "react";
 import Symbols from "../../Animations/symbols";
 import Button from "../../button";
 import Socials from "../../socials";
-import paul from "../../../assets/images/paul (2)-UZaRP6S7.png"
+import paul from "../../../assets/images/paul (2)-UZaRP6S7.png";
 import "./index.scss";
+import Loader from "react-loaders";
 
 const About = () => {
   // useLayoutEffect(() => {
   //   window.scrollTo(0, 0);
   // });
   return (
+    <>
     <div className="about-page">
       <section className="hero">
         <div className="inner-hero">
@@ -27,8 +29,8 @@ const About = () => {
               <p>
                 We are a proud south east London design studio specialising in
                 web development, design, social media marketing, and AI chat
-                bots. We apply the best of our skills to
-                your challenges and ideas.
+                bots. We apply the best of our skills to your challenges and
+                ideas.
               </p>
               <p>
                 We are passionate about tech, design, problem solving and
@@ -37,8 +39,8 @@ const About = () => {
 
               <p>
                 Paul created the company in 2022 and has been delivering amazing
-                websites and AI solutions ever since. His nephew Harvey specailises in social
-                media marketing and strategies.
+                websites and AI solutions ever since. His nephew Harvey
+                specailises in social media marketing and strategies.
               </p>
             </div>
           </div>
@@ -63,7 +65,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      </div>
+    </div>
+    <Loader type="ball-spin-fade-loader" />
+    </>
   );
 };
 

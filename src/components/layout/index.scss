@@ -12,7 +12,6 @@
   .about-page,
   .serivces-page,
   .contact-page {
-    animation: fadeIn 3s forwards;
     h1 {
       font-size: 48px;
       font-weight: normal;
@@ -26,6 +25,12 @@
       min-width: fit-content;
       line-height: 1.5;
       font-weight: 500;
+    }
+
+    .stage-cube-cont,
+    .wrapper,
+    .letter-contianer {
+      animation: fadeIn 3s forwards;
     }
   }
 }
