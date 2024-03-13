@@ -1,12 +1,4 @@
-import {
-  faEnvelope,
-  faHome,
-  faToolbox,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
-
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
 import "./index.scss";
@@ -56,7 +48,7 @@ const Navbar = () => {
           activeclassname="active"
           exact="true"
         >
-          SERVICES
+          SERVICES 
         </NavLink>
         <NavLink
           to="contact"

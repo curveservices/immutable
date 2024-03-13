@@ -7,11 +7,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  animation: fadeIn 4s forwards;
 
   .home-page,
   .about-page,
   .serivces-page,
-  .contact-page {
+  .contact-page,
+  .webdev-page {
     h1 {
       font-size: 48px;
       font-weight: normal;
