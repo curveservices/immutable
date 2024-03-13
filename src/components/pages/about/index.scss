@@ -6,7 +6,7 @@
     min-height: 100vh;
     .inner-hero {
       margin: 2em 3rem;
-      padding: 4rem 1rem;
+      padding: 3rem 2rem;
       
       color: #fff;
 
@@ -18,7 +18,7 @@
       }
 
       .text-box {
-        width: 45%;
+        width: 40%;
 
         .title {
           animation: fadeInLeft 2s forwards;
@@ -27,7 +27,7 @@
         .right-hero {
           position: absolute;
           right: 0;
-          top: 5%;
+          top: 6%;
           width: 50%;
           padding: 3rem 5rem;
           animation: fadeInRight 2s forwards;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import StaticCubes from "../../Animations/staticCubes";
 import Symbols from "../../Animations/symbols";
@@ -17,18 +17,14 @@ import {
   faTrophy,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
-import Loader from "react-loaders";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [whyScroll, setWhyScroll] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const scrollWhy = window.scrollY;
       setIsScrolled(scrollY > 2600);
-      setWhyScroll(scrollWhy > 1500);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,6 +32,10 @@ const Services = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -61,11 +61,6 @@ const Services = () => {
               <div className="service-link">
                 <NavLink to="web-development">
                   <h3>WEB DEVELOPMENT</h3>
-                </NavLink>
-              </div>
-              <div className="service-link">
-                <NavLink to="design-service">
-                  <h3>DESIGN SERVICES</h3>
                 </NavLink>
               </div>
               <div className="service-link">
@@ -209,7 +204,6 @@ const Services = () => {
           <CallToAction />
         </section>
       </div>
-      <Loader type="ball-spin-fade-loader"/>
     </>
   );
 };

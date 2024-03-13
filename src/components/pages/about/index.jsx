@@ -7,9 +7,9 @@ import "./index.scss";
 import Loader from "react-loaders";
 
 const About = () => {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // });
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
     <div className="about-page">
@@ -60,7 +60,7 @@ const About = () => {
               </div>
             </div>
             <img src="" alt="" />
-            <div className="team-card">Harvey Connall</div>
+            <div className="team-card">Harvey Connell</div>
             <div className="desc"></div>
           </div>
         </div>

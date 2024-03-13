@@ -8,7 +8,7 @@
   .text-box {
     width: 50%;
     color: #fff;
-    padding: 4rem;
+    padding: 6.2rem 4rem;
     animation: fadeInLeft 2s forwards;
   }
 
@@ -92,7 +92,7 @@
   .info-map {
     position: absolute;
     background: #000;
-    top: 100px;
+    top: 50px;
     right: 30px;
     z-index: 99999;
     width: 300px;
@@ -103,7 +103,7 @@
     font-size: 18px;
     font-weight: 300;
     opacity: 0;
-    animation: fadeIn 1s 1s;
+    animation: fadeIn 2s 2s;
     animation-fill-mode: forwards;
 
     span {
@@ -119,7 +119,7 @@
   background: rgba(9, 252, 216, 0.1);
   float: right;
   width: 49%;
-  padding-top: 3rem;
+  padding-top: 2rem;
   animation: backInRight 1s 1s;
   opacity: 0;
   animation-fill-mode: forwards;

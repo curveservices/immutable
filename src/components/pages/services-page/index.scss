@@ -12,7 +12,7 @@
       color: #fff;
 
       .text-box {
-        padding: 2rem;
+        padding: 4rem 2rem;
         width: 50%;
         animation: fadeInLeftBig 2s forwards;
       }
@@ -28,7 +28,7 @@
         width: 25%;
         position: absolute;
         right: 0;
-        top: 2%;
+        top: 3%;
         gap: 25px;
         margin: 0 3rem;
         animation: bounceInDown 2s;
@@ -160,11 +160,6 @@
       .price-title {
         padding: 2rem 5rem;
         text-align: center;
-      }
-
-      .price-card {
-        color: #000;
-        background: var(--secondary);
       }
 
       .contentAnim {

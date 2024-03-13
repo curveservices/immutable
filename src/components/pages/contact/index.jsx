@@ -30,7 +30,7 @@ const Contact = () => {
   };
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   return (
     <>
     <div className="contact-page">
