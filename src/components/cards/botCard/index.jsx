@@ -1,9 +1,10 @@
 import '../webDevelopment/';
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
+import { db } from '../../../firbase'
 import Button from "../../button";
 
-const ChattBotCard = () => {
+const ChatBotCard = () => {
     const [priceCard, setPriceCard] = useState([]);
 
     const fetchData = async () => {
@@ -69,4 +70,4 @@ const ChattBotCard = () => {
     );
 }
  
-export default ChattBotCard;
+export default ChatBotCard;

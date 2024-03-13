@@ -14,7 +14,7 @@ import NotFound from "./components/pages/404";
 import Contact from "./components/pages/contact";
 import WebDev from "./components/pages/webDev";
 import Packages from "./components/pages/packages";
-import Chatbots from "./components/pages/chat-bots";
+import Chatbots from "./components/pages/chatBots";
 import SocialMarketing from "./components/pages/social-marketing";
 
 const router = createBrowserRouter(

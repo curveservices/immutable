@@ -1,7 +1,6 @@
 import {
   faCss3Alt,
   faFigma,
-  faGit,
   faGitAlt,
   faHtml5,
   faJs,

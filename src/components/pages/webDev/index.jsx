@@ -41,7 +41,7 @@ const WebDev = () => {
               ensuring businesses achieve distinctive online success through custom solutions.
             </p>
             <h2>We build custom responsive websites from just £495</h2>
-            <Button text="Speak to us today"/>
+            <Button text="Speak to us today" link='/contact'/>
           </div>
           <StaticCubes/>
           <Symbols />
@@ -74,7 +74,10 @@ const WebDev = () => {
               emphasizing flexibility and alignment with your goals.
             </p>
           </div>
-          <div className={`${isScrolled ? "contentAnim" : "none"}`}>
+          <div
+            className={`${isScrolled ? "contentAnim" : "none"}`}
+            id="web-price"  
+          >
             <WebDevPrice />
           </div>
         </div>
