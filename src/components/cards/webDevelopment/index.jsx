@@ -17,7 +17,6 @@ const WebDevPrice = () => {
                     id: element.id,
                     title: data.title,
                     price: data.price,
-                    link: data.link,
                     li1: data.li1,
                     li2: data.li2,
                     li3: data.li3,

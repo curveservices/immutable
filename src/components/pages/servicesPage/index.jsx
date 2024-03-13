@@ -64,11 +64,6 @@ const Services = () => {
                 </NavLink>
               </div>
               <div className="service-link">
-                <NavLink to="packages">
-                  <h3>PACKAGES</h3>
-                </NavLink>
-              </div>
-              <div className="service-link">
                 <NavLink to="chat-bots">
                   <h3>AI CHAT BOTS</h3>
                 </NavLink>
@@ -76,6 +71,11 @@ const Services = () => {
               <div className="service-link">
                 <NavLink to="social-media-marketing">
                   <h3>SOCIAL MEDIA MARKETING</h3>
+                </NavLink>
+              </div>
+              <div className="service-link">
+                <NavLink to="packages">
+                  <h3>PACKAGES</h3>
                 </NavLink>
               </div>
             </div>
