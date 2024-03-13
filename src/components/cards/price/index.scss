@@ -8,7 +8,7 @@
 .price-card {
   flex: 1 1 30%;
   overflow: hidden;
-  max-width: calc(30% - 10px);
+  max-width: calc(50% - 10px);
   padding-bottom: 2rem;
   box-shadow: var(--global);
   background: var(--secondary);
@@ -27,7 +27,7 @@
 
   ul {
     max-height: 250px;
-    padding: 0.5rem;
+    padding: 1rem;
 
     li {
       min-width: fit-content;

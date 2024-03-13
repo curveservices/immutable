@@ -6,8 +6,9 @@
 }
 
 .web-price-card {
-    flex: 1 1 40%;
-    max-width: calc(40% - 25px);
+    flex: 1 1 30%;
+    max-width: calc(40% - 10px);
+    height: 750px;
     padding-bottom: 2rem;
     box-shadow: var(--global);
     background: var(--secondary);
