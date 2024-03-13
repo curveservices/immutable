@@ -16,15 +16,16 @@ const About = () => {
       <section className="hero">
         <div className="inner-hero">
           <div className="text-box">
-            <Symbols />
-            <h1 className="title">
-              Who are Immutable studio? And what do they do?
-            </h1>
-            <div className="btn-container">
-              <Socials />
-              <Button link="contact" text="Hire us" />
-            </div>
-
+              <Symbols />
+              <div className="left-hero">
+                <h1 className="title">
+                  Who are Immutable studio? And what do they do?
+                </h1>
+                <div className="btn-container">
+                  <Socials />
+                  <Button link="contact" text="Hire us" />
+                </div>
+              </div>
             <div className="right-hero">
               <p>
                 We are a proud south east London design studio specialising in
