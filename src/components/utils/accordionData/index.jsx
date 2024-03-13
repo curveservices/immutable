@@ -37,6 +37,6 @@ export const accordionData = [
     title: "PACKAGES",
     subtitle: "Multi page websites - Landing pages - Promo sites - SPA's - Chatbots - Social Media" ,
     content:
-      "At Immutable Studio we believe in transparency and building strong relationships with our clients. That's why we offer straightforward pricing for our services. We understand the importance of budgeting, which is why we provide a breakdown of our pricing. All of our packages can be expanded as your business grows so that your site always fits your needs.",
+      "At Immutable Studio prioritizes transparent communication and client relationships, offering clear pricing and budget-friendly breakdowns. Our scalable packages ensure your site evolves with your business, always meeting your needs.",
   },
 ];
