@@ -30,9 +30,10 @@ const WebDev = () => {
         <div className="inner-hero">
           <div className="text-box">
             <h1>Web Development</h1>
-            <p>If you want to stand out in a competitive niche, get your business to the next level,
-              and reach a larger audience, you will need a great web presence for your business.
-              Immutable Studio is a web development agency that delivers custom web development solutions for businesses.
+            <p>
+              For a competitive edge, business elevation, and broader audience reach,
+              a compelling web presence is essential. Immutable Studio specializes in tailoring web development solutions,
+              ensuring businesses achieve distinctive online success through custom solutions.
             </p>
           </div>
           <StaticCubes/>
@@ -41,8 +42,17 @@ const WebDev = () => {
       </section>
       <section className="second-section">
         <div className="second-inner">
-          <h1></h1>
+          <div className="text-box">
+            <h1>CHECK OUT OUR RANGE OF CUSTOM OR WORDPRESS WEBSITE PACKAGES</h1>
+            <p>
+              We prioritize transparent communication and strong client relationships.
+              Our services feature clear, budget-friendly pricing with detailed breakdowns.
+              As your business grows, our scalable packages ensure your website consistently meets evolving needs,
+              emphasizing flexibility and alignment with your goals.
+            </p>
+          </div>
           <div className={`${isScrolled ? "contentAnim" : "none"}`}>
+            <h1></h1>
             <WebDevPrice />
           </div>
         </div>

@@ -26,12 +26,19 @@
 
     .second-section {
         background-image: url("../../../assets/images/1746747.jpg");
+        background-attachment: fixed;
         box-shadow: var(--global);
-        min-height: 150vh;
+        min-height: 200vh;
         .second-inner {
             display: flex;
-            margin: 0rem;
-            padding: 4rem 1rem;
+            flex-direction: column;
+            margin: 0;
+            padding: 4rem 2rem;
+
+            .text-box {
+                text-align: center;
+                padding: 0 8rem;
+            }
 
             .none {
                 display: none;
