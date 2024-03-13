@@ -7,14 +7,14 @@ export const accordionData = [
     content:
       "We will create custom corporate & startup websites to suit your needs. If you're looking for a landing page or promo site we have you covered. Our services also iclude CMS platforms such as wordpress, squarespace and webFlow.",
   },
-  {
-    id: 1,
-    link: "design-service",
-    title: "DESIGN SERVICES",
-    subtitle: "Sketch - Creative Suite  - Figma",
-    content:
-      "Our design team will produce custom website and mobile wireframe design and UX, UI design.",
-  },
+  // {
+  //   id: 1,
+  //   link: "design-service",
+  //   title: "DESIGN SERVICES",
+  //   subtitle: "Sketch - Creative Suite  - Figma",
+  //   content:
+  //     "Our design team will produce custom website and mobile wireframe design and UX, UI design.",
+  // },
   {
     id: 2,
     link: "packages",
