@@ -9,7 +9,7 @@ import "./App.scss";
 import About from "./components/pages/about";
 import Home from "./components/pages/home";
 import Layout from "./components/layout";
-import Services from "./components/pages/services-page";
+import Services from "./components/pages/servicesPage";
 import NotFound from "./components/pages/404";
 import Contact from "./components/pages/contact";
 import WebDev from "./components/pages/webDev";
