@@ -24,6 +24,10 @@
   .accordion-subtitle {
     margin-bottom: 2rem;
   }
+
+  .read-btn {
+    animation: shakeX 1s 2s;
+  }
 }
 .accordion-title {
   --b: 0.1em;
