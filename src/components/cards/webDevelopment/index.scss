@@ -8,8 +8,7 @@
 .web-price-card {
     flex: 1 1 30%;
     max-width: calc(40% - 10px);
-    height: 750px;
-    padding-bottom: 2rem;
+    height: 700px;
     box-shadow: var(--global);
     background: var(--secondary);
     color: #000;
@@ -40,7 +39,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        padding-top: 1rem;
        
     }
  }

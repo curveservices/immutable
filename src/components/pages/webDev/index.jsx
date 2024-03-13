@@ -4,14 +4,19 @@ import CallToAction from "../../CTA";
 import "./index.scss";
 import { useEffect, useLayoutEffect, useState } from "react";
 import WebDevPrice from "../../cards/webDevelopment";
+import img1 from '../../../assets/images/service-1.jpeg'
+import Button from "../../button";
 
 const WebDev = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [second, setSecond] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 200);
+      const scrollPrice = window.scrollY;
+      const scrollSecond = window.scrollY;
+      setSecond(scrollSecond > 150)
+      setIsScrolled(scrollPrice > 1000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -35,6 +40,8 @@ const WebDev = () => {
               a compelling web presence is essential. Immutable Studio specializes in tailoring web development solutions,
               ensuring businesses achieve distinctive online success through custom solutions.
             </p>
+            <h2>We build custom responsive websites from just £495</h2>
+            <Button text="Speak to us today"/>
           </div>
           <StaticCubes/>
           <Symbols />
@@ -42,6 +49,22 @@ const WebDev = () => {
       </section>
       <section className="second-section">
         <div className="second-inner">
+          <div className={`${second ? "animSecond" : "second-none"}`}>
+              <h1>
+                Transform your online presence with expert design solutions
+              </h1>
+              <p>
+              Frustrated with an outdated website that lacks engagement and conversions?
+              Immutable Studio excels in crafting visually stunning, functional websites,
+              elevating your online presence. Our skilled web designers blend creativity, technical know-how,
+              and industry insight to deliver exceptional results aligned with your business objectives.
+              </p>
+            </div>
+            <img src={img1} alt="computer screen" className={`${second ? "animSecondimg" : "second-none"}`} />
+        </div>
+      </section>
+      <section className="third-section">
+        <div className="third-inner">
           <div className="text-box">
             <h1>CHECK OUT OUR RANGE OF CUSTOM OR WORDPRESS WEBSITE PACKAGES</h1>
             <p>
@@ -52,7 +75,6 @@ const WebDev = () => {
             </p>
           </div>
           <div className={`${isScrolled ? "contentAnim" : "none"}`}>
-            <h1></h1>
             <WebDevPrice />
           </div>
         </div>
