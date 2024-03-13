@@ -1,0 +1,53 @@
+.webdev-page {
+    position: relative;
+
+    .hero {
+        min-height: 100vh;
+        .inner-hero {
+            margin: 2em 3rem;
+            padding: 4rem 1rem;
+            
+            color: #fff;
+
+            .text-box {
+                padding: 4rem 2rem;
+                width: 60%;
+                animation: fadeInLeftBig 2s forwards;
+            }
+
+            .cube-container {
+                top: 8%;
+                left: 75%;
+            }
+        }
+        
+     
+    }
+
+    .second-section {
+        background-image: url("../../../assets/images/1746747.jpg");
+        box-shadow: var(--global);
+        min-height: 150vh;
+        .second-inner {
+            display: flex;
+            margin: 0rem;
+            padding: 4rem 1rem;
+
+            .none {
+                display: none;
+            }
+
+            .contentAnim {
+                animation: backInUp 1s forwards;
+                margin: 2rem;
+                padding: 1rem 0rem;
+            }
+        }
+    }
+
+    .cta {
+        background-image: url("../../../assets/images/1746747.jpg");
+        box-shadow: var(--global);
+        margin-top: 10rem;
+    }
+}
