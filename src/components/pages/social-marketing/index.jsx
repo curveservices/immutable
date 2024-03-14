@@ -1,9 +1,11 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import Symbols from "../../Animations/symbols";
 import Button from "../../button";
-import img1 from '../../../assets/images/social.jpeg';
+import imgSocial from '../../../assets/images/social.jpeg';
 import "./index.scss";
 import CallToAction from "../../CTA";
+import SocialCard from "../../cards/socialCard";
+import StaticCubes from "../../Animations/staticCubes";
 
 const SocialMarketing = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +15,7 @@ const SocialMarketing = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 150)
+      setSecond(scrollSecond > 350)
       setIsScrolled(scrollPrice > 1000);
     };
 
@@ -28,11 +30,11 @@ const SocialMarketing = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="soical-page">
+    <div className="social-page">
       <section className="hero">
         <div className="inner-hero">
           <div className="text-box">
-            <h1>SOCIAL MEDIA MARKETING</h1>
+            <h1>Social Media Marketing</h1>
             <p>
               Our proficient media content team is available to assist in creating ad campaigns
               and social content, leveraging the latest trends and analytics to propel your social projects forward.
@@ -40,6 +42,7 @@ const SocialMarketing = () => {
             <h2>Social media templates start from just £80</h2>
             <Button text="Speak with us today" />
           </div>
+          <StaticCubes />
           <Symbols />
         </div>
       </section>
@@ -54,7 +57,7 @@ const SocialMarketing = () => {
               meaningful connections, and ongoing online success for your business.
             </p>
           </div>
-          <img src={img1} alt="social media" className={`${second ? "animSecondimg" : "second-none"}`} />
+          <img src={imgSocial} alt="social media" className={`${second ? "animSecondimg" : "second-none"}`} />
         </div>
       </section>
       <section className="third-section">
@@ -68,12 +71,13 @@ const SocialMarketing = () => {
               emphasizing flexibility and alignment with your goals as your business expands.
             </p>
           </div>
-        </div>
-        <div
-          className={`${isScrolled ? "contentAnim" : "none"}`}
-          id="social-price"
-        >
+          <div
+            className={`${isScrolled ? "contentAnim" : "none"}`}
+            id="social-price"
+          >
+            <SocialCard />
           </div>
+        </div>
       </section>
       <section className="cta">
         <CallToAction />

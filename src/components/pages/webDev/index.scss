@@ -30,6 +30,7 @@
       gap: 2rem;
       margin: 0rem;
       padding: 4rem;
+      min-height: 75vh;
 
       .animSecond {
           animation: fadeInLeft 1s forwards;
@@ -42,7 +43,7 @@
       }
 
       .animSecondimg {
-          animation: fadeInRight 1s forwards ease-in-out;
+          animation: fadeInRight 1s forwards;
           width: 40%;
       }
 
@@ -71,7 +72,6 @@
                 padding: 0 8rem;
                 color: #fff;
             }
-
             .none {
                 display: none;
             }

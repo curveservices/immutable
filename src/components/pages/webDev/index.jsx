@@ -15,7 +15,7 @@ const WebDev = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 150)
+      setSecond(scrollSecond > 350)
       setIsScrolled(scrollPrice > 1000);
     };
 
