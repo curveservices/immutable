@@ -37,7 +37,7 @@
                 padding: 0 1rem;
     
                 p {
-                    padding-top: 3rem;
+                    padding-top: 2rem;
                 }
             }
     
@@ -49,20 +49,44 @@
             .second-none {
                 display: none;
             }
-    
-            img {
-                width: 550px;
-                height: 400px;
-                object-fit: fill;
-                opacity: 0.9;
-    
-            }
-    
+
             .text-box {
                 padding: 0 2rem 0 5rem;
                 width: 70%;
                 color: #000;
             }
         }
+    }
+
+    .third-section {
+        min-height: 100vh;
+    
+        .third-inner {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 4rem 2rem;
+    
+            .text-box {
+                text-align: center;
+                padding: 0 8rem;
+                color: #fff;
+            }
+    
+            .none {
+                display: none;
+            }
+    
+            .contentAnim {
+                animation: backInUp 1s forwards;
+                margin: 2rem;
+            }
+        }
+    }
+
+    .cta {
+        background-image: url("../../../assets/images/1746747.jpg");
+        box-shadow: var(--global);
+        margin-top: 10rem;
     }
 }

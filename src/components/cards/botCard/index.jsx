@@ -1,4 +1,4 @@
-import '../webDevelopment/';
+import './index.scss';
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from '../../../firbase'
@@ -37,7 +37,7 @@ const ChatBotCard = () => {
         fetchData();
     }, []);
     return (
-        <div className="bot-card-container">
+        <div className="web-card-container">
             {priceCard.map((item) => {
                 return (
                     <div className="web-price-card" key={item.id}>

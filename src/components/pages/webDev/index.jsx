@@ -76,7 +76,7 @@ const WebDev = () => {
           </div>
           <div
             className={`${isScrolled ? "contentAnim" : "none"}`}
-            id="web-price"  
+            id="web-price"
           >
             <WebDevPrice />
           </div>

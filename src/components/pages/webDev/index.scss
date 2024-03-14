@@ -42,20 +42,12 @@
       }
 
       .animSecondimg {
-          animation: fadeInRight 1s forwards;
+          animation: fadeInRight 1s forwards ease-in-out;
           width: 40%;
       }
 
       .second-none {
           display: none;
-      }
-
-      img {
-        width: 550px;
-        height: 400px;
-        object-fit: fill;
-        opacity: 0.9;
-      
       }
 
       .text-box {

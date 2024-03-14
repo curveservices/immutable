@@ -35,7 +35,7 @@ export const accordionData = [
     id: 4,
     link: "packages",
     title: "PACKAGES",
-    subtitle: "Multi page websites - Landing pages - Promo sites - SPA's - Chatbots - Social Media" ,
+    subtitle: "Multi page websites - Landing - Promo - SPA's - Chatbots - Social Media" ,
     content:
       "At Immutable Studio prioritizes transparent communication and client relationships, offering clear pricing and budget-friendly breakdowns. Our scalable packages ensure your site evolves with your business, always meeting your needs.",
   },

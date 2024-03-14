@@ -64,14 +64,18 @@ const ChatBots = () => {
       <section className="third-section">
         <div className="third-inner">
           <div className="text-box">
-            <h1>CHECK OUT OUR RANGE OF CUSTOM BUILT CHATBOT PACKAGES</h1>
+            <h1>CHECK OUT OUR CUSTOM CHATBOT PACKAGES</h1>
             <p>
               We emphasize clear communication and robust client relationships.
               Our services include transparent, budget-friendly pricing with detailed breakdowns.
               With scalable packages, we guarantee your website chatbot adapts to evolving business needs,
-              highlighting flexibility and alignment with your goals as you grow.</p>
+              highlighting flexibility and alignment with your goals as you grow.
+            </p>
           </div>
-          <div className={`${isScrolled ? "contentAnim" : "none"}`}>
+          <div
+            className={`${isScrolled ? "contentAnim" : "none"}`}
+            id="bot-price"
+          >
             <ChatBotCard />
           </div>
         </div>
