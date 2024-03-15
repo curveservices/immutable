@@ -6,7 +6,7 @@ import Button from "../../button";
 import PriceCard from "../../cards/price";
 import CallToAction from "../../CTA";
 import Featured from "../featured";
-import img1 from "../../../assets/images/service-1.jpeg";
+import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,11 +20,14 @@ import {
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [second, setSecond] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 2600);
+      const scrollPrice = window.scrollY;
+      const scrollSecond = window.scrollY;
+      setSecond(scrollSecond > 250)
+      setIsScrolled(scrollPrice > 1000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -84,7 +87,7 @@ const Services = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div className="text-box">
+            <div className={`${second ? "animSecond" : "second-none"}`}>
               <h1>
                 Need a supportive full-service design agency for your business?
               </h1>
@@ -95,7 +98,7 @@ const Services = () => {
                 count on us to deliver outstanding results.
               </p>
             </div>
-            <img src={img1} alt="computer screen" className="img1" />
+            <img src={img1} alt="computer screen" className={`${second ? "animSecondimg" : "second-none"}`} />
           </div>
         </section>
         <section className="third-section">
