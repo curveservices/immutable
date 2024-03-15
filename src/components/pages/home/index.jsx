@@ -4,7 +4,6 @@ import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
 import { useLayoutEffect, useState } from "react";
-import Symbols from "../../Animations/symbols";
 import "./index.scss";
 import CallToAction from "../../CTA";
 import Featured from "../featured";
@@ -40,8 +39,6 @@ const Home = () => {
               </p>
               <Button link="contact" text="CONTACT US" />
             </div>
-           
-            <Symbols />
           </div>
         </section>
 

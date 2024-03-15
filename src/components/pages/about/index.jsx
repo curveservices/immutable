@@ -1,5 +1,4 @@
 import { useLayoutEffect } from "react";
-import Symbols from "../../Animations/symbols";
 import Button from "../../button";
 import Socials from "../../socials";
 import paul from "../../../assets/images/paul (2)-UZaRP6S7.png";
@@ -16,7 +15,6 @@ const About = () => {
       <section className="hero">
         <div className="inner-hero">
           <div className="text-box">
-              <Symbols />
               <div className="left-hero">
                 <h1 className="title">
                   Who are Immutable studio? And what do they do?

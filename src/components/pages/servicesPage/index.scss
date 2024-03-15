@@ -104,7 +104,9 @@
           border-radius: 20px;
         }
 
-      
+      .second-none {
+        display: none;
+      }
 
       .text-box {
         padding: 0 2rem 0 5rem;
@@ -180,9 +182,8 @@
       }
 
       .contentAnim {
-        animation: fadeInUp 2s forwards;
+        animation: backInUp 1s forwards;
         margin: 2rem;
-        padding: 1rem 0rem;
       }
     }
   }
