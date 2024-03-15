@@ -1,9 +1,9 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { lazy, useEffect, useLayoutEffect, useState } from "react";
 import Button from "../../button";
 import imgSocial from '../../../assets/images/social.jpeg';
 import CallToAction from "../../CTA";
-import SocialCard from "../../cards/socialCard";
 import social from '../../../assets/images/social-unscreen.gif';
+const SocialCard = lazy(() => import('../../cards/socialCard'));
 import "./index.scss";
 
 const SocialMarketing = () => {

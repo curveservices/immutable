@@ -3,7 +3,7 @@ import WebDevPrice from "../../cards/webDevelopment";
 import img1 from '../../../assets/images/service-1.jpeg'
 import Button from "../../button";
 import CallToAction from "../../CTA";
-import webDev from '../../../assets/images/webDev2-unscreen.gif'
+import webDev from '../../../assets/images/webDev2-unscreen.gif';
 import "./index.scss";
 
 const WebDev = () => {

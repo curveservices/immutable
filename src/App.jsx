@@ -4,7 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import React, { lazy } from "react"; ;
+import React, { lazy } from "react";
 
 import "./App.scss";
 
