@@ -1,4 +1,5 @@
 .package-page {
+    position: relative;
     .hero {
         min-height: 100vh;
     
@@ -48,6 +49,10 @@
                 animation: fadeInRight 1s forwards;
                 width: 40%;
                 border-radius: 20px;
+
+                img {
+                    width: 550px;
+                }
             }
     
             .second-none {
