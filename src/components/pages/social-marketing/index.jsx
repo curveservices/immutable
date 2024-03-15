@@ -1,11 +1,10 @@
 import { useEffect, useLayoutEffect, useState } from "react";
-import Symbols from "../../Animations/symbols";
 import Button from "../../button";
 import imgSocial from '../../../assets/images/social.jpeg';
-import "./index.scss";
 import CallToAction from "../../CTA";
 import SocialCard from "../../cards/socialCard";
-import StaticCubes from "../../Animations/staticCubes";
+import social from '../../../assets/images/social-unscreen.gif';
+import "./index.scss";
 
 const SocialMarketing = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,7 +14,7 @@ const SocialMarketing = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 350)
+      setSecond(scrollSecond > 250)
       setIsScrolled(scrollPrice > 1000);
     };
 
@@ -42,8 +41,7 @@ const SocialMarketing = () => {
             <h2>Social media templates start from just £80</h2>
             <Button text="Speak with us today" />
           </div>
-          <StaticCubes />
-          <Symbols />
+          <img src={social} alt="social icons gif" className="media-img"/>
         </div>
       </section>
       <section className="second-section">

@@ -1,11 +1,10 @@
-import StaticCubes from "../../Animations/staticCubes";
-import Symbols from "../../Animations/symbols";
-import CallToAction from "../../CTA";
-import "./index.scss";
 import { useEffect, useLayoutEffect, useState } from "react";
 import WebDevPrice from "../../cards/webDevelopment";
 import img1 from '../../../assets/images/service-1.jpeg'
 import Button from "../../button";
+import CallToAction from "../../CTA";
+import webDev from '../../../assets/images/webDev2-unscreen.gif'
+import "./index.scss";
 
 const WebDev = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,7 +14,7 @@ const WebDev = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 350)
+      setSecond(scrollSecond > 250)
       setIsScrolled(scrollPrice > 1000);
     };
 
@@ -43,8 +42,7 @@ const WebDev = () => {
             <h2>We build custom responsive websites from just £495</h2>
             <Button text="Speak to us today" link='/contact'/>
           </div>
-          <StaticCubes/>
-          <Symbols />
+          <img src={webDev} alt="laptop gif" className="webDev-gif" />
         </div>
       </section>
       <section className="second-section">

@@ -2,8 +2,8 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import Button from "../../button";
 import CallToAction from "../../CTA";
 import ChatBotCard from "../../cards/botCard";
-import Symbols from "../../Animations/symbols";
 import bot from '../../../assets/images/chatbot-image.jpeg';
+import chatbot from '../../../assets/images/chatbot-unscreen.gif';
 import "./index.scss";
 
 
@@ -43,7 +43,7 @@ const ChatBots = () => {
             <h2>We build tailored AI chatbots, starting at £275.</h2>
             <Button text='Speak to us today' link='contact'/>
           </div>
-          <Symbols />
+          <img src={chatbot} alt="chatbot immi" className="bot-img"/>
         </div>
       </section>
       <section className="second-section">

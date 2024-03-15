@@ -14,9 +14,12 @@
                 animation: fadeInLeftBig 2s forwards;
             }
 
-            .cube-container {
-                top: 8%;
-                left: 70%;
+            .webDev-gif {
+                position: absolute;
+                right: 0;
+                top: -3.5%;
+                width: 800px;
+                animation: fadeInRight 2s forwards;
             }
         }
     }

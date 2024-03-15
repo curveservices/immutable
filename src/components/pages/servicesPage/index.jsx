@@ -86,17 +86,13 @@ const Services = () => {
           <div className="second-inner">
             <div className="text-box">
               <h1>
-                Transform your online presence with expert design solutions
+                Need a supportive full-service design agency for your business?
               </h1>
               <p>
-                Are you tired of your outdated website design that fails to
-                captivate visitors and convert them into loyal customers?
-                Immutable Studio specialise in creating visually stunning and
-                highly functional websites that take your online presence to new
-                heights. Our expert team of web designers combines creativity,
-                technical expertise, and industry knowledge to deliver
-                exceptional results that align perfectly with your business
-                objectives.
+                Drawing on extensive industry experience, we excel in providing comprehensive solutions tailored to your needs.
+                Understanding your business, we offer expert advice to address design challenges effectively.
+                Whether it's boosting brand visibility or creating a lead-generating website,
+                count on us to deliver outstanding results.
               </p>
             </div>
             <img src={img1} alt="computer screen" className="img1" />
