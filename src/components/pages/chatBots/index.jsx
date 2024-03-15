@@ -1,9 +1,9 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState, lazy } from "react";
 import Button from "../../button";
 import CallToAction from "../../CTA";
-import ChatBotCard from "../../cards/botCard";
 import bot from '../../../assets/images/chatbot-image.jpeg';
 import chatbot from '../../../assets/images/chatbot-unscreen.gif';
+const ChatBotCard = lazy(() => import('../../cards/botCard'))
 import "./index.scss";
 
 
@@ -73,10 +73,8 @@ const ChatBots = () => {
             </p>
           </div>
           <div
-            className={`${isScrolled ? "contentAnim" : "none"}`}
-            id="bot-price"
-          >
-            <ChatBotCard />
+            className={`${isScrolled ? "contentAnim" : "none"}`} id="bot-price">
+              <ChatBotCard />
           </div>
         </div>
       </section>
