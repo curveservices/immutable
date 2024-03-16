@@ -32,7 +32,7 @@ const Packages = () => {
   return (
     <div className="package-page">
       <section className={style.hero}>
-        <div className={style.heroInner}>
+        <div className={style.innerHero}>
           <div className={style.textBox}>
             <h1>Business Packages</h1>
             <p>
