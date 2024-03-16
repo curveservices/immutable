@@ -1,0 +1,84 @@
+@import "animate.css";
+
+/* Hero section */
+.hero {
+   min-height: 100vh;
+}
+.innerHero {
+    display: flex;
+    margin: 0rem 0rem 0rem 2rem;
+    padding: 4rem 0rem 0rem 4rem;
+    color: #fff;
+}
+.textBox {
+    padding: 4rem 2rem 0 2rem;
+    animation: fadeInLeftBig 2s forwards;
+    width: 45%;
+}
+.gif {
+    position: absolute;
+    right: 0;
+    top: -3.8%;
+    width: 800px;
+    animation: fadeInRightBig 2s forwards;
+}
+
+
+/* Second section */
+.secondSection {
+    background-image: url("../../assets/images/1746747.jpg");
+    box-shadow: var(--global);
+}
+.secondInner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem;
+    padding: 2rem;
+    min-height: 75vh;
+}
+.animSecond {
+    animation: fadeInLeft 2s forwards;
+    width: 50%;
+    padding: 0 1rem;
+}
+.animSecond p {
+    padding-top: 1rem;
+}
+.secondNone {
+    display: none;
+}
+.animSecondimg {
+    animation: fadeInRight 2s forwards;
+    width: 40%;
+    width: 600px;
+    
+}
+.secondTextBox {
+    padding: 0 2rem 0 5rem;
+    width: 70%;
+    color: #000;
+}
+
+/* Third section */
+.thirdSection {
+    min-height: 100vh;
+}
+.thirdInner {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 4rem 2rem;
+}
+
+.thirdTextBox {
+    text-align: center;
+    padding: 0 8rem;
+    color: #fff;
+}
+.contentAnim {
+    animation: backInUp 1s forwards;
+    margin: 2rem;
+}
+.none {
+    display: none;
+}

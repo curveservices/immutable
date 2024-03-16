@@ -101,7 +101,6 @@
         .animSecondimg {
           animation: fadeInRight 1s forwards;
           width: 40%;
-          border-radius: 20px;
         }
 
       .second-none {
@@ -143,7 +142,6 @@
           text-align: center;
           background: var(--primary);
           border: 2px solid;
-          border-radius: 10px;
           padding: 1rem;
 
           .elem-title {

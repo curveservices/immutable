@@ -1,10 +1,10 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import Button from "../../button";
 import img from '../../../assets/images/packages-unscreen.gif'
-import packageImg from '../../../assets/images/packages.jpeg'
-import "./index.scss";
+import packageImg from '../../../assets/images/packages.jpeg';
 import CallToAction from "../../CTA";
 import ChatBotCard from "../../cards/botCard";
+import style from '../index.module.css'
 
 const Packages = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +31,9 @@ const Packages = () => {
 
   return (
     <div className="package-page">
-      <section className="hero">
-        <div className="inner-hero">
-          <div className="text-box">
+      <section className={style.hero}>
+        <div className={style.heroInner}>
+          <div className={style.textBox}>
             <h1>Business Packages</h1>
             <p>
               Seeking AI solutions for your business? Let us ease your challenges with an online chatbot.
@@ -43,12 +43,12 @@ const Packages = () => {
             <h2>We build tailer made business packagees starting from just £999</h2>
             <Button text='Speak to us today' link='/contact' />
           </div>
-          <img src={img} alt="package image" className="package-gif"/>
+          <img src={img} alt="package image" className={style.gif}/>
         </div>
       </section>
-      <section className="second-section">
-        <div className="second-inner">
-          <div className={`${second ? "animSecond" : "second-none"}`}>
+      <section className={style.secondSection}>
+        <div className={style.secondInner}>
+          <div className={`${second ? style.animSecond : style.secondNone}`}>
             <h1>Are you in need of full a full online web solutions?</h1>
             <p>
              CHANGE COPY!!!!!!!!!!!!!?
@@ -57,12 +57,12 @@ const Packages = () => {
               ensuring exceptional results aligned with your business objectives.
             </p>
           </div>
-          <img src={packageImg} alt="packagge image" className={`${second ? "animSecondimg" : "second-none"}`}/>
+          <img src={packageImg} alt="packagge image" className={`${second ? style.animSecondimg : style.secondNone }`}/>
         </div>
       </section>
-      <section className="third-section">
-        <div className="third-inner">
-          <div className="text-box">
+      <section className={style.thirdSection}>
+        <div className={style.thirdInner}>
+          <div className={style.thirdTextBox}>
             <h1>CHECK OUT OUR CUSTOM BUSINESS PACKAGES</h1>
             <p>
               We prioritize transparent communication and strong client bonds.
@@ -72,7 +72,7 @@ const Packages = () => {
             </p>
           </div>
           <div
-            className={`${isScrolled ? "contentAnim" : "none"}`} id="package-price">
+            className={`${isScrolled ? style.contentAnim : style.none }`} id="package-price">
             <ChatBotCard/>
             </div>
         </div>

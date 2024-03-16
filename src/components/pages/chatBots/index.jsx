@@ -4,7 +4,7 @@ import CallToAction from "../../CTA";
 import bot from '../../../assets/images/chatbot-image.jpeg';
 import chatbot from '../../../assets/images/chatbot-unscreen.gif';
 const ChatBotCard = lazy(() => import('../../cards/botCard'))
-import "./index.scss";
+import style from '../index.module.css'
 
 
 const ChatBots = () => {
@@ -31,9 +31,9 @@ const ChatBots = () => {
   }, []);
   return (
     <div className="chatbot-page">
-      <section className="hero">
-        <div className="inner-hero">
-          <div className="text-box">
+      <section className={style.hero}>
+        <div className={style.innerHero}>
+          <div className={style.textBox}>
             <h1>Website Chat bots</h1>
             <p>
               Seeking AI solutions for your business? Let us ease your challenges with an online chatbot.
@@ -43,12 +43,12 @@ const ChatBots = () => {
             <h2>We build tailored AI chatbots, starting at £275.</h2>
             <Button text='Speak to us today' link='contact'/>
           </div>
-          <img src={chatbot} alt="chatbot immi" className="bot-img"/>
+          <img src={chatbot} alt="chatbot immi" className={style.gif}/>
         </div>
       </section>
-      <section className="second-section">
-        <div className="second-inner">
-          <div className={`${second ? "animSecond" : "second-none"}`}>
+      <section className={style.secondSection}>
+        <div className={style.secondInner}>
+          <div className={`${second ? style.animSecond : style.secondNone}`}>
             <h1>
               Convert web traffic to sales using advanced AI solutions.
             </h1>
@@ -58,12 +58,12 @@ const ChatBots = () => {
               ensuring exceptional results aligned with your business objectives.
             </p>
           </div>
-          <img src={bot} alt="chat bot on comupter" className={`${second ? "animSecondimg" : "second-none"}`}/>
+          <img src={bot} alt="chat bot on comupter" className={`${second ? style.animSecondimg : style.secondNone}`}/>
         </div>
       </section>
-      <section className="third-section">
-        <div className="third-inner">
-          <div className="text-box">
+      <section className={style.thirdSection}>
+        <div className={style.thirdInner}>
+          <div className={style.thirdTextBox}>
             <h1>CHECK OUT OUR CUSTOM CHATBOT PACKAGES</h1>
             <p>
               We emphasize clear communication and robust client relationships.
@@ -73,7 +73,7 @@ const ChatBots = () => {
             </p>
           </div>
           <div
-            className={`${isScrolled ? "contentAnim" : "none"}`} id="bot-price">
+            className={`${isScrolled ? style.contentAnim : style.none }`} id="bot-price">
               <ChatBotCard />
           </div>
         </div>

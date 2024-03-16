@@ -4,7 +4,7 @@ import imgSocial from '../../../assets/images/social.jpeg';
 import CallToAction from "../../CTA";
 import social from '../../../assets/images/social-unscreen.gif';
 const SocialCard = lazy(() => import('../../cards/socialCard'));
-import "./index.scss";
+import style from "../index.module.css";
 
 const SocialMarketing = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,9 +30,9 @@ const SocialMarketing = () => {
   }, []);
   return (
     <div className="social-page">
-      <section className="hero">
-        <div className="inner-hero">
-          <div className="text-box">
+      <section className={style.hero}>
+        <div className={style.innerHero}>
+          <div className={style.textBox}>
             <h1>Social Media Marketing</h1>
             <p>
               Our proficient media content team is available to assist in creating ad campaigns
@@ -41,12 +41,12 @@ const SocialMarketing = () => {
             <h2>Social media templates start from just £80</h2>
             <Button text="Speak with us today" />
           </div>
-          <img src={social} alt="social icons gif" className="media-img"/>
+          <img src={social} alt="social icons gif" className={style.gif}/>
         </div>
       </section>
-      <section className="second-section">
-        <div className="second-inner">
-          <div className={`${second ? "animSecond" : "second-none"}`}>
+      <section className={style.secondSection}>
+        <div className={style.secondInner}>
+          <div className={`${second ? style.animSecond : style.secondNone}`}>
             <h1>Elevate social presence with our professional template designs.</h1>
             <p>
               In the competitive digital landscape, brand distinction is crucial.
@@ -55,12 +55,12 @@ const SocialMarketing = () => {
               meaningful connections, and ongoing online success for your business.
             </p>
           </div>
-          <img src={imgSocial} alt="social media" className={`${second ? "animSecondimg" : "second-none"}`} />
+          <img src={imgSocial} alt="social media" className={`${second ? style.animSecondimg : style.secondNone}`} />
         </div>
       </section>
-      <section className="third-section">
-        <div className="third-inner">
-          <div className="text-box">
+      <section className={style.thirdSection}>
+        <div className={style.thirdInner}>
+          <div className={style.thirdTextBox}>
             <h1> CHECK OUT OUR RANGE OF SOCIAL MEDIA PACKAGES</h1>
             <p>
               We prioritize transparent communication and robust client relationships.
@@ -70,7 +70,7 @@ const SocialMarketing = () => {
             </p>
           </div>
           <div
-            className={`${isScrolled ? "contentAnim" : "none"}`}
+            className={`${isScrolled ? style.contentAnim : style.none }`}
             id="social-price"
           >
             <SocialCard />

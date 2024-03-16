@@ -4,7 +4,7 @@ import img1 from '../../../assets/images/service-1.jpeg'
 import Button from "../../button";
 import CallToAction from "../../CTA";
 import webDev from '../../../assets/images/webDev2-unscreen.gif';
-import "./index.scss";
+import style from '../index.module.css';
 
 const WebDev = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,9 +30,9 @@ const WebDev = () => {
   }, []);
   return (
     <div className="webdev-page">
-      <section className="hero">
-        <div className="inner-hero">
-          <div className="text-box">
+      <section className={style.hero}>
+        <div className={style.innerHero}>
+          <div className={style.textBox}>
             <h1>Web Development</h1>
             <p>
               For a competitive edge, business elevation, and broader audience reach,
@@ -42,12 +42,12 @@ const WebDev = () => {
             <h2>We build custom responsive websites from just £495</h2>
             <Button text="Speak to us today" link='/contact'/>
           </div>
-          <img src={webDev} alt="laptop gif" className="webDev-gif" />
+          <img src={webDev} alt="laptop gif" className={style.gif} />
         </div>
       </section>
-      <section className="second-section">
-        <div className="second-inner">
-          <div className={`${second ? "animSecond" : "second-none"}`}>
+      <section className={style.secondSection}>
+        <div className={style.secondInner}>
+          <div className={`${second ? style.animSecond : style.secondNone}`}>
               <h1>
                 Transform your online presence with expert design solutions
               </h1>
@@ -58,12 +58,12 @@ const WebDev = () => {
               and industry insight to deliver exceptional results aligned with your business objectives.
               </p>
             </div>
-            <img src={img1} alt="computer screen" className={`${second ? "animSecondimg" : "second-none"}`} />
+            <img src={img1} alt="computer screen" className={`${second ? style.animSecondimg : style.secondNone}`} />
         </div>
       </section>
-      <section className="third-section">
-        <div className="third-inner">
-          <div className="text-box">
+      <section className={style.thirdSection}>
+        <div className={style.thirdInner}>
+          <div className={style.thirdTextBox}>
             <h1>CHECK OUT OUR RANGE OF CUSTOM OR WORDPRESS WEBSITE PACKAGES</h1>
             <p>
               We prioritize transparent communication and strong client relationships.
@@ -73,7 +73,7 @@ const WebDev = () => {
             </p>
           </div>
           <div
-            className={`${isScrolled ? "contentAnim" : "none"}`}
+            className={`${isScrolled ? style.contentAnim : style.none}`}
             id="web-price"
           >
             <WebDevPrice />
