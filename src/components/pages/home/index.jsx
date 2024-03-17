@@ -6,8 +6,8 @@ import Accordion from "../../Accordion";
 import { useLayoutEffect, useState } from "react";
 import "./index.scss";
 import CallToAction from "../../CTA";
-import Featured from "../featured";
-import Loader from "react-loaders";
+import React from 'react'
+const Featured = React.lazy(() => import('../featured'))
 
 const Home = () => {
   const [activeAccordion, setActiveAccordion] = useState(0);
@@ -72,7 +72,6 @@ const Home = () => {
           <CallToAction />
         </section>
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };
