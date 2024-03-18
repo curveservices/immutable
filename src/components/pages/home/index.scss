@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 800px) {
   .home-page {
     .hero {
       flex-direction: column-reverse;
@@ -128,43 +128,50 @@
       .title {
         width: 100%;
         margin: 0;
-        padding: 1rem 2rem;
+        padding: 2rem;
+        font-size: 28px;
       }
     
       .cube-container {
+        overflow: initial;
         width: 70px;
-        top: 40%;
-        left: 60%;
+        top: 45%;
+        left: 50%;
         opacity: 0.2;
       }
     
       .accordion {
-        gap: 4rem;
-    
+        gap: 3rem;
+        overflow: initial;
         .accordion-item {
-          width: 100%;
+          width: 60%;
           height: 20px;
           margin: 0rem;
           padding: 0rem 1rem;
-        }
-    
-        .content-container {
-          left: 0;
-          top: 45%;
-          padding: 3rem 2rem;
-          max-width: 100%;
-          max-height: 200px;
-          text-align: left;
-          animation: fadeIn 2s;
-    
-          h2 {
-            font-size: 18px;
+          
+
+          .accordion-title {
+            font-size: 12px;
+            margin-top: 3rem;
           }
+          .content-container {
+            top: 42%;
+            margin-left: 8rem;
+            overflow: initial;
+          
+            h2 {
+              font-size: 18px;
+            }
+          }
+          
+          .accordion-subtitle {
+            margin-bottom: 0rem;
+          }
+
         }
+
+    
         
-        .accordion-subtitle {
-          margin-bottom: 0rem;
-        }
         
         .read-btn {
           margin-top: -1rem;
