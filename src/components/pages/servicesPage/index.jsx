@@ -185,7 +185,7 @@ const Services = () => {
               </p>
             </div>
             <hr />
-            <h1 className="price-title">Check out our starter packages</h1>
+            <h1 className="price-title">Check out our starting prices</h1>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
               <PriceCard />
             </div>

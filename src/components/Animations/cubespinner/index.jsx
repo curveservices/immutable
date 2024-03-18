@@ -23,29 +23,30 @@ const CubeSpinner = () => {
         <div className="circle circle-3">
           <div className="ball ball-3"></div>
         </div>
-      </div>
-      <div className="stage-cube-cont">
-        <div className="cubespinner">
-          <div className="face1">
-            <FontAwesomeIcon icon={faHtml5} />
-          </div>
-          <div className="face2">
-            <FontAwesomeIcon icon={faCss3Alt} />
-          </div>
-          <div className="face3">
-            <FontAwesomeIcon icon={faReact} />
-          </div>
-          <div className="face4">
-            <FontAwesomeIcon icon={faJsSquare} />
-          </div>
-          <div className="face5">
-            <FontAwesomeIcon icon={faGitAlt} />
-          </div>
-          <div className="face6">
-            <FontAwesomeIcon icon={faSass} />
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faHtml5} />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faCss3Alt} />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faReact} />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faJsSquare} />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faGitAlt} />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faSass} />
+            </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 };

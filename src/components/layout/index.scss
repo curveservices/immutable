@@ -29,7 +29,7 @@
       font-family: sans-serif;
       font-weight: 900;
       min-width: fit-content;
-      line-height: 1.5;
+      line-height: 1.2;
       font-weight: 500;
     }
 
@@ -58,5 +58,26 @@
   &:hover {
     background: #636363;
     color: #fff;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .app {
+    background-position: center ;
+    .home-page,
+    .about-page,
+    .serivces-page,
+    .contact-page,
+    .webdev-page,
+    .chatbot-page,
+    .social-page,
+    .package-page {
+      h1{
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
   }
 }

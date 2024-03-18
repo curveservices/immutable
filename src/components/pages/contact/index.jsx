@@ -106,7 +106,7 @@ const Contact = () => {
           </Marker>
         </MapContainer>
       </div>
-      </div>
+      </div>  
       <Loader type="ball-spin-fade-loader"/>
     </>
   );
