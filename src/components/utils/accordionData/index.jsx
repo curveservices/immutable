@@ -5,7 +5,7 @@ export const accordionData = [
     title: "WEB DEVELOPMENT",
     subtitle: "JavaScript - HTML 5 - CSS 3 - React - Node.js",
     content:
-      "We will create custom corporate & startup websites to suit your needs. If you're looking for a landing page, promo site or a professional multi-page site we have you covered. Our services also iclude CMS platforms such as WordPress, Squarespace and WebFlow.",
+      "We craft tailored corporate and startup websites. Whether you need a landing page, promo site, or multi-page solution, our services cover it all, including CMS platforms like WordPress, Squarespace, and WebFlow.",
   },
   // {
   //   id: 1,
@@ -26,7 +26,7 @@ export const accordionData = [
   {
     id: 3,
     link: "social-media-marketing",
-    title: "SOCIAL MEDIA MARKETING",
+    title: "SOCIAL MARKETING",
     subtitle: "Facebook - LinkedIn - X - Instagram",
     content:
       "Our experienced media content team are on hand to help you set up ad campaigns and social content. We will help drive your social projects using latest trends and analyics",
