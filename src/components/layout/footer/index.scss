@@ -37,3 +37,25 @@ footer {
     padding-right: 20px;
   }
 }
+
+@media screen and (max-width:980px) {
+  footer {
+    .foot-title {
+      font-size: 14px;
+    }
+  
+    .link-container {
+      gap: 25px;
+      margin-left: 20px;
+      font-size: 12px;
+  
+      li {
+        list-style: none;
+      }
+    }
+  
+    .socials-container {
+      display: none;
+    }
+  }
+}

@@ -63,7 +63,7 @@ const Home = () => {
           </div>
         </section>
         <section className="third-section">
-          <div className="section-inner">
+          <div className="third-inner">
             <Featured />
           </div>
         </section>

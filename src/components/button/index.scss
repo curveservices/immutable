@@ -25,3 +25,10 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+@media screen and (max-width: 980px) {
+  .flat-btn {
+    width: 100px;
+    font-size: 10px;
+  }
+}

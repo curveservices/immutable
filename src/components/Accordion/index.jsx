@@ -11,8 +11,8 @@ const Accordion = ({
   onAccordionClick,
 }) => {
   return (
-    <div className="accordion-item">
-      <div onClick={() => onAccordionClick(id)}>
+ 
+      <div className="accordion-item" onClick={() => onAccordionClick(id)}>
         <div className="accordion-title">
           <h3>{title}</h3>
         </div>
@@ -30,7 +30,6 @@ const Accordion = ({
           </div>
         )}
       </div>
-    </div>
   );
 };
 

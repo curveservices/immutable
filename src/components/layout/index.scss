@@ -30,7 +30,7 @@
       font-weight: 900;
       min-width: fit-content;
       line-height: 1.2;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .stage-cube-cont,
@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 950px) {
   .app {
-    background-position: center ;
+    background-position: center;
     .home-page,
     .about-page,
     .serivces-page,
@@ -73,10 +73,11 @@
     .social-page,
     .package-page {
       h1{
-        font-size: 1.5em;
+        font-size: 24px;
       }
       p {
         font-size: 14px;
+        line-height: 1;
       }
     }
   }

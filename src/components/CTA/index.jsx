@@ -13,7 +13,7 @@ const CallToAction = () => {
       </div>
       <div className="btn-container">
         <Button text="book a call" link="" background="var(--primary)" />
-        <Button text="download kit" link="" background="var(--primary)" />
+        <Button text="contact us" link="" background="var(--primary)" />
       </div>
     </>
   );
