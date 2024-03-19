@@ -42,8 +42,11 @@
   }
 
   .third-section {
-    height: 100vh;
+    height: 120vh;
     padding: 3rem;
+    .view-btn {
+      margin-top: 4rem;
+    }
   }
 }
 
@@ -164,16 +167,9 @@
               font-size: 12px;
             }
           }
-          
           .accordion-subtitle {
             margin-bottom: 0rem;
           }
-
-        }
-
-        .read-btn {
-          margin-top: -1rem;
-          animation: shakeX 1s 2s;
         }
       }
     }
@@ -205,7 +201,7 @@
         }
       }
       .view-btn {
-        margin: 0;
+        margin: 3rem;
       }
     }
   }
