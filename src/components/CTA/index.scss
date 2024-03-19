@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   background-image: url('../../assets/images/1746747.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 70vh;
   box-shadow: var(--global);
 
@@ -27,5 +29,36 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    gap: 2rem;
+  
+    .text-container {
+      width: 100%;
+  
+      .cta-title {
+        padding: 2rem;
+        font-size: 1.5rem;
+      }
+  
+      .cta-p {
+        font-family: sans-serif;
+        margin: 0rem;
+        padding: 0 2rem;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  
+    .btn-container {
+      width: 100%;
+      max-height: 50px;
+    }
   }
 }

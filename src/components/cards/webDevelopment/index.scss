@@ -42,4 +42,19 @@
         padding-top: 1rem;
        
     }
- }
+}
+
+@media screen and (max-width: 800px) {
+    .web-card-container {
+        flex-direction: column;
+
+        .web-price-card {
+            max-width: 100%;
+        }
+        .btn-container {
+            padding: 1rem 0;
+            margin-top: 3rem;
+        }
+    }
+    
+}
