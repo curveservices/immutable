@@ -40,7 +40,7 @@ const ChatBots = () => {
               Our expertise enables automation and outsourcing of daily tasks using cutting-edge AI technology,
               streamlining your operations for increased efficiency.
             </p>
-            <h2>We build tailored AI chatbots, starting at £275.</h2>
+            <h2>We build tailored AI chatbots, starting at £995 + vat. </h2>
             <Button text='Speak to us today' link='contact'/>
           </div>
           <img src={chatbot} alt="chatbot immi" className={style.gif}/>

@@ -106,12 +106,6 @@
       .second-none {
         display: none;
       }
-
-      .text-box {
-        padding: 0 2rem 0 5rem;
-        width: 70%;
-        color: #000;
-      }
     }
   }
 
@@ -200,3 +194,167 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .serivces-page {
+    .hero {
+      .hero-inner {
+        margin: 2em 0rem;
+        padding: 2rem 0rem;
+        .text-box {
+          width: 100%;
+          animation: fadeInLeftBig 2s forwards;
+          p {
+            padding-top: 0rem;
+          }
+        }
+        .cube-container {
+          overflow: initial;
+          width: 75px;
+          opacity: 0.1;
+          top: 4%;
+          left: 75%;
+        }
+        .link-container {
+          width: 100%;
+          position: initial;
+          gap: 20px;
+          margin: 2rem 0;
+          padding: 0 2rem;
+          animation: bounceInUp 2s;
+        }
+      }
+    }
+  
+    .second-section {
+      .second-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0rem;
+        padding: 1rem;
+        .animSecond {
+          animation: fadeInLeft 2s forwards;
+          width: 100%;
+          padding: 0rem;
+  
+          p {
+            padding-top: 0rem;
+          }
+        }
+        .animSecondimg {
+          animation: fadeInRight 2s forwards;
+          width: 100%;
+        }
+      }
+    }
+  
+    .third-section {
+      .third-inner {
+        padding: 2rem 0rem;
+  
+        .title {
+          padding: 0rem;
+        }
+        .element-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 1rem;
+        }
+      }
+    }
+  
+    .forth-section {
+      min-height: 100vh;
+      .forth-inner {
+        padding: 1rem;
+  
+        .text-box {
+          padding: 1rem;
+        }
+        .price-title {
+          padding: 1rem;
+          text-align: center;
+        }
+        .contentAnim {
+          animation: backInUp 1s forwards;
+          margin: 1rem;
+          .card-container {
+            flex-direction: column;
+            .price-card {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  
+    .fith-section {
+      .fith-inner {
+        padding: 0rem;
+        .card-container {
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+        
+          .card {
+            flex: 1 1 50%;
+            max-width: calc(50% - 20px);
+            height: 250px;
+        
+            .name {
+              font-size: 20px 0;
+              padding: 0;
+            }
+        
+            .desc {
+              font-size: 14px;
+              padding: 0;
+            }
+        
+            .btn {
+              margin: 20px 0;
+            }
+        
+            .card-image {
+              object-fit: cover;
+            }
+          }
+        }
+        .view-btn {
+          margin: 0;
+          padding: 1rem;
+        }
+      }
+    }
+  
+    .cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: initial;
+      gap: 2rem;
+    
+      .text-container {
+        width: 100%;
+    
+        .cta-title {
+          padding: 2rem;
+          font-size: 1.5rem;
+        }
+    
+        .cta-p {
+          font-family: sans-serif;
+          margin: 0rem;
+          padding: 0 2rem;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    
+      .btn-container {
+        width: 100%;
+        max-height: 50px;
+      }
+    }
+  }
+}

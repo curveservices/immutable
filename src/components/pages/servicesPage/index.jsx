@@ -100,7 +100,7 @@ const Services = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            <h1 className="title">Why Choose &#123; IMMUTABLE STUDIO &#125;</h1>
+            <h1 className="title">Why Choose Us</h1>
             <div className="element-container">
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
