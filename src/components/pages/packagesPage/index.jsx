@@ -5,6 +5,7 @@ import packageImg from '../../../assets/images/packages.jpeg';
 import CallToAction from "../../CTA";
 import ChatBotCard from "../../cards/botCard";
 import style from '../index.module.css'
+import Loader from "react-loaders";
 
 const Packages = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,6 +33,7 @@ const Packages = () => {
   return (
     <div className="package-page">
       <section className={style.hero}>
+        <Loader type="ball-spin-fade-loader" />
         <div className={style.innerHero}>
           <div className={style.textBox}>
             <h1>Business Packages</h1>
@@ -49,12 +51,11 @@ const Packages = () => {
       <section className={style.secondSection}>
         <div className={style.secondInner}>
           <div className={`${second ? style.animSecond : style.secondNone}`}>
-            <h1>Are you in need of full a full online web solutions?</h1>
+            <h1>Are you in need of full online website and AI solutions?</h1>
             <p>
-             CHANGE COPY!!!!!!!!!!!!!?
-              Immutable Studio excels in crafting inviting and functional chatbots integrated to your website.
-              Our tech experts leverage cutting-edge AI, technical prowess, and industry insight to optimize sales conversion,
-              ensuring exceptional results aligned with your business objectives.
+              Our custom packages integrate cutting-edge AI solutions,
+              from chatbot integration to advanced AI workflows and platforms.
+              Our goal is to alleviate your pain points, saving you time and money.
             </p>
           </div>
           <img src={packageImg} alt="packagge image" className={`${second ? style.animSecondimg : style.secondNone }`}/>

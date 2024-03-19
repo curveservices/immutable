@@ -18,7 +18,7 @@ import Loader from "react-loaders";
 
 const Services = lazy(() => import('./components/pages/servicesPage'))
 const WebDev = lazy(() => import('./components/pages/webDev'));
-const Packages = lazy(() => import('./components/pages/packages'));
+const Packages = lazy(() => import('./components/pages/packagesPage'));
 const Chatbots = lazy(() => import('./components/pages/chatBots'));
 const SocialMarketing = lazy(() => import('./components/pages/socialMarketing'));
 

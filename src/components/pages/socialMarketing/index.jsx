@@ -5,6 +5,7 @@ import CallToAction from "../../CTA";
 import social from '../../../assets/images/social-unscreen.gif';
 const SocialCard = lazy(() => import('../../cards/socialCard'));
 import style from "../index.module.css";
+import Loader from "react-loaders";
 
 const SocialMarketing = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,6 +32,7 @@ const SocialMarketing = () => {
   return (
     <div className="social-page">
       <section className={style.hero}>
+        <Loader type="ball-spin-fade-loader" />
         <div className={style.innerHero}>
           <div className={style.textBox}>
             <h1>Social Media Marketing</h1>

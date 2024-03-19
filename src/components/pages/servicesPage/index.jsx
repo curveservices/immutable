@@ -16,6 +16,7 @@ import {
   faTrophy,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
+import Loader from "react-loaders";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -184,7 +185,6 @@ const Services = () => {
                 business grows so that your site always fits your needs.
               </p>
             </div>
-            <hr />
             <h1 className="price-title">Check out our starting prices</h1>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
               <PriceCard />
@@ -200,6 +200,7 @@ const Services = () => {
           <CallToAction />
         </section>
       </div>
+      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

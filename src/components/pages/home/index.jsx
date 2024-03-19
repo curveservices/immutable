@@ -7,6 +7,7 @@ import { useLayoutEffect, useState } from "react";
 import "./index.scss";
 import CallToAction from "../../CTA";
 import React from 'react'
+import Loader from "react-loaders";
 const Featured = React.lazy(() => import('../featured'))
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="hero">
+          <Loader type="ball-spin-fade-loader" />
           <div className="left-hero">
             <CubeSpinner />
           </div>
@@ -67,7 +69,6 @@ const Home = () => {
             <Featured />
           </div>
         </section>
-
         <section className="cta">
           <CallToAction />
         </section>

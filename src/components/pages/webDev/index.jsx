@@ -5,6 +5,7 @@ import Button from "../../button";
 import CallToAction from "../../CTA";
 import webDev from '../../../assets/images/webDev2-unscreen.gif';
 import style from '../index.module.css';
+import Loader from "react-loaders";
 
 const WebDev = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,6 +32,7 @@ const WebDev = () => {
   return (
     <div className="webdev-page">
       <section className={style.hero}>
+        <Loader type="ball-spin-fade-loader" />
         <div className={style.innerHero}>
           <div className={style.textBox}>
             <h1>Web Development</h1>

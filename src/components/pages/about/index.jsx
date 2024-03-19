@@ -12,7 +12,8 @@ const About = () => {
   return (
     <>
     <div className="about-page">
-      <section className="hero">
+        <section className="hero">
+          <Loader type="ball-spin-fade-loader" />
         <div className="inner-hero">
           <div className="text-box">
               <div className="left-hero">
@@ -65,7 +66,7 @@ const About = () => {
         </div>
       </section>
     </div>
-    <Loader type="ball-spin-fade-loader" />
+    
     </>
   );
 };

@@ -34,7 +34,8 @@ const Contact = () => {
   return (
     <>
     <div className="contact-page">
-      <section className="text-box">
+        <section className="text-box">
+          <Loader type="ball-spin-fade-loader" />
         <h1>CONTACT US</h1>
         <p>
           Ready to get your project started? wheather it's a large project,

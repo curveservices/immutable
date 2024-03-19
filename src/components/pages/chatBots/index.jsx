@@ -5,6 +5,7 @@ import bot from '../../../assets/images/chatbot-image.jpeg';
 import chatbot from '../../../assets/images/chatbot-unscreen.gif';
 const ChatBotCard = lazy(() => import('../../cards/botCard'))
 import style from '../index.module.css'
+import Loader from "react-loaders";
 
 
 const ChatBots = () => {
@@ -32,6 +33,7 @@ const ChatBots = () => {
   return (
     <div className="chatbot-page">
       <section className={style.hero}>
+        <Loader type="ball-spin-fade-loader" />
         <div className={style.innerHero}>
           <div className={style.textBox}>
             <h1>Website Chat bots</h1>
@@ -50,7 +52,7 @@ const ChatBots = () => {
         <div className={style.secondInner}>
           <div className={`${second ? style.animSecond : style.secondNone}`}>
             <h1>
-              Convert web traffic to sales using advanced AI solutions.
+              Convert web traffic to sales using AI solutions.
             </h1>
             <p>Tired of low website conversions?
               Immutable Studio excels in crafting inviting and functional chatbots integrated to your website.
