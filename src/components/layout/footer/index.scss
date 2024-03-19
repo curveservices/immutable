@@ -2,7 +2,7 @@ footer {
   position: absolute;
   bottom: 0;
   margin: 0;
-  height: 205px;
+  height: 220px;
   width: 100%;
   font-family: "Coolvetica";
   text-transform: uppercase;
@@ -21,7 +21,7 @@ footer {
     justify-content: flex-start;
     gap: 50px;
     width: 50%;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 20px;
     cursor: pointer;
 
@@ -34,29 +34,52 @@ footer {
     display: flex;
     align-items: end;
     flex-direction: column;
-    width: 30%;
-    padding-right: 20px;
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 80px;
+  }
+  .copy {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width:800px) {
   footer {
+    height: 175px;
+    width: 100%;
+    font-family: "Coolvetica";
+    text-transform: uppercase;
+    background: var(--primary);
+    color: #fff;
+    overflow: initial;
     .foot-title {
       font-size: 14px;
     }
   
     .link-container {
-      gap: 25px;
-      margin-left: 20px;
+      gap: 10px;
+      margin: 0 0 10px 10px;
       font-size: 12px;
   
       li {
         list-style: none;
+        text-align: left;
+        margin: 0;
       }
     }
   
     .socials-container {
+      width: 33%;
+      margin: 0 0 10px 10px;
+      padding: 0;
       font-size: 12px;
+    }
+    .copy {
+      font-size: 8px;
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
 }

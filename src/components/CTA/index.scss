@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 800px) {
   .cta {
-    display: flex;
+    height: 50vh;
     flex-direction: column;
     justify-content: initial;
     gap: 2rem;
@@ -45,6 +45,7 @@
       .cta-title {
         padding: 2rem;
         font-size: 1.5rem;
+        text-align: center;
       }
   
       .cta-p {

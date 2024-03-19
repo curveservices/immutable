@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="link-container">
         <div className="studio">
           <div>
-            <b>Studio</b>
+            <p>Studio</p>
           </div>
           <ul className="site-links">
             <li>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className="lead">
           <div>
-            <b>Lead Dev</b>
+            <p>Lead Dev</p>
           </div>
           <ul className="site-links">
             <li>
@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
         <div className="experts">
           <div>
-            <b>Experts in</b>
+            <p>Experts in</p>
           </div>
           <ul>
             <li>Hospitality</li>
