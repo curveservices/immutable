@@ -1,8 +1,8 @@
-import './index.scss'
 import { db } from '../../../firbase';
 import { useEffect, useState } from 'react';
 import Button from '../../button';
 import { collection, getDocs } from 'firebase/firestore';
+import style from '../card.module.css';
 
 const WebDevPrice = () => {
     const [priceCard, setPriceCard] = useState([]);
@@ -38,12 +38,12 @@ const WebDevPrice = () => {
     }, []);
 
     return ( 
-        <div className="web-card-container">
+        <div className={style.cardContainer}>
             {priceCard.map((item) => {
                 return (
-                    <div className="web-price-card" key={item.id}>
-                        <h1 className="web-price-title">{item.title}</h1>
-                        <h2 className="web-price">{item.price}</h2>
+                    <div className={style.priceCard} key={item.id}>
+                        <h1 className={style.priceTitle}>{item.title}</h1>
+                        <h2 className={style.price}>{item.price}</h2>
                         <ul>
                             <li>{item.li1}</li>
                             <hr />
@@ -61,7 +61,7 @@ const WebDevPrice = () => {
                             <hr />
                             <li>{item.li8}</li>
                         </ul>
-                        <div className="btn-container">
+                        <div className={style.btnContainer}>
                             <Button link="/contact" text="Start now" />
                         </div>
                     </div>

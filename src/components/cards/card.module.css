@@ -1,0 +1,59 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.priceCard {
+    flex: 1 1 30%;
+    overflow: hidden;
+    max-width: calc(50% - 10px);
+    padding-bottom: 2rem;
+    box-shadow: var(--global);
+    background: var(--secondary);
+    color: #000;
+}
+.priceTitle {
+    padding: 2rem 5rem;
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+ul {
+    max-height: 350px;
+    padding: 1rem;
+}
+li {
+    min-width: fit-content;
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+  
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
+@media screen and (max-width: 800px) {
+    .cardContainer {
+        flex-direction: column;
+    }
+    .priceCard {
+        max-width: 100%;
+    }
+
+    .btnContainer {
+        padding: 1rem 0;
+        margin-top: 3rem;
+    }
+}

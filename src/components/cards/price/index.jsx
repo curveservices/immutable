@@ -2,7 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase";
 import Button from "../../button";
-import "./index.scss";
+import style from "../card.module.css";
 
 const PriceCard = () => {
   const [priceCard, setPriceCard] = useState([]);
@@ -23,6 +23,8 @@ const PriceCard = () => {
           li3: data.li3,
           li4: data.li4,
           li5: data.li5,
+          li6: data.li6,
+          li7: data.li7
         });
       });
       setPriceCard(priceData);
@@ -36,12 +38,12 @@ const PriceCard = () => {
   }, []);
 
   return (
-    <div className="card-container">
+    <div className={style.cardContainer}>
       {priceCard.map((item) => {
         return (
-          <div className="price-card" key={item.id}>
-            <h2 className="price-title">{item.title}</h2>
-            <h3 className="price">{item.price}</h3>
+          <div className={style.priceCard} key={item.id}>
+            <h2 className={style.priceTitle}>{item.title}</h2>
+            <h3 className={style.price}>{item.price}</h3>
             <ul>
               <li>{item.li1}</li>
               <hr />
@@ -52,8 +54,12 @@ const PriceCard = () => {
               <li>{item.li4}</li>
               <hr />
               <li>{item.li5}</li>
+              <hr />
+              <li>{item.li6}</li>
+              <hr />
+              <li>{item.li7}</li>
             </ul>
-            <div className="btn-container">
+            <div className={style.btnContainer}>
               <Button
                 link={`${item.link}`}
                 text="Show more"

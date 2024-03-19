@@ -1,4 +1,4 @@
-import './index.scss';
+import style from '../card.module.css';
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from '../../../firbase'
@@ -37,12 +37,12 @@ const ChatBotCard = () => {
         fetchData();
     }, []);
     return (
-        <div className="web-card-container">
+        <div className={style.cardContainer}>
             {priceCard.map((item) => {
                 return (
-                    <div className="web-price-card" key={item.id}>
-                        <h1 className="web-price-title">{item.title}</h1>
-                        <h2 className="web-price">{item.price}</h2>
+                    <div className={style.priceCard} key={item.id}>
+                        <h1 className={style.priceTitle}>{item.title}</h1>
+                        <h2 className={style.price}>{item.price}</h2>
                         <ul>
                             <li>{item.li1}</li>
                             <hr />
@@ -60,7 +60,7 @@ const ChatBotCard = () => {
                             <hr />
                             <li>{item.li8}</li>
                         </ul>
-                        <div className="btn-container">
+                        <div className={style.btnContainer}>
                             <Button link="/contact" text="Start now" />
                         </div>
                     </div>
