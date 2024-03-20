@@ -13,6 +13,7 @@ const Button = (props) => {
       to={props.link}
       style={buttonStyle}
       type={props.type}
+      target={props.target}
     >
       {props.text}
     </Link>

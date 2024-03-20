@@ -4,6 +4,9 @@ import { useLayoutEffect, useRef } from "react";
 import Socials from "../../socials";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Loader from "react-loaders";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const refForm = useRef();
@@ -83,11 +86,16 @@ const Contact = () => {
               <li>
                 <input type="submit" className="flat-button" value="send" />
               </li>
+              <li>
+                <Link className="call-button" target="_blank" noreferer to='https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme' >
+                  <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
+                </Link>
+              </li>
             </ul>
           </form>
         </div>
+       
       </section>
-
       <div className="info-map">
         Immutable Studio
         <br />

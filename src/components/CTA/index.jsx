@@ -12,8 +12,8 @@ const CallToAction = () => {
         </h3>
       </div>
       <div className="btn-container">
-        <Button text="book a call" link="" background="var(--primary)" />
-        <Button text="contact us" link="" background="var(--primary)" />
+        <Button text="book a call" link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme" target='_blank' background="var(--primary)" />
+        <Button text="contact us" link="/contact" background="var(--primary)" />
       </div>
     </>
   );
