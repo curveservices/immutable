@@ -43,7 +43,9 @@ const SocialMarketing = () => {
             <h2>Social media templates start from just £80</h2>
             <Button text="Speak with us today" />
           </div>
-          <img src={social} alt="social icons gif" className={style.gif}/>
+          <div className={style.gifContainer}>
+            <img src={social} alt="social icons gif" className={style.gif} />
+          </div>
         </div>
       </section>
       <section className={style.secondSection}>

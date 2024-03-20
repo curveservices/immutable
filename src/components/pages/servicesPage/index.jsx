@@ -4,7 +4,7 @@ import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/price";
 import CallToAction from "../../CTA";
-import Featured from "../featured";
+import Featured from "../../featured";
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

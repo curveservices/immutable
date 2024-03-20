@@ -4,7 +4,7 @@ import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
 import { useLayoutEffect, useState } from "react";
-import Featured from '../featured';
+import Featured from '../../featured';
 import CallToAction from "../../CTA";
 import React from 'react'
 import Loader from "react-loaders";

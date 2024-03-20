@@ -41,10 +41,12 @@ const WebDev = () => {
               a compelling web presence is essential. Immutable Studio specializes in tailoring web development solutions,
               ensuring businesses achieve distinctive online success through custom solutions.
             </p>
-            <h2>We build custom responsive websites from just £495</h2>
+            <h2>We build custom responsive websites from just £495 + vat</h2>
             <Button text="Speak to us today" link='/contact'/>
           </div>
-          <img src={webDev} alt="laptop gif" className={style.gif} />
+          <div className={style.gifContainer}>
+            <img src={webDev} alt="laptop gif" className={style.gif} />
+          </div>
         </div>
       </section>
       <section className={style.secondSection}>

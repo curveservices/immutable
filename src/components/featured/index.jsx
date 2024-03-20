@@ -1,5 +1,5 @@
-import Button from "../../button";
-import Card from "../../cards/work";
+import Button from "../button";
+import Card from "../cards/work";
 import "./index.scss";
 
 const Featured = () => {

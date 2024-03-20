@@ -45,7 +45,9 @@ const ChatBots = () => {
             <h2>We build tailored AI chatbots, starting at £995 + vat. </h2>
             <Button text='Speak to us today' link='contact'/>
           </div>
-          <img src={chatbot} alt="chatbot immi" className={style.gif}/>
+          <div className={style.gifContainer}>
+            <img src={chatbot} alt="chatbot immi" className={style.gif} />
+          </div>
         </div>
       </section>
       <section className={style.secondSection}>

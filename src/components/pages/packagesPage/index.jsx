@@ -45,7 +45,10 @@ const Packages = () => {
             <h2>We build tailer made business packagees starting from just £999</h2>
             <Button text='Speak to us today' link='/contact' />
           </div>
-          <img src={img} alt="package image" className={style.gif}/>
+          <div className={style.gifContainer}>
+            <img src={img} alt="package image" className={style.gif} />
+          </div>
+          
         </div>
       </section>
       <section className={style.secondSection}>
