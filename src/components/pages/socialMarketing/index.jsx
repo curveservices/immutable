@@ -40,7 +40,7 @@ const SocialMarketing = () => {
               Our proficient media content team is available to assist in creating ad campaigns
               and social content, leveraging the latest trends and analytics to propel your social projects forward.
             </p>
-            <h2>Social media templates start from just £80</h2>
+            <h2>Social media templates start from just £85</h2>
             <Button text="Speak with us today" />
           </div>
           <div className={style.gifContainer}>

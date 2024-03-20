@@ -42,7 +42,7 @@ const Packages = () => {
               Our expertise enables automation and outsourcing of daily tasks using cutting-edge AI technology,
               streamlining your operations for increased efficiency.
             </p>
-            <h2>We build tailer made business packagees starting from just £999</h2>
+            <h2>We build tailer made business packagees starting from just £995 + vat</h2>
             <Button text='Speak to us today' link='/contact' />
           </div>
           <div className={style.gifContainer}>
