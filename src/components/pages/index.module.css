@@ -18,8 +18,9 @@
 .gif {
     position: absolute;
     right: 0;
-    top: -3.8%;
-    width: 800px;
+    top: -1%;
+    width: 700px;
+    height: inherit;
     animation: fadeInRightBig 2s forwards;
 }
 

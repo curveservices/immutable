@@ -26,7 +26,7 @@ const Services = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 300)
+      setSecond(scrollSecond > 250)
       setIsScrolled(scrollPrice > 2400);
     };
 
