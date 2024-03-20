@@ -41,7 +41,14 @@ const SocialMarketing = () => {
               and social content, leveraging the latest trends and analytics to propel your social projects forward.
             </p>
             <h2>Social media templates start from just £85</h2>
-            <Button text="Speak with us today" />
+            <div className={style.btnContainer}>
+              <Button text="Speak with us" link='/contact' />
+              <Button
+                target='_blank'
+                text="Or book a call"
+                link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
+              />
+            </div>
           </div>
           <div className={style.gifContainer}>
             <img src={social} alt="social icons gif" className={style.gif} />

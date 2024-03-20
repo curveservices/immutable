@@ -16,7 +16,11 @@
     animation: fadeInLeftBig 2s forwards;
     width: 45%;
 }
-
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .gifContainer {
     width: 50%;
 }
@@ -97,6 +101,10 @@
         margin-top: 3rem;
         padding-top: 5rem;
         width: 100%;
+    }
+
+    .btnContainer {
+        gap: 20px;
     }
 
     .gifContainer {

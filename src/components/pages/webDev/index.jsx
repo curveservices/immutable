@@ -42,7 +42,15 @@ const WebDev = () => {
               ensuring businesses achieve distinctive online success through custom solutions.
             </p>
             <h2>We build custom responsive websites from just £595 + vat</h2>
-            <Button text="Speak to us today" link='/contact'/>
+            <div className={style.btnContainer}>
+              <Button text="Speak with us" link='/contact' />
+              <Button
+                target='_blank'
+                text="Or book a call"
+                link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
+              />
+            </div>
+     
           </div>
           <div className={style.gifContainer}>
             <img src={webDev} alt="laptop gif" className={style.gif} />
