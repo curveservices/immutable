@@ -1,11 +1,11 @@
-import { lazy, useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Button from "../../button";
 import imgSocial from '../../../assets/images/social.jpeg';
 import CallToAction from "../../CTA";
 import social from '../../../assets/images/social-unscreen.gif';
-const SocialCard = lazy(() => import('../../cards/socialCard'));
 import style from "../index.module.css";
 import Loader from "react-loaders";
+import PriceCard from "../../cards/price";
 
 const SocialMarketing = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,7 +75,7 @@ const SocialMarketing = () => {
             className={`${isScrolled ? style.contentAnim : style.none }`}
             id="social-price"
           >
-            <SocialCard />
+            <PriceCard name="SocialMedia" />
           </div>
         </div>
       </section>

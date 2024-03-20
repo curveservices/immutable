@@ -3,9 +3,9 @@ import Button from "../../button";
 import img from '../../../assets/images/packages-unscreen.gif'
 import packageImg from '../../../assets/images/packages.jpeg';
 import CallToAction from "../../CTA";
-import ChatBotCard from "../../cards/botCard";
 import style from '../index.module.css'
 import Loader from "react-loaders";
+import PriceCard from "../../cards/price";
 
 const Packages = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -74,7 +74,7 @@ const Packages = () => {
           </div>
           <div
             className={`${isScrolled ? style.contentAnim : style.none }`} id="package-price">
-            <ChatBotCard/>
+            <PriceCard name='Packages'/>
             </div>
         </div>
       </section>

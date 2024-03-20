@@ -3,7 +3,7 @@ import Button from "../../button";
 import CallToAction from "../../CTA";
 import bot from '../../../assets/images/chatbot-image.jpeg';
 import chatbot from '../../../assets/images/chatbot-unscreen.gif';
-const ChatBotCard = lazy(() => import('../../cards/botCard'))
+import PriceCard from "../../cards/price";
 import style from '../index.module.css'
 import Loader from "react-loaders";
 
@@ -76,7 +76,7 @@ const ChatBots = () => {
           </div>
           <div
             className={`${isScrolled ? style.contentAnim : style.none }`} id="bot-price">
-              <ChatBotCard />
+              <PriceCard name='ChatBots' />
           </div>
         </div>
       </section>

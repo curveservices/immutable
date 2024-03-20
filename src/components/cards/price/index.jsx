@@ -2,15 +2,15 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase";
 import Button from "../../button";
-import style from "../card.module.css";
+import style from "./index.module.css";
 
-const PriceCard = () => {
+const PriceCard = (props) => {
   const [priceCard, setPriceCard] = useState([]);
 
   const fetchData = async () => {
     try {
       const priceData = [];
-      const snapshot = await getDocs(collection(db, "pricing"));
+      const snapshot = await getDocs(collection(db, props.name));
       snapshot.forEach((element) => {
         const data = element.data();
         priceData.push({
@@ -25,7 +25,8 @@ const PriceCard = () => {
           li4: data.li4,
           li5: data.li5,
           li6: data.li6,
-          li7: data.li7
+          li7: data.li7,
+          li8: data.li8,
         });
       });
       setPriceCard(priceData);
@@ -36,7 +37,7 @@ const PriceCard = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [props.name]);
 
   return (
     <div className={style.cardContainer}>
@@ -44,22 +45,31 @@ const PriceCard = () => {
         return (
           <div className={style.priceCard} key={item.id}>
             <img src={item.img} alt="price image" />
-            <h2 className={style.priceTitle}>{item.title}</h2>
-            <h3 className={style.price}>{item.price}</h3>
+            <div className={style.heroContainer}>
+              <h2 className={style.priceTitle}>{item.title}</h2>
+              <h3 className={style.price}>{item.price}</h3>
+            </div>
             <ul>
-              <li>{item.li1}</li>
-              <hr />
-              <li>{item.li2}</li>
-              <hr />
-              <li>{item.li3}</li>
-              <hr />
-              <li>{item.li4}</li>
-              <hr />
-              <li>{item.li5}</li>
-              <hr />
-              <li>{item.li6}</li>
-              <hr />
-              <li>{item.li7}</li>
+              <div className={style.listLeft}>
+                <li>{item.li1}</li>
+                <hr />
+                <li>{item.li2}</li>
+                <hr />
+                <li>{item.li3}</li>
+                <hr />
+                <li>{item.li4}</li>
+                <hr />
+              </div>
+              <div className={style.listRight}>
+                <li>{item.li5}</li>
+                <hr />
+                <li>{item.li6}</li>
+                <hr />
+                <li>{item.li7}</li>
+                <hr />
+                <li>{item.li8}</li>
+                <hr />
+              </div>
             </ul>
             <div className={style.btnContainer}>
               <Button

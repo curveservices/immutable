@@ -1,11 +1,11 @@
 import { useEffect, useLayoutEffect, useState } from "react";
-import WebDevPrice from "../../cards/webDevelopment";
 import img1 from '../../../assets/images/service-1.jpeg'
 import Button from "../../button";
 import CallToAction from "../../CTA";
 import webDev from '../../../assets/images/webDev2-unscreen.gif';
 import style from '../index.module.css';
 import Loader from "react-loaders";
+import PriceCard from "../../cards/price";
 
 const WebDev = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -78,7 +78,7 @@ const WebDev = () => {
             className={`${isScrolled ? style.contentAnim : style.none}`}
             id="web-price"
           >
-            <WebDevPrice  />
+            <PriceCard name="webDev"  />
           </div>
         </div>
       </section>

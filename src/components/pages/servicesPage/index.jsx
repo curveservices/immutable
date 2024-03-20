@@ -26,8 +26,8 @@ const Services = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 250)
-      setIsScrolled(scrollPrice > 2700);
+      setSecond(scrollSecond > 300)
+      setIsScrolled(scrollPrice > 2400);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -187,7 +187,7 @@ const Services = () => {
             </div>
             <h1 className="price-title">Check out our starting prices</h1>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
-              <PriceCard />
+              <PriceCard name='pricing'/>
             </div>
           </div>
         </section>
