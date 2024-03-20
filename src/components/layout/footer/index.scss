@@ -21,6 +21,10 @@ footer {
     gap: 50px;
     margin-left: 50px;
     cursor: pointer;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
     li {
       list-style: none;
       text-align: left;
