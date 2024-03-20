@@ -68,7 +68,7 @@ const WebDev = () => {
       <section className={style.thirdSection}>
         <div className={style.thirdInner}>
           <div className={style.thirdTextBox}>
-            <h1>CHECK OUT OUR RANGE OF CUSTOM OR WORDPRESS WEBSITE PACKAGES</h1>
+            <h1>CHECK OUT OUR CUSTOM OR WORDPRESS WEBSITE PACKAGES</h1>
             <p>
               We prioritize transparent communication and strong client relationships.
               Our services feature clear, budget-friendly pricing with detailed breakdowns.
