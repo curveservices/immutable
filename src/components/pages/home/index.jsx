@@ -4,11 +4,11 @@ import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
 import { useLayoutEffect, useState } from "react";
-import "./index.scss";
+import Featured from '../featured';
 import CallToAction from "../../CTA";
 import React from 'react'
 import Loader from "react-loaders";
-const Featured = React.lazy(() => import('../featured'))
+import "./index.scss";
 
 const Home = () => {
   const [activeAccordion, setActiveAccordion] = useState(0);
