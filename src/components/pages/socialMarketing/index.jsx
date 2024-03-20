@@ -5,7 +5,7 @@ import CallToAction from "../../CTA";
 import social from '../../../assets/images/social-unscreen.gif';
 import style from "../index.module.css";
 import Loader from "react-loaders";
-import PriceCard from "../../cards/price";
+import PriceCard from "../../cards/fullPrice";
 
 const SocialMarketing = () => {
   const [isScrolled, setIsScrolled] = useState(false);

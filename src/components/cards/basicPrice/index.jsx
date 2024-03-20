@@ -1,3 +1,5 @@
+import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase";
@@ -51,23 +53,23 @@ const PriceCard = (props) => {
             </div>
             <ul>
               <div className={style.listLeft}>
-                <li>{item.li1}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck}/> {item.li1}</li>
                 <hr />
-                <li>{item.li2}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li2}</li>
                 <hr />
-                <li>{item.li3}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li3}</li>
                 <hr />
-                <li>{item.li4}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li4}</li>
                 <hr />
               </div>
               <div className={style.listRight}>
-                <li>{item.li5}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li5}</li>
                 <hr />
-                <li>{item.li6}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li6}</li>
                 <hr />
-                <li>{item.li7}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li7}</li>
                 <hr />
-                <li>{item.li8}</li>
+                <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li8}</li>
                 <hr />
               </div>
             </ul>

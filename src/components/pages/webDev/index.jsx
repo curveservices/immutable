@@ -5,7 +5,7 @@ import CallToAction from "../../CTA";
 import webDev from '../../../assets/images/webDev2-unscreen.gif';
 import style from '../index.module.css';
 import Loader from "react-loaders";
-import PriceCard from "../../cards/price";
+import PriceCard from "../../cards/fullPrice";
 
 const WebDev = () => {
   const [isScrolled, setIsScrolled] = useState(false);

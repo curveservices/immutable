@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
-import PriceCard from "../../cards/price";
+import PriceCard from "../../cards/basicPrice";
 import CallToAction from "../../CTA";
 import Featured from "../../featured";
 import img1 from "../../../assets/images/servicesImg.jpeg";

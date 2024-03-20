@@ -32,14 +32,13 @@ const Contact = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
-    <div className="contact-page">
-        <section className="text-box">
-          <Loader type="ball-spin-fade-loader" />
-        <h1>CONTACT US</h1>
+      <div className="contact-page">
+        <Loader type="ball-spin-fade-loader" />
+      <section className="text-box">
+        <h1>Contact Us</h1>
         <p>
           Ready to get your project started? wheather it's a large project,
-          persnoal portfolio, landing page or website chat bot, We are able to
+          personal portfolio, landing page or website chat bot, We are able to
           help.
         </p>
         <p>
@@ -108,8 +107,6 @@ const Contact = () => {
         </MapContainer>
       </div>
       </div>  
-      <Loader type="ball-spin-fade-loader"/>
-    </>
   );
 };
 

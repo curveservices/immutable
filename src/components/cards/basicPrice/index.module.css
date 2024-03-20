@@ -49,16 +49,16 @@ ul {
 
 .listLeft {
     width: 50%;
+    padding: 0;
 }
 
 .listRight {
     width: 50%;
+    padding: 0;
 }
 
 li {
-    
     list-style: none;
-    text-align: center;
     padding: 5px;
 }
   

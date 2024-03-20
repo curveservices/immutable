@@ -3,7 +3,7 @@ import Button from "../../button";
 import CallToAction from "../../CTA";
 import bot from '../../../assets/images/chatbot-image.jpeg';
 import chatbot from '../../../assets/images/chatbot-unscreen.gif';
-import PriceCard from "../../cards/price";
+import PriceCard from "../../cards/fullPrice";
 import style from '../index.module.css'
 import Loader from "react-loaders";
 

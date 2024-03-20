@@ -5,7 +5,7 @@ import packageImg from '../../../assets/images/packages.jpeg';
 import CallToAction from "../../CTA";
 import style from '../index.module.css'
 import Loader from "react-loaders";
-import PriceCard from "../../cards/price";
+import PriceCard from "../../cards/fullPrice";
 
 const Packages = () => {
   const [isScrolled, setIsScrolled] = useState(false);
