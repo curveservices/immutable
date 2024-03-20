@@ -11,17 +11,15 @@ const Footer = () => {
       </div>
 
       <div className="socials-container">
-        <p>Follow Us!</p>
+        <p>Follow Us</p>
         <Socials />
         <p className="copy">Copyyright &copy; {year} Immutable Studio </p>
       </div>
 
       <div className="link-container">
         <div className="studio">
-          <div>
-            <p>Studio</p>
-          </div>
           <ul className="site-links">
+            <li><p>Studio</p></li>
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -37,10 +35,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="lead">
-          <div>
-            <p>Lead Dev</p>
-          </div>
           <ul className="site-links">
+            <li><p>Lead Dev</p></li>
             <li>
               <Link
                 to="https://dev-paul.netlify.app/"
@@ -71,10 +67,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="experts">
-          <div>
-            <p>Experts in</p>
-          </div>
           <ul>
+            <li><p>Experts in</p></li>
             <li>Hospitality</li>
             <li>Tutoring</li>
             <li>B 2 B</li>

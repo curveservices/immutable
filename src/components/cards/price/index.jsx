@@ -15,6 +15,7 @@ const PriceCard = () => {
         const data = element.data();
         priceData.push({
           id: element.id,
+          img: data.img,
           title: data.title,
           price: data.price,
           link: data.link,
@@ -42,6 +43,7 @@ const PriceCard = () => {
       {priceCard.map((item) => {
         return (
           <div className={style.priceCard} key={item.id}>
+            <img src={item.img} alt="price image" />
             <h2 className={style.priceTitle}>{item.title}</h2>
             <h3 className={style.price}>{item.price}</h3>
             <ul>

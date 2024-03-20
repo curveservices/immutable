@@ -4,7 +4,7 @@
   background-image: url('../../assets/images/1746747.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   box-shadow: var(--global);
 
   .text-container {
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 800px) {
   .cta {
-    height: 50vh;
+    height: 500px;
     flex-direction: column;
     justify-content: initial;
     gap: 2rem;

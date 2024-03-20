@@ -2,7 +2,7 @@ footer {
   position: absolute;
   bottom: 0;
   margin: 0;
-  height: 220px;
+  height: 300px;
   width: 100%;
   font-family: "Coolvetica";
   text-transform: uppercase;
@@ -18,15 +18,14 @@ footer {
 
   .link-container {
     display: flex;
-    justify-content: flex-start;
     gap: 50px;
     margin-left: 50px;
-    margin-top: 20px;
     cursor: pointer;
-
     li {
       list-style: none;
+      text-align: left;
     }
+    
   }
   .socials-container {
     float: right;
@@ -34,12 +33,12 @@ footer {
     align-items: end;
     flex-direction: column;
     width: 40%;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-right: 80px;
   }
   .copy {
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 70px;
     font-size: 12px;
   }
 }
@@ -53,27 +52,24 @@ footer {
     }
   
     .link-container {
-      gap: 10px;
-      margin: 0 0 10px 10px;
+      gap: 5px;
+      margin: 0 10px;
       font-size: 12px;
-  
-      li {
-        list-style: none;
-        text-align: left;
-        margin: 0;
+      ul {
+        padding: 0;
       }
     }
   
     .socials-container {
-      width: 33%;
-      margin: 0 10px;
-      padding: 0;
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
       font-size: 12px;
     }
     .copy {
       font-size: 8px;
       text-align: right;
-      margin-bottom: 10px;
+      margin-top: 40px;
     }
   }
 }
