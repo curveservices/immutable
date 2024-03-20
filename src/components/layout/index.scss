@@ -6,8 +6,9 @@
   font-family: "Coolvetica";
   background-image: url("../../assets/images/blue.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
   background-attachment: fixed;
+  background-position: center;
   animation: fadeIn 4s forwards;
 
   .home-page,
@@ -64,8 +65,7 @@
 
 @media screen and (max-width: 800px) {
   .app {
-    background-position: center;
-    overflow: hidden;
+    background-size: fill;
     .home-page,
     .about-page,
     .serivces-page,
@@ -79,7 +79,6 @@
       }
       p {
         font-size: 14px;
-        line-height: 1;
       }
     }
   }
