@@ -46,11 +46,12 @@ const PriceCard = (props) => {
             {priceCard.map((item) => {
                 return (
                     <div className={style.priceCard} key={item.id}>
-                        <img src={item.img} className={style.cardImg} alt="price image" />
                         <div className={style.heroContainer}>
                             <h2 className={style.priceTitle}>{item.title}</h2>
                             <h3 className={style.price}>{item.price}</h3>
                         </div>
+                        <img src={item.img} className={style.cardImg} alt="price image" />
+                        
                         <ul>
                             <div className={style.listLeft}>
                                 <li><FontAwesomeIcon icon={faSquareCheck} /> {item.li1}</li>

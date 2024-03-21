@@ -128,7 +128,6 @@
     }
 
     .animSecond {
-        animation: fadeInLeft 2s forwards;
         width: 100%;
         padding: 0rem;
     }
@@ -138,9 +137,12 @@
     }
 
     .animSecondimg {
-        animation: fadeInRight 2s forwards;
+        animation: backInUp 2s forwards;
         width: 100%;
 
+    }
+    .secondNone {
+        display: none;
     }
 
     /* Third section */
@@ -153,7 +155,7 @@
     }
 
     .contentAnim {
-        animation: backInUp 1s forwards;
+        animation: fadeInUp 2s;
         margin: 1rem;
     }
 

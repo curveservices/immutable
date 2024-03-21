@@ -1,14 +1,13 @@
 .serivces-page {
-  position: relative;
   .hero {
       display: flex;
       min-height: 100vh;
     .hero-inner {
+      position: relative;
       display: flex;
       justify-content: space-between;
       margin: 2em 3rem;
       padding: 4rem 1rem;
-      
       color: #fff;
 
       .text-box {
@@ -22,7 +21,7 @@
       }
 
       .cube-container {
-        top: 6%;
+        margin-top: 4rem;
         left: 55%;
       }
 
@@ -85,7 +84,7 @@
       padding: 4rem;
       min-height: 75vh;
 
-      .animSecond {
+      .anim-second {
         animation: fadeInLeft 1s forwards;
         width: 60%;
         padding: 0 1rem;
@@ -171,7 +170,7 @@
       }
 
       .contentAnim {
-        animation: backInUp 1s forwards;
+        animation: fadeInUp 2s forwards;
         margin: 2rem;
       }
     }
@@ -202,7 +201,7 @@
         .cube-container {
           width: 70px;
           opacity: 0.1;
-          top: 9%;
+          margin-top: 15rem;
           left: 65%;
         }
         .link-container {

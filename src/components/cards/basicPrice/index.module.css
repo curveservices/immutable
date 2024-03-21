@@ -5,8 +5,8 @@
 }
 
 .priceCard {
+    position: relative;
     flex: 1 1 30%;
-    overflow: hidden;
     max-width: calc(50% - 10px);
     padding-bottom: 2rem;
     box-shadow: var(--global);
@@ -21,11 +21,11 @@
 
 .heroContainer {
     position: absolute;
-    top: -5%;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     background: var(--secondary);
-    margin-left: 50px;
-    width: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #2b66a7;
     box-shadow: var(--global);
 }

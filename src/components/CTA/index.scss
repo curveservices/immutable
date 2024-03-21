@@ -1,10 +1,11 @@
 .cta {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url('../../assets/images/1746747.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  min-height: 80vh;
+  margin: 2rem 0;
   box-shadow: var(--global);
 
   .text-container {
@@ -19,16 +20,18 @@
     .cta-p {
       font-family: sans-serif;
       font-weight: 600;
-      margin-left: 4rem;
+      margin:0 4rem;
     }
   }
 
   .btn-container {
-    width: 40%;
-    height: 40%;
     display: flex;
-    justify-content: space-evenly;
+    width: 50%;
+    height: 40%;
+    gap: 2rem;
+    justify-content: center;
     align-items: flex-end;
+    margin-top: 5rem;
   }
 }
 

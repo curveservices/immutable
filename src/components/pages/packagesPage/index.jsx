@@ -42,12 +42,12 @@ const Packages = () => {
               Our expertise enables automation and outsourcing of daily tasks using cutting-edge AI technology,
               streamlining your operations for increased efficiency.
             </p>
-            <h2>We build tailer made business packagees starting from just £995 + vat</h2>
+            <h2>We build tailer made business packages starting from just £995 + vat</h2>
             <div className={style.btnContainer}>
               <Button text="Speak with us" link='/contact' />
               <Button
                 target='_blank'
-                text="Or book a call"
+                text="book a call"
                 link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
               />
             </div>

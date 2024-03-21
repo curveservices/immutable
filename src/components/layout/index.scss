@@ -1,6 +1,7 @@
 .app {
+  position: relative;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   will-change: contents;
   transform-style: preserve-3d;
   font-family: "Coolvetica";
@@ -9,6 +10,7 @@
   background-attachment: fixed;
   background-size: cover;
   animation: fadeIn 4s forwards;
+
 
   .home-page,
   .about-page,

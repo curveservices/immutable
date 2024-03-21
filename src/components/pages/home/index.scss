@@ -1,6 +1,7 @@
 .home-page {
   position: relative;
   .hero {
+    position: relative;
     display: flex;
     justify-content: space-between;
     min-height: 100vh;
@@ -25,7 +26,8 @@
 
 
   .second-section {
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
     background-image: url("../../../assets/images/1746747.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +73,7 @@
       
           .circle {
             top: -25%;
-            left: 4rem;
+            left: 2rem;
             width: 20rem;
           }
       
@@ -82,7 +84,7 @@
           .stage-cube-cont {
             .cubespinner {
               top: -0%;
-              left: 25%;
+              left: 15%;
               transform-origin: 50px 50px 0;
               margin-left: calc(50% - 100px);
       
@@ -137,7 +139,7 @@
     
       .cube-container {
         overflow: initial;
-        width: 70px;
+        width: 50px;
         top: 42%;
         left: 58%;
         opacity: 0.2;
@@ -154,9 +156,12 @@
             font-size: 12px;
             margin-top: 3rem;
           }
+          .cubes {
+            display: none;
+          }
           .content-container {
             top: 38%;
-            margin-left: 4rem;
+            margin-left: 3rem;
             font-size: 11px;
             overflow: initial;
           

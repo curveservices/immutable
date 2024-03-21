@@ -85,7 +85,7 @@ const Services = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div className={`${second ? "animSecond" : "second-none"}`}>
+            <div className={`${second ? "anim-second" : "second-none"}`}>
               <h1>
                 Need a supportive full-service design agency for your business?
               </h1>
