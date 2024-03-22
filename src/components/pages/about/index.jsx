@@ -29,19 +29,18 @@ const About = () => {
             <div className="right-hero">
               <p>
                 We are a proud south east London design studio specialising in
-                web development, design, social media marketing, and AI chat
-                bots. We apply the best of our skills to your challenges and
-                ideas.
+                  web development, design, social media marketing, and AI solutions.
+                  We apply the best of our skills to your challenges and ideas.
               </p>
               <p>
-                We are passionate about tech, design, problem solving and
+                We are passionate about tech, AI, problem solving and
                 business.
               </p>
 
               <p>
-                Paul created the company in 2022 and has been delivering amazing
-                  websites and AI solutions ever since. Harvey
-                specailises in social media marketing and strategies.
+                Immutable Studio was created in 2022 and has been delivering amazing
+                websites and AI solutions ever since. Our Digital team
+                specailise in social media marketing and strategies.
               </p>
             </div>
           </div>
