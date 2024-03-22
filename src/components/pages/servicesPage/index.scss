@@ -85,7 +85,7 @@
       min-height: 75vh;
 
       .anim-second {
-        animation: fadeInLeft 1s forwards;
+        animation: fadeInLeft 2s forwards;
         width: 60%;
         padding: 0 1rem;
       
@@ -95,7 +95,7 @@
       }
 
         .animSecondimg {
-          animation: fadeInRight 1s forwards;
+          animation: fadeInRight 2s forwards;
           width: 40%;
         }
 
@@ -193,7 +193,6 @@
         padding: 2rem 0rem;
         .text-box {
           width: 100%;
-          animation: fadeInLeftBig 2s forwards;
           p {
             padding-top: 0rem;
           }
@@ -222,10 +221,9 @@
         gap: 1rem;
         margin: 0rem;
         padding: 1rem;
-        .animSecond {
-          animation: fadeInLeft 2s forwards;
+        .anim-second {
           width: 100%;
-          padding: 0rem;
+          padding: 2rem 0;
   
           p {
             padding-top: 0rem;
@@ -266,7 +264,6 @@
           text-align: center;
         }
         .contentAnim {
-          animation: backInUp 1s forwards;
           margin: 1rem;
           .card-container {
             flex-direction: column;

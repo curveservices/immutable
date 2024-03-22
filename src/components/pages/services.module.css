@@ -81,7 +81,7 @@
     color: #fff;
 }
 .contentAnim {
-    animation: backInUp 1s forwards;
+    animation: fadeInUp 1s forwards;
     margin: 2rem;
 }
 .none {
@@ -137,7 +137,6 @@
     }
 
     .animSecondimg {
-        animation: backInUp 2s forwards;
         width: 100%;
 
     }

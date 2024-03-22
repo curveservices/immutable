@@ -3,7 +3,7 @@ import Button from "../../button";
 import imgSocial from '../../../assets/images/social.jpeg';
 import CallToAction from "../../CTA";
 import social from '../../../assets/images/social-unscreen.gif';
-import style from "../index.module.css";
+import style from "../services.module.css";
 import Loader from "react-loaders";
 import PriceCard from "../../cards/fullPrice";
 

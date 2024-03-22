@@ -1,0 +1,33 @@
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+
+    .team-card {
+        position: relative;
+        max-width: calc(40% - 10px);
+        padding-bottom: 2rem;
+        background: var(--primary);
+        box-shadow: var(--global);
+
+        .teamImg {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            box-shadow: var(--global);
+            background: var(--secondary);
+        }
+        .text-box {
+            padding-top: 5rem;
+
+            .desc {
+                text-align: center;
+            }
+        }
+    }
+}

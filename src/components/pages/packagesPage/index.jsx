@@ -3,7 +3,7 @@ import Button from "../../button";
 import img from '../../../assets/images/packages-unscreen.gif'
 import packageImg from '../../../assets/images/packages.jpeg';
 import CallToAction from "../../CTA";
-import style from '../index.module.css'
+import style from "../services.module.css";
 import Loader from "react-loaders";
 import PriceCard from "../../cards/fullPrice";
 

@@ -1,9 +1,10 @@
 import { useLayoutEffect } from "react";
 import Button from "../../button";
 import Socials from "../../socials";
-import paul from "../../../assets/images/paul (2)-UZaRP6S7.png";
 import "./index.scss";
 import Loader from "react-loaders";
+import TeamCard from "../../cards/teamCard";
+import CallToAction from "../../CTA";
 
 const About = () => {
   useLayoutEffect(() => {
@@ -18,7 +19,7 @@ const About = () => {
           <div className="text-box">
               <div className="left-hero">
                 <h1 className="title">
-                  Who are Immutable studio? And what do they do?
+                  Who's behind Immutable studio? And what do they do?
                 </h1>
                 <div className="btn-container">
                   <Socials />
@@ -39,7 +40,7 @@ const About = () => {
 
               <p>
                 Paul created the company in 2022 and has been delivering amazing
-                websites and AI solutions ever since. His nephew Harvey
+                  websites and AI solutions ever since. Harvey
                 specailises in social media marketing and strategies.
               </p>
             </div>
@@ -52,19 +53,13 @@ const About = () => {
             <h1>MEET THE TEAM</h1>
           </div>
           <div className="team-container">
-            <div className="team-card">
-              <img src={paul} alt="" />
-              <div className="text-box">
-                <div className="name">Paul Rossiter</div>
-                <div className="desc"></div>
-              </div>
-            </div>
-            <img src="" alt="" />
-            <div className="team-card">Harvey Connell</div>
-            <div className="desc"></div>
+            <TeamCard />
           </div>
         </div>
-      </section>
+        </section>
+        <section className="cta">
+          <CallToAction />
+        </section>
     </div>
     
     </>

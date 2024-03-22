@@ -4,7 +4,7 @@ import CallToAction from "../../CTA";
 import bot from '../../../assets/images/chatbot-image.jpeg';
 import chatbot from '../../../assets/images/chatbot-unscreen.gif';
 import PriceCard from "../../cards/fullPrice";
-import style from '../index.module.css'
+import style from "../services.module.css";
 import Loader from "react-loaders";
 
 
