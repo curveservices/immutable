@@ -59,16 +59,17 @@ header {
 
     .logo {
       display: block;
+      padding-top: 5px;
       width: 50px;
-      padding-top: 15px;
     }
 
     nav {
       position: absolute;
       right: 0;
-      padding-top: 30px;
+      padding-top: 20px;
       padding-right: 30px;
       gap: 2rem;
+      
       
       &.mobile-show {
         display: flex;

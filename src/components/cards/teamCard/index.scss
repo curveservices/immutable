@@ -31,3 +31,35 @@
         }
     }
 }
+
+@media screen and  (max-width: 800px) {
+    .team-container {
+        flex-direction: column;
+        gap: 10rem;
+        color: #fff;
+    
+        .team-card {
+            max-width: 100%;
+
+            .teamImg {
+                top: -75px;
+                width: 150px;
+                height: 150px;
+            }
+    
+            .text-box {
+                h1 {
+                    font-size: 28px;
+                }
+                
+                h2 {
+                    font-size: 20px;
+                }
+    
+                .desc {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

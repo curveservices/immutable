@@ -5,6 +5,7 @@ import "./index.scss";
 import Loader from "react-loaders";
 import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
+import StaticCubes from "../../Animations/staticCubes";
 
 const About = () => {
   useLayoutEffect(() => {
@@ -15,7 +16,8 @@ const About = () => {
     <div className="about-page">
         <section className="hero">
           <Loader type="ball-spin-fade-loader" />
-        <div className="inner-hero">
+          <div className="inner-hero">
+            <StaticCubes />
           <div className="text-box">
               <div className="left-hero">
                 <h1 className="title">
@@ -24,6 +26,7 @@ const About = () => {
                 <div className="btn-container">
                   <Socials />
                   <Button link="contact" text="Hire us" />
+                  <Button link="" noreferer text="Book a call"/>
                 </div>
               </div>
             <div className="right-hero">
