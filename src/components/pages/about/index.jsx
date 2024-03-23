@@ -9,12 +9,12 @@ import StaticCubes from "../../Animations/staticCubes";
 import { useEffect } from "react";
 
 const About = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [second, setSecond] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollCard = window.scrollY;
-      setIsScrolled(scrollCard > 350);
+      setSecond(scrollCard > 500);
     };
     window.addEventListener("scroll", handleScroll)
     return () => {
@@ -25,7 +25,7 @@ const About = () => {
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
   return (
     <>
     <div className="about-page">
@@ -66,10 +66,10 @@ const About = () => {
       </section>
       <section className="second-section">
         <div className="second-inner">
-          <div className="text-box">
+          <div className="title">
             <h1>MEET THE TEAM</h1>
           </div>
-          <div className={`${isScrolled ? "contentAnim" : 'none'}`}>
+          <div className={`${second ? "contentAnim" : 'none'}`}>
             <TeamCard />
           </div>
         </div>

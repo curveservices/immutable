@@ -8,6 +8,7 @@
   background-image: url("../../assets/images/blue.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   animation: fadeIn 4s forwards;
 
@@ -20,7 +21,6 @@
   .chatbot-page,
   .social-page,
   .package-page {
-    position: relative;
     h1 {
       font-size: 48px;
       font-weight: normal;
@@ -66,7 +66,6 @@
 
 @media screen and (max-width: 800px) {
   .app {
-    background-position: center;
     .home-page,
     .about-page,
     .serivces-page,

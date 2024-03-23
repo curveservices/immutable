@@ -40,6 +40,7 @@
     
         .team-card {
             max-width: 100%;
+            text-align: center;
 
             .teamImg {
                 top: -75px;
@@ -54,10 +55,6 @@
                 
                 h2 {
                     font-size: 20px;
-                }
-    
-                .desc {
-                    text-align: center;
                 }
             }
         }
