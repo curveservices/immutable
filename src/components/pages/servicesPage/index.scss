@@ -1,5 +1,5 @@
 .serivces-page {
-  .hero {
+  
     .hero-inner {
       position: relative;
       display: flex;
@@ -70,7 +70,7 @@
           );
         }
       }
-    }
+    
   }
 
   .second-section {
@@ -191,6 +191,7 @@
         padding: 2rem 0rem;
         .text-box {
           width: 100%;
+          animation: none;
         }
 
         .link-container {
