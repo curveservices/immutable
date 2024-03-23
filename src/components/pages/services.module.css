@@ -36,6 +36,7 @@
     justify-content: space-evenly;
     margin: 0rem;
     padding: 2rem;
+    min-height: 75vh
 }
 .animSecond {
     animation: fadeInLeft 2s forwards;
@@ -93,7 +94,6 @@
         margin-top: 4rem;
         padding: 4rem 2rem 0 2rem;
         width: 100%;
-        animation: none;
     }
 
     .btnContainer {
@@ -106,7 +106,6 @@
     
     .gif {
         width: 100%;
-        animation: none;
     }
 
     /* Second section */
@@ -120,12 +119,10 @@
     .animSecond {
         width: 100%;
         padding: 0rem;
-        animation: none;
     }
 
     .animSecondimg {
         width: 100%;
-        animation: none;
 
     }
     
@@ -141,7 +138,6 @@
     }
 
     .contentAnim {
-        animation: none;
         margin: 1rem;
     }
 

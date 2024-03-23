@@ -85,7 +85,6 @@
 
           .left-hero {
             max-width: initial;
-            animation: none;
 
             .btn-container {
               align-items: flex-start;
@@ -97,7 +96,6 @@
           .right-hero {
             padding: 0rem;
             margin: 0;
-            animation: none;
           }
         }
       }
@@ -119,9 +117,6 @@
 
         .team-container {
           margin-top: 5rem;
-        }
-        .contentAnim {
-          animation: none;
         }
       }
     }
