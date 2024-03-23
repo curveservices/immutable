@@ -1,8 +1,6 @@
 .serivces-page {
   .hero {
-    position: relative;
-      display: flex;
-      min-height: 100vh;
+    min-height: 100vh;
     .hero-inner {
       position: relative;
       display: flex;
@@ -22,7 +20,7 @@
       }
 
       .cube-container {
-        margin-top: 4rem;
+        top: 55%;
         left: 55%;
       }
 
@@ -189,7 +187,7 @@
   .serivces-page {
     .hero {
       .hero-inner {
-        display: initial;
+        flex-direction: column;
         margin: 2em 0rem;
         padding: 2rem 0rem;
         .text-box {
@@ -201,7 +199,6 @@
         .cube-container {
           width: 70px;
           opacity: 0.1;
-          margin-top: 15rem;
           left: 65%;
         }
         .link-container {

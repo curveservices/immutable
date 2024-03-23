@@ -7,7 +7,7 @@
 
         .cube-container {
           width: 100px;
-          top: 12%;
+          top: 14%;
           right: 0;
         }
 
@@ -54,6 +54,16 @@
       }
       .team-container {
         margin: 5rem 0rem;
+        animation: fadeIn 2s forwards;
+      }
+
+      .contentAnim {
+        animation: fadeInUp 1s forwards;
+        margin: 2rem;
+      }
+      
+      .none {
+        display: none;
       }
     }
   }
