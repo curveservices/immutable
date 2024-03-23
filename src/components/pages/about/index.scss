@@ -59,7 +59,7 @@
       }
 
       .none {
-        opacity: 0;
+        display: none;
       }
     }
   }
@@ -119,6 +119,9 @@
 
         .team-container {
           margin-top: 5rem;
+        }
+        .contentAnim {
+          animation: none;
         }
       }
     }

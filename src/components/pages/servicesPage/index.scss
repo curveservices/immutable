@@ -198,7 +198,7 @@
           gap: 20px;
           margin: 2rem 0;
           padding: 0 2rem;
-          animation: bounceInUp 2s forwards;
+          animation: none;
         }
 
         .cube-container {
@@ -219,9 +219,11 @@
         .anim-second {
           width: 100%;
           padding: 2rem 0;
+          animation: none;
         }
         .animSecondimg {
           width: 100%;
+          animation: none;
         }
       }
     }
@@ -255,6 +257,7 @@
         }
         .contentAnim {
           margin: 1rem;
+          animation: none;
           .card-container {
             flex-direction: column;
             .price-card {
