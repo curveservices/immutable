@@ -52,9 +52,7 @@
         margin: 2rem;
         text-align: center;
       }
-      .team-container {
-        animation: fadeIn 2s forwards;
-      }
+      
 
       .contentAnim {
         animation: fadeInUp 1s forwards;
@@ -87,7 +85,7 @@
 
           .left-hero {
             max-width: initial;
-            animation: fadeInLeft 2s forwards;
+            animation: none;
 
             .btn-container {
               align-items: flex-start;
@@ -99,7 +97,7 @@
           .right-hero {
             padding: 0rem;
             margin: 0;
-            animation: fadeInUp 2s forwards;
+            animation: none;
           }
         }
       }
