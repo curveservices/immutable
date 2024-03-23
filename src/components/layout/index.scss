@@ -6,6 +6,7 @@
   background-image: url("../../assets/images/blue.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   animation: fadeIn 4s forwards;
 
@@ -62,7 +63,6 @@
 
 @media screen and (max-width: 920px) {
   .app {
-    background-attachment: none;
     .home-page,
     .about-page,
     .serivces-page,
