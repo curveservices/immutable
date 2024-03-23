@@ -32,7 +32,6 @@ const About = () => {
         <section className="hero">
           <Loader type="ball-spin-fade-loader" />
           <div className="inner-hero">
-            
           <div className="text-box">
               <div className="left-hero">
                 <h1 className="title">
@@ -60,8 +59,7 @@ const About = () => {
                 specailise in social media marketing and strategies.
                 </p>
               </div>
-              <StaticCubes />
-          </div>
+            </div>
         </div>
       </section>
       <section className="second-section">

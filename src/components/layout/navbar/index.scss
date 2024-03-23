@@ -20,6 +20,7 @@ header {
     display: none;
   }
   nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -42,7 +43,7 @@ header {
 
 .navbar-scroll {
   opacity: 0;
-  transition:all 3s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .mobile-icon,
