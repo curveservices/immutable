@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import Button from "../../button";
-import img from '../../../assets/images/packages-unscreen.gif'
-import packageImg from '../../../assets/images/packages.jpeg';
+import img from "../../../assets/images/packages-unscreen.gif";
+import packageImg from "../../../assets/images/packages.jpeg";
 import CallToAction from "../../CTA";
 import style from "../services.module.css";
 import Loader from "react-loaders";
@@ -15,7 +15,7 @@ const Packages = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 250)
+      setSecond(scrollSecond > 250);
       setIsScrolled(scrollPrice > 1000);
     };
 
@@ -38,15 +38,19 @@ const Packages = () => {
           <div className={style.textBox}>
             <h1>Business Packages</h1>
             <p>
-              Seeking AI solutions for your business? Let us ease your challenges with an online chatbot.
-              Our expertise enables automation and outsourcing of daily tasks using cutting-edge AI technology,
-              streamlining your operations for increased efficiency.
+              Seeking AI solutions for your business? Let us ease your
+              challenges with an online chatbot. Our expertise enables
+              automation and outsourcing of daily tasks using cutting-edge AI
+              technology, streamlining your operations for increased efficiency.
             </p>
-            <h2>We build tailer made business packages starting from just £995 + vat</h2>
+            <h2>
+              We build tailer made business packages starting from just £995 +
+              vat
+            </h2>
             <div className={style.btnContainer}>
-              <Button text="Speak with us" link='/contact' />
+              <Button text="Speak with us" link="/contact" />
               <Button
-                target='_blank'
+                target="_blank"
                 text="book a call"
                 link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
               />
@@ -55,7 +59,6 @@ const Packages = () => {
           <div className={style.gifContainer}>
             <img src={img} alt="package image" className={style.gif} />
           </div>
-          
         </div>
       </section>
       <section className={style.secondSection}>
@@ -63,12 +66,16 @@ const Packages = () => {
           <div className={`${second ? style.animSecond : style.secondNone}`}>
             <h1>Are you in need of full online website and AI solutions?</h1>
             <p>
-              Our custom packages integrate cutting-edge AI solutions,
-              from chatbot integration to advanced AI workflows and platforms.
-              Our goal is to alleviate your pain points, saving you time and money.
+              Our custom packages integrate cutting-edge AI solutions, from
+              chatbot integration to advanced AI workflows and platforms. Our
+              goal is to alleviate your pain points, saving you time and money.
             </p>
           </div>
-          <img src={packageImg} alt="packagge image" className={`${second ? style.animSecondimg : style.secondNone }`}/>
+          <img
+            src={packageImg}
+            alt="packagge image"
+            className={`${second ? style.animSecondimg : style.secondNone}`}
+          />
         </div>
       </section>
       <section className={style.thirdSection}>
@@ -77,15 +84,18 @@ const Packages = () => {
             <h1>CHECK OUT OUR CUSTOM BUSINESS PACKAGES</h1>
             <p>
               We prioritize transparent communication and strong client bonds.
-              Our services offer clear, budget-friendly pricing with detailed breakdowns.
-              Through scalable packages, we ensure your website chatbot evolves alongside your business,
-              emphasizing adaptability and alignment with your goals as you expand.
+              Our services offer clear, budget-friendly pricing with detailed
+              breakdowns. Through scalable packages, we ensure your website
+              chatbot evolves alongside your business, emphasizing adaptability
+              and alignment with your goals as you expand.
             </p>
           </div>
           <div
-            className={`${isScrolled ? style.contentAnim : style.none }`} id="package-price">
-            <PriceCard name='Packages'/>
-            </div>
+            className={`${isScrolled ? style.contentAnim : style.none}`}
+            id="package-price"
+          >
+            <PriceCard name="Packages" />
+          </div>
         </div>
       </section>
       <section className="cta">

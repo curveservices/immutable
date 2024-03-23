@@ -4,6 +4,8 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
@@ -26,18 +28,15 @@ const Layout = () => {
   };
   return (
     <>
-      <div>
-        <Navbar />
-        <main className="app">
-          <Outlet />
-        </main>
-
-        {showButton && (
-          <button className="back-to-top" onClick={scrollToTop}>
-            &#11014;
-          </button>
-        )}
-      </div>
+      <Navbar />
+      <main className="app">
+        <Outlet />
+      </main>
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          <FontAwesomeIcon icon={faArrowUp} />
+        </button>
+      )}
       <Footer />
     </>
   );

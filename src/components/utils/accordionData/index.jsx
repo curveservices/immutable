@@ -5,7 +5,7 @@ export const accordionData = [
     title: "WEB DEVELOPMENT",
     subtitle: "JavaScript - HTML 5 - CSS 3 - React - Node.js",
     content:
-      "We craft tailored corporate and startup websites. Whether you need a landing page, promo site, or multi-page solution, our services cover it all, including CMS platforms like WordPress, Squarespace, and WebFlow.",
+      "We specialise in designing custom built websites, offering solutions ranging from landing pages to multi-page sites. We also development on platforms such as WordPress, Squarespace, and WebFlow.",
   },
   // {
   //   id: 1,
@@ -21,7 +21,7 @@ export const accordionData = [
     title: "AI CHAT BOTS",
     subtitle: "VoiceFlow - Botpress - Tidio - Zapier",
     content:
-    "If you are looking for AI sulotions for your business we can help alleviate your pain points with an online chat bot. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
+      "If you are looking for AI sulotions for your business we can help alleviate your pain points with an online chat bot. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
   },
   {
     id: 3,
@@ -35,8 +35,8 @@ export const accordionData = [
     id: 4,
     link: "packages",
     title: "PACKAGES",
-    subtitle: "Multi page websites - Landing - Promo - SPA's - Chatbots - Social Media" ,
+    subtitle: "Multi page websites - SPA's - Chatbots - Social Media",
     content:
-      "Immutable Studio emphasizes transparent communication and client relationships, providing clear, budget-friendly pricing and scalable packages to meet evolving business needs.",
+      "Immutable Studio prioritises transparent communication and strong client relationships, offering clear, budget-friendly pricing and scalable packages tailored to evolving business requirements.",
   },
 ];

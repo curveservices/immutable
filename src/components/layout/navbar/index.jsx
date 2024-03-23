@@ -1,4 +1,11 @@
-import { faBars, faClose, faEnvelope, faHouseChimney, faToolbox, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faClose,
+  faEnvelope,
+  faHouseChimney,
+  faToolbox,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -30,7 +37,7 @@ const Navbar = () => {
         <img src={logo} alt="Immutable studio logo" className="logo" />
       </NavLink>
       <Breadcrumbs />
-      <nav >
+      <nav>
         <NavLink
           to="/"
           className="home-link"

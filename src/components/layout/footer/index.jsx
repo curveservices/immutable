@@ -19,7 +19,9 @@ const Footer = () => {
       <div className="link-container">
         <div className="studio">
           <ul className="site-links">
-            <li><p>Studio</p></li>
+            <li>
+              <p>Studio</p>
+            </li>
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -36,7 +38,9 @@ const Footer = () => {
         </div>
         <div className="lead">
           <ul className="site-links">
-            <li><p>Lead Dev</p></li>
+            <li>
+              <p>Lead Dev</p>
+            </li>
             <li>
               <Link
                 to="https://dev-paul.netlify.app/"
@@ -68,7 +72,9 @@ const Footer = () => {
         </div>
         <div className="experts">
           <ul>
-            <li><p>Experts in</p></li>
+            <li>
+              <p>Experts in</p>
+            </li>
             <li>Hospitality</li>
             <li>Tutoring</li>
             <li>B 2 B</li>

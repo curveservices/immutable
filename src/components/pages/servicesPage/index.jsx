@@ -26,7 +26,7 @@ const Services = () => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      setSecond(scrollSecond > 250)
+      setSecond(scrollSecond > 250);
       setIsScrolled(scrollPrice > 2400);
     };
 
@@ -46,6 +46,7 @@ const Services = () => {
       <div className="serivces-page">
         <section className="hero">
           <div className="hero-inner">
+            <StaticCubes />
             <div className="text-box">
               <h1 className="title">
                 We will turn your ideas into amazing solutions
@@ -80,7 +81,6 @@ const Services = () => {
                 </NavLink>
               </div>
             </div>
-            <StaticCubes />
           </div>
         </section>
         <section className="second-section">
@@ -90,13 +90,19 @@ const Services = () => {
                 Need a supportive full-service design agency for your business?
               </h1>
               <p>
-                Drawing on extensive industry experience, we excel in providing comprehensive solutions tailored to your needs.
-                Understanding your business, we offer expert advice to address design challenges effectively.
-                Whether it's boosting brand visibility or creating a lead-generating website,
-                count on us to deliver outstanding results.
+                Drawing on extensive industry experience, we excel in providing
+                comprehensive solutions tailored to your needs. Understanding
+                your business, we offer expert advice to address design
+                challenges effectively. Whether it's boosting brand visibility
+                or creating a lead-generating website, count on us to deliver
+                outstanding results.
               </p>
             </div>
-            <img src={img1} alt="computer screen" className={`${second ? "animSecondimg" : "second-none"}`} />
+            <img
+              src={img1}
+              alt="computer screen"
+              className={`${second ? "animSecondimg" : "second-none"}`}
+            />
           </div>
         </section>
         <section className="third-section">
@@ -106,7 +112,7 @@ const Services = () => {
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
                 <p className="elem-title">Excellent Client Service</p>
-                <p>
+                <p className="desc">
                   Customer service is more than a commitment at Immutable
                   Studio, it's a guiding principle that shapes every aspect of
                   our interactions. From the initial consultation to the final
@@ -117,7 +123,7 @@ const Services = () => {
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faTrophy} />
                 <p className="elem-title">Unparalleled Design Excellence</p>
-                <p>
+                <p className="desc">
                   Our talented designers craft unique, captivating web
                   experiences that leave a lasting impression on your target
                   audience. We blend aesthetics with user-centric design
@@ -128,7 +134,7 @@ const Services = () => {
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />
                 <p className="elem-title">Customized Solutions</p>
-                <p>
+                <p className="desc">
                   We understand that every business is unique. Our web design
                   services are tailored to your specific requirements, brand
                   identity, and target audience. We collaborate closely with you
@@ -139,7 +145,7 @@ const Services = () => {
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faUserAstronaut} />
                 <p className="elem-title">Seamless User Experience</p>
-                <p>
+                <p className="desc">
                   User experience is at the core of what we do. We meticulously
                   design user journeys, focusing on simplicity, clarity, and
                   ease of use. By providing a seamless browsing experience, we
@@ -150,7 +156,7 @@ const Services = () => {
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faMobileScreenButton} />
                 <p className="elem-title">Mobile-First</p>
-                <p>
+                <p className="desc">
                   In today's mobile-driven world, a responsive website is
                   essential for success. Our designs are optimized for all
                   devices, ensuring a flawless experience on smartphones,
@@ -161,7 +167,7 @@ const Services = () => {
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faChartLine} />
                 <p className="elem-title">Conversion-Oriented Design</p>
-                <p>
+                <p className="desc">
                   We go beyond creating visually appealing websites. Our designs
                   are strategically crafted to drive conversions and achieve
                   your business goals. From intuitive call-to-actions to
@@ -187,7 +193,7 @@ const Services = () => {
             </div>
             <h1 className="price-title">Check out our starting prices</h1>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
-              <PriceCard name='pricing'/>
+              <PriceCard name="pricing" />
             </div>
           </div>
         </section>

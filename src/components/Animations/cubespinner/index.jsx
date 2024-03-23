@@ -46,7 +46,6 @@ const CubeSpinner = () => {
           </div>
         </div>
       </div>
-      
     </>
   );
 };

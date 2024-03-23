@@ -1,22 +1,21 @@
 .about-page {
   .hero {
+    position: relative;
     .cube-container {
-      width: 100px;
-      top: 18%;
-      right: 0;
+      width: 140px;
+      top: 60%;
+      right: 1%;
     }
     .inner-hero {
       margin: 2rem 3rem;
       padding: 4rem 1rem;
       color: #fff;
 
-        
-
       .text-box {
         display: flex;
         justify-content: space-around;
         gap: 5rem;
-        margin: 4rem;
+        margin: 2rem 4rem;
 
         .left-hero {
           max-width: 50%;
@@ -32,8 +31,7 @@
 
         .right-hero {
           margin-top: -15px;
-          margin-left: 1rem;
-          max-width: 50%;
+          padding-right: 3rem;
           animation: fadeInDown 2s forwards;
         }
       }
@@ -44,7 +42,7 @@
     background-image: url("../../../assets/images/1746747.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-  
+
     .second-inner {
       min-height: 100vh;
       margin: 2rem 3rem 8rem;
@@ -55,23 +53,21 @@
         text-align: center;
       }
       .team-container {
-        margin: 5rem 0rem;
         animation: fadeIn 2s forwards;
       }
 
       .contentAnim {
         animation: fadeInUp 1s forwards;
-        margin: 2rem;
       }
-      
+
       .none {
-        display: none;
+        opacity: 0;
       }
     }
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 920px) {
   .about-page {
     .hero {
       .inner-hero {
@@ -79,47 +75,44 @@
         padding: 2rem 0rem;
 
         .cube-container {
-          display: none;
           width: 70px;
-          opacity: 0.1;
-          top: 15%;
+          top: 35%;
           left: 65%;
         }
-  
+
         .text-box {
           flex-direction: column;
-          gap: 2rem;
+          gap: 4rem;
           margin: 4rem;
-  
+
           .left-hero {
             max-width: initial;
             animation: fadeInLeft 2s forwards;
-  
+
             .btn-container {
               align-items: flex-start;
               gap: 1rem;
               margin-top: 2rem;
             }
           }
-  
+
           .right-hero {
-            margin: 1rem 2rem 4rem;
-            max-width: initial;
-            margin-left: 0;
+            padding: 0rem;
+            margin: 0;
             animation: fadeInUp 2s forwards;
           }
         }
       }
     }
-  
+
     .second-section {
       background-image: url("../../../assets/images/1746747.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
-  
+
       .second-inner {
-        margin: 2rem;
-        padding-top: 2rem;
+        margin: 0rem;
+        padding: 2rem 0;
 
         .title {
           padding: 2rem;

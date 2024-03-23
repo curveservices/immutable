@@ -52,9 +52,9 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   header {
-    padding: 0 1rem;
+    padding: 0rem;
     .title {
       display: none;
     }
@@ -62,17 +62,16 @@ header {
     .logo {
       display: block;
       margin-top: 5px;
-      width: 50px;
+      width: 75px;
     }
 
     nav {
       position: absolute;
       right: 0;
-      padding-top: 20px;
-      padding-right: 30px;
+      padding-top: 30px;
+      padding-right: 40px;
       gap: 2rem;
-      
-      
+
       &.mobile-show {
         display: flex;
         justify-content: space-between;
@@ -80,7 +79,7 @@ header {
         padding-bottom: 15px;
         animation: bounceInRight 1s;
       }
-      
+
       .text {
         display: none;
       }

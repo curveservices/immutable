@@ -1,7 +1,5 @@
 .app {
   position: relative;
-  margin: 0;
-  width: 100vw;
   will-change: contents;
   transform-style: preserve-3d;
   font-family: "Coolvetica";
@@ -11,7 +9,6 @@
   background-position: center;
   background-size: cover;
   animation: fadeIn 4s forwards;
-
 
   .home-page,
   .about-page,
@@ -32,14 +29,14 @@
       font-family: sans-serif;
       font-weight: 900;
       min-width: fit-content;
-      line-height: 1.2;
       font-weight: 600;
+      margin: 0;
+      padding: 1rem 0;
     }
 
     .stage-cube-cont,
-    .wrapper,
-    .letter-contianer {
-      animation: fadeIn 3s forwards;
+    .wrapper {
+      animation: fadeIn 4s forwards;
     }
   }
 }
@@ -64,7 +61,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   .app {
     .home-page,
     .about-page,
@@ -74,7 +71,7 @@
     .chatbot-page,
     .social-page,
     .package-page {
-      h1{
+      h1 {
         font-size: 24px;
       }
       p {

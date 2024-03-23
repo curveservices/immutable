@@ -1,15 +1,15 @@
 .contact-page {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 25rem;
-  
+
   .text-box {
     width: 50%;
     color: #fff;
     padding: 6.2rem;
     animation: fadeInLeft 2s forwards;
-   
   }
   .call-button {
     color: #fff;
@@ -33,7 +33,7 @@
       flex-direction: column;
       gap: 10px;
       padding: 0;
-    
+
       li {
         padding: 0;
         margin: 0;
@@ -43,9 +43,9 @@
         animation: fadeInUp 1s 1.5s;
         animation-fill-mode: forwards;
         clear: both;
-      } 
+      }
     }
-    
+
     input[type="text"],
     input[type="email"] {
       width: 100%;
@@ -94,31 +94,30 @@
     }
   }
 }
-  .info-map {
-    position: absolute;
-    background: #000;
-    top: 50px;
-    right: 30px;
-    z-index: 99999;
-    width: 300px;
-    padding: 20px;
+.info-map {
+  position: absolute;
+  background: #000;
+  top: 50px;
+  right: 30px;
+  z-index: 99999;
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Coolvetica";
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 2s 2s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
     color: #fff;
-    font-family: "Coolvetica";
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 2s 2s;
-    animation-fill-mode: forwards;
-
-    span {
-      font-size: 16px;
-      display: block;
-      padding-top: 20px;
-      color: #fff;
-    }
   }
-
+}
 
 .map-wrap {
   background: rgba(9, 252, 216, 0.1);
@@ -140,14 +139,14 @@
   .contact-page {
     flex-direction: column;
     margin: 0rem;
-  
+
     .text-box {
       margin-top: 6rem;
       margin-bottom: 4rem;
       width: 100%;
       padding: 2rem;
     }
-  
+
     .info-map {
       display: none;
     }

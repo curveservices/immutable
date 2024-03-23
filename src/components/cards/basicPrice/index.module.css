@@ -1,92 +1,90 @@
 .cardContainer {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .priceCard {
-    position: relative;
-    flex: 1 1 30%;
-    max-width: calc(50% - 10px);
-    padding-bottom: 2rem;
-    box-shadow: var(--global);
-    background: var(--secondary);
-    color: #000;
+  position: relative;
+  flex: 1 1 30%;
+  max-width: calc(50% - 10px);
+  padding-bottom: 2rem;
+  box-shadow: var(--global);
+  background: var(--secondary);
+  color: #000;
 }
 
 .cardImg {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .heroContainer {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    width: 50%;
-    transform: translateX(-50%);
-    background: var(--secondary);
-    border-radius: 5px;
-    border: 1px solid #2b66a7;
-    box-shadow: var(--global);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary);
+  border-radius: 5px;
+  border: 1px solid #2b66a7;
+  box-shadow: var(--global);
 }
 
 .priceTitle {
-    text-align: center;
-    letter-spacing: 2px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 .price {
-    text-align: center;
-    font-family: sans-serif;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 ul {
-    display: flex;
-    max-height: 350px;
-    padding: 1rem;
+  display: flex;
+  max-height: 350px;
+  padding: 1rem;
 }
 
 .listLeft {
-    width: 50%;
-    padding: 0;
+  width: 50%;
+  padding: 0;
 }
 
 .listRight {
-    width: 50%;
-    padding: 0;
+  width: 50%;
+  padding: 0;
 }
 
 li {
-    list-style: none;
-    padding: 5px;
+  list-style: none;
+  padding: 5px;
 }
-  
-.btnContainer{
-    display: flex;
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+  .cardContainer {
+    margin-top: 4rem;
     flex-direction: column;
-    align-items: center;
+    gap: 5rem;
+  }
+  .priceCard {
+    max-width: 100%;
+  }
 
-}
-
-@media screen and (max-width: 800px) {
-    .cardContainer {
-        margin-top: 4rem;
-        flex-direction: column;
-        gap: 5rem;
-    }
-    .priceCard {
-        max-width: 100%;
-    }
-
-    .heroContainer {
-        top: -40px;
-        width: 80%;
-       
-    }
-    .btnContainer {
-        padding: 1rem 0;
-        gap: 10px;
-        margin-top: 1rem;
-    }
+  .heroContainer {
+    top: -40px;
+    width: 80%;
+  }
+  .btnContainer {
+    padding: 1rem 0;
+    gap: 10px;
+    margin-top: 1rem;
+  }
 }

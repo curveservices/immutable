@@ -20,11 +20,10 @@ footer {
     display: flex;
     gap: 50px;
     margin-left: 50px;
-    
+
     ul {
       display: flex;
       flex-direction: column;
-      
     }
     li {
       list-style: none;
@@ -33,7 +32,6 @@ footer {
         cursor: pointer;
       }
     }
-    
   }
   .socials-container {
     float: right;
@@ -51,14 +49,14 @@ footer {
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   footer {
     height: 225px;
     width: 100%;
     .foot-title {
       font-size: 14px;
     }
-  
+
     .link-container {
       gap: 5px;
       margin: 0 10px;
@@ -67,7 +65,7 @@ footer {
         padding: 0;
       }
     }
-  
+
     .socials-container {
       width: 30%;
       margin: 10px;

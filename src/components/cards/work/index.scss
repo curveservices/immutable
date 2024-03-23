@@ -8,7 +8,8 @@
 
 .card {
   position: relative;
-  flex: 1 1 20%;
+  display: flex;
+  flex: 1 1 50%;
   height: 400px;
   overflow: hidden;
   max-width: calc(30% - 10px);
@@ -26,7 +27,7 @@
     position: absolute;
     width: 100%;
     z-index: 3;
-    padding: 10px 20px;
+    padding: 10px 0px;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.0355, 1);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 1));
     bottom: -140px;
@@ -92,5 +93,51 @@
   &:hover .content {
     bottom: 0;
     background: transparent;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .card-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .card {
+      max-width: calc(50% - 20px);
+      height: 250px;
+
+      .content {
+        position: relative;
+        width: 100%;
+        bottom: -100px;
+        padding: 0px 5px;
+        text-align: center;
+
+        &:focus {
+          bottom: 0;
+          transition: all 1s ease;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+        padding: 5px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 10px;
+        padding: 0px;
+        margin: 0;
+      }
+
+      .btn {
+        margin-top: 5px;
+      }
+
+      .card-image {
+        object-fit: cover;
+      }
+    }
   }
 }
