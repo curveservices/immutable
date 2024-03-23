@@ -99,7 +99,7 @@
         }
 
       .second-none {
-        display: none;
+        opacity: 0;
       }
     }
   }
@@ -197,6 +197,7 @@
           }
         }
         .cube-container {
+          display: none;
           width: 70px;
           opacity: 0.1;
           left: 65%;

@@ -1,12 +1,14 @@
 .team-container {
     display: flex;
     justify-content: space-around;
+    gap: 3rem;
     color: #fff;
 
     .team-card {
         position: relative;
-        max-width: calc(40% - 10px);
-        padding-bottom: 2rem;
+        max-width: calc(50% - 10px);
+        padding: 2rem;
+        text-align: center;
         background: var(--primary);
         box-shadow: var(--global);
 
@@ -40,7 +42,6 @@
     
         .team-card {
             max-width: 100%;
-            text-align: center;
 
             .teamImg {
                 top: -75px;

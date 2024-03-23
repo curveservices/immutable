@@ -1,5 +1,6 @@
 .home-page {
   .hero {
+    position: relative;
     display: flex;
     justify-content: space-between;
     min-height: 100vh;
@@ -7,12 +8,13 @@
     .right-hero {
       color: #fff;
       padding: 4rem 1rem;
-      width: 50%;
+      width:50%;
       margin: 4rem 1rem;
     }
 
     .left-hero {
-      width: 50%;
+      position: relative;
+      width: 45%;
     
     }
 
