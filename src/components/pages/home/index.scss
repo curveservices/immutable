@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    min-height: 100vh;
+    padding-bottom: 10rem;
 
     .right-hero {
       color: #fff;
@@ -24,8 +24,8 @@
   }
 
   .second-section {
+    
     .second-inner {
-      min-height: 100vh;
       position: relative;
       background-image: url("../../../assets/images/1746747.jpg");
       background-repeat: no-repeat;
@@ -33,6 +33,7 @@
       background-attachment: fixed;
 
       box-shadow: var(--global);
+      padding-bottom: 15rem;
 
       .title {
         width: 100%;

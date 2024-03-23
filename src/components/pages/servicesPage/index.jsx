@@ -27,7 +27,7 @@ const Services = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
       setSecond(scrollSecond > 250);
-      setIsScrolled(scrollPrice > 2400);
+      setIsScrolled(scrollPrice > 2100);
     };
 
     window.addEventListener("scroll", handleScroll);

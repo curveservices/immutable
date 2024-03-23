@@ -72,13 +72,7 @@ header {
       padding-right: 40px;
       gap: 2rem;
 
-      &.mobile-show {
-        display: flex;
-        justify-content: space-between;
-        background: var(--primary);
-        padding-bottom: 15px;
-        animation: bounceInRight 1s;
-      }
+
 
       .text {
         display: none;
@@ -87,6 +81,9 @@ header {
         display: flex;
       }
     }
+  }
+  .navbar-scroll {
+    display: none;
   }
   // .hamburger,
   // .close-icon {

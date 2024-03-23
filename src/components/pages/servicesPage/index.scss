@@ -1,6 +1,5 @@
 .serivces-page {
   .hero {
-    min-height: 100vh;
     .hero-inner {
       position: relative;
       display: flex;
@@ -11,8 +10,8 @@
 
       .cube-container {
         width: 60px;
-        top: 65%;
-        right: 500px;
+        top: 55%;
+        right: 550px;
       }
 
       .text-box {
@@ -83,7 +82,6 @@
       gap: 2rem;
       margin: 0rem;
       padding: 4rem;
-      min-height: 75vh;
 
       .anim-second {
         animation: fadeInLeft 2s forwards;
@@ -107,8 +105,6 @@
   }
 
   .third-section {
-    min-height: 100vh;
-
     .third-inner {
       color: #fff;
       padding: 2rem 1rem;
@@ -151,7 +147,6 @@
   .forth-section {
     background-image: url("../../../assets/images/1746747.jpg");
     box-shadow: var(--global);
-    min-height: 180vh;
 
     .forth-inner {
       padding: 2rem;
@@ -178,9 +173,11 @@
   }
 
   .fith-section {
-    min-height: 100vh;
     .fith-inner {
       padding: 3rem;
+    }
+    .none {
+      opacity: 0;
     }
   }
 }
@@ -220,12 +217,10 @@
         margin: 0rem;
         padding: 1rem;
         .anim-second {
-          animation: none;
           width: 100%;
           padding: 2rem 0;
         }
         .animSecondimg {
-          animation: none;
           width: 100%;
         }
       }
