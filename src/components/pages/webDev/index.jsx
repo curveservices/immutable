@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import img1 from "../../../assets/images/service-1.jpeg";
 import Button from "../../button";
 import CallToAction from "../../CTA";
-import webDev from "../../../assets/images/webDev2-unscreen.gif";
+import webDev from "../../../assets/images/webDev.gif";
 import style from "../services.module.css";
 import Loader from "react-loaders";
 import PriceCard from "../../cards/fullPrice";
