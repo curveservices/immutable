@@ -8,21 +8,6 @@
 
 ## Overview
 
-[Project]() has been set as part of [The Odin Project](https://www.theodinproject.com/)
-
-## Assets
-
--
-
-## Obejective
-
-1.
-2.
-3.
-4.
-
-## Extra
-
 ## Languages & Tools
 
 <a href="https://javascript.info/">

@@ -8,7 +8,7 @@ const Featured = () => {
       <h1 className="feature-title">FEATURED WORK</h1>
       <Card />
       <div className="view-btn">
-        <Button text="view more" link="featured-work" />
+        {/* <Button text="view more" link="featured-work" /> */}
       </div>
     </div>
   );
