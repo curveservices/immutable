@@ -29,7 +29,7 @@ const Home = () => {
         </div>
         <div className="right-hero">
           <div className="text-box">
-            <h1 className="main-title">Web Develoment Agency</h1>
+            <h1 className="main-title">Web Develoment & AI Solutions Agency</h1>
             <p>
               Immutable Studio is a leading web development agency comprising
               seasoned web designers, UX/UI specialists, and web developers who

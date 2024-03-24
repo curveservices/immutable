@@ -30,7 +30,7 @@ const router = createBrowserRouter(
         <Route path=":id/chat-bots" element={<ChatBots />} />
         <Route path=":id/packages" element={<Packages />} />
         <Route
-          path=":id/social-media-marketing"
+          path=":id/digital-marketing"
           element={<SocialMarketing />}
         />
       </Route>

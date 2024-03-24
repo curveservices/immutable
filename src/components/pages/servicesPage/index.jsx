@@ -71,8 +71,8 @@ const Services = () => {
                 </NavLink>
               </div>
               <div className="service-link">
-                <NavLink to="social-media-marketing">
-                  <h3>SOCIAL MEDIA MARKETING</h3>
+                <NavLink to="digital-marketing">
+                  <h3>DIGITAL MARKETING</h3>
                 </NavLink>
               </div>
               <div className="service-link">
