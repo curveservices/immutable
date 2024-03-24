@@ -8,15 +8,19 @@ const Button = (props) => {
   };
 
   return (
-    <Link
-      className="flat-btn"
-      to={props.link}
+    <button
       style={buttonStyle}
-      type={props.type}
-      target={props.target}
     >
-      {props.text}
-    </Link>
+      <Link
+        className="flat-btn"
+        to={props.link}
+        type={props.type}
+        target={props.target}
+      >
+        {props.text}
+      </Link>
+    </button>
+   
   );
 };
 
