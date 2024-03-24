@@ -72,9 +72,13 @@
     .second-section {
       margin: 0;
       .second-inner {
+        padding-bottom: 25rem;
         .title {
           width: 100%;
           padding: 1rem 2rem;
+        }
+        .cube-container {
+          top: 20%;
         }
       }
     }
