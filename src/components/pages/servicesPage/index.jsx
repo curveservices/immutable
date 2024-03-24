@@ -57,7 +57,7 @@ const Services = () => {
                 marketing packages with flexible pricing and outstanding
                 service.
               </p>
-              <Button text="start now" link="contact" />
+              <Button text="start now" link="/contact" />
             </div>
             <div className="link-container">
               <div className="service-link">
