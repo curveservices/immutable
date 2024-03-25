@@ -34,7 +34,7 @@
 
   --_s: calc(var(--d) + var(--b));
   width: 100%;
-
+  color: #fff;
   border: solid #0000;
   border-width: var(--b) var(--b) var(--_s) var(--_s);
   background: var(--services-link);
@@ -50,6 +50,7 @@
   transition: 0.5s;
 
   &:hover {
+    color: #000;
     transform: translate(0, 0);
     clip-path: polygon(
       0% var(--d),

@@ -33,25 +33,23 @@
 }
 .secondInner {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0rem;
+    margin: 1rem;
     padding: 2rem;
     min-height: 75vh
 }
 .animSecond {
     animation: fadeInLeft 2s forwards;
     width: 50%;
-    padding: 0 1rem;
-}
-.animSecond p {
-    padding-top: 1rem;
+    padding: 3rem;
 }
 .secondNone {
     display: none;
 }
 .animSecondimg {
     animation: fadeInRight 2s forwards;
-    width: 40%;
+    width: 50%;
+    padding: 3rem;
+
 }
 .secondTextBox {
     padding: 0 2rem 0 5rem;
@@ -123,18 +121,22 @@
 
     .animSecondimg {
         width: 100%;
+        padding: 0;
 
     }
     
 
     /* Third section */
     .thirdInner {
-        padding: 0rem;
+        margin: 0rem;
+        padding: 2rem;
         width: 100%;
     }
 
     .thirdTextBox {
         padding: 0rem;
+        margin: 0;
+        text-align: initial;
     }
 
     .contentAnim {

@@ -1,6 +1,6 @@
 import img from "../../../assets/images/social.jpeg";
 import gif from "../../../assets/images/social-unscreen.gif";
-import Singleservices from "../../SingleService/singleService";
+import Singleservices from "../../SingleService/";
 
 const SocialMarketing = () => {
   return (

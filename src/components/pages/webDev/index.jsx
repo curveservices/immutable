@@ -1,6 +1,6 @@
 import img from "../../../assets/images/service-1.jpeg";
 import gif from "../../../assets/images/webDev.gif";
-import Singleservices from "../../SingleService/singleService";
+import Singleservices from "../../SingleService/";
 
 const WebDev = () => {
   return (

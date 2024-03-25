@@ -1,6 +1,6 @@
 import gif from "../../../assets/images/packages-unscreen.gif";
 import img from "../../../assets/images/packages.jpeg";
-import Singleservices from "../../SingleService/singleService";
+import Singleservices from "../../SingleService/";
 
 
 const Packages = () => {
