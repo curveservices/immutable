@@ -13,7 +13,7 @@ const SocialMarketing = () => {
       HeroH2="We build digital media templates start from just £85"
       src={gif}
       secondH1="Elevate social presence with our professional template designs."
-      secondP="TIn the competitive digital landscape, brand distinction is
+      secondP="In the competitive digital landscape, brand distinction is
               crucial. Our design agency excels in creating unique social media
               templates. Leveraging design and branding expertise, we ensure
               lasting impact, meaningful connections, and ongoing online success

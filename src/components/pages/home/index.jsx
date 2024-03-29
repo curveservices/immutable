@@ -29,9 +29,9 @@ const Home = () => {
         </div>
         <div className="right-hero">
           <div className="text-box">
-            <h1 className="main-title">Web Develoment & AI Solutions Agency</h1>
+            <h1 className="main-title">Web Develoment &amp; AI Solutions Agency</h1>
             <p>
-              Immutable Studio is a leading web development agency comprising
+              Immutable Studio is a leading webite development &amp; AI solutions agency comprising
               seasoned web designers, UX/UI specialists, and web developers who
               excel in crafting bespoke business websites. Our team is dedicated
               to delivering cutting-edge technology solutions tailored to help
