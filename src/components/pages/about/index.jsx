@@ -39,14 +39,14 @@ const About = () => {
               <div className="btn-container">
                 <Socials />
                 <Button link="contact" text="Hire us" />
-                <Button link="" noreferer text="Book a call" />
+                <Button link="https://calendly.com/immutable-studio/website-consultancy" noreferer text="Book a call" target='_blank' />
               </div>
             </div>
 
             <div className="right-hero">
               <p>
                 We are a proud south east London design studio specialising in
-                web development, AI solutions & social media marketing. We all
+                web development, AI solutions &amp; social media marketing. We all
                 of our skills to your challenges and ideas.
               </p>
               <p>

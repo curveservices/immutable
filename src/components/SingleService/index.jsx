@@ -41,7 +41,7 @@ const Singleservices = (props) => {
                             <Button
                                 target="_blank"
                                 text="book a call"
-                                link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
+                                link="https://calendly.com/immutable-studio/website-consultancy"
                             />
                         </div>
                     </div>

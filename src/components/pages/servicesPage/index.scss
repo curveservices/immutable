@@ -22,7 +22,10 @@
           padding-top: 1rem;
         }
       }
-
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+      }
       .link-container {
         display: flex;
         flex-direction: column;
@@ -206,6 +209,9 @@
           width: 50px;
           top: 40%;
           left: 55%;
+        }
+        .btn-container {
+          gap: 1rem;
         }
       }
     }

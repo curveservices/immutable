@@ -57,7 +57,10 @@ const Services = () => {
                 marketing packages with flexible pricing and outstanding
                 service.
               </p>
-              <Button text="start now" link="/contact" />
+              <div className="btn-container">
+                <Button text="start now" link="/contact" />
+                <Button text="book a call" link="https://calendly.com/immutable-studio/website-consultancy" target="_blank" />
+              </div>
             </div>
             <div className="link-container">
               <div className="service-link">

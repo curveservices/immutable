@@ -14,7 +14,7 @@ const CallToAction = () => {
       <div className="btn-container">
         <Button
           text="book a call"
-          link="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
+          link="https://calendly.com/immutable-studio/website-consultancy"
           target="_blank"
           background="var(--primary)"
         />

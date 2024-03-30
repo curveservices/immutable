@@ -37,7 +37,10 @@ const Home = () => {
               to delivering cutting-edge technology solutions tailored to help
               your company achieve its goals with utmost efficiency.
             </p>
-            <Button link="contact" text="CONTACT US" />
+            <div className="btn-container">
+              <Button link="contact" text="CONTACT US" />
+              <Button link="https://calendly.com/immutable-studio/website-consultancy" text='Book a call' target='_blank' />
+            </div>
           </div>
         </div>
       </section>

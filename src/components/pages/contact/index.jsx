@@ -91,7 +91,7 @@ const Contact = () => {
                     className="call-button"
                     target="_blank"
                     noreferer
-                    to="https://calendly.com/event_types/168391476/edit?return_to=%2Fevent_types%2Fuser%2Fme"
+                    to="https://calendly.com/immutable-studio/website-consultancy"
                   >
                     <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
                   </Link>
