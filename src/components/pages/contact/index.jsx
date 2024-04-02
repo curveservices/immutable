@@ -108,7 +108,7 @@ const Contact = () => {
           United Kingdom
           <br />
           <Socials />
-          <span>info@immutable-studio.com</span>
+          <span><a href="mailto:hello@immutable-studio.com" >hello@immutable-studio.com</a></span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[51.5, 0.0192269]} zoom={13}>

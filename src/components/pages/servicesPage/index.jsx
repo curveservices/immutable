@@ -116,32 +116,20 @@ const Services = () => {
                 <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
                 <p className="elem-title">Excellent Client Service</p>
                 <p className="desc">
-                  Customer service is more than a commitment at Immutable
-                  Studio, it's a guiding principle that shapes every aspect of
-                  our interactions. From the initial consultation to the final
-                  delivery, we prioritize understanding our clients' unique
+                  Customer service is more than a commitment, it's a guiding principle that shapes every aspect of
+                  our interactions. From discovery to final
+                  delivery, we prioritize understanding your unique
                   visions and objectives.
                 </p>
               </div>
               <div className="elem-card">
-                <FontAwesomeIcon className="icon" icon={faTrophy} />
-                <p className="elem-title">Unparalleled Design Excellence</p>
-                <p className="desc">
-                  Our talented designers craft unique, captivating web
-                  experiences that leave a lasting impression on your target
-                  audience. We blend aesthetics with user-centric design
-                  principles, ensuring seamless navigation, intuitive
-                  interfaces, and eye-catching visuals.
-                </p>
-              </div>
-              <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />
-                <p className="elem-title">Customized Solutions</p>
+                <p className="elem-title">Automated Solutions</p>
                 <p className="desc">
-                  We understand that every business is unique. Our web design
-                  services are tailored to your specific requirements, brand
-                  identity, and target audience. We collaborate closely with you
-                  to create a website that reflects your vision while maximizing
+                  We understand every business is unique.
+                  We create custom automated workflows &amp; chatbot assisants,
+                  to save your time with repetitive tasks powered by AI.
+                  Collaborating with you to create seamless solutions that reflects &amp; maximizing
                   user engagement and conversions.
                 </p>
               </div>
@@ -165,17 +153,6 @@ const Services = () => {
                   devices, ensuring a flawless experience on smartphones,
                   tablets, and desktops. Your website will look stunning and
                   perform flawlessly across all platforms.
-                </p>
-              </div>
-              <div className="elem-card">
-                <FontAwesomeIcon className="icon" icon={faChartLine} />
-                <p className="elem-title">Conversion-Oriented Design</p>
-                <p className="desc">
-                  We go beyond creating visually appealing websites. Our designs
-                  are strategically crafted to drive conversions and achieve
-                  your business goals. From intuitive call-to-actions to
-                  persuasive content placement, we employ industry best
-                  practices to boost your online performance.
                 </p>
               </div>
             </div>

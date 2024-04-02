@@ -42,7 +42,11 @@ const TeamCard = () => {
               <h2 className="job">{item.job}</h2>
               <p className="desc">{item.desc}</p>
             </div>
-            <Socials />
+            <Socials
+              fblink="https://www.facebook.com/profile.php?id=61557552873479"
+              lilink="https://www.linkedin.com/company/21439623"
+              xlink="https://twitter.com/immutable_LDN"
+            />
           </div>
         );
       })}

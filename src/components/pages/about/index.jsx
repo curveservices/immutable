@@ -37,7 +37,11 @@ const About = () => {
                 Who's behind Immutable studio? And what do they do?
               </h1>
               <div className="btn-container">
-                <Socials />
+                <Socials
+                  fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                  lilink="https://www.linkedin.com/company/21439623"
+                  xlink="https://twitter.com/immutable_LDN"
+                />
                 <Button link="contact" text="Hire us" />
                 <Button link="https://calendly.com/immutable-studio/website-consultancy" noreferer text="Book a call" target='_blank' />
               </div>
