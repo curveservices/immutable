@@ -13,6 +13,7 @@ const Footer = () => {
       <div className="socials-container">
         <p>Follow Us</p>
         <Socials />
+        <p className="copy"><Link to='privacy-policy'>Privacy Policy</Link></p>
         <p className="copy">Copyyright &copy; {year} Immutable Studio </p>
       </div>
 
