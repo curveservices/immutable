@@ -5,7 +5,7 @@ import "./index.scss";
 const Featured = () => {
   return (
     <div className="featured">
-      <h1 className="feature-title">FEATURED WORK</h1>
+      <h2 className="feature-title">FEATURED WORK</h2>
       <Card />
       <div className="view-btn">
         {/* <Button text="view more" link="featured-work" /> */}

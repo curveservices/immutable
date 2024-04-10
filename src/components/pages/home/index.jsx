@@ -47,7 +47,7 @@ const Home = () => {
 
       <section className="second-section">
         <div className="second-inner">
-          <h1 className="title">SERVICES</h1>
+          <h2 className="title">SERVICES</h2>
           <StaticCubes />
           <div className="accordion">
             {accordionData.map(({ title, subtitle, content, id, link }) => (

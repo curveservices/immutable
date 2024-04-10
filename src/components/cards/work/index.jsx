@@ -37,7 +37,7 @@ const Card = () => {
           <div className="card" key={item.id}>
             <img src={item.img} alt="feature image" className="card-image" />
             <div className="content">
-              <h3 className="name">{item.name}</h3>
+              <div className="name">{item.name}</div>
               <p className="desc">{item.desc}</p>
               <div className="btn-container">
                 <button className="btn" onClick={() => window.open(item.live)}>

@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
-import logo from "../../../assets/images/1.png";
+import logo from "../../../assets/images/ms-icon-310x310.png";
 import "./index.scss";
 
 const Navbar = () => {
@@ -32,13 +32,13 @@ const Navbar = () => {
   }, []);
   return (
     <header className={isScrolled ? "navbar-scroll" : ""}>
-      {showNav ? "mobile-show" : " "}
+      
       <NavLink to="/">
-        <h1 className="title">&#123; Immutable Studio &#125;</h1>
+        <div className="title">&#123; Immutable Studio &#125;</div>
         <img src={logo} alt="Immutable studio logo" className="logo" />
       </NavLink>
       <Breadcrumbs />
-      <nav>
+      <nav className={showNav ? "mobile-show" : ""}>
             <NavLink
               to="/"
               className="home-link"
@@ -98,10 +98,7 @@ const Navbar = () => {
               >PACKAGES
               </NavLink>
             </div>
-          </div>
-          
-            
-           
+          </div> 
         </NavLink>
             <NavLink
               to="about"
@@ -128,16 +125,16 @@ const Navbar = () => {
           
           <FontAwesomeIcon
             icon={faClose}
-            size="3x"
+            size="2x"
             className="close-icon"
             onClick={() => setShowNav(false)}
           />
       </nav>
       <FontAwesomeIcon
         icon={faBars}
-        size="3x"
+        size="2x"
         className="hamburger"
-        onClick={() => setShowNav(false)}
+        onClick={() => setShowNav(true)}
       />
     </header>
   );

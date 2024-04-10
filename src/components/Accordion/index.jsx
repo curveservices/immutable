@@ -17,7 +17,7 @@ const Accordion = ({
       </div>
       {isActive && (
         <div className="content-container">
-          <h2 className="accordion-subtitle">{subtitle}</h2>
+          <div className="accordion-subtitle">{subtitle}</div>
           <p className="accordion-content">{content}</p>
           <div className="read-btn">
             <Button

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="foot-title">
-        <h3>&#123; Immutable Studio &#125;</h3>
+        <div>&#123; Immutable Studio &#125;</div>
       </div>
 
       <div className="socials-container">

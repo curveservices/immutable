@@ -16,6 +16,10 @@ header {
   opacity: 0.95;
   cursor: pointer;
 
+  .title {
+    font-size: 34px;
+    padding-top: 15px;
+  }
   .logo {
     display: none;
   }
@@ -83,18 +87,26 @@ header {
 
     .logo {
       display: block;
-      margin-top: 5px;
+      margin-top: 0px;
       width: 75px;
     }
 
     nav {
+      display: none;
+    }
+
+    nav {
       position: absolute;
+      top: 5px;
       right: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary);
       padding-top: 30px;
       padding-right: 40px;
       gap: 2rem;
-
-
+      z-index: 2;
+      margin: 0;
 
       .text {
         display: none;
@@ -102,16 +114,28 @@ header {
       .mobile-icon {
         display: flex;
       }
+      &.mobile-show {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+        height: 60px;
+        animation: bounceInRight 1s;
+      }
     }
   }
   .navbar-scroll {
     display: none;
   }
-  // .hamburger,
-  // .close-icon {
-  //   display: block;
-  //   position: absolute;
-  //   top: 25px;
-  //   right: 15px;
-  // }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+  }
+  .close-icon {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 0;
+  }
 }
