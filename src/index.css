@@ -21,7 +21,8 @@
 body {
   position: relative;
   margin: 0;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
+  line-height: 1.2;
   background: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-oxs-font-smoothing: grayscale;

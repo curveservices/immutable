@@ -35,7 +35,7 @@ const Singleservices = (props) => {
                     <div className={style.textBox}>
                         <h1>{props.HeroH1}</h1>
                         <p>{props.HeroP}</p>
-                        <h2>{props.HeroH2}</h2>
+                        <p>{props.HeroH2}</p>
                         <div className={style.btnContainer}>
                             <Button text="Speak with us" link="/contact" />
                             <Button

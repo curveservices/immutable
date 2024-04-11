@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
-import logo from "../../../assets/images/ms-icon-310x310.png";
+import logo from "../../../assets/images/1-removebg-preview.png";
 import "./index.scss";
 
 const Navbar = () => {

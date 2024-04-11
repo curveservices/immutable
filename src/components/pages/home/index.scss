@@ -7,23 +7,33 @@
 
     .right-hero {
       color: #fff;
-      padding: 4rem 1rem;
-      width: 50%;
-      margin: 4rem 1rem;
+      padding: 4rem 2rem;
+      width: 60%;
+      margin: 3rem 2rem;
+      
+
+      .main-title {
+        line-height: 1.5;
+      }
     }
 
     .left-hero {
       position: relative;
-      width: 45%;
+      width: 40%;
     }
 
     .text-box {
-      margin: 2rem 1rem;
+      margin: 1rem;
       animation: fadeInRightBig 2s forwards;
     }
     .btn-container {
       display: flex;
       gap: 3rem;
+    }
+    span {
+      background: var(--services-link);
+      padding: 8px;
+      border-radius: 10px;
     }
   }
 

@@ -41,6 +41,12 @@
     .wrapper {
       animation: fadeIn 4s forwards;
     }
+
+    span {
+      background: #000;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
   }
 }
 .back-to-top {

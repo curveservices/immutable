@@ -29,14 +29,20 @@ const Home = () => {
         </div>
         <div className="right-hero">
           <div className="text-box">
-            <h1 className="main-title">Web Develoment &amp; AI Solutions Agency</h1>
+            <h1 className="main-title">Empowering your Business with Website &amp; <span className="black"> AI solutions </span> </h1>
             <p>
-              Immutable Studio is a leading webite development &amp; AI solutions agency comprising
-              seasoned web designers, UX/UI specialists, and web developers who
-              excel in crafting bespoke business websites. Our team is dedicated
-              to delivering cutting-edge technology solutions tailored to help
-              your company achieve its goals with utmost efficiency.
+              Discover how we can revolutionise your business.
+              Our custom web development &amp; AI solutions, including bespoke AI chatbots,
+              automations and workflows are designed to optimise efficiency, reduce costs,
+              and enhance customer engagement.
+              <p>
+                with seasoned web developers &amp; UX/UI specialists who
+                excel in crafting bespoke business websites and workflow solutions. Our team is dedicated
+                to delivering cutting-edge technology tailored to help
+                your company achieve its goals with utmost efficiency.
+              </p> 
             </p>
+    
             <div className="btn-container">
               <Button link="contact" text="CONTACT US" />
               <Button link="https://calendly.com/immutable-studio/website-consultancy" text='Book a call' target='_blank' />

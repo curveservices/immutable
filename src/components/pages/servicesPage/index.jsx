@@ -49,11 +49,10 @@ const Services = () => {
             <StaticCubes />
             <div className="text-box">
               <h1 className="title">
-                We will turn your ideas into amazing solutions
+                We will turn your ideas into amazing <span className="black">solutions</span> 
               </h1>
               <p>
-                We offer a full suite of website development, design and
-                programming services, AI website chat bots and social media
+                We offer a full range of website development, AI solution, workflow automation and digital
                 marketing packages with flexible pricing and outstanding
                 service.
               </p>
@@ -90,14 +89,14 @@ const Services = () => {
           <div className="second-inner">
             <div className={`${second ? "anim-second" : "second-none"}`}>
               <h1>
-                Need a supportive full-service design agency for your business?
+                Need a supportive full-service development agency for your business?
               </h1>
               <p>
                 Drawing on extensive industry experience, we excel in providing
                 comprehensive solutions tailored to your needs. Understanding
                 your business, we offer expert advice to address design
-                challenges effectively. Whether it's boosting brand visibility
-                or creating a lead-generating website, count on us to deliver
+                challenges effectively. Whether it's boosting brand visibility,
+                creating a lead-generating website or building automated workkflows count on us to deliver
                 outstanding results.
               </p>
             </div>

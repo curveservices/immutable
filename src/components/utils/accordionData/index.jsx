@@ -18,7 +18,7 @@ export const accordionData = [
   {
     id: 2,
     link: "chat-bots",
-    title: "AI CHAT BOTS",
+    title: "AI SOLUTIONS",
     subtitle: "VoiceFlow - Botpress - Tidio - Zapier",
     content:
       "If you are looking for AI sulotions for your business we can help alleviate your pain points with an online chat bot. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
