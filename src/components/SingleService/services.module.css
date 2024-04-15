@@ -33,7 +33,7 @@
 }
 .secondInner {
     display: flex;
-    margin: 1rem;
+    margin: 0rem 1rem;
     padding: 2rem;
     min-height: 75vh
 }

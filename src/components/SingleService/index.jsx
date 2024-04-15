@@ -45,9 +45,9 @@ const Singleservices = (props) => {
                             />
                         </div>
                     </div>
-                    <div className={style.gifContainer}>
+                    
                         <img src={props.src} alt="gif" className={style.gif} />
-                    </div>
+                    
                 </div>
             </section>
             <section className={style.secondSection}>
