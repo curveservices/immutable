@@ -50,7 +50,7 @@ const About = () => {
             <div className="right-hero">
               <p>
                 We are a proud south east London design studio specialising in
-                web development, AI solutions &amp; social media marketing. We all
+                web development, AI solutions &amp; social media marketing. We apply all
                 of our skills to your challenges and ideas.
               </p>
               <p>

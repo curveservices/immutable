@@ -77,7 +77,7 @@ const Navbar = () => {
                 className="services-link"
                 activeclassname='active'
                 exact="true"
-              >CHAT BOTS
+              >AI SOLUTIONS
               </NavLink>
 
               <NavLink

@@ -3,7 +3,7 @@ export const accordionData = [
     id: 0,
     link: "web-development",
     title: "WEB DEVELOPMENT",
-    subtitle: "JavaScript - HTML 5 - React - WordPress - SquareSpace",
+    subtitle: "JavaScript - Node.js - React - WordPress - SquareSpace",
     content:
       "We specialise in designing custom built websites, offering solutions ranging from landing pages to multi-page sites. We also development on platforms such as WordPress, Squarespace, and WebFlow.",
   },
@@ -35,8 +35,8 @@ export const accordionData = [
     id: 4,
     link: "packages",
     title: "PACKAGES",
-    subtitle: "Multi page websites - SPA's - Chatbots - Social Media",
+    subtitle: "Multi page websites - SPA's - AI Solutions - Social Media",
     content:
-      "Immutable Studio prioritises transparent communication and strong client relationships, offering clear, budget-friendly pricing and scalable packages tailored to evolving business requirements.",
+      "We prioritises transparent communication and strong client relationships, offering clear, budget-friendly pricing and scalable packages tailored to evolving business requirements.",
   },
 ];

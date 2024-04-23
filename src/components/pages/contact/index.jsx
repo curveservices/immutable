@@ -41,7 +41,7 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <p>
             Ready to get your project started? wheather it's a large project,
-            personal portfolio, landing page or website chat bot, We are able to
+            personal portfolio, landing page or AI solutions, We are able to
             help.
           </p>
           <p>

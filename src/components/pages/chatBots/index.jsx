@@ -13,19 +13,16 @@ const ChatBots = () => {
       HeroH2="We build tailored AI chatbots, starting from just £795 + vat."
       src={gif}
       secondH1="Convert web traffic to sales using AI solutions."
-      secondP="Tired of low website conversions? Immutable Studio excels in
-              crafting inviting and functional AI solutions integrated to your
-              website. Our tech experts leverage cutting-edge AI, technical
-              prowess, and industry insight to optimise sales conversion,
-              ensuring exceptional results aligned with your business
-              objectives."
+      secondP="Tired of low website conversions? We excel in
+              creating functional AI solutions integrated to your
+              website. Our tech experts leverage cutting-edge AI &amp; 
+              industry insight to optimise amazing cuustomer service around the clock."
       img={img}
       thirdH1="CHATBOT"
       thirdP="We emphasise clear communication and robust client relationships.
               Our services include transparent, budget-friendly pricing with
-              detailed breakdowns. With scalable packages, we guarantee your
-              website chatbot adapts to evolving business needs, highlighting
-              flexibility and alignment with your goals as you grow."
+              detailed breakdowns. Packages can be expanded as your
+              business grows."
       name="ChatBots"
     />
   );

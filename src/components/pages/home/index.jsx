@@ -33,7 +33,7 @@ const Home = () => {
             <p>
               Discover how we can revolutionise your business.
               Our custom web development &amp; AI solutions, including bespoke AI chatbots,
-              automations and workflows are designed to optimise efficiency, reduce costs,
+              automations &amp; workflows are designed to optimise efficiency, reduce costs,
               and enhance customer engagement.
               <p>
                 with seasoned web developers &amp; UX/UI specialists who

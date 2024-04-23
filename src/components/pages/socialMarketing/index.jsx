@@ -14,17 +14,15 @@ const SocialMarketing = () => {
       src={gif}
       secondH1="Elevate social presence with our professional template designs."
       secondP="In the competitive digital landscape, brand distinction is
-              crucial. Our design agency excels in creating unique social media
+              crucial. Our agency excels in creating unique social media
               templates. Leveraging design and branding expertise, we ensure
               lasting impact, meaningful connections, and ongoing online success
               for your business."
       img={img}
       thirdH1="DIGITAL MARKETING"
-      thirdP="We prioritise transparent communication and strong client bonds.
+      thirdP="We prioritise transparent communication &amp; strong client bonds.
               Our services offer clear, budget-friendly pricing with detailed
-              breakdowns. Through scalable packages, we ensure your website
-              chatbot evolves alongside your business, emphasising adaptability
-              and alignment with your goals as you expand."
+              breakdowns."
       name="SocialMedia"
     />
   );

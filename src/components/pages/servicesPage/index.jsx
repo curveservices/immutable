@@ -9,11 +9,9 @@ import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChartLine,
   faMobileScreenButton,
   faPeopleGroup,
   faScrewdriverWrench,
-  faTrophy,
   faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
@@ -52,7 +50,7 @@ const Services = () => {
                 We will turn your ideas into amazing <span className="black">solutions</span> 
               </h1>
               <p>
-                We offer a full range of website development, AI solution, workflow automation and digital
+                We offer a full range of website development, AI solutions, workflow automation and digital
                 marketing packages with flexible pricing and outstanding
                 service.
               </p>
@@ -69,7 +67,7 @@ const Services = () => {
               </div>
               <div className="service-link">
                 <NavLink to="chat-bots">
-                  <h3>AI CHAT BOTS</h3>
+                  <h3>AI SOLUTIONS</h3>
                 </NavLink>
               </div>
               <div className="service-link">
@@ -96,7 +94,7 @@ const Services = () => {
                 comprehensive solutions tailored to your needs. Understanding
                 your business, we offer expert advice to address design
                 challenges effectively. Whether it's boosting brand visibility,
-                creating a lead-generating website or building automated workkflows count on us to deliver
+                creating a lead-generating website or building AI solutions &amp; automated workflows count on us to deliver
                 outstanding results.
               </p>
             </div>
@@ -115,31 +113,28 @@ const Services = () => {
                 <FontAwesomeIcon className="icon" icon={faPeopleGroup} />
                 <p className="elem-title">Excellent Client Service</p>
                 <p className="desc">
-                  Customer service is more than a commitment, it's a guiding principle that shapes every aspect of
-                  our interactions. From discovery to final
-                  delivery, we prioritize understanding your unique
-                  visions and objectives.
+                  Customer service is more than a commitment, it shapes every aspect of
+                  our business. From discovery to final delivery, we prioritise understanding your
+                  visions &amp; goals.
                 </p>
               </div>
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faScrewdriverWrench} />
                 <p className="elem-title">Automated Solutions</p>
                 <p className="desc">
-                  We understand every business is unique.
-                  We create custom automated workflows &amp; chatbot assisants,
-                  to save your time with repetitive tasks powered by AI.
-                  Collaborating with you to create seamless solutions that reflects &amp; maximizing
-                  user engagement and conversions.
+                  Every business is unique.
+                  We create custom automated workflows &amp; AI solutions, tailored to
+                  your business saving you time &amp; money with repetitive tasks powered by AI.
                 </p>
               </div>
               <div className="elem-card">
                 <FontAwesomeIcon className="icon" icon={faUserAstronaut} />
                 <p className="elem-title">Seamless User Experience</p>
                 <p className="desc">
-                  User experience is at the core of what we do. We meticulously
-                  design user journeys, focusing on simplicity, clarity, and
-                  ease of use. By providing a seamless browsing experience, we
-                  keep visitors engaged and inspire them to take action.
+                  User experience is vital. We
+                  design user journeys focusing on simplicity &amp;
+                  ease of use. By providing seamless browsing, we
+                  engage visitors &amp; inspire them to take action.
                 </p>
               </div>
 
@@ -148,10 +143,9 @@ const Services = () => {
                 <p className="elem-title">Mobile-First</p>
                 <p className="desc">
                   In today's mobile-driven world, a responsive website is
-                  essential for success. Our designs are optimized for all
+                  essential. Our designs are optimized for all
                   devices, ensuring a flawless experience on smartphones,
-                  tablets, and desktops. Your website will look stunning and
-                  perform flawlessly across all platforms.
+                  tablets &amp; desktops.
                 </p>
               </div>
             </div>
@@ -162,12 +156,11 @@ const Services = () => {
             <div className="text-box">
               <h1>Transparent Pricing</h1>
               <p>
-                At Immutable Studio we believe in transparency and building
-                strong relationships with our clients. That's why we offer
-                straightforward pricing for our services. We understand the
-                importance of budgeting, which is why we provide a breakdown of
-                our pricing. All of our packages can be expanded as your
-                business grows so that your site always fits your needs.
+                We believe in transparency and building
+                strong relationships with our clients. We offer
+                straightforward pricing &amp; understand the
+                importance of budgeting. Packages can be expanded as your
+                business grows.
               </p>
             </div>
             <h1 className="price-title">Check out our starting prices</h1>
