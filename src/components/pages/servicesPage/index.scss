@@ -116,6 +116,17 @@
       color: #fff;
       padding: 2rem 1rem;
 
+      .thirdLt {
+        animation: bounceInLeft 2s;
+      }
+      
+      .thirdRt {
+        animation: bounceInRight 2s;
+      }
+      
+      .third-none {
+        display: none;
+      }
       .title {
         padding: 3rem;
         text-align: center;
@@ -131,20 +142,63 @@
         padding: 1rem 5rem;
 
         .elem-card {
+          position: relative;
+          z-index: 1;
           display: flex;
-          flex-flow: column;
-          text-align: center;
+          gap: 3rem;
           background: var(--primary);
           border: 2px solid;
-          padding: 1rem;
-
-          .elem-title {
-            font-weight: 900;
-            text-transform: uppercase;
+          padding: 1rem 2rem;
+          vertical-align: middle;
+          transform: perspective(1px) translateZ(0);
+          
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: bottom center;
+            background: var(--secondary);
+            color: #000;
+            z-index: -1;
+            transition: transform 0.4s;
           }
-
+          
+          &:hover {
+            color: #000;
+          }
+          
+          &:hover:after {
+            transform: scaleY(1);
+          
+          }
+          
           .icon {
-            font-size: 32px;
+            font-size: 4rem;
+            align-self: center;
+          
+            svg {
+              width: 100px;
+              height: 100px;
+              margin-top: 10px;
+              padding: 20px;
+              border-radius: 50%;
+              background: #9d9d9d;
+            }
+          }
+          
+          .copy {
+            display: flex;
+            flex-direction: column;
+          
+            .elem-title {
+              font-weight: 900;
+              font-size: 1.7rem;
+              text-transform: capitalize;
+              }
           }
         }
       }
@@ -248,6 +302,57 @@
           flex-wrap: wrap;
           gap: 1rem;
           padding: 1rem;
+        .elem-card {
+          flex-direction: column;
+          gap: 0rem;
+          cursor: pointer;
+        
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: bottom center;
+            background: var(--secondary);
+            color: #000;
+            z-index: -1;
+            transition: transform 0.4s;
+          }
+        
+          &:hover {
+            color: #000;
+          }
+        
+          &:hover:after {
+            transform: scaleY(1);
+          }
+        
+          .icon {
+        
+            svg {
+              width: 50px;
+              height: 50px;
+              margin-top: 10px;
+              padding: 20px;
+              border-radius: 50%;
+              background: #9d9d9d;
+            }
+          }
+        
+          .copy {
+            display: flex;
+            text-align: center;
+        
+            .elem-title {
+              font-weight: 900;
+              font-size: 1.7rem;
+              text-transform: capitalize;
+            }
+          }
+        }
         }
       }
     }
