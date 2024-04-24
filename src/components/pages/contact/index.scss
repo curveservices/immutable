@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  margin-bottom: 25rem;
+  margin-bottom: 18rem;
 
   .text-box {
     width: 50%;
@@ -25,7 +25,6 @@
 
   .contact-form {
     width: 100%;
-    margin-top: 20px;
 
     ul {
       display: flex;
@@ -37,7 +36,7 @@
         padding: 0;
         margin: 0;
         list-style: none;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         opacity: 0;
         animation: fadeInUp 1s 1.5s;
         animation-fill-mode: forwards;
@@ -95,7 +94,7 @@
 .info-map {
   position: absolute;
   background: #000;
-  top: 50px;
+  top: 100px;
   right: 30px;
   z-index: 99999;
   width: 300px;
@@ -110,7 +109,7 @@
   animation-fill-mode: forwards;
 
   span {
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     padding-top: 20px;
     color: #fff;
@@ -118,10 +117,10 @@
 }
 
 .map-wrap {
-  background: rgba(9, 252, 216, 0.1);
+  background: rgba(9, 252, 216, 0.2);
   float: right;
   width: 49%;
-  padding-top: 2rem;
+  margin-top: 5rem;
   animation: backInRight 1s 1s;
   opacity: 0;
   animation-fill-mode: forwards;
