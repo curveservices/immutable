@@ -5,7 +5,7 @@ export const accordionData = [
     title: "WEB DEVELOPMENT",
     subtitle: "JavaScript - Node.js - React - WordPress - SquareSpace",
     content:
-      "We specialise in designing custom built websites, offering solutions ranging from landing pages to multi-page sites. We also development on platforms such as WordPress, Squarespace, and WebFlow.",
+      "We specialise in designing custom built websites, offering solutions ranging from landing pages to multi-page sites. We also develop on platforms such as WordPress, Squarespace, and WebFlow.",
   },
   // {
   //   id: 1,
@@ -21,7 +21,7 @@ export const accordionData = [
     title: "AI SOLUTIONS",
     subtitle: "VoiceFlow - Botpress - OpenAI- Zapier",
     content:
-      "If you are looking for AI sulotions for your business we can help alleviate your pain points with multiple solutions. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
+      "If you are looking for AI solutions for your business we can help alleviate your pain points with multiple solutions. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
   },
   {
     id: 3,
@@ -37,6 +37,6 @@ export const accordionData = [
     title: "PACKAGES",
     subtitle: "Multi page websites - SPA's - AI Solutions - Social Media",
     content:
-      "We prioritises transparent communication and strong client relationships, offering clear, budget-friendly pricing and scalable packages tailored to evolving business requirements.",
+      "We offer a full range of packages which include but not limited to, single & multi-page websites with full AI integration. We also include workflow automation & digital marketing",
   },
 ];
