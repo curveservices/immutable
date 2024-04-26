@@ -168,7 +168,7 @@ const Services = () => {
                     <FontAwesomeIcon icon={faMobileScreenButton} />
                   </div>
                   <div className="copy">
-                    <p className="elem-title">Mobile-First</p>
+                    <p className="elem-title">Mobile-First Approach</p>
                     <p className="desc">
                       In today's mobile-driven world, a responsive website is
                       essential. Our designs are optimized for all
