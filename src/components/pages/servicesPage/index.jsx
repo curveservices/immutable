@@ -170,9 +170,9 @@ const Services = () => {
                   <div className="copy">
                     <p className="elem-title">Mobile-First Approach</p>
                     <p className="desc">
-                      In today's mobile-driven world, a responsive website is
+                      I's a mobile-driven world, a responsive website is
                       essential. Our designs are optimized for all
-                      devices, ensuring a flawless experience on smartphones,
+                      devices, ensuring a flawless experience on phones,
                       tablets &amp; desktops.
                     </p>
                   </div>
