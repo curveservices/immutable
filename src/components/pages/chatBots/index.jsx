@@ -10,7 +10,7 @@ const ChatBots = () => {
               challenges with AI solutions. Our expertise enables
               automation and outsourcing of daily tasks using cutting-edge AI
               technology, streamlining your operations for increased efficiency."
-      HeroH2="We build tailored AI chatbots, starting from just £795 + vat."
+      HeroH2="We build tailored AI chatbots, starting from just £275 + vat."
       src={gif}
       secondH1="Convert web traffic to sales using AI solutions."
       secondP="Tired of low website conversions? We excel in

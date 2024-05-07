@@ -55,7 +55,8 @@ const Navbar = () => {
               title="Our Services"
               className="services-link"
               activeclassname="active"
-              exact="true"
+          exact="true"
+          onClick={() => setShowNav(false)}
             >
           <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
           <div className="dropdown">
