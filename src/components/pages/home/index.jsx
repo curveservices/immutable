@@ -29,7 +29,7 @@ const Home = () => {
         </div>
         <div className="right-hero">
           <div className="text-box">
-            <h1 className="main-title">Empowering your Business with Website &amp; <span className="black"> AI solutions </span> </h1>
+            <h1 className="main-title">Empowering your Business with Website &amp; AI solutions</h1>
             <p>
               Discover how we can revolutionise your business.
               Our custom web development &amp; AI solutions, including bespoke AI chatbots,

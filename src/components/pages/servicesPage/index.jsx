@@ -54,7 +54,7 @@ const Services = () => {
             <StaticCubes />
             <div className="text-box">
               <h1 className="title">
-                We will turn your ideas into amazing <span className="black">solutions</span> 
+                We will turn your ideas into amazing solutions
               </h1>
               <p>
                 We offer a full range of website development, AI solutions, workflow automation and digital
@@ -131,7 +131,7 @@ const Services = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="chat-bot">
+              <NavLink to="chat-bots">
                 <div className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}>
                   <div className="icon">
                     <FontAwesomeIcon icon={faScrewdriverWrench} />
