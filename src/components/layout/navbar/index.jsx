@@ -141,8 +141,10 @@ const Navbar = () => {
         <Button
           text="Book a Call"
           link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
+          target="_blank"
           background="#fff"
-          color="#000" />
+          color="#000"
+          boxShadow="none" />
       </nav>
       <FontAwesomeIcon
         icon={faBars}

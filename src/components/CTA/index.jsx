@@ -18,7 +18,10 @@ const CallToAction = () => {
           target="_blank"
           background="var(--primary)"
         />
-        <Button text="contact us" link="/contact" background="var(--primary)" />
+        <Button
+          text="contact us"
+          link="/contact"
+          background="var(--primary)" />
       </div>
     </>
   );
