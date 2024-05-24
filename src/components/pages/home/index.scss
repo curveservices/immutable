@@ -1,6 +1,5 @@
 .home-page {
   .hero {
-    position: relative;
     display: flex;
     justify-content: space-between;
     padding-bottom: 10rem;
@@ -59,9 +58,10 @@
   }
 
   .third-section {
+    margin-bottom: 4rem ;
     .third-inner {
       .view-btn {
-        margin-top: 4rem;
+        margin-top: 2rem;
       }
     }
   }
