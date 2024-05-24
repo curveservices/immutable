@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
 import Button from "../../button";
-import logo from "../../../assets/images/1-removebg-preview.png";
+import logo from "../../../assets/images/1-removebg-preview.webp";
 import "./index.scss";
 
 const Navbar = () => {
