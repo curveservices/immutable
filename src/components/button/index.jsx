@@ -4,6 +4,7 @@ import "./index.scss";
 const Button = (props) => {
   const buttonStyle = {
     background: props.background,
+    color: props.color,
     fontSize: props.fontSize + "px",
   };
 

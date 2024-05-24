@@ -3,7 +3,7 @@ import CubeSpinner from "../../Animations/cubespinner";
 import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
-import { useLayoutEffect, useState } from "react";
+import { useState } from "react";
 import Featured from "../../featured";
 import CallToAction from "../../CTA";
 import React from "react";
@@ -15,11 +15,6 @@ const Home = () => {
   const handleAccordionClick = (accordionId) => {
     setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
   };
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="home-page">
       <Loader type="ball-spin-fade-loader" />

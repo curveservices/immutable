@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
@@ -6,16 +6,15 @@ import PriceCard from "../../cards/basicPrice";
 import CallToAction from "../../CTA";
 import Featured from "../../featured";
 import img1 from "../../../assets/images/servicesImg.jpeg";
-import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileScreenButton,
-  faPeopleGroup,
   faScrewdriverWrench,
   faUserAstronaut,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
+import "./index.scss";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,16 +35,7 @@ const Services = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
-
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
       <div className="serivces-page">

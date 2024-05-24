@@ -3,7 +3,6 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  height: 60px;
   z-index: 9999;
   top: 0;
   letter-spacing: 3px;
@@ -11,13 +10,12 @@ header {
   color: #fff;
   font-family: "Coolvetica";
   background: var(--primary);
-  box-shadow: var(--global);
   transition: all 0.3s;
   opacity: 0.95;
   cursor: pointer;
 
   .title {
-    font-size: 34px;
+    font-size: 24px;
     padding-top: 15px;
   }
   .logo {
@@ -25,7 +23,7 @@ header {
   }
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 3rem;
     text-align: center;
     padding: 20px 10px;
@@ -56,8 +54,7 @@ header {
     a {
       text-align: center;
       line-height: 40px;
-      color: #fff;
-      font-size: 20px;
+      font-size: 1.1rem;
       text-decoration: none;
       transition: all 0.3s;
       &:hover {
@@ -80,7 +77,6 @@ header {
 
 @media screen and (max-width: 920px) {
   header {
-    padding: 0rem;
     .title {
       display: none;
     }
@@ -97,29 +93,41 @@ header {
 
     nav {
       position: absolute;
-      top: 5px;
       right: 0;
       width: 100%;
-      height: 100%;
       background: var(--primary);
-      padding-top: 30px;
-      padding-right: 40px;
-      gap: 2rem;
       z-index: 2;
-      margin: 0;
 
-      .text {
+      .desktop-icon {
         display: none;
       }
+
       .mobile-icon {
-        display: flex;
+        display: block;
+        font-size: 24px;
       }
       &.mobile-show {
         display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 15px;
-        height: 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 4rem;
+        padding: 5rem ;
+        height: 100vh;
         animation: bounceInRight 1s;
+
+        .text {
+          text-align: center;
+          display: block;
+          font-size: 24px;
+        }
+        
+        .menu-container {
+          display: flex;
+          align-items: center;
+          width: 200px;
+          gap: 20px;
+        }
       }
     }
   }
@@ -131,11 +139,13 @@ header {
     position: absolute;
     top: 20px;
     right: 35px;
+    font-size: 24px;
   }
   .close-icon {
     display: block;
     position: absolute;
-    right: 25px;
-    top: 0;
+    right: 35px;
+    top: 20px;
+    font-size: 24px;
   }
 }

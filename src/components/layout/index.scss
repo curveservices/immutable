@@ -3,12 +3,14 @@
   will-change: contents;
   transform-style: preserve-3d;
   font-family: "Coolvetica";
+  font-display: swap;
   background-image: url("../../assets/images/blue.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  animation: fadeIn 4s forwards;
+  opacity: 0;
+  animation: fadeIn 1s 1s forwards;
   animation-delay: 1s;
 
   .home-page,

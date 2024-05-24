@@ -1,9 +1,5 @@
-import { useLayoutEffect } from 'react';
 import './index.scss';
 const PrivacyPolicy = () => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     return (
         <div className="policy-page">
             <h1>Privacy Policy</h1>

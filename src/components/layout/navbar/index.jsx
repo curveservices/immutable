@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
+import Button from "../../button";
 import logo from "../../../assets/images/1-removebg-preview.png";
 import "./index.scss";
 
@@ -25,17 +26,16 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
+
   return (
     <header className={isScrolled ? "navbar-scroll" : ""}>
       
       <NavLink to="/">
-        <div className="title">&#123; Immutable Studio &#125;</div>
-        <img src={logo} alt="Immutable studio logo" className="logo" />
+        <div className="title-container">
+          <div className="title">&#123; Immutable Studio &#125;</div>
+          <img src={logo} alt="Immutable studio logo" className="logo" />
+        </div>
       </NavLink>
       <Breadcrumbs />
       <nav className={showNav ? "mobile-show" : ""}>
@@ -46,9 +46,11 @@ const Navbar = () => {
               activeclassname="active"
               exact="true"
               onClick={() => setShowNav(false)}
-            >
-              <FontAwesomeIcon icon={faHouseChimney} className="mobile-icon" />
-              <div className="text">HOME</div>
+        >
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faHouseChimney} className="mobile-icon" />
+            <div className="text">HOME</div>
+          </div>
             </NavLink>
             <NavLink
               to="services"
@@ -58,46 +60,48 @@ const Navbar = () => {
           exact="true"
           onClick={() => setShowNav(false)}
             >
-          <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
-          <div className="dropdown">
-            <div className="text">SERVICES <FontAwesomeIcon icon={faArrowTurnDown} />
-            </div>
-            <div className="dropdown-content">
-              <NavLink
-                to="services/web-development"
-                title="Web Development"
-                className="services-link"
-                activeclassname='active'
-                exact="true"
-              >WEB DEVELOPMENT
-              </NavLink>
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
+            <div className="dropdown">
+              <div className="text">SERVICES <FontAwesomeIcon icon={faArrowTurnDown} className="desktop-icon"/>
+              </div>
+              <div className="dropdown-content">
+                <NavLink
+                  to="services/web-development"
+                  title="Web Development"
+                  className="services-link"
+                  activeclassname='active'
+                  exact="true"
+                >WEB DEVELOPMENT
+                </NavLink>
 
-              <NavLink
-                to="services/chat-bots"
-                title="Chat bots"
-                className="services-link"
-                activeclassname='active'
-                exact="true"
-              >AI SOLUTIONS
-              </NavLink>
+                <NavLink
+                  to="services/chat-bots"
+                  title="Chat bots"
+                  className="services-link"
+                  activeclassname='active'
+                  exact="true"
+                >AI SOLUTIONS
+                </NavLink>
 
-              <NavLink
-                to="services/digital-marketing"
-                title="Digital Marketing"
-                className="services-link"
-                activeclassname='active'
-                exact="true"
-              >DIGITAL MARKETING
-              </NavLink>
+                <NavLink
+                  to="services/digital-marketing"
+                  title="Digital Marketing"
+                  className="services-link"
+                  activeclassname='active'
+                  exact="true"
+                >DIGITAL MARKETING
+                </NavLink>
 
-              <NavLink
-                to="services/packages"
-                title="Packages"
-                className="services-link"
-                activeclassname='active'
-                exact="true"
-              >PACKAGES
-              </NavLink>
+                <NavLink
+                  to="services/packages"
+                  title="Packages"
+                  className="services-link"
+                  activeclassname='active'
+                  exact="true"
+                >PACKAGES
+                </NavLink>
+              </div>
             </div>
           </div> 
         </NavLink>
@@ -109,8 +113,10 @@ const Navbar = () => {
               exact="true"
               onClick={() => setShowNav(false)}
             >
-              <FontAwesomeIcon icon={faUser} className="mobile-icon" />
-              <div className="text">ABOUT</div>
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faUser} className="mobile-icon" />
+            <div className="text">ABOUT</div>
+          </div>
             </NavLink>
             <NavLink
               to="contact"
@@ -120,8 +126,10 @@ const Navbar = () => {
               exact="true"
               onClick={() => setShowNav(false)}
             >
-              <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
-              <div className="text">CONTACT</div>
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
+            <div className="text">CONTACT</div>
+          </div>
             </NavLink>
           
           <FontAwesomeIcon
@@ -129,7 +137,12 @@ const Navbar = () => {
             size="2x"
             className="close-icon"
             onClick={() => setShowNav(false)}
-          />
+        />
+        <Button
+          text="Book a Call"
+          link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
+          background="#fff"
+          color="#000" />
       </nav>
       <FontAwesomeIcon
         icon={faBars}

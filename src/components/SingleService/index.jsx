@@ -1,5 +1,5 @@
 import style from'./services.module.css';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import Button from '../button';
 import PriceCard from '../cards/fullPrice';
@@ -18,14 +18,6 @@ const Singleservices = (props) => {
         };
 
         window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
     }, []);
     return (
         <div className="single-service">
