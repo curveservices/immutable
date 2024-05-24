@@ -1,12 +1,11 @@
-import { useLayoutEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../../button";
 import Socials from "../../socials";
-import "./index.scss";
 import Loader from "react-loaders";
 import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
-import { useEffect } from "react";
+import "./index.scss";
 
 const About = () => {
   const [second, setSecond] = useState(false);
@@ -22,12 +21,9 @@ const About = () => {
     };
   }, []);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div className="about-page">
-      <Loader type="ball-spin-fade-loader" />
+      
       <section className="hero">
         <div className="inner-hero">
           <StaticCubes />
@@ -77,6 +73,7 @@ const About = () => {
       <section className="cta">
         <CallToAction />
       </section>
+      <Loader type="ball-spin-fade-loader" />
     </div>
   );
 };

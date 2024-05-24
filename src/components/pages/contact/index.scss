@@ -1,13 +1,13 @@
 .contact-page {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
   margin-bottom: 18rem;
 
   .text-box {
     width: 50%;
     color: #fff;
-    padding: 6.2rem;
+    margin-top: 2rem;
+    padding: 5rem;
     animation: fadeInLeft 2s forwards;
   }
   .call-button {
@@ -91,6 +91,7 @@
     }
   }
 }
+
 .info-map {
   position: absolute;
   background: #000;
@@ -100,7 +101,6 @@
   width: 300px;
   padding: 20px;
   color: #fff;
-  font-family: "Coolvetica";
   text-align: center;
   font-size: 18px;
   font-weight: 300;

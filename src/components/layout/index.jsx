@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import "./index.scss";
@@ -26,6 +26,12 @@ const Layout = () => {
       behavior: "smooth",
     });
   };
+
+  ScrollRestoration({
+    top: 0,
+    behavior: "smooth",
+  });
+  
   return (
     <>
       <Navbar />

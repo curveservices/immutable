@@ -1,6 +1,6 @@
 import "./index.scss";
 import emailjs from "@emailjs/browser";
-import { useLayoutEffect, useRef } from "react";
+import { useRef } from "react";
 import Socials from "../../socials";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Loader from "react-loaders";
@@ -31,9 +31,7 @@ const Contact = () => {
         },
       );
   };
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
   return (
     <>
       <div className="contact-page">
@@ -112,7 +110,7 @@ const Contact = () => {
             lilink="https://www.linkedin.com/company/21439623"
             xlink="https://twitter.com/immutable_LDN"
           />
-          <span><a href="mailto:hello@immutable-studio.com" >hello@immutable-studio.com</a></span>
+          <span><a href="mailto:hello@immutable-studio.com" >hello@immutable-studio.co.uk</a></span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[51.5, 0.0192269]} zoom={13}>
@@ -122,8 +120,9 @@ const Contact = () => {
             </Marker>
           </MapContainer>
         </div>
+        <Loader type="ball-spin-fade-loader" />
       </div>
-      <Loader type="ball-spin-fade-loader" />
+    
     </>
   );
 };

@@ -3,6 +3,8 @@
   height: 50%;
   aspect-ratio: 1;
   perspective: 100rem;
+  animation: fadeIn 3s forwards;
+  animation-delay: 1s;
 
   .circle {
     position: absolute;
