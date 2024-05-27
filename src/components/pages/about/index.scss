@@ -40,14 +40,13 @@
   }
 
   .second-section {
-    background-image: url("../../../assets/images/1746747.webp");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 
     .second-inner {
-      min-height: 100vh;
-      margin: 2rem 3rem 8rem;
-      padding: 2rem 1rem;
+      background-image: url("../../../assets//images//1746747.webp");
+      background-repeat: no-repeat;
+      margin: 2rem 0rem 4rem;
+      padding: 2rem 4rem;
 
       .title {
         margin: 2rem;
@@ -60,7 +59,7 @@
       }
 
       .none {
-        display: none;
+        opacity: 0;
       }
     }
   }

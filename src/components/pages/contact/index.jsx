@@ -120,9 +120,8 @@ const Contact = () => {
             </Marker>
           </MapContainer>
         </div>
-        <Loader type="ball-spin-fade-loader" />
       </div>
-    
+      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

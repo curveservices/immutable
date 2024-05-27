@@ -191,7 +191,7 @@ const Services = () => {
         </section>
         <section className="fith-section">
           <div className="fith-inner">
-            <Featured />
+            {/* <Featured /> */}
           </div>
         </section>
         <section className="cta">

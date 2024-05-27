@@ -40,40 +40,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="lead">
-          <ul className="site-links">
-            <li>
-              <p>Lead Dev</p>
-            </li>
-            <li>
-              <Link
-                to="https://dev-paul.netlify.app/"
-                target="_blank"
-                rel="norefer"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://dev-paul.netlify.app/about"
-                rel="norefer"
-                target="_blank"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://dev-paul.netlify.app/contact"
-                rel="norefer"
-                target="_blank"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
         <div className="experts">
           <ul>
             <li>

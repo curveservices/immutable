@@ -16,12 +16,14 @@ const ChatBots = () => {
       secondP="Tired of low website conversions? We excel in
               creating functional AI solutions integrated to your
               website. Our tech experts leverage cutting-edge AI &amp; 
-              industry insight to optimise amazing cuustomer service around the clock."
+              industry insight to optimise amazing customer service around the clock.
+              "
+      p="We offer custom GPT's for WhatsApp, Messenger, Instagram &amp; more"
       img={img}
       thirdH1="CHATBOT"
       thirdP="We emphasise clear communication and robust client relationships.
-              Our services include transparent, budget-friendly pricing with
-              detailed breakdowns. Packages can be expanded as your
+              Our business model is retainer based for AI &amp; automation services. Solutions are hosted from our platforms, monthly audits and maintence are included 
+              in the monthly fee. Packages can be expanded as your
               business grows."
       name="ChatBots"
     />

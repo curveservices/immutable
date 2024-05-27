@@ -21,8 +21,7 @@ const SocialMarketing = () => {
       img={img}
       thirdH1="DIGITAL MARKETING"
       thirdP="We prioritise transparent communication &amp; strong client bonds.
-              Our services offer clear, budget-friendly pricing with detailed
-              breakdowns."
+              Our services for digial marketing are based on a retainer model."
       name="SocialMedia"
     />
   );

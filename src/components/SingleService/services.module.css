@@ -1,7 +1,6 @@
 @import "animate.css";
 
 /* Hero section */
-
 .innerHero {
     display: flex;
     justify-content: space-between;
@@ -63,7 +62,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 4rem 2rem;
+    padding: 2rem 0;
 }
 
 .thirdTextBox {

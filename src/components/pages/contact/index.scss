@@ -1,13 +1,12 @@
 .contact-page {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18rem;
-
+  
   .text-box {
     width: 50%;
     color: #fff;
     margin-top: 2rem;
-    padding: 5rem;
+    padding: 5rem 3rem;
     animation: fadeInLeft 2s forwards;
   }
   .call-button {

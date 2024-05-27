@@ -16,18 +16,16 @@ const Packages = () => {
       HeroH2="We build tailer made business packages starting from just £995 +
               vat"
       src={gif}
-      secondH1="In need of full online website and AI solutions?"
+      secondH1="Need full online &amp; AI solutions?"
       secondP=" Our custom packages integrate cutting-edge AI solutions, from
               chatbot integration to advanced AI workflows and platforms. Our
-              goal is to alleviate your pain points, saving you time and money.
-"
+              goal is to alleviate your pain points, saving you time and money."
+      p="Our full packages include site maintenance, hosting and unlimited AI usage  with GPT-4o and DALL·E."
       img={img}
       thirdH1="BUSINESS"
       thirdP="We prioritise transparent communication and strong client bonds.
-              Our services offer clear, budget-friendly pricing with detailed
-              breakdowns. Through scalable packages, we ensure your website
-              chatbot evolves alongside your business, emphasising adaptability
-              and alignment with your goals as you expand."
+              Our services are retainer based. Through scalable packages, we ensure your website &amp;
+              GPT evolves alongside your business."
       name="Packages"
     />
   );
