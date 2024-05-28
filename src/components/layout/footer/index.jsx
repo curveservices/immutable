@@ -17,9 +17,8 @@ const Footer = () => {
           lilink="https://www.linkedin.com/company/21439623"
           xlink="https://twitter.com/immutable_LDN" />
         <p className="copy"><Link to='privacy-policy'>Privacy Policy</Link></p>
-        <p className="copy">Copyyright &copy; {year} Immutable Studio </p>
+        <p className="copy">Copyright &copy; {year} Immutable Studio </p>
       </div>
-
       <div className="link-container">
         <div className="studio">
           <ul className="site-links">
