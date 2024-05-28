@@ -88,7 +88,6 @@ const Contact = () => {
                   <Link
                     className="call-button"
                     target="_blank"
-                    noreferer
                     to="https://calendly.com/immutable-studio/website-consultancy"
                   >
                     <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
