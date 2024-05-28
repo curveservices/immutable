@@ -13,7 +13,7 @@ header {
   transition: all 0.3s;
   opacity: 0.95;
   cursor: pointer;
-
+  
   .title {
     font-size: 24px;
     padding-top: 15px;
@@ -29,7 +29,6 @@ header {
     text-align: center;
     padding: 15px 10px;
 
-    
       .dropdown-content {
         display: none;
         position: absolute;

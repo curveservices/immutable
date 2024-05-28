@@ -1,5 +1,4 @@
 import {
-  faArrowTurnDown,
   faBars,
   faClose,
   faEnvelope,
@@ -59,79 +58,47 @@ const Navbar = () => {
               activeclassname="active"
           exact="true"
           onClick={() => setShowNav(false)}
-            >
+        >
           <div className="menu-container">
             <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
-            <div className="dropdown">
-              <div className="text">SERVICES <FontAwesomeIcon icon={faArrowTurnDown} className="desktop-icon"/>
-              </div>
-              <div className="dropdown-content">
-                <NavLink
-                  to="services/web-development"
-                  title="Web Development"
-                  className="services-link"
-                  activeclassname='active'
-                  exact="true"
-                >WEB DEVELOPMENT
-                </NavLink>
-
-                <NavLink
-                  to="services/chat-bots"
-                  title="Chat bots"
-                  className="services-link"
-                  activeclassname='active'
-                  exact="true"
-                >AI SOLUTIONS
-                </NavLink>
-
-                <NavLink
-                  to="services/digital-marketing"
-                  title="Digital Marketing"
-                  className="services-link"
-                  activeclassname='active'
-                  exact="true"
-                >DIGITAL MARKETING
-                </NavLink>
-
-                <NavLink
-                  to="services/packages"
-                  title="Packages"
-                  className="services-link"
-                  activeclassname='active'
-                  exact="true"
-                >PACKAGES
-                </NavLink>
-              </div>
-            </div>
-          </div> 
+            <div className="text">SERVICES </div>
+          </div>
         </NavLink>
-            <NavLink
-              to="about"
-              title="About Us"
-              className="about-link"
-              activeclassname="active"
-              exact="true"
-              onClick={() => setShowNav(false)}
-            >
-          <div className="menu-container">
-            <FontAwesomeIcon icon={faUser} className="mobile-icon" />
-            <div className="text">ABOUT</div>
-          </div>
-            </NavLink>
-            <NavLink
-              to="contact"
-              title="Contact Us"
-              className="contact-link"
-              activeclassname="active"
-              exact="true"
-              onClick={() => setShowNav(false)}
-            >
-          <div className="menu-container">
-            <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
-            <div className="text">CONTACT</div>
-          </div>
-            </NavLink>
-          
+        <NavLink
+          to="featured-work"
+          title="Featured Work"
+          className="services-link"
+          activeclassname='active'
+          exact="true"
+        >
+          PORTFOLIO
+        </NavLink>
+          <NavLink
+            to="about"
+            title="About Us"
+            className="about-link"
+            activeclassname="active"
+            exact="true"
+            onClick={() => setShowNav(false)}
+          >
+        <div className="menu-container">
+          <FontAwesomeIcon icon={faUser} className="mobile-icon" />
+          <div className="text">ABOUT</div>
+        </div>
+          </NavLink>
+          <NavLink
+            to="contact"
+            title="Contact Us"
+            className="contact-link"
+            activeclassname="active"
+            exact="true"
+            onClick={() => setShowNav(false)}
+          >
+        <div className="menu-container">
+          <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
+          <div className="text">CONTACT</div>
+        </div>
+          </NavLink>
           <FontAwesomeIcon
             icon={faClose}
             size="2x"
