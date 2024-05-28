@@ -15,6 +15,7 @@
   .serivces-page,
   .contact-page,
   .single-service,
+  .featured-work,
   .policy-page {
     opacity: 0;
     animation: fadeIn 1s 0.5s forwards;
@@ -24,7 +25,7 @@
       margin: 0;
     }
     h2 {
-      font-size: 48px;
+      font-size: 40px;
       font-weight: normal;
       margin: 0;
     }
@@ -80,11 +81,11 @@
 
 @media screen and (max-width: 920px) {
   .app {
-    background-image: none;
     .home-page,
     .about-page,
     .serivces-page,
-    .single-service, 
+    .single-service,
+    .featured-work,
     .policy-page {
 
       h1 {
