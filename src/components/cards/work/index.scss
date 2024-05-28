@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0.5rem;
-  gap: 2em;
+  margin: 1rem 1.5rem;
+  gap: 2rem;
 }
 
 .card {
@@ -12,14 +12,14 @@
   flex: 1 1 50%;
   height: 400px;
   overflow: hidden;
-  max-width: calc(30% - 10px);
+  max-width: calc(30% - 0px);
   box-shadow: var(--global);
 
   .card-image {
     position: absolute;
     z-index: 2;
     width: 100%;
-    height: inherit;
+    height: 100%;
     object-fit: fill;
   }
 
@@ -27,25 +27,25 @@
     position: absolute;
     width: 100%;
     z-index: 3;
-    padding: 5px;
+    padding: 1rem;
     text-align: center;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.0355, 1);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 1));
-    bottom: -140px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 1));
+    bottom: -220px;
   }
 
   .name {
+    font-family: "Coolvetica";
     margin-bottom: 2rem;
     margin-top: 1rem;
     padding: 0 2rem;
     color: #fff;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 24px;
   }
 
   .desc {
-    font-size: 16px;
     font-weight: 600;
     margin-bottom: 0px;
     padding: 0 2rem;
@@ -53,26 +53,37 @@
   }
   .btn-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:  20px;
+    padding: 20px;
     .btn {
-      margin: 30px;
-      padding: 0px;
-      height: 40px;
-      line-height: 34px;
-      text-align: center;
-      border: 2px solid #26c9ff;
-      border-radius: 5px;
-      font-size: 18px;
-      color: #fff;
-      background: transparent;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
-    
-    .btn:hover {
-      transform: translateY(-5px);
-      background: #587bd3;
+        text-transform: uppercase;
+        background: var(--services-link);
+        color: #fff;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        float: left;
+        border-radius: 10px;
+        border: none;
+        min-width: fit-content;
+        box-shadow: var(--button-shadow);
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      
+        &:hover {
+          transform: translateY(-3px);
+          background-color: rgb(43, 43, 43);
+        }
+      
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
  

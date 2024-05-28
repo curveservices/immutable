@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { db } from "../../../firbase";
 import { getDocs, collection } from "firebase/firestore";
 import "./index.scss";
+import Button from "../../button";
 
 const Card = () => {
   const [card, setCard] = useState([]);
@@ -40,9 +41,19 @@ const Card = () => {
               <div className="name">{item.name}</div>
               <p className="desc">{item.desc}</p>
               <div className="btn-container">
-                <button className="btn" onClick={() => window.open(item.live)}>
-                  VIEW
-                </button>
+                <Button
+                  text="Featured work"
+                  background="var(--services-link)"
+                  link="featured"
+                />
+                <button
+                  className="btn"
+                  text="VIEW SITE"
+                  background="var(--services-link)"
+                  onClick={() => window.open(item.live)}>
+                  VIEW SITE
+                  </button>
+                
               </div>
             </div>
           </div>

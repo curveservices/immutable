@@ -1,0 +1,47 @@
+.featured-work {
+    .hero {
+        display: flex;
+        .inner-hero {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin: 4rem 0rem;
+            padding: 2rem 4rem;
+            color: #fff;
+            
+            .text-box {
+                width: 80%;
+                margin: 2rem 0rem;
+                animation: fadeInLeft 2s forwards;
+
+                .button-container {
+                    display: flex;
+                    padding: 2rem 0;
+                    gap: 50px;
+                }
+            }
+        }
+        .spinner {
+            position: relative;
+            right: 25%;
+        }
+    }
+
+    .second {
+        background-image: url("../../../assets//images/1746747.webp");
+        padding: 2rem 4rem;
+        .second-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            .player-wrapper {
+                video {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .featured {
+        margin: 2rem 0;
+    }
+}
