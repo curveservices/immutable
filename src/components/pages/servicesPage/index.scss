@@ -6,9 +6,7 @@
       margin: 2em 0rem;
       padding: 2rem;
       color: #fff;
-      opacity: 0;
-      animation: fadeIn 1s 0.5s forwards;
-      animation-delay: 1s;
+      
 
       .cube-container {
         width: 60px;
@@ -39,7 +37,7 @@
         width: 25%;
         gap: 25px;
         margin: 3rem 1rem;
-        animation: bounceInDown 2s 1s forwards;
+        animation: bounceInDown 2s forwards;
       }
 
       .service-link {

@@ -18,7 +18,6 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
-       
         <section className="hero">
           <div className="left-hero">
             <CubeSpinner />
@@ -31,17 +30,21 @@ const Home = () => {
                 Our custom web development &amp; AI solutions, including bespoke AI chatbots,
                 automations &amp; workflows are designed to optimise efficiency, reduce costs,
                 and enhance customer engagement.
-                <p>
-                  with seasoned web developers &amp; UX/UI specialists who
-                  excel in crafting bespoke business websites and workflow solutions. Our team is dedicated
-                  to delivering cutting-edge technology tailored to help
-                  your company achieve its goals with utmost efficiency.
-                </p>
+              </p>
+              <p>
+                with seasoned web developers &amp; UX/UI specialists who
+                excel in crafting bespoke business websites and workflow solutions. Our team is dedicated
+                to delivering cutting-edge technology tailored to help
+                your company achieve its goals with utmost efficiency.
               </p>
 
               <div className="btn-container">
                 <Button link="contact" text="CONTACT US" />
-                <Button link="https://calendly.com/immutable-studio/website-consultancy" text='Book a call' target='_blank' />
+                <Button
+                  link="https://calendly.com/immutable-studio/website-consultancy"
+                  text='Book a call'
+                  noreferer
+                />
               </div>
             </div>
           </div>
@@ -69,7 +72,7 @@ const Home = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            {/* <Featured /> */}
+            <Featured />
           </div>
         </section>
         <section className="cta">
