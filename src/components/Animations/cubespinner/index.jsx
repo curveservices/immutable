@@ -3,7 +3,6 @@ import {
   faGitAlt,
   faHtml5,
   faJsSquare,
-  faNode,
   faReact,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
