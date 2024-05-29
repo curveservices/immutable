@@ -51,6 +51,7 @@ const Client = (props) => {
                                     text="View Site"
                                     link={props.link}
                                     target="_blank"
+                                    noreferer
                                 />
                             </div>
                             <div className="player-wrapper">
