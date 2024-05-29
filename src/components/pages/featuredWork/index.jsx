@@ -1,18 +1,19 @@
 
 import morfbot from "../../../assets/images/morfbot.mp4"
-import ReactPlayer from 'react-player/lazy'
 import Client from "../../cards/ClientWork"
 import Featured from "../../featured";
 import "./index.scss";
 import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
 import CTA from "../../CTA";
-import { Link } from "react-router-dom";
+import Helmet from "react-helmet";
+import Loader from "react-loaders";
 
 const FeaturedWork = () => {
    
     return ( 
         <>
+            
             <div className="featured-work">
                 <section className="hero">
                     <div className="inner-hero">
@@ -66,7 +67,13 @@ const FeaturedWork = () => {
                 <section className="cta">
                     <CTA />
                 </section>
-        </div>
+            </div>
+            <div>
+                <Helmet>
+                    <title>Featured Work - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+                </Helmet>
+            </div>
+            <Loader type="ball-spin-fade-loader" />
         </>
      );
 }

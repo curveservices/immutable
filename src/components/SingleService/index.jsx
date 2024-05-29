@@ -4,6 +4,7 @@ import Loader from 'react-loaders';
 import Button from '../button';
 import PriceCard from '../cards/fullPrice';
 import CallToAction from '../CTA';
+import Helmet from 'react-helmet';
 
 const Singleservices = (props) => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -73,6 +74,11 @@ const Singleservices = (props) => {
                 <section className="cta">
                     <CallToAction />
                 </section>
+            </div>
+            <div>
+                <Helmet>
+                    <title>{props.title} - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+                </Helmet>
             </div>
             <Loader type="ball-spin-fade-loader" />
         </>

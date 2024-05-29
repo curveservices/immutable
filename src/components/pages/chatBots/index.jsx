@@ -5,6 +5,7 @@ import Singleservices from '../../SingleService/';
 const ChatBots = () => {
   return (
     <Singleservices
+      title="AI Solutions"
       HeroH1="AI &amp; Automation Solutions"
       HeroP="Seeking AI solutions for your business? Let us ease your
               challenges with AI solutions. Our expertise enables

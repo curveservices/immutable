@@ -7,6 +7,7 @@ import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
+import Helmet from "react-helmet";
 
 const Contact = () => {
   const refForm = useRef();
@@ -34,6 +35,11 @@ const Contact = () => {
 
   return (
     <>
+      <div>
+        <Helmet>
+          <title>Contact Us - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+        </Helmet>
+      </div>
       <div className="contact-page">
         <section className="text-box">
           <h1>Contact Us</h1>

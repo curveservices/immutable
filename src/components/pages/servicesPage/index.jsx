@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
 import "./index.scss";
+import Helmet from "react-helmet";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -197,6 +198,11 @@ const Services = () => {
         <section className="cta">
           <CallToAction />
         </section>
+      </div>
+      <div>
+        <Helmet>
+          <title>Our Services - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+        </Helmet>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

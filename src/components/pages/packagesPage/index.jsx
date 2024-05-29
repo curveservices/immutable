@@ -6,7 +6,8 @@ import Singleservices from "../../SingleService/";
 const Packages = () => {
   
   return (
-    <Singleservices
+          <Singleservices
+                  title="Packages"
       HeroH1="Business Packages"
       HeroP="Seeking AI solutions for your business? Let us ease your
               challenges with an online chatbot. Our expertise enables

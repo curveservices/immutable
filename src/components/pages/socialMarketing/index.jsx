@@ -5,6 +5,7 @@ import Singleservices from "../../SingleService/";
 const SocialMarketing = () => {
   return (
     <Singleservices
+      title="Digital Marketing"
       HeroH1="Digital Marketing"
       HeroP=" Our proficient media content team is available to assist in
               creating ad campaigns and social content, leveraging the latest

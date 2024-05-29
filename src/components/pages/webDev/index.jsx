@@ -5,6 +5,7 @@ import Singleservices from "../../SingleService/";
 const WebDev = () => {
   return (
     <Singleservices
+      title="Website Development"
       HeroH1="Website Development"
       HeroP="For a competitive edge, business elevation, and broader audience
               reach, a compelling web presence is essential. We

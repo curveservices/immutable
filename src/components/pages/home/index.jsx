@@ -9,6 +9,7 @@ import CallToAction from "../../CTA";
 import React from "react";
 import Loader from "react-loaders";
 import "./index.scss";
+import Helmet from "react-helmet";
 
 const Home = () => {
   const [activeAccordion, setActiveAccordion] = useState(0);
@@ -86,6 +87,11 @@ const Home = () => {
         <section className="cta">
           <CallToAction />
         </section>
+      </div>
+      <div>
+        <Helmet>
+          <title>Home - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+        </Helmet>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

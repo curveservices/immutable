@@ -6,6 +6,7 @@ import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
 import "./index.scss";
+import Helmet from "react-helmet";
 
 const About = () => {
   const [second, setSecond] = useState(false);
@@ -20,6 +21,11 @@ const About = () => {
 
   return (
     <>
+      <div>
+        <Helmet>
+          <title>About Us - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+        </Helmet>
+      </div>
       <div className="about-page">
         <section className="hero">
           <div className="inner-hero">
