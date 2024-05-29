@@ -30,7 +30,6 @@ const Navbar = () => {
 
   return (
     <header className={isScrolled ? "navbar-scroll" : ""}>
-      
       <NavLink to="/">
         <div className="title-container">
           <div className="title">&#123; Immutable Studio &#125;</div>
@@ -39,26 +38,26 @@ const Navbar = () => {
       </NavLink>
       <Breadcrumbs />
       <nav className={showNav ? "mobile-show" : ""}>
-            <NavLink
-              to="/"
-              className="home-link"
-              title="Home page"
-              activeclassname="active"
-              exact="true"
-              onClick={() => setShowNav(false)}
+        <NavLink
+          to="/"
+          className="home-link"
+          title="Home page"
+          activeclassname="active"
+          exact="true"
+          onClick={() => setShowNav(false)}
         >
           <div className="menu-container">
             <FontAwesomeIcon icon={faHouseChimney} className="mobile-icon" />
             <div className="text">HOME</div>
           </div>
-            </NavLink>
-            <NavLink
-              to="services"
-              title="Our Services"
-              className="services-link"
-              activeclassname="active"
-              exact="true"
-              onClick={() => setShowNav(false)}
+        </NavLink>
+        <NavLink
+          to="services"
+          title="Our Services"
+          className="services-link"
+          activeclassname="active"
+          exact="true"
+          onClick={() => setShowNav(false)}
         >
           <div className="menu-container">
             <FontAwesomeIcon icon={faTools} className="mobile-icon" />
@@ -69,7 +68,7 @@ const Navbar = () => {
           to="featured-work"
           title="Featured Work"
           className="services-link"
-          activeclassname='active'
+          activeclassname="active"
           exact="true"
           onClick={() => setShowNav(false)}
         >
@@ -78,37 +77,37 @@ const Navbar = () => {
             <div className="text">WORK</div>
           </div>
         </NavLink>
-          <NavLink
-            to="about"
-            title="About Us"
-            className="about-link"
-            activeclassname="active"
-            exact="true"
-            onClick={() => setShowNav(false)}
-          >
-        <div className="menu-container">
-          <FontAwesomeIcon icon={faUser} className="mobile-icon" />
-          <div className="text">ABOUT</div>
-        </div>
-          </NavLink>
-          <NavLink
-            to="contact"
-            title="Contact Us"
-            className="contact-link"
-            activeclassname="active"
-            exact="true"
-            onClick={() => setShowNav(false)}
-          >
-        <div className="menu-container">
-          <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
-          <div className="text">CONTACT</div>
-        </div>
-          </NavLink>
-          <FontAwesomeIcon
-            icon={faClose}
-            size="2x"
-            className="close-icon"
-            onClick={() => setShowNav(false)}
+        <NavLink
+          to="about"
+          title="About Us"
+          className="about-link"
+          activeclassname="active"
+          exact="true"
+          onClick={() => setShowNav(false)}
+        >
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faUser} className="mobile-icon" />
+            <div className="text">ABOUT</div>
+          </div>
+        </NavLink>
+        <NavLink
+          to="contact"
+          title="Contact Us"
+          className="contact-link"
+          activeclassname="active"
+          exact="true"
+          onClick={() => setShowNav(false)}
+        >
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
+            <div className="text">CONTACT</div>
+          </div>
+        </NavLink>
+        <FontAwesomeIcon
+          icon={faClose}
+          size="2x"
+          className="close-icon"
+          onClick={() => setShowNav(false)}
         />
         <Button
           text="Book a Call"
@@ -116,7 +115,8 @@ const Navbar = () => {
           target="_blank"
           background="#fff"
           color="#000"
-          boxShadow="none" />
+          boxShadow="none"
+        />
       </nav>
       <FontAwesomeIcon
         icon={faBars}

@@ -21,11 +21,6 @@ const About = () => {
 
   return (
     <>
-      <div>
-        <Helmet>
-          <title>About Us - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
-        </Helmet>
-      </div>
       <div className="about-page">
         <section className="hero">
           <div className="inner-hero">
@@ -42,19 +37,24 @@ const About = () => {
                     xlink="https://twitter.com/immutable_LDN"
                   />
                   <Button link="contact" text="Hire us" />
-                  <Button link="https://calendly.com/immutable-studio/website-consultancy" noreferer text="Book a call" target='_blank' />
+                  <Button
+                    link="https://calendly.com/immutable-studio/website-consultancy"
+                    noreferer
+                    text="Book a call"
+                    target="_blank"
+                  />
                 </div>
               </div>
 
               <div className="right-hero">
                 <p>
                   We are a proud south east London design studio specialising in
-                  web development, AI solutions &amp; social media marketing. We apply all
-                  of our skills to your challenges and ideas.
+                  web development, AI solutions &amp; social media marketing. We
+                  apply all of our skills to your challenges and ideas.
                 </p>
                 <p>
-                  Created in 2022, we have been delivering amazing websites and AI
-                  solutions ever since. Our Digital team deliver social media
+                  Created in 2022, we have been delivering amazing websites and
+                  AI solutions ever since. Our Digital team deliver social media
                   marketing and strategies. We are passionate about tech, AI and
                   problem solving
                 </p>
@@ -77,9 +77,20 @@ const About = () => {
           <CallToAction />
         </section>
       </div>
+      <div>
+        <Helmet>
+          <title>
+            About Us - Immutable Studio: Web Development, AI &amp; Automation
+            Solutions Agency
+          </title>
+          <meta
+            name="keywords"
+            content="About us, Immutable studio, sout east London, London, Founder, manager"
+          />
+        </Helmet>
+      </div>
       <Loader type="ball-spin-fade-loader" />
     </>
-   
   );
 };
 

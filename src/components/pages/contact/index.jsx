@@ -35,11 +35,6 @@ const Contact = () => {
 
   return (
     <>
-      <div>
-        <Helmet>
-          <title>Contact Us - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
-        </Helmet>
-      </div>
       <div className="contact-page">
         <section className="text-box">
           <h1>Contact Us</h1>
@@ -115,7 +110,11 @@ const Contact = () => {
             lilink="https://www.linkedin.com/company/21439623"
             xlink="https://twitter.com/immutable_LDN"
           />
-          <span><a href="mailto:hello@immutable-studio.com" >hello@immutable-studio.co.uk</a></span>
+          <span>
+            <a href="mailto:hello@immutable-studio.com">
+              hello@immutable-studio.co.uk
+            </a>
+          </span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[51.5, 0.0192269]} zoom={13}>
@@ -125,6 +124,14 @@ const Contact = () => {
             </Marker>
           </MapContainer>
         </div>
+      </div>
+      <div>
+        <Helmet>
+          <title>
+            Contact Us - Immutable Studio: Web Development, AI &amp; Automation
+            Solutions Agency
+          </title>
+        </Helmet>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

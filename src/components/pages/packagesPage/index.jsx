@@ -2,18 +2,17 @@ import gif from "../../../assets/images/packages-unscreen.gif";
 import img from "../../../assets/images/packages.jpeg";
 import Singleservices from "../../SingleService/";
 
-
 const Packages = () => {
-  
   return (
-          <Singleservices
-                  title="Packages"
+    <Singleservices
+      title="Packages"
+      keywords="Business, business packages ,web development, AI solutions, chatbots, workflow automation, digital marketing, Immutable Studio"
       HeroH1="Business Packages"
       HeroP="Seeking AI solutions for your business? Let us ease your
-              challenges with an online chatbot. Our expertise enables
-              automation and outsourcing of daily tasks using cutting-edge AI
-              technology, streamlining your operations for increased efficiency.
-"
+                        challenges with an online chatbot. Our expertise enables
+                        automation and outsourcing of daily tasks using cutting-edge AI
+                        technology, streamlining your operations for increased efficiency.
+                "
       HeroH2="We build tailer made business packages starting from just £995 +
               vat"
       src={gif}

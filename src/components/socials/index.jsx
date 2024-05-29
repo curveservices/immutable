@@ -13,22 +13,22 @@ const Socials = (props) => {
     <>
       <ul className="iconList">
         <li className="icons">
-          <Link to={props.fblink} target="_blank" >
-            <FontAwesomeIcon icon={faFacebook} alt="facebook"/>
+          <Link to={props.fblink} target="_blank">
+            <FontAwesomeIcon icon={faFacebook} alt="facebook" />
           </Link>
         </li>
         <li className="icons">
-          <Link to={props.lilink} target="_blank"  >
-            <FontAwesomeIcon icon={faLinkedin} alt="LinkedIn"/>
+          <Link to={props.lilink} target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} alt="LinkedIn" />
           </Link>
         </li>
         <li className="icons">
-          <Link to={props.xlink} target="_blank" >
+          <Link to={props.xlink} target="_blank">
             <FontAwesomeIcon icon={faSquareXTwitter} alt="X formally twitter" />
           </Link>
         </li>
         <li className="icons">
-          <Link to="https://github.com/curveservices" target="_blank"  >
+          <Link to="https://github.com/curveservices" target="_blank">
             <FontAwesomeIcon icon={faGithub} alt="Git hub" />
           </Link>
         </li>

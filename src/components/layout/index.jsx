@@ -31,7 +31,7 @@ const Layout = () => {
     top: 0,
     behavior: "smooth",
   });
-  
+
   return (
     <>
       <Navbar />

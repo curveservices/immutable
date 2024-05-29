@@ -20,7 +20,6 @@ import SocialMarketing from "./components/pages/socialMarketing";
 import PrivacyPolicy from "./components/pages/policy";
 import FeaturedWork from "./components/pages/featuredWork";
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -33,8 +32,8 @@ const router = createBrowserRouter(
         <Route path=":id/chat-bots" element={<ChatBots />} />
         <Route path=":id/packages" element={<Packages />} />
         <Route path=":id/digital-marketing" element={<SocialMarketing />} />
-        <Route path="featured-work" element={<FeaturedWork/>} />
-        <Route path="privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="featured-work" element={<FeaturedWork />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </>,

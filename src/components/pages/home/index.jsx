@@ -25,25 +25,27 @@ const Home = () => {
           </div>
           <div className="right-hero">
             <div className="text-box">
-              <h1 className="main-title">Empowering your Business with Website &amp; AI Solutions</h1>
+              <h1 className="main-title">
+                Empowering your Business with Website &amp; AI Solutions
+              </h1>
               <p>
-                Discover how we can revolutionise your business.
-                Our custom web development &amp; AI solutions, including bespoke AI chatbots, and
-                automated workflows are designed to optimise efficiency, reduce costs,
-                and enhance customer engagement.
+                Discover how we can revolutionise your business. Our custom web
+                development &amp; AI solutions, including bespoke AI chatbots,
+                and automated workflows are designed to optimise efficiency,
+                reduce costs, and enhance customer engagement.
               </p>
               <p>
-                We are seasoned web developers &amp; Ai specialists who
-                excel in creating custom business websites and workflow solutions. Our team is dedicated
-                to delivering cutting-edge technology tailored to help
-                your company achieve its goals.
+                We are seasoned web developers &amp; Ai specialists who excel in
+                creating custom business websites and workflow solutions. Our
+                team is dedicated to delivering cutting-edge technology tailored
+                to help your company achieve its goals.
               </p>
 
               <div className="btn-container">
                 <Button link="contact" text="CONTACT US" />
                 <Button
                   link="https://calendly.com/immutable-studio/website-consultancy"
-                  text='Book a call'
+                  text="Book a call"
                   noreferer
                 />
               </div>
@@ -55,10 +57,12 @@ const Home = () => {
           <div className="second-inner">
             <h2 className="title">SERVICES</h2>
             <p className="text-box">
-              Our services model operates with monthly payments covering hosting and maintenance,
-              AI and automation solutions, and digital marketing. Service payments are customized based on your
-              specific needs and usage, ensuring flexibility and scalability. We aim to provide comprehensive support,
-              making it easy for your business to grow and adapt in the ever-evolving digital landscape.
+              Our services model operates with monthly payments covering hosting
+              and maintenance, AI and automation solutions, and digital
+              marketing. Service payments are customized based on your specific
+              needs and usage, ensuring flexibility and scalability. We aim to
+              provide comprehensive support, making it easy for your business to
+              grow and adapt in the ever-evolving digital landscape.
             </p>
             <div className="cubes">
               <StaticCubes />
@@ -90,12 +94,18 @@ const Home = () => {
       </div>
       <div>
         <Helmet>
-          <title>Home - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+          <title>
+            Home - Immutable Studio: Web Development, AI &amp; Automation
+            Solutions Agency
+          </title>
+          <meta
+            name="keywords"
+            content="Website, AI Solutions, Chatbot, Empowering, workflows, automated, Business"
+          />
         </Helmet>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>
-    
   );
 };
 

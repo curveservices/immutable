@@ -15,8 +15,11 @@ const Footer = () => {
         <Socials
           fblink="https://www.facebook.com/profile.php?id=61557552873479"
           lilink="https://www.linkedin.com/company/21439623"
-          xlink="https://twitter.com/immutable_LDN" />
-        <p className="copy"><Link to='privacy-policy'>Privacy Policy</Link></p>
+          xlink="https://twitter.com/immutable_LDN"
+        />
+        <p className="copy">
+          <Link to="privacy-policy">Privacy Policy</Link>
+        </p>
         <p className="copy">Copyright &copy; {year} Immutable Studio </p>
       </div>
       <div className="link-container">

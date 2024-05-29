@@ -2,157 +2,151 @@
 
 /* Hero section */
 .innerHero {
-    display: flex;
-    justify-content: space-between;
-    margin: 0rem;
-    padding: 4rem 0rem 0rem 4rem;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem;
+  padding: 4rem 0rem 0rem 4rem;
+  color: #fff;
 }
 .textBox {
-    padding: 4rem 0rem;
-    animation: fadeInLeft 2s forwards;
-    width: 50%;
+  padding: 4rem 0rem;
+  animation: fadeInLeft 2s forwards;
+  width: 50%;
 }
 .btnContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .gif {
-    width: 800px;
-    animation: fadeIn 4s;
+  width: 800px;
+  animation: fadeIn 4s;
 }
-
 
 /* Second section */
 .secondSection {
-    background-image: url("../../assets/images/1746747.webp");
-    box-shadow: var(--global);
+  background-image: url("../../assets/images/1746747.webp");
+  box-shadow: var(--global);
 }
 .secondInner {
-    display: flex;
-    margin: 0rem 1rem;
-    padding: 2rem;
-    min-height: 75vh
+  display: flex;
+  margin: 0rem 1rem;
+  padding: 2rem;
+  min-height: 75vh;
 }
 .animSecond {
-    animation: fadeInLeft 2s forwards;
-    width: 50%;
-    padding: 3rem;
+  animation: fadeInLeft 2s forwards;
+  width: 50%;
+  padding: 3rem;
 }
 .secondNone {
-    display: none;
+  display: none;
 }
 .animSecondimg {
-    animation: fadeInRight 2s forwards;
-    width: 50%;
-    padding: 3rem;
-
+  animation: fadeInRight 2s forwards;
+  width: 50%;
+  padding: 3rem;
 }
 .secondTextBox {
-    padding: 0 2rem 0 5rem;
-    width: 70%;
-    color: #000;
+  padding: 0 2rem 0 5rem;
+  width: 70%;
+  color: #000;
 }
 
 /* Third section */
 .thirdInner {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 2rem 0;
 }
 
 .thirdTextBox {
-    margin: 3rem;
-    text-align: center;
-    padding: 0 8rem;
-    color: #fff;
+  margin: 3rem;
+  text-align: center;
+  padding: 0 8rem;
+  color: #fff;
 }
 .contentAnim {
-    animation: fadeInUp 1s forwards;
-    margin: 2rem;
+  animation: fadeInUp 1s forwards;
+  margin: 2rem;
 }
 .none {
-    display: none;
+  display: none;
 }
 @media screen and (max-width: 800px) {
+  /* Hero section */
+  .innerHero {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Hero section */
-    .innerHero {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
+  .textBox {
+    margin-top: 4rem;
+    padding: 4rem 2rem 0 2rem;
+    width: 100%;
+  }
 
-    .textBox {
-        margin-top: 4rem;
-        padding: 4rem 2rem 0 2rem;
-        width: 100%;
-    }
+  .btnContainer {
+    gap: 20px;
+  }
 
-    .btnContainer {
-        gap: 20px;
-    }
+  .gifContainer {
+    width: 100%;
+  }
 
-    .gifContainer {
-        width: 100%;
-    }
-    
-    .gif {
-        width: 100%;
-    }
+  .gif {
+    width: 100%;
+  }
 
-    /* Second section */
-    .secondInner {
-        flex-direction: column;
-        gap: 1rem;
-        margin: 0rem;
-        padding: 2rem;
-    }
+  /* Second section */
+  .secondInner {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0rem;
+    padding: 2rem;
+  }
 
-    .animSecond {
-        width: 100%;
-        padding: 0rem;
-    }
+  .animSecond {
+    width: 100%;
+    padding: 0rem;
+  }
 
-    .animSecondimg {
-        width: 100%;
-        padding: 0;
+  .animSecondimg {
+    width: 100%;
+    padding: 0;
+  }
 
-    }
-    
+  /* Third section */
+  .thirdInner {
+    margin: 0rem;
+    padding: 2rem;
+    width: 100%;
+  }
 
-    /* Third section */
-    .thirdInner {
-        margin: 0rem;
-        padding: 2rem;
-        width: 100%;
-    }
+  .thirdTextBox {
+    padding: 0rem;
+    margin: 0;
+    text-align: initial;
+  }
 
-    .thirdTextBox {
-        padding: 0rem;
-        margin: 0;
-        text-align: initial;
-    }
+  .contentAnim {
+    margin: 1rem;
+  }
 
-    .contentAnim {
-        margin: 1rem;
-    }
+  .cardContainer {
+    flex-direction: column;
+  }
 
-    .cardContainer {
-        flex-direction: column;
-    }
+  .priceCard {
+    max-width: 100%;
+  }
 
-    .priceCard {
-        max-width: 100%;
-    }
-
-    .none {
-        display: none;
-    }
-
+  .none {
+    display: none;
+  }
 }

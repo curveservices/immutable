@@ -4,7 +4,7 @@ import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
 import CallToAction from "../../CTA";
-import Featured from "../../featured"
+import Featured from "../../featured";
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,7 +32,6 @@ const Services = () => {
       setThirdLt(scrollThird > 600);
       setThirdRt(scrollThird > 600);
       setIsScrolled(scrollPrice > 1700);
-      
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -48,13 +47,17 @@ const Services = () => {
                 We will turn your ideas into amazing solutions
               </h1>
               <p>
-                We offer a full range of website development, AI solutions, workflow automation and digital
-                marketing packages with flexible pricing and outstanding
-                service.
+                We offer a full range of website development, AI solutions,
+                workflow automation and digital marketing packages with flexible
+                pricing and outstanding service.
               </p>
               <div className="btn-container">
                 <Button text="start now" link="/contact" />
-                <Button text="book a call" link="https://calendly.com/immutable-studio/website-consultancy" target="_blank" />
+                <Button
+                  text="book a call"
+                  link="https://calendly.com/immutable-studio/website-consultancy"
+                  target="_blank"
+                />
               </div>
             </div>
             <div className="link-container">
@@ -85,15 +88,17 @@ const Services = () => {
           <div className="second-inner">
             <div className={`${second ? "anim-second" : "second-none"}`}>
               <h1>
-                Need a supportive full-service development agency for your business?
+                Need a supportive full-service development agency for your
+                business?
               </h1>
               <p>
                 Drawing on our industry experience, we excel in providing
                 comprehensive solutions tailored to your needs. Understanding
                 your business, we offer expert advice to address design
                 challenges effectively. Whether it's boosting brand visibility,
-                creating a lead-generating website or building AI solutions &amp; automated workflows count on us to deliver
-                outstanding results.
+                creating a lead-generating website or building AI solutions
+                &amp; automated workflows count on us to deliver outstanding
+                results.
               </p>
             </div>
             <img
@@ -108,53 +113,63 @@ const Services = () => {
             <h1 className="title">Why Choose Us?</h1>
             <div className="element-container">
               <NavLink to="/about">
-                <div className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}>
+                <div
+                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
+                >
                   <div className="icon">
                     <FontAwesomeIcon icon={faUserGroup} />
                   </div>
                   <div className="copy">
                     <p className="elem-title">Excellent Client Service</p>
                     <p className="desc">
-                      Customer service is more than a commitment, it shapes every aspect of
-                      our business. From discovery to final delivery, we prioritise understanding your
-                      visions &amp; goals.
+                      Customer service is more than a commitment, it shapes
+                      every aspect of our business. From discovery to final
+                      delivery, we prioritise understanding your visions &amp;
+                      goals.
                     </p>
                   </div>
                 </div>
               </NavLink>
               <NavLink to="chat-bots">
-                <div className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}>
+                <div
+                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
+                >
                   <div className="icon">
                     <FontAwesomeIcon icon={faScrewdriverWrench} />
                   </div>
                   <div className="copy">
                     <p className="elem-title">Automated AI Solutions</p>
                     <p className="desc">
-                      Every business is unique.
-                      We create custom automated workflows &amp; AI solutions, tailored to
-                      your business saving you time &amp; money with repetitive tasks powered by AI.
+                      Every business is unique. We create custom automated
+                      workflows &amp; AI solutions, tailored to your business
+                      saving you time &amp; money with repetitive tasks powered
+                      by AI.
                     </p>
                   </div>
                 </div>
               </NavLink>
               <NavLink to="web-development">
-                <div className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}>
+                <div
+                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
+                >
                   <div className="icon">
                     <FontAwesomeIcon icon={faUserAstronaut} />
                   </div>
                   <div className="copy">
                     <p className="elem-title">Seamless User Experience</p>
                     <p className="desc">
-                      User experience is vital. We
-                      design user journeys focusing on simplicity &amp;
-                      ease of use. By providing seamless browsing, we
-                      engage visitors &amp; inspire them to take action.
+                      User experience is vital. We design user journeys focusing
+                      on simplicity &amp; ease of use. By providing seamless
+                      browsing, we engage visitors &amp; inspire them to take
+                      action.
                     </p>
                   </div>
                 </div>
               </NavLink>
               <NavLink to="web-development">
-                <div className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}>
+                <div
+                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
+                >
                   <div className="icon">
                     <FontAwesomeIcon icon={faMobileScreenButton} />
                   </div>
@@ -162,9 +177,9 @@ const Services = () => {
                     <p className="elem-title">Mobile-First Approach</p>
                     <p className="desc">
                       I's a mobile-driven world &amp; a responsive website is
-                      essential. Our designs are optimized for all
-                      devices, ensuring a flawless experience on phones,
-                      tablets &amp; desktops.
+                      essential. Our designs are optimized for all devices,
+                      ensuring a flawless experience on phones, tablets &amp;
+                      desktops.
                     </p>
                   </div>
                 </div>
@@ -177,11 +192,10 @@ const Services = () => {
             <div className="text-box">
               <h1>Transparent Pricing</h1>
               <p>
-                We believe in transparency and building
-                strong relationships with our clients. We offer
-                straightforward pricing &amp; understand the
-                importance of budgeting. Packages can be expanded as your
-                business grows.
+                We believe in transparency and building strong relationships
+                with our clients. We offer straightforward pricing &amp;
+                understand the importance of budgeting. Packages can be expanded
+                as your business grows.
               </p>
             </div>
             <h1 className="price-title">Check out our starting prices</h1>
@@ -201,7 +215,10 @@ const Services = () => {
       </div>
       <div>
         <Helmet>
-          <title>Our Services - Immutable Studio: Web Development, AI &amp; Automation Solutions Agency</title>
+          <title>
+            Our Services - Immutable Studio: Web Development, AI &amp;
+            Automation Solutions Agency
+          </title>
         </Helmet>
       </div>
       <Loader type="ball-spin-fade-loader" />
