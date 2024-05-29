@@ -4,7 +4,7 @@ import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
 import CallToAction from "../../CTA";
-import Featured from "../../featured";
+import Featured from "../../featured"
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,10 +27,10 @@ const Services = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
       const scrollThird = window.scrollY;
-      setSecond(scrollSecond > 250);
-      setThirdLt(scrollThird > 750);
-      setThirdRt(scrollThird > 750);
-      setIsScrolled(scrollPrice > 2100);
+      setSecond(scrollSecond > 150);
+      setThirdLt(scrollThird > 600);
+      setThirdRt(scrollThird > 600);
+      setIsScrolled(scrollPrice > 1700);
       
     };
 
@@ -87,7 +87,7 @@ const Services = () => {
                 Need a supportive full-service development agency for your business?
               </h1>
               <p>
-                Drawing on extensive industry experience, we excel in providing
+                Drawing on our industry experience, we excel in providing
                 comprehensive solutions tailored to your needs. Understanding
                 your business, we offer expert advice to address design
                 challenges effectively. Whether it's boosting brand visibility,
@@ -160,7 +160,7 @@ const Services = () => {
                   <div className="copy">
                     <p className="elem-title">Mobile-First Approach</p>
                     <p className="desc">
-                      I's a mobile-driven world, a responsive website is
+                      I's a mobile-driven world &amp; a responsive website is
                       essential. Our designs are optimized for all
                       devices, ensuring a flawless experience on phones,
                       tablets &amp; desktops.
@@ -191,7 +191,7 @@ const Services = () => {
         </section>
         <section className="fith-section">
           <div className="fith-inner">
-            {/* <Featured /> */}
+            <Featured />
           </div>
         </section>
         <section className="cta">

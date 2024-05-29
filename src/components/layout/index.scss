@@ -31,11 +31,10 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       font-family: sans-serif;
-      font-weight: 900;
       min-width: fit-content;
-      font-weight: 600;
+      font-weight:600;
       margin: 0;
       padding: 1rem 0;
     }
@@ -87,6 +86,7 @@
     .single-service,
     .featured-work,
     .policy-page {
+      overflow: hidden;
 
       h1 {
         font-size: 24px;

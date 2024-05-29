@@ -3,7 +3,8 @@ import {
   faClose,
   faEnvelope,
   faHouseChimney,
-  faToolbox,
+  faSuitcase,
+  faTools,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,11 +57,11 @@ const Navbar = () => {
               title="Our Services"
               className="services-link"
               activeclassname="active"
-          exact="true"
-          onClick={() => setShowNav(false)}
+              exact="true"
+              onClick={() => setShowNav(false)}
         >
           <div className="menu-container">
-            <FontAwesomeIcon icon={faToolbox} className="mobile-icon" />
+            <FontAwesomeIcon icon={faTools} className="mobile-icon" />
             <div className="text">SERVICES </div>
           </div>
         </NavLink>
@@ -70,8 +71,12 @@ const Navbar = () => {
           className="services-link"
           activeclassname='active'
           exact="true"
+          onClick={() => setShowNav(false)}
         >
-          PORTFOLIO
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faSuitcase} className="mobile-icon" />
+            <div className="text">WORK</div>
+          </div>
         </NavLink>
           <NavLink
             to="about"

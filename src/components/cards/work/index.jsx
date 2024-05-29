@@ -3,6 +3,7 @@ import { db } from "../../../firbase";
 import { getDocs, collection } from "firebase/firestore";
 import "./index.scss";
 import Button from "../../button";
+import { NavLink } from "react-router-dom";
 
 const Card = () => {
   const [card, setCard] = useState([]);
@@ -42,18 +43,10 @@ const Card = () => {
               <p className="desc">{item.desc}</p>
               <div className="btn-container">
                 <Button
-                  text="Featured work"
+                  text="View"
+                  link="featured-work"
                   background="var(--services-link)"
-                  link="featured"
                 />
-                <button
-                  className="btn"
-                  text="VIEW SITE"
-                  background="var(--services-link)"
-                  onClick={() => window.open(item.live)}>
-                  VIEW SITE
-                  </button>
-                
               </div>
             </div>
           </div>

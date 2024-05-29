@@ -2,6 +2,8 @@ import { collection, getDocs } from "firebase/firestore";
 import "./index.scss";
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase";
+import ReactPlayer from 'react-player/lazy'
+import Button from "../../button";
 
 const Client = (props) => {
     const [client, setClient] = useState([]);
@@ -22,6 +24,7 @@ const Client = (props) => {
                     mobile1: data.mobile1,
                     mobile2: data.mobile2,
                     mobile3: data.mobile3,
+                    client: data.client
                 })
             });
             setClient(clientData);
@@ -39,7 +42,29 @@ const Client = (props) => {
             {client.map((item) => {
                 return (
                     <div key={item.id}>
+                        <div className="inner-container">
+                            <div className="text-box">
+                                <h2>{item.client}</h2>
+                                <p>{props.p}</p>
+                                <p>{props.p2}</p>
+                                <Button
+                                    text="View Site"
+                                    link={props.link}
+                                    target="_blank"
+                                />
+                            </div>
+                            <div className="player-wrapper">
+                                <ReactPlayer
+                                    className="react-player"
+                                    url={props.video}
+                                    playing
+                                    loop
+                                />
+                            </div>
+                        </div>
+                        
                         <h2 className="name">{item.name}</h2>
+                        
                         <div className="images">
                             <img className="wireframe" src={item.img1} alt="wireframe" />
                             <img className="wireframe" src={item.img3} alt="wireframe" />

@@ -10,7 +10,7 @@
             color: #fff;
             
             .text-box {
-                width: 80%;
+                width: 70%;
                 margin: 2rem 0rem;
                 animation: fadeInLeft 2s forwards;
 
@@ -27,21 +27,49 @@
         }
     }
 
-    .second {
+    .clients {
         background-image: url("../../../assets//images/1746747.webp");
-        padding: 2rem 4rem;
-        .second-inner {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            .player-wrapper {
-                video {
-                    border-radius: 20px;
-                }
-            }
-        }
+        margin: 0 0 4rem;
+        padding: 1rem 4rem;
+        
     }
     .featured {
         margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 920px) {
+    .featured-work {
+        .hero {
+            flex-direction: column;
+            .inner-hero {
+                margin: 4rem 0rem 0rem;
+                padding: 2rem;
+    
+                .text-box {
+                    width: 100%;
+                    margin: 2rem 0rem;
+                    padding-bottom: 2rem;
+    
+                    .button-container {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0rem;
+                        gap: 20px;
+                    }
+                }
+            }
+            .spinner {
+                right: 0;
+            }
+        }
+
+        .clients {
+            margin: 0 0 2rem;
+            padding: 1rem 2rem;
+        }
+    
+        .featured {
+            margin: 1rem 0;
+        }
     }
 }

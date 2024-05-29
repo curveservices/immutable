@@ -7,6 +7,7 @@ import "./index.scss";
 import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
 import CTA from "../../CTA";
+import { Link } from "react-router-dom";
 
 const FeaturedWork = () => {
    
@@ -17,8 +18,11 @@ const FeaturedWork = () => {
                     <div className="inner-hero">
                         <div className="text-box">
                             <h1>Featured Work</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur veritatis omnis quod quam doloremque perspiciatis odit delectus! Culpa veritatis aliquam rerum amet ut consequuntur deserunt, odit id corrupti atque?
-                            Velit ab eum sit nemo. Ipsa nemo tempore omnis laborum illum sequi. In ex maxime corrupti itaque, facere reprehenderit deleniti rem suscipit amet! Eaque, voluptas enim exercitationem itaque iste possimus.
+                            <p>Signing off on a new website is always a moment of immense pride and satisfaction for us. With each project,
+                                we take great care to understand our clients' unique needs and deliver tailored solutions.</p>
+                                <p>As our client base continues to expand, we are excited to showcase the diverse and innovative work we do,
+                                particularly in creating cutting-edge websites and AI solutions. Each project featured on this page represents
+                                our commitment to excellence and our passion for helping businesses thrive in the digital age.
                             </p> 
                             <div className="button-container">
                                 <Button
@@ -28,7 +32,7 @@ const FeaturedWork = () => {
                                 />
                                 <Button
                                     text="Contact us"
-                                    link="contact"
+                                    link="/contact"
                                 />
                             </div>
                            
@@ -39,26 +43,22 @@ const FeaturedWork = () => {
                     </div>
                     
                 </section>
-                <section className="second">
-                    <div className="second-inner">
-                        <div className="text-box">
-                            <h2>MorfBot</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur veritatis omnis quod quam doloremque perspiciatis odit delectus! Culpa veritatis aliquam rerum amet ut consequuntur deserunt, odit id corrupti atque?
-                                Velit ab eum sit nemo. Ipsa nemo tempore omnis laborum illum sequi. In ex maxime corrupti itaque, facere reprehenderit deleniti rem suscipit amet! Eaque, voluptas enim exercitationem itaque iste possimus.
-                            </p> 
-                        </div>
-                        <div className="player-wrapper">
-                            <ReactPlayer
-                                url={morfbot}
-                                playing
-                                loop
-                            />
-                        </div>
-                    </div>
+                <section className="clients">
                     <div className="wireframe-container">
-                        <Client name="morfbot" />
+                        <Client name="morfbot"
+                            p="An innovative AI automation agency approached us for a complete redesign of their website. 
+                            They wanted to move from WordPress to a custom-built site developed with React. Our team ensured the site was fully mobile-optimized and SEO-friendly, 
+                            complete with a comprehensive sitemap and an integrated chatbot."
+                            p2="Working with their colour palette, fonts, and images, we created a visually appealing and engaging user experience. 
+                            We where provided with their company copy to maintain brand consistency and deliver clear messaging. The result is a modern, efficient, and user-friendly website that enhances MorfBot's digital presence."
+                            video={morfbot}
+                            link="https://morfbot.com/" />
                     </div>
-                    
+                </section>
+                <section className="clients">
+                    <div className="wireframe-container">
+                        
+                    </div>
                 </section>
                 <section className="featured">
                     <Featured />
