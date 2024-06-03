@@ -3,7 +3,6 @@ import { db } from "../../../firbase";
 import { getDocs, collection } from "firebase/firestore";
 import "./index.scss";
 import Button from "../../button";
-import { NavLink } from "react-router-dom";
 
 const Card = () => {
   const [card, setCard] = useState([]);
@@ -44,7 +43,7 @@ const Card = () => {
               <div className="btn-container">
                 <Button
                   text="View"
-                  link="featured-work"
+                  link="/featured-work"
                   background="var(--services-link)"
                 />
               </div>
