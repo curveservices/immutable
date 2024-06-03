@@ -48,8 +48,8 @@ const Services = () => {
               </h1>
               <p>
                 We offer a full range of website development, AI solutions,
-                workflow automation and digital marketing packages with flexible
-                pricing and outstanding service.
+                workflow automation and digital marketing services with flexible
+                pricing.
               </p>
               <div className="btn-container">
                 <Button text="start now" link="/contact" />
