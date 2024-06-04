@@ -1,7 +1,7 @@
 import { collection, getDocs } from "firebase/firestore";
 import "./index.scss";
 import { useEffect, useState } from "react";
-import { db } from "../../../firbase";
+import { db } from "../../../firbase.config";
 import ReactPlayer from "react-player/lazy";
 import Button from "../../button";
 

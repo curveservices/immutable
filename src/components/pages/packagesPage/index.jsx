@@ -6,7 +6,7 @@ const Packages = () => {
   return (
     <Singleservices
       title="Packages"
-      keywords="Business, business packages ,web development, AI solutions, chatbots, workflow automation, digital marketing, Immutable Studio"
+      keywords="Business, business packages ,web development, AI solutions, chatbots, workflow automation, digital marketing, Immutable Studio, web design"
       HeroH1="Business Packages"
       HeroP="Seeking AI solutions for your business? Let us ease your
                         challenges with an online chatbot. Our expertise enables

@@ -128,7 +128,7 @@ const Contact = () => {
       <div>
         <Helmet>
           <title>
-            Contact Us - Immutable Studio: Web Development, AI &amp; Automation
+            Contact Us | Immutable Studio: Web Development, AI &amp; Automation
             Solutions Agency
           </title>
         </Helmet>

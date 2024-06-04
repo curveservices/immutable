@@ -71,12 +71,12 @@ const FeaturedWork = () => {
       <div>
         <Helmet>
           <title>
-            Featured Work - Immutable Studio: Web Development, AI &amp;
+            Featured Work | Immutable Studio: Web Development, AI &amp;
             Automation Solutions Agency
           </title>
           <meta
             name="keywords"
-            content="featured work, website, design, web development, AI solutions, chatbots, workflow automaion, automation, digital marketing, Immutable Studio"
+            content="featured work, website, design, web development, AI solutions, chatbots, workflow automaion, automation, digital marketing, Immutable Studio, web design, website design"
           />
         </Helmet>
       </div>

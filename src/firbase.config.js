@@ -1,8 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCqv2uejlwy871r8ISxMxgb-BevoNOhfZ8",
+  apiKey: import.meta.env.VITE_FIREBASE,
   authDomain: "immutable-studio.firebaseapp.com",
   projectId: "immutable-studio",
   storageBucket: "immutable-studio.appspot.com",

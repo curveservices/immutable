@@ -2,7 +2,7 @@ import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { db } from "../../../firbase";
+import { db } from "../../../firbase.config";
 import Button from "../../button";
 import style from "../basicPrice/index.module.css";
 

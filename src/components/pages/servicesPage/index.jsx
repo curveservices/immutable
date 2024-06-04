@@ -216,9 +216,13 @@ const Services = () => {
       <div>
         <Helmet>
           <title>
-            Our Services - Immutable Studio: Web Development, AI &amp;
+            Our Services | Immutable Studio: Web Development, AI &amp;
             Automation Solutions Agency
           </title>
+          <meta
+            name="keywords"
+            content="solutions, Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
+          />
         </Helmet>
       </div>
       <Loader type="ball-spin-fade-loader" />

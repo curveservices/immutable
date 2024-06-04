@@ -95,12 +95,12 @@ const Home = () => {
       <div>
         <Helmet>
           <title>
-            Home - Immutable Studio: Web Development, AI &amp; Automation
+            Home | Immutable Studio: Web Development, AI &amp; Automation
             Solutions Agency
           </title>
           <meta
             name="keywords"
-            content="Website, AI Solutions, Chatbot, Empowering, workflows, automated, Business"
+            content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, Empowering, workflows, automated, Business, London, Greenwich London"
           />
         </Helmet>
       </div>

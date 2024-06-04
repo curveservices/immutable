@@ -80,12 +80,12 @@ const About = () => {
       <div>
         <Helmet>
           <title>
-            About Us - Immutable Studio: Web Development, AI &amp; Automation
+            About Us | Immutable Studio: Web Development, AI &amp; Automation
             Solutions Agency
           </title>
           <meta
             name="keywords"
-            content="About us, Immutable studio, sout east London, London, Founder, manager"
+            content="About us, Immutable studio, south east London, Greenwich London, London, Founder, manager, AI Solutions, Web design, website design, website development"
           />
         </Helmet>
       </div>

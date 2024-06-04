@@ -1,5 +1,5 @@
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../../../firbase";
+import { db } from "../../../firbase.config";
 import { useState, useEffect } from "react";
 import Socials from "../../socials";
 import "./index.scss";

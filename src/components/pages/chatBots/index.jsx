@@ -6,7 +6,7 @@ const ChatBots = () => {
   return (
     <Singleservices
       title="AI Solutions"
-      keywords="AI, AI Solutions, Chatbots, Automation, Website Development, workflow automation, digital marketing, Immutable Studio"
+      keywords="AI, AI Solutions, Chatbots, Automation, Website Development, workflow automation, digital marketing, Immutable Studio, greenwich London, London, web design, web development"
       HeroH1="AI &amp; Automation Solutions"
       HeroP="Seeking AI solutions for your business? Let us ease your
               challenges with AI solutions. Our expertise enables
