@@ -1,5 +1,7 @@
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import "./index.scss";
+
 const PrivacyPolicy = () => {
   return (
     <>
@@ -316,12 +318,14 @@ const PrivacyPolicy = () => {
         </p>
       </div>
       <div>
-        <Helmet>
+        <HelmetProvider>
+          <Helmet>
           <title>
             Privacy Policy - Immutable Studio: Web Development, AI &amp;
             Automation Solutions Agency
           </title>
         </Helmet>
+        </HelmetProvider>
       </div>
     </>
   );

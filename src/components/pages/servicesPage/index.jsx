@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import StaticCubes from "../../Animations/staticCubes";
-import Button from "../../button";
-import PriceCard from "../../cards/basicPrice";
-import CallToAction from "../../CTA";
-import Featured from "../../featured";
-import img1 from "../../../assets/images/servicesImg.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileScreenButton,
@@ -14,8 +8,15 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import StaticCubes from "../../Animations/staticCubes";
+import Button from "../../button";
+import PriceCard from "../../cards/basicPrice";
+import CallToAction from "../../CTA";
+import Featured from "../../featured";
+import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
-import Helmet from "react-helmet";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -214,7 +215,8 @@ const Services = () => {
         </section>
       </div>
       <div>
-        <Helmet>
+        <HelmetProvider>
+          <Helmet>
           <title>
             Our Services | Immutable Studio: Web Development, AI &amp;
             Automation Solutions Agency
@@ -224,6 +226,7 @@ const Services = () => {
             content="solutions, Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
           />
         </Helmet>
+        </HelmetProvider>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

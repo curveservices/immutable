@@ -1,12 +1,14 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import Loader from "react-loaders";
 import { useState, useEffect } from "react";
+
 import Button from "../../button";
 import Socials from "../../socials";
-import Loader from "react-loaders";
 import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
 import "./index.scss";
-import Helmet from "react-helmet";
+
 
 const About = () => {
   const [second, setSecond] = useState(false);
@@ -78,7 +80,8 @@ const About = () => {
         </section>
       </div>
       <div>
-        <Helmet>
+        <HelmetProvider>
+           <Helmet>
           <title>
             About Us | Immutable Studio: Web Development, AI &amp; Automation
             Solutions Agency
@@ -88,6 +91,7 @@ const About = () => {
             content="About us, Immutable studio, south east London, Greenwich London, London, Founder, manager, AI Solutions, Web design, website design, website development"
           />
         </Helmet>
+        </HelmetProvider>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

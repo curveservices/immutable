@@ -1,10 +1,11 @@
-import style from "./services.module.css";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import Button from "../button";
 import PriceCard from "../cards/fullPrice";
 import CallToAction from "../CTA";
-import Helmet from "react-helmet";
+import style from "./services.module.css";
 
 const Singleservices = (props) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,13 +73,15 @@ const Singleservices = (props) => {
         </section>
       </div>
       <div>
-        <Helmet>
+        <HelmetProvider>
+          <Helmet>
           <title>
             {props.title} | Immutable Studio: Web Development, AI &amp;
             Automation Solutions Agency
           </title>
           <meta name="keywords" content={props.keywords} />
         </Helmet>
+        </HelmetProvider>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

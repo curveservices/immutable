@@ -1,13 +1,14 @@
-import "./index.scss";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import Socials from "../../socials";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import Socials from "../../socials";
+import "./index.scss";
 
 const Contact = () => {
   const refForm = useRef();
@@ -126,12 +127,14 @@ const Contact = () => {
         </div>
       </div>
       <div>
-        <Helmet>
+        <HelmetProvider>
+          <Helmet>
           <title>
             Contact Us | Immutable Studio: Web Development, AI &amp; Automation
             Solutions Agency
           </title>
         </Helmet>
+        </HelmetProvider>
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>

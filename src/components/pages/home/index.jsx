@@ -1,3 +1,7 @@
+import React from "react";
+import Loader from "react-loaders";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import Button from "../../button/index";
 import CubeSpinner from "../../Animations/cubespinner";
 import StaticCubes from "../../Animations/staticCubes";
@@ -6,10 +10,7 @@ import Accordion from "../../Accordion";
 import { useState } from "react";
 import Featured from "../../featured";
 import CallToAction from "../../CTA";
-import React from "react";
-import Loader from "react-loaders";
 import "./index.scss";
-import Helmet from "react-helmet";
 
 const Home = () => {
   const [activeAccordion, setActiveAccordion] = useState(0);
@@ -20,9 +21,6 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="hero">
-          <div className="left-hero">
-            <CubeSpinner />
-          </div>
           <div className="right-hero">
             <div className="text-box">
               <h1 className="main-title">
@@ -93,7 +91,8 @@ const Home = () => {
         </section>
       </div>
       <div>
-        <Helmet>
+        <HelmetProvider>
+              <Helmet>
           <title>
             Home | Immutable Studio: Web Development, AI &amp; Automation
             Solutions Agency
@@ -103,6 +102,8 @@ const Home = () => {
             content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, Empowering, workflows, automated, Business, London, Greenwich London"
           />
         </Helmet>
+        </HelmetProvider>
+        
       </div>
       <Loader type="ball-spin-fade-loader" />
     </>
