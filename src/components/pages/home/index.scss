@@ -2,35 +2,46 @@
   .hero {
     display: flex;
     justify-content: space-between;
+    color: #fff;
+    padding: 4rem 2rem;
+    margin: 3rem 2rem;
 
-    .right-hero {
-      color: #fff;
-      padding: 4rem 2rem;
-      width: 60%;
-      margin: 3rem 2rem;
-
-      .main-title {
-        line-height: 1.5;
-      }
+    .main-title {
+      font-size: 60px;
+      line-height: 1.5;
+      text-align: center;
     }
-
-    .left-hero {
-      position: relative;
-      width: 40%;
-    }
-
+  
     .text-box {
       margin: 1rem;
-      animation: fadeInRightBig 2s forwards;
+      animation: fadeIn 2s forwards;
+      
     }
+
+    .typewriter {
+      margin-bottom: 3rem;
+      font-size: 60px;
+      text-align: center;
+      background: linear-gradient(to right, #fff,#A76C2B);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text {
+      text-align: center;
+      margin: 0;
+      p {
+      font-size: 20px;
+    }
+    }
+
+  
     .btn-container {
       display: flex;
+      justify-content: center;
+      margin-top: 2rem;
       gap: 3rem;
-    }
-    span {
-      background: var(--services-link);
-      padding: 8px;
-      border-radius: 10px;
+      animation: zoomIn 1s forwards;
     }
   }
 
@@ -51,14 +62,22 @@
         padding: 2rem 5rem;
       }
       .text-box {
-        text-align: center;
-        padding: 0 5rem;
+        text-align: justify;
+        padding: 0 10rem;
       }
       .accordion {
         margin-top: 3rem;
         .content-container {
           margin-top: 8rem;
         }
+      }
+
+      .anim {
+        animation: fadeIn 3s forwards;
+      }
+
+      .none {
+        opacity: 0;
       }
     }
   }
@@ -79,17 +98,33 @@
     .hero {
       flex-direction: column-reverse;
       width: 100%;
-      .right-hero {
-        display: flex;
-        color: #fff;
-        width: 100%;
-        margin: 3rem 0;
-      }
-      .text-box {
-        margin-top: 1rem;
-      }
+      display: flex;
+      color: #fff;
+      width: 100%;
+      margin: 3rem 0;
+
+      .main-title {
+          font-size: 28px;
+        }
+      
+      
+        .typewriter {
+          font-size: 28px;
+        }
+      
+        .text {
+          text-align: center;
+          margin: 0;
+      
+          p {
+            font-size: initial;
+            padding: 1rem;
+          }
+        }
+      
       .btn-container {
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
       }
     }
