@@ -73,8 +73,7 @@ const FeaturedWork = () => {
         <HelmetProvider>
           <Helmet>
           <title>
-            Featured Work | Immutable Studio: Web Development, AI &amp;
-            Automation Solutions Agency
+            Featured Work | Immutable Studio: Web Development Agency
           </title>
           <meta
             name="keywords"

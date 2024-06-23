@@ -83,8 +83,7 @@ const About = () => {
         <HelmetProvider>
            <Helmet>
           <title>
-            About Us | Immutable Studio: Web Development, AI &amp; Automation
-            Solutions Agency
+            About Us | Immutable Studio: Web Development Agency
           </title>
           <meta
             name="keywords"

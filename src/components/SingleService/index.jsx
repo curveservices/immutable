@@ -76,8 +76,7 @@ const Singleservices = (props) => {
         <HelmetProvider>
           <Helmet>
           <title>
-            {props.title} | Immutable Studio: Web Development, AI &amp;
-            Automation Solutions Agency
+            {props.title} | Immutable Studio: Web Development Agency
           </title>
           <meta name="keywords" content={props.keywords} />
         </Helmet>

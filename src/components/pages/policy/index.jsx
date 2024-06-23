@@ -321,8 +321,7 @@ const PrivacyPolicy = () => {
         <HelmetProvider>
           <Helmet>
           <title>
-            Privacy Policy - Immutable Studio: Web Development, AI &amp;
-            Automation Solutions Agency
+            Privacy Policy - Immutable Studio: Web Development Agency
           </title>
         </Helmet>
         </HelmetProvider>

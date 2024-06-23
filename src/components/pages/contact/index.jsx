@@ -130,8 +130,7 @@ const Contact = () => {
         <HelmetProvider>
           <Helmet>
           <title>
-            Contact Us | Immutable Studio: Web Development, AI &amp; Automation
-            Solutions Agency
+            Contact Us | Immutable Studio: Web Development Agency
           </title>
         </Helmet>
         </HelmetProvider>

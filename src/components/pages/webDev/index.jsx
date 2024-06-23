@@ -13,7 +13,7 @@ const WebDev = () => {
               specialise in tailoring web development solutions, ensuring
               businesses achieve online success through custom
               solutions."
-      HeroH2="We build custom responsive websites from just £595 + vat"
+      HeroH2="We build custom responsive websites from just £275 + vat"
       src={gif}
       secondH1="Transform your online presence"
       secondP="Frustrated with an outdated website that lacks engagement and

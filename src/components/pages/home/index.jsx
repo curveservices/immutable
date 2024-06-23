@@ -123,8 +123,7 @@ const Home = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Home | Immutable Studio: Web Development, AI &amp; Automation
-              Solutions Agency
+              Home | Immutable Studio: Web Development Agency
             </title>
             <meta
               name="keywords"
