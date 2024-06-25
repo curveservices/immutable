@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Loader from "react-loaders";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Audio } from 'react-loader-spinner'
 
 import Button from "../button";
 import PriceCard from "../cards/fullPrice";
@@ -60,7 +60,7 @@ const Singleservices = (props) => {
         <section className={style.thirdSection}>
           <div className={style.thirdInner}>
             <div className={style.thirdTextBox}>
-              <h1>CHECK OUT OUR {props.thirdH1} PACKAGES</h1>
+              <h1>OUR {props.thirdH1} PRICES</h1>
               <p>{props.thirdP}</p>
             </div>
             <div className={`${isScrolled ? style.contentAnim : style.none}`}>
@@ -76,13 +76,12 @@ const Singleservices = (props) => {
         <HelmetProvider>
           <Helmet>
           <title>
-            {props.title} | Immutable Studio: Web Development Agency
+            {props.title} | Immutable Studio Web Development Agency
           </title>
           <meta name="keywords" content={props.keywords} />
         </Helmet>
         </HelmetProvider>
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

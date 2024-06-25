@@ -1,5 +1,3 @@
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase.config";
@@ -8,6 +6,7 @@ import style from "../basicPrice/index.module.css";
 
 const PriceCard = (props) => {
   const [priceCard, setPriceCard] = useState([]);
+  const [isToggled, setIsToggled] = useState(); 
 
   const fetchData = async () => {
     try {
@@ -17,9 +16,9 @@ const PriceCard = (props) => {
         const data = element.data();
         priceData.push({
           id: element.id,
-          img: data.img,
           title: data.title,
           price: data.price,
+          month: data.month,
           link: data.link,
           li1: data.li1,
           li2: data.li2,
@@ -41,62 +40,51 @@ const PriceCard = (props) => {
     fetchData();
   }, [props.name]);
 
-  return (
-    <div className={style.cardContainer}>
-      {priceCard.map((item) => {
-        return (
-          <div className={style.priceCard} key={item.id}>
-            <div className={style.heroContainer}>
-              <h3 className={style.priceTitle}>{item.title}</h3>
-              <h3 className={style.price}>{item.price}</h3>
-            </div>
-            <img src={item.img} className={style.cardImg} alt="price image" />
+  const handleToggle = () => {
+    setIsToggled(!isToggled)
+  }
 
-            <ul>
-              <div className={style.listLeft}>
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li1}
-                </li>
-                <hr />
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li2}
-                </li>
-                <hr />
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li3}
-                </li>
-                <hr />
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li4}
-                </li>
-                <hr />
-              </div>
-              <div className={style.listRight}>
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li5}
-                </li>
-                <hr />
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li6}
-                </li>
-                <hr />
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li7}
-                </li>
-                <hr />
-                <li>
-                  <FontAwesomeIcon icon={faSquareCheck} /> {item.li8}
-                </li>
-                <hr />
-              </div>
+  return (
+    <>
+   <div  className={style.singleToggle}>
+      <label name="checkbox">Annually</label>
+      <div className={style.toggleButton}>
+        <input
+          type="checkbox"
+          id="checkbox"
+          className={style.checkbox} onClick={handleToggle}
+        />
+      <label htmlFor="checkbox" id="sub" className={style.sub}>
+        <div className={style.circle}></div>
+      </label>
+      </div>
+      <label htmlFor="checkbox">Monthly</label>
+    </div>
+    <div className={style.cardContainer}>
+        {priceCard.map((item, index) => {
+        const cardClass = index === 1 ? `${style.priceCard} ${style.active}` : style.priceCard;
+        return (
+          <div className={cardClass} key={item.id}>
+             <ul>
+              <li className={style.priceTitle}>{item.title}</li>
+              <li className={style.price}>{isToggled ? item.month : item.price}</li>
+              <li className={style.bottomBar}>{item.li1}</li>
+              <li className={style.bottomBar}>{item.li2}</li>
+              <li className={style.bottomBar}>{item.li3}</li>
+              <li className={style.bottomBar}>{item.li4}</li>
+              <li className={style.bottomBar}>{item.li5}</li>
+              <li className={style.bottomBar}>{item.li6}</li>
+              <li className={style.bottomBar}>{item.li7}</li>
+              <li className={style.bottomBar}>{item.li8}</li>
             </ul>
             <div className={style.btnContainer}>
-              <Button link="/contact" text="Start now" />
+              <Button  background="var(--primary)" link="/contact" text="Start now" />
             </div>
           </div>
         );
       })}
-    </div>
+      </div>
+      </>
   );
 };
 

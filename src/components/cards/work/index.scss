@@ -9,7 +9,7 @@
 .card {
   position: relative;
   display: flex;
-  flex: 1 1 50%;
+  flex: 1 1 20%;
   height: 400px;
   overflow: hidden;
   max-width: calc(30% - 0px);
@@ -89,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 920px) {
   .card-container {
     padding: 0px;
 

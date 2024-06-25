@@ -13,7 +13,7 @@ const WebDev = () => {
               specialise in tailoring web development solutions, ensuring
               businesses achieve online success through custom
               solutions."
-      HeroH2="We build custom responsive websites from just £275 + vat"
+      HeroH2="We build custom responsive websites from just £279 + vat or £39 + vat per month"
       src={gif}
       secondH1="Transform your online presence"
       secondP="Frustrated with an outdated website that lacks engagement and
@@ -22,7 +22,7 @@ const WebDev = () => {
       p="We offer a range of website solutions from Wordpress and Woo-commerce sites to custom built hard coded, scalable websites.
         We also offer help with maintence and hosting."
       img={img}
-      thirdH1="CUSTOM OR WORDPRESS WEBSITE"
+      thirdH1="WEBSITE"
       thirdP="We emphasise clear communication and robust client relationships.
               Our services are based on a retainer model which inclused maintence, full support and hosting."
       name="webDev"

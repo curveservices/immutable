@@ -65,7 +65,7 @@ const Client = (props) => {
             </div>
 
             <h2 className="name">{item.name}</h2>
-
+            <p>{ props.p3 }</p>
             <div className="images">
               <img className="wireframe" src={item.img1} alt="wireframe" />
               <img className="wireframe" src={item.img3} alt="wireframe" />

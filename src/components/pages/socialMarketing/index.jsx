@@ -12,7 +12,7 @@ const SocialMarketing = () => {
               creating ad campaigns and social content, leveraging the latest
               trends and analytics to propel your social projects forward.
 "
-      HeroH2="We build digital media templates start from just £85"
+      HeroH2="We build digital media templates start from just £85 + vat"
       src={gif}
       secondH1="Elevate social presence with our professional template designs."
       secondP="In the competitive digital landscape, brand distinction is

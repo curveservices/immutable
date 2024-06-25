@@ -11,12 +11,13 @@
 .textBox {
   padding: 4rem 0rem;
   animation: fadeInLeft 2s forwards;
-  width: 50%;
+  width: 65%;
 }
 .btnContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 2rem;
   gap: 20px;
 }
 
@@ -64,7 +65,7 @@
 }
 
 .thirdTextBox {
-  margin: 3rem;
+  margin: 3rem 3rem 0;
   text-align: center;
   padding: 0 8rem;
   color: #fff;

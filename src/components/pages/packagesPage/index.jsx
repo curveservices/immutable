@@ -13,8 +13,8 @@ const Packages = () => {
                         automation and outsourcing of daily tasks using cutting-edge AI
                         technology, streamlining your operations for increased efficiency.
                 "
-      HeroH2="We build tailer made business packages starting from just £995 +
-              vat"
+      HeroH2="We build tailer made business packages starting from just £849 +
+              vat or £99 + vat per month"
       src={gif}
       secondH1="Need full online &amp; AI solutions?"
       secondP=" Our custom packages integrate cutting-edge AI solutions, from

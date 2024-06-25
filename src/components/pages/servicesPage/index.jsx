@@ -7,16 +7,15 @@ import {
   faUserAstronaut,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
-import Loader from "react-loaders";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
 import CallToAction from "../../CTA";
-import Featured from "../../featured";
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
+import Card from "../../cards/work";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -199,7 +198,7 @@ const Services = () => {
                 as your business grows.
               </p>
             </div>
-            <h1 className="price-title">Check out our starting prices</h1>
+            <h1 className="price-title">Our Starting Prices</h1>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
               <PriceCard name="pricing" />
             </div>
@@ -207,7 +206,8 @@ const Services = () => {
         </section>
         <section className="fith-section">
           <div className="fith-inner">
-            <Featured />
+            <h2>FEATURED WORK</h2>
+            <Card />
           </div>
         </section>
         <section className="cta">
@@ -218,7 +218,7 @@ const Services = () => {
         <HelmetProvider>
           <Helmet>
           <title>
-            Our Services | Immutable Studio: Web Development Agency
+            Our Services | Immutable Studio Web Development Agency
           </title>
           <meta
             name="keywords"
@@ -227,7 +227,6 @@ const Services = () => {
         </Helmet>
         </HelmetProvider>
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

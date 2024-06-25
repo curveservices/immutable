@@ -1,13 +1,13 @@
-import Loader from "react-loaders";
+
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import morfbot from "../../../assets/images/morfbot.mp4";
 import Client from "../../cards/ClientWork";
-import Featured from "../../featured";
 import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
 import CTA from "../../CTA";
 import "./index.scss";
+import Card from "../../cards/work";
 
 const FeaturedWork = () => {
   return (
@@ -56,6 +56,7 @@ const FeaturedWork = () => {
                             We where provided with their company copy to maintain brand consistency and deliver clear messaging. The result is a modern, efficient, and user-friendly website that enhances MorfBot's digital presence."
               video={morfbot}
               link="https://morfbot.com/"
+              p3=""
             />
           </div>
         </section>
@@ -63,7 +64,7 @@ const FeaturedWork = () => {
           <div className="wireframe-container"></div>
         </section>
         <section className="featured">
-          <Featured />
+          <Card />
         </section>
         <section className="cta">
           <CTA />
@@ -73,7 +74,7 @@ const FeaturedWork = () => {
         <HelmetProvider>
           <Helmet>
           <title>
-            Featured Work | Immutable Studio: Web Development Agency
+            Featured Work | Immutable Studio Web Development Agency
           </title>
           <meta
             name="keywords"
@@ -83,7 +84,6 @@ const FeaturedWork = () => {
         </HelmetProvider>
         
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

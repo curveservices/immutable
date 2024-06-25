@@ -83,7 +83,7 @@ const About = () => {
         <HelmetProvider>
            <Helmet>
           <title>
-            About Us | Immutable Studio: Web Development Agency
+            About Us | Immutable Studio Web Development Agency
           </title>
           <meta
             name="keywords"
@@ -92,7 +92,6 @@ const About = () => {
         </Helmet>
         </HelmetProvider>
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

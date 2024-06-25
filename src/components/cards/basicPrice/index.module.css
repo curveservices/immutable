@@ -1,53 +1,140 @@
 .cardContainer {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-size: 2rem;
+}
+
+.singleToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.toggleButton {
+  margin: 1rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.sub {
+  background: var(--secondary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1.6rem;
+  width: 3.3rem;
+  border-radius: 1.6rem;
+  padding: 0.3rem;
+}
+
+.singleSub {
+  background: var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+}
+
+.circle {
+  background: var(--primary);
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+}
+
+.singleCircle {
+  background: var(--secondary);
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+}
+
+.checkbox:checked+.sub {
+  justify-content: flex-end;
+}
+
+.priceTitle {
+  font-size: 1.1rem;
 }
 
 .priceCard {
-  position: relative;
-  flex-wrap: wrap;
-  max-width: 400px;
   padding-bottom: 2rem;
+  width: 400px;
   box-shadow: var(--global);
   background: var(--secondary);
-  color: #000;
+  border-radius: 0.8rem;
 }
 
-.cardImg {
-  width: 100%;
+.priceCard.active {
+  background: var(--third-bg);
+  color: #fff;
+  transform: scale(1.08);
 }
 
-.heroContainer {
+/* .heroContainer {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: -50px;
   left: 50%;
-  width: 60%;
+  width: 80%;
+  margin-bottom: 1rem;
   transform: translateX(-50%);
   background: var(--secondary);
   border-radius: 5px;
   border: 1px solid #2b66a7;
   box-shadow: var(--global);
+} */
+
+.priceCard ul {
+  margin: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.priceTitle {
-  text-align: center;
-  letter-spacing: 2px;
+.priceCard li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.2rem 0;
+  width: 100%;
 }
 
 .price {
-  text-align: center;
-  font-family: sans-serif;
+  font-family: "Coolvetica";
+  font-size: 3rem;
+  color: #494c5f;
+  padding: 2rem;
 }
 
-ul {
-  padding: 1rem 4rem;
-  text-align: center;
+.priceCard.active .price {
+  color: #fff;
 }
 
-li {
-  list-style: none;
-  padding: 5px;
+.priceCard.active button {
+  background: var(--secondary) !important;
+  color: #000;
 }
 
 .btnContainer {
@@ -55,6 +142,14 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.bottomBar {
+  border-bottom: 2px solid hsl(240, 80%, 85%, 0.253);
+}
+
+.priceCard.active .bottomBar {
+  border-bottom: 2px solid hsl(240, 80%, 85%, 0.283);
 }
 
 @media screen and (max-width: 920px) {
@@ -66,6 +161,12 @@ li {
   .priceCard {
     max-width: 100%;
   }
+
+    .price {
+      font-size: 2rem;
+      color: #494c5f;
+      padding: 1rem 2rem;
+    }
 
   .heroContainer {
     top: -40px;

@@ -69,11 +69,12 @@
         margin-top: 3rem;
         .content-container {
           margin-top: 8rem;
+          color: #2d5fe1;
         }
       }
 
       .anim {
-        animation: fadeIn 3s forwards;
+        animation: fadeIn 1s forwards;
       }
 
       .none {
@@ -83,8 +84,19 @@
   }
 
   .third-section {
-    margin-bottom: 4rem;
+    padding: 1rem 0rem 6rem;
     .third-inner {
+      .title {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding: 2rem 5rem;
+          color: #fff;
+      }
+      .text-contanier {
+        padding: 0rem 10rem 3rem;
+        color: #fff;
+      }
       .view-btn {
         margin-top: 2rem;
       }
@@ -106,7 +118,6 @@
       .main-title {
           font-size: 28px;
         }
-      
       
         .typewriter {
           font-size: 28px;
@@ -155,7 +166,10 @@
     }
 
     .third-section {
-      padding: 0rem;
+      padding: 2rem;
+      .third-inner {
+        padding: 2rem 4rem;
+      }
 
       .view-btn {
         margin: 3rem;

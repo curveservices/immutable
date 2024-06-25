@@ -1,7 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
@@ -135,7 +134,6 @@ const Contact = () => {
         </Helmet>
         </HelmetProvider>
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };

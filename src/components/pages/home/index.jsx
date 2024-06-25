@@ -8,9 +8,10 @@ import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
 import { useState } from "react";
-import Featured from "../../featured";
 import CallToAction from "../../CTA";
 import "./index.scss";
+import Card from "../../cards/work";
+import { Audio } from "react-loader-spinner";
 
 
 const Home = () => {
@@ -112,8 +113,27 @@ const Home = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            <Featured />
+            <h2 className="title">FEATURED WORK</h2>
+            <div className="text-contanier">
+              <div className="textBox">
+                <p>
+                  Signing off on a new website is always a moment of immense pride
+                and satisfaction for us. With each project, we take great care
+                to understand our clients' unique needs and deliver tailored
+              solutions.
+                </p>
+              </div>
+              <div className="textBox">
+                <p>
+                  As our client base continues to expand, we are excited to
+                showcase the diverse and innovative work we do, particularly in
+                creating cutting-edge websites and AI solutions.
+                </p>
+              </div>
+            </div>
+             <Card />
           </div>
+         
         </section>
         <section className="cta">
           <CallToAction />
@@ -123,7 +143,7 @@ const Home = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Home | Immutable Studio: Web Development Agency
+              Home | Immutable Studio Web Development Agency
             </title>
             <meta
               name="keywords"
@@ -132,7 +152,6 @@ const Home = () => {
           </Helmet>
         </HelmetProvider>
       </div>
-      <Loader type="ball-spin-fade-loader" />
     </>
   );
 };
