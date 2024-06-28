@@ -43,8 +43,9 @@ const Card = () => {
               <div className="btn-container">
                 <Button
                   text="View"
-                  link="/featured-work"
+                  link={item.live}
                   background="var(--services-link)"
+                  target="_blank"
                 />
               </div>
             </div>

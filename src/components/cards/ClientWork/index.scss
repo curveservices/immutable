@@ -1,24 +1,42 @@
 .client-container {
+  padding: 0rem 0 3rem;
   .inner-container {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 2rem 0;
 
     .player-wrapper {
       display: flex;
       align-items: center;
-      video {
-        border-radius: 20px;
-      }
+      width: 40%;
     }
+    
     button {
       margin: 1rem 0;
     }
   }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .title {
+      margin: 2rem 0;
+    }
+    .logo {
+      width: 200px;
+      height: 125px;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+
   .name {
     padding: 1rem 0;
   }
+
   .images {
     display: flex;
     flex-wrap: wrap;
@@ -48,16 +66,27 @@
     .inner-container {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      padding: 2rem 0;
+      gap: 0px;
+      padding: 1rem 0;
 
       .player-wrapper {
-        max-width: 300px;
-        margin: 0;
+        width: 100%;
+        margin: 0;;
       }
 
       button {
         margin: 1rem 0;
+      }
+    }
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .logo {
+        width: 100px;
+        height: 50px;
       }
     }
 
@@ -67,13 +96,13 @@
 
     .images {
       justify-content: space-around;
-      gap: 2px;
+      gap: 5px;
       margin: 0;
     }
 
     .wireframe {
       width: 75px;
-      height: 400px;
+      height: 250px;
       border: 2px solid black;
     }
 

@@ -16,8 +16,8 @@ button {
   cursor: pointer;
 
   &:hover {
-    transform: translateY(-3px);
-    background-color: rgb(43, 43, 43);
+    transform: translateY(-4px);
+    background:var(--primary);
   }
 }
 

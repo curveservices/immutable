@@ -1,13 +1,13 @@
-
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import morfbot from "../../../assets/images/morfbot.mp4";
+import tutor from "../../../assets/images/telehill.mp4"
 import Client from "../../cards/ClientWork";
 import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
 import CTA from "../../CTA";
-import "./index.scss";
 import Card from "../../cards/work";
+import "./index.scss";
 
 const FeaturedWork = () => {
   return (
@@ -48,6 +48,22 @@ const FeaturedWork = () => {
         <section className="clients">
           <div className="wireframe-container">
             <Client
+              name="telegraph-tutoring"
+              p="A local tutoring company contacted us for a brand new website. 
+                They wanted a fast, custom-built site developed with the latest front-end tech, using a database for learning resoures to be access by parents.
+                We built the site to be fully optimized for mobile and tablet. We ensured this site was SEO-friendly, 
+                complete with a comprehensive sitemap and google analytics"
+              p2="We work with them to get the colour palette, fonts, and images just right to create a visually appealing and engaging user experience. 
+                  We where provided with their company copy to maintain brand consistency and deliver clear messaging. The result is a modern, efficient, and user-friendly website that enhances MorfBot's digital presence."
+              video={tutor}
+              link="https://telegraphtutoring.netlify.app"
+              p3=""
+            />
+          </div>
+        </section>
+        <section className="clients">
+          <div className="wireframe-container">
+            <Client
               name="morfbot"
               p="An innovative AI automation agency approached us for a complete redesign of their website. 
                             They wanted to move from WordPress to a custom-built site developed with React. Our team ensured the site was fully mobile-optimized and SEO-friendly, 
@@ -59,9 +75,6 @@ const FeaturedWork = () => {
               p3=""
             />
           </div>
-        </section>
-        <section className="clients">
-          <div className="wireframe-container"></div>
         </section>
         <section className="featured">
           <Card />
