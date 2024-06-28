@@ -97,8 +97,10 @@
         padding: 0rem 10rem 3rem;
         color: #fff;
       }
-      .view-btn {
-        margin-top: 2rem;
+      .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -106,17 +108,16 @@
 
 @media screen and (max-width: 920px) {
   .home-page {
-    overflow: hidden;
     .hero {
       flex-direction: column-reverse;
       width: 100%;
       display: flex;
       color: #fff;
       width: 100%;
-      margin: 3rem 0;
+      margin: 2rem 0;
 
       .main-title {
-          font-size: 28px;
+          font-size: 30px;
         }
       
         .typewriter {
@@ -166,13 +167,11 @@
     }
 
     .third-section {
-      padding: 2rem;
+      padding: 1rem 0rem;
       .third-inner {
-        padding: 2rem 4rem;
-      }
-
-      .view-btn {
-        margin: 3rem;
+        .text-contanier {
+          padding: 0rem 2rem 3rem;
+        }
       }
     }
   }

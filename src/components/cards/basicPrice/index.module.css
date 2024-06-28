@@ -89,22 +89,6 @@
   transform: scale(1.08);
 }
 
-/* .heroContainer {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: -50px;
-  left: 50%;
-  width: 80%;
-  margin-bottom: 1rem;
-  transform: translateX(-50%);
-  background: var(--secondary);
-  border-radius: 5px;
-  border: 1px solid #2b66a7;
-  box-shadow: var(--global);
-} */
-
 .priceCard ul {
   margin: 2.6rem;
   display: flex;
@@ -156,8 +140,14 @@
   .cardContainer {
     margin-top: 4rem;
     flex-direction: column;
-    gap: 5rem;
+    gap: 1rem;
   }
+
+  .toggle {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
   .priceCard {
     max-width: 100%;
   }

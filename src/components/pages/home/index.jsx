@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Loader from "react-loaders";
+import React, { useEffect, useState  } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
 
@@ -7,12 +6,9 @@ import Button from "../../button/index";
 import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
-import { useState } from "react";
 import CallToAction from "../../CTA";
+import WorkCard from "../../cards/work";
 import "./index.scss";
-import Card from "../../cards/work";
-import { Audio } from "react-loader-spinner";
-
 
 const Home = () => {
   const [second, setSecond] = useState(false)
@@ -25,6 +21,7 @@ const Home = () => {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
+  
   const handleAccordionClick = (accordionId) => {
     setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
   };
@@ -42,13 +39,13 @@ const Home = () => {
               strings: [
                 "Website Design.",
                 "Web Development.",
+                "Chat Assistants.",
                 "AI Solutions.",
                 "Workflow Automation.",
                 "Custom Built GPT's",
-                "Chat Assistants.",
                 "Digital Marketing.",
-                  ],
-                wrapperClassName: 'Typewriter__wrapper',
+                ],
+              wrapperClassName: 'Typewriter__wrapper',
               autoStart: true,
               loop: true,
             }}
@@ -130,10 +127,14 @@ const Home = () => {
                 creating cutting-edge websites and AI solutions.
                 </p>
               </div>
+              <div className="btn-container">
+                <Button text="Our Latest Projects" link="featured-work" />
             </div>
-             <Card />
+            </div>
+            <div className="">
+              <WorkCard /> 
+            </div>
           </div>
-         
         </section>
         <section className="cta">
           <CallToAction />

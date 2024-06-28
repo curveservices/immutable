@@ -1,15 +1,29 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useEffect, useState } from "react";
 
 import morfbot from "../../../assets/images/morfbot.mp4";
 import tutor from "../../../assets/images/telehill.mp4"
 import Client from "../../cards/ClientWork";
 import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
+import PriceCard from "../../cards/fullPrice";
 import CTA from "../../CTA";
-import Card from "../../cards/work";
 import "./index.scss";
 
 const FeaturedWork = () => {
+  const [firstScroll, setFirstScrolll] = useState(false);
+  const [secondScroll, setSecondScroll] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+        const scrollFirst = window.scrollY;
+        const scrollSecond = window.scrollY;
+        setFirstScrolll(scrollFirst > 250);
+        setSecondScroll(scrollSecond > 1550);
+      };
+      window.addEventListener("scroll", handleScroll);
+  }, []);
+  
   return (
     <>
       <div className="featured-work">
@@ -46,7 +60,7 @@ const FeaturedWork = () => {
           </div>
         </section>
         <section className="clients">
-          <div className="wireframe-container">
+          <div className={`wireframe-container ${firstScroll ? "anim" : "none"}`}>
             <Client
               name="telegraph-tutoring"
               p="A local tutoring company contacted us for a brand new website. 
@@ -62,7 +76,7 @@ const FeaturedWork = () => {
           </div>
         </section>
         <section className="clients">
-          <div className="wireframe-container">
+          <div className={`wireframe-container ${secondScroll ? "anim" : "none"}`}>
             <Client
               name="morfbot"
               p="An innovative AI automation agency approached us for a complete redesign of their website. 
@@ -77,7 +91,8 @@ const FeaturedWork = () => {
           </div>
         </section>
         <section className="featured">
-          <Card />
+          <h2>WEBSITE DEVELOPMENT PRICES</h2>
+          <PriceCard name="webDev"/>
         </section>
         <section className="cta">
           <CTA />

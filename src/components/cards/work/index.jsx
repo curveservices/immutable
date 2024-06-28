@@ -4,7 +4,7 @@ import { getDocs, collection } from "firebase/firestore";
 import "./index.scss";
 import Button from "../../button";
 
-const Card = () => {
+const WorkCard = () => {
   const [card, setCard] = useState([]);
 
   const fetchData = async () => {
@@ -56,4 +56,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default WorkCard;
