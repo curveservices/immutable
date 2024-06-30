@@ -70,7 +70,7 @@ const FeaturedWork = () => {
               p2="We work with them to get the colour palette, fonts, and images just right to create a visually appealing and engaging user experience. 
                   We where provided with their company copy to maintain brand consistency and deliver clear messaging. The result is a modern, efficient, and user-friendly website that enhances MorfBot's digital presence."
               video={tutor}
-              link="https://telegraphtutoring.netlify.app"
+              link="https://telegraphhilltutoring.netlify.app/"
               p3=""
             />
           </div>
