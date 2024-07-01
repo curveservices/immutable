@@ -30,14 +30,14 @@ const FeaturedWork = () => {
         <section className="hero">
           <div className="inner-hero">
             <div className="text-box">
-              <h1>Featured Work</h1>
-              <p>
+              <h1 className="title">Featured Work</h1>
+              <p className="fadeInUp">
                 Signing off on a new website is always a moment of immense pride
                 and satisfaction for us. With each project, we take great care
                 to understand our clients' unique needs and deliver tailored
                 solutions.
               </p>
-              <p>
+              <p className="fadeInUp">
                 As our client base continues to expand, we are excited to
                 showcase the diverse and innovative work we do, particularly in
                 creating cutting-edge websites and AI solutions. Each project

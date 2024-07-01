@@ -19,6 +19,7 @@ import Packages from "./components/pages/packagesPage";
 import SocialMarketing from "./components/pages/socialMarketing";
 import PrivacyPolicy from "./components/pages/policy";
 import FeaturedWork from "./components/pages/featuredWork";
+import Pricing from "./components/pages/pricing";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         <Route path=":id/packages" element={<Packages />} />
         <Route path=":id/digital-marketing" element={<SocialMarketing />} />
         <Route path="featured-work" element={<FeaturedWork />} />
+        <Route path="pricing" element={<Pricing />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
       </Route>
       <Route path="*" element={<NotFound />} />

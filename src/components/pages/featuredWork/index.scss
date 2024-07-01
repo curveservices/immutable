@@ -12,7 +12,12 @@
       .text-box {
         width: 70%;
         margin: 2rem 0rem;
-        animation: fadeInLeft 2s forwards;
+        .title {
+          animation: fadeInLeft 2s forwards;
+        }
+        .fadeInUp, .button-container {
+          animation: fadeInUp 2s forwards;
+        }
 
         .button-container {
           display: flex;
@@ -66,14 +71,14 @@
 
           .button-container {
             display: flex;
-            flex-direction: column;
-            padding: 0rem;
+            padding-bottom: 2rem;
             gap: 20px;
           }
         }
       }
       .spinner {
         right: 0;
+        align-self: center;
       }
     }
 

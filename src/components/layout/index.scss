@@ -16,6 +16,7 @@
   .contact-page,
   .single-service,
   .featured-work,
+  .pricing-page,
   .policy-page {
     opacity: 0;
     animation: fadeIn 1s 0.5s forwards;
@@ -80,6 +81,7 @@
     .serivces-page,
     .single-service,
     .featured-work,
+    .pricing-page,
     .policy-page {
       overflow: hidden;
 
@@ -87,10 +89,10 @@
         font-size: 24px;
       }
       h2 {
-        font-size: 18px;
+        font-size: 20px;
       }
       p {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }

@@ -7,8 +7,13 @@ import style from "../basicPrice/index.module.css";
 const PriceCard = (props) => {
   const [priceCard, setPriceCard] = useState([]);
   const [isToggled, setIsToggled] = useState(); 
+  const labelStyle = {
+      color: props.color
+    };
 
   const fetchData = async () => {
+    
+
     try {
       const priceData = [];
       const snapshot = await getDocs(collection(db, props.name));
@@ -46,8 +51,8 @@ const PriceCard = (props) => {
 
   return (
     <>
-   <div  className={style.singleToggle}>
-      <label name="checkbox">Annually</label>
+   <div  className={style.toggle} style={labelStyle} >
+      <label  name="checkbox">Annually</label>
       <div className={style.toggleButton}>
         <input
           type="checkbox"

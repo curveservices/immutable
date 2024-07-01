@@ -106,15 +106,11 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 450px) {
   .home-page {
     .hero {
-      flex-direction: column-reverse;
       width: 100%;
-      display: flex;
-      color: #fff;
-      width: 100%;
-      margin: 2rem 0;
+      margin: 4rem 0rem 0;
 
       .main-title {
           font-size: 30px;
@@ -136,7 +132,6 @@
         }
       
       .btn-container {
-        flex-direction: column;
         align-items: center;
         gap: 1rem;
       }

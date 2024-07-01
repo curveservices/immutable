@@ -16,6 +16,7 @@ import CallToAction from "../../CTA";
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
 import Card from "../../cards/work";
+import Links from "../../links";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,7 +47,7 @@ const Services = () => {
               <h1 className="title">
                 We will turn your ideas into amazing solutions
               </h1>
-              <p>
+              <p className="fadeInUp">
                 We offer a full range of website development, AI solutions,
                 workflow automation and digital marketing services with flexible
                 pricing.
@@ -60,28 +61,12 @@ const Services = () => {
                 />
               </div>
             </div>
-            <div className="link-container">
-              <div className="service-link">
-                <NavLink to="web-development">
-                  <h3>WEB DEVELOPMENT</h3>
-                </NavLink>
-              </div>
-              <div className="service-link">
-                <NavLink to="chat-bots">
-                  <h3>AI SOLUTIONS</h3>
-                </NavLink>
-              </div>
-              <div className="service-link">
-                <NavLink to="digital-marketing">
-                  <h3>DIGITAL MARKETING</h3>
-                </NavLink>
-              </div>
-              <div className="service-link">
-                <NavLink to="packages">
-                  <h3>PACKAGES</h3>
-                </NavLink>
-              </div>
-            </div>
+            <Links
+              webLink="web-development"
+              aiLink="chat-bots"
+              digitalLink="digital-marketing"
+              packageLink="packages"
+            />
           </div>
         </section>
         <section className="second-section">
@@ -200,7 +185,7 @@ const Services = () => {
             </div>
             <h1 className="price-title">Our Starting Prices</h1>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
-              <PriceCard name="pricing" />
+              <PriceCard name="pricing" color="#fff"/>
             </div>
           </div>
         </section>

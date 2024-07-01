@@ -3,6 +3,7 @@ import {
   faClose,
   faEnvelope,
   faHouseChimney,
+  faMoneyBill1Wave,
   faSuitcase,
   faTools,
   faUser,
@@ -12,7 +13,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
 import Button from "../../button";
-import logo from "../../../assets/images/1-removebg-preview.png";
+import logo from "../../../assets/images/logo-desktop.png";
 import "./index.scss";
 
 const Navbar = () => {
@@ -32,7 +33,6 @@ const Navbar = () => {
     <header className={isScrolled ? "navbar-scroll" : ""}>
       <NavLink to="/">
         <div className="title-container">
-          <div className="title">&#123; Immutable Studio &#125;</div>
           <img src={logo} alt="Immutable studio logo" className="logo" />
         </div>
       </NavLink>
@@ -75,6 +75,19 @@ const Navbar = () => {
           <div className="menu-container">
             <FontAwesomeIcon icon={faSuitcase} className="mobile-icon" />
             <div className="text">WORK</div>
+          </div>
+        </NavLink>
+         <NavLink
+          to="pricing"
+          title="Pricing"
+          className="services-link"
+          activeclassname="active"
+          exact="true"
+          onClick={() => setShowNav(false)}
+        >
+          <div className="menu-container">
+            <FontAwesomeIcon icon={faMoneyBill1Wave} className="mobile-icon" />
+            <div className="text">PRICING</div>
           </div>
         </NavLink>
         <NavLink

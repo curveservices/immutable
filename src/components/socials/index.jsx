@@ -1,8 +1,8 @@
 import {
-  faFacebook,
+  faFacebookF,
   faGithub,
-  faLinkedin,
-  faSquareXTwitter,
+  faInstagram,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -15,17 +15,17 @@ const Socials = (props) => {
       <ul className="iconList">
         <li className="icons">
           <Link to={props.fblink} target="_blank">
-            <FontAwesomeIcon icon={faFacebook} alt="facebook" />
+            <FontAwesomeIcon icon={faFacebookF} alt="facebook" />
           </Link>
         </li>
         <li className="icons">
           <Link to={props.lilink} target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} alt="LinkedIn" />
+            <FontAwesomeIcon icon={faLinkedinIn} alt="LinkedIn" />
           </Link>
         </li>
         <li className="icons">
           <Link to={props.xlink} target="_blank">
-            <FontAwesomeIcon icon={faSquareXTwitter} alt="X formally twitter" />
+            <FontAwesomeIcon icon={faInstagram} alt="X formally twitter" />
           </Link>
         </li>
         <li className="icons">
