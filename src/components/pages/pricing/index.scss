@@ -1,0 +1,94 @@
+.pricing-page {
+    .hero {
+        .inner-hero {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin: 4rem 0rem;
+            padding: 2rem 4rem;
+            color: #fff;
+    
+            .text-box {
+                width: 60%;
+                margin: 2rem 0rem;
+                .title {
+                    animation: fadeInLeft 2s forwards;
+                }
+                .fadeInUp, .button-container {
+                 animation: fadeInUp 2s forwards;
+                }
+    
+                .button-container {
+                    display: flex;
+                    padding: 2rem 0;
+                    gap: 50px;
+                }
+            }
+        }
+    }
+    
+    .light-section {
+        background-image: url("../../../assets/images/1746747.webp");
+        box-shadow: var(--global);
+        .light-inner {
+            padding: 2rem 0 5rem;
+            .text-box {
+                text-align: center;
+                padding: 1rem 8rem;
+            }
+        }
+    }
+
+    .dark-section {
+        .dark-inner {
+            padding: 2rem 0 5rem;
+    
+            .text-box {
+                text-align: center;
+                padding: 1rem 8rem;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pricing-page {
+        .hero {
+            .inner-hero {
+                flex-direction: column;
+                gap: 0px;
+                margin: 4rem 0rem 0rem;
+                padding: 2rem;
+
+                .text-box {
+                    width: 100%;
+                    .button-container {
+                        padding: 0;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    
+        .light-section {
+            .light-inner {
+                padding: 2rem;
+
+                .text-box {
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .dark-section {
+            .dark-inner {
+                padding: 2rem ;
+
+                .text-box {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
