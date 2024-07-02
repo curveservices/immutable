@@ -92,7 +92,7 @@ const FeaturedWork = () => {
         </section>
         <section className="featured">
           <h2>WEBSITE DEVELOPMENT PRICES</h2>
-          <PriceCard name="webDev"/>
+          <PriceCard name="webDev" color="#fff"/>
         </section>
         <section className="cta">
           <CTA />

@@ -24,6 +24,9 @@ const Footer = () => {
                 <img src={logo} alt="logo" className="footer-logo" />
               </NavLink>
             </li>
+             <li>
+              <NavLink to="/pricing">Pricing</NavLink>
+            </li>
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
