@@ -75,7 +75,7 @@
   margin: 2rem;
 }
 .none {
-  display: none;
+ opacity: 0;;
 }
 @media screen and (max-width: 800px) {
   /* Hero section */

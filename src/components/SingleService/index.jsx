@@ -64,7 +64,7 @@ const Singleservices = (props) => {
               <p>{props.thirdP}</p>
             </div>
             <div className={`${isScrolled ? style.contentAnim : style.none}`}>
-              <PriceCard name={props.name} />
+              <PriceCard name={props.name} color="#fff"/>
             </div>
           </div>
         </section>
