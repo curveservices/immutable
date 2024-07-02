@@ -1,10 +1,14 @@
+import { HelmetProvider } from "react-helmet-async";
+import CallToAction from "../../CTA";
 import Button from "../../button";
 import PriceCard from "../../cards/fullPrice";
 import Links from "../../links";
 import "./index.scss";
+import { Helmet } from "react-helmet";
 
 const Pricing = () => {
     return ( 
+        <>
         <section className="pricing-page">
             <section className="hero">
                 <div className="inner-hero">
@@ -114,7 +118,24 @@ const Pricing = () => {
                     </div>
                 </div>
             </section>
-        </section>
+            <section className="cta">
+                <CallToAction />
+            </section>
+            </section>
+            <div>
+                <HelmetProvider>
+                <Helmet>
+                    <title>
+                    Pricing | Immutable Studio Web Development Agency
+                    </title>
+                    <meta
+                    name="keywords"
+                    content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, Empowering, workflows, automated, Business, London, Greenwich London"
+                    />
+                </Helmet>
+                </HelmetProvider>
+            </div>
+            </>
      );
 }
  
