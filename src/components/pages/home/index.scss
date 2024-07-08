@@ -83,19 +83,117 @@
     }
   }
 
-  .third-section {
+    .third-section {
+      .third-inner {
+        color: #fff;
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+  
+        .thirdLt {
+          animation: bounceInLeft 2s;
+        }
+  
+        .thirdRt {
+          animation: bounceInRight 2s;
+        }
+  
+        .third-none {
+          opacity: 0;
+        }
+  
+        .title {
+          padding: 2rem 0;
+          text-align: center;
+        }
+  
+        .element-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+          grid-gap: 2rem;
+          margin: 0;
+          padding: 1rem 2rem;
+  
+          .elem-card {
+            display: flex;
+            gap: 3rem;
+            background: var(--primary);
+            border: 2px solid;
+            padding: 1rem;
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+  
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              transform: scaleY(0);
+              transform-origin: bottom center;
+              background: var(--secondary);
+              color: #000;
+              z-index: -1;
+              transition: transform 0.4s;
+            }
+  
+            &:hover {
+              color: #000;
+            }
+  
+            &:hover:after {
+              transform: scaleY(1);
+            }
+  
+            .icon {
+              font-size: 4rem;
+              align-self: center;
+  
+              svg {
+                width: 100px;
+                height: 100px;
+                margin-top: 10px;
+                padding: 20px;
+                border-radius: 50%;
+                background: #9d9d9d;
+              }
+            }
+  
+            .copy {
+              display: flex;
+              flex-direction: column;
+  
+              .elem-title {
+                font-weight: 900;
+                font-size: 1.7rem;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  .forth-section {
     padding: 1rem 0rem 6rem;
-    .third-inner {
+    .forth-inner {
+      position: relative;
+        background-image: url("../../../assets/images/1746747.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        box-shadow: var(--global);
+        padding-bottom: 6rem;
       .title {
           width: 100%;
           text-align: center;
           margin: 0;
           padding: 2rem 5rem;
-          color: #fff;
+          color: #000;
       }
       .text-contanier {
         padding: 0rem 10rem 3rem;
-        color: #fff;
+        color: #000;
       }
       .btn-container {
         display: flex;
@@ -161,9 +259,77 @@
       }
     }
 
-    .third-section {
+        .third-section {
+          .third-inner {
+            padding: 2rem 0rem;
+    
+            .title {
+              padding: 0rem;
+            }
+    
+            .element-container {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              padding: 1rem;
+    
+              .elem-card {
+                flex-direction: column;
+                gap: 0rem;
+                cursor: pointer;
+    
+                &:after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  transform: scaleY(0);
+                  transform-origin: bottom center;
+                  background: var(--secondary);
+                  color: #000;
+                  z-index: -1;
+                  transition: transform 0.4s;
+                }
+    
+                &:hover {
+                  color: #000;
+                }
+    
+                &:hover:after {
+                  transform: scaleY(1);
+                }
+    
+                .icon {
+                  svg {
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 10px;
+                    padding: 20px;
+                    border-radius: 50%;
+                    background: #9d9d9d;
+                  }
+                }
+    
+                .copy {
+                  display: flex;
+                  text-align: center;
+    
+                  .elem-title {
+                    font-weight: 900;
+                    font-size: 1.7rem;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+    .forth-section {
       padding: 1rem 0rem;
-      .third-inner {
+      .forth-inner {
         .text-contanier {
           padding: 0rem 2rem 3rem;
         }

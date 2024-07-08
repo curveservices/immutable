@@ -1,12 +1,4 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMobileScreenButton,
-  faScrewdriverWrench,
-  faUserAstronaut,
-  faUserGroup,
-} from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import StaticCubes from "../../Animations/staticCubes";
@@ -21,18 +13,14 @@ import Links from "../../links";
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [second, setSecond] = useState(false);
-  const [thirdLt, setThirdLt] = useState(false);
-  const [thirdRt, setThirdRt] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
-      const scrollThird = window.scrollY;
       setSecond(scrollSecond > 150);
-      setThirdLt(scrollThird > 600);
-      setThirdRt(scrollThird > 600);
-      setIsScrolled(scrollPrice > 1700);
+      setIsScrolled(scrollPrice > 950);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -93,85 +81,6 @@ const Services = () => {
             />
           </div>
         </section>
-        <section className="third-section">
-          <div className="third-inner">
-            <h1 className="title">Why Choose Us?</h1>
-            <div className="element-container">
-              <NavLink to="/about">
-                <div
-                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faUserGroup} />
-                  </div>
-                  <div className="copy">
-                    <p className="elem-title">Excellent Client Service</p>
-                    <p className="desc">
-                      Customer service is more than a commitment, it shapes
-                      every aspect of our business. From discovery to final
-                      delivery, we prioritise understanding your visions &amp;
-                      goals.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="chat-bots">
-                <div
-                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faScrewdriverWrench} />
-                  </div>
-                  <div className="copy">
-                    <p className="elem-title">Automated AI Solutions</p>
-                    <p className="desc">
-                      Every business is unique. We create custom automated
-                      workflows &amp; AI solutions, tailored to your business
-                      saving you time &amp; money with repetitive tasks powered
-                      by AI.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="web-development">
-                <div
-                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faUserAstronaut} />
-                  </div>
-                  <div className="copy">
-                    <p className="elem-title">Seamless User Experience</p>
-                    <p className="desc">
-                      User experience is vital. We design user journeys focusing
-                      on simplicity &amp; ease of use. By providing seamless
-                      browsing, we engage visitors &amp; inspire them to take
-                      action.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="web-development">
-                <div
-                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faMobileScreenButton} />
-                  </div>
-                  <div className="copy">
-                    <p className="elem-title">Mobile-First Approach</p>
-                    <p className="desc">
-                      I's a mobile-driven world &amp; a responsive website is
-                      essential. Our designs are optimized for all devices,
-                      ensuring a flawless experience on phones, tablets &amp;
-                      desktops.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-            </div>
-          </div>
-        </section>
         <section className="forth-section">
           <div className="forth-inner">
             <div className="text-box">
@@ -183,7 +92,7 @@ const Services = () => {
                 as your business grows.
               </p>
             </div>
-            <h1 className="price-title">Our Starting Prices</h1>
+            <h2 className="price-title">Our Starting Prices</h2>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
               <PriceCard name="pricing" color="#fff"/>
             </div>

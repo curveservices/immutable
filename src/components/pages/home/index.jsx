@@ -9,15 +9,23 @@ import Accordion from "../../Accordion";
 import CallToAction from "../../CTA";
 import WorkCard from "../../cards/work";
 import "./index.scss";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMobileScreenButton, faScrewdriverWrench, faUserAstronaut, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [second, setSecond] = useState(false)
   const [activeAccordion, setActiveAccordion] = useState(0);
+  const [thirdLt, setThirdLt] = useState(false);
+  const [thirdRt, setThirdRt] = useState(false);
 
   useEffect(() => {
      const handleScroll = () => {
-      const scrollP = window.scrollY;
-      setSecond(scrollP > 350);
+       const scrollP = window.scrollY;
+       const scrollThird = window.scrollY;
+       setSecond(scrollP > 350);
+       setThirdLt(scrollThird > 800);
+      setThirdRt(scrollThird > 800);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -60,7 +68,7 @@ const Home = () => {
               </p>
               <p>
                 We are seasoned web developers &amp; Ai specialists who excel in
-                creating professional custom website design and workflow solutions. Our
+                creating professional custom website design and AI workflow solutions. Our
                 team is dedicated to delivering cutting-edge technology tailored
                 to help you achieve its goals.
               </p>
@@ -110,6 +118,85 @@ const Home = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
+            <h2 className="title">WHY CHOOSE US?</h2>
+            <div className="element-container">
+              <NavLink to="/about">
+                <div
+                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
+                >
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faUserGroup} />
+                  </div>
+                  <div className="copy">
+                    <p className="elem-title">Excellent Client Service</p>
+                    <p className="desc">
+                      Customer service is more than a commitment, it shapes
+                      every aspect of our business. From discovery to final
+                      delivery, we prioritise understanding your visions &amp;
+                      goals.
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+              <NavLink to="chat-bots">
+                <div
+                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
+                >
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faScrewdriverWrench} />
+                  </div>
+                  <div className="copy">
+                    <p className="elem-title">Automated AI Solutions</p>
+                    <p className="desc">
+                      Every business is unique. We create custom automated
+                      workflows &amp; AI solutions, tailored to your business
+                      saving you time &amp; money with repetitive tasks powered
+                      by AI.
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+              <NavLink to="web-development">
+                <div
+                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
+                >
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faUserAstronaut} />
+                  </div>
+                  <div className="copy">
+                    <p className="elem-title">Seamless User Experience</p>
+                    <p className="desc">
+                      User experience is vital. We design user journeys focusing
+                      on simplicity &amp; ease of use. By providing seamless
+                      browsing, we engage visitors &amp; inspire them to take
+                      action.
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+              <NavLink to="web-development">
+                <div
+                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
+                >
+                  <div className="icon">
+                    <FontAwesomeIcon icon={faMobileScreenButton} />
+                  </div>
+                  <div className="copy">
+                    <p className="elem-title">Mobile-First Approach</p>
+                    <p className="desc">
+                      I's a mobile-driven world &amp; a responsive website is
+                      essential. Our designs are optimized for all devices,
+                      ensuring a flawless experience on phones, tablets &amp;
+                      desktops.
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+          </div>
+        </section>
+        <section className="forth-section">
+          <div className="forth-inner">
             <h2 className="title">FEATURED WORK</h2>
             <div className="text-contanier">
               <div className="textBox">
@@ -124,7 +211,8 @@ const Home = () => {
                 <p>
                   As our client base continues to expand, we are excited to
                 showcase the diverse and innovative work we do, particularly in
-                creating cutting-edge websites and AI solutions.
+                  creating cutting-edge websites and AI solutions.
+                  Each project featured on this page represents our commitment to excellence and our passion for helping businesses thrive in the digital landscape.
                 </p>
               </div>
               <div className="btn-container">
