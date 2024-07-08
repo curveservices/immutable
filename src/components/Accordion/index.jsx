@@ -21,7 +21,7 @@ const Accordion = ({
           <p className="accordion-content">{content}</p>
           <div className="read-btn">
             <Button
-              text="READ MORE"
+              text={`more ${title}`}
               link={`services/${link}`}
               background="var(--primary)"
             />
