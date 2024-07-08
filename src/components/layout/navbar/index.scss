@@ -100,29 +100,32 @@ header {
 
       .mobile-icon {
         display: block;
-        font-size: 24px;
+        font-size: 18px;
+        animation: fadeInUp 2s 0.2s forwards;
       }
       &.mobile-show {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        gap: 4rem;
+        gap: 2rem;
         padding: 5rem;
         height: 100vh;
         animation: bounceInRight 1s;
 
         .text {
           text-align: center;
-          display: block;
-          font-size: 24px;
+          font-size: 18px;
+          align-items: center;
+          animation: fadeInUp 2s forwards;
         }
 
         .menu-container {
           display: flex;
           align-items: center;
-          width: 200px;
-          gap: 20px;
+          width: 150px;
+          gap: 40px;
+          margin-top: 1rem;
         }
       }
     }
