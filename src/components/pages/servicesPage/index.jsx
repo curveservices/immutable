@@ -45,7 +45,7 @@ const Services = () => {
             <StaticCubes />
             <div className="text-box">
               <h1 className="title">
-                We will turn your ideas into amazing solutions
+                Our Services will turn your ideas into amazing solutions
               </h1>
               <p className="fadeInUp">
                 We offer a full range of website development, AI solutions,
@@ -203,7 +203,7 @@ const Services = () => {
         <HelmetProvider>
           <Helmet>
           <title>
-            Our Services | Immutable Studio Web Development Agency
+            Services | Immutable Studio Web Development Agency
           </title>
           <meta
             name="keywords"

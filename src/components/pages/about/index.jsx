@@ -30,7 +30,7 @@ const About = () => {
             <div className="text-box">
               <div className="left-hero">
                 <h1 className="title">
-                  Who's behind Immutable studio? And what do they do?
+                  About Us, And what we do.
                 </h1>
                 <div className="btn-container">
                   <Socials

@@ -6,7 +6,7 @@ const WebDev = () => {
   return (
     <Singleservices
       title="Website Development"
-      keywords="web development, web design, business, online, custom, react, wordpress, woo-commerce, AI solutions, chatbots, workflow automation, Immutable Studio, greenwich London, London"
+      keywords="web development, web design, website design, wordpress, woo-commerce, AI solutions, chatbots, workflow automation, Immutable Studio, greenwich, London"
       HeroH1="Website Development"
       HeroP="For a competitive edge, business elevation, and broader audience
               reach, a compelling web presence is essential. We

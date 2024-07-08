@@ -60,7 +60,7 @@ const Home = () => {
               </p>
               <p>
                 We are seasoned web developers &amp; Ai specialists who excel in
-                creating professional custom websites and workflow solutions. Our
+                creating professional custom website design and workflow solutions. Our
                 team is dedicated to delivering cutting-edge technology tailored
                 to help you achieve its goals.
               </p>
@@ -84,7 +84,7 @@ const Home = () => {
             <p className={`text-box ${second ? "anim" : "none"}`}>
               Our services model operates with monthly payments covering hosting
               and maintenance, AI and automation solutions, and digital
-              marketing. Service payments are customized based on your specific
+              marketing. Service payments are customised based on your specific
               needs and usage, ensuring flexibility and scalability. We aim to
               provide comprehensive support, making it easy for your business to
               grow and adapt in the ever-evolving digital landscape.
@@ -148,7 +148,7 @@ const Home = () => {
             </title>
             <meta
               name="keywords"
-              content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, Empowering, workflows, automated, Business, London, Greenwich London"
+              content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, London, Greenwich"
             />
           </Helmet>
         </HelmetProvider>

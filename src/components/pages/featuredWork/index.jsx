@@ -92,6 +92,18 @@ const FeaturedWork = () => {
             />
           </div>
         </section>
+        <section className="clients">
+          <div className={`wireframe-container ${secondScroll ? "anim" : "none"}`}>
+            <Client
+              name=""
+              p=""
+              p2=""
+              video=""
+              link=""
+              p3=""
+            />
+          </div>
+        </section>
         <section className="featured">
           <h2>WEBSITE DEVELOPMENT PRICES</h2>
           <PriceCard name="webDev" color="#fff"/>
