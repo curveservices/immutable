@@ -130,7 +130,11 @@ const Contact = () => {
           <Helmet>
           <title>
             Contact Us | Immutable Studio: Web Development Agency
-          </title>
+            </title>
+            <meta
+              property="description"
+              content="Immutable Studio is a leading website development & website design agency. We build fast and responsive websites & create AI solutions for businesses."
+            />
         </Helmet>
         </HelmetProvider>
       </div>

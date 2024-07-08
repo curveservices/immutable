@@ -128,7 +128,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="btn-container">
-                <Button text="Our Latest Projects" link="featured-work" />
+                <Button text="Featured Work" link="featured-work" />
             </div>
             </div>
             <div className="">
@@ -146,6 +146,10 @@ const Home = () => {
             <title>
               Home | Immutable Studio Web Development Agency
             </title>
+            <meta
+              property="description"
+              content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."
+            />
             <meta
               name="keywords"
               content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, London, Greenwich"

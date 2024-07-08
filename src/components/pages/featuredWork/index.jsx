@@ -117,7 +117,11 @@ const FeaturedWork = () => {
           <Helmet>
           <title>
             Featured Work | Immutable Studio Web Development Agency
-          </title>
+            </title>
+            <meta
+              property="description"
+              content="Our featured work will help you understand what we do and who we work with. We build fast, responsive websites and create AI solutions."
+            />
           <meta
             name="keywords"
             content="featured work, website, design, web development, AI solutions, chatbots, workflow automaion, automation, digital marketing, Immutable Studio, web design, website design"

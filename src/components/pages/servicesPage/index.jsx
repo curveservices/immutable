@@ -53,7 +53,7 @@ const Services = () => {
                 pricing.
               </p>
               <div className="btn-container">
-                <Button text="start now" link="/contact" />
+                <Button text="Contact us" link="/contact" />
                 <Button
                   text="book a call"
                   link="https://calendly.com/immutable-studio/website-consultancy"
