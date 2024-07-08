@@ -10,17 +10,16 @@
   position: relative;
   display: flex;
   flex: 1 1 20%;
-  height: 400px;
+  height: 340px;
   overflow: hidden;
   max-width: calc(30% - 0px);
   box-shadow: var(--global);
+  background: #000;
 
   .card-image {
     position: absolute;
     z-index: 2;
     width: 100%;
-    height: 100%;
-    object-fit: fill;
   }
 
   .content {
@@ -31,7 +30,7 @@
     text-align: center;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.0355, 1);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 1));
-    bottom: -150px;
+    bottom: -100px;
   }
 
   .name {
@@ -104,7 +103,6 @@
 
       .content {
         position: relative;
-        bottom: -80px;
         padding: 0px;
         text-align: center;
 
@@ -129,9 +127,6 @@
           bottom: 0;
           transition: all 1s ease;
         }
-      }
-      .card-image {
-        object-fit: fill;
       }
     }
   }
