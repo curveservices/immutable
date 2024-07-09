@@ -132,7 +132,7 @@ const Contact = () => {
             Contact Us | Immutable Studio: Web Development Agency
             </title>
             <meta
-              property="description"
+              name="description"
               content="Immutable Studio is a leading website development & website design agency. We build fast and responsive websites & create AI solutions for businesses."
             />
         </Helmet>

@@ -119,6 +119,10 @@ const Home = () => {
         <section className="third-section">
           <div className="third-inner">
             <h2 className="title">WHY CHOOSE US?</h2>
+            <div className="text-contanier">
+              <p>We offer a full range of website development, AI solutions,
+                workflow automation and digital marketing services with flexible pricing.</p>
+            </div>
             <div className="element-container">
               <NavLink to="/about">
                 <div
@@ -235,7 +239,7 @@ const Home = () => {
               Home | Immutable Studio Web Development Agency
             </title>
             <meta
-              property="description"
+              name="description"
               content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."
             />
             <meta

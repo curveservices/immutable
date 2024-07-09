@@ -107,7 +107,7 @@ const FeaturedWork = () => {
             Featured Work | Immutable Studio Web Development Agency
             </title>
             <meta
-              property="description"
+              name="description"
               content="Our featured work will help you understand what we do and who we work with. We build fast, responsive websites and create AI solutions."
             />
           <meta

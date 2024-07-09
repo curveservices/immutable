@@ -86,7 +86,7 @@ const About = () => {
             About Us | Immutable Studio Web Development Agency
             </title>
             <meta
-              property="description"
+              name="description"
               content="Our team of developers, desingers and digital content creators will help your brands online presence."
             />
           <meta
