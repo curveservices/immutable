@@ -53,7 +53,7 @@ const Services = () => {
               webLink="web-development"
               aiLink="chat-bots"
               digitalLink="digital-marketing"
-              packageLink="packages"
+              packagesLink="packages"
             />
           </div>
         </section>
