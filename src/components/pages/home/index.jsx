@@ -142,7 +142,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="chat-bots">
+              <NavLink to="services/chat-bots">
                 <div
                   className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
                 >
@@ -160,7 +160,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="web-development">
+              <NavLink to="services/web-development">
                 <div
                   className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
                 >
@@ -178,7 +178,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="web-development">
+              <NavLink to="services/web-development">
                 <div
                   className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
                 >
