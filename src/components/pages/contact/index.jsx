@@ -50,14 +50,14 @@ const Contact = () => {
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
-                <li className="half">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Full Name"
-                    required
-                  />
-                </li>
+                  <li className="half">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </li>
                 <li className="half">
                   <input
                     type="email"
