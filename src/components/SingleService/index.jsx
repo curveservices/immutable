@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Audio } from "react-loader-spinner";
 
 import Button from "../button";
 import PriceCard from "../cards/fullPrice";

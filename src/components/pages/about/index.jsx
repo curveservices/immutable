@@ -1,5 +1,4 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Loader from "react-loaders";
 import { useState, useEffect } from "react";
 
 import Button from "../../button";
