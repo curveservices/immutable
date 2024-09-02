@@ -50,14 +50,14 @@ const Contact = () => {
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
-                  <li className="half">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Full Name"
-                      required
-                    />
-                  </li>
+                <li className="half">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </li>
                 <li className="half">
                   <input
                     type="email"
@@ -128,14 +128,12 @@ const Contact = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-          <title>
-            Contact Us | Immutable Studio: Web Development Agency
-            </title>
+            <title>Contact Us | Immutable Studio: Web Development Agency</title>
             <meta
               name="description"
               content="Immutable Studio is a leading website development & website design agency. We build fast and responsive websites & create AI solutions for businesses."
             />
-        </Helmet>
+          </Helmet>
         </HelmetProvider>
       </div>
     </>

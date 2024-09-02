@@ -6,14 +6,12 @@ import style from "../basicPrice/index.module.css";
 
 const PriceCard = (props) => {
   const [priceCard, setPriceCard] = useState([]);
-  const [isToggled, setIsToggled] = useState(); 
+  const [isToggled, setIsToggled] = useState();
   const labelStyle = {
-      color: props.color
-    };
+    color: props.color,
+  };
 
   const fetchData = async () => {
-    
-
     try {
       const priceData = [];
       const snapshot = await getDocs(collection(db, props.name));
@@ -46,50 +44,60 @@ const PriceCard = (props) => {
   }, [props.name]);
 
   const handleToggle = () => {
-    setIsToggled(!isToggled)
-  }
+    setIsToggled(!isToggled);
+  };
 
   return (
     <>
-   <div  className={style.toggle} style={labelStyle} >
-      <label  name="checkbox">Annually</label>
-      <div className={style.toggleButton}>
-        <input
-          type="checkbox"
-          id="checkbox"
-          className={style.checkbox} onClick={handleToggle}
-        />
-      <label htmlFor="checkbox" id="sub" className={style.sub}>
-        <div className={style.circle}></div>
-      </label>
+      <div className={style.toggle} style={labelStyle}>
+        <label name="checkbox">Annually</label>
+        <div className={style.toggleButton}>
+          <input
+            type="checkbox"
+            id="checkbox"
+            className={style.checkbox}
+            onClick={handleToggle}
+          />
+          <label htmlFor="checkbox" id="sub" className={style.sub}>
+            <div className={style.circle}></div>
+          </label>
+        </div>
+        <label htmlFor="checkbox">Monthly</label>
       </div>
-      <label htmlFor="checkbox">Monthly</label>
-    </div>
-    <div className={style.cardContainer}>
+      <div className={style.cardContainer}>
         {priceCard.map((item, index) => {
-        const cardClass = index === 1 ? `${style.priceCard} ${style.active}` : style.priceCard;
-        return (
-          <div className={cardClass} key={item.id}>
-             <ul>
-              <li className={style.priceTitle}>{item.title}</li>
-              <li className={style.price}>{isToggled ? item.month : item.price}</li>
-              <li className={style.bottomBar}>{item.li1}</li>
-              <li className={style.bottomBar}>{item.li2}</li>
-              <li className={style.bottomBar}>{item.li3}</li>
-              <li className={style.bottomBar}>{item.li4}</li>
-              <li className={style.bottomBar}>{item.li5}</li>
-              <li className={style.bottomBar}>{item.li6}</li>
-              <li className={style.bottomBar}>{item.li7}</li>
-              <li className={style.bottomBar}>{item.li8}</li>
-            </ul>
-            <div className={style.btnContainer}>
-              <Button  background="var(--primary)" link="/contact" text="Start now" />
+          const cardClass =
+            index === 1
+              ? `${style.priceCard} ${style.active}`
+              : style.priceCard;
+          return (
+            <div className={cardClass} key={item.id}>
+              <ul>
+                <li className={style.priceTitle}>{item.title}</li>
+                <li className={style.price}>
+                  {isToggled ? item.month : item.price}
+                </li>
+                <li className={style.bottomBar}>{item.li1}</li>
+                <li className={style.bottomBar}>{item.li2}</li>
+                <li className={style.bottomBar}>{item.li3}</li>
+                <li className={style.bottomBar}>{item.li4}</li>
+                <li className={style.bottomBar}>{item.li5}</li>
+                <li className={style.bottomBar}>{item.li6}</li>
+                <li className={style.bottomBar}>{item.li7}</li>
+                <li className={style.bottomBar}>{item.li8}</li>
+              </ul>
+              <div className={style.btnContainer}>
+                <Button
+                  background="var(--primary)"
+                  link="/contact"
+                  text="Start now"
+                />
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
       </div>
-      </>
+    </>
   );
 };
 

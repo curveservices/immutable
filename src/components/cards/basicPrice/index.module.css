@@ -35,13 +35,13 @@
 
 .singleSub {
   background: var(--primary);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 1.6rem;
-    width: 3.3rem;
-    border-radius: 1.6rem;
-    padding: 0.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 1.6rem;
+  width: 3.3rem;
+  border-radius: 1.6rem;
+  padding: 0.3rem;
 }
 
 .circle {
@@ -58,7 +58,7 @@
   border-radius: 50%;
 }
 
-.checkbox:checked+.sub {
+.checkbox:checked + .sub {
   justify-content: flex-end;
 }
 
@@ -143,11 +143,11 @@
     max-width: 100%;
   }
 
-    .price {
-      font-size: 2rem;
-      color: #494c5f;
-      padding: 1rem 2rem;
-    }
+  .price {
+    font-size: 2rem;
+    color: #494c5f;
+    padding: 1rem 2rem;
+  }
 
   .heroContainer {
     top: -40px;

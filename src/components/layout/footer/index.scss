@@ -36,7 +36,7 @@ footer {
   }
   .div-line {
     margin: 1rem 5rem;
-    border: 1px solid var(--third-bg)
+    border: 1px solid var(--third-bg);
   }
   .socials-container {
     display: flex;
@@ -53,31 +53,31 @@ footer {
 
 @media screen and (max-width: 800px) {
   footer {
-  width: 100%;
-  .foot-title {
-    .footer-logo {
+    width: 100%;
+    .foot-title {
+      .footer-logo {
         width: 100px;
       }
-  }
+    }
 
-  .footer-container {
-    margin: 0;
-    .site-links {
+    .footer-container {
+      margin: 0;
+      .site-links {
         font-size: 9px;
         gap: 8px;
       }
     }
-    
+
     .div-line {
       margin: 1rem 5rem;
-      border: 1px solid var(--third-bg)
+      border: 1px solid var(--third-bg);
     }
-    
+
     .socials-container {
       display: flex;
       flex-direction: column;
     }
-    
+
     .copy {
       font-size: 9px;
     }

@@ -9,7 +9,6 @@ import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
 import "./index.scss";
 
-
 const About = () => {
   const [second, setSecond] = useState(false);
 
@@ -29,9 +28,7 @@ const About = () => {
             <StaticCubes />
             <div className="text-box">
               <div className="left-hero">
-                <h1 className="title">
-                  About Us, And what we do.
-                </h1>
+                <h1 className="title">About Us, And what we do.</h1>
                 <div className="btn-container">
                   <Socials
                     fblink="https://www.facebook.com/profile.php?id=61557552873479"
@@ -81,19 +78,17 @@ const About = () => {
       </div>
       <div>
         <HelmetProvider>
-           <Helmet>
-          <title>
-            About Us | Immutable Studio Web Development Agency
-            </title>
+          <Helmet>
+            <title>About Us | Immutable Studio Web Development Agency</title>
             <meta
               name="description"
               content="Our team of developers, desingers and digital content creators will help your brands online presence."
             />
-          <meta
-            name="keywords"
-            content="About us, Immutable studio, south east London, Greenwich London, London, Founder, manager, AI Solutions, Web design, website design, website development"
-          />
-        </Helmet>
+            <meta
+              name="keywords"
+              content="About us, Immutable studio, south east London, Greenwich London, London, Founder, manager, AI Solutions, Web design, website design, website development"
+            />
+          </Helmet>
         </HelmetProvider>
       </div>
     </>

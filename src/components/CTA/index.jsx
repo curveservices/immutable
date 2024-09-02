@@ -7,8 +7,8 @@ const CallToAction = () => {
       <div className="text-container">
         <h2 className="cta-title">Ready to get started?</h2>
         <p className="cta-p">
-          Contact us to discuss your project, either a discovery call with us or
-          download our website starter kit to get started.
+          Contact us to discuss your project, book a discovery call with us or
+          complete our client discovery form to get started.
         </p>
       </div>
       <div className="btn-container">
@@ -16,9 +16,9 @@ const CallToAction = () => {
           text="book a call"
           link="https://calendly.com/immutable-studio/website-consultancy"
           target="_blank"
-          background="var(--primary)"
         />
         <Button text="contact us" link="/contact" background="var(--primary)" />
+        <Button text="Discovery Form" link="/discovery-form" />
       </div>
     </>
   );

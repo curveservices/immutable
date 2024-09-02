@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Socials from "../../socials";
-import logo from "../../../assets/images/logo-desktop.png"
+import logo from "../../../assets/images/logo-desktop.png";
 import "./index.scss";
 
 const Footer = () => {
@@ -20,11 +20,11 @@ const Footer = () => {
               <NavLink to="featured-work">Work</NavLink>
             </li>
             <li>
-               <NavLink to="/">
+              <NavLink to="/">
                 <img src={logo} alt="logo" className="footer-logo" />
               </NavLink>
             </li>
-             <li>
+            <li>
               <NavLink to="/pricing">Pricing</NavLink>
             </li>
             <li>
@@ -34,9 +34,9 @@ const Footer = () => {
               <NavLink to="contact">Contact</NavLink>
             </li>
           </ul>
-         </div>
+        </div>
       </div>
-      <hr className="div-line"/>
+      <hr className="div-line" />
       <div className="socials-container">
         <Socials
           fblink="https://www.facebook.com/profile.php?id=61557552873479"
@@ -47,9 +47,7 @@ const Footer = () => {
           <p>Copyright &copy; {year} Immutable Studio </p>
           <Link to="privacy-policy">Privacy Policy</Link>
         </div>
-        
       </div>
-     
     </footer>
   );
 };

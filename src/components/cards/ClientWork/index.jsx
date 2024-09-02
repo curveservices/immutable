@@ -56,8 +56,8 @@ const Client = (props) => {
                 </div>
                 <p>{props.p}</p>
                 <p>{props.p2}</p>
-                
-                  <Button
+
+                <Button
                   text="View Site"
                   link={props.link}
                   target="_blank"
@@ -65,17 +65,19 @@ const Client = (props) => {
                   noreferer
                 />
               </div>
-                <div className="player-wrapper">
-                  <ReactPlayer
-                    className="react-player"
-                    url={props.video}
-                    playing
-                    loop
-                  />
-                </div>
+              <div className="player-wrapper">
+                <ReactPlayer
+                  className="react-player"
+                  url={props.video}
+                  playing
+                  loop
+                />
+              </div>
             </div>
 
-            <h2 className="name" style={{ color: item.color }}>{item.name}</h2>
+            <h2 className="name" style={{ color: item.color }}>
+              {item.name}
+            </h2>
             <div className="images">
               <img className="wireframe" src={item.img1} alt="wireframe" />
               <img className="wireframe" src={item.img2} alt="wireframe" />

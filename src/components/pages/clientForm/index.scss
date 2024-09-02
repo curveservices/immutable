@@ -11,27 +11,26 @@
       right: 4%;
     }
     .title {
-        animation: fadeInLeftBig 2s forwards;
-      }
-    
+      animation: fadeInLeftBig 2s forwards;
+    }
+
     .text-box {
       padding: 0rem 2rem;
       width: 50%;
       line-height: 1.5;
-  
+
       .fadeInUp {
         margin-top: 2rem;
         animation: fadeInUp 2s forwards;
       }
-  
+
       .btn-container {
         display: flex;
         margin-top: 1rem;
         gap: 2rem;
       }
+    }
   }
- 
-}
 
   .discovery-form {
     margin-top: 5rem;

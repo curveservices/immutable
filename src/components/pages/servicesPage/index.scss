@@ -20,7 +20,8 @@
       .title {
         animation: fadeInLeftBig 2s forwards;
       }
-      .fadeInUp, .btn-container {
+      .fadeInUp,
+      .btn-container {
         animation: fadeInUp 2s forwards;
       }
 
@@ -66,7 +67,6 @@
     }
   }
 
-
   .forth-section {
     box-shadow: var(--global);
     .forth-inner {
@@ -97,8 +97,8 @@
   .fith-section {
     .fith-inner {
       background-image: url("../../../assets/images/1746747.webp");
-     box-shadow: var(--global);
-     margin-bottom: 6rem;
+      box-shadow: var(--global);
+      margin-bottom: 6rem;
       padding: 4rem;
       color: #000;
       text-align: center;

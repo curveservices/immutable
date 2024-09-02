@@ -1,4 +1,4 @@
-import React, { useEffect, useState  } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
 
@@ -11,25 +11,30 @@ import WorkCard from "../../cards/work";
 import "./index.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobileScreenButton, faScrewdriverWrench, faUserAstronaut, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMobileScreenButton,
+  faScrewdriverWrench,
+  faUserAstronaut,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
-  const [second, setSecond] = useState(false)
+  const [second, setSecond] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState(0);
   const [thirdLt, setThirdLt] = useState(false);
   const [thirdRt, setThirdRt] = useState(false);
 
   useEffect(() => {
-     const handleScroll = () => {
-       const scrollP = window.scrollY;
-       const scrollThird = window.scrollY;
-       setSecond(scrollP > 350);
-       setThirdLt(scrollThird > 800);
+    const handleScroll = () => {
+      const scrollP = window.scrollY;
+      const scrollThird = window.scrollY;
+      setSecond(scrollP > 350);
+      setThirdLt(scrollThird > 800);
       setThirdRt(scrollThird > 800);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-  
+
   const handleAccordionClick = (accordionId) => {
     setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
   };
@@ -37,52 +42,49 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="hero">
-            <div className="text-box">
-              <h1 className="main-title" >
-                Empowering your Business with
-              </h1>
+          <div className="text-box">
+            <h1 className="main-title">Empowering your Business with</h1>
             <div className="typewriter">
               <TypewriterComponent
-              options={{
-              strings: [
-                "Website Design.",
-                "Web Development.",
-                "Chat Assistants.",
-                "AI Solutions.",
-                "Workflow Automation.",
-                "Custom Built GPT's",
-                "Digital Marketing.",
-                ],
-              wrapperClassName: 'Typewriter__wrapper',
-              autoStart: true,
-              loop: true,
-            }}
-            />
+                options={{
+                  strings: [
+                    "Website Design.",
+                    "Web Development.",
+                    "Chat Assistants.",
+                    "AI Solutions.",
+                    "Workflow Automation.",
+                    "Custom Built GPT's",
+                    "Digital Marketing.",
+                  ],
+                  wrapperClassName: "Typewriter__wrapper",
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </div>
             <div className="text">
-               <p>
-                Discover how we can transform your online presence. Our custom web
-                development &amp; AI solutions, including bespoke AI chatbots,
-                and automated workflows are designed to optimise efficiency,
-                reduce costs, and enhance customer engagement.
+              <p>
+                Discover how we can transform your online presence. Our custom
+                web development &amp; AI solutions, including bespoke AI
+                chatbots, and automated workflows are designed to optimise
+                efficiency, reduce costs, and enhance customer engagement.
               </p>
               <p>
                 We are seasoned web developers &amp; Ai specialists who excel in
-                creating professional custom website design and AI workflow solutions. Our
-                team is dedicated to delivering cutting-edge technology tailored
-                to help you achieve its goals.
+                creating professional custom website design and AI workflow
+                solutions. Our team is dedicated to delivering cutting-edge
+                technology tailored to help you achieve its goals.
               </p>
-
             </div>
-             
-              <div className="btn-container">
-                <Button link="contact" text="CONTACT US" />
-                <Button
-                  link="https://calendly.com/immutable-studio/website-consultancy"
-                  text="Book a call"
-                  noreferer
-                />
-              </div>
+
+            <div className="btn-container">
+              <Button link="contact" text="CONTACT US" />
+              <Button
+                link="https://calendly.com/immutable-studio/website-consultancy"
+                text="Book a call"
+                noreferer
+              />
+            </div>
           </div>
         </section>
 
@@ -120,8 +122,11 @@ const Home = () => {
           <div className="third-inner">
             <h2 className="title">WHY CHOOSE US?</h2>
             <div className="text-contanier">
-              <p>We offer a full range of website development, AI solutions,
-                workflow automation and digital marketing services with flexible pricing.</p>
+              <p>
+                We offer a full range of website development, AI solutions,
+                workflow automation and digital marketing services with flexible
+                pricing.
+              </p>
             </div>
             <div className="element-container">
               <NavLink to="/about">
@@ -205,26 +210,28 @@ const Home = () => {
             <div className="text-contanier">
               <div className="textBox">
                 <p>
-                  Signing off on a new website is always a moment of immense pride
-                and satisfaction for us. With each project, we take great care
-                to understand our clients' unique needs and deliver tailored
-              solutions.
+                  Signing off on a new website is always a moment of immense
+                  pride and satisfaction for us. With each project, we take
+                  great care to understand our clients' unique needs and deliver
+                  tailored solutions.
                 </p>
               </div>
               <div className="textBox">
                 <p>
                   As our client base continues to expand, we are excited to
-                showcase the diverse and innovative work we do, particularly in
-                  creating cutting-edge websites and AI solutions.
-                  Each project featured on this page represents our commitment to excellence and our passion for helping businesses thrive in the digital landscape.
+                  showcase the diverse and innovative work we do, particularly
+                  in creating cutting-edge websites and AI solutions. Each
+                  project featured on this page represents our commitment to
+                  excellence and our passion for helping businesses thrive in
+                  the digital landscape.
                 </p>
               </div>
               <div className="btn-container">
                 <Button text="Featured Work" link="featured-work" />
-            </div>
+              </div>
             </div>
             <div className="">
-              <WorkCard /> 
+              <WorkCard />
             </div>
           </div>
         </section>
@@ -235,9 +242,7 @@ const Home = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>
-              Home | Immutable Studio Web Development Agency
-            </title>
+            <title>Home | Immutable Studio Web Development Agency</title>
             <meta
               name="description"
               content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."

@@ -13,7 +13,6 @@ import Links from "../../links";
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [second, setSecond] = useState(false);
-  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,7 +93,7 @@ const Services = () => {
             </div>
             <h2 className="price-title">Our Starting Prices</h2>
             <div className={`${isScrolled ? "contentAnim" : "none"}`}>
-              <PriceCard name="pricing" color="#fff"/>
+              <PriceCard name="pricing" color="#fff" />
             </div>
           </div>
         </section>
@@ -111,14 +110,12 @@ const Services = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-          <title>
-            Services | Immutable Studio Web Development Agency
-          </title>
-          <meta
-            name="keywords"
-            content="solutions, Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
-          />
-        </Helmet>
+            <title>Services | Immutable Studio Web Development Agency</title>
+            <meta
+              name="keywords"
+              content="solutions, Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
+            />
+          </Helmet>
         </HelmetProvider>
       </div>
     </>

@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className="text">WORK</div>
           </div>
         </NavLink>
-         <NavLink
+        <NavLink
           to="pricing"
           title="Pricing"
           className="services-link"

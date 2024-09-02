@@ -320,10 +320,10 @@ const PrivacyPolicy = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-          <title>
-            Privacy Policy - Immutable Studio Web Development Agency
-          </title>
-        </Helmet>
+            <title>
+              Privacy Policy - Immutable Studio Web Development Agency
+            </title>
+          </Helmet>
         </HelmetProvider>
       </div>
     </>

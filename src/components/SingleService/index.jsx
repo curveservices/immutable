@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Audio } from 'react-loader-spinner'
+import { Audio } from "react-loader-spinner";
 
 import Button from "../button";
 import PriceCard from "../cards/fullPrice";
@@ -64,7 +64,7 @@ const Singleservices = (props) => {
               <p>{props.thirdP}</p>
             </div>
             <div className={`${isScrolled ? style.contentAnim : style.none}`}>
-              <PriceCard name={props.name} color="#fff"/>
+              <PriceCard name={props.name} color="#fff" />
             </div>
           </div>
         </section>
@@ -75,11 +75,11 @@ const Singleservices = (props) => {
       <div>
         <HelmetProvider>
           <Helmet>
-          <title>
-            {props.title} | Immutable Studio Web Development Agency
-          </title>
-          <meta name="keywords" content={props.keywords} />
-        </Helmet>
+            <title>
+              {props.title} | Immutable Studio Web Development Agency
+            </title>
+            <meta name="keywords" content={props.keywords} />
+          </Helmet>
         </HelmetProvider>
       </div>
     </>

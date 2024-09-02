@@ -120,10 +120,9 @@ const ClientDiscoveryForm = () => {
 
   return (
     <div className="client-discovery-form">
-    
       <section className="hero">
-          <StaticCubes/>
-          <div className="text-box">
+        <StaticCubes />
+        <div className="text-box">
           <h1 className="title">Client Discovery Form</h1>
           <p className="fadeInUp">
             This is the ultimate worksheet to help you collect all the
