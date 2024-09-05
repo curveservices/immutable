@@ -51,9 +51,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   footer {
-    width: 100%;
     .foot-title {
       .footer-logo {
         width: 100px;
@@ -63,13 +62,13 @@ footer {
     .footer-container {
       margin: 0;
       .site-links {
-        font-size: 9px;
-        gap: 8px;
+        font-size: 8px;
+        gap: 5px;
       }
     }
 
     .div-line {
-      margin: 1rem 5rem;
+      margin: 0.5rem 1rem;
       border: 1px solid var(--third-bg);
     }
 
@@ -79,7 +78,7 @@ footer {
     }
 
     .copy {
-      font-size: 9px;
+      font-size: 8px;
     }
   }
 }

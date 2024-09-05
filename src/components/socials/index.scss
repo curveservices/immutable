@@ -23,10 +23,10 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .iconList {
     top: 0;
-    padding: 0;
+    padding: 0.5rem;
     justify-content: center;
     gap: 20px;
   }

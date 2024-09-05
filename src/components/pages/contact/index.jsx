@@ -37,7 +37,7 @@ const Contact = () => {
     <>
       <div className="contact-page">
         <section className="text-box">
-          <h1>Contact Us</h1>
+          <h1 className="main-title">Contact Us</h1>
           <p>
             Ready to get your project started? wheather it's a large project,
             personal portfolio, landing page or AI solutions, We are able to

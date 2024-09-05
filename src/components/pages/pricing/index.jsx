@@ -1,10 +1,10 @@
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider, Helmet } from "react-helmet-async";
+
 import CallToAction from "../../CTA";
 import Button from "../../button";
 import PriceCard from "../../cards/fullPrice";
 import Links from "../../links";
 import "./index.scss";
-import { Helmet } from "react-helmet";
 
 const Pricing = () => {
   return (

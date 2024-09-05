@@ -27,17 +27,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-oxs-font-smoothing: grayscale;
 }
-
-.loader-active {
-  position: absolute;
-  display: block;
-  z-index: 99999;
-  top: 12%;
-  right: 0;
-  left: 0;
-  margin: auto;
-  bottom: 0;
-  width: 50px;
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
-}

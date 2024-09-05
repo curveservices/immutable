@@ -1,6 +1,6 @@
 .policy-page {
-  margin: 4rem 0 15rem;
-  padding: 6rem 8rem;
+  margin: 4rem 1rem;
+  padding: 4rem 2rem;
   h1,
   p,
   h2 {
@@ -20,7 +20,31 @@
     color: rgb(250, 147, 147);
     text-decoration: underline;
   }
-  .end {
-    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .policy-page {
+    margin: 4rem 1rem 0;
+    padding: 2rem 1rem;
+    .text-box {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+
+      li {
+        list-style: circle;
+        font-size: 20px;
+      }
+    }
+
+    a {
+      color: rgb(250, 147, 147);
+      text-decoration: underline;
+    }
   }
 }

@@ -31,9 +31,11 @@ const Services = () => {
           <div className="hero-inner">
             <StaticCubes />
             <div className="text-box">
-              <h1 className="title">
-                Our Services will turn your ideas into amazing solutions
-              </h1>
+              <h1 className="title">Our Services</h1>
+              <p className="fadeInUp">
+                The services we provide will turn your ideas into amazing
+                solutions
+              </p>
               <p className="fadeInUp">
                 We offer a full range of website development, AI solutions,
                 workflow automation and digital marketing services with flexible

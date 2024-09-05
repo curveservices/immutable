@@ -26,37 +26,33 @@ const About = () => {
           <div className="inner-hero">
             <StaticCubes />
             <div className="text-box">
-              <div className="left-hero">
-                <h1 className="title">About Us, And what we do.</h1>
-                <div className="btn-container">
-                  <Socials
-                    fblink="https://www.facebook.com/profile.php?id=61557552873479"
-                    lilink="https://www.linkedin.com/company/21439623"
-                    xlink="https://twitter.com/immutable_LDN"
-                  />
-                  <Button link="contact" text="Hire us" />
-                  <Button
-                    link="https://calendly.com/immutable-studio/website-consultancy"
-                    noreferer
-                    text="Book a call"
-                    target="_blank"
-                  />
-                </div>
+              <h1 className="title">About Us</h1>
+              <p className="fadeInUp">
+                We are a proud south east London design studio specialising in
+                web development, AI solutions &amp; social media marketing. We
+                apply all of our skills to your challenges and ideas.
+              </p>
+              <p className="fadeInUp">
+                Created in 2022, we have been delivering amazing websites and AI
+                solutions ever since. Our Digital team deliver social media
+                marketing and strategies. We are passionate about tech, AI and
+                problem solving
+              </p>
+              <div className="social-container">
+                <Socials
+                  fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                  lilink="https://www.linkedin.com/company/21439623"
+                  xlink="https://twitter.com/immutable_LDN"
+                />
               </div>
-
-              <div className="right-hero">
-                <p>
-                  We are a proud south east London design studio specialising in
-                  web development, AI solutions &amp; social media marketing. We
-                  apply all of our skills to your challenges and ideas.
-                </p>
-                <p>
-                  Created in 2022, we have been delivering amazing websites and
-                  AI solutions ever since. Our Digital team deliver social media
-                  marketing and strategies. We are passionate about tech, AI and
-                  problem solving
-                </p>
-                <p></p>
+              <div className="btn-container">
+                <Button link="contact" text="Contact us" />
+                <Button
+                  link="https://calendly.com/immutable-studio/website-consultancy"
+                  noreferer
+                  text="Book a call"
+                  target="_blank"
+                />
               </div>
             </div>
           </div>

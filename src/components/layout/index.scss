@@ -19,6 +19,8 @@
   .pricing-page,
   .policy-page,
   .client-discovery-form {
+    padding: 4rem 0rem;
+    margin: 3rem 0rem;
     opacity: 0;
     animation: fadeIn 1s 0.5s forwards;
     h1 {
@@ -46,10 +48,6 @@
       animation: fadeIn 4s forwards;
     }
   }
-  .cta {
-    margin: 2rem 0;
-    padding: 2rem;
-  }
 }
 .back-to-top {
   position: fixed;
@@ -74,16 +72,18 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media (max-width: 768px) {
   .app {
     background-image: none;
     .home-page,
     .about-page,
     .serivces-page,
+    .contact-page,
     .single-service,
     .featured-work,
     .pricing-page,
-    .policy-page {
+    .policy-page,
+    .client-discovery-form {
       overflow: hidden;
 
       h1 {

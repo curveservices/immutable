@@ -3,10 +3,10 @@
   justify-content: space-between;
 
   .text-box {
-    width: 50%;
+    width: 60%;
     color: #fff;
     margin-top: 2rem;
-    padding: 5rem 3rem;
+    padding: 0rem 6rem;
     animation: fadeInLeft 2s forwards;
   }
   .call-button {
@@ -119,7 +119,7 @@
   background: rgba(9, 252, 216, 0.2);
   float: right;
   width: 49%;
-  margin-top: 5rem;
+  margin-top: -0.5rem;
   animation: backInRight 1s 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -128,25 +128,31 @@
 .leaflet-container {
   overflow: scroll;
   width: 100%;
-  height: 100%;
+  height: 109%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .contact-page {
     flex-direction: column;
     margin: 0rem;
 
     .text-box {
-      margin-top: 6rem;
-      margin-bottom: 4rem;
+      margin: 0 0 4rem;
       width: 100%;
-      padding: 2rem;
+      padding: 0 2rem;
     }
 
     .info-map {
-      display: none;
+      top: 50rem;
+      right: 30px;
+      font-size: 14px;
+
+      span {
+        font-size: 12px;
+      }
     }
   }
+
   .map-wrap {
     float: none;
     width: 100%;

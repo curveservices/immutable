@@ -79,10 +79,7 @@ const Home = () => {
 
             <div className="btn-container">
               <Button link="contact" text="CONTACT US" />
-               <Button
-                link="discovery-form"
-                text="discovery form"
-              />
+              <Button link="discovery-form" text="discovery form" />
               <Button
                 link="https://calendly.com/immutable-studio/website-consultancy"
                 text="Book a call"

@@ -66,16 +66,16 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .accordion {
     flex-flow: column nowrap;
     gap: 4rem;
 
     .accordion-item {
-      width: 100%;
+      width: 20rem;
       height: 10px;
       margin: 0rem;
-      padding: 0rem 1.5rem;
+      padding: 0rem;
     }
 
     .content-container {
@@ -85,7 +85,7 @@
       font-size: 11px;
       width: 100%;
       text-align: center;
-      animation: fadeIn 2s;
+      animation: fadeIn 2s forwards;
 
       .accordion-subtitle {
         margin-bottom: 0rem;

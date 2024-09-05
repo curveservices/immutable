@@ -2,18 +2,19 @@
   .hero {
     .inner-hero {
       display: flex;
-      align-items: center;
-      gap: 50px;
-      margin: 4rem 0rem;
-      padding: 2rem 4rem;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+      padding: 1rem 4rem 3rem;
       color: #fff;
 
       .text-box {
         width: 60%;
-        margin: 2rem 0rem;
+        margin: 2rem 1rem;
+
         .title {
           animation: fadeInLeft 2s forwards;
         }
+
         .fadeInUp,
         .button-container {
           animation: fadeInUp 2s forwards;
@@ -21,8 +22,8 @@
 
         .button-container {
           display: flex;
-          padding: 2rem 0;
-          gap: 50px;
+          margin-top: 3rem;
+          gap: 1rem;
         }
       }
     }
@@ -53,19 +54,18 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .pricing-page {
     .hero {
       .inner-hero {
         flex-direction: column;
-        gap: 0px;
-        margin: 4rem 0rem 0rem;
-        padding: 2rem;
+        padding: 0rem 2rem;
 
         .text-box {
           width: 100%;
+          margin: 0;
+
           .button-container {
-            padding: 0;
             gap: 20px;
           }
         }
