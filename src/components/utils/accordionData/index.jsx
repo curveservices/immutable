@@ -3,7 +3,7 @@ export const accordionData = [
     id: 0,
     link: "web-development",
     title: "WEB DEVELOPMENT",
-    subtitle: "JavaScript - Node.js - React - WordPress - SquareSpace",
+    subtitle: " WordPress - WooCommerce - NodeJs - NextJs - React",
     content:
       "We specialise in designing custom built websites, offering solutions ranging from landing pages to multi-page sites. We also develop on platforms such as WordPress, Squarespace, and WebFlow.",
   },
@@ -19,7 +19,7 @@ export const accordionData = [
     id: 2,
     link: "chat-bots",
     title: "AI SOLUTIONS",
-    subtitle: "VoiceFlow - Botpress - OpenAI- Zapier",
+    subtitle: "VoiceFlow - Botpress - OpenAI - Anthropic",
     content:
       "If you are looking for AI solutions for your business we can help alleviate your pain points with multiple solutions. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
   },

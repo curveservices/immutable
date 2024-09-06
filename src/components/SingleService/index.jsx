@@ -38,7 +38,6 @@ const Singleservices = (props) => {
                 />
               </div>
             </div>
-
             <img src={props.src} alt="gif" className={style.gif} />
           </div>
         </section>

@@ -3,7 +3,7 @@
 /* Hero section */
 .innerHero {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0rem;
   padding-left: 6rem;
   color: #fff;
@@ -19,8 +19,8 @@
 }
 
 .gif {
-  width: 800px;
-  animation: fadeIn 4s;
+  width: 600px;
+  animation: fadeIn 4s forwards;
 }
 
 /* Second section */

@@ -16,8 +16,9 @@ button {
   cursor: pointer;
 
   &:hover {
-    transform: translateY(-4px);
+    transform: scale(0.9);
     background: var(--primary);
+    transition: 0.2s ease-in-out;
   }
 }
 

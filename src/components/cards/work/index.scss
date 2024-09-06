@@ -14,7 +14,8 @@
   overflow: hidden;
   max-width: calc(30% - 0px);
   box-shadow: var(--global);
-  background: #000;
+  background: var(--primary);
+  border-radius: 10px;
 
   .card-image {
     position: absolute;
@@ -29,7 +30,7 @@
     padding: 1rem;
     text-align: center;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.0355, 1);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 1));
+    background: var(--primary);
     bottom: -100px;
   }
 
