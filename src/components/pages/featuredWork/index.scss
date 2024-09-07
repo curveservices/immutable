@@ -10,21 +10,9 @@
       .text-box {
         width: 70%;
         margin: 2rem 0rem;
-        .title {
-          animation: fadeInLeft 2s forwards;
-        }
-        .fadeInUp,
-        .button-container {
-          animation: fadeInUp 2s forwards;
-        }
-
-        .button-container {
-          display: flex;
-          margin-top: 3rem;
-          gap: 1rem;
-        }
       }
     }
+    
     .spinner {
       position: relative;
       right: 25%;

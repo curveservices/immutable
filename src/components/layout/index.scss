@@ -41,6 +41,18 @@
       font-weight: 600;
       margin: 0;
       padding: 1rem 0;
+      animation: fadeInUp 2s forwards;
+    }
+
+    .title {
+      animation: fadeInLeft 2s forwards;
+    }
+
+    .btn-container {
+      display: flex;
+      margin-top: 3rem;
+      gap: 1rem;
+      animation: fadeInUp 2s forwards;
     }
 
     .stage-cube-cont,

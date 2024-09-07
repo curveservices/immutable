@@ -31,13 +31,13 @@ const FeaturedWork = () => {
           <div className="inner-hero">
             <div className="text-box">
               <h1 className="title">Featured Work</h1>
-              <p className="fadeInUp">
+              <p>
                 Signing off on a new website is always a moment of immense pride
                 and satisfaction for us. With each project, we take great care
                 to understand our clients' unique needs and deliver tailored
                 solutions.
               </p>
-              <p className="fadeInUp">
+              <p>
                 As our client base continues to expand, we are excited to
                 showcase the diverse and innovative work we do, particularly in
                 creating cutting-edge websites and AI solutions. Each project
@@ -45,7 +45,7 @@ const FeaturedWork = () => {
                 and our passion for helping businesses thrive in the digital
                 age.
               </p>
-              <div className="button-container">
+              <div className="btn-container">
                 <Button
                   text="Book a Call"
                   link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"

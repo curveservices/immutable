@@ -27,12 +27,12 @@ const About = () => {
             <StaticCubes />
             <div className="text-box">
               <h1 className="title">About Us</h1>
-              <p className="fadeInUp">
+              <p>
                 We are a proud south east London design studio specialising in
                 web development, AI solutions &amp; social media marketing. We
                 apply all of our skills to your challenges and ideas.
               </p>
-              <p className="fadeInUp">
+              <p>
                 Created in 2022, we have been delivering amazing websites and AI
                 solutions ever since. Our Digital team deliver social media
                 marketing and strategies. We are passionate about tech, AI and

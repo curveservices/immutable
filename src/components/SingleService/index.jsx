@@ -26,7 +26,7 @@ const Singleservices = (props) => {
         <section className={style.hero}>
           <div className={style.innerHero}>
             <div className={style.textBox}>
-              <h1>{props.HeroH1}</h1>
+              <h1 class={style.title}>{props.HeroH1}</h1>
               <p>{props.HeroP}</p>
               <p>{props.HeroH2}</p>
               <div className={style.btnContainer}>

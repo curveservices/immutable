@@ -10,12 +10,17 @@
 }
 .textBox {
   padding: 2rem 0rem;
+}
+
+.title {
   animation: fadeInLeft 2s forwards;
 }
+
 .btnContainer {
   display: flex;
   margin-top: 2rem;
   gap: 1rem;
+  animation: fadeInUp 2s forwards;
 }
 
 .gif {

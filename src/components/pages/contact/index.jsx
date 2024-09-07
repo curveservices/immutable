@@ -37,13 +37,13 @@ const Contact = () => {
     <>
       <div className="contact-page">
         <section className="text-box">
-          <h1 className="main-title">Contact Us</h1>
-          <p>
+          <h1 className="title">Contact Us</h1>
+          <p className="fadeInUp">
             Ready to get your project started? wheather it's a large project,
             personal portfolio, landing page or AI solutions, We are able to
             help.
           </p>
-          <p>
+          <p className="fadeInUp">
             However, don't hesitate to contact us with other requests or
             questions using the form below.
           </p>

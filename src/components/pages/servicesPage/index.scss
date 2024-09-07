@@ -17,18 +17,8 @@
       padding: 0rem 2rem;
       width: 50%;
       line-height: 1.5;
-      .title {
-        animation: fadeInLeftBig 2s forwards;
-      }
-      .fadeInUp,
-      .btn-container {
-        animation: fadeInUp 2s forwards;
-      }
-
-      p {
-        padding-top: 1rem;
-      }
     }
+    
     .btn-container {
       display: flex;
       margin-top: 3rem;
