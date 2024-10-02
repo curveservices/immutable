@@ -15,6 +15,7 @@ const Button = (props) => {
       to={props.link}
       type={props.type}
       target={props.target}
+      aria-label={`Link to ${props.text}`}
     >
       <button style={buttonStyle}>{props.text}</button>
     </Link>

@@ -23,7 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 500);
+      setIsScrolled(scrollY > 75);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,17 +31,18 @@ const Navbar = () => {
 
   return (
     <header className={isScrolled ? "navbar-scroll" : ""}>
-      <NavLink to="/">
+      <NavLink to="/" aria-label="home page">
         <div className="title-container">
           <img src={logo} alt="Immutable studio logo" className="logo" />
         </div>
       </NavLink>
-      <Breadcrumbs />
+      {/* <Breadcrumbs /> */}
       <nav className={showNav ? "mobile-show" : ""}>
         <NavLink
           to="/"
           className="home-link"
           title="Home page"
+          aria-label="home page"
           activeclassname="active"
           exact="true"
           onClick={() => setShowNav(false)}
@@ -54,6 +55,7 @@ const Navbar = () => {
         <NavLink
           to="services"
           title="Our Services"
+          aria-label="Link to our services"
           className="services-link"
           activeclassname="active"
           exact="true"
@@ -67,6 +69,7 @@ const Navbar = () => {
         <NavLink
           to="featured-work"
           title="Featured Work"
+          aria-label="Link to featured work"
           className="services-link"
           activeclassname="active"
           exact="true"
@@ -80,6 +83,7 @@ const Navbar = () => {
         <NavLink
           to="pricing"
           title="Pricing"
+          aria-label="Link to pricing"
           className="services-link"
           activeclassname="active"
           exact="true"
@@ -93,6 +97,7 @@ const Navbar = () => {
         <NavLink
           to="about"
           title="About Us"
+          aria-label="Link to about us page"
           className="about-link"
           activeclassname="active"
           exact="true"
@@ -106,6 +111,7 @@ const Navbar = () => {
         <NavLink
           to="contact"
           title="Contact Us"
+          aria-label="Link to contact us page"
           className="contact-link"
           activeclassname="active"
           exact="true"

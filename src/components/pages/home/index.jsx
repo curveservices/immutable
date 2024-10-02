@@ -17,6 +17,9 @@ import {
   faUserAstronaut,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
+import vid from "../../../assets/images/greenwich.mp4"
+import vidwebm from "../../../assets/images/greenwich.webm"
+import fallback from "../../../assets/images/greenwich.png"
 
 const Home = () => {
   const [second, setSecond] = useState(false);
@@ -42,6 +45,11 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="hero">
+          <video className="video" src={vid} autoPlay loop aria-label="greenwich college">
+            <source src={vid} type="video/mp4" />
+            <source src={vidwebm} type="video/webm" />
+            <img src={fallback} alt="Fallback image" />
+          </video>
           <div className="text-box">
             <h1 className="main-title">Empowering your Business with</h1>
             <div className="typewriter">
@@ -50,15 +58,15 @@ const Home = () => {
                   strings: [
                     "Website Design.",
                     "Web Development.",
+                    "Maintenance & Hosting",
                     "Chat Assistants.",
                     "AI Solutions.",
-                    "Workflow Automation.",
-                    "Custom Built GPT's",
-                    "Digital Marketing.",
                   ],
                   wrapperClassName: "Typewriter__wrapper",
                   autoStart: true,
                   loop: true,
+                  delay: 75,
+                  deleteSpeed: 40, 
                 }}
               />
             </div>
@@ -66,25 +74,18 @@ const Home = () => {
               <p>
                 Discover how we can transform your online presence. Our custom
                 web development &amp; AI solutions, including bespoke AI
-                chatbots, and automated workflows are designed to optimise
-                efficiency, reduce costs, and enhance customer engagement.
+                chatbots are designed to optimise efficiency, reduce costs, and enhance customer engagement.
               </p>
               <p>
-                We are seasoned web developers &amp; Ai specialists who excel in
-                creating professional custom website design and AI workflow
+                We are seasoned web developers &amp; Ai specialists
+                creating professional custom websites and AI workflow
                 solutions. Our team is dedicated to delivering cutting-edge
                 technology tailored to help you achieve its goals.
               </p>
-            </div>
-
-            <div className="btn-container">
+              <div className="btn-container">
               <Button link="contact" text="CONTACT US" />
               <Button link="discovery-form" text="discovery form" />
-              <Button
-                link="https://calendly.com/immutable-studio/website-consultancy"
-                text="Book a call"
-                noreferer
-              />
+            </div>
             </div>
           </div>
         </section>
@@ -92,7 +93,7 @@ const Home = () => {
         <section className="second-section">
           <div className="second-inner">
             <h2 className="title">SERVICES</h2>
-            <p className={`text-box ${second ? "anim" : "none"}`}>
+            <p className={`text-box ${second ? "" : "none"}`}>
               Our services model operates with monthly payments covering hosting
               and maintenance, AI and automation solutions, and digital
               marketing. Service payments are customised based on your specific
@@ -130,7 +131,7 @@ const Home = () => {
               </p>
             </div>
             <div className="element-container">
-              <NavLink to="/about">
+              <NavLink to="/about" aria-label="link to about page">
                 <div
                   className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
                 >
@@ -148,7 +149,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="services/chat-bots">
+              <NavLink to="services/chat-bots" aria-label="link to chat bots page">
                 <div
                   className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
                 >
@@ -166,7 +167,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="services/web-development">
+              <NavLink to="services/web-development" aria-label="link to web development page">
                 <div
                   className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
                 >
@@ -184,7 +185,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="services/web-development">
+              <NavLink to="services/web-development" aria-label="link to web development page">
                 <div
                   className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
                 >
@@ -229,6 +230,7 @@ const Home = () => {
               </div>
               <div className="btn-container">
                 <Button text="Featured Work" link="featured-work" />
+                <Button text="Discovery Form" link="discovery-form"/>
               </div>
             </div>
             <div className="">

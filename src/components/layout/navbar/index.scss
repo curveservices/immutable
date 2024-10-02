@@ -9,14 +9,12 @@ header {
   padding: 0rem 1rem;
   color: #fff;
   font-family: "Coolvetica";
-  background: var(--primary);
+  // background: var(--primary);
   transition: all 1s;
-  opacity: 0.95;
   cursor: pointer;
 
   .logo {
     width: 250px;
-    height: auto;
     padding: 0rem;
     margin-top: 15px;
   }
@@ -25,7 +23,6 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
-    padding: 15px 0px;
 
     a {
       text-align: center;
@@ -77,7 +74,7 @@ header {
 
       .mobile-icon {
         display: block;
-        animation: fadeInUp 2s 0.2s forwards;
+        animation: fadeInUp 1s forwards;
       }
       &.mobile-show {
         display: flex;

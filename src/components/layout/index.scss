@@ -6,8 +6,8 @@
   font-display: swap;
   background-image: url("../../assets/images/blue.webp");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment:fixed;
+  background-position:center;
   background-size: cover;
 
   .home-page,
@@ -19,10 +19,8 @@
   .pricing-page,
   .policy-page,
   .client-discovery-form {
-    padding: 4rem 0rem;
-    margin: 3rem 0rem;
-    opacity: 0;
-    animation: fadeIn 1s 0.5s forwards;
+    padding: 7rem 0rem;
+    animation: fadeIn 1s forwards;
     h1 {
       font-size: 48px;
       font-weight: normal;
@@ -35,12 +33,12 @@
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       font-family: sans-serif;
       min-width: fit-content;
       font-weight: 600;
       margin: 0;
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       animation: fadeInUp 2s forwards;
     }
 
@@ -50,7 +48,7 @@
 
     .btn-container {
       display: flex;
-      margin-top: 3rem;
+      margin-top: 1rem;
       gap: 1rem;
       animation: fadeInUp 2s forwards;
     }
@@ -97,7 +95,8 @@
     .policy-page,
     .client-discovery-form {
       overflow: hidden;
-
+      margin: 0;
+      padding-bottom: 0;
       h1 {
         font-size: 24px;
       }
@@ -106,6 +105,9 @@
       }
       p {
         font-size: 14px;
+      }
+      .btn-container {
+        margin: 0 0 1.5rem;
       }
     }
   }

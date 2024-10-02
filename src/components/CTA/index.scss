@@ -4,7 +4,7 @@
   align-items: center;
   background-image: url("../../assets/images/1746747.webp");
   padding: 2rem 1rem;
-
+  margin-top: 1rem;
   .text-container {
     width: 50%;
 
@@ -31,24 +31,20 @@
 
 @media screen and (max-width: 768px) {
   .cta {
+    flex-direction: column;
     gap: 2rem;
     .text-container {
       width: 100%;
-
       .cta-title {
-        padding: 1rem 0;
+        padding: 1rem;
         font-size: 1.5rem;
       }
 
       .cta-p {
         margin: 0rem;
-        padding: 0;
+        padding: 1rem;
         font-size: 14px;
       }
-    }
-
-    .btn-container {
-      flex-direction: column;
     }
   }
 }

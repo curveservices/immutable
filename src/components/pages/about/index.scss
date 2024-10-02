@@ -1,29 +1,46 @@
 .about-page {
-  .inner-hero {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-    padding: 0rem 6rem;
-    color: #fff;
+  .hero {
+    display: grid;
+      & > * {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .video {
+        margin-top: -7rem;
+        width: 100%;
+        min-width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        opacity: 0.5;
+        object-fit: cover;
+      }
+    .inner-hero {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6.5rem;
+      padding: 0rem 6rem;
+      color: #fff;
 
-    .cube-container {
-      width: 120px;
-      top: 50%;
-      right: 5%;
-    }
-
-    .text-box {
-      width: 70%;
-      margin: 2rem 0;
-
-      .title {
-        animation: fadeInLeft 2s forwards;
+      .cube-container {
+        width: 120px;
+        top: 50%;
+        right: 5%;
+        opacity: 0.5;
       }
 
-      .social-container {
-        display: flex;
-        padding-top: 1rem;
+      .text-box {
+        width: 70%;
+        margin: 2rem 0;
+
+        .title {
+          animation: fadeInLeft 2s forwards;
+        }
+
+        .social-container {
+          display: flex;
+          padding-top: 1rem;
+        }
       }
     }
   }
@@ -33,7 +50,7 @@
   .second-inner {
     background-image: url("../../../assets//images//1746747.webp");
     background-repeat: no-repeat;
-    margin: 2rem 0rem 4rem;
+    margin: 0rem 0rem 4rem;
     padding: 2rem 4rem;
 
     .title {
@@ -58,6 +75,7 @@
         padding: 0rem 2rem;
 
         .cube-container {
+          display: none;
           width: 70px;
           top: 35%;
           left: 65%;
@@ -75,6 +93,7 @@
           }
 
           .btn-container {
+            margin-top: 5rem;
             gap: 20px;
           }
         }

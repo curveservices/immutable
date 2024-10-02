@@ -6,6 +6,7 @@ import Socials from "../../socials";
 import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
+import vid from "../../../assets/images/about.mp4"
 import "./index.scss";
 
 const About = () => {
@@ -23,8 +24,9 @@ const About = () => {
     <>
       <div className="about-page">
         <section className="hero">
-          <div className="inner-hero">
-            <StaticCubes />
+           <video className="video" src={vid} autoPlay loop aria-label="a video of the Royal Greenwich college"></video>
+            <div className="inner-hero">
+            <StaticCubes/>
             <div className="text-box">
               <h1 className="title">About Us</h1>
               <p>
@@ -46,7 +48,7 @@ const About = () => {
                 />
               </div>
               <div className="btn-container">
-                <Button link="contact" text="Contact us" />
+                <Button link="/contact" text="Contact us" />
                 <Button
                   link="https://calendly.com/immutable-studio/website-consultancy"
                   noreferer

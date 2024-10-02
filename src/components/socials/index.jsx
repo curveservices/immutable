@@ -35,12 +35,12 @@ const Socials = (props) => {
         </li>
         <li className="icons">
           <Link
-            to={props.xlink}
+            to={props.instalink}
             target="_blank"
-            alt="X formally twitter"
-            aria-label="follow us on x"
+            alt="Instagram"
+            aria-label="follow instagram"
           >
-            <FontAwesomeIcon icon={faInstagram} alt="X formally twitter" />
+            <FontAwesomeIcon icon={faInstagram} alt="Instagram Link" />
           </Link>
         </li>
         <li className="icons">

@@ -1,8 +1,20 @@
 .home-page {
   .hero {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     color: #fff;
+    & > * {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .video {
+      margin-top: -7rem;
+      width: 100%;
+      min-width: 100vw; 
+      height: auto; 
+      min-height: 100vh; 
+      opacity: 0.4;
+      object-fit: cover;
+    }
 
     .main-title {
       font-size: 60px;
@@ -11,13 +23,13 @@
     }
 
     .text-box {
-      margin: 1rem 6rem;
+      margin: 0rem 5rem;
       animation: fadeIn 2s forwards;
     }
 
     .typewriter {
-      margin-bottom: 3rem;
-      font-size: 60px;
+      margin-bottom: 1rem;
+      font-size: 52px;
       text-align: center;
       background: linear-gradient(to right, #fff, #a76c2b);
       background-clip: text;
@@ -26,6 +38,7 @@
 
     .text {
       text-align: center;
+      padding: 1rem 3rem;
       p {
         font-size: 20px;
       }
@@ -42,8 +55,8 @@
       background-image: url("../../../assets/images/1746747.webp");
       background-repeat: no-repeat;
       background-size: cover;
-
       box-shadow: var(--global);
+      margin: 0;
       padding-bottom: 15rem;
 
       .title {
@@ -202,6 +215,9 @@
   .home-page {
     .hero {
       flex-direction: column;
+      .video {
+        top: 5rem;
+        }
 
       .main-title {
         font-size: 30px;
@@ -218,14 +234,13 @@
         p {
           font-size: initial;
           text-align: initial;
-          padding: 1rem;
+          padding: 1.5rem 1rem;
         }
       }
 
       .btn-container {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
       }
     }
 
@@ -246,6 +261,7 @@
         }
         .accordion {
           margin-top: 1rem;
+          align-items: center;
 
           .content-container {
             margin-top: 8rem;

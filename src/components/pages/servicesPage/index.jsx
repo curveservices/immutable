@@ -9,6 +9,7 @@ import img1 from "../../../assets/images/servicesImg.jpeg";
 import "./index.scss";
 import Card from "../../cards/work";
 import Links from "../../links";
+import vid from "../../../assets/images/london.mp4";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,6 +29,7 @@ const Services = () => {
     <>
       <div className="serivces-page">
         <section className="hero">
+          <video className="video" src={vid} autoPlay loop aria-placeholder="greenwich college"></video>
           <div className="hero-inner">
             <StaticCubes />
             <div className="text-box">
