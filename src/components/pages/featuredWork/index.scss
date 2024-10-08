@@ -1,27 +1,41 @@
 .featured-work {
   .hero {
-    display: flex;
+    display: grid;
+    
+      &>* {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    
+      .video {
+        margin-top: -7rem;
+        width: 100%;
+        min-width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        opacity: 0.5;
+        object-fit: cover;
+      }
+
     .inner-hero {
       gap: 50px;
-      margin-bottom: 5rem;
       padding: 0rem 6rem;
       color: #fff;
 
       .text-box {
-        width: 70%;
+        width: 50%;
         margin: 2rem 0rem;
       }
     }
     
     .spinner {
-      position: relative;
-      right: 25%;
+      margin-left: 40rem;
     }
   }
 
   .clients {
     background-image: url("../../../assets//images/1746747.webp");
-    margin: 0rem 0 4rem;
+    margin: 0rem 0rem 5rem;
     padding: 2rem 4rem;
     box-shadow: var(--global);
   }
@@ -62,13 +76,13 @@
         }
       }
       .spinner {
-        right: 0;
-        align-self: center;
+        margin-left: 2rem;
+        margin-top: 25rem;
+        margin-bottom: 0;
       }
     }
 
     .clients {
-      margin: 0 0 2rem;
       padding: 1rem 2rem;
     }
 

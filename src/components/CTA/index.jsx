@@ -12,13 +12,12 @@ const CallToAction = () => {
         </p>
       </div>
       <div className="btn-container">
-        {/* <Button
+        <Button
           text="book a call"
           link="https://calendly.com/immutable-studio/website-consultancy"
           target="_blank"
-        /> */}
+        />
         <Button text="Discovery Form" link="/discovery-form" />
-        <Button text="contact us" link="/contact" />
       </div>
     </>
   );

@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
-
-import Button from "../../button/index";
-import StaticCubes from "../../Animations/staticCubes";
-import { accordionData } from "../../utils/accordionData";
-import Accordion from "../../Accordion";
-import CallToAction from "../../CTA";
-import WorkCard from "../../cards/work";
-import "./index.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,9 +9,17 @@ import {
   faUserAstronaut,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
+
+import Button from "../../button/index";
+import StaticCubes from "../../Animations/staticCubes";
+import { accordionData } from "../../utils/accordionData";
+import Accordion from "../../Accordion";
+import CallToAction from "../../CTA";
+import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4"
 import vidwebm from "../../../assets/images/greenwich.webm"
 import fallback from "../../../assets/images/greenwich.png"
+import "./index.scss";
 
 const Home = () => {
   const [second, setSecond] = useState(false);
@@ -31,9 +31,9 @@ const Home = () => {
     const handleScroll = () => {
       const scrollP = window.scrollY;
       const scrollThird = window.scrollY;
-      setSecond(scrollP > 350);
-      setThirdLt(scrollThird > 800);
-      setThirdRt(scrollThird > 800);
+      setSecond(scrollP > 550);
+      setThirdLt(scrollThird > 1300);
+      setThirdRt(scrollThird > 1300);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -45,7 +45,7 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="hero">
-          <video className="video" src={vid} autoPlay loop aria-label="greenwich college">
+          <video className="video" src={vid} autoPlay muted loop aria-label="greenwich college">
             <source src={vid} type="video/mp4" />
             <source src={vidwebm} type="video/webm" />
             <img src={fallback} alt="Fallback image" />
@@ -71,22 +71,15 @@ const Home = () => {
               />
             </div>
             <div className="text">
-              <p>
-                Discover how we can transform your online presence. Our custom
-                web development &amp; AI solutions, including bespoke AI
-                chatbots are designed to optimise efficiency, reduce costs, and enhance customer engagement.
+              <p> Discover how our website design and website development services can transform your online presence.
+                Based in Greenwich, London, we specialise in custom AI solutions and bespoke AI chatbots that streamline workflows,
+                optimise efficiency, reduce costs, and boost customer engagement.
               </p>
-              <p>
-                We are seasoned web developers &amp; Ai specialists
-                creating professional custom websites and AI workflow
-                solutions. Our team is dedicated to delivering cutting-edge
-                technology tailored to help you achieve its goals.
-              </p>
-              <div className="btn-container">
-              <Button link="contact" text="CONTACT US" />
+            </div>
+            <div className="btn-container">
+              <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
               <Button link="discovery-form" text="discovery form" />
-            </div>
-            </div>
+              </div>
           </div>
         </section>
 
@@ -229,7 +222,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="btn-container">
-                <Button text="Featured Work" link="featured-work" />
+                <Button text="Portfolio" link="portfolio" />
                 <Button text="Discovery Form" link="discovery-form"/>
               </div>
             </div>

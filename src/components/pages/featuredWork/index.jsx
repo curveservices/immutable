@@ -8,6 +8,7 @@ import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
 import PriceCard from "../../cards/fullPrice";
 import CTA from "../../CTA";
+import vid from "../../../assets/images/working.mp4"
 import "./index.scss";
 
 const FeaturedWork = () => {
@@ -28,11 +29,12 @@ const FeaturedWork = () => {
     <>
       <div className="featured-work">
         <section className="hero">
+          <video className="video" src={vid} autoPlay loop aria-label="working with clients in an office"></video>
           <div className="inner-hero">
             <div className="text-box">
               <h1 className="title">Featured Work</h1>
               <p>
-                Signing off on a new website is always a moment of immense pride
+                Signing off a new project is always a moment of great pride
                 and satisfaction for us. With each project, we take great care
                 to understand our clients' unique needs and deliver tailored
                 solutions.
@@ -40,10 +42,9 @@ const FeaturedWork = () => {
               <p>
                 As our client base continues to expand, we are excited to
                 showcase the diverse and innovative work we do, particularly in
-                creating cutting-edge websites and AI solutions. Each project
-                featured on this page represents our commitment to excellence
-                and our passion for helping businesses thrive in the digital
-                age.
+                creating websites and AI solutions. Each project
+                featured on this page represents our commitment
+                and our passion for helping businesses thrive online.
               </p>
               <div className="btn-container">
                 <Button
@@ -51,7 +52,7 @@ const FeaturedWork = () => {
                   link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
                   noreferer
                 />
-                <Button text="Contact us" link="/contact" />
+                <Button text="Discovery form" link="/discovery-form" />
               </div>
             </div>
           </div>

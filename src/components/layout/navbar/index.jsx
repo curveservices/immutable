@@ -67,9 +67,9 @@ const Navbar = () => {
           </div>
         </NavLink>
         <NavLink
-          to="featured-work"
-          title="Featured Work"
-          aria-label="Link to featured work"
+          to="portfolio"
+          title="Portfolio"
+          aria-label="Link to portfolio"
           className="services-link"
           activeclassname="active"
           exact="true"
@@ -77,21 +77,7 @@ const Navbar = () => {
         >
           <div className="menu-container">
             <FontAwesomeIcon icon={faSuitcase} className="mobile-icon" />
-            <div className="text">WORK</div>
-          </div>
-        </NavLink>
-        <NavLink
-          to="pricing"
-          title="Pricing"
-          aria-label="Link to pricing"
-          className="services-link"
-          activeclassname="active"
-          exact="true"
-          onClick={() => setShowNav(false)}
-        >
-          <div className="menu-container">
-            <FontAwesomeIcon icon={faMoneyBill1Wave} className="mobile-icon" />
-            <div className="text">PRICING</div>
+            <div className="text">PORTFOLIO</div>
           </div>
         </NavLink>
         <NavLink
@@ -108,20 +94,6 @@ const Navbar = () => {
             <div className="text">ABOUT</div>
           </div>
         </NavLink>
-        <NavLink
-          to="contact"
-          title="Contact Us"
-          aria-label="Link to contact us page"
-          className="contact-link"
-          activeclassname="active"
-          exact="true"
-          onClick={() => setShowNav(false)}
-        >
-          <div className="menu-container">
-            <FontAwesomeIcon icon={faEnvelope} className="mobile-icon" />
-            <div className="text">CONTACT</div>
-          </div>
-        </NavLink>
         <FontAwesomeIcon
           icon={faClose}
           size="2x"
@@ -129,9 +101,8 @@ const Navbar = () => {
           onClick={() => setShowNav(false)}
         />
         <Button
-          text="Book a Call"
-          link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
-          target="_blank"
+          text="Contact Us"
+          link="/contact"
           background="#fff"
           color="#000"
           boxShadow="none"

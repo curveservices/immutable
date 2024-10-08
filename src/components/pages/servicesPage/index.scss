@@ -36,14 +36,9 @@
           line-height: 1.5;
         }
 
-        .btn-container {
-          display: flex;
-          margin-top: 3rem;
-          gap: 1rem;
-        }
+        
       }
   }
- 
   .second-section {
     background-image: url("../../../assets/images/1746747.webp");
     box-shadow: var(--global);
@@ -113,6 +108,12 @@
     }
     .none {
       opacity: 0;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1rem;
     }
   }
 }

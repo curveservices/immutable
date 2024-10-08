@@ -30,7 +30,7 @@ const Singleservices = (props) => {
               <p>{props.HeroP}</p>
               <p>{props.HeroH2}</p>
               <div className={style.btnContainer}>
-                <Button text="Contact us" link="/contact" />
+                <Button text="Discovery Form" link="/discovery-form" />
                 <Button
                   target="_blank"
                   text="book a call"

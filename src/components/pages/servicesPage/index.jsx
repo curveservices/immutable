@@ -10,6 +10,7 @@ import "./index.scss";
 import Card from "../../cards/work";
 import Links from "../../links";
 import vid from "../../../assets/images/london.mp4";
+import WorkCard from "../../cards/work";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +45,7 @@ const Services = () => {
                 pricing.
               </p>
               <div className="btn-container">
-                <Button text="Contact us" link="/contact" />
+                <Button text="Discovery form" link="/discovery-form" />
                 <Button
                   text="book a call"
                   link="https://calendly.com/immutable-studio/website-consultancy"
@@ -103,8 +104,34 @@ const Services = () => {
         </section>
         <section className="fith-section">
           <div className="fith-inner">
-            <h2>FEATURED WORK</h2>
-            <Card />
+            <h2 className="title">FEATURED WORK</h2>
+            <div className="text-contanier">
+              <div className="textBox">
+                <p>
+                  Signing off on a new website is always a moment of immense
+                  pride and satisfaction for us. With each project, we take
+                  great care to understand our clients' unique needs and deliver
+                  tailored solutions.
+                </p>
+              </div>
+              <div className="textBox">
+                <p>
+                  As our client base continues to expand, we are excited to
+                  showcase the diverse and innovative work we do, particularly
+                  in creating cutting-edge websites and AI solutions. Each
+                  project featured on this page represents our commitment to
+                  excellence and our passion for helping businesses thrive in
+                  the digital landscape.
+                </p>
+              </div>
+              <div className="btn-container">
+                <Button text="Portfolio" link="portfolio" />
+                <Button text="Discovery Form" link="discovery-form"/>
+              </div>
+            </div>
+            <div className="">
+              <WorkCard />
+            </div>
           </div>
         </section>
         <section className="cta">
