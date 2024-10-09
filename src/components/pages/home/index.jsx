@@ -15,10 +15,10 @@ import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
 import Accordion from "../../Accordion";
 import CallToAction from "../../CTA";
+import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4"
 import vidwebm from "../../../assets/images/greenwich.webm"
-import fallback from "../../../assets/images/greenwich.png"
 import "./index.scss";
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
     const handleScroll = () => {
       const scrollP = window.scrollY;
       const scrollThird = window.scrollY;
-      setSecond(scrollP > 550);
+      setSecond(scrollP > 100);
       setThirdLt(scrollThird > 1300);
       setThirdRt(scrollThird > 1300);
     };
@@ -45,11 +45,11 @@ const Home = () => {
     <>
       <div className="home-page">
         <section className="hero">
-          <video className="video" src={vid} autoPlay muted loop aria-label="greenwich college">
-            <source src={vid} type="video/mp4" />
-            <source src={vidwebm} type="video/webm" />
-            <img src={fallback} alt="Fallback image" />
-          </video>
+          <LazyVideo
+            src={vid}
+            type="video/mp4"
+            className="video"
+          />
           <div className="text-box">
             <h1 className="main-title">Empowering your Business with</h1>
             <div className="typewriter">
@@ -75,11 +75,12 @@ const Home = () => {
                 Based in Greenwich, London, we specialise in custom AI solutions and bespoke AI chatbots that streamline workflows,
                 optimise efficiency, reduce costs, and boost customer engagement.
               </p>
-            </div>
-            <div className="btn-container">
+               <div className="btn-container">
               <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
               <Button link="discovery-form" text="discovery form" />
-              </div>
+            </div>
+            </div>
+           
           </div>
         </section>
 

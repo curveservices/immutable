@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase.config";
 import { getDocs, collection } from "firebase/firestore";
-import "./index.scss";
+
 import Button from "../../button";
+import "./index.scss";
 
 const WorkCard = () => {
   const [card, setCard] = useState([]);

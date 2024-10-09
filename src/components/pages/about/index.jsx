@@ -8,6 +8,7 @@ import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
 import vid from "../../../assets/images/about.mp4"
 import "./index.scss";
+import LazyVideo from "../../LazyVideo";
 
 const About = () => {
   const [second, setSecond] = useState(false);
@@ -24,7 +25,11 @@ const About = () => {
     <>
       <div className="about-page">
         <section className="hero">
-           <video className="video" src={vid} autoPlay loop aria-label="a video of the Royal Greenwich college"></video>
+           <LazyVideo
+            src={vid}
+            type="video/mp4"
+            className="video"
+          />
             <div className="inner-hero">
             <StaticCubes/>
             <div className="text-box">

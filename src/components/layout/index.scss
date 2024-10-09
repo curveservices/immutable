@@ -19,7 +19,7 @@
   .pricing-page,
   .policy-page,
   .client-discovery-form {
-    padding: 7rem 0rem;
+    padding: 7rem 0rem 4rem;
     animation: fadeIn 2s;
     h1 {
       font-size: 48px;
@@ -107,7 +107,10 @@
         font-size: 14px;
       }
       .btn-container {
+        flex-direction: column;
+        align-items: center;
         margin: 1rem 0 1.5rem;
+        min-width: fit-content;
       }
     }
   }

@@ -9,7 +9,9 @@ import CubeSpinner from "../../Animations/cubespinner";
 import PriceCard from "../../cards/fullPrice";
 import CTA from "../../CTA";
 import vid from "../../../assets/images/working.mp4"
+import LazyVideo from "../../LazyVideo";
 import "./index.scss";
+
 
 const FeaturedWork = () => {
   const [firstScroll, setFirstScrolll] = useState(false);
@@ -29,7 +31,11 @@ const FeaturedWork = () => {
     <>
       <div className="featured-work">
         <section className="hero">
-          <video className="video" src={vid} autoPlay loop aria-label="working with clients in an office"></video>
+           <LazyVideo
+            src={vid}
+            type="video/mp4"
+            className="video"
+          />
           <div className="inner-hero">
             <div className="text-box">
               <h1 className="title">Featured Work</h1>

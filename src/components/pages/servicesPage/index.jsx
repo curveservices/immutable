@@ -6,11 +6,11 @@ import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
 import CallToAction from "../../CTA";
 import img1 from "../../../assets/images/servicesImg.jpeg";
-import "./index.scss";
-import Card from "../../cards/work";
 import Links from "../../links";
 import vid from "../../../assets/images/london.mp4";
 import WorkCard from "../../cards/work";
+import LazyVideo from "../../LazyVideo";
+import "./index.scss";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +30,11 @@ const Services = () => {
     <>
       <div className="serivces-page">
         <section className="hero">
-          <video className="video" src={vid} autoPlay loop aria-placeholder="greenwich college"></video>
+           <LazyVideo
+            src={vid}
+            type="video/mp4"
+            className="video"
+          />
           <div className="hero-inner">
             <StaticCubes />
             <div className="text-box">

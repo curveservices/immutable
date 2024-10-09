@@ -72,6 +72,9 @@
 @media screen and (max-width: 768px) {
   .about-page {
     .hero {
+      .video {
+        display: none;
+      }
       .inner-hero {
         padding: 0rem 2rem;
 

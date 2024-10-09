@@ -133,7 +133,6 @@
   .thirdTextBox {
     padding: 0rem;
     margin: 0;
-    text-align: initial;
   }
 
   .contentAnim {
@@ -150,5 +149,69 @@
 
   .none {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* Hero section */
+  .innerHero {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0rem 2rem 0;
+  }
+
+  .textBox {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .btnContainer {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .gif {
+    width: 80%;
+    margin-left: 13rem;
+    margin-bottom: -2rem;
+  }
+
+  /* Second section */
+  .secondInner {
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .animSecond {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .animSecondimg {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  /* Third section */
+  .thirdInner {
+    margin: 2rem 0;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .thirdTextBox {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contentAnim {
+    margin: 1rem;
+  }
+
+  .priceCard {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }

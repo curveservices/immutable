@@ -16,9 +16,10 @@ button {
   cursor: pointer;
 
   &:hover {
-    transform: scale(0.9);
+    transform: scale(1.02);
     background: var(--primary);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -27,9 +28,8 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1024px) {
   button {
-    width: 150px;
     font-size: 10px;
     margin: 0;
   }
