@@ -98,22 +98,25 @@
   }
 
   .fith-section {
+    padding: 0rem 0rem 6rem;
     .fith-inner {
       background-image: url("../../../assets/images/1746747.webp");
+      background-size: cover;
       box-shadow: var(--global);
       margin-bottom: 6rem;
       padding: 4rem;
-      color: #000;
       text-align: center;
-    }
-    .none {
-      opacity: 0;
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      padding: 2rem;
-      gap: 1rem;
+      .title {
+        padding: 1rem;
+      }
+      .text-contanier {
+        padding: 0rem 5rem 3rem;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+      }
     }
   }
 }
@@ -186,7 +189,7 @@
 }
 
 // Tablet Styles
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .serivces-page {
 
     .hero {
@@ -200,11 +203,11 @@
 
         .text-box {
           width: 100%;
-          margin: 0 auto;
+          margin: 2rem 0rem;
           line-height: 1.4;
         }
         .link-container {
-          padding: 0 4rem;
+          padding: 2rem 10rem;
         }
       }
     }

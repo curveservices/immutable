@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   width: 400px;
-  height: 300px;
+  height: 280px;
   box-shadow: var(--global);
   background: var(--primary);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -21,7 +21,6 @@
   }
 
   .content {
-    padding: 1rem;
     text-align: center;
     color: #fff;
     position: absolute;
@@ -31,7 +30,7 @@
     text-align: center;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.0355, 1);
     background: var(--primary);
-    bottom: -110px;
+    bottom: -145px;
   }
 
   .name {
@@ -83,49 +82,6 @@
      }
 }
 
-// @media screen and (max-width: 920px) {
-//   .card-container {
-//     padding: 0px;
-
-//     .card {
-//       display: flex;
-//       flex: 1 1 50%;
-//       height: 400px;
-//       overflow: hidden;
-//       max-width: calc(100% - 0px);
-//       box-shadow: var(--global);
-//       height: 250px;
-
-//       .content {
-//         position: relative;
-//         padding: 0px;
-//         text-align: center;
-
-//         .name {
-//           font-size: 14px;
-//           font-weight: 500;
-//           padding: 0;
-//           margin-bottom: 0;
-//         }
-
-//         .desc {
-//           font-weight: normal;
-//           font-size: 12px;
-//         }
-
-//         .btn-container {
-//           gap: 10px;
-//           padding: 0px;
-//         }
-
-//         &:focus {
-//           bottom: 0;
-//           transition: all 1s ease;
-//         }
-//       }
-//     }
-//   }
-// }
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .card-container {
@@ -135,14 +91,11 @@
 
   .card {
     width: 45%;
-    /* Slightly narrower cards on tablet */
     height: 280px;
-    /* Reduced height for better fit */
     margin: 0.5rem 0;
 
     .content {
-      bottom: -80px;
-      /* Adjusted content reveal */
+      bottom: -190px;
     }
 
     .name {
@@ -166,11 +119,11 @@
   .card {
     width: 100%;
     max-width: 350px;
-    height: 260px;
+    height: 225px;
     margin: 0 auto;
 
     .content {
-      bottom: -135px
+      bottom: -190px
     }
 
     .name {

@@ -58,7 +58,6 @@
     .second-inner {
       position: relative;
       background-image: url("../../../assets/images/1746747.webp");
-      background-repeat: no-repeat;
       background-size: cover;
       box-shadow: var(--global);
       margin: 0;
@@ -192,31 +191,24 @@
   }
 
   .forth-section {
-    padding: 1rem 0rem 6rem;
+    padding: 0rem 0rem 6rem;
     .forth-inner {
-      position: relative;
       background-image: url("../../../assets/images/1746747.webp");
-      background-repeat: no-repeat;
       background-size: cover;
-
       box-shadow: var(--global);
-      padding-bottom: 6rem;
+      margin-bottom: 6rem;
+      padding: 4rem;
+      text-align: center;
       .title {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        padding: 2rem 5rem;
-        color: #000;
+        padding: 1rem;
       }
       .text-contanier {
         padding: 0rem 5rem 3rem;
-        text-align: center;
-        color: #000;
       }
       .btn-container {
         display: flex;
         justify-content: center;
-        
+        padding-top: 1rem;
       }
     }
   }
