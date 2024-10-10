@@ -131,7 +131,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="btn-container">
-                <Button text="Portfolio" link="portfolio" />
+                <Button text="Portfolio" link="/portfolio" />
                 <Button text="Discovery Form" link="discovery-form"/>
               </div>
             </div>
