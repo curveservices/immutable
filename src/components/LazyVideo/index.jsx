@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import "./index.scss";
 
 const LazyVideo = ({ src, type, fallback, ...props }) => {
   const videoRef = useRef(null);
@@ -29,12 +30,12 @@ const LazyVideo = ({ src, type, fallback, ...props }) => {
   return (
     <div ref={videoRef}>
       {isIntersecting ? (
-        <video {...props} autoPlay muted loop>
+        <video className='video' {...props} autoPlay muted loop controls={false}>
             <source src={src} type={type} />
             <img src={fallback} alt="Fallback image" />
         </video>
       ) : (
-        <img src={fallback} alt="Loading video..." /> // Placeholder image before loading
+        <img className='fallback' src={fallback} alt="Loading video..." />
       )}
     </div>
   );

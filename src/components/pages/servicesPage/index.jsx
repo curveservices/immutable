@@ -8,6 +8,7 @@ import CallToAction from "../../CTA";
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import Links from "../../links";
 import vid from "../../../assets/images/london.mp4";
+import london from "../../../assets/images/london.png";
 import WorkCard from "../../cards/work";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
@@ -34,6 +35,7 @@ const Services = () => {
             src={vid}
             type="video/mp4"
             className="video"
+            fallback={london}
           />
           <div className="hero-inner">
             <StaticCubes />

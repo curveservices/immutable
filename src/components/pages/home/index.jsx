@@ -19,6 +19,7 @@ import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4"
 import vidwebm from "../../../assets/images/greenwich.webm"
+import fallback from "../../../assets/images/greenwich.png"
 import "./index.scss";
 
 const Home = () => {
@@ -49,6 +50,7 @@ const Home = () => {
             src={vid}
             type="video/mp4"
             className="video"
+            fallback={fallback}
           />
           <div className="text-box">
             <h1 className="main-title">Empowering your Business with</h1>

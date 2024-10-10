@@ -7,8 +7,9 @@ import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
 import vid from "../../../assets/images/about.mp4"
-import "./index.scss";
+import about from "../../../assets/images/about.png"
 import LazyVideo from "../../LazyVideo";
+import "./index.scss";
 
 const About = () => {
   const [second, setSecond] = useState(false);
@@ -27,6 +28,7 @@ const About = () => {
         <section className="hero">
            <LazyVideo
             src={vid}
+            fallback={about}
             type="video/mp4"
             className="video"
           />

@@ -8,7 +8,8 @@ import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
 import PriceCard from "../../cards/fullPrice";
 import CTA from "../../CTA";
-import vid from "../../../assets/images/working.mp4"
+import vid from "../../../assets/images/working.mp4";
+import working from "../../../assets/images/working.png";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
 
@@ -34,6 +35,7 @@ const FeaturedWork = () => {
            <LazyVideo
             src={vid}
             type="video/mp4"
+            fallback={working}
             className="video"
           />
           <div className="inner-hero">
