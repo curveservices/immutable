@@ -44,7 +44,7 @@ const Singleservices = (props) => {
         <section className={style.secondSection}>
           <div className={style.secondInner}>
             <div className={`${second ? style.animSecond : style.secondNone}`}>
-              <h1>{props.secondH1}</h1>
+              <h2>{props.secondH1}</h2>
               <p>{props.secondP}</p>
               <p>{props.p}</p>
             </div>
@@ -58,7 +58,7 @@ const Singleservices = (props) => {
         <section className={style.thirdSection}>
           <div className={style.thirdInner}>
             <div className={style.thirdTextBox}>
-              <h1>OUR {props.thirdH1} PRICES</h1>
+              <h2>OUR {props.thirdH1} PRICES</h2>
               <p>{props.thirdP}</p>
             </div>
             <div className={`${isScrolled ? style.contentAnim : style.none}`}>
