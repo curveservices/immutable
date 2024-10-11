@@ -16,10 +16,10 @@ import Services from "./components/pages/servicesPage";
 import WebDev from "./components/pages/webDev";
 import ChatBots from "./components/pages/chatBots";
 import Packages from "./components/pages/packagesPage";
-import SocialMarketing from "./components/pages/socialMarketing";
 import PrivacyPolicy from "./components/pages/policy";
 import FeaturedWork from "./components/pages/featuredWork";
 import ClientDiscoveryForm from "./components/pages/clientForm";
+import SeoMaintenance from "./components/pages/seoMaintenance";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,7 +32,7 @@ const router = createBrowserRouter(
         <Route path=":id/web-development" element={<WebDev />} />
         <Route path=":id/chat-bots" element={<ChatBots />} />
         <Route path=":id/packages" element={<Packages />} />
-        <Route path=":id/digital-marketing" element={<SocialMarketing />} />
+        <Route path=":id/seo-website-maintenance" element={<SeoMaintenance />} />
         <Route path="portfolio" element={<FeaturedWork />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="discovery-form" element={<ClientDiscoveryForm />} />

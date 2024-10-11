@@ -2,13 +2,13 @@ import img from "../../../assets/images/social.jpeg";
 import gif from "../../../assets/images/social-unscreen.gif";
 import Singleservices from "../../SingleService/";
 
-const SocialMarketing = () => {
+const DigitalMarketing = () => {
   return (
     <Singleservices
       title="Digital Marketing"
       keywords="web development, media content, social content, social media, social, AI solutions, chatbots, Digital marketing, Immutable Studio"
       HeroH1="Digital Marketing"
-      HeroP=" Our proficient media content team is available to assist in
+      HeroP="Our proficient media content team is available to assist in
               creating ad campaigns and social content, leveraging the latest
               trends and analytics to propel your social projects forward.
 "
@@ -29,4 +29,4 @@ const SocialMarketing = () => {
   );
 };
 
-export default SocialMarketing;
+export default DigitalMarketing;
