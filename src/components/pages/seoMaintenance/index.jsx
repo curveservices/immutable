@@ -16,7 +16,7 @@ const SeoMaintenance = () => {
       secondP="Many content management systems and website builders work in similar ways, 
       so we’ve got the experience to help you with whatever system you use. 
       From a WordPress site to a custom-built site, we can help support and improve your website."
-      p="We can build SEO sitemaps and ensure your webite is up to date with best SEO practices, on and off page"
+      p="We build SEO sitemaps and ensure your webite is up to date with best SEO practices, on and off page"
       img={img}
       thirdH1="MAINTENANCE"
       thirdP="We prioritise transparent communication &amp; strong client bonds.

@@ -5,17 +5,7 @@
         grid-column: 1;
         grid-row: 1;
       }
-    
-      .video {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        min-width: 100vw;
-        height: auto;
-        min-height: 100vh;
-        opacity: 0.5;
-        object-fit: cover;
-    }
+  
       .hero-inner {
         position: relative;
         display: flex;
@@ -103,14 +93,16 @@
       background-image: url("../../../assets/images/1746747.webp");
       background-size: cover;
       box-shadow: var(--global);
-      margin-bottom: 6rem;
       padding: 4rem;
       text-align: center;
       .title {
         padding: 1rem;
       }
-      .text-contanier {
-        padding: 0rem 5rem 3rem;
+      .text-container {
+        padding: 0rem 2rem 3rem;
+        .textBox {
+          padding: 0rem 1rem;
+        }
       }
       .btn-container {
         display: flex;
@@ -181,8 +173,12 @@
     }
 
     .fith-section {
+      padding: 0rem;
       .fith-inner {
-        padding: 2rem;
+        padding: 1rem 0rem;
+        .text-container {
+          padding: 1rem;
+        }
       }
     }
   }

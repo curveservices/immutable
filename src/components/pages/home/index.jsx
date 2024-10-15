@@ -17,9 +17,8 @@ import Accordion from "../../Accordion";
 import CallToAction from "../../CTA";
 import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
-import vid from "../../../assets/images/greenwich.mp4"
-import vidwebm from "../../../assets/images/greenwich.webm"
-import fallback from "../../../assets/images/greenwich.png"
+import vid from "../../../assets/images/greenwich.mp4";
+import fallback from "../../../assets/images/greenwich.png";
 import "./index.scss";
 
 const Home = () => {
@@ -33,8 +32,8 @@ const Home = () => {
       const scrollP = window.scrollY;
       const scrollThird = window.scrollY;
       setSecond(scrollP > 100);
-      setThirdLt(scrollThird > 1300);
-      setThirdRt(scrollThird > 1300);
+      setThirdLt(scrollThird > 1000);
+      setThirdRt(scrollThird > 1000);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -73,30 +72,27 @@ const Home = () => {
               />
             </div>
             <div className="text">
-              <p> Discover how our website design and website development services can transform your online presence.
-                Based in Greenwich, London, we specialise in custom AI solutions and bespoke AI chatbots that streamline workflows,
-                optimise efficiency, reduce costs, and boost customer engagement.
+              <p> Discover how our website design and development services can transform your online presence.
+                Based in Greenwich, London, we specialise in custom website builds, website maintenance, hosting and, bespoke AI business solutions.
               </p>
                <div className="btn-container">
               <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
               <Button link="discovery-form" text="discovery form" />
             </div>
             </div>
-           
           </div>
         </section>
-
         <section className="second-section">
           <div className="second-inner">
             <h2 className="title">SERVICES</h2>
-            <p className={`text-box ${second ? "" : "none"}`}>
-              Our services model operates with monthly payments covering hosting
-              and maintenance, AI and automation solutions, and digital
-              marketing. Service payments are customised based on your specific
-              needs and usage, ensuring flexibility and scalability. We aim to
-              provide comprehensive support, making it easy for your business to
-              grow and adapt in the ever-evolving digital landscape.
+            <p className={`text-box `}>
+              Our services model operates either monthly or annually covering full website development,
+              hosting and maintenance and, AI business solutions. Service payments can be customised based on your specific
+              needs and usage, ensuring flexibility and scalability.
+              We provide comprehensive support, making it easy for your business to grow and adapt.
             </p>
+            
+        
             <div className={`cubes ${second ? "anim" : "none"}`}>
               <StaticCubes />
             </div>
@@ -119,11 +115,10 @@ const Home = () => {
         <section className="third-section">
           <div className="third-inner">
             <h2 className="title">WHY CHOOSE US?</h2>
-            <div className="text-contanier">
+            <div className="text-container">
               <p>
-                We offer a full range of website development, AI solutions,
-                workflow automation and digital marketing services with flexible
-                pricing.
+                We offer a full range of website development, AI solutions and,
+                workflow automation services with flexible pricing.
               </p>
             </div>
             <div className="element-container">
@@ -135,7 +130,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faUserGroup} />
                   </div>
                   <div className="copy">
-                    <p className="elem-title">Excellent Client Service</p>
+                    <h3 className="elem-title">Excellent Client Service</h3>
                     <p className="desc">
                       Customer service is more than a commitment, it shapes
                       every aspect of our business. From discovery to final
@@ -153,7 +148,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faScrewdriverWrench} />
                   </div>
                   <div className="copy">
-                    <p className="elem-title">Automated AI Solutions</p>
+                    <h3 className="elem-title">Automated AI Solutions</h3>
                     <p className="desc">
                       Every business is unique. We create custom automated
                       workflows &amp; AI solutions, tailored to your business
@@ -171,7 +166,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faUserAstronaut} />
                   </div>
                   <div className="copy">
-                    <p className="elem-title">Seamless User Experience</p>
+                    <h3 className="elem-title">Seamless User Experience</h3>
                     <p className="desc">
                       User experience is vital. We design user journeys focusing
                       on simplicity &amp; ease of use. By providing seamless
@@ -189,10 +184,10 @@ const Home = () => {
                     <FontAwesomeIcon icon={faMobileScreenButton} />
                   </div>
                   <div className="copy">
-                    <p className="elem-title">Mobile-First Approach</p>
+                    <h3 className="elem-title">Mobile-First Approach</h3>
                     <p className="desc">
                       I's a mobile-driven world &amp; a responsive website is
-                      essential. Our designs are optimized for all devices,
+                      essential. Our designs are optimised for all devices,
                       ensuring a flawless experience on phones, tablets &amp;
                       desktops.
                     </p>
@@ -205,32 +200,30 @@ const Home = () => {
         <section className="forth-section">
           <div className="forth-inner">
             <h2 className="title">FEATURED WORK</h2>
-            <div className="text-contanier">
+            <div className="text-container">
               <div className="textBox">
                 <p>
-                  Signing off on a new website is always a moment of immense
+                  Signing off on a new website is always a moment of
                   pride and satisfaction for us. With each project, we take
                   great care to understand our clients' unique needs and deliver
-                  tailored solutions.
+                  tailored solutions. Here are some of our featured projects.
                 </p>
               </div>
+              <div className="">
+              <WorkCard />
+            </div>
               <div className="textBox">
                 <p>
                   As our client base continues to expand, we are excited to
-                  showcase the diverse and innovative work we do, particularly
-                  in creating cutting-edge websites and AI solutions. Each
-                  project featured on this page represents our commitment to
-                  excellence and our passion for helping businesses thrive in
-                  the digital landscape.
+                  showcase the diverse and innovative work we do. Each
+                  project that we complete represents a commitment to
+                  excellence and our passion for helping businesses thrive.
                 </p>
               </div>
               <div className="btn-container">
                 <Button text="Portfolio" link="portfolio" />
                 <Button text="Discovery Form" link="discovery-form"/>
               </div>
-            </div>
-            <div className="">
-              <WorkCard />
             </div>
           </div>
         </section>

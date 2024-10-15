@@ -6,29 +6,19 @@
         grid-column: 1;
         grid-row: 1;
       }
-      .video {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        min-width: 100vw;
-        height: auto;
-        min-height: 100vh;
-        opacity: 0.5;
-        object-fit: cover;
-      }
 
     .inner-hero {
-      padding: 0rem 6rem;
+      padding: 1rem 4rem 5rem; 
       color: #fff;
 
       .text-box {
         width: 50%;
-        margin: 2rem 0rem 5rem;
+        margin: 2rem 2rem 5rem;
       }
     }
     
     .spinner {
-      margin-left: 40rem;
+      margin-left: 45rem;
     }
   }
 
@@ -52,7 +42,7 @@
   }
 
   .anim {
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 1s forwards;
   }
 
   .none {
@@ -63,6 +53,7 @@
 @media screen and (max-width: 768px) {
   .featured-work {
     .hero {
+      display: flex;
       flex-direction: column;
       video {
           display: none;
@@ -81,7 +72,7 @@
         }
       }
       .spinner {
-       display: none;
+       margin: 2rem 3rem;
       }
     }
 
@@ -113,7 +104,7 @@
       }
 
       .spinner {
-        margin-left: 5rem; 
+        margin-left: 10rem; 
       }
     }
 

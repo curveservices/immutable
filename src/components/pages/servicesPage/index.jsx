@@ -43,11 +43,10 @@ const Services = () => {
               <h1 className="title">Our Services</h1>
               <p>
                 The services we provide will turn your ideas into amazing
-                solutions
+                solutions.
               </p>
               <p>
-                We offer a full range of website development, AI solutions,
-                workflow automation and digital marketing services with flexible
+                We offer a full range of website development, website maintenance, hosting and, AI solutions services with flexible
                 pricing.
               </p>
               <div className="btn-container">
@@ -62,7 +61,7 @@ const Services = () => {
             <Links
               webLink="web-development"
               aiLink="chat-bots"
-              digitalLink="digital-marketing"
+              maintenanceLink="seo-website-maintenance"
               packagesLink="packages"
             />
           </div>
@@ -70,17 +69,16 @@ const Services = () => {
         <section className="second-section">
           <div className="second-inner">
             <div className={`${second ? "anim-second" : "second-none"}`}>
-              <h1>
-                Need a supportive full-service development agency for your
+              <h2>
+                Need a supportive development agency for your
                 business?
-              </h1>
+              </h2>
               <p>
-                Drawing on our industry experience, we excel in providing
-                comprehensive solutions tailored to your needs. Understanding
+                We provide comprehensive solutions tailored to your needs. Understanding
                 your business, we offer expert advice to address design
                 challenges effectively. Whether it's boosting brand visibility,
-                creating a lead-generating website or building AI solutions
-                &amp; automated workflows count on us to deliver outstanding
+                creating a lead-generating website or building AI solutions,
+                count on us to deliver outstanding
                 results.
               </p>
             </div>
@@ -94,10 +92,10 @@ const Services = () => {
         <section className="forth-section">
           <div className="forth-inner">
             <div className="text-box">
-              <h1>Transparent Pricing</h1>
+              <h2>Transparent Pricing</h2>
               <p>
                 We believe in transparency and building strong relationships
-                with our clients. We offer straightforward pricing &amp;
+                with our clients. We offer straightforward pricing and
                 understand the importance of budgeting. Packages can be expanded
                 as your business grows.
               </p>
@@ -111,7 +109,7 @@ const Services = () => {
         <section className="fith-section">
           <div className="fith-inner">
             <h2 className="title">FEATURED WORK</h2>
-            <div className="text-contanier">
+            <div className="text-container">
               <div className="textBox">
                 <p>
                   Signing off on a new website is always a moment of immense
@@ -120,23 +118,22 @@ const Services = () => {
                   tailored solutions.
                 </p>
               </div>
+              <div className="">
+              <WorkCard />
+              </div>
               <div className="textBox">
                 <p>
                   As our client base continues to expand, we are excited to
                   showcase the diverse and innovative work we do, particularly
-                  in creating cutting-edge websites and AI solutions. Each
-                  project featured on this page represents our commitment to
-                  excellence and our passion for helping businesses thrive in
-                  the digital landscape.
+                  in creating cutting-edge websites and AI solutions using the latest tech. Each
+                  project that we complete represents a commitment to
+                  excellence and our passion for helping businesses thrive.
                 </p>
               </div>
               <div className="btn-container">
                 <Button text="Portfolio" link="/portfolio" />
                 <Button text="Discovery Form" link="discovery-form"/>
               </div>
-            </div>
-            <div className="">
-              <WorkCard />
             </div>
           </div>
         </section>

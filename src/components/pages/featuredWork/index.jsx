@@ -22,8 +22,8 @@ const FeaturedWork = () => {
     const handleScroll = () => {
       const scrollFirst = window.scrollY;
       const scrollSecond = window.scrollY;
-      setFirstScrolll(scrollFirst > 250);
-      setSecondScroll(scrollSecond > 1550);
+      setFirstScrolll(scrollFirst > 150);
+      setSecondScroll(scrollSecond > 1500);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -42,15 +42,14 @@ const FeaturedWork = () => {
             <div className="text-box">
               <h1 className="title">Featured Work</h1>
               <p>
-                Signing off a new project is always a moment of great pride
+                Signing off a new project is always a moment of pride
                 and satisfaction for us. With each project, we take great care
                 to understand our clients' unique needs and deliver tailored
                 solutions.
               </p>
               <p>
                 As our client base continues to expand, we are excited to
-                showcase the diverse and innovative work we do, particularly in
-                creating websites and AI solutions. Each project
+                showcase the work we do. Each project
                 featured on this page represents our commitment
                 and our passion for helping businesses thrive online.
               </p>
