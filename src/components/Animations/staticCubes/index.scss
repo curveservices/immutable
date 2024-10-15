@@ -135,8 +135,9 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
   .cube-container {
+    display: none;
     width: 50px;
     top: 32%;
     left: 58%;
