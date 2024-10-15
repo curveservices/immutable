@@ -10,6 +10,7 @@
   background-position:center;
   background-size: cover;
 
+ 
   .home-page,
   .about-page,
   .serivces-page,
@@ -19,6 +20,8 @@
   .pricing-page,
   .policy-page,
   .client-discovery-form {
+    
+    overflow: hidden;
     padding: 7rem 0rem 4rem;
     animation: fadeIn 2s;
     h1 {
@@ -94,7 +97,6 @@
     .pricing-page,
     .policy-page,
     .client-discovery-form {
-      overflow: hidden;
       margin: 0;
       padding-bottom: 0;
       h1 {
