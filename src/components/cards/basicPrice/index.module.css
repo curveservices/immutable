@@ -127,6 +127,11 @@
   border-bottom: 2px solid hsl(240, 80%, 85%, 0.283);
 }
 
+.discount {
+  font-style: italic;
+  color: coral;
+}
+
 @media screen and (max-width: 920px) {
   .cardContainer {
     margin-top: 4rem;

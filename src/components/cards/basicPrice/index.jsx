@@ -20,6 +20,7 @@ const PriceCard = (props) => {
           price: data.price,
           month: data.month,
           link: data.link,
+          li0: data.li0,
           li1: data.li1,
           li2: data.li2,
           li3: data.li3,
@@ -74,6 +75,7 @@ const PriceCard = (props) => {
                 <li className={style.price}>
                   {isToggled ? item.month : item.price}
                 </li>
+                <li className={style.discount}>{ !isToggled && item.li0}</li>
                 <li className={style.bottomBar}>{item.li1}</li>
                 <li className={style.bottomBar}>{item.li2}</li>
                 <li className={style.bottomBar}>{item.li3}</li>
