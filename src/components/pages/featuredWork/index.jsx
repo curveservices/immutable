@@ -43,15 +43,13 @@ const FeaturedWork = () => {
               <h1 className="title">Featured Work</h1>
               <p>
                 Signing off a new project is always a moment of pride
-                and satisfaction for us. With each project, we take great care
-                to understand our clients' unique needs and deliver tailored
-                solutions.
+                and satisfaction for us.
               </p>
               <p>
                 As our client base continues to expand, we are excited to
                 showcase the work we do. Each project
                 featured on this page represents our commitment
-                and our passion for helping businesses thrive online.
+                for helping businesses thrive online.
               </p>
               <div className="btn-container">
                 <Button
