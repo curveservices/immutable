@@ -58,8 +58,8 @@ const Home = () => {
                 options={{
                   strings: [
                     "Website Design.",
-                    "Web Development.",
-                    "Maintenance & Hosting",
+                    "Website Development.",
+                    "Maintenance & SEO.",
                     "Chat Assistants.",
                     "AI Solutions.",
                   ],
@@ -76,9 +76,10 @@ const Home = () => {
                 Based in Greenwich, London, we specialise in custom website builds, website maintenance, hosting and, bespoke AI business solutions.
               </p>
                <div className="btn-container">
-              <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
-              <Button link="discovery-form" text="discovery form" />
-            </div>
+                <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
+                <Button link="discovery-form" text="discovery form" />
+              </div>
+              
             </div>
           </div>
         </section>
