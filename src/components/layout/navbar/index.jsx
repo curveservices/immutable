@@ -23,7 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 75);
+      setIsScrolled(scrollY > 125);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,7 +36,7 @@ const Navbar = () => {
           <img src={logo} alt="Immutable studio logo" className="logo" />
         </div>
       </NavLink>
-      {/* <Breadcrumbs /> */}
+      <Breadcrumbs className={isScrolled ? "navbar-scroll" : ""}/>
       <nav className={showNav ? "mobile-show" : ""}>
         <NavLink
           to="/"
