@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 600);
+      setIsScrolled(scrollY > 125);
     };
 
     window.addEventListener("scroll", handleScroll);
