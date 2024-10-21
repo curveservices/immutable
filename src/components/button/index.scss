@@ -13,13 +13,13 @@ button {
   border: none;
   min-width: fit-content;
   box-shadow: var(--button-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.02);
+    transform: translateY(-3px);
     background: var(--primary);
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   }
 }
 
