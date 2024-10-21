@@ -46,32 +46,41 @@
 
   .second-section {
     .second-inner {
-      position: relative;
       background-image: url("../../../assets/images/1746747.webp");
       background-size: cover;
       box-shadow: var(--global);
       margin: 0;
-      padding-bottom: 15rem;
+      padding: 0;
 
       .title {
-        width: 100%;
         text-align: center;
         margin: 0;
-        padding: 2rem;
+        padding: 3rem 5rem;
       }
       .text-box {
-        padding: 0rem 5rem;
-        text-align: center;
+        display: flex;
+        gap: 4rem;
+        padding: 0rem 4rem 3rem;
+        p {
+          margin: 2rem;
+        }
+        .serviceImg {
+          width: 40%;
+        }
       }
       .accordion {
-        margin-top: 3rem;
         .content-container {
-          margin-top: 12rem;
+          position: absolute;
+          top: 45%;
         }
       }
 
+      .home-marquee {
+        margin-top: 8rem;
+      }
+
       .cube-container {
-        opacity: 0.5;
+        opacity: 0.2;
       }
 
       .anim {
@@ -239,7 +248,7 @@
       margin: 0;
       .second-inner {
         margin: 0;
-        padding: 1rem 2rem 25rem 2rem;
+        padding: 1rem 2rem 0rem 2rem;
         .title {
           width: 100%;
           padding: 1rem 2rem;
@@ -248,14 +257,28 @@
           top: 30%;
         }
         .text-box {
+          flex-direction: column;
+          gap: 1rem;
           padding: 0rem 0rem;
+          p {
+              margin: 0rem;
+              text-align: center;
+            }
+          
+            .serviceImg {
+              width: 100%;
+            }
         }
+        .home-marquee {
+          padding-top: 15rem;
+        }
+
         .accordion {
           margin-top: 1rem;
           align-items: center;
 
           .content-container {
-            margin-top: 8rem;
+            top: 65%;
           }
         }
       }
@@ -332,6 +355,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .home-page {
     .hero {
+      margin-bottom: 25rem;
       .main-title {
         font-size: 45px;
         padding: 0 2rem;
@@ -349,19 +373,31 @@
 
     .second-section {
       .second-inner {
-        padding: 0rem 5rem 15rem;
+        padding: 0rem 2rem ;
 
         .title {
           font-size: 36px;
+          padding: 4rem 0 0;
         }
 
         .text-box {
+          flex-direction: column;
           padding: 0rem 3rem;
+          gap: 1rem;
+          .serviceImg {
+            width: 100%;
+          }
         }
 
         .accordion {
-          margin-top: 2rem;
-          
+          margin: 3rem;
+          .content-container {
+              top: 60%;
+            }
+        }
+
+        .home-marquee {
+          padding-top: 6rem;
         }
       }
     }

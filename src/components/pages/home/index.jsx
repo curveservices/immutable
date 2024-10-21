@@ -10,6 +10,7 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
+import MarqueeComp from "../../marquee";
 import Button from "../../button/index";
 import StaticCubes from "../../Animations/staticCubes";
 import { accordionData } from "../../utils/accordionData";
@@ -19,6 +20,7 @@ import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4";
 import fallback from "../../../assets/images/greenwich.png";
+import web from '../../../assets/images/servicesImg.jpeg';
 import "./index.scss";
 
 const Home = () => {
@@ -46,10 +48,12 @@ const Home = () => {
       <div className="home-page">
         <section className="hero">
           <LazyVideo
+            ariaLabel="Footage of the Royal College of Greenwich"
             src={vid}
             type="video/mp4"
             className="video"
             fallback={fallback}
+            
           />
           <div className="text-box">
             <h1 className="main-title">Empowering your Business with</h1>
@@ -73,27 +77,27 @@ const Home = () => {
             </div>
             <div className="text">
               <p> Discover how our website design and development services can transform your online presence.
-                Based in Greenwich, London, we specialise in custom website builds, website maintenance, hosting and, bespoke AI business solutions.
+                Based in Greenwich, London, we specialise in custom website builds, website maintenance, hosting, and bespoke AI business solutions.
               </p>
                <div className="btn-container">
                 <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
                 <Button link="discovery-form" text="discovery form" />
               </div>
-              
             </div>
           </div>
         </section>
         <section className="second-section">
-          <div className="second-inner">
-            <h2 className="title">SERVICES</h2>
-            <p className={`text-box `}>
-              Our services model operates either monthly or annually covering full website development,
-              hosting and maintenance and, AI business solutions. Service payments can be customised based on your specific
-              needs and usage, ensuring flexibility and scalability.
-              We provide comprehensive support, making it easy for your business to grow and adapt.
-            </p>
-            
-        
+          <div className="second-inner"> 
+            <h2 className="title">OUR SERVICES</h2>
+            <div className="text-box">
+              <p>
+                Our services model operates either monthly or annually covering full website development,
+                hosting and maintenance, and AI business solutions. Service payments can be customised based on your specific
+                needs and usage, ensuring flexibility and scalability.
+                We provide comprehensive support, making it easy for your business to grow and adapt.
+              </p>
+              <img src={web} alt="two people working on a computer" className="serviceImg" />
+            </div>
             <div className={`cubes ${second ? "anim" : "none"}`}>
               <StaticCubes />
             </div>
@@ -110,6 +114,9 @@ const Home = () => {
                   onAccordionClick={handleAccordionClick}
                 />
               ))}
+            </div>
+            <div className="home-marquee">
+              <MarqueeComp />
             </div>
           </div>
         </section>
