@@ -1,0 +1,39 @@
+.marquee {
+    padding: 1rem 0;
+    cursor: pointer;
+    .marquee-title {
+        text-align: center;
+        font-size: 30px;
+        padding: 1rem;
+    }
+    .icon {
+        filter: grayscale(100%);
+        opacity: 0.5;
+
+        &:hover {
+            filter: initial;
+            opacity: initial;
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    .divider {
+        padding: 0rem 3rem;
+        font-size: 50px;
+        color: #9d9d9d;
+    }
+}
+@media screen and (max-width: 768px) {
+    .marquee {
+        padding: 1rem 0;
+        cursor: pointer;
+        .marquee-title {
+            font-size: 20px;
+        }
+
+        .icon {
+            width: 70px;
+        }
+    }
+}
