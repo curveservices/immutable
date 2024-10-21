@@ -12,6 +12,7 @@ import london from "../../../assets/images/london.png";
 import WorkCard from "../../cards/work";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
+import MarqueeComp from "../../marquee";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -84,10 +85,11 @@ const Services = () => {
             </div>
             <img
               src={img1}
-              alt="computer screen"
+              alt="two people working on a computer"
               className={`${second ? "animSecondimg" : "second-none"}`}
             />
           </div>
+          <MarqueeComp/>
         </section>
         <section className="forth-section">
           <div className="forth-inner">
