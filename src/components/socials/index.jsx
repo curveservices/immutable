@@ -38,7 +38,7 @@ const Socials = (props) => {
             to={props.instalink}
             target="_blank"
             alt="Instagram"
-            aria-label="follow instagram"
+            aria-label="follow us on instagram"
           >
             <FontAwesomeIcon icon={faInstagram} alt="Instagram Link" />
           </Link>
