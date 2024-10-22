@@ -199,7 +199,7 @@ const Home = () => {
                   <div className="copy">
                     <h3 className="elem-title">Mobile-First Approach</h3>
                     <p className="desc">
-                      I's a mobile-driven world &amp; a responsive website is
+                      It's a mobile-driven world &amp; a responsive website is
                       essential. Our designs are optimised for all devices,
                       ensuring a flawless experience on phones, tablets &amp;
                       desktops.
