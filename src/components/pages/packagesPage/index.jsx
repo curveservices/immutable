@@ -8,10 +8,10 @@ const Packages = () => {
       title="Packages"
       keywords="Business, business packages ,web development, AI solutions, chatbots, workflow automation, digital marketing, Immutable Studio, web design"
       HeroH1="Business Packages"
-      HeroP="Seeking AI solutions for your business? Let us ease your
-                        challenges with an online chatbot. Our expertise enables
-                        automation and outsourcing of daily tasks using cutting-edge AI
-                        technology, streamlining your operations for increased efficiency.
+      HeroP="Are you seeking an all-in-one website solution? We build comprhensive
+              website packages which include a fully custom built website with an AI chat assistant,
+              free domain name registration, SEO audits and monthly maintenance. We also offer AI automation
+              for you business workflows to help streamline your day to day tasks.
                 "
       HeroH2="We build tailer made business packages starting from just £849 or £99 per month."
       src={gif}
@@ -23,8 +23,8 @@ const Packages = () => {
       img={img}
       thirdH1="BUSINESS"
       thirdP="We prioritise transparent communication and strong client bonds.
-              Our services are retainer based. Through scalable packages, we ensure your website &amp;
-              GPT evolves alongside your business."
+              Our services are retainer based. Through scalable packages, we ensure your website, 
+              SEO and AI chat assistant evolves alongside your business."
       name="Packages"
     />
   );

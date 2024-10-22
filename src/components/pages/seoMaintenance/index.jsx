@@ -20,7 +20,7 @@ const SeoMaintenance = () => {
       img={img}
       thirdH1="MAINTENANCE"
       thirdP="We prioritise transparent communication &amp; strong client bonds.
-              Our services for digial marketing are based on a retainer model."
+              Our services for SEO and website maintenance are based on a retainer model."
       name="maintenance"
     />
   );

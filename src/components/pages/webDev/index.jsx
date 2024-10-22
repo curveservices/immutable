@@ -24,7 +24,7 @@ const WebDev = () => {
       img={img}
       thirdH1="WEBSITE"
       thirdP="We emphasise clear communication and robust client relationships.
-              Our services are based on a retainer model which inclused maintence, full support and hosting."
+              Our services are based on a retainer model which include maintence, full support and hosting."
       name="webDev"
     />
   );

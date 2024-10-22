@@ -97,7 +97,7 @@ const FeaturedWork = () => {
                   We where provided with MorfBot's company copy to maintain brand consistency and deliver clear messaging. 
                   The result is a modern, efficient, and user-friendly website that enhances MorfBot's digital presence."
               video={morfbot}
-              link="https://morfbot.com/"
+              link="https://morfbot.netlify.app/"
               p3=""
             />
           </div>

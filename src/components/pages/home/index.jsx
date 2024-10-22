@@ -62,9 +62,9 @@ const Home = () => {
                 options={{
                   strings: [
                     "Website Design.",
-                    "Website Development.",
                     "Maintenance & SEO.",
-                    "Chat Assistants.",
+                    "AI Chat Assistants.",
+                    "Website Development.",
                     "AI Solutions.",
                   ],
                   wrapperClassName: "Typewriter__wrapper",
@@ -76,8 +76,8 @@ const Home = () => {
               />
             </div>
             <div className="text">
-              <p> Discover how our website design and development services can transform your online presence.
-                Based in Greenwich, London, we specialise in custom website builds, website maintenance, hosting, and bespoke AI business solutions.
+              <p> Discover how our website design &amp; development services can transform your online presence.
+                Based in Greenwich, London, we specialise in custom website builds, SEO &amp; maintenance, hosting, and bespoke AI business solutions.
               </p>
                <div className="btn-container">
                 <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
@@ -125,12 +125,12 @@ const Home = () => {
             <h2 className="title">WHY CHOOSE US?</h2>
             <div className="text-container">
               <p>
-                We offer a full range of website development, AI solutions and,
-                workflow automation services with flexible pricing.
+                We offer a full range of website design, SEO &amp; maintenance, AI chat assistants, and
+                workflow automation services with flexible pricing. We also package up all of these services as a convenient business pack.
               </p>
             </div>
             <div className="element-container">
-              <NavLink to="/about" aria-label="link to about page">
+              <NavLink to="/portfolio" aria-label="link to about page">
                 <div
                   className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
                 >
@@ -166,7 +166,7 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="services/web-development" aria-label="link to web development page">
+              <NavLink to="services" aria-label="link to web development page">
                 <div
                   className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
                 >
@@ -225,7 +225,7 @@ const Home = () => {
                   As our client base continues to expand, we are excited to
                   showcase the diverse and innovative work we do. Each
                   project that we complete represents a commitment to
-                  excellence and our passion for helping businesses thrive.
+                  excellence and our passion for helping businesses thrive online.
                 </p>
               </div>
               <div className="btn-container">
