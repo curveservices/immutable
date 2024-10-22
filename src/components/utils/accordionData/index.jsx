@@ -3,9 +3,9 @@ export const accordionData = [
     id: 0,
     link: "web-development",
     title: "WEB DEVELOPMENT",
-    subtitle: " WordPress - WooCommerce - NodeJs - NextJs - React",
+    subtitle: " WordPress - WooCommerce - WIX - Shopify - React",
     content:
-      "We specialise in designing custom built websites and building on Wordpress, our offers range from landing pages to multi-page e-commerce sites. We build websites from just £540 or £50 per month",
+      "We specialise in designing custom built websites using React.js, we also build on Wordpress and serval other platforms. Our offers range from landing pages to multi-page e-commerce sites. We build websites from just £540 or £50 per month",
   },
   {
     id: 1,
