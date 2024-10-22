@@ -15,7 +15,8 @@ import { Link } from 'react-router-dom';
 const MarqueeComp = () => {
     return (
       <div className='marquee'>
-        <div className="marquee-title">PLATFORMS WE USE</div>
+        <div className="marquee-title">Web design is an art. At our Web Design Agency in London we are the artists.</div>
+        <p className='marquee-p'>We use the power of technology and make bespoke websites on all major CMS and framworks.</p>
         <Marquee pauseOnHover='true' className="marquee">
           <Link to="https://wordpress.com/" noreferer target='_blank'>
             <img src={wordpress} alt="wordpress icon" className="icon"/>

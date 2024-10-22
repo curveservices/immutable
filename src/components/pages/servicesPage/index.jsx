@@ -149,7 +149,7 @@ const Services = () => {
             <title>Services | Immutable Studio Web Development Agency</title>
             <meta
               name="keywords"
-              content="solutions, Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
+              content="Website design agency, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
             />
           </Helmet>
         </HelmetProvider>

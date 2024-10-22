@@ -91,10 +91,15 @@ const Home = () => {
             <h2 className="title">OUR SERVICES</h2>
             <div className="text-box">
               <p>
+                <hr />
                 Our services model operates either monthly or annually covering full website development,
-                hosting and maintenance, and AI business solutions. Service payments can be customised based on your specific
+                hosting and maintenance, and AI business solutions.
+                <hr />
+                Service payments can be customised based on your specific
                 needs and usage, ensuring flexibility and scalability.
+                <hr />
                 We provide comprehensive support, making it easy for your business to grow and adapt.
+                <hr />
               </p>
               <img src={web} alt="two people working on a computer" className="serviceImg" />
             </div>
@@ -242,7 +247,7 @@ const Home = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>Home | Immutable Studio Web Development Agency</title>
+            <title>Web Design Agency | Web Design London | Immutable Studio</title>
             <meta
               name="description"
               content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."

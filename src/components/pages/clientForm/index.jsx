@@ -731,7 +731,7 @@ const ClientDiscoveryForm = () => {
             />
             <meta
               name="keywords"
-              content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, London, Greenwich"
+              content="Website, Website Design, Website Development, Web design, website design agency, AI Solutions, Chatbot, workflows, London, Greenwich London"
             />
           </Helmet>
         </HelmetProvider>

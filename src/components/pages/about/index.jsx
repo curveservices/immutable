@@ -90,7 +90,7 @@ const About = () => {
             />
             <meta
               name="keywords"
-              content="About us, Immutable studio, south east London, Greenwich London, London, Founder, manager, AI Solutions, Web design, website design, website development"
+              content="Immutable studio, Greenwich London, London, Web design, website design, website development, website design agency, AI Solutions"
             />
           </Helmet>
         </HelmetProvider>

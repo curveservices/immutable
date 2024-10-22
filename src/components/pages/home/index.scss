@@ -60,12 +60,10 @@
       .text-box {
         display: flex;
         gap: 4rem;
-        padding: 0rem 4rem 3rem;
-        p {
-          margin: 2rem;
-        }
+        padding: 0rem 4rem 1rem;
+
         .serviceImg {
-          width: 40%;
+          width: 45%;
         }
       }
       .accordion {
@@ -76,7 +74,7 @@
       }
 
       .home-marquee {
-        margin-top: 8rem;
+        margin-top: 4rem;
       }
 
       .cube-container {

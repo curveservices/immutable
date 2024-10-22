@@ -6,7 +6,7 @@ const SeoMaintenance = () => {
   return (
     <Singleservices
       title="Website Maintenance and SEO"
-      keywords="website maintenance, SEO, search engine optimization, hosting, website maintenance services, digital maintenance, Greenwich, London,Immutable Studio"
+      keywords="website design, website maintenance, SEO, search engine optimization, hosting, website maintenance services, digital maintenance, Greenwich, London,Immutable Studio"
       HeroH1="Website Maintenance & SEO"
       HeroP="We can look after your website for you, everything from content to SEO, and we do it all in-house. If you're looking
       for a friendly, UK-based website maintenance agency to look after your website you can book a call, contact us directly or fill out our client discovery form."
