@@ -32,10 +32,10 @@ const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
       {isIntersecting ? (
         <video  {...props} autoPlay muted loop controls={false} aria-label={ariaLabel} className='video'>
             <source src={src} type={type} />
-            <img src={fallback} alt="Fallback image" />
+            <img lazyloading="true" src={fallback} alt="Fallback image" />
         </video>
       ) : (
-        <img className='fallback' src={fallback} alt="Loading video..." />
+        <img lazyloading="true" className='fallback' src={fallback} alt="Loading video..." />
       )}
     </div>
   );
