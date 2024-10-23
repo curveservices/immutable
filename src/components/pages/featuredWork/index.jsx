@@ -10,6 +10,7 @@ import PriceCard from "../../cards/fullPrice";
 import CTA from "../../CTA";
 import vid from "../../../assets/images/working.mp4";
 import working from "../../../assets/images/working.png";
+import paper from "../../../assets/images/1746747.webp";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
 
@@ -65,7 +66,15 @@ const FeaturedWork = () => {
             <CubeSpinner />
           </div>
         </section>
-        <section className="clients">
+        <section
+          className="clients"
+          lazyloading="true"
+            style={{
+              backgroundImage: `url(${paper})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+        >
           <div
             className={`wireframe-container ${firstScroll ? "anim" : "none"}`}
           >
@@ -84,7 +93,15 @@ const FeaturedWork = () => {
             />
           </div>
         </section>
-        <section className="clients">
+        <section
+          className="clients"
+          lazyloading="true"
+            style={{
+              backgroundImage: `url(${paper})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+          }}
+        >
           <div
             className={`wireframe-container ${secondScroll ? "anim" : "none"}`}
           >

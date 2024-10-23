@@ -46,7 +46,6 @@
 
   .second-section {
     .second-inner {
-      background-image: url("../../../assets/images/1746747.webp");
       background-size: cover;
       box-shadow: var(--global);
       margin: 0;
@@ -62,13 +61,24 @@
         gap: 4rem;
         padding: 0rem 4rem 1rem;
 
+        .text-content {
+          padding: 1rem;
+          p {
+              border-top: 1px solid #000;
+              padding: 1rem 0;
+          
+            }
+          :nth-child(3) {
+              border-bottom: 1px solid #000;
+            }
+        }
+
         .serviceImg {
-          width: 45%;
+          width: 500px;
         }
       }
       .accordion {
         .content-container {
-          position: absolute;
           top: 45%;
         }
       }
@@ -189,7 +199,6 @@
   .forth-section {
     padding: 0rem 0rem 6rem;
     .forth-inner {
-      background-image: url("../../../assets/images/1746747.webp");
       background-size: cover;
       box-shadow: var(--global);
       padding: 4rem;
@@ -262,13 +271,12 @@
               margin: 0rem;
               text-align: center;
             }
-          
             .serviceImg {
               width: 100%;
             }
         }
         .home-marquee {
-          padding-top: 20rem;
+          margin-top: 25rem;
         }
 
         .accordion {
@@ -353,7 +361,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .home-page {
     .hero {
-      margin-bottom: 25rem;
+      height: 70vh;
       .main-title {
         font-size: 45px;
         padding: 0 2rem;
@@ -390,7 +398,7 @@
         .accordion {
           margin: 3rem;
           .content-container {
-              top: 60%;
+              top: 57%;
             }
         }
 

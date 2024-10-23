@@ -4,15 +4,16 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
+import MarqueeComp from "../../marquee";
 import CallToAction from "../../CTA";
 import img1 from "../../../assets/images/servicesImg.jpeg";
 import Links from "../../links";
 import vid from "../../../assets/images/london.mp4";
 import london from "../../../assets/images/london.png";
+import paper from "../../../assets/images/1746747.webp";
 import WorkCard from "../../cards/work";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
-import MarqueeComp from "../../marquee";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,8 +69,16 @@ const Services = () => {
           </div>
         </section>
         <section className="second-section">
-          <div className="second-inner">
-            <div className={`${second ? "anim-second" : "second-none"}`}>
+          <div className="second-inner"
+            lazyloading="true"
+            style={{
+              backgroundImage: `url(${paper})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+          <div className="text-box">
+            <div className={`text-content ${second ? "anim-second" : "second-none"}`}>
               <h2>
                 Need a supportive development agency for your
                 business?
@@ -89,7 +98,9 @@ const Services = () => {
               className={`${second ? "animSecondimg" : "second-none"}`}
             />
           </div>
-          <MarqueeComp/>
+        <MarqueeComp/>
+      </div>
+       
         </section>
         <section className="forth-section">
           <div className="forth-inner">

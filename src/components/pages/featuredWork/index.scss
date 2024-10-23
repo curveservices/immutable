@@ -24,7 +24,6 @@
 
   .clients {
     position: relative;
-    background-image: url("../../../assets//images/1746747.webp");
     background-size: cover;
     margin: 0rem 0rem 5rem;
     padding: 2rem 3rem;
@@ -90,9 +89,9 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .featured-work {
     .hero {
+      height: 80vh;
       display: flex;
       flex-direction: column;
-      margin-bottom: 8rem;
       .inner-hero {
         padding: 0rem 4rem;
 

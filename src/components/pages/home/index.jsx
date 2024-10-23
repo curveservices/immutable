@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
 import { NavLink } from "react-router-dom";
@@ -21,6 +21,7 @@ import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4";
 import fallback from "../../../assets/images/greenwich.png";
 import web from '../../../assets/images/servicesImg.jpeg';
+import paper from "../../../assets/images/1746747.webp";
 import "./index.scss";
 
 const Home = () => {
@@ -43,6 +44,7 @@ const Home = () => {
   const handleAccordionClick = (accordionId) => {
     setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
   };
+  
   return (
     <>
       <div className="home-page">
@@ -86,22 +88,33 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="second-section">
-          <div className="second-inner"> 
+        <section className="second-section" >
+      <div
+        className="second-inner"
+        lazyloading="true"
+        style={{
+          backgroundImage: `url(${paper})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
             <h2 className="title">OUR SERVICES</h2>
             <div className="text-box">
-              <p>
-                <hr />
-                Our services model operates either monthly or annually covering full website development,
-                hosting and maintenance, and AI business solutions.
-                <hr />
-                Service payments can be customised based on your specific
-                needs and usage, ensuring flexibility and scalability.
-                <hr />
-                We provide comprehensive support, making it easy for your business to grow and adapt.
-                <hr />
-              </p>
-              <img src={web} alt="two people working on a computer" className="serviceImg" />
+              <div className="text-content">
+                <p>
+                  Our services model operates either monthly or annually covering full website development,
+                  hosting and maintenance, and AI business solutions.
+                </p>
+                <p>
+                  Service payments can be customised based on your specific
+                  needs and usage, ensuring flexibility and scalability.
+                </p>
+                <p>
+                  We provide comprehensive support, making it easy for your business to grow and adapt.
+                </p>
+              </div>
+              
+              <img lazyloading="true" src={web} alt="two people working on a computer" className="serviceImg" />
             </div>
             <div className={`cubes ${second ? "anim" : "none"}`}>
               <StaticCubes />
@@ -211,7 +224,14 @@ const Home = () => {
           </div>
         </section>
         <section className="forth-section">
-          <div className="forth-inner">
+          <div
+        className="forth-inner"
+        style={{
+          backgroundImage: `url(${paper})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
             <h2 className="title">FEATURED WORK</h2>
             <div className="text-container">
               <div className="textBox">
