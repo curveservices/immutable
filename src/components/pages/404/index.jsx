@@ -12,7 +12,7 @@ const NotFound = () => {
         <img src={notFound} alt="page not found" />
       </div>
       <HelmetProvider>
-         <Helmet>
+        <Helmet>
           <title>Error 404 - Page not found</title>
         </Helmet>
       </HelmetProvider>

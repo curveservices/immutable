@@ -1,39 +1,34 @@
 .serivces-page {
   .hero {
     display: grid;
-      &>* {
-        grid-column: 1;
-        grid-row: 1;
+    & > * {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .hero-inner {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 4rem 5rem;
+      color: #fff;
+      .cube-container {
+        width: 50px;
+        top: 45%;
+        right: 35rem;
+        opacity: 0.5;
       }
-  
-      .hero-inner {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 4rem 5rem;
-        color: #fff;
-
-        .cube-container {
-          width: 50px;
-          top: 45%;
-          right: 35rem;
-          opacity: 0.5;
-        }
-
-        .text-box {
-          padding: 0rem 2rem;
-          max-width: 700px;
-          line-height: 1.5;
-        }
+      .text-box {
+        padding: 0rem 2rem;
+        max-width: 700px;
+        line-height: 1.5;
       }
+    }
   }
   .second-section {
     box-shadow: var(--global);
-    
     .second-inner {
       padding: 4rem 4rem 5rem;
       margin: 0;
-
       .text-box {
         display: flex;
         gap: 2rem;
@@ -43,59 +38,47 @@
           flex-direction: column;
         }
       }
-
       .anim-second {
         animation: fadeInLeft 2s forwards;
         padding: 0 1rem;
-
         p {
           padding-top: 2rem;
         }
       }
-
       .animSecondimg {
         animation: fadeInRight 2s forwards;
         width: 40%;
       }
-
       .second-none {
         opacity: 0;
       }
     }
   }
-
   .forth-section {
     box-shadow: var(--global);
     .forth-inner {
       padding: 2rem 2rem 6rem;
-
       .none {
         opacity: 0;
       }
-
       .text-box {
         padding: 1rem 5rem;
         text-align: center;
         color: #fff;
       }
-
       .price-title {
         text-align: center;
         color: #fff;
       }
-
       .contentAnim {
         animation: fadeIn 1s forwards;
         margin: 1rem;
       }
     }
   }
-
   .fith-section {
     padding: 0rem 0rem 6rem;
     .fith-inner {
-      background-image: url("../../../assets/images/1746747.webp");
-      background-size: cover;
       box-shadow: var(--global);
       padding: 4rem;
       text-align: center;
@@ -116,7 +99,6 @@
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .serivces-page {
     .hero {
@@ -126,11 +108,9 @@
       .hero-inner {
         flex-direction: column;
         padding: 1rem;
-
         .text-box {
           width: 100%;
         }
-
         .cube-container {
           display: none;
         }
@@ -141,7 +121,6 @@
         }
       }
     }
-
     .second-section {
       .second-inner {
         flex-direction: column;
@@ -159,15 +138,14 @@
         }
       }
     }
-
     .forth-section {
       .forth-inner {
         padding: 1rem;
-        .price-title, .text-box {
+        .price-title,
+        .text-box {
           padding: 1rem;
           text-align: center;
         }
-
         .contentAnim {
           margin: 1rem;
           .card-container {
@@ -178,7 +156,6 @@
         }
       }
     }
-
     .fith-section {
       padding: 0rem;
       .fith-inner {
@@ -190,18 +167,14 @@
     }
   }
 }
-
-// Tablet Styles
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .serivces-page {
-
     .hero {
-     height: 80vh;
+      height: 80vh;
       .hero-inner {
         display: flex;
         margin-bottom: 0;
         padding: 2rem;
-
         .text-box {
           width: 100%;
           margin: 2rem 0rem;
@@ -212,57 +185,47 @@
         }
       }
     }
-
     .second-section {
       .second-inner {
         flex-direction: column;
         padding: 2rem;
         gap: 2rem;
-
         .text-box {
           flex-direction: column;
         }
         .anim-second {
           width: 100%;
           padding: 2rem 0;
-
           p {
             padding-top: 1rem;
           }
         }
-
         .animSecondimg {
           width: 100%;
           padding-top: 1rem;
         }
       }
     }
-
     .forth-section {
       .forth-inner {
         padding: 1.5rem 2rem;
-
         .text-box {
           padding: 1rem 2rem;
-          font-size: 1.1rem; 
+          font-size: 1.1rem;
         }
-
         .price-title {
           padding: 1rem;
           text-align: center;
         }
-
         .contentAnim {
           margin-top: 2rem;
           gap: 2rem;
-
           .price-card {
-            max-width: 80%; 
+            max-width: 80%;
           }
         }
       }
     }
-
     .fith-section {
       .fith-inner {
         padding: 2rem 0;
@@ -274,7 +237,6 @@
             line-height: 1.4;
           }
         }
-
         .btn-container {
           display: flex;
           justify-content: center;
@@ -283,7 +245,6 @@
         }
       }
     }
-
     .cta {
       padding: 2rem;
       text-align: center;

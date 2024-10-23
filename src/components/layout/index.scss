@@ -6,8 +6,8 @@
   font-display: swap;
   background-image: url("../../assets/images/blue.webp");
   background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position:center;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   .home-page,
   .about-page,
@@ -30,7 +30,6 @@
       font-weight: normal;
       margin: 0;
     }
-
     p {
       font-size: 20px;
       line-height: 1.5;
@@ -40,18 +39,15 @@
       padding: 0.5rem 0;
       animation: fadeInUp 2s forwards;
     }
-
     .title {
       animation: fadeInLeft 2s forwards;
     }
-
     .btn-container {
       display: flex;
       margin-top: 1rem;
       gap: 1rem;
       animation: fadeInUp 2s forwards;
     }
-
     .stage-cube-cont,
     .wrapper {
       animation: fadeIn 4s forwards;
@@ -74,13 +70,11 @@
   cursor: pointer;
   animation: fadeInRight 2s;
   transition: all 1s;
-
   &:hover {
     background: #636363;
     color: #fff;
   }
 }
-
 @media (max-width: 768px) {
   .app {
     background-image: none;

@@ -7,18 +7,15 @@
   .text-container {
     padding: 2rem 1rem;
     width: 50%;
-
     .cta-title {
       margin: 0;
       padding: 0rem 4rem;
       font-size: 3rem;
     }
-
     .cta-p {
       margin: 2rem 4rem;
     }
   }
-
   .btn-container {
     display: flex;
     width: 50%;
@@ -28,7 +25,6 @@
     align-items: center;
   }
 }
-
 @media screen and (max-width: 768px) {
   .cta {
     flex-direction: column;
@@ -42,7 +38,6 @@
         padding: 1rem;
         font-size: 1.5rem;
       }
-
       .cta-p {
         margin: 0rem;
         padding: 1rem;

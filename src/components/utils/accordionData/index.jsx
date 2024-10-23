@@ -23,7 +23,7 @@ export const accordionData = [
     content:
       "If you are looking for AI solutions for your business we can help alleviate your pain points with multiple solutions. We will help you automate and outsource parts of your day to day work with the latest AI technology.",
   },
- 
+
   {
     id: 4,
     link: "packages",

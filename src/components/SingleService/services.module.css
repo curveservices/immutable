@@ -1,6 +1,4 @@
 @import "animate.css";
-
-/* Hero section */
 .innerHero {
   display: flex;
   justify-content: space-around;
@@ -11,24 +9,19 @@
 .textBox {
   padding: 2rem 0rem;
 }
-
 .title {
   animation: fadeInLeft 2s forwards;
 }
-
 .btnContainer {
   display: flex;
   margin-top: 2rem;
   gap: 1rem;
   animation: fadeInUp 2s forwards;
 }
-
 .gif {
   width: 600px;
   animation: fadeIn 4s forwards;
 }
-
-/* Second section */
 .secondSection {
   background-image: url("../../assets/images/1746747.webp");
   box-shadow: var(--global);
@@ -57,15 +50,12 @@
   width: 70%;
   color: #000;
 }
-
-/* Third section */
 .thirdInner {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 2rem 0;
 }
-
 .thirdTextBox {
   margin: 3rem 3rem 0;
   text-align: center;
@@ -80,136 +70,105 @@
   opacity: 0;
 }
 @media screen and (max-width: 768px) {
-  /* Hero section */
   .innerHero {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-
   .textBox {
     padding: 0rem 2rem;
     width: 100%;
   }
-
   .btnContainer {
     gap: 20px;
   }
-
   .gifContainer {
     width: 100%;
   }
-
   .gif {
     width: 100%;
   }
-
-  /* Second section */
   .secondInner {
     flex-direction: column;
     gap: 1rem;
     margin: 0rem;
     padding: 2rem;
   }
-
   .animSecond {
     width: 100%;
     padding: 0rem;
   }
-
   .animSecondimg {
     width: 100%;
     padding: 0;
   }
-
-  /* Third section */
   .thirdInner {
     margin: 0rem;
     padding: 2rem;
     width: 100%;
   }
-
   .thirdTextBox {
     padding: 0rem;
     margin: 0;
   }
-
   .contentAnim {
     margin: 1rem;
   }
-
   .cardContainer {
     flex-direction: column;
   }
-
   .priceCard {
     max-width: 100%;
   }
-
   .none {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  /* Hero section */
   .innerHero {
     flex-direction: column;
     margin: 0;
     padding: 0 0rem 2rem 0;
   }
-
   .textBox {
     padding: 1rem 2rem;
     width: 100%;
   }
-
   .btnContainer {
     gap: 1rem;
     justify-content: center;
   }
-
   .gif {
     width: 80%;
     margin-left: 13rem;
     margin-bottom: -2rem;
   }
-
-  /* Second section */
   .secondInner {
     flex-direction: column;
     margin: 0;
     padding: 2rem;
   }
-
   .animSecond {
     width: 100%;
     padding: 2rem;
   }
-
   .animSecondimg {
     width: 100%;
     padding: 2rem;
   }
-
-  /* Third section */
   .thirdInner {
     margin: 2rem 0;
     padding: 2rem;
     width: 100%;
   }
-
   .thirdTextBox {
     padding: 1rem;
     text-align: center;
   }
-
   .contentAnim {
     margin: 1rem;
   }
-
   .priceCard {
     max-width: 90%;
     margin: 0 auto;

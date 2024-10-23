@@ -1,33 +1,27 @@
 .about-page {
   .hero {
     display: grid;
-
-      & > * {
-        grid-column: 1;
-        grid-row: 1;
-      }
-      
+    & > * {
+      grid-column: 1;
+      grid-row: 1;
+    }
     .inner-hero {
       position: relative;
       padding: 0rem 6rem;
       color: #fff;
-
       .cube-container {
         width: 120px;
         top: 50%;
         right: 5%;
         opacity: 0.5;
       }
-
       .text-box {
         width: 70%;
         padding-bottom: 3.2rem;
         margin: 2rem 0 5rem;
-
         .title {
           animation: fadeInLeft 2s forwards;
         }
-
         .social-container {
           display: flex;
           margin: 1rem 0;
@@ -37,28 +31,23 @@
     }
   }
 }
-
 .second-section {
   .second-inner {
     position: relative;
     margin: 0rem 0rem 4rem;
     padding: 2rem 4rem;
-
     .title {
       margin: 2rem;
       text-align: center;
     }
-
     .contentAnim {
       animation: fadeInUp 1s forwards;
     }
-
     .none {
       opacity: 0;
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .about-page {
     .hero {
@@ -67,30 +56,25 @@
       }
       .inner-hero {
         padding: 0rem 2rem;
-
         .cube-container {
           display: none;
           width: 70px;
           top: 35%;
           left: 65%;
         }
-
         .text-box {
           width: 100%;
           margin: 0rem;
           padding-bottom: 2rem;
-
           .cube-container {
-        width: 120px;
-        top: 50%;
-        right: 5%;
-        opacity: 0.5;
-      }
-
+            width: 120px;
+            top: 50%;
+            right: 5%;
+            opacity: 0.5;
+          }
           .social-container {
             padding-top: 1rem;
           }
-
           .btn-container {
             margin-top: 5rem;
             gap: 20px;
@@ -98,50 +82,43 @@
         }
       }
     }
-
     .second-section {
       background-image: url("../../../assets/images/1746747.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
-
       .second-inner {
         margin: 0rem;
         padding: 2rem 0;
-
         .title {
           padding: 2rem;
           margin: 0;
         }
-
         .team-container {
           margin-top: 5rem;
         }
       }
     }
-
     .cta {
       margin-top: 2rem;
     }
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about-page {
     .hero {
       display: flex;
       flex-direction: column;
       margin-bottom: 30rem;
-    
+
       .inner-hero {
         padding: 0rem 4rem;
 
         .cube-container {
-            width: 120px;
-            top: 90%;
-            right: 5%;
-            opacity: 0.5;
-          }
-    
+          width: 120px;
+          top: 90%;
+          right: 5%;
+          opacity: 0.5;
+        }
         .text-box {
           width: 100%;
           margin: 2rem 0rem;

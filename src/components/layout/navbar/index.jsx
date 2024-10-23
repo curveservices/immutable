@@ -1,9 +1,7 @@
 import {
   faBars,
   faClose,
-  faEnvelope,
   faHouseChimney,
-  faMoneyBill1Wave,
   faSuitcase,
   faTools,
   faUser,
@@ -36,7 +34,7 @@ const Navbar = () => {
           <img src={logo} alt="Immutable studio logo" className="logo" />
         </div>
       </NavLink>
-      <Breadcrumbs className={isScrolled ? "navbar-scroll" : ""}/>
+      <Breadcrumbs className={isScrolled ? "navbar-scroll" : ""} />
       <nav className={showNav ? "mobile-show" : ""}>
         <NavLink
           to="/"

@@ -10,7 +10,6 @@ const PriceCard = (props) => {
   const labelStyle = {
     color: props.color,
   };
-
   const fetchData = async () => {
     try {
       const priceData = [];
@@ -39,11 +38,10 @@ const PriceCard = (props) => {
       alert("Error fetching data", err);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, [props.name]);
-
+  
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
@@ -78,9 +76,7 @@ const PriceCard = (props) => {
                 <li className={style.price}>
                   {isToggled ? item.month : item.price}
                 </li>
-                <li className={style.discount}>
-                  {!isToggled && item.li0}
-                </li>
+                <li className={style.discount}>{!isToggled && item.li0}</li>
                 <li className={style.bottomBar}>{item.li1}</li>
                 <li className={style.bottomBar}>{item.li2}</li>
                 <li className={style.bottomBar}>{item.li3}</li>

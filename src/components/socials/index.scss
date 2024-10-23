@@ -7,7 +7,6 @@
   text-align: center;
   margin: 0;
 }
-
 .icons {
   a {
     color: #fff;
@@ -15,14 +14,12 @@
     display: block;
     font-size: 28px;
     line-height: 20px;
-
     &:hover svg {
       color: var(--services-link);
       transform: scale(1.2);
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .iconList {
     top: 0;
@@ -30,7 +27,6 @@
     justify-content: center;
     gap: 20px;
   }
-
   .icons {
     a {
       font-size: 16px;

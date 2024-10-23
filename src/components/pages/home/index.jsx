@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
 import { NavLink } from "react-router-dom";
@@ -20,7 +20,7 @@ import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4";
 import fallback from "../../../assets/images/greenwich.png";
-import web from '../../../assets/images/servicesImg.jpeg';
+import web from "../../../assets/images/servicesImg.jpeg";
 import paper from "../../../assets/images/1746747.webp";
 import "./index.scss";
 
@@ -44,7 +44,7 @@ const Home = () => {
   const handleAccordionClick = (accordionId) => {
     setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
   };
-  
+
   return (
     <>
       <div className="home-page">
@@ -55,7 +55,6 @@ const Home = () => {
             type="video/mp4"
             className="video"
             fallback={fallback}
-            
           />
           <div className="text-box">
             <h1 className="main-title">Empowering your Business with</h1>
@@ -73,48 +72,63 @@ const Home = () => {
                   autoStart: true,
                   loop: true,
                   delay: 75,
-                  deleteSpeed: 40, 
+                  deleteSpeed: 40,
                 }}
               />
             </div>
             <div className="text">
-              <p> Discover how our website design &amp; development services can transform your online presence.
-                Based in Greenwich, London, we specialise in custom website builds, SEO &amp; maintenance, hosting, and bespoke AI business solutions.
+              <p>
+                {" "}
+                Discover how our website design &amp; development services can
+                transform your online presence. Based in Greenwich, London, we
+                specialise in custom website builds, SEO &amp; maintenance,
+                hosting, and bespoke AI business solutions.
               </p>
-               <div className="btn-container">
-                <Button link="https://calendly.com/immutable-studio/website-consultancy" text="book a call" target="_blank"/>
+              <div className="btn-container">
+                <Button
+                  link="https://calendly.com/immutable-studio/website-consultancy"
+                  text="book a call"
+                  target="_blank"
+                />
                 <Button link="discovery-form" text="discovery form" />
               </div>
             </div>
           </div>
         </section>
-        <section className="second-section" >
-      <div
-        className="second-inner"
-        lazyloading="true"
-        style={{
-          backgroundImage: `url(${paper})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+        <section className="second-section">
+          <div
+            className="second-inner"
+            lazyloading="true"
+            style={{
+              backgroundImage: `url(${paper})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <h2 className="title">OUR SERVICES</h2>
             <div className="text-box">
               <div className="text-content">
                 <p>
-                  Our services model operates either monthly or annually covering full website development,
-                  hosting and maintenance, and AI business solutions.
+                  Our services model operates either monthly or annually
+                  covering full website development, hosting and maintenance,
+                  and AI business solutions.
                 </p>
                 <p>
                   Service payments can be customised based on your specific
                   needs and usage, ensuring flexibility and scalability.
                 </p>
                 <p>
-                  We provide comprehensive support, making it easy for your business to grow and adapt.
+                  We provide comprehensive support, making it easy for your
+                  business to grow and adapt.
                 </p>
               </div>
-              
-              <img lazyloading="true" src={web} alt="two people working on a computer" className="serviceImg" />
+
+              <img
+                lazyloading="true"
+                src={web}
+                alt="two people working on a computer"
+                className="serviceImg"
+              />
             </div>
             <div className={`cubes ${second ? "anim" : "none"}`}>
               <StaticCubes />
@@ -143,8 +157,10 @@ const Home = () => {
             <h2 className="title">WHY CHOOSE US?</h2>
             <div className="text-container">
               <p>
-                We offer a full range of website design, SEO &amp; maintenance, AI chat assistants, and
-                workflow automation services with flexible pricing. We also package up all of these services as a convenient business pack.
+                We offer a full range of website design, SEO &amp; maintenance,
+                AI chat assistants, and workflow automation services with
+                flexible pricing. We also package up all of these services as a
+                convenient business pack.
               </p>
             </div>
             <div className="element-container">
@@ -166,7 +182,10 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="services/chat-bots" aria-label="link to chat bots page">
+              <NavLink
+                to="services/chat-bots"
+                aria-label="link to chat bots page"
+              >
                 <div
                   className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
                 >
@@ -202,7 +221,10 @@ const Home = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="services/web-development" aria-label="link to web development page">
+              <NavLink
+                to="services/web-development"
+                aria-label="link to web development page"
+              >
                 <div
                   className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
                 >
@@ -225,37 +247,37 @@ const Home = () => {
         </section>
         <section className="forth-section">
           <div
-        className="forth-inner"
-        style={{
-          backgroundImage: `url(${paper})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+            className="forth-inner"
+            style={{
+              backgroundImage: `url(${paper})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <h2 className="title">FEATURED WORK</h2>
             <div className="text-container">
               <div className="textBox">
                 <p>
-                  Signing off on a new website is always a moment of
-                  pride and satisfaction for us. With each project, we take
-                  great care to understand our clients' unique needs and deliver
-                  tailored solutions. Here are some of our featured projects.
+                  Signing off on a new website is always a moment of pride and
+                  satisfaction for us. With each project, we take great care to
+                  understand our clients' unique needs and deliver tailored
+                  solutions. Here are some of our featured projects.
                 </p>
               </div>
               <div className="">
-              <WorkCard />
-            </div>
+                <WorkCard />
+              </div>
               <div className="textBox">
                 <p>
                   As our client base continues to expand, we are excited to
-                  showcase the diverse and innovative work we do. Each
-                  project that we complete represents a commitment to
-                  excellence and our passion for helping businesses thrive online.
+                  showcase the diverse and innovative work we do. Each project
+                  that we complete represents a commitment to excellence and our
+                  passion for helping businesses thrive online.
                 </p>
               </div>
               <div className="btn-container">
                 <Button text="Portfolio" link="portfolio" />
-                <Button text="Discovery Form" link="discovery-form"/>
+                <Button text="Discovery Form" link="discovery-form" />
               </div>
             </div>
           </div>
@@ -267,7 +289,9 @@ const Home = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>Web Design Agency | Web Design London | Immutable Studio</title>
+            <title>
+              Web Design Agency | Web Design London | Immutable Studio
+            </title>
             <meta
               name="description"
               content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."

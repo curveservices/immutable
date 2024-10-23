@@ -6,11 +6,9 @@
   margin: 3rem 1rem;
   animation: bounceInDown 2s forwards;
 }
-
 .service-link {
   --b: 0.1em;
   --d: 10px;
-
   --_s: calc(var(--d) + var(--b));
   display: flex;
   align-items: center;
@@ -32,7 +30,6 @@
     var(--d) calc(100% - var(--d))
   );
   transition: 0.5s;
-
   &:hover {
     color: #000;
     transform: translate(0, 0);
@@ -46,7 +43,6 @@
     );
   }
 }
-
 @media screen and (max-width: 1024px) {
   .link-container {
     width: 100%;

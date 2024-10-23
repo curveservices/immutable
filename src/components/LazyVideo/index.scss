@@ -1,26 +1,23 @@
 .fallback {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover; // Ensures the image covers the same aspect ratio as the video
-    transition: opacity 0.3s ease; // Smooth transition when switching to video
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  transition: opacity 0.3s ease; 
 }
-
 .video {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-width: 100vw;
-    height: auto;
-    min-height: 100vh;
-    opacity: 0.5;
-    object-fit: cover;
-
-    &.loading {
-        opacity: 0;
-    }
-
-    &.loaded {
-        opacity: 1;
-    }
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  opacity: 0.5;
+  object-fit: cover;
+  &.loading {
+    opacity: 0;
+  }
+  &.loaded {
+    opacity: 1;
+  }
 }

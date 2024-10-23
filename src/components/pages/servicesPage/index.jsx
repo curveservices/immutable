@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
 import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
@@ -33,7 +32,7 @@ const Services = () => {
     <>
       <div className="serivces-page">
         <section className="hero">
-           <LazyVideo
+          <LazyVideo
             src={vid}
             type="video/mp4"
             className="video"
@@ -48,7 +47,8 @@ const Services = () => {
                 solutions.
               </p>
               <p>
-                We offer a full range of website development, website maintenance, hosting and, AI solutions services with flexible
+                We offer a full range of website development, website
+                maintenance, hosting and, AI solutions services with flexible
                 pricing.
               </p>
               <div className="btn-container">
@@ -69,38 +69,38 @@ const Services = () => {
           </div>
         </section>
         <section className="second-section">
-          <div className="second-inner"
+          <div
+            className="second-inner"
             lazyloading="true"
             style={{
               backgroundImage: `url(${paper})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           >
-          <div className="text-box">
-            <div className={`text-content ${second ? "anim-second" : "second-none"}`}>
-              <h2>
-                Need a supportive development agency for your
-                business?
-              </h2>
-              <p>
-                We provide comprehensive solutions tailored to your needs. Understanding
-                your business, we offer expert advice to address design
-                challenges effectively. Whether it's boosting brand visibility,
-                creating a lead-generating website or building AI solutions,
-                count on us to deliver outstanding
-                results.
-              </p>
+            <div className="text-box">
+              <div
+                className={`text-content ${
+                  second ? "anim-second" : "second-none"
+                }`}
+              >
+                <h2>Need a supportive development agency for your business?</h2>
+                <p>
+                  We provide comprehensive solutions tailored to your needs.
+                  Understanding your business, we offer expert advice to address
+                  design challenges effectively. Whether it's boosting brand
+                  visibility, creating a lead-generating website or building AI
+                  solutions, count on us to deliver outstanding results.
+                </p>
+              </div>
+              <img
+                src={img1}
+                alt="two people working on a computer"
+                className={`${second ? "animSecondimg" : "second-none"}`}
+              />
             </div>
-            <img
-              src={img1}
-              alt="two people working on a computer"
-              className={`${second ? "animSecondimg" : "second-none"}`}
-            />
+            <MarqueeComp />
           </div>
-        <MarqueeComp/>
-      </div>
-       
         </section>
         <section className="forth-section">
           <div className="forth-inner">
@@ -120,7 +120,15 @@ const Services = () => {
           </div>
         </section>
         <section className="fith-section">
-          <div className="fith-inner">
+          <div
+            className="fith-inner"
+            lazyloading="true"
+            style={{
+              backgroundImage: `url(${paper})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <h2 className="title">FEATURED WORK</h2>
             <div className="text-container">
               <div className="textBox">
@@ -132,20 +140,21 @@ const Services = () => {
                 </p>
               </div>
               <div className="">
-              <WorkCard />
+                <WorkCard />
               </div>
               <div className="textBox">
                 <p>
                   As our client base continues to expand, we are excited to
                   showcase the diverse and innovative work we do, particularly
-                  in creating cutting-edge websites and AI solutions using the latest tech. Each
-                  project that we complete represents a commitment to
-                  excellence and our passion for helping businesses thrive.
+                  in creating cutting-edge websites and AI solutions using the
+                  latest tech. Each project that we complete represents a
+                  commitment to excellence and our passion for helping
+                  businesses thrive.
                 </p>
               </div>
               <div className="btn-container">
                 <Button text="Portfolio" link="/portfolio" />
-                <Button text="Discovery Form" link="discovery-form"/>
+                <Button text="Discovery Form" link="discovery-form" />
               </div>
             </div>
           </div>

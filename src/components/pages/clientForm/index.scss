@@ -4,24 +4,20 @@
     position: relative;
     margin-bottom: 5rem;
     padding: 0rem 6rem;
-
     .cube-container {
       width: 80px;
       top: 40%;
       right: 5%;
       opacity: 0.7;
     }
-
     .text-box {
       margin: 2rem 0;
       width: 70%;
     }
   }
-
   .discovery-form {
     margin-top: 8rem;
     padding: 1rem 4rem;
-
     .form-section {
       display: flex;
       flex-direction: column;
@@ -33,7 +29,6 @@
       margin: 2rem;
       border-radius: 10px;
       box-shadow: var(--global);
-
       input[type="text"],
       input[type="email"],
       input[type="tel"],
@@ -47,39 +42,33 @@
           border: 3px solid blue;
         }
       }
-
       input[type="checkbox"] {
         height: 20px;
         width: 20px;
         margin: 0rem 1rem;
       }
-
       .checkbox {
         display: flex;
         gap: 1rem;
         margin: 1rem 0;
       }
-
       textarea {
         width: 100%;
         height: 50px;
         padding: 10px;
         box-sizing: border-box;
-
         &:focus {
           background: #fff;
           border: 3px solid blue;
         }
       }
     }
-
     .features {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
       margin-top: 0.5rem;
     }
-
     .privacy-policy {
       color: #000;
       text-decoration: underline;
@@ -87,68 +76,54 @@
       margin-bottom: 2rem;
     }
   }
-  // Tablet styles
   @media screen and (max-width: 1024px) {
     padding: 3rem 1.5rem;
     margin: 3rem 1.5rem;
-
     .hero {
       .text-box {
         width: 70%;
         padding: 0rem 1.5rem;
       }
     }
-
     .discovery-form {
       margin-top: 4rem;
       padding: 1rem;
-
       .form-section {
         padding: 1.5rem 3rem;
       }
-
       .privacy-policy {
         margin-left: 2rem;
       }
     }
   }
-
-  // Mobile styles
   @media screen and (max-width: 768px) {
     .hero {
       padding: 0rem 2rem;
-
       .cube-container {
         width: 70px;
         top: 20%;
         right: 3%;
       }
-
       .title {
         font-size: 30px;
       }
-
       .text-box {
         width: 100%;
         margin: 0rem;
         padding-bottom: 2rem;
       }
-
       .btn-container {
         justify-content: center;
         gap: 20px;
       }
     }
-
     .discovery-form {
       margin-top: 0rem;
       padding: 1rem;
-
       .form-section {
         padding: 1rem 2rem;
         margin: 1rem;
       }
-
       .privacy-policy {
         margin-left: 1.5rem;
       }

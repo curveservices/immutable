@@ -143,7 +143,6 @@ const ClientDiscoveryForm = () => {
         </section>
 
         <form ref={refForm} onSubmit={handleSubmit} className="discovery-form">
-          {/* Client Information Section */}
 
           <section className="form-section">
             <h2>Client Information</h2>
@@ -217,7 +216,6 @@ const ClientDiscoveryForm = () => {
             </label>
           </section>
 
-          {/* Project Overview Section */}
           <section className="form-section">
             <h2>Project Overview</h2>
             <label htmlFor="service">
@@ -247,7 +245,6 @@ const ClientDiscoveryForm = () => {
             </label>
           </section>
 
-          {/* Conditional Sections for Services */}
           {formData.services.includes("Web Design") && (
             <section className="form-section">
               <h2>Web Design Specific Questions</h2>
@@ -523,12 +520,10 @@ const ClientDiscoveryForm = () => {
             </section>
           )}
 
-          {/* AI & Automation Solutions Section */}
           {formData.services.includes("AI & Automation Solutions") && (
             <section className="form-section">
               <h2>AI & Automation Solutions</h2>
 
-              {/* AI Chat Assistants */}
               <label className="checkbox">
                 Are you interested in AI chat assistants?
                 <input
@@ -562,7 +557,6 @@ const ClientDiscoveryForm = () => {
                 </div>
               )}
 
-              {/* Workflow Automation */}
               <label className="checkbox">
                 Are you interested in workflow automation?
                 <input
@@ -614,7 +608,6 @@ const ClientDiscoveryForm = () => {
             </section>
           )}
 
-          {/* Budget and Timeline Section */}
           <section className="form-section">
             <h2>Budget and Timeline</h2>
             <label>
@@ -647,7 +640,6 @@ const ClientDiscoveryForm = () => {
             </label>
           </section>
 
-          {/* Competitor and Inspiration Section */}
           <section className="form-section">
             <h3>Competitor and Inspiration</h3>
             <label>
@@ -677,7 +669,6 @@ const ClientDiscoveryForm = () => {
             </label>
           </section>
 
-          {/* Additional Information Section */}
           <section className="form-section">
             <h2>Additional Information</h2>
             <label>
@@ -699,7 +690,6 @@ const ClientDiscoveryForm = () => {
             </label>
           </section>
 
-          {/* Submit Section */}
           <section className="form-section">
             <label>
               <input type="checkbox" name="acknowledgment" required />I

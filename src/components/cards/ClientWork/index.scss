@@ -4,18 +4,15 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
     .player-wrapper {
       display: flex;
       align-items: center;
       width: 40%;
     }
-
     button {
       margin: 1rem 0;
     }
   }
-
   .title-container {
     display: flex;
     align-items: center;
@@ -32,18 +29,15 @@
       }
     }
   }
-
   .name {
     padding: 1rem 0;
   }
-
   .images {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 0;
   }
-
   .wireframe {
     width: 250px;
     height: 530px;
@@ -60,24 +54,21 @@
     height: 530px;
   }
 }
-
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .client-container {
-      .images {
-        justify-content: space-evenly;
-      }
-  
-      .wireframe {
-        width: 200px;
-      }
-  
-      .mobile-wireframe {
-        width: 100px;
-        height: 530px;
-      }
+    .images {
+      justify-content: space-evenly;
     }
-}
+    .wireframe {
+      width: 200px;
+    }
 
+    .mobile-wireframe {
+      width: 100px;
+      height: 530px;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .client-container {
     .inner-container {
@@ -85,48 +76,39 @@
       flex-direction: column;
       gap: 0px;
       padding: 1rem 0;
-
       .player-wrapper {
         width: 100%;
         margin: 0;
       }
-
       button {
         margin: 1rem 0;
       }
     }
-
     .title-container {
       display: flex;
       align-items: center;
       gap: 30px;
-
       .logo {
         width: 100px;
         height: 50px;
       }
     }
-
     .name {
       padding: 1rem 0;
     }
-
     .images {
       justify-content: space-around;
       gap: 5px;
       margin: 0;
     }
-
     .wireframe {
       width: 75px;
       height: 250px;
     }
-
     .contact {
       width: 75px;
       height: 125px;
     }
-
     .mobile-wireframe {
       width: 50px;
       height: 300px;

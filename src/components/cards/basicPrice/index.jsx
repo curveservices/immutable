@@ -75,7 +75,7 @@ const PriceCard = (props) => {
                 <li className={style.price}>
                   {isToggled ? item.month : item.price}
                 </li>
-                <li className={style.discount}>{ !isToggled && item.li0}</li>
+                <li className={style.discount}>{!isToggled && item.li0}</li>
                 <li className={style.bottomBar}>{item.li1}</li>
                 <li className={style.bottomBar}>{item.li2}</li>
                 <li className={style.bottomBar}>{item.li3}</li>

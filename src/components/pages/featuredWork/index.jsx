@@ -14,7 +14,6 @@ import paper from "../../../assets/images/1746747.webp";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
 
-
 const FeaturedWork = () => {
   const [firstScroll, setFirstScrolll] = useState(false);
   const [secondScroll, setSecondScroll] = useState(false);
@@ -33,7 +32,7 @@ const FeaturedWork = () => {
     <>
       <div className="featured-work">
         <section className="hero">
-           <LazyVideo
+          <LazyVideo
             src={vid}
             type="video/mp4"
             fallback={working}
@@ -43,14 +42,13 @@ const FeaturedWork = () => {
             <div className="text-box">
               <h1 className="title">Featured Work</h1>
               <p>
-                Signing off a new project is always a moment of pride
-                and satisfaction for us.
+                Signing off a new project is always a moment of pride and
+                satisfaction for us.
               </p>
               <p>
                 As our client base continues to expand, we are excited to
-                showcase the work we do. Each project
-                featured on this page represents our commitment
-                for helping businesses thrive online.
+                showcase the work we do. Each project featured on this page
+                represents our commitment for helping businesses thrive online.
               </p>
               <div className="btn-container">
                 <Button
@@ -69,11 +67,11 @@ const FeaturedWork = () => {
         <section
           className="clients"
           lazyloading="true"
-            style={{
-              backgroundImage: `url(${paper})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
+          style={{
+            backgroundImage: `url(${paper})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
           <div
             className={`wireframe-container ${firstScroll ? "anim" : "none"}`}
@@ -96,10 +94,10 @@ const FeaturedWork = () => {
         <section
           className="clients"
           lazyloading="true"
-            style={{
-              backgroundImage: `url(${paper})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+          style={{
+            backgroundImage: `url(${paper})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
           <div
@@ -130,9 +128,7 @@ const FeaturedWork = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>
-              Portfolio | Immutable Studio Web Development Agency
-            </title>
+            <title>Portfolio | Immutable Studio Web Development Agency</title>
             <meta
               name="description"
               content="Our featured work will help you understand what we do and who we work with. We build fast, responsive websites and create AI solutions."

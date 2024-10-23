@@ -1,14 +1,13 @@
 import { collection, getDocs } from "firebase/firestore";
-import "./index.scss";
 import { useEffect, useState } from "react";
-import { db } from "../../../firbase.config";
-import ReactPlayer from "react-player/lazy";
-import Button from "../../button";
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player/lazy";
+import { db } from "../../../firbase.config";
+import Button from "../../button";
+import "./index.scss";
 
 const Client = (props) => {
   const [client, setClient] = useState([]);
-
   const fetchData = async () => {
     try {
       const clientData = [];
@@ -37,7 +36,6 @@ const Client = (props) => {
       console.error(err);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, []);
@@ -74,7 +72,6 @@ const Client = (props) => {
                 />
               </div>
             </div>
-
             <h2 className="name" style={{ color: item.color }}>
               {item.name}
             </h2>

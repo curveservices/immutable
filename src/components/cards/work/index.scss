@@ -4,7 +4,6 @@
   margin: 4rem 0;
   gap: 2rem;
 }
-
 .card {
   position: relative;
   overflow: hidden;
@@ -12,14 +11,14 @@
   height: 280px;
   box-shadow: var(--global);
   background: var(--primary);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+  transform 0.3s ease,
+  box-shadow 0.3s ease;
   border-radius: 10px;
-
   .card-image {
     width: 100%;
     object-fit: cover;
   }
-
   .content {
     text-align: center;
     color: #fff;
@@ -32,7 +31,6 @@
     background: var(--primary);
     bottom: -130px;
   }
-
   .name {
     font-family: "Coolvetica";
     margin: 0rem 0rem 2rem;
@@ -40,12 +38,11 @@
     font-weight: 600;
     line-height: 1.2;
   }
-
   .desc {
     font-weight: 400;
     margin: 0;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8); 
+    color: rgba(255, 255, 255, 0.8);
   }
   .btn-container {
     a {
@@ -53,7 +50,6 @@
       color: #fff;
     }
   }
-
   &::after {
     content: "";
     background: linear-gradient(180deg, #587bd3, #000);
@@ -67,70 +63,56 @@
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0;
   }
-
   &:hover:after {
     opacity: 0.85;
   }
-
   &:hover .content {
     bottom: 0;
     background: transparent;
   }
-     &:hover {
-       transform: translateY(-5px);
-       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-     }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
 }
-
-/* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .card-container {
     flex-wrap: wrap;
     gap: 1.5rem;
   }
-
   .card {
     width: 45%;
     height: 280px;
     margin: 0.5rem 0;
-
     .content {
       bottom: -140px;
     }
-
     .name {
       font-size: 24px;
     }
-
     .desc {
       font-size: 12px;
     }
   }
 }
-
-/* Mobile Styles */
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
-
   .card {
     width: 100%;
     max-width: 350px;
     height: 225px;
     margin: 0 auto;
-
     .content {
-      bottom: -165px
+      bottom: -165px;
     }
-
     .name {
       font-size: 20px;
       margin-top: 0;
     }
-
     .desc {
       font-size: 11px;
     }

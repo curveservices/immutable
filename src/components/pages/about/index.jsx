@@ -6,8 +6,8 @@ import Socials from "../../socials";
 import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
-import vid from "../../../assets/images/about.mp4"
-import about from "../../../assets/images/about.png"
+import vid from "../../../assets/images/about.mp4";
+import about from "../../../assets/images/about.png";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
 
@@ -26,14 +26,14 @@ const About = () => {
     <>
       <div className="about-page">
         <section className="hero">
-           <LazyVideo
+          <LazyVideo
             src={vid}
             fallback={about}
             type="video/mp4"
             className="video"
           />
-            <div className="inner-hero">
-            <StaticCubes/>
+          <div className="inner-hero">
+            <StaticCubes />
             <div className="text-box">
               <h1 className="title">About Us</h1>
               <p>

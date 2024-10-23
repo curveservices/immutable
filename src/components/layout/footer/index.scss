@@ -6,7 +6,6 @@ footer {
   font-family: "Coolvetica";
   text-transform: uppercase;
   color: #fff;
-
   .foot-title {
     display: flex;
     justify-content: center;
@@ -14,18 +13,15 @@ footer {
       width: 250px;
     }
   }
-
   .footer-container {
     display: flex;
     gap: 50px;
     margin-left: 60px;
-
     .site-links {
       display: flex;
       align-items: center;
       gap: 50px;
     }
-
     li {
       list-style: none;
       text-align: left;
@@ -50,7 +46,6 @@ footer {
     font-size: 12px;
   }
 }
-
 @media screen and (max-width: 768px) {
   footer {
     .foot-title {
@@ -58,7 +53,6 @@ footer {
         width: 100px;
       }
     }
-
     .footer-container {
       margin: 0;
       .site-links {
@@ -66,17 +60,14 @@ footer {
         gap: 5px;
       }
     }
-
     .div-line {
       margin: 0.5rem 1rem;
       border: 1px solid var(--third-bg);
     }
-
     .socials-container {
       display: flex;
       flex-direction: column;
     }
-
     .copy {
       font-size: 8px;
     }

@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column;
   gap: 3rem;
-
   .accordion-item {
     width: 30%;
     height: 50px;
@@ -10,7 +9,6 @@
     text-align: center;
     cursor: pointer;
   }
-
   .content-container {
     position: absolute;
     left: 45%;
@@ -19,13 +17,11 @@
     text-align: left;
     animation: fadeIn 2s;
   }
-
   .accordion-subtitle {
     font-size: 24px;
     font-weight: bold;
     margin: 1rem 0;
   }
-
   .read-btn {
     margin-top: 1rem;
     animation: shakeX 1s 2s;
@@ -34,11 +30,9 @@
 .accordion-title {
   --b: 0.1em;
   --d: 10px;
-
   --_s: calc(var(--d) + var(--b));
   width: 100%;
   color: #fff;
-
   border: solid #0000;
   border-width: var(--b) var(--b) var(--_s) var(--_s);
   background: var(--services-link);
@@ -52,7 +46,6 @@
     var(--d) calc(100% - var(--d))
   );
   transition: 0.5s;
-
   &:hover {
     color: #000;
     transform: translate(0, 0);
@@ -66,18 +59,15 @@
     );
   }
 }
-
 @media screen and (max-width: 768px) {
   .accordion {
     gap: 4rem;
-
     .accordion-item {
       width: 20rem;
       height: 10px;
       margin: 0rem;
       padding: 0rem;
     }
-
     .content-container {
       left: 0%;
       top: 53%;
@@ -86,41 +76,35 @@
       width: 100%;
       text-align: center;
       animation: fadeIn 2s forwards;
-
       .accordion-subtitle {
         margin-bottom: 0rem;
         font-size: 14px;
       }
     }
-
     .read-btn {
       display: flex;
       justify-content: center;
     }
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .accordion {
-      gap: 4rem;
-  
-      .accordion-item {
-        width: 40%;
-        height: 10px;
-        margin: 0rem;
-        padding: 0rem;
-      }
-  
-      .content-container {
-        top: 18%;
-        padding: 0rem 2rem;
-        width: 50%;
-        animation: fadeIn 2s forwards;
-  
-        .accordion-subtitle {
-          margin-bottom: 0.5rem;
-          font-size: 20px;
-        }
+    gap: 4rem;
+    .accordion-item {
+      width: 40%;
+      height: 10px;
+      margin: 0rem;
+      padding: 0rem;
+    }
+    .content-container {
+      top: 18%;
+      padding: 0rem 2rem;
+      width: 50%;
+      animation: fadeIn 2s forwards;
+      .accordion-subtitle {
+        margin-bottom: 0.5rem;
+        font-size: 20px;
       }
     }
+  }
 }

@@ -1,36 +1,29 @@
 .featured-work {
   .hero {
     display: grid;
-    
-      &>* {
-        grid-column: 1;
-        grid-row: 1;
-      }
-
+    & > * {
+      grid-column: 1;
+      grid-row: 1;
+    }
     .inner-hero {
-      padding: 1rem 4rem 5rem; 
+      padding: 1rem 4rem 5rem;
       color: #fff;
-
       .text-box {
         width: 50%;
         margin: 2rem 2rem 5rem;
       }
     }
-    
     .spinner {
       margin-left: 45rem;
     }
   }
-
   .clients {
     position: relative;
     background-size: cover;
     margin: 0rem 0rem 5rem;
     padding: 2rem 3rem;
     box-shadow: var(--global);
-
   }
-
   .featured {
     margin: 4rem 0;
     padding: 2rem 0;
@@ -39,53 +32,45 @@
       color: #fff;
     }
   }
-
   .anim {
     animation: fadeIn 1s forwards;
   }
-
   .none {
     opacity: 0;
   }
 }
-
 @media screen and (max-width: 768px) {
   .featured-work {
     .hero {
       display: flex;
       flex-direction: column;
       video {
-          display: none;
-        }
+        display: none;
+      }
       .inner-hero {
         padding: 0rem 2rem;
-
         .text-box {
           width: 100%;
           margin: 0rem;
           padding-bottom: 2rem;
-
           .button-container {
             gap: 20px;
           }
         }
       }
       .spinner {
-       margin: 2rem 3rem;
+        margin: 2rem 3rem;
       }
     }
-
     .clients {
       padding: 1rem 2rem;
     }
-
     .featured {
       margin: 1rem;
       padding: 1rem;
     }
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .featured-work {
     .hero {
@@ -94,34 +79,28 @@
       flex-direction: column;
       .inner-hero {
         padding: 0rem 4rem;
-
         .text-box {
-          width: 100%; 
+          width: 100%;
           margin: 2rem 0rem;
           line-height: 1.4;
         }
       }
-
       .spinner {
-        margin-left: 10rem; 
+        margin-left: 10rem;
       }
     }
-
     .clients {
-      padding: 2rem 3rem; // Adjust padding for better layout on tablets
+      padding: 2rem 3rem; 
       background-size: cover;
-
       .wireframe-container {
-        padding: 1rem; // Extra padding for better spacing
+        padding: 1rem; 
       }
     }
-
     .featured {
       margin: 3rem 0;
       padding: 2rem 0;
-
       h2 {
-        font-size: 2rem; // Adjust heading size for tablets
+        font-size: 2rem;
       }
     }
   }

@@ -9,7 +9,7 @@ const Links = (props) => {
           <h3>WEB DEVELOPMENT</h3>
         </NavLink>
       </div>
-       <div className="service-link">
+      <div className="service-link">
         <NavLink to={props.maintenanceLink}>
           <h3>MAINTENANCE & SEO</h3>
         </NavLink>

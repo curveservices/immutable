@@ -1,7 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-
 import Button from "../button";
-import paper from "../../assets/images/1746747.webp"
+import paper from "../../assets/images/1746747.webp";
 import "./index.scss";
 
 const CallToAction = () => {
@@ -11,8 +9,8 @@ const CallToAction = () => {
       lazyloading="true"
       style={{
         backgroundImage: `url(${paper})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div className="text-container">

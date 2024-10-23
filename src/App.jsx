@@ -4,9 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-
 import "./App.scss";
-
 import About from "./components/pages/about";
 import Home from "./components/pages/home";
 import Layout from "./components/layout";
@@ -32,7 +30,10 @@ const router = createBrowserRouter(
         <Route path=":id/web-development" element={<WebDev />} />
         <Route path=":id/chat-bots" element={<ChatBots />} />
         <Route path=":id/packages" element={<Packages />} />
-        <Route path=":id/seo-website-maintenance" element={<SeoMaintenance />} />
+        <Route
+          path=":id/seo-website-maintenance"
+          element={<SeoMaintenance />}
+        />
         <Route path="portfolio" element={<FeaturedWork />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="discovery-form" element={<ClientDiscoveryForm />} />

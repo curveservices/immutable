@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from "react";
 import "./index.scss";
 
 const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
@@ -9,11 +9,11 @@ const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsIntersecting(true);  // Video is now in view
+          setIsIntersecting(true);
           observer.disconnect();
         }
       },
-      { threshold: 0.25 } // Trigger when 25% of the video is visible
+      { threshold: 0.25 },
     );
 
     if (videoRef.current) {
@@ -30,12 +30,25 @@ const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
   return (
     <div ref={videoRef}>
       {isIntersecting ? (
-        <video  {...props} autoPlay muted loop controls={false} aria-label={ariaLabel} className='video'>
-            <source src={src} type={type} />
-            <img lazyloading="true" src={fallback} alt="Fallback image" />
+        <video
+          {...props}
+          autoPlay
+          muted
+          loop
+          controls={false}
+          aria-label={ariaLabel}
+          className="video"
+        >
+          <source src={src} type={type} />
+          <img lazyloading="true" src={fallback} alt="Fallback image" />
         </video>
       ) : (
-        <img lazyloading="true" className='fallback' src={fallback} alt="Loading video..." />
+        <img
+          lazyloading="true"
+          className="fallback"
+          src={fallback}
+          alt="Loading video..."
+        />
       )}
     </div>
   );
