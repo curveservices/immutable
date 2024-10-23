@@ -11,6 +11,8 @@
     .icon {
         filter: grayscale(100%);
         opacity: 0.5;
+        width: auto;
+        height: auto;
 
         &:hover {
             filter: initial;
