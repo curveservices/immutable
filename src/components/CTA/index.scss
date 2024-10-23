@@ -2,12 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../assets/images/1746747.webp");
   background-size: cover;
-  padding: 2rem 1rem;
-  margin-top: 1rem;
   box-shadow: var(--global);
   .text-container {
+    padding: 2rem 1rem;
     width: 50%;
 
     .cta-title {
@@ -35,8 +33,10 @@
   .cta {
     flex-direction: column;
     gap: 2rem;
-    margin: 3rem 0;
+    margin: 2rem 0 1rem;
+    box-shadow: none;
     .text-container {
+      padding: 0 1rem;
       width: 100%;
       .cta-title {
         padding: 1rem;

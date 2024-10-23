@@ -1,9 +1,20 @@
+import { useEffect, useRef, useState } from "react";
+
 import Button from "../button";
+import paper from "../../assets/images/1746747.webp"
 import "./index.scss";
 
 const CallToAction = () => {
   return (
-    <>
+    <div
+      className="cta"
+      lazyloading="true"
+      style={{
+        backgroundImage: `url(${paper})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="text-container">
         <h2 className="cta-title">Ready to get started?</h2>
         <p className="cta-p">
@@ -19,7 +30,7 @@ const CallToAction = () => {
         />
         <Button text="Discovery Form" link="/discovery-form" />
       </div>
-    </>
+    </div>
   );
 };
 
