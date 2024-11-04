@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /services
+Allow: /web-development
+Allow: /seo-website-maintenance
+Allow: /chat-bots
+Allow: /packages
+Allow: /portfolio
+Allow: /about
+Allow: /contact
