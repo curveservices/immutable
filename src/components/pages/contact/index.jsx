@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Socials from "../../socials";
 import "./index.scss";
 
@@ -14,7 +15,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "p.rossiter83@gmail.com",
@@ -24,13 +24,13 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
+          toast.success("Message successfully sent!");
+          refForm.current.reset();
         },
         () => {
-          alert(" Failed to send your message, pleease try again");
+          toast.error(" Failed to send your message, pleease try again");
         },
-      );
+      )
   };
 
   return (
