@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 import "./index.scss";
 import Button from "../../button";
 import { Link } from "react-router-dom";
 import StaticCubes from "../../Animations/staticCubes";
-import { HelmetProvider } from "react-helmet-async";
-import { Helmet } from "react-helmet";
 
 const ClientDiscoveryForm = () => {
   const refForm = useRef();
@@ -111,11 +113,11 @@ const ClientDiscoveryForm = () => {
       )
       .then(
         () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
+          toast.success("Message successfully sent!");
+          refForm.current.reset();
         },
         () => {
-          alert(" Failed to send your message, pleease try again");
+          toast.error(" Failed to send your message, pleease try again");
         },
       );
   };
