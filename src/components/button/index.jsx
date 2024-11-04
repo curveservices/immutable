@@ -19,7 +19,14 @@ const Button = (props) => {
       tabIndex={0}
       aria-label={`Link to ${props.text}`}
     >
-      <button style={buttonStyle}>{props.text}</button>
+      <button
+        style={buttonStyle}
+        onClick={props.onClick}
+        type={props.type}
+        value={props.value}
+      >
+        {props.text}
+      </button>
     </Link>
   );
 };
