@@ -95,7 +95,7 @@ const Services = () => {
               </div>
               <img
                 src={img1}
-                alt="two people working on a computer"
+                alt="two people working on website design"
                 className={`${second ? "animSecondimg" : "second-none"}`}
               />
             </div>
