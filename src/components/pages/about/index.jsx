@@ -9,6 +9,8 @@ import StaticCubes from "../../Animations/staticCubes";
 import vid from "../../../assets/images/about.mp4";
 import about from "../../../assets/images/about.png";
 import LazyVideo from "../../LazyVideo";
+import paper from "../../../assets/images/1746747.webp";
+
 import "./index.scss";
 
 const About = () => {
@@ -17,7 +19,7 @@ const About = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollCard = window.scrollY;
-      setSecond(scrollCard > 500);
+      setSecond(scrollCard > 250);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -67,10 +69,16 @@ const About = () => {
           </div>
         </section>
         <section className="second-section">
-          <div className="second-inner">
-            <div className="title">
-              <h1>MEET THE TEAM</h1>
-            </div>
+          <div 
+            className="second-inner"
+            lazyloading="true"
+            style={{
+            backgroundImage: `url(${paper})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            }}
+          >
+            <h2 className="title">MEET THE TEAM</h2>
             <div className={`${second ? "contentAnim" : "none"}`}>
               <TeamCard />
             </div>
