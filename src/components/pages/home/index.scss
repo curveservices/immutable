@@ -7,17 +7,16 @@
       grid-row: 1;
     }
     .main-title {
-      font-size: 60px;
-      line-height: 1.5;
+      font-size: 3.75rem;
       text-align: center;
     }
     .text-box {
-      margin: 4rem;
+      margin: 4.5rem;
       animation: fadeIn 2s forwards;
     }
     .typewriter {
       margin-bottom: 1rem;
-      font-size: 52px;
+      font-size: 3.25rem;
       text-align: center;
       background: linear-gradient(to right, #fff, coral);
       background-clip: text;
@@ -31,8 +30,8 @@
       );
       border-radius: 20px;
       text-align: center;
-      margin: 4rem 2rem 0rem;
-      padding: 1rem 1.9rem;
+      margin: 3rem 4rem 0rem;
+      padding: 1rem 1.4rem;
     }
     .btn-container {
       justify-content: center;
@@ -40,6 +39,7 @@
   }
   .second-section {
     .second-inner {
+      position: relative;
       box-shadow: var(--global);
       margin: 0;
       padding: 0;
@@ -68,7 +68,7 @@
       }
       .accordion {
         .content-container {
-          top: 45%;
+          top: 48%;
         }
       }
       .home-marquee {
@@ -193,9 +193,6 @@
   .home-page {
     .hero {
       flex-direction: column;
-      .video {
-        display: none;
-      }
       .main-title {
         font-size: 30px;
         padding: 0 1rem;
@@ -207,7 +204,7 @@
         font-size: 28px;
       }
       .text {
-        margin: 0rem;
+        margin: 2rem 3rem;
       }
       .btn-container {
         flex-direction: column;
@@ -224,7 +221,7 @@
           padding: 1rem 2rem;
         }
         .cube-container {
-          top: 30%;
+          display: none;
         }
         .text-box {
           flex-direction: column;
@@ -311,7 +308,7 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .home-page {
     .hero {
-      height: 70vh;
+      height: 80vh;
       .main-title {
         font-size: 45px;
         padding: 0 2rem;
@@ -322,6 +319,9 @@
       .text-box {
         margin: 2rem 0;
         padding: 1rem 2rem;
+      }
+      .text {
+        margin: 6rem;
       }
     }
     .second-section {
@@ -367,7 +367,7 @@
         .title {
           font-size: 36px;
         }
-        .text-contanier {
+        .text-container {
           padding: 0rem 3rem;
         }
       }

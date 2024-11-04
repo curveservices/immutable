@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileScreenButton,
@@ -34,7 +34,7 @@ const Home = () => {
     const handleScroll = () => {
       const scrollP = window.scrollY;
       const scrollThird = window.scrollY;
-      setSecond(scrollP > 100);
+      setSecond(scrollP > 250);
       setThirdLt(scrollThird > 1000);
       setThirdRt(scrollThird > 1000);
     };
@@ -57,7 +57,7 @@ const Home = () => {
             fallback={fallback}
           />
           <div className="text-box">
-            <h1 className="main-title">Empowering your Business with</h1>
+            <h1 className="main-title"><Link rel="preload" href="./assets/fonts/CoolveticaRg-Regular.woff" as="font" type="font/woff" crossOrigin="true">Empowering your Business with</Link></h1>
             <div className="typewriter">
               <TypewriterComponent
                 options={{
@@ -78,11 +78,10 @@ const Home = () => {
             </div>
             <div className="text">
               <p>
-                {" "}
-                Discover how our website design &amp; development services can
+                Our web design &amp; development services will
                 transform your online presence. Based in Greenwich, London, we
                 specialise in custom website builds, SEO &amp; maintenance,
-                hosting, and bespoke AI business solutions.
+                and AI solutions.
               </p>
               <div className="btn-container">
                 <Button
@@ -105,9 +104,9 @@ const Home = () => {
               backgroundPosition: "center",
             }}
           >
-            <h2 className="title">OUR SERVICES</h2>
+            <h2 className="title">OUR WEBSITE DEVELOPMENT SERVICES</h2>
             <div className="text-box">
-              <div className="text-content">
+              <div className={`text-content ${second ? "anim" : "none"}`}>
                 <p>
                   Our services model operates either monthly or annually
                   covering full website development, hosting and maintenance,
@@ -126,8 +125,8 @@ const Home = () => {
               <img
                 lazyloading="true"
                 src={web}
-                alt="two people working on a computer"
-                className="serviceImg"
+                alt="two people working on website design"
+                className={`serviceImg ${second ? "anim" : "none"}`}
               />
             </div>
             <div className={`cubes ${second ? "anim" : "none"}`}>
@@ -147,7 +146,7 @@ const Home = () => {
                 />
               ))}
             </div>
-            <div className="home-marquee">
+            <div className={`home-marquee ${second ? "anim" : "none"}`}>
               <MarqueeComp />
             </div>
           </div>
