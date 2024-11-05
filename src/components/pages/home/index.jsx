@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobileScreenButton,
@@ -57,7 +57,7 @@ const Home = () => {
             fallback={fallback}
           />
           <div className="text-box">
-            <h1 className="main-title"><Link rel="preload" href="./assets/fonts/CoolveticaRg-Regular.woff" as="font" type="font/woff" crossOrigin="true">Empowering your Business with</Link></h1>
+            <h1 className="main-title">Empowering Business with</h1>
             <div className="typewriter">
               <TypewriterComponent
                 options={{
@@ -77,12 +77,10 @@ const Home = () => {
               />
             </div>
             <div className="text">
-              <p>
-                Our web design &amp; development services will
-                transform your online presence. Based in Greenwich, London, we
-                specialise in custom website builds, SEO &amp; maintenance,
-                and AI solutions.
-              </p>
+              <h2>
+                Our web design &amp; development will
+                transform your online presence.
+              </h2>
               <div className="btn-container">
                 <Button
                   link="https://calendly.com/immutable-studio/website-consultancy"

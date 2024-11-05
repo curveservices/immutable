@@ -11,7 +11,7 @@
       text-align: center;
     }
     .text-box {
-      margin: 4.5rem;
+      margin: 4rem;
       animation: fadeIn 2s forwards;
     }
     .typewriter {
@@ -23,15 +23,19 @@
       -webkit-text-fill-color: transparent;
     }
     .text {
-      background: linear-gradient(
-        to right,
-        rgba(6, 72, 149, 0.7),
-        rgba(43, 102, 167, 0.7)
-      );
+      // background: linear-gradient(
+      //   to right,
+      //   rgba(6, 72, 149, 0.7),
+      //   rgba(43, 102, 167, 0.7)
+      // );
       border-radius: 20px;
       text-align: center;
-      margin: 3rem 4rem 0rem;
-      padding: 1rem 1.4rem;
+      font-size: 3.75rem;
+      margin: 2rem 6rem;
+      padding: 1.5rem;
+      h2 {
+        padding: 1rem;
+      }
     }
     .btn-container {
       justify-content: center;
