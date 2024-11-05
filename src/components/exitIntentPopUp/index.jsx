@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import audit from '../../assets/images/audit.jpeg'
+import audit from '../../assets/images/audit.jpg'
 import "./index.scss";
 
 ReactModal.setAppElement('#root');
@@ -58,10 +58,12 @@ const ExitIntentPopup = () => {
                 overlayClassName="popup-overlay"
                 className="popup"
             >
+                <img src={ audit } className='audit-img' alt='image of a 100% website audit score'/>
+                <div className="text-box">
                 <FontAwesomeIcon className='popup-close' icon={faClose} size='2x' color='#000' onClick={handleClose} />
-                <h2>Free SEO & Performance Audit</h2>
-                <img src={ audit } alt='image of a 100% website audit score'/>
-                <p>Get a <b>FREE</b> SEO, performance and business Facebok page audit for your website. Discover opportunities for improvement and growth!</p>
+                <div className='strap'>Don't go without getting a</div>
+                <h1>Free SEO & Performance Audit</h1>
+                <p>Get a <b>FREE</b> SEO, performance and business Facebook page audit. Find opportunities for improvement!</p>
                 <form ref={refForm} onSubmit={sendEmail} className='popup-form'>
                     <div className="form-group">
                         <label htmlFor="name">Your Name</label>
@@ -73,7 +75,7 @@ const ExitIntentPopup = () => {
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Your Email Address</label>
+                        <label htmlFor="email">Email Address</label>
                         <input
                             type="email"
                             name="email"
@@ -95,8 +97,10 @@ const ExitIntentPopup = () => {
                         readOnly
                         className='subject'
                     ></textarea>
-                    <input className='button' type="submit" value="Claim Your Free Audit" />
+                        <input className='button' type="submit" value="Claim Your Free Audit" />
                 </form>
+                </div>
+                
             </ReactModal>
             <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
         </>
