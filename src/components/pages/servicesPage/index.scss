@@ -102,12 +102,9 @@
 @media screen and (max-width: 768px) {
   .serivces-page {
     .hero {
-      .video {
-        display: none;
-      }
       .hero-inner {
         flex-direction: column;
-        padding: 1rem;
+        padding: 0rem 1rem;
         .text-box {
           width: 100%;
         }
