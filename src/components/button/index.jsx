@@ -11,7 +11,6 @@ const Button = (props) => {
 
   return (
     <Link
-      className="flat-btn"
       to={props.link}
       type={props.type}
       target={props.target}
@@ -20,6 +19,7 @@ const Button = (props) => {
       aria-label={`Link to ${props.text}`}
     >
       <button
+        className="flat-btn"
         style={buttonStyle}
         onClick={props.onClick}
         type={props.type}

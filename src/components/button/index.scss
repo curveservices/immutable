@@ -1,4 +1,4 @@
-button {
+.flat-btn {
   text-transform: uppercase;
   background: #000;
   color: #fff;
@@ -19,7 +19,7 @@ button {
   cursor: pointer;
   &:hover {
     transform: translateY(-3px);
-    background: var(--primary);
+    background-color: var(--main);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   }
 }
@@ -27,8 +27,13 @@ a {
   text-decoration: none;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .flat-btn {
+    width: fit-content;
+  }
+}
 @media screen and (max-width: 1024px) {
-  button {
+  .flat-btn {
     font-size: 10px;
     margin: 0;
   }
