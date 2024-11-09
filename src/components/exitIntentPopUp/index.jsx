@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import audit from '../../assets/images/audit.jpg'
+import audit from '../../assets/images/audit.webp'
 import "./index.scss";
 
 ReactModal.setAppElement('#root');
