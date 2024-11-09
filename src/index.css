@@ -1,9 +1,11 @@
 :root {
   --primary: linear-gradient(to right, #064895, #2b66a7);
   --secondary: linear-gradient(to right, #ffffff, #bbbbbb);
-  --third-bg: #2d75e1;
+  --third-bg: #2D60E0;
+  --main: #1B4D99;
+  --second: #dcdcdc;
   --services-link: radial-gradient(#6a9eda, 40%, #2d5fe1);
-  --global: 0px 20px 40px 5px rgba(0, 0, 0, 0.7);
+  --global: 00px 10px 40px 0px rgba(0, 0, 0, 0.2);
   --box: 0px 40px 40px 20px rgba(0, 0, 0, 0.5);
   --button-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
