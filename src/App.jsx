@@ -18,6 +18,9 @@ import PrivacyPolicy from "./components/pages/policy";
 import FeaturedWork from "./components/pages/featuredWork";
 import ClientDiscoveryForm from "./components/pages/clientForm";
 import SeoMaintenance from "./components/pages/seoMaintenance";
+import TelehillClient from "./components/pages/clientPages/clientTelehill";
+import Morbot from "./components/pages/clientPages/clientMorfbot";
+import ViveLaCrepe from "./components/pages/clientPages/clientViveLaCrepe";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +38,9 @@ const router = createBrowserRouter(
           element={<SeoMaintenance />}
         />
         <Route path="portfolio" element={<FeaturedWork />} />
+        <Route path=":id/telegraph-hill-tutoring" element={<TelehillClient />} />
+        <Route path=":id/morfbot" element={<Morbot />} />
+        <Route path=":id/vive-la-crepe" element={<ViveLaCrepe />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="discovery-form" element={<ClientDiscoveryForm />} />
       </Route>
