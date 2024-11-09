@@ -165,12 +165,12 @@
 }
 @media screen and (max-width: 768px) {
   .wrapper {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 50%;
     .circle {
-      top: -15%;
-      left: 0rem;
-      width: 20rem;
+      top: 0%;
+      left: 5rem;
+      width: 15rem;
     }
     .ball {
       width: 0.5rem;
@@ -178,31 +178,31 @@
     .stage-cube-cont {
       .cubespinner {
         top: 10%;
-        left: 10%;
+        left: 18%;
         transform-origin: 50px 50px 0;
         margin-left: calc(50% - 100px);
         div {
-          width: 150px;
-          height: 150px;
-          font-size: 75px;
+          width: 100px;
+          height: 100px;
+          font-size: 50px;
         }
         .face1 {
-          transform: translateZ(75px);
+          transform: translateZ(50px);
         }
         .face2 {
-          transform: rotateY(90deg) translateZ(75px);
+          transform: rotateY(90deg) translateZ(50px);
         }
         .face3 {
-          transform: rotateY(90deg) rotateX(90deg) translateZ(75px);
+          transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
         }
         .face4 {
-          transform: rotateY(180deg) rotateZ(90deg) translateZ(75px);
+          transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
         }
         .face5 {
-          transform: rotateY(-90deg) rotateZ(90deg) translateZ(75px);
+          transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
         }
         .face6 {
-          transform: rotateX(-90deg) translateZ(75px);
+          transform: rotateX(-90deg) translateZ(50px);
         }
       }
     }
