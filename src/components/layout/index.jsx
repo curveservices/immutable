@@ -41,7 +41,7 @@ const Layout = () => {
         <Outlet />
       </main>
       {showButton && (
-        <button className="back-to-top" name="back to top" onClick={scrollToTop}>
+        <button className="back-to-top" name="back to top" aria-label="arrow button back to top of page" onClick={scrollToTop}>
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
       )}
