@@ -7,7 +7,7 @@ import TeamCard from "../../cards/teamCard";
 import CallToAction from "../../CTA";
 import StaticCubes from "../../Animations/staticCubes";
 import vid from "../../../assets/images/about.mp4";
-import about from "../../../assets/images/about.png";
+import about from "../../../assets/images/about.webp";
 import LazyVideo from "../../LazyVideo";
 import paper from "../../../assets/images/1746747.webp";
 
