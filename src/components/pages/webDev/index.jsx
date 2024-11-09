@@ -1,4 +1,4 @@
-import img from "../../../assets/images/service-1.jpeg";
+import img from "../../../assets/images/service-1.webp";
 import gif from "../../../assets/images/webDev.gif";
 import Singleservices from "../../SingleService/";
 
