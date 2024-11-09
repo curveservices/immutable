@@ -15,7 +15,7 @@
   .contact-page,
   .single-service,
   .featured-work,
-  .pricing-page,
+  .client-page,
   .policy-page,
   .client-discovery-form {
     padding: 7rem 0rem 4rem;
@@ -41,6 +41,7 @@
     }
     .title {
       animation: fadeInLeft 2s forwards;
+      margin: 0;
     }
     .btn-container {
       display: flex;
@@ -84,23 +85,22 @@
     .contact-page,
     .single-service,
     .featured-work,
-    .pricing-page,
+    .client-page,
     .policy-page,
     .client-discovery-form {
-      margin: 0;
-      padding-bottom: 0;
       h1 {
-        font-size: 24px;
+        font-size: 28px;
       }
       h2 {
-        font-size: 20px;
+        font-size: 24px;
       }
       p {
         font-size: 14px;
       }
       .btn-container {
         margin: 1rem 0 1.5rem;
-        min-width: fit-content;
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
