@@ -9,7 +9,6 @@ import {
   faUserAstronaut,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
-
 import MarqueeComp from "../../marquee";
 import Button from "../../button/index";
 import StaticCubes from "../../Animations/staticCubes";
@@ -19,8 +18,8 @@ import CallToAction from "../../CTA";
 import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4";
-import fallback from "../../../assets/images/greenwich.png";
-import web from "../../../assets/images/servicesImg.jpeg";
+import fallback from "../../../assets/images/greenwich.webp";
+import web from "../../../assets/images/homeService.webp";
 import paper from "../../../assets/images/1746747.webp";
 import "./index.scss";
 
@@ -78,7 +77,7 @@ const Home = () => {
             </div>
             <div className="text">
               <h2>
-                Our web design &amp; development will
+                Web design &amp; development that will
                 transform your online presence.
               </h2>
               <div className="btn-container">

@@ -2,6 +2,7 @@
   .hero {
     display: grid;
     color: #fff;
+    height: 80vh;
     & > * {
       grid-column: 1;
       grid-row: 1;
@@ -23,11 +24,6 @@
       -webkit-text-fill-color: transparent;
     }
     .text {
-      // background: linear-gradient(
-      //   to right,
-      //   rgba(6, 72, 149, 0.7),
-      //   rgba(43, 102, 167, 0.7)
-      // );
       border-radius: 20px;
       text-align: center;
       font-size: 3.75rem;
@@ -44,13 +40,14 @@
   .second-section {
     .second-inner {
       position: relative;
+      background: var(--second);
       box-shadow: var(--global);
       margin: 0;
       padding: 0;
       .title {
         text-align: center;
         margin: 0;
-        padding: 3rem 5rem;
+        padding: 3rem 0rem;
       }
       .text-box {
         display: flex;
@@ -67,7 +64,8 @@
           }
         }
         .serviceImg {
-          width: 500px;
+          width: 508px;
+          height: auto;
         }
       }
       .accordion {
@@ -202,13 +200,13 @@
         padding: 0 1rem;
       }
       .text-box {
-        margin: 0rem 0 2rem;
+        margin: 0rem 0rem;
       }
       .typewriter {
         font-size: 28px;
       }
       .text {
-        margin: 2rem 3rem;
+        margin: 2rem 0rem;
       }
       .btn-container {
         flex-direction: column;
@@ -222,7 +220,7 @@
         padding: 1rem 2rem 0rem 2rem;
         .title {
           width: 100%;
-          padding: 1rem 2rem;
+          padding: 1rem 0rem;
         }
         .cube-container {
           display: none;
@@ -312,7 +310,6 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .home-page {
     .hero {
-      height: 80vh;
       .main-title {
         font-size: 45px;
         padding: 0 2rem;
