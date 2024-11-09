@@ -1,5 +1,5 @@
 import gif from "../../../assets/images/packages-unscreen.gif";
-import img from "../../../assets/images/packages.jpeg";
+import img from "../../../assets/images/packages.webp";
 import Singleservices from "../../SingleService/";
 
 const Packages = () => {
