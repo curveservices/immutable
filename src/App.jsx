@@ -21,6 +21,7 @@ import SeoMaintenance from "./components/pages/seoMaintenance";
 import TelehillClient from "./components/pages/clientPages/clientTelehill";
 import Morbot from "./components/pages/clientPages/clientMorfbot";
 import ViveLaCrepe from "./components/pages/clientPages/clientViveLaCrepe";
+import Garland from "./components/pages/clientPages/clientGarland";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
         <Route path=":id/telegraph-hill-tutoring" element={<TelehillClient />} />
         <Route path=":id/morfbot" element={<Morbot />} />
         <Route path=":id/vive-la-crepe" element={<ViveLaCrepe />} />
+        <Route path=":id/garland-surgical" element={<Garland /> } />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="discovery-form" element={<ClientDiscoveryForm />} />
       </Route>
