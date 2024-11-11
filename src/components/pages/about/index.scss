@@ -27,6 +27,9 @@
           animation: fadeInUp 2s forwards;
         }
       }
+      .btn-container {
+        justify-content: flex-start;
+      }
     }
   }
 }
