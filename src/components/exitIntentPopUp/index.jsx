@@ -88,7 +88,7 @@ const ExitIntentPopup = () => {
                         <input
                             type="text"
                             name='subject'
-                            placeholder='wwww.yourwebite.com '
+                            placeholder='www.yourwebite.com '
                         />
                     </div>
                     <textarea
