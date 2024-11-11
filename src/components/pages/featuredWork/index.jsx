@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import paper from "../../../assets/images/1746747.webp";
 import morfbot from "../../../assets/images/morfbot.mp4";
 import tutor from "../../../assets/images/telehill.mp4";
+import garland from "../../../assets/images/garland.mp4";
 import vive from "../../../assets/images/vive.mp4";
 import Button from "../../button";
 import CubeSpinner from "../../Animations/cubespinner";
@@ -114,6 +115,24 @@ const FeaturedWork = () => {
               <ReactPlayer
                 className="react-player"
                 url={morfbot}
+                playing
+                loop
+              />
+            </div>
+          </div>
+          <div className={`featured-container ${thirdScroll ? "anim" : "none"}`}>
+            <div className="text-box">
+              <h2>Garland Surgical</h2>
+              <h3>AI CHAT BOT</h3>
+              <p>We created an AI chat assistant, fully trained on company details and the knowledge of Garlands website.
+                Built on BotPress, the assistant is available 24/7, answering FAQ's to alleviate the Garland team.
+              </p>
+              <SlideButton text="Read case study" link="garland-surgical"/>
+            </div>
+            <div className={`player-wrapper ${thirdScroll ? "anim" : "none"}`}>
+              <ReactPlayer
+                className="react-player"
+                url={garland}
                 playing
                 loop
               />
