@@ -6,7 +6,6 @@ import Footer from "./footer";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import ExitIntentPopup from "../exitIntentPopUp";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
@@ -35,7 +34,6 @@ const Layout = () => {
 
   return (
     <>
-      <ExitIntentPopup/>
       <Navbar />
       <main className="app">
         <Outlet />
