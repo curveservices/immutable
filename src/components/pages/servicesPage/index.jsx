@@ -129,34 +129,7 @@ const Services = () => {
               backgroundPosition: "center",
             }}
           >
-            <h2 className="title">FEATURED WORK</h2>
-            <div className="text-container">
-              <div className="textBox">
-                <p>
-                  Signing off on a new website is always a moment of immense
-                  pride and satisfaction for us. With each project, we take
-                  great care to understand our clients' unique needs and deliver
-                  tailored solutions.
-                </p>
-              </div>
-              <div className="">
-                <WorkCard />
-              </div>
-              <div className="textBox">
-                <p>
-                  As our client base continues to expand, we are excited to
-                  showcase the diverse and innovative work we do, particularly
-                  in creating cutting-edge websites and AI solutions using the
-                  latest tech. Each project that we complete represents a
-                  commitment to excellence and our passion for helping
-                  businesses thrive.
-                </p>
-              </div>
-              <div className="btn-container">
-                <Button text="Portfolio" link="/portfolio" />
-                <Button text="Discovery Form" link="discovery-form" />
-              </div>
-            </div>
+            <WorkCard />
           </div>
         </section>
         <section className="cta">
