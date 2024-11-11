@@ -13,6 +13,7 @@ import paper from "../../../assets/images/1746747.webp";
 import WorkCard from "../../cards/work";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
+import ExitIntentPopup from "../../exitIntentPopUp";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,6 +31,7 @@ const Services = () => {
   }, []);
   return (
     <>
+      <ExitIntentPopup/>
       <div className="serivces-page">
         <section className="hero">
           <LazyVideo

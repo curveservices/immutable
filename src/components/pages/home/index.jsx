@@ -22,6 +22,7 @@ import fallback from "../../../assets/images/greenwich.webp";
 import web from "../../../assets/images/homeService.webp";
 import paper from "../../../assets/images/1746747.webp";
 import "./index.scss";
+import ExitIntentPopup from "../../exitIntentPopUp";
 
 const Home = () => {
   const [second, setSecond] = useState(false);
@@ -47,6 +48,7 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
+        <ExitIntentPopup/>
         <section className="hero">
           <LazyVideo
             ariaLabel="Footage of the Royal College of Greenwich"

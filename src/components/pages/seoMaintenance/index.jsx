@@ -1,9 +1,12 @@
 import img from "../../../assets/images/maintenance.webp";
 import gif from "../../../assets/images/webDev.gif";
+import ExitIntentPopup from "../../exitIntentPopUp";
 import Singleservices from "../../SingleService";
 
 const SeoMaintenance = () => {
   return (
+    <>
+    <ExitIntentPopup/>
     <Singleservices
       title="Website Maintenance and SEO"
       keywords="website design, website maintenance, SEO, search engine optimization, hosting, website maintenance services, digital maintenance, Greenwich, London,Immutable Studio"
@@ -22,7 +25,8 @@ const SeoMaintenance = () => {
       thirdP="We prioritise transparent communication &amp; strong client bonds.
               Our services for SEO and website maintenance are based on a retainer model."
       name="maintenance"
-    />
+      />
+      </>
   );
 };
 
