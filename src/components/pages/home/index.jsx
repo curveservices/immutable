@@ -94,7 +94,6 @@ const Home = () => {
         <section className="second-section">
           <div
             className="second-inner"
-            lazyloading="true"
             style={{
               backgroundImage: `url(${paper})`,
               backgroundSize: "cover",
@@ -250,32 +249,7 @@ const Home = () => {
               backgroundPosition: "center",
             }}
           >
-            <h2 className="title">FEATURED WORK</h2>
-            <div className="text-container">
-              <div className="textBox">
-                <p>
-                  Signing off on a new website is always a moment of pride and
-                  satisfaction for us. With each project, we take great care to
-                  understand our clients' unique needs and deliver tailored
-                  solutions. Here are some of our featured projects.
-                </p>
-              </div>
-              <div className="">
-                <WorkCard />
-              </div>
-              <div className="textBox">
-                <p>
-                  As our client base continues to expand, we are excited to
-                  showcase the diverse and innovative work we do. Each project
-                  that we complete represents a commitment to excellence and our
-                  passion for helping businesses thrive online.
-                </p>
-              </div>
-              <div className="btn-container">
-                <Button text="Portfolio" link="portfolio" />
-                <Button text="Discovery Form" link="discovery-form" />
-              </div>
-            </div>
+            <WorkCard />
           </div>
         </section>
         <section className="cta">
