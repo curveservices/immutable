@@ -27,13 +27,14 @@
     }
     h2 {
       font-size: 40px;
-      font-weight: normal;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
     }
     p {
       font-size: 20px;
       line-height: 1.5;
-      font-family: sans-serif;
+      font-family:Arial, Helvetica, sans-serif;
       font-weight: 600;
       margin: 0;
       padding: 0.5rem 0;
@@ -42,6 +43,7 @@
     .title {
       animation: fadeInLeft 2s forwards;
       margin: 0;
+      padding: 1rem 0;
     }
     .btn-container {
       display: flex;
