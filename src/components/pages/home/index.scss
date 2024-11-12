@@ -37,50 +37,39 @@
       justify-content: center;
     }
   }
+  
   .second-section {
     .second-inner {
-      position: relative;
-      background: var(--secondary);
+      background: var(--second);
       box-shadow: var(--global);
       margin: 0;
       padding: 0;
       .title {
-        text-align: center;
-        margin: 0;
         padding: 3rem 0rem;
-      }
-      .text-box {
-        display: flex;
-        gap: 4rem;
-        padding: 0rem 4rem 1rem;
-        .text-content {
-          padding: 1rem;
-          p {
-            border-top: 1px solid #000;
-            padding: 1rem 0;
-          }
-          :nth-child(3) {
-            border-bottom: 1px solid #000;
-          }
-        }
-        .serviceImg {
-          width: 508px;
-          height: auto;
-        }
-      }
-      .accordion {
-        .content-container {
-          top: 48%;
-        }
       }
       .home-marquee {
         margin-top: 4rem;
       }
-      .cube-container {
-        opacity: 0.2;
-      }
       .anim {
-        animation: fadeIn 2s forwards;
+        animation: fadeIn 1.5s forwards;
+        
+        .steps-container {
+          .steps-card:nth-child(1) {
+            animation: fadeInUp 1s 0.2s backwards;
+          }
+      
+          .steps-card:nth-child(2) {
+            animation: fadeInUp 1s 0.4s backwards;
+          }
+      
+          .steps-card:nth-child(3) {
+            animation: fadeInUp 1s 0.6s backwards;
+          }
+      
+          .steps-card:nth-child(4) {
+            animation: fadeInUp 1s 0.8s backwards;
+          }
+        }
       }
       .none {
         opacity: 0;
@@ -173,7 +162,7 @@
     .forth-inner {
       box-shadow: var(--global);
       background: var(--second);
-      padding: 4rem 2rem;
+      padding: 2rem;
       text-align: center;
       
     }
@@ -210,23 +199,16 @@
           width: 100%;
           padding: 1rem 0rem;
         }
-        .cube-container {
-          display: none;
-        }
         .text-box {
           flex-direction: column;
           gap: 1rem;
-          padding: 0rem 0rem;
-          p {
-            margin: 0rem;
-            text-align: center;
-          }
-          .serviceImg {
-            width: 100%;
-          }
+          padding: 0rem 0rem
         }
         .home-marquee {
-          margin-top: 25rem;
+          margin-top: 2rem;
+          .marquee-title {
+            padding: 1rem 0;
+          }
         }
         .accordion {
           margin-top: 1rem;
@@ -250,7 +232,7 @@
           display: flex;
           flex-wrap: wrap;
           gap: 1rem;
-          padding: 1rem;
+          padding: 1rem 2rem;
           .elem-card {
             flex-direction: column;
             gap: 0rem;
@@ -277,6 +259,7 @@
               .elem-title {
                 font-weight: 900;
                 font-size: 1.7rem;
+                margin: 0;
                 text-transform: capitalize;
               }
             }

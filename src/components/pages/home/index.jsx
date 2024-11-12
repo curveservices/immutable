@@ -11,18 +11,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import MarqueeComp from "../../marquee";
 import Button from "../../button/index";
-import StaticCubes from "../../Animations/staticCubes";
-import { accordionData } from "../../utils/accordionData";
-import Accordion from "../../Accordion";
 import CallToAction from "../../CTA";
 import LazyVideo from "../../LazyVideo";
 import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4";
 import fallback from "../../../assets/images/greenwich.webp";
-import web from "../../../assets/images/homeService.webp";
-import paper from "../../../assets/images/1746747.webp";
-import "./index.scss";
 import ExitIntentPopup from "../../exitIntentPopUp";
+import webdev from "../../../assets/images/layout.gif";
+import seo from "../../../assets/images/keywords.gif";
+import chatbot from "../../../assets/images/chat-bot.gif";
+import packing from "../../../assets/images/packing.gif";
+import HowitWorks from "../../howItWorks";
+import "./index.scss";
+
 
 const Home = () => {
   const [second, setSecond] = useState(false);
@@ -96,53 +97,33 @@ const Home = () => {
         <section className="second-section">
           <div
             className="second-inner"
-            style={{
-              backgroundImage: `url(${paper})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
-            <h2 className="title">OUR WEBSITE DEVELOPMENT SERVICES</h2>
-            <div className="text-box">
-              <div className={`text-content ${second ? "anim" : "none"}`}>
-                <p>
-                  Our services model operates either monthly or annually
-                  covering full website development, hosting and maintenance,
-                  and AI business solutions.
-                </p>
-                <p>
-                  Service payments can be customised based on your specific
-                  needs and usage, ensuring flexibility and scalability.
-                </p>
-                <p>
-                  We provide comprehensive support, making it easy for your
-                  business to grow and adapt.
-                </p>
-              </div>
-
-              <img
-                lazyloading="true"
-                src={web}
-                alt="two people working on website design"
-                className={`serviceImg ${second ? "anim" : "none"}`}
-              />
-            </div>
-            <div className={`cubes ${second ? "anim" : "none"}`}>
-              <StaticCubes />
-            </div>
-            <div className={`accordion ${second ? "anim" : "none"}`}>
-              {accordionData.map(({ title, subtitle, content, id, link }) => (
-                <Accordion
-                  key={id}
-                  id={id}
-                  link={link}
-                  title={title}
-                  subtitle={subtitle}
-                  content={content}
-                  isActive={id === activeAccordion}
-                  onAccordionClick={handleAccordionClick}
-                />
-              ))}
+            <div className={`text-content ${second ? "anim" : "none"}`}>
+              <h3 className="subtitle"><i>Our Services</i></h3>
+              <HowitWorks
+                title="what we do"
+                mainP="We’re passionate about helping your brand stand out online. Whether it’s building custom websites, 
+                developing AI assistants, SEO &amp; maintenance and other tech services. We’re here to bring your digital 
+                ideas to life and make a real impact for your business. Let’s work together to create something amazing!"
+              card1Gif={webdev}
+              card1Title="Website Development"
+              card1P=" We build responsive websites that look and feel amazing on all devices
+                    – desktops, laptops and mobiles. Let us help you create the perfect website."
+              card2Gif={seo}
+              card2Title="SEO & Maintenance"
+              card2P="We offer a range of maintenace plans, starting with a free SEO, performance and
+                    facebook business page audit. We can manage your site with ease so you don't have to."
+              card3Gif={chatbot}
+              card3Title="AI Solutions"
+              card3P="Our AI assistants are trained on your business and website pages. Answering FAQ's, taking bookings and more.
+                    All seamlessly intergrated to your website and systems."
+              card4Gif={packing}
+              card4Title="Packages"
+              card4P="Wrap all of our services up into convienent business packages.
+                    We offer a range of website development, AI solutions, analytics and workflow automation."
+                text="See all our services"
+                link="services"
+            />
             </div>
             <div className={`home-marquee ${second ? "anim" : "none"}`}>
               <MarqueeComp />
@@ -245,12 +226,10 @@ const Home = () => {
         <section className="forth-section">
           <div
             className="forth-inner"
-            style={{
-              backgroundImage: `url(${paper})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
+            <div className="text-box">
+              <h3 className="subtitle"><i>Our Portfolio</i></h3>
+            </div>
             <WorkCard />
           </div>
         </section>
