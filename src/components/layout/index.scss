@@ -23,16 +23,17 @@
     h1 {
       font-size: 48px;
       font-weight: normal;
+      font-family: "Coolvetica";
       margin: 0;
     }
     h2 {
       font-size: 40px;
-      font-weight: 600;
-      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      font-family:"Coolvetica";
       margin: 0;
     }
     p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.5;
       font-family:Arial, Helvetica, sans-serif;
       font-weight: 600;
@@ -43,7 +44,12 @@
     .title {
       animation: fadeInLeft 2s forwards;
       margin: 0;
-      padding: 1rem 0;
+    }
+    .subtitle {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1rem 0rem;
+      color: var(--third-bg);
     }
     .btn-container {
       display: flex;
