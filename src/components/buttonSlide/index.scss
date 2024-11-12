@@ -9,8 +9,9 @@
     background: transparent;
     margin: 1rem 0;
     padding: 0;
-    font-size: 18px;
-    width: 300px;
+    font-size: 16px;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
     &:hover {
         background: transparent;
     }
@@ -82,5 +83,5 @@
     background:var(--third-bg);
 }
 .btn-arrow-slide-text {
-    color:var(--third-bg);
+    color:var(--primary);
 }
