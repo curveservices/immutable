@@ -1,8 +1,5 @@
-.title {
-  padding: 1rem;
-}
 .text-container {
-  padding: 0rem 5rem 2rem;
+  padding: 0rem 5rem;
   .textBox {
     padding: 0rem 1rem;
   }
@@ -145,7 +142,8 @@
   .card-container {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
   }
   .card {
     width: 100%;
