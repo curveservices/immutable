@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import StaticCubes from "../../Animations/staticCubes";
 import Button from "../../button";
 import PriceCard from "../../cards/basicPrice";
 import MarqueeComp from "../../marquee";
@@ -8,12 +7,16 @@ import CallToAction from "../../CTA";
 import img1 from "../../../assets/images/homeService.webp";
 import Links from "../../links";
 import vid from "../../../assets/images/london.mp4";
-import london from "../../../assets/images/london.webp";
-import paper from "../../../assets/images/1746747.webp";
+import fallback from "../../../assets/images/london.webp";
 import WorkCard from "../../cards/work";
 import LazyVideo from "../../LazyVideo";
 import "./index.scss";
 import ExitIntentPopup from "../../exitIntentPopUp";
+import HowitWorks from "../../howItWorks";
+import webdev from "../../../assets/images/layout.gif";
+import meeting from "../../../assets/images/online-meeting.gif";
+import chatbot from "../../../assets/images/chat-bot.gif";
+import design from "../../../assets/images/prototype.gif";
 
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,10 +41,9 @@ const Services = () => {
             src={vid}
             type="video/mp4"
             className="video"
-            fallback={london}
+            fallback={fallback}
           />
           <div className="hero-inner">
-            <StaticCubes />
             <div className="text-box">
               <h1 className="title">Our Services</h1>
               <p>
@@ -71,41 +73,50 @@ const Services = () => {
           </div>
         </section>
         <section className="second-section">
-          <div
-            className="second-inner"
-            lazyloading="true"
-            style={{
-              backgroundImage: `url(${paper})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="text-box">
-              <div
-                className={`text-content ${
-                  second ? "anim-second" : "second-none"
-                }`}
-              >
-                <h2>Need a supportive development agency for your business?</h2>
-                <p>
-                  We provide comprehensive solutions tailored to your needs.
-                  Understanding your business, we offer expert advice to address
-                  design challenges effectively. Whether it's boosting brand
-                  visibility, creating a lead-generating website or building AI
-                  solutions, count on us to deliver outstanding results.
-                </p>
-              </div>
-              <img
-                src={img1}
-                alt="two people working on website design"
-                className={`${second ? "animSecondimg" : "second-none"}`}
+          <div className="second-inner">
+            <div
+              className={`text-content ${
+                second ? "anim" : "none"
+              }`}
+            >
+              <h3 className="subtitle"><i>Our Services</i></h3>
+              <HowitWorks
+                title="How it works"
+                mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
+                      every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
+                card1Gif={meeting}
+                card1Title="Discovery Call"
+                card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
+                          your projects needs."
+                card2Gif={design}
+                card2Title="Proposal and Design"
+                  card2P="Once we fully understand your project a proposal is drawn up. We then start on design, we will create wireframe UI/UX designs
+                          for approval."
+                card3Gif={webdev}
+                card3Title="Draft & Completion"
+                  card3P="As soon as the design is approved development begins. A draft will hosted for you to approve. Once approved your 
+                        project is ready for completion"
+                card4Gif={chatbot}
+                card4Title="Ongoing Support"
+                  card4P="We offer ongoing support with hosting, website maintenance and SEO development. Our support gives you peace-of-mind, we'll be
+                  on hand to help."
+                text="Explore our Portfolio"
+                link="/portfolio"
               />
+              <Links
+                webLink="web-development"
+                aiLink="chat-bots"
+                maintenanceLink="seo-website-maintenance"
+                packagesLink="packages"
+              />
+              <div className="marquee">
+                <MarqueeComp />
+              </div>
             </div>
-            <MarqueeComp />
           </div>
         </section>
-        <section className="forth-section">
-          <div className="forth-inner">
+        <section className="third-section">
+          <div className="third-inner">
             <div className="text-box">
               <h2>Transparent Pricing</h2>
               <p>
@@ -121,16 +132,13 @@ const Services = () => {
             </div>
           </div>
         </section>
-        <section className="fith-section">
+        <section className="forth-section">
           <div
-            className="fith-inner"
-            lazyloading="true"
-            style={{
-              backgroundImage: `url(${paper})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+            className="forth-inner"
           >
+            <div className="subtitle">
+              <h3><i>Our Portfolio</i></h3>
+            </div>
             <WorkCard />
           </div>
         </section>

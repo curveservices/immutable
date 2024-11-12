@@ -30,37 +30,47 @@
   .second-section {
     box-shadow: var(--global);
     .second-inner {
-      padding: 4rem 4rem 1rem;
+      background-color: var(--second);
+      padding: 1rem 0rem 0rem;
       margin: 0;
-      .text-box {
-        display: flex;
-        gap: 2rem;
-        margin: 2rem 0;
-        .text-content {
-          display: flex;
-          flex-direction: column;
+      .anim {
+        animation: fadeIn 1.5s forwards;
+        .steps-container {
+          .btn-arrow-slide-cont {
+            display: none;
+          }
+          .steps-card:nth-child(1) {
+            animation: fadeInUp 1s 0.2s backwards;
+          }
+          .steps-card:nth-child(2) {
+            animation: fadeInUp 1s 0.4s backwards;
+          }
+          .steps-card:nth-child(3) {
+            animation: fadeInUp 1s 0.6s backwards;
+          }
+          .steps-card:nth-child(4) {
+            animation: fadeInUp 1s 0.8s backwards;
+          }
         }
       }
-      .anim-second {
-        animation: fadeInLeft 2s forwards;
-        padding: 0 1rem;
-        p {
-          padding-top: 2rem;
-        }
-      }
-      .animSecondimg {
-        animation: fadeInRight 2s forwards;
-        width: 40%;
-      }
-      .second-none {
+      .none {
         opacity: 0;
+      }
+      .link-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 2rem 4rem;
+        margin: 3rem 0rem 2rem;
+        background: #fefffe;
+        box-shadow: var(--global);
       }
     }
   }
-  .forth-section {
+  .third-section {
     box-shadow: var(--global);
-    .forth-inner {
-      padding: 2rem 2rem 6rem;
+    .third-inner {
+      padding: 2rem;
       .none {
         opacity: 0;
       }
@@ -79,11 +89,12 @@
       }
     }
   }
-  .fith-section {
+  .forth-section {
     padding: 0rem 0rem 6rem;
-    .fith-inner {
+    .forth-inner {
+      background: var(--second);
       box-shadow: var(--global);
-      padding: 4rem 0;
+      padding: 1rem 0 4rem;
       text-align: center;
     }
   }
@@ -114,6 +125,7 @@
         padding: 1rem;
         .text-box {
           flex-direction: column;
+          padding: 0;
         }
         .anim-second {
           width: 100%;
@@ -122,10 +134,13 @@
         .animSecondimg {
           width: 100%;
         }
+        .link-container {
+          display: none;
+        }
       }
     }
-    .forth-section {
-      .forth-inner {
+    .third-section {
+      .third-inner {
         padding: 1rem;
         .price-title,
         .text-box {
@@ -142,9 +157,9 @@
         }
       }
     }
-    .fith-section {
+    .forth-section {
       padding: 0rem;
-      .fith-inner {
+      .forth-inner {
         padding: 1rem 0rem;
       }
     }
