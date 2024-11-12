@@ -69,15 +69,7 @@ const About = () => {
           </div>
         </section>
         <section className="second-section">
-          <div 
-            className="second-inner"
-            lazyloading="true"
-            style={{
-            backgroundImage: `url(${paper})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            }}
-          >
+          <div className="second-inner">
             <h2 className="title">MEET THE TEAM</h2>
             <div className={`${second ? "contentAnim" : "none"}`}>
               <TeamCard />
