@@ -23,7 +23,7 @@
   animation: fadeIn 4s forwards;
 }
 .secondSection {
-  background-image: url("../../assets/images/1746747.webp");
+  background: var(--second);
   box-shadow: var(--global);
 }
 .secondInner {
@@ -49,6 +49,11 @@
   padding: 0 2rem 0 5rem;
   width: 70%;
   color: #000;
+}
+.howItWorks {
+  margin: 8rem 0 0;
+  padding: 4rem 0;
+  background: var(--second);
 }
 .thirdInner {
   display: flex;
