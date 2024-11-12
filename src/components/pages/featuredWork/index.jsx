@@ -15,6 +15,7 @@ import LazyVideo from "../../LazyVideo";
 import ReactPlayer from "react-player";
 import SlideButton from "../../buttonSlide";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 
 const FeaturedWork = () => {
@@ -70,24 +71,17 @@ const FeaturedWork = () => {
             <CubeSpinner />
           </div>
         </section>
-        <section
-          className="clients"
-          lazyloading="true"
-          style={{
-            backgroundImage: `url(${paper})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <section className="clients" >
+          <h3 className="subtitle"><i>Our Portfolio</i></h3>
           <div className="main-text">
-            <p className="client-header">OUR PORTFOLIO</p>
-            <h1>Recent Projects</h1>
+            
+            <h2>Recent Projects</h2>
             <p>Here’s a selection of our recent projects across the digital landscape.</p>
           </div>
           <div className={`featured-container ${firstScroll ? "anim" : "none"}`}>
             <div className="text-box">
               <h2>Telegraph Hill Tutoring</h2>
-              <h3>WEBSITE</h3>
+              <Link to="/services/web-development"><h3 className="link">WEBSITE DEVELOPMENT</h3></Link>
               <p>We focused on creating a modern, playful, easy to understand and eye-catching website,
                 developing a visual identity to evoke feelings of saftey, professionalism and, peace of mind.
               </p>
@@ -105,7 +99,7 @@ const FeaturedWork = () => {
            <div className={`featured-container ${secondScroll ? "anim" : "none"}`}>
             <div className="text-box">
               <h2>MorfBot</h2>
-              <h3>WEBSITE</h3>
+              <Link to="/services/web-development"><h3 className="link">WEBSITE DEVELOPMENT</h3></Link>
               <p>We join forces with MorfBot to redesign their website. We created a professionl eye-catching site, built
                 with React.js for scalability. Using their colour palette and images, evoking a serious tech feel.
               </p>
@@ -123,7 +117,7 @@ const FeaturedWork = () => {
           <div className={`featured-container ${thirdScroll ? "anim" : "none"}`}>
             <div className="text-box">
               <h2>Garland Surgical</h2>
-              <h3>AI CHAT BOT</h3>
+              <Link to="/services/chat-bots"><h3 className="link">AI CHAT BOT</h3></Link>
               <p>We created an AI chat assistant, fully trained on company details and the knowledge of Garlands website.
                 Built on BotPress, the assistant is available 24/7, answering FAQ's to alleviate the Garland team.
               </p>
@@ -141,7 +135,7 @@ const FeaturedWork = () => {
           <div className={`featured-container ${thirdScroll ? "anim" : "none"}`}>
             <div className="text-box">
               <h2>Vive La Crepe</h2>
-              <h3>WEBSITE</h3>
+              <Link to="/services/web-development"><h3 className="link">WEBSITE DEVELOPMENT</h3></Link>
               <p>We focused on creating a modern, playful, easy to understand and eye-catching website,
                 developing a visual identity to evoke feelings of saftey, professionalism and, peace of mind.
               </p>
@@ -157,6 +151,7 @@ const FeaturedWork = () => {
             </div>
           </div>
           <div className="container-footer">
+            <h2 >Fill Out Our Client Discovery Form</h2>
             <p>The ultimate worksheet to help you collect all the information, ideas and prep work you need before starting your project with us.</p>
             <div className="btn-container">
               <Button text="client discovery form" link="/discovery-form" />
