@@ -39,8 +39,8 @@ const WorkCard = () => {
 
   return (
     <>
-      <h2 className="title">EXPLORE OUR PORTFOLIO</h2>
       <div className="text-container">
+        <h2 className="title">EXPLORE OUR PORTFOLIO</h2>
         <div className="textBox">
           <p>
             Signing off on a new website is always a moment of pride and
