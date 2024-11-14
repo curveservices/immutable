@@ -30,8 +30,17 @@ const ExitIntentPopup = () => {
         setIsOpen(false);
     };
 
-    const sendEmail = (e) => {
+    const handleSubmit = (e) => {
+        const formEle = document.querySelector("form");
         e.preventDefault();
+        const formInput = new FormData(formEle);
+        fetch(
+            'https://script.google.com/macros/s/AKfycbxL1-3z29sTTGeNWu7Zat8MPwC4isAZuIzV4toRse6bHdq3wTG7Z6zfWUFq28pUSo6l/exec',
+            {
+                method: 'POST',
+                body: formInput
+            }
+        )
         emailjs.sendForm(
             "p.rossiter83@gmail.com",
             "contact_form",
@@ -64,7 +73,7 @@ const ExitIntentPopup = () => {
                 <div className='strap'>Don't go without getting a</div>
                 <h1>Free SEO & Performance Audit</h1>
                 <p>Get a <b>FREE</b> SEO, performance and business Facebook page audit. Find opportunities for improvement!</p>
-                <form ref={refForm} onSubmit={sendEmail} className='popup-form'>
+                <form ref={refForm} onSubmit={handleSubmit} className='popup-form'>
                     <div className="form-group">
                         <label htmlFor="name">Your Name</label>
                         <input
@@ -90,7 +99,16 @@ const ExitIntentPopup = () => {
                             name='subject'
                             placeholder='www.yourwebite.com '
                         />
-                    </div>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="facebook">Facebook URL</label>
+                            <input
+                                type="text"
+                                name='facebook'
+                                placeholder='https://www.facebook.com/your-profile-id'
+                                required
+                            />
+                        </div>
                     <textarea
                         name="message"
                         value="Free SEO & Performance Audit"
