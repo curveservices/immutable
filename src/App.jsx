@@ -22,6 +22,7 @@ import TelehillClient from "./components/pages/clientPages/clientTelehill";
 import Morbot from "./components/pages/clientPages/clientMorfbot";
 import ViveLaCrepe from "./components/pages/clientPages/clientViveLaCrepe";
 import Garland from "./components/pages/clientPages/clientGarland";
+import AuditFormPage from "./components/pages/auditForm";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="discovery-form" element={<ClientDiscoveryForm />} />
       </Route>
+      <Route path="performance-audit-form" element={<AuditFormPage/>} />
       <Route path="*" element={<NotFound />} />
     </>,
   ),
