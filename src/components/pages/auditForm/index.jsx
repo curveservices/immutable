@@ -6,6 +6,8 @@ import audit from '../../../assets/images/audit.webp';
 import logo from "../../../assets/images/logo-desktop.png";
 import "./index.scss";
 import { Link, redirect } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const AuditFormPage = () => {
     const refForm = useRef();
@@ -98,7 +100,24 @@ const AuditFormPage = () => {
             </div>
         </div>
         </section>
-        <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
+            <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
+        <div>
+        <HelmetProvider>
+          <Helmet>
+            <title>
+              Free Performance Audit | Web Design London | Immutable Studio
+            </title>
+            <meta
+              name="description"
+              content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."
+            />
+            <meta
+              name="keywords"
+              content="Website, Website Design, Website Development, Web design, SEO, Website maintenance, AI Solutions, Chatbot, London, Greenwich"
+            />
+          </Helmet>
+        </HelmetProvider>
+      </div>
     </>
   )
 }

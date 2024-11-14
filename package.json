@@ -24,7 +24,6 @@
     "npm": "^10.4.0",
     "react": "^18.3.1",
     "react-animation-on-scroll": "^5.1.0",
-    "react-confetti": "^6.1.0",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-helmet": "^6.1.0",
@@ -35,7 +34,7 @@
     "react-player": "^2.16.0",
     "react-router-dom": "^6.22.1",
     "react-toastify": "^10.0.6",
-    "sass": "^1.71.0",
+    "sass": "^1.80.7",
     "typewriter": "^6.1.8",
     "typewriter-effect": "^2.21.0"
   },
