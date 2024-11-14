@@ -5,18 +5,20 @@
     margin-bottom: 5rem;
     padding: 0rem 6rem;
     .cube-container {
-      width: 80px;
-      top: 40%;
+      width: 100px;
+      top: 30%;
       right: 5%;
-      opacity: 0.7;
+      opacity: 0.5;
     }
     .text-box {
       margin: 2rem 0;
       width: 70%;
     }
+    .btn-container {
+      justify-content: start;
+    }
   }
   .discovery-form {
-    margin-top: 8rem;
     padding: 1rem 4rem;
     .form-section {
       display: flex;
@@ -76,7 +78,7 @@
       margin-bottom: 2rem;
     }
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     padding: 3rem 1.5rem;
     margin: 3rem 1.5rem;
     .hero {
@@ -86,7 +88,6 @@
       }
     }
     .discovery-form {
-      margin-top: 4rem;
       padding: 1rem;
       .form-section {
         padding: 1.5rem 3rem;
@@ -110,7 +111,6 @@
       .text-box {
         width: 100%;
         margin: 0rem;
-        padding-bottom: 2rem;
       }
       .btn-container {
         justify-content: center;
@@ -119,7 +119,7 @@
     }
     .discovery-form {
       margin-top: 0rem;
-      padding: 1rem;
+      padding: 0rem 1rem;
       .form-section {
         padding: 1rem 2rem;
         margin: 1rem;

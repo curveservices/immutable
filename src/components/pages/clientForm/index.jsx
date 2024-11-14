@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { HelmetProvider } from "react-helmet-async";
 import { Helmet } from "react-helmet";
@@ -155,6 +155,7 @@ const ClientDiscoveryForm = () => {
                 name="companyName"
                 value={formData.companyName}
                 onChange={handleChange}
+                placeholder="Your Company Name"
                 required
               />
             </label>
@@ -165,6 +166,7 @@ const ClientDiscoveryForm = () => {
                 name="contactPerson"
                 value={formData.name}
                 onChange={handleChange}
+                placeholder="Your Full Name"
                 required
               />
             </label>
@@ -175,6 +177,7 @@ const ClientDiscoveryForm = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                placeholder="your-email@example.com"
                 required
               />
             </label>
@@ -194,6 +197,7 @@ const ClientDiscoveryForm = () => {
                 name="website"
                 value={formData.website}
                 onChange={handleChange}
+                placeholder="https://your-website.com"
               />
             </label>
             <label>
@@ -711,6 +715,7 @@ const ClientDiscoveryForm = () => {
           </section>
         </form>
       </div>
+       <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
       <div>
         <HelmetProvider>
           <Helmet>
