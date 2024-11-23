@@ -1,6 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useEffect, useState } from "react";
-import paper from "../../../assets/images/1746747.webp";
 import morfbot from "../../../assets/images/morfbot.mp4";
 import tutor from "../../../assets/images/telehill.mp4";
 import garland from "../../../assets/images/garland.mp4";
@@ -14,7 +13,6 @@ import working from "../../../assets/images/working.webp";
 import LazyVideo from "../../LazyVideo";
 import ReactPlayer from "react-player";
 import SlideButton from "../../buttonSlide";
-import "./index.scss";
 import { Link } from "react-router-dom";
 
 
@@ -34,7 +32,24 @@ const FeaturedWork = () => {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-
+    useEffect(() => {
+    import('./index.scss')
+      .then(() => {
+        console.log('css loaded');
+      })
+      .catch((error) => {
+        console.error('error loading css',error);
+      });
+    return () => {
+      const styleSheets = Array.from(document.styleSheets);
+      const homeStyleSheet = styleSheets.find(
+        (sheet) => sheet.href && sheet.href.includes('index.scss')
+      );
+      if (homeStyleSheet) {
+        document.head.removeChild(homeStyleSheet.ownerNode)
+      }
+    };
+  }, []);
   return (
     <>
       <div className="featured-work">

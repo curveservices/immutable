@@ -61,14 +61,13 @@
         }
       }
       .player-wrapper {
-      display: flex;
-    }
+        display: flex;
+      }
     }  
     .container-footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: #E5E6EA;
       margin: 4rem 6rem;
       padding: 2rem;
       border-radius: 20px;
@@ -102,10 +101,6 @@
         .text-box {
           width: 100%;
           margin: 0rem;
-          padding-bottom: 2rem;
-          .button-container {
-            gap: 20px;
-          }
         }
       }
       .spinner {
@@ -115,27 +110,17 @@
   .clients {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0rem;
     .main-text {
       padding: 0 1rem;
     }
     .featured-container {
       display: flex;
       flex-direction: column;
-      margin: 2rem 0 4rem;
+      margin: 0rem 0rem 4rem;
       padding: 0rem;
-      text-align: left;
-      cursor: pointer;
-      .player-wrapper {
-          width: 100%;
-          margin: 0;
-        }
     }
     .container-footer {
       margin: 1rem;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: var(--global);
     }
   }
     .featured {
@@ -152,66 +137,31 @@
     .hero {
       display: flex;
       flex-direction: column;
-      
       .inner-hero {
         height: 70vh;
         padding: 0rem 4rem;
         .text-box {
           width: 100%;
           margin: 2rem 4rem 2rem 0rem;
-          padding-right: 10rem;
           line-height: 1.4;
         }
       }
       .spinner {
-       display: none;
+        position: absolute;
+        top: 7%;
+        left: 10%;
+        margin:0;
       }
     }
     .clients {
-      padding: 2rem 0rem; 
-      flex-direction: column;
-      .client-container {
-          flex-direction: column;
-          margin: 2rem 0 4rem;
-          padding: 0rem;
-          text-align: left;
-          cursor: pointer;
-          .text-box {
-              padding: 1rem 3rem;
-            }
-      
-          .player-wrapper {
-            width: 100%;
-            justify-content: center;
-            margin: 0;
-          }
-        }
-        .featured-container {
-          display: flex;
-          flex-direction: column;
-          margin: 2rem 0 4rem;
-          padding: 0rem;
-          text-align: left;
-          cursor: pointer;
-
-          .player-wrapper {
-            width: 100%;
-            margin: 0;
-          }
-        }
-        .container-footer {
-          margin: 1rem 4rem;
-          padding: 2rem;
-          border-radius: 20px;
-          box-shadow: var(--global);
-        }
+      .featured-container {
+        flex-direction: column;
+        margin: 2rem 0 4rem;
+      }
     }
     .featured {
-      margin: 3rem 0;
+      margin: 2rem 0;
       padding: 2rem 0;
-      h2 {
-        font-size: 2rem;
-      }
     }
   }
 }
