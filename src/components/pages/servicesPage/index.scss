@@ -11,12 +11,6 @@
       justify-content: space-between;
       padding: 1rem 4rem 5rem;
       color: #fff;
-      .cube-container {
-        width: 50px;
-        top: 45%;
-        right: 35rem;
-        opacity: 0.5;
-      }
       .text-box {
         padding: 0rem 2rem;
         max-width: 700px;
@@ -29,16 +23,12 @@
   }
   .second-section {
     box-shadow: var(--global);
+    position: relative;
     .second-inner {
       background-color: var(--second);
-      padding: 1rem 0rem 0rem;
-      margin: 0;
       .anim {
         animation: fadeIn 1.5s forwards;
         .steps-container {
-          .btn-arrow-slide-cont {
-            display: none;
-          }
           .steps-card:nth-child(1) {
             animation: fadeInUp 1s 0.2s backwards;
           }
@@ -62,29 +52,22 @@
         width: 100%;
         padding: 2rem 4rem;
         margin: 3rem 0rem 2rem;
-        background: #fefffe;
-        box-shadow: var(--global);
+        animation: none;
       }
     }
   }
   .third-section {
-    box-shadow: var(--global);
     .third-inner {
-      padding: 2rem;
-      .none {
-        opacity: 0;
-      }
+      padding: 2rem 2rem 6rem;
+      text-align: center;
       .text-box {
         padding: 1rem 5rem;
-        text-align: center;
         color: #fff;
       }
       .price-title {
-        text-align: center;
         color: #fff;
       }
       .contentAnim {
-        animation: fadeIn 1s forwards;
         margin: 1rem;
       }
     }
@@ -94,7 +77,7 @@
     .forth-inner {
       background: var(--second);
       box-shadow: var(--global);
-      padding: 1rem 0 4rem;
+      padding-bottom: 4rem;
       text-align: center;
     }
   }
@@ -104,12 +87,9 @@
     .hero {
       .hero-inner {
         flex-direction: column;
-        padding: 0rem 1rem;
+        padding: 0rem;
         .text-box {
           width: 100%;
-        }
-        .cube-container {
-          display: none;
         }
         .fadeInUp,
         .btn-container {
@@ -122,17 +102,10 @@
       .second-inner {
         flex-direction: column;
         gap: 1rem;
-        padding: 1rem;
-        .text-box {
-          flex-direction: column;
-          padding: 0;
-        }
+        padding: 0rem 1rem;
         .anim-second {
           width: 100%;
           padding: 2rem 0;
-        }
-        .animSecondimg {
-          width: 100%;
         }
         .link-container {
           display: none;
@@ -145,22 +118,13 @@
         .price-title,
         .text-box {
           padding: 1rem;
-          text-align: center;
-        }
-        .contentAnim {
-          margin: 1rem;
-          .card-container {
-            .price-card {
-              max-width: 100%;
-            }
-          }
         }
       }
     }
     .forth-section {
       padding: 0rem;
       .forth-inner {
-        padding: 1rem 0rem;
+        padding: 0rem 0.5rem 1rem;
       }
     }
   }
@@ -171,6 +135,7 @@
       height: 80vh;
       .hero-inner {
         display: flex;
+        flex-direction: column;
         margin-bottom: 0;
         padding: 2rem;
         .text-box {
@@ -179,60 +144,28 @@
           line-height: 1.4;
         }
         .link-container {
-          padding: 2rem 0rem;
+          padding: 2rem 10rem 5rem;
         }
       }
     }
     .second-section {
       .second-inner {
-        flex-direction: column;
-        padding: 2rem;
+        padding: 0rem 3rem;
         gap: 2rem;
-        .text-box {
-          flex-direction: column;
+        .link-container {
+          display: none;
         }
-        .anim-second {
-          width: 100%;
-          padding: 2rem 0;
-          p {
-            padding-top: 1rem;
-          }
-        }
-        .animSecondimg {
-          width: 100%;
-          padding-top: 1rem;
-        }
+      }
+    }
+    .third-section {
+      .third-inner {
+        padding: 1rem 2rem;
       }
     }
     .forth-section {
       .forth-inner {
-        padding: 1.5rem 2rem;
-        .text-box {
-          padding: 1rem 2rem;
-          font-size: 1.1rem;
-        }
-        .price-title {
-          padding: 1rem;
-          text-align: center;
-        }
-        .contentAnim {
-          margin-top: 2rem;
-          gap: 2rem;
-          .price-card {
-            max-width: 80%;
-          }
-        }
+        padding: 0rem 3rem 3rem;
       }
-    }
-    .fith-section {
-      .fith-inner {
-        padding: 2rem 0;
-        text-align: center;
-      }
-    }
-    .cta {
-      padding: 2rem;
-      text-align: center;
     }
   }
 }
