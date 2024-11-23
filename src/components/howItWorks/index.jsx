@@ -1,5 +1,6 @@
 import React from 'react';
 import SlideButton from '../buttonSlide';
+// import hat from "../../assets/images/santa-hat.png";
 import Button from "../button";
 
 import './index.scss';
@@ -11,39 +12,42 @@ const HowitWorks = (props) => {
             <h2 className=''>{props.title}</h2>
             <p className='main-text'>{props.mainP}</p>
           </div>
-          
         <div className="steps-container">
             <div className="steps-card ">
                 <div className="img-outer">
-                    <img className="icon" src={props.card1Gif} alt={`${props.card1Title} Gif`} />
+                  {/* <img src={hat} alt="santas hat" className='hat' /> */}
+                  <video className="icon" src={props.card1Gif} alt={`${props.card1Title} Gif`} autoPlay loop muted></video>
                 </div>
                   <h3>{props.card1Title}</h3>
                 <p>{props.card1P}</p>
-                <SlideButton text="Find out more" link="services/web-development"/>
+          <SlideButton text={props.text1} link={props.link1} />
             </div>
             <div className="steps-card">
                 <div className="img-outer">
-                   <img className="icon" src={props.card2Gif} alt={`${props.card2Title} Gif`} />
+                  {/* <img src={hat} alt="santas hat" className='hat' style={{transform: "scaleX(-1)", left:"65px"}}/> */}
+                  <video className="icon" src={props.card2Gif} alt={`${props.card2Title} Gif`} autoPlay loop muted></video>
                 </div>
                 <h3>{props.card2Title}</h3>
                 <p>{ props.card2P}</p>
-                <SlideButton text="Find out more"link="services/seo-website-maintenance"/>
+          <SlideButton text={props.text2} link={props.link2} />
             </div>
             <div className="steps-card">
                 <div className="img-outer">
-                    <img className="icon" src={props.card3Gif} alt={`${props.card3Title} Gif`} />
+                  {/* <img src={hat} alt="santas hat" className='hat' /> */}
+                  <video className="icon" src={props.card3Gif} alt={`${props.card3Title} Gif`} autoPlay loop muted></video>
                 </div>
                 <h3>{ props.card3Title}</h3>
                   <p>{props.card3P}</p>
-                <SlideButton text="Find out more" link="service/chat-bots"/>
+                <SlideButton text={props.text3} link={props.link3}/>
               </div>
               <div className="steps-card">
                 <div className="img-outer">
-                    <img className="icon" src={props.card4Gif} alt={`${props.card4Title} Gif`} />
+                  {/* <img src={hat} alt="santas hat" className='hat' style={{transform: "scaleX(-1)", left:"65px"}}/> */}
+                  <video className="icon" src={props.card4Gif} alt={`${props.card4Title} Gif`} autoPlay loop muted></video>
                 </div>
                   <h3>{props.card4Title}</h3>
                   <p>{props.card4P}</p>
-                <SlideButton text="Find out more" link="services/packages"/>
+                <SlideButton text={props.text4} link={props.link4}/>
             </div>
           </div>
           <div className="btn-container">

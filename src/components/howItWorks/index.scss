@@ -10,6 +10,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 2rem;
         gap: 1.5rem;
         
         .steps-card {
@@ -17,6 +18,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            text-align: center;
             position: relative;
             width: 100%;
             max-width: 300px;
@@ -30,7 +32,7 @@
             cursor: pointer;
             transition: 0.4s ease-in-out;
             &:hover {
-                transform: scale(0.98);
+                transform: scale(0.99);
                 box-shadow: var(--button-shadow);
                 .icon {
                     box-shadow: var(--button-shadow);
@@ -57,19 +59,32 @@
                 width: 100px;
                 height: 100px;
             }
+            .hat {
+                position: absolute;
+                z-index: 999;
+                top: -90px;
+                width: 90px;
+                height: 90px;
+            }
         }
     }  
+    .btn-container {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .what-we-do {
-        .steps-container {
-            flex-direction: column;
-            align-items: center;
-            margin-top: 3rem;
-            gap: 2rem;
-            .steps-card {
-                flex: 1 1 100%;
+        .what-we-do {
+            .text-box {
+            padding: 0rem 1rem 2rem;
+            .steps-container {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+                gap: 2rem;
+                .steps-card {
+                    flex: 1 1 100%;
+                }
             }
         }
     }
