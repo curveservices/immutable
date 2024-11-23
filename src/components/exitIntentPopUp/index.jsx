@@ -35,7 +35,7 @@ const ExitIntentPopup = () => {
         e.preventDefault();
         const formInput = new FormData(formEle);
         fetch(
-            'https://script.google.com/macros/s/AKfycbxL1-3z29sTTGeNWu7Zat8MPwC4isAZuIzV4toRse6bHdq3wTG7Z6zfWUFq28pUSo6l/exec',
+            "https://script.google.com/macros/s/AKfycbwVWYWr7UAjmyjidZ5KTpKmVwURT9CI61BC8yr55O-7TLl3jidv8KA7qj11ocqY2YPX/exec",
             {
                 method: 'POST',
                 body: formInput
@@ -69,56 +69,51 @@ const ExitIntentPopup = () => {
             >
                 <img src={ audit } className='audit-img' alt='image of a 100% website audit score'/>
                 <div className="text-box">
-                <FontAwesomeIcon className='popup-close' icon={faClose} size='2x' color='#000' onClick={handleClose} />
+                <FontAwesomeIcon className='popup-close' icon={faClose} size='1x' color='#000' onClick={handleClose} />
                 <div className='strap'>Don't go without getting a</div>
-                <h1>Free SEO & Performance Audit</h1>
-                <p>Get a <b>FREE</b> SEO, performance and business Facebook page audit. Find opportunities for improvement!</p>
-                <form ref={refForm} onSubmit={handleSubmit} className='popup-form'>
+                <h1 className='title'>Free SEO & Performance Audit</h1>
+                <p>Get your <b>FREE</b> SEO, Performance &amp; Accessibility audit. Find opportunities for improvement!</p>
+                <form ref={refForm} onSubmit={handleSubmit} id="exit-intent-form" className='popup-form'>
                     <div className="form-group">
-                        <label htmlFor="name">Your Name</label>
+                        <label htmlFor="name" id='name' name='name'>Your Name</label>
                         <input
                             type="text"
                             name="name"
+                            id='name'
                             placeholder="full name"
+                            autoComplete='true'
                             required
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Email Address</label>
+                        <label htmlFor="email" id='email' name='email'>Email Address</label>
                         <input
                             type="email"
                             name="email"
+                            id='email'
                             placeholder="youremail@example.com"
+                            autoComplete='true'
                             required
                         /> 
                     </div>
                     <div className="form-group">
-                        <label htmlFor="subject">Website URL</label>
+                        <label htmlFor="subject" id='subject' name='subject'>Website URL</label>
                         <input
                             type="text"
                             name='subject'
-                            placeholder='www.yourwebite.com '
+                            id='subject'
+                            placeholder='www.yourwebite.com'
                         />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="facebook">Facebook URL</label>
-                            <input
-                                type="text"
-                                name='facebook'
-                                placeholder='https://www.facebook.com/your-profile-id'
-                                required
-                            />
-                        </div>
+                    </div>
                     <textarea
                         name="message"
                         value="Free SEO & Performance Audit"
                         readOnly
                         className='subject'
                     ></textarea>
-                        <input className='button' type="submit" value="Claim Your Free Audit" />
+                        <input className='audit-button' type="submit" value="Claim Your Free Audit" />
                 </form>
                 </div>
-                
             </ReactModal>
             <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
         </>
