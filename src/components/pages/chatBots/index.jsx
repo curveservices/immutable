@@ -1,5 +1,5 @@
 import gif from "../../../assets/images/chatbot-unscreen.gif";
-import img from "../../../assets/images/chatbot-image.jpeg";
+import img from "../../../assets/images/chatbot-image.webp";
 import Singleservices from "../../SingleService/";
 
 const ChatBots = () => {
