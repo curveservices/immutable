@@ -1,0 +1,169 @@
+.single-service {
+  .inner-hero {
+    display: flex;
+    padding-left: 6rem;
+    color: #fff;
+    .text-box {
+        padding: 2rem 0rem;
+      }
+    .gif {
+      width: 600px;
+      animation: fadeIn 4s forwards;
+    }
+    .btn-container {
+      justify-content: flex-start;
+    }
+  }
+}
+.second-section {
+  background: var(--second);
+  box-shadow: var(--global);
+  .secondInner {
+    display: flex;
+    margin: 0rem 1rem;
+    padding: 2rem;
+    min-height: 75vh;
+  }
+  .anim-second {
+    animation: fadeInLeft 2s forwards;
+    width: 50%;
+    padding: 3rem;
+    p {
+      animation: none;
+    }
+  }
+  .second-none {
+    display: none;
+  }
+  .anim-second-img {
+    animation: fadeInRight 2s forwards;
+    width: 50%;
+    padding: 3rem;
+  }
+}
+.howItWorks {
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+  background: var(--second);
+}
+.anim-third {
+  animation: fadeIn 1.5s forwards;
+  .steps-container {
+    .steps-card:nth-child(1) {
+      animation: fadeInUp 1s 0.2s backwards;
+    }
+
+    .steps-card:nth-child(2) {
+      animation: fadeInUp 1s 0.4s backwards;
+    }
+
+    .steps-card:nth-child(3) {
+      animation: fadeInUp 1s 0.6s backwards;
+    }
+
+    .steps-card:nth-child(4) {
+      animation: fadeInUp 1s 0.8s backwards;
+    }
+  }
+}
+.third-none {
+  opacity: 0;
+}
+.thirdInner {
+  padding: 2rem 0;
+}
+.thirdTextBox {
+  margin: 3rem 3rem 0;
+  text-align: center;
+  padding: 0 8rem;
+  color: #fff;
+}
+.contentAnim {
+  animation: fadeInUp 1s forwards;
+  margin: 2rem 2rem 6rem;
+}
+.none {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .single-service {
+    .inner-hero {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      .text-box {
+        padding: 1rem 2rem;
+      }
+      .btn-container {
+        gap: 1rem;
+      }
+      .gif {
+        width: 100%;
+      }
+    }
+    .secondInner {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0rem;
+      padding: 2rem;
+      .anim-second {
+        width: 100%;
+        padding: 0rem;
+      }
+      .anim-second-img {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .thirdInner {
+      margin: 0rem;
+      padding: 2rem 1rem;
+      width: 100%;
+
+      .thirdTextBox {
+        padding: 0rem;
+        margin: 0;
+      }
+      .contentAnim {
+        margin: 1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .inner-hero {
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin: 0;
+    .text-box {
+      padding: 2rem 6rem;
+    }
+    .gif {
+      justify-self: flex-end;
+    }
+  }
+  .secondInner {
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+    .anim-second {
+      width: 100%;
+      padding: 2rem;
+    }
+    .anim-second-img {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+  .howItWorks {
+    padding: 0rem 3rem 4rem;
+  }
+  .thirdInner {
+    padding: 0rem 4rem;
+    .thirdTextBox {
+      padding: 1rem;
+    }
+  }
+}
