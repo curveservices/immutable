@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,12 +7,29 @@ import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'leaflet/dist/leaflet.css';
 import Socials from "../../socials";
-import "./index.scss";
 
 const Contact = () => {
   const refForm = useRef();
-
+  useEffect(() => {
+    import('./index.scss')
+      .then(() => {
+        console.log('css loaded');
+      })
+      .catch((error) => {
+        console.error('error loading css',error);
+      });
+    return () => {
+      const styleSheets = Array.from(document.styleSheets);
+      const homeStyleSheet = styleSheets.find(
+        (sheet) => sheet.href && sheet.href.includes('index.scss')
+      );
+      if (homeStyleSheet) {
+        document.head.removeChild(homeStyleSheet.ownerNode)
+      }
+    };
+  }, []);
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -125,6 +142,7 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
+      <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
       <div>
         <HelmetProvider>
           <Helmet>
