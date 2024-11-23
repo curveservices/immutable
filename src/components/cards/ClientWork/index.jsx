@@ -5,7 +5,6 @@ import { db } from "../../../firbase.config";
 import Button from "../../button";
 import CallToAction from "../../CTA";
 import PriceCard from "../basicPrice";
-import "./index.scss";
 
 const Client = (props) => {
   const [client, setClient] = useState([]);
@@ -35,6 +34,24 @@ const Client = (props) => {
   };
   useEffect(() => {
     fetchData();
+  }, []);
+  useEffect(() => {
+    import('./index.scss')
+      .then(() => {
+        console.log('css loaded');
+      })
+      .catch((error) => {
+        console.error('error loading css',error);
+      });
+    return () => {
+      const styleSheets = Array.from(document.styleSheets);
+      const homeStyleSheet = styleSheets.find(
+        (sheet) => sheet.href && sheet.href.includes('index.scss')
+      );
+      if (homeStyleSheet) {
+        document.head.removeChild(homeStyleSheet.ownerNode)
+      }
+    };
   }, []);
   return (
     <>
