@@ -28,8 +28,8 @@
 @media screen and (max-width: 768px) {
   .cta {
     flex-direction: column;
-    gap: 2rem;
-    margin: 2rem 0 1rem;
+    gap: 1rem;
+    margin: 3rem 0rem 0rem;
     box-shadow: none;
     .text-container {
       padding: 0 1rem;
@@ -40,9 +40,12 @@
       }
       .cta-p {
         margin: 0rem;
-        padding: 1rem;
+        padding: 0rem;
         font-size: 14px;
       }
+    }
+    .btn-container {
+      width: 100%;
     }
   }
 }
