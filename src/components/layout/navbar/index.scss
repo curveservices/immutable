@@ -12,9 +12,17 @@ header {
   transition: all 1s;
   cursor: pointer;
   .logo {
+    display: block;
     width: 250px;
+    height: 60px;
     padding: 0rem;
     margin-top: 15px;
+  }
+  .hat {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    transform: scaleX(-1);
   }
   nav {
     display: flex;
@@ -43,10 +51,12 @@ header {
 }
 @media screen and (max-width: 1024px) {
   header {
+    padding: 0rem 1rem;
     .logo {
       display: block;
-      margin-top: 15px;
-      width: 150px;
+      margin: 20px;
+      width: 100px;
+      height: 25px;
       padding: 0;
     }
     nav {

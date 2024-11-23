@@ -8,10 +8,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
 import Button from "../../button";
-import logo from "../../../assets/images/logo-desktop.png";
+import logo from "../../../assets/images/logo-desktop.webp";
+// import hat from "../../../assets/images/santa-hat.png";
 import "./index.scss";
 
 const Navbar = () => {
@@ -28,9 +30,19 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
+    <Helmet>
+      <link
+        rel="preload"
+        as="image"
+        href={logo}
+        type="image/webp"
+      />
+    </Helmet>
     <header className={isScrolled ? "navbar-scroll" : ""}>
       <NavLink to="/" aria-label="home page">
         <div className="title-container">
+          {/* <img src={hat} alt="santa hat" className="hat"/> */}
           <img src={logo} alt="Immutable studio logo" className="logo" />
         </div>
       </NavLink>
@@ -112,7 +124,8 @@ const Navbar = () => {
         className="hamburger"
         onClick={() => setShowNav(true)}
       />
-    </header>
+      </header>
+      </>
   );
 };
 
