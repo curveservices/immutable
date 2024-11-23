@@ -2,8 +2,7 @@
   position: relative;
   will-change: contents;
   transform-style: preserve-3d;
-  font-family: "Coolvetica";
-  font-display: swap;
+  font-family: "Coolvetica", Arial, Helvetica, sans-serif;
   background-image: url("../../assets/images/blue.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +18,7 @@
   .policy-page,
   .client-discovery-form {
     padding: 7rem 0rem 4rem;
-    animation: fadeIn 2s;
+    animation: fadeIn 2s 0.3s backwards;
     h1 {
       font-size: 48px;
       font-weight: normal;
@@ -107,7 +106,7 @@
       }
       .btn-container {
         margin: 1rem 0 1.5rem;
-        flex-direction: column;
+        
         align-items: center;
       }
     }

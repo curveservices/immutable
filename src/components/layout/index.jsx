@@ -6,6 +6,7 @@ import Footer from "./footer";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+// import Snow from "../snow";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);
@@ -35,6 +36,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
+      {/* <Snow/> */}
       <main className="app">
         <Outlet />
       </main>
