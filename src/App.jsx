@@ -1,54 +1,52 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import React, { Suspense } from "react";
+import LoadingSpinner from "./components/loadingSpinner";
 import "./App.scss";
-import About from "./components/pages/about";
-import Home from "./components/pages/home";
-import Layout from "./components/layout";
-import NotFound from "./components/pages/404";
-import Contact from "./components/pages/contact";
-import Services from "./components/pages/servicesPage";
-import WebDev from "./components/pages/webDev";
-import ChatBots from "./components/pages/chatBots";
-import Packages from "./components/pages/packagesPage";
-import PrivacyPolicy from "./components/pages/policy";
-import FeaturedWork from "./components/pages/featuredWork";
-import ClientDiscoveryForm from "./components/pages/clientForm";
-import SeoMaintenance from "./components/pages/seoMaintenance";
-import TelehillClient from "./components/pages/clientPages/clientTelehill";
-import Morbot from "./components/pages/clientPages/clientMorfbot";
-import ViveLaCrepe from "./components/pages/clientPages/clientViveLaCrepe";
-import Garland from "./components/pages/clientPages/clientGarland";
-import AuditFormPage from "./components/pages/auditForm";
+
+// Lazy load components
+const About = React.lazy(() => import("./components/pages/about"));
+const Home = React.lazy(() => import("./components/pages/home"));
+const Layout = React.lazy(() => import("./components/layout"));
+const NotFound = React.lazy(() => import("./components/pages/404"));
+const Contact = React.lazy(() => import("./components/pages/contact"));
+const Services = React.lazy(() => import("./components/pages/servicesPage"));
+const WebDev = React.lazy(() => import("./components/pages/webDev"));
+const ChatBots = React.lazy(() => import("./components/pages/chatBots"));
+const Packages = React.lazy(() => import("./components/pages/packagesPage"));
+const PrivacyPolicy = React.lazy(() => import("./components/pages/policy"));
+const FeaturedWork = React.lazy(() => import("./components/pages/featuredWork"));
+const ClientDiscoveryForm = React.lazy(() => import("./components/pages/clientForm"));
+const SeoMaintenance = React.lazy(() => import("./components/pages/seoMaintenance"));
+const TelehillClient = React.lazy(() => import("./components/pages/clientPages/clientTelehill"));
+const Morbot = React.lazy(() => import("./components/pages/clientPages/clientMorfbot"));
+const ViveLaCrepe = React.lazy(() => import("./components/pages/clientPages/clientViveLaCrepe"));
+const Garland = React.lazy(() => import("./components/pages/clientPages/clientGarland"));
+const AuditFormPage = React.lazy(() => import("./components/pages/auditForm"));
+
+const loadPageCSS = (page) => import(`./components/pages/${page}.scss`);
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="services" element={<Services />} />
-        <Route path=":id/web-development" element={<WebDev />} />
-        <Route path=":id/chat-bots" element={<ChatBots />} />
-        <Route path=":id/packages" element={<Packages />} />
-        <Route
-          path=":id/seo-website-maintenance"
-          element={<SeoMaintenance />}
-        />
-        <Route path="portfolio" element={<FeaturedWork />} />
-        <Route path=":id/telegraph-hill-tutoring" element={<TelehillClient />} />
-        <Route path=":id/morfbot" element={<Morbot />} />
-        <Route path=":id/vive-la-crepe" element={<ViveLaCrepe />} />
-        <Route path=":id/garland-surgical" element={<Garland /> } />
-        <Route path="privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="discovery-form" element={<ClientDiscoveryForm />} />
+        <Route index element={<Suspense fallback={<LoadingSpinner/>}><Home /></Suspense>} />
+        <Route path="about" element={<Suspense fallback={<LoadingSpinner/>}><About /></Suspense>} />
+        <Route path="contact" element={<Suspense fallback={<LoadingSpinner/>}><Contact /></Suspense>} />
+        <Route path="services" element={<Suspense fallback={<LoadingSpinner/>}><Services /></Suspense>} />
+        <Route path=":id/web-development" element={<Suspense fallback={<LoadingSpinner/>}><WebDev /></Suspense>} />
+        <Route path=":id/chat-bots" element={<Suspense fallback={<LoadingSpinner/>}><ChatBots /></Suspense>} />
+        <Route path=":id/packages" element={<Suspense fallback={<LoadingSpinner/>}><Packages /></Suspense>} />
+        <Route path=":id/seo-website-maintenance" element={<Suspense fallback={<LoadingSpinner/>}><SeoMaintenance /></Suspense>} />
+        <Route path="portfolio" element={<Suspense fallback={<LoadingSpinner/>}><FeaturedWork /></Suspense>} />
+        <Route path=":id/telegraph-hill-tutoring" element={<Suspense fallback={<LoadingSpinner/>}><TelehillClient /></Suspense>} />
+        <Route path=":id/morfbot" element={<Suspense fallback={<LoadingSpinner/>}><Morbot /></Suspense>} />
+        <Route path=":id/vive-la-crepe" element={<Suspense fallback={<LoadingSpinner/>}><ViveLaCrepe /></Suspense>} />
+        <Route path=":id/garland-surgical" element={<Suspense fallback={<LoadingSpinner/>}><Garland /></Suspense>} />
+        <Route path="privacy-policy" element={<Suspense fallback={<LoadingSpinner/>}><PrivacyPolicy /></Suspense>} />
+        <Route path="discovery-form" element={<Suspense fallback={<LoadingSpinner/>}><ClientDiscoveryForm /></Suspense>} />
       </Route>
-      <Route path="performance-audit-form" element={<AuditFormPage/>} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="performance-audit-form" element={<Suspense fallback={<LoadingSpinner/>}><AuditFormPage /></Suspense>} />
+      <Route path="*" element={<Suspense fallback={<LoadingSpinner/>}><NotFound /></Suspense>} />
     </>,
   ),
 );
@@ -58,3 +56,4 @@ function App() {
 }
 
 export default App;
+
