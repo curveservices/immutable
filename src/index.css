@@ -23,7 +23,6 @@ html {
   height: 100vh;
 }
 body {
-  position: relative;
   margin: 0;
   letter-spacing: 2.5px;
   line-height: 1.3;
