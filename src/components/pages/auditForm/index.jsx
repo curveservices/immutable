@@ -16,7 +16,7 @@ const AuditFormPage = () => {
     e.preventDefault();
     const formInput = new FormData(formEle);
     fetch(
-      "https://script.google.com/macros/s/AKfycbxL1-3z29sTTGeNWu7Zat8MPwC4isAZuIzV4toRse6bHdq3wTG7Z6zfWUFq28pUSo6l/exec",
+      "https://script.google.com/macros/s/AKfycbwVWYWr7UAjmyjidZ5KTpKmVwURT9CI61BC8yr55O-7TLl3jidv8KA7qj11ocqY2YPX/exec",
       {
         method: "POST",
         body: formInput,
@@ -43,7 +43,7 @@ const AuditFormPage = () => {
     <>
     <section className='audit-hero'>
         <div className="hero-text">
-            <Link to='/'> <img className='logo' src={logo} alt="immutable studio logo" /></Link>
+            <Link to='https://immutable-studio.co.uk/'> <img className='logo' src={logo} alt="immutable studio logo" /></Link>
             <h1 className="title">Claim Your Free Performance Audit</h1>
             <p></p>
         </div>
@@ -51,7 +51,7 @@ const AuditFormPage = () => {
             <img src={ audit } className='audit-img' alt='image of scrabble cubes displaying seo audit'/>
             <div className="text-box">
                 <h1>Free SEO & Performance Audit</h1>
-                <p>Get your <b>FREE</b> SEO, performance &amp; business Facebook page audit. Find opportunities for improvement!</p>
+                <p>Get your <b>FREE</b> SEO, performance &amp; Accessibility audit. Find opportunities for improvement!</p>
                 <form ref={refForm} onSubmit={handleSubmit} className='popup-form'>
                     <div className="form-group">
                         <label htmlFor="name">Your Name</label>
@@ -79,15 +79,6 @@ const AuditFormPage = () => {
                             placeholder='https://your-webite.com'
                             required
                         />
-                    </div>
-                        <div className="form-group">
-                            <label htmlFor="facebook">Facebook URL</label>
-                            <input
-                                type="text"
-                                name="facebook"
-                                placeholder='https://www.facebook.com/your-profile-id'
-                                required
-                            />   
                     </div>
                     <textarea
                         name="message"
