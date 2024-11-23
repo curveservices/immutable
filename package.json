@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "sideEffects": false,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -29,7 +30,7 @@
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-leaflet": "^4.2.1",
-    "react-loader-spinner": "^6.1.6",
+    "react-loaders": "^3.0.1",
     "react-modal": "^3.16.1",
     "react-player": "^2.16.0",
     "react-router-dom": "^6.22.1",
@@ -47,6 +48,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "prettier": "3.1.1",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-purgecss": "^0.2.12"
   }
 }
