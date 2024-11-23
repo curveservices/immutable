@@ -2,7 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../../../firbase.config";
 import Button from "../../button";
-import style from "../basicPrice/index.module.css";
+import "../basicPrice/index.scss";
 
 const PriceCard = (props) => {
   const [priceCard, setPriceCard] = useState([]);
@@ -48,45 +48,45 @@ const PriceCard = (props) => {
 
   return (
     <>
-      <div className={style.toggle} style={labelStyle}>
+      <div className='toggle' style={labelStyle}>
         <label name="checkbox">Annually</label>
-        <div className={style.toggleButton}>
+        <div className='toggleButton'>
           <input
             type="checkbox"
             id="checkbox"
-            className={style.checkbox}
+            className='checkbox'
             onClick={handleToggle}
           />
-          <label htmlFor="checkbox" id="sub" className={style.sub}>
-            <div className={style.circle}></div>
+          <label htmlFor="checkbox" id="sub" className='sub'>
+            <div className='price-circle'></div>
           </label>
         </div>
         <label htmlFor="checkbox">Monthly</label>
       </div>
-      <div className={style.cardContainer}>
+      <div className='cardContainer'>
         {priceCard.map((item, index) => {
           const cardClass =
             index === 1
-              ? `${style.priceCard} ${style.active}`
-              : style.priceCard;
+              ? `${'priceCard'} ${'active'}`
+              : 'priceCard';
           return (
             <div className={cardClass} key={item.id}>
               <ul>
-                <li className={style.priceTitle}>{item.title}</li>
-                <li className={style.price}>
+                <li className='priceTitle'>{item.title}</li>
+                <li className='price'>
                   {isToggled ? item.month : item.price}
                 </li>
-                <li className={style.discount}>{!isToggled && item.li0}</li>
-                <li className={style.bottomBar}>{item.li1}</li>
-                <li className={style.bottomBar}>{item.li2}</li>
-                <li className={style.bottomBar}>{item.li3}</li>
-                <li className={style.bottomBar}>{item.li4}</li>
-                <li className={style.bottomBar}>{item.li5}</li>
-                <li className={style.bottomBar}>{item.li6}</li>
-                <li className={style.bottomBar}>{item.li7}</li>
-                <li className={style.bottomBar}>{item.li8}</li>
+                <li className='discount'>{!isToggled && item.li0}</li>
+                <li className='bottomBar'>{item.li1}</li>
+                <li className='bottomBar'>{item.li2}</li>
+                <li className='bottomBar'>{item.li3}</li>
+                <li className='bottomBar'>{item.li4}</li>
+                <li className='bottomBar'>{item.li5}</li>
+                <li className='bottomBar'>{item.li6}</li>
+                <li className='bottomBar'>{item.li7}</li>
+                <li className='bottomBar'>{item.li8}</li>
               </ul>
-              <div className={style.btnContainer}>
+              <div className='btnContainer'>
                 <Button
                   background="var(--primary)"
                   link="/discovery-form"
