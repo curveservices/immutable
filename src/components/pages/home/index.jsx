@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TypewriterComponent from "typewriter-effect";
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMobileScreenButton,
-  faScrewdriverWrench,
-  faUserAstronaut,
-  faUserGroup,
-} from "@fortawesome/free-solid-svg-icons";
 import MarqueeComp from "../../marquee";
 import Button from "../../button/index";
 import CallToAction from "../../CTA";
@@ -17,35 +9,43 @@ import WorkCard from "../../cards/work";
 import vid from "../../../assets/images/greenwich.mp4";
 import fallback from "../../../assets/images/greenwich.webp";
 import ExitIntentPopup from "../../exitIntentPopUp";
-import webdev from "../../../assets/images/layout.gif";
-import seo from "../../../assets/images/keywords.gif";
-import chatbot from "../../../assets/images/chat-bot.gif";
-import packing from "../../../assets/images/packing.gif";
+import webdev from "../../../assets/images/layout.mp4";
+import seo from "../../../assets/images/keywords.mp4";
+import ai from "../../../assets/images/ai.mp4";
+import mobile from "../../../assets/images/mobile.mp4"
+import client from "../../../assets/images/client.mp4";
+import packing from "../../../assets/images/packing.mp4";
 import HowitWorks from "../../howItWorks";
-import "./index.scss";
-
 
 const Home = () => {
   const [second, setSecond] = useState(false);
-  const [activeAccordion, setActiveAccordion] = useState(0);
-  const [thirdLt, setThirdLt] = useState(false);
-  const [thirdRt, setThirdRt] = useState(false);
+  const [third, setThird] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollP = window.scrollY;
       const scrollThird = window.scrollY;
       setSecond(scrollP > 250);
-      setThirdLt(scrollThird > 1000);
-      setThirdRt(scrollThird > 1000);
+      setThird(scrollThird > 1500);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-  const handleAccordionClick = (accordionId) => {
-    setActiveAccordion((prev) => (prev === accordionId ? prev : accordionId));
-  };
-
+  useEffect(() => {
+    import('./index.scss')
+      .catch((error) => {
+        console.error('error loading css',error);
+      });
+    return () => {
+      const styleSheets = Array.from(document.styleSheets);
+      const homeStyleSheet = styleSheets.find(
+        (sheet) => sheet.href && sheet.href.includes('index.scss')
+      );
+      if (homeStyleSheet) {
+        document.head.removeChild(homeStyleSheet.ownerNode)
+      }
+    };
+  }, []);
   return (
     <>
       <div className="home-page">
@@ -95,11 +95,9 @@ const Home = () => {
           </div>
         </section>
         <section className="second-section">
-          <div
-            className="second-inner"
-          >
+          <div className="second-inner">
+          <h3 className="subtitle"><i>Our Services</i></h3>
             <div className={`text-content ${second ? "anim" : "none"}`}>
-              <h3 className="subtitle"><i>Our Services</i></h3>
               <HowitWorks
                 title="what we do"
                 mainP="We’re passionate about helping your brand stand out online. Whether it’s building custom websites, 
@@ -109,20 +107,28 @@ const Home = () => {
               card1Title="Website Development"
               card1P=" We build responsive websites that look and feel amazing on all devices
                     – desktops, laptops and mobiles. Let us help you create the perfect website."
+              link1="/services/web-development"
+              text1="Find out more"  
               card2Gif={seo}
               card2Title="SEO & Maintenance"
               card2P="We offer a range of maintenace plans, starting with a free SEO, performance and
                     facebook business page audit. We can manage your site with ease so you don't have to."
-              card3Gif={chatbot}
+              link2="services/seo-website-maintenance"
+              text2="find out more"
+              card3Gif={ai}
               card3Title="AI Solutions"
               card3P="Our AI assistants are trained on your business and website pages. Answering FAQ's, taking bookings and more.
                     All seamlessly intergrated to your website and systems."
+              link3="services/chat-bots"
+              text3="find out more"
               card4Gif={packing}
               card4Title="Packages"
               card4P="Wrap all of our services up into convienent business packages.
                     We offer a range of website development, AI solutions, analytics and workflow automation."
-                text="See all our services"
-                link="services"
+              link4="services/packages"
+              text4="find out more"
+              text="See all our services"
+              link="services"
             />
             </div>
             <div className={`home-marquee ${second ? "anim" : "none"}`}>
@@ -132,101 +138,54 @@ const Home = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            <h2 className="title">WHY CHOOSE US?</h2>
-            <div className="text-container">
-              <p>
-                We offer a full range of website design, SEO &amp; maintenance,
+            <h3 className="subtitle" style={{color: '#fff',}}><i>Our Commitments</i></h3>
+            <div className={`text-content ${third ? "anim" : "none"}`}>
+              <HowitWorks
+              title="why choose us"
+                mainP=" We offer a full range of website design, SEO &amp; maintenance,
                 AI chat assistants, and workflow automation services with
                 flexible pricing. We also package up all of these services as a
-                convenient business pack.
-              </p>
-            </div>
-            <div className="element-container">
-              <NavLink to="/portfolio" aria-label="link to about page">
-                <div
-                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faUserGroup} />
-                  </div>
-                  <div className="copy">
-                    <h3 className="elem-title">Excellent Client Service</h3>
-                    <p className="desc">
-                      Customer service is more than a commitment, it shapes
+                convenient business pack."
+              card1Gif={client}
+              card1Title="Excellent Client Service"
+              card1P=" Customer service is a commitment and it shapes
                       every aspect of our business. From discovery to final
                       delivery, we prioritise understanding your visions &amp;
-                      goals.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink
-                to="services/chat-bots"
-                aria-label="link to chat bots page"
-              >
-                <div
-                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faScrewdriverWrench} />
-                  </div>
-                  <div className="copy">
-                    <h3 className="elem-title">Automated AI Solutions</h3>
-                    <p className="desc">
-                      Every business is unique. We create custom automated
+                      goals."
+              link1="/portfolio"
+              text1="Our Clients"  
+              card2Gif={ai}
+              card2Title="Automated AI Solutions"
+              card2P="Every business is unique. We create custom automated
                       workflows &amp; AI solutions, tailored to your business
                       saving you time &amp; money with repetitive tasks powered
-                      by AI.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink to="services" aria-label="link to web development page">
-                <div
-                  className={`elem-card ${thirdLt ? "thirdLt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faUserAstronaut} />
-                  </div>
-                  <div className="copy">
-                    <h3 className="elem-title">Seamless User Experience</h3>
-                    <p className="desc">
-                      User experience is vital. We design user journeys focusing
+                      by AI."
+              link2="services/chat-bots"
+              text2="AI Solutions"
+              card3Gif={webdev}
+              card3Title="Seamless User Experience"
+              card3P=" User experience is vital. We design user journeys focusing
                       on simplicity &amp; ease of use. By providing seamless
                       browsing, we engage visitors &amp; inspire them to take
-                      action.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-              <NavLink
-                to="services/web-development"
-                aria-label="link to web development page"
-              >
-                <div
-                  className={`elem-card ${thirdRt ? "thirdRt" : "third-none"}`}
-                >
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faMobileScreenButton} />
-                  </div>
-                  <div className="copy">
-                    <h3 className="elem-title">Mobile-First Approach</h3>
-                    <p className="desc">
-                      It's a mobile-driven world &amp; a responsive website is
+                      action."
+              link3="services"
+              text3="Our Services"
+              card4Gif={mobile}
+              card4Title="A Mobile-First Approach"
+              card4P="It's a mobile-driven world &amp; a responsive website is
                       essential. Our designs are optimised for all devices,
                       ensuring a flawless experience on phones, tablets &amp;
-                      desktops.
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
+                      desktops."
+              link4="services/web-development"
+              text4="web development"
+              text="find out about us"
+              link="about"
+            />
             </div>
           </div>
         </section>
         <section className="forth-section">
-          <div
-            className="forth-inner"
-          >
+          <div className="forth-inner">
             <div className="text-box">
               <h3 className="subtitle"><i>Our Portfolio</i></h3>
             </div>
