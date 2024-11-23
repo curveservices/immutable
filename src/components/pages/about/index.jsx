@@ -9,9 +9,6 @@ import StaticCubes from "../../Animations/staticCubes";
 import vid from "../../../assets/images/about.mp4";
 import about from "../../../assets/images/about.webp";
 import LazyVideo from "../../LazyVideo";
-import paper from "../../../assets/images/1746747.webp";
-
-import "./index.scss";
 
 const About = () => {
   const [second, setSecond] = useState(false);
@@ -23,7 +20,24 @@ const About = () => {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-
+    useEffect(() => {
+    import('./index.scss')
+      .then(() => {
+        console.log('css loaded');
+      })
+      .catch((error) => {
+        console.error('error loading css',error);
+      });
+    return () => {
+      const styleSheets = Array.from(document.styleSheets);
+      const homeStyleSheet = styleSheets.find(
+        (sheet) => sheet.href && sheet.href.includes('index.scss')
+      );
+      if (homeStyleSheet) {
+        document.head.removeChild(homeStyleSheet.ownerNode)
+      }
+    };
+  }, []);
   return (
     <>
       <div className="about-page">
