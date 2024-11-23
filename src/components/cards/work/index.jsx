@@ -56,7 +56,7 @@ const WorkCard = () => {
             <div className="flip-card" key={item.id}>
               <div className="flip-card-inner">
                 <div className="flip-card-front" >
-                  <img src={item.img} alt={`${item.name} featured images`} className="card-image"
+                  <img src={item.img} alt={`${item.name} featured images`} className="card-image" loading="lazy"
                     style={{width:"300px",height:"300px", }}/>
               </div>
                 <div className="flip-card-back" style={{background: item.color}}>
@@ -89,7 +89,7 @@ const WorkCard = () => {
           </p>
         </div>
         <div className="btn-container">
-          <Button text="Portfolio" link="portfolio"/>
+          <Button text="Our Portfolio" link="portfolio"/>
           <Button text="Discovery Form" link="discovery-form"/>
         </div>
       </div>
