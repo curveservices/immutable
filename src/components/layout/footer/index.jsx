@@ -1,11 +1,22 @@
 import { Link, NavLink } from "react-router-dom";
 import Socials from "../../socials";
-import logo from "../../../assets/images/logo-desktop.png";
+import logo from "../../../assets/images/logo-desktop.webp";
+import { Helmet } from "react-helmet";
+// import hat from "../../../assets/images/santa-hat.png"
 import "./index.scss";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
+    <>
+    <Helmet>
+      <link
+        rel="preload"
+        as="image"
+        href={logo}
+        type="image/webp"
+      />
+    </Helmet>
     <footer>
       <div className="foot-title">
         <div className="footer-container">
@@ -18,6 +29,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink to="/">
+                {/* <img src={hat} alt="santa hat" style={{position: "absolute",top: "-4px", transform: "scaleX(-1)", right: "47rem"}}/> */}
                 <img src={logo} alt="logo" className="footer-logo" />
               </NavLink>
             </li>
@@ -43,6 +55,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
