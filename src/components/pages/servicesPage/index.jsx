@@ -15,25 +15,29 @@ import webdev from "../../../assets/images/layout.mp4";
 import meeting from "../../../assets/images/online-meeting.mp4";
 import chatbot from "../../../assets/images/chat-bot.mp4";
 import design from "../../../assets/images/prototype.mp4";
+import GoogleReviews from "../../googleReviews";
+import Socials from "../../socials";
 
 const Services = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [second, setSecond] = useState(false);
-
+  const [third, setThird] = useState(false);
+  const [forth, setForth] = useState(false);
+  const [fith, setFith] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPrice = window.scrollY;
       const scrollSecond = window.scrollY;
+      const scrollThird = window.scrollY;
+      const scrollForth = window.scrollY;
+      const scrollFith = window.scrollY;
       setSecond(scrollSecond > 150);
-      setIsScrolled(scrollPrice > 1700);
+      setThird(scrollThird > 1500);
+      setForth(scrollForth > 2500);
+      setFith(scrollFith > 3300);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
     useEffect(() => {
     import('./index.scss')
-      .then(() => {
-        console.log('css loaded');
-      })
       .catch((error) => {
         console.error('error loading css',error);
       });
@@ -89,7 +93,7 @@ const Services = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <h3 className="subtitle"><i>Our Services</i></h3>
+            <div className="subtitle"><i>Our Services</i></div>
             <div
               className={`text-content ${
                 second ? "anim" : "none"
@@ -140,7 +144,9 @@ const Services = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            <div className="text-box">
+            <div className="subtitle"><i>Our Pricing</i></div>
+            <div className={`${third ? "anim" : "none"}`}>
+              <div className="text-box">
               <h2>Transparent Pricing</h2>
               <p>
                 We believe in transparency and building strong relationships
@@ -149,8 +155,7 @@ const Services = () => {
                 as your business grows.
               </p>
             </div>
-            <h2 className="price-title">Our Starting Prices</h2>
-            <div className={`${isScrolled ? "contentAnim" : "none"}`}>
+              <h2 className="price-title">Our Starting Prices</h2>
               <PriceCard name="pricing" color="#fff" />
             </div>
           </div>
@@ -158,9 +163,25 @@ const Services = () => {
         <section className="forth-section">
           <div className="forth-inner">
             <div className="subtitle">
-              <h3><i>Our Portfolio</i></h3>
+              <div><i>Our Portfolio</i></div>
             </div>
-            <WorkCard />
+            <div className={`${forth ? "anim" : "none"}`}>
+              <WorkCard />
+            </div>
+          </div>
+        </section>
+        <section className="fith-section">
+          <div className="fith-inner">
+            <div className="subtitle"><i>Client Reviews</i></div>
+            <div className={`${fith ? "anim" : "none"}`}>
+              <GoogleReviews />
+              <div className="subtitle"><i>Stay Up To Date And Follow Us!</i></div>
+              <Socials
+                fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                lilink="https://www.linkedin.com/company/21439623"
+                instalink="https://www.instagram.com/immutable_studio/"
+              />
+            </div>
           </div>
         </section>
         <section className="cta">
