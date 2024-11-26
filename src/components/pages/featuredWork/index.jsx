@@ -34,9 +34,6 @@ const FeaturedWork = () => {
   }, []);
     useEffect(() => {
     import('./index.scss')
-      .then(() => {
-        console.log('css loaded');
-      })
       .catch((error) => {
         console.error('error loading css',error);
       });

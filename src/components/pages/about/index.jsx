@@ -22,9 +22,6 @@ const About = () => {
   }, []);
     useEffect(() => {
     import('./index.scss')
-      .then(() => {
-        console.log('css loaded');
-      })
       .catch((error) => {
         console.error('error loading css',error);
       });
@@ -67,7 +64,7 @@ const About = () => {
                 <Socials
                   fblink="https://www.facebook.com/profile.php?id=61557552873479"
                   lilink="https://www.linkedin.com/company/21439623"
-                  xlink="https://twitter.com/immutable_LDN"
+                  instalink="https://www.instagram.com/immutable_studio/"
                 />
               </div>
               <div className="btn-container">
