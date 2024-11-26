@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Socials from "../../socials";
 import logo from "../../../assets/images/logo-desktop.webp";
-import { Helmet } from "react-helmet";
 // import hat from "../../../assets/images/santa-hat.png"
 import "./index.scss";
 
@@ -9,14 +8,6 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-    <Helmet>
-      <link
-        rel="preload"
-        as="image"
-        href={logo}
-        type="image/webp"
-      />
-    </Helmet>
     <footer>
       <div className="foot-title">
         <div className="footer-container">
