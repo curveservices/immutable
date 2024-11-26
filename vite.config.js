@@ -39,14 +39,13 @@ export default defineConfig({
       algorithm: "gzip",
       ext: ".gz",
       threshold: 1024,
-      deleteOriginFile: false,
-      filter: /\.(js|mjs|json|css|html|svg|ico|png|jpg|webp)$/,
+      filter: /\.(js|mjs|json|css|html|svg|ico|png|jpg|webp|woff|woff2)$/,
     }),
     compression({
       algorithm: "brotliCompress",
       ext: ".br",
       threshold: 1024,
-      filter: /\.(js|mjs|json|css|html|svg|ico|png|jpg|webp)$/,
+      filter: /\.(js|mjs|json|css|html|svg|ico|png|jpg|webp|woff|woff2)$/,
     }),
   ],
   build: {
@@ -55,6 +54,9 @@ export default defineConfig({
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
       output: {
+        assetFileNames: '[name].[hash][extname]',
+        chunkFileNames: '[name].[hash].js',
+        entryFileNames: '[name].[hash].js',
         manualChunks: {
           vendor: ['react', 'react-dom'],
         }
