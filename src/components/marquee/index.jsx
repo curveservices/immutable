@@ -25,7 +25,7 @@ const MarqueeComp = () => {
       </div>
       <Marquee pauseOnHover="true" className="marquee">
         <Link to="https://wordpress.com/" noreferer="true" target="_blank">
-          <img src={wordpress} alt="wordpress icon" className="icon" />
+          <img src={wordpress} alt="wordpress icon" className="icon" loading="lazy"/>
         </Link>
         <div className="divider">|</div>
         <Link
@@ -33,23 +33,23 @@ const MarqueeComp = () => {
           noreferer="true"
           target="_blank"
         >
-          <img src={square} alt="squarespace icon" className="icon" />
+          <img src={square} alt="squarespace icon" className="icon" loading="lazy" />
         </Link>
         <div className="divider">|</div>
         <Link to="https://woocommerce.com/" noreferer="true" target="_blank">
-          <img src={woo} alt="woo-commerce" className="icon" />
+          <img src={woo} alt="woo-commerce" className="icon" loading="lazy" />
         </Link>
         <div className="divider">|</div>
         <Link to="https://www.shopify.com/uk" noreferer="true" target="_blank">
-          <img src={shop} alt="shopify icon" className="icon" />
+          <img src={shop} alt="shopify icon" className="icon" loading="lazy" />
         </Link>
         <div className="divider">|</div>
         <Link to="https://www.wix.com/" noreferer="true" target="_blank">
-          <img src={wix} alt="wix icon" className="icon" />
+          <img src={wix} alt="wix icon" className="icon" loading="lazy" />
         </Link>
         <div className="divider">|</div>
         <Link to="https://react.dev/" noreferer="true" target="_blank">
-          <img src={react} alt="react icon" className="icon" />
+          <img src={react} alt="react icon" className="icon" loading="lazy" />
         </Link>
         <div className="divider">|</div>
         <Link
@@ -57,7 +57,7 @@ const MarqueeComp = () => {
           noreferer="true"
           target="_blank"
         >
-          <img src={daddy} alt="godaddy icon" className="icon" />
+          <img src={daddy} alt="godaddy icon" className="icon" loading="lazy" />
         </Link>
         <div className="divider">|</div>
       </Marquee>
