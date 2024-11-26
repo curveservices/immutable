@@ -30,7 +30,7 @@
         background: var(--second);
         .audit-img {
             width: 500px;
-            height: 500px;
+            height: 550px;
             object-fit: fill;
             }
         .text-box {
@@ -58,7 +58,7 @@
                         font-size: 0.9rem;
                         color: #2C5FE1;
                     }
-                    input {
+                    input, select {
                         max-width: 100%;
                         padding: 10px;
                         border: 1px solid #ccc;
@@ -120,7 +120,7 @@
             flex-direction: column;
             padding: 0;
             .audit-img {
-                width: 350px;
+                width: 400px;
                 height: 250px;
             }
             .text-box {

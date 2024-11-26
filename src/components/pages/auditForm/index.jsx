@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 import audit from '../../../assets/images/audit.webp';
-import logo from "../../../assets/images/logo-desktop.png";
+import logo from "../../../assets/images/logo-desktop.webp";
 import "./index.scss";
 import { Link, redirect } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -80,6 +80,20 @@ const AuditFormPage = () => {
                             required
                         />
                     </div>
+                    <div className="form-group">
+                        <label htmlFor="subject" id='subject' name='subject' required>Where Did You Find Us</label>
+                        <select name="subect" id="subect" >
+                           <option value="Google">Google Search</option> 
+                           <option value="LinkedIn">LinkedIn</option> 
+                           <option value="Facebook">Facebook</option>   
+                           <option value="Instagram">Instagram</option>
+                           <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <label>
+                        <input type="checkbox" name="gdpr" required />I consent to having
+                        this website store my submitted information.
+                    </label>
                     <textarea
                         name="message"
                         value="Free SEO & Performance Audit"
