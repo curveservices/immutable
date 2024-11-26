@@ -6,6 +6,7 @@ import Footer from "./footer";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import CookieConsent from "../cookiePopup";
 // import Snow from "../snow";
 
 const Layout = () => {
@@ -38,6 +39,7 @@ const Layout = () => {
       <Navbar />
       {/* <Snow/> */}
       <main className="app">
+        <CookieConsent/>
         <Outlet />
       </main>
       {showButton && (
