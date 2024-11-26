@@ -16,17 +16,24 @@ import mobile from "../../../assets/images/mobile.mp4"
 import client from "../../../assets/images/client.mp4";
 import packing from "../../../assets/images/packing.mp4";
 import HowitWorks from "../../howItWorks";
+import GoogleReviews from "../../googleReviews";
+import Socials from "../../socials";
 
 const Home = () => {
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
-
+  const [forth, setForth] = useState(false);
+  const [fith, setFith] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const scrollP = window.scrollY;
+      const scrollSecond = window.scrollY;
       const scrollThird = window.scrollY;
-      setSecond(scrollP > 250);
+      const scrollForth = window.scrollY;
+      const scrollFith = window.scrollY;
+      setSecond(scrollSecond > 250);
       setThird(scrollThird > 1500);
+      setForth(scrollForth > 2500);
+      setFith(scrollFith > 3300);
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -60,6 +67,7 @@ const Home = () => {
           />
           <div className="text-box">
             <h1 className="main-title">Empowering Business with</h1>
+            <span className="mobile-view">Online Solutions.</span>
             <div className="typewriter">
               <TypewriterComponent
                 options={{
@@ -96,7 +104,7 @@ const Home = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-          <h3 className="subtitle"><i>Our Services</i></h3>
+          <div className="subtitle"><i>Our Services</i></div>
             <div className={`text-content ${second ? "anim" : "none"}`}>
               <HowitWorks
                 title="what we do"
@@ -138,7 +146,7 @@ const Home = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            <h3 className="subtitle" style={{color: '#fff',}}><i>Our Commitments</i></h3>
+            <div className="subtitle" style={{color: '#fff',}}><i>Our Commitments</i></div>
             <div className={`text-content ${third ? "anim" : "none"}`}>
               <HowitWorks
               title="why choose us"
@@ -187,9 +195,25 @@ const Home = () => {
         <section className="forth-section">
           <div className="forth-inner">
             <div className="text-box">
-              <h3 className="subtitle"><i>Our Portfolio</i></h3>
+              <div className="subtitle"><i>Our Portfolio</i></div>
             </div>
-            <WorkCard />
+            <div className={`${forth ? "anim" : "none"}`}>
+                <WorkCard />
+            </div>
+          </div>
+        </section>
+        <section className="fith-section">
+          <div className="fith-inner">
+            <div className="subtitle"><i>Client Reviews</i></div>
+            <div className={`${fith ? "anim" : "none"}`}>
+              <GoogleReviews />
+              <div className="subtitle"><i>Stay Up To Date And Follow Us!</i></div>
+              <Socials
+                fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                lilink="https://www.linkedin.com/company/21439623"
+                instalink="https://www.instagram.com/immutable_studio/"
+              />
+            </div>
           </div>
         </section>
         <section className="cta">
