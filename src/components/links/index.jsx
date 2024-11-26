@@ -6,22 +6,22 @@ const Links = (props) => {
     <div className="link-container">
       <div className="service-link">
         <NavLink to={props.webLink}>
-          <h3>WEB DEVELOPMENT</h3>
+          <div>WEB DEVELOPMENT</div>
         </NavLink>
       </div>
       <div className="service-link">
         <NavLink to={props.maintenanceLink}>
-          <h3>SEO & MAINTENANCE</h3>
+          <div>SEO & MAINTENANCE</div>
         </NavLink>
       </div>
       <div className="service-link">
         <NavLink to={props.aiLink}>
-          <h3>AI SOLUTIONS</h3>
+          <div>AI SOLUTIONS</div>
         </NavLink>
       </div>
       <div className="service-link">
         <NavLink to={props.packagesLink}>
-          <h3>PACKAGES</h3>
+          <div>PACKAGES</div>
         </NavLink>
       </div>
     </div>
