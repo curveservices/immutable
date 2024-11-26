@@ -3,7 +3,6 @@ import React, { Suspense } from "react";
 import LoadingSpinner from "./components/loadingSpinner";
 import "./App.scss";
 
-// Lazy load components
 const About = React.lazy(() => import("./components/pages/about"));
 const Home = React.lazy(() => import("./components/pages/home"));
 const Layout = React.lazy(() => import("./components/layout"));
@@ -49,6 +48,11 @@ const router = createBrowserRouter(
       <Route path="*" element={<Suspense fallback={<LoadingSpinner/>}><NotFound /></Suspense>} />
     </>,
   ),
+  {
+    future: {
+      v7_startTransition: true,
+    },
+  }
 );
 
 function App() {
