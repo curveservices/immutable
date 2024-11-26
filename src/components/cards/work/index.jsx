@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { db } from "../../../firbase.config";
 import { getDocs, collection } from "firebase/firestore";
 import Button from "../../button";
-import "./index.scss";
 import { NavLink } from "react-router-dom";
+import "./index.scss";
 
 const WorkCard = () => {
   const [card, setCard] = useState([]);
@@ -36,7 +36,6 @@ const WorkCard = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
   return (
     <>
       <div className="text-container">
@@ -58,21 +57,23 @@ const WorkCard = () => {
                 <div className="flip-card-front" >
                   <img src={item.img} alt={`${item.name} featured images`} className="card-image" loading="lazy"
                     style={{width:"300px",height:"300px", }}/>
-              </div>
+                </div>
                 <div className="flip-card-back" style={{background: item.color}}>
-                  <img src={item.back} alt={`${item.name} Home page`} className="card-back-image" />
+                  <img src={item.back} alt={`${item.name} Home page`} className="card-back-image" loading="lazy"
+                    style={{width:"300px",height:"300px", }}
+                  />
                   <h1 className="name" >{item.name}</h1>
                   <NavLink to={`/services/${item.productLink}`}>
                     <h2 className="product">{item.product}</h2>
                   </NavLink>
-                <p className="desc" >{item.desc}</p>
-                <div className="btn-container">
-                  <Button
-                    text="View"
-                    link={`/portfolio${item.live}`}
-                    background="var(--services-link)"
-                  />
-                </div>
+                  <p className="desc" >{item.desc}</p>
+                  <div className="btn-container">
+                    <Button
+                      text="View"
+                      link={`/portfolio${item.live}`}
+                      background="var(--services-link)"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
