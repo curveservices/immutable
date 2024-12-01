@@ -35,7 +35,7 @@ const ExitIntentPopup = () => {
         e.preventDefault();
         const formInput = new FormData(formEle);
         fetch(
-            "https://script.google.com/macros/s/AKfycbwVWYWr7UAjmyjidZ5KTpKmVwURT9CI61BC8yr55O-7TLl3jidv8KA7qj11ocqY2YPX/exec",
+            "https://script.google.com/macros/s/AKfycbxVg1oVObctzvJgCP2Q-qBRoSAcibD12qvqDSbKfxbV6hHVtvK6LSBhmTronGRMXuOG/exec",
             {
                 method: 'POST',
                 body: formInput
@@ -106,8 +106,8 @@ const ExitIntentPopup = () => {
                         />
                         </div>
                         <div className="form-group">
-                        <label htmlFor="subject" id='subject' name='subject'>Where Did You Find Us</label>
-                        <select name="subect" id="subect" >
+                        <label htmlFor="source" id='source' name='source'>Where Did You Find Us</label>
+                        <select name="source" id="source" >
                            <option value="Google">Google Search</option> 
                            <option value="LinkedIn">LinkedIn</option> 
                            <option value="Facebook">Facebook</option>   
