@@ -3,13 +3,13 @@ import "./index.scss";
 
 const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
   const videoRef = useRef(null);
-  const [isIntersecting, setIsIntersecting] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsIntersecting(true);
+          setIsLoading(true);
           observer.disconnect();
         }
       },
@@ -20,20 +20,17 @@ const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
       observer.observe(videoRef.current);
     }
 
-    return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
-      }
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div ref={videoRef}>
-      {isIntersecting ? (
+    <div ref={videoRef} className="video-container">
+      {isLoading ? (
         <video
           {...props}
           autoPlay
           muted
+          playsInline
           loop
           controls={false}
           aria-label={ariaLabel}
