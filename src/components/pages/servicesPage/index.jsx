@@ -61,6 +61,7 @@ const Services = () => {
             type="video/mp4"
             className="video"
             fallback={fallback}
+            alt="Video of London's Tower Bridge"
           />
           <div className="hero-inner">
             <div className="text-box">
@@ -167,20 +168,6 @@ const Services = () => {
             </div>
             <div className={`${forth ? "anim" : "none"}`}>
               <WorkCard />
-            </div>
-          </div>
-        </section>
-        <section className="fith-section">
-          <div className="fith-inner">
-            <div className="subtitle"><i>Client Reviews</i></div>
-            <div className={`${fith ? "anim" : "none"}`}>
-              <GoogleReviews />
-              <div className="subtitle"><i>Stay Up To Date And Follow Us!</i></div>
-              <Socials
-                fblink="https://www.facebook.com/profile.php?id=61557552873479"
-                lilink="https://www.linkedin.com/company/21439623"
-                instalink="https://www.instagram.com/immutable_studio/"
-              />
             </div>
           </div>
         </section>

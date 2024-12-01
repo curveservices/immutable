@@ -20,8 +20,8 @@
       }
     }
   }
-    .none {
-      opacity: 0;
+  .none {
+    opacity: 0;
   }
   .hero {
     display: grid;
@@ -32,7 +32,6 @@
     .hero-inner {
       position: relative;
       display: flex;
-      justify-content: space-between;
       padding: 1rem 4rem 5rem;
       color: #fff;
       .text-box {
@@ -81,16 +80,8 @@
       box-shadow: var(--global);
       background: var(--second);
       padding: 1rem 1rem 4rem;
+      margin-bottom: 4rem;
       text-align: center;
-    }
-  }
-
-  .fith-section {
-    .fith-inner {
-      padding: 1rem 1rem 4rem;
-      .subtitle {
-        color: #fff;
-      }
     }
   }
 }
@@ -126,7 +117,7 @@
     }
     .third-section {
       .third-inner {
-        padding: 1rem;
+        padding: 1rem 2rem;
         .price-title,
         .text-box {
           padding: 1rem;
