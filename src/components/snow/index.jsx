@@ -1,29 +1,42 @@
-import React from 'react'
-import "./index.scss"
+import React, { useEffect, useState } from "react";
+import "./index.scss";
 
 const Snow = () => {
-     const snowflakeCount = 50;
+  const [snowflakes, setSnowflakes] = useState([]);
+  const getSnowflakeCount = () => {
+  if (window.innerWidth > 1024) return 80; 
+  if (window.innerWidth > 768) return 50; 
+  return 30;
+};
+  useEffect(() => {
+    const snowflakeCount = getSnowflakeCount();
+    const newSnowflakes = Array.from({ length: snowflakeCount }).map(() => ({
+      id: Math.random(),
+      size: Math.random() * 3 + 1, // Random size between 1px and 4px
+      left: Math.random() * 100, // Random horizontal position as percentage
+      fallDuration: Math.random() * 5 + 2, // Random fall duration (2-7 seconds)
+      delay: Math.random() * 4 // Random delay before fall
+    }));
+    setSnowflakes(newSnowflakes);
+  }, []);
 
-    for (let i = 0; i < snowflakeCount; i++) {
-        const snowflake = document.createElement('div');
-        const size = Math.random() * 3 + 1; // random size between 5 and 10
-        const left = Math.random() * window.innerWidth // random horizontal position
-        const fallDuration = Math.random() * 5 + 2; // fall duration between 2 and 5 seconds
-
-        snowflake.className = 'snowflake';
-        snowflake.style.width = `${size}px`;
-        snowflake.style.height = `${size}px`;
-        snowflake.style.left = `${left}px`;
-        snowflake.style.animationDuration = `${fallDuration}s`; // random fall duration
-        snowflake.style.animationDelay = `${Math.random() * 5}s` // random delay before falling
-
-        document.body.appendChild(snowflake);
-    }
   return (
-    <div>
-      
+    <div className="snow-container">
+      {snowflakes.map((flake) => (
+        <div
+          key={flake.id}
+          className="snowflake"
+          style={{
+            width: `${flake.size}px`,
+            height: `${flake.size}px`,
+            left: `${flake.left}%`,
+            animationDuration: `${flake.fallDuration}s`,
+            animationDelay: `${flake.delay}s`
+          }}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Snow
+export default Snow;
