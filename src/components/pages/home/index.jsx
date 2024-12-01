@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import TypewriterComponent from "typewriter-effect";
+import Typewriter from '../../customTypewriter';
 import MarqueeComp from "../../marquee";
 import Button from "../../button/index";
 import CallToAction from "../../CTA";
@@ -12,7 +12,7 @@ import ExitIntentPopup from "../../exitIntentPopUp";
 import webdev from "../../../assets/images/layout.mp4";
 import seo from "../../../assets/images/keywords.mp4";
 import ai from "../../../assets/images/ai.mp4";
-import mobile from "../../../assets/images/mobile.mp4"
+import mobile from "../../../assets/images/mobile.mp4";
 import client from "../../../assets/images/client.mp4";
 import packing from "../../../assets/images/packing.mp4";
 import HowitWorks from "../../howItWorks";
@@ -59,7 +59,7 @@ const Home = () => {
         <ExitIntentPopup/>
         <section className="hero">
           <LazyVideo
-            ariaLabel="Footage of the Royal College of Greenwich"
+            alt="Video of the Royal College of Greenwich"
             src={vid}
             type="video/mp4"
             className="video"
@@ -69,21 +69,18 @@ const Home = () => {
             <h1 className="main-title">Empowering Business with</h1>
             <span className="mobile-view">Online Solutions.</span>
             <div className="typewriter">
-              <TypewriterComponent
-                options={{
-                  strings: [
-                    "Website Design.",
-                    "Maintenance & SEO.",
-                    "AI Chat Assistants.",
-                    "Website Development.",
-                    "AI Solutions.",
-                  ],
-                  wrapperClassName: "Typewriter__wrapper",
-                  autoStart: true,
-                  loop: true,
-                  delay: 75,
-                  deleteSpeed: 40,
-                }}
+              <Typewriter
+                strings={[
+                  "Website Design.",
+                  "Maintenance & SEO.",
+                  "AI Chat Assistants.",
+                  "Website Development.",
+                  "AI Solutions.",
+                ]}
+                typingSpeed={75}
+                deletingSpeed={40}
+                pauseTime={1500}
+                loop
               />
             </div>
             <div className="text">

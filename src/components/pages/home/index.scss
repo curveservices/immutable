@@ -27,6 +27,9 @@
       grid-column: 1;
       grid-row: 1;
     }
+    .fallback {
+      display: none;
+    }
     .main-title {
       font-size: 3.75rem;
       text-align: center;
@@ -45,6 +48,8 @@
       background: linear-gradient(to right, #fff, coral);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      min-height: 3.25rem;
     }
     .text {
       text-align: center;
