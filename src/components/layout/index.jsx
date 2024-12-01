@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import CookieConsent from "../cookiePopup";
 // import Snow from "../snow";
+import "./index.scss";
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false);

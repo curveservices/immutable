@@ -85,7 +85,7 @@
     color: #fff;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .app {
     background-image: none;
     .home-page,
@@ -109,6 +109,37 @@
       .btn-container {
         margin: 1rem 0 1.5rem;
         
+        align-items: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .app {
+    .home-page,
+    .about-page,
+    .serivces-page,
+    .contact-page,
+    .single-service,
+    .featured-work,
+    .client-page,
+    .policy-page,
+    .client-discovery-form {
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .btn-container {
+        margin: 1rem 0 1.5rem;
+
         align-items: center;
       }
     }
