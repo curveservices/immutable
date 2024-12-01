@@ -34,7 +34,7 @@ const CookieConsent = () => {
       overlayClassName="cookie-modal-overlay"
     >
       <div className="cookie-content">
-        <video className="icon" src={cookieVideo} alt="Cookie" autoPlay loop muted />
+        <video className="icon" src={cookieVideo} alt="Cookie" autoPlay loop muted playsInline controls={false} />
         <p>
           We use cookies to improve your experience on our site. By using our site,
           you consent to cookies. See our   
