@@ -40,6 +40,9 @@
                     transition: 0.4s ease-in-out;
                 }
             }
+            .mobile-icon {
+                display: none;
+            }
             h3 {
                 font-size: 22px;
             }
@@ -76,17 +79,40 @@
 @media screen and (max-width: 768px) {
         .what-we-do {
             .text-box {
-            padding: 0rem 1rem 2rem;
+                padding: 0rem 1rem 2rem;
+            }
             .steps-container {
                 flex-direction: column;
                 align-items: center;
                 margin-top: 3rem;
                 gap: 2rem;
                 .steps-card {
-                    flex: 1 1 100%;
+                    &:hover {
+                        .mobile-icon {
+                            box-shadow: var(--button-shadow);
+                            padding: 10px;
+                            transition: 0.4s ease-in-out;
+                        }
+                    }
+                    .icon {
+                        display: block;
+                    }
+                    .mobile-icon {
+                        display: none;
+                        position: absolute;
+                        top: -60px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        border-radius: 50%;
+                        padding: 5px;
+                        box-shadow: var(--global);
+                        background: var(--secondary);
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
-        }
+        
     }
 }
 
