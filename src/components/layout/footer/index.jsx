@@ -20,7 +20,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink to="/">
-                {/* <img src={hat} alt="santa hat" style={{position: "absolute",top: "-4px", transform: "scaleX(-1)", right: "47rem"}}/> */}
+                {/* <img src={hat} alt="santa hat" className="hat"/> */}
                 <img src={logo} alt="logo" className="footer-logo" />
               </NavLink>
             </li>

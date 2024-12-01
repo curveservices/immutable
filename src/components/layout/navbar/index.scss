@@ -62,10 +62,12 @@ header {
       height: 31px;
       padding: 0;
     }
-    .mobile-logo {
-      display: none;
-      margin: 15px;
-      padding: 0;
+    .hat {
+      position: absolute;
+      top: 12px;
+      left: 25px;
+      width: 30px;
+      transform: scaleX(-1);
     }
     nav {
       display: none;

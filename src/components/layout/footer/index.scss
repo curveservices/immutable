@@ -46,6 +46,12 @@ footer {
     gap: 20px;
     font-size: 12px;
   }
+    .hat {
+      position: relative;
+      top: -15px;
+      left: 2.5rem;
+      transform: scaleX(-1);
+    }
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -72,6 +78,13 @@ footer {
     }
     .copy {
       font-size: 8px;
+    }
+    .hat {
+      position: relative;
+      top: -4px;
+      left: 18px;
+      width: 30px;
+      transform: scaleX(-1);
     }
   }
 }
