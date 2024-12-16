@@ -6,6 +6,12 @@ import purgecss from "vite-plugin-purgecss";
 // https://vitejs.dev/config/
 export default defineConfig({
   css: {
+    preprocessorOptions: {
+      sass: {
+        api: 'modern',
+        silenceDeprecations: ['legacy-js-api'],
+      }
+    },
     modules: {
       localsConvention: 'camelCase', // makes sure the classes are camelCase, like priceCard
     },
@@ -31,7 +37,15 @@ export default defineConfig({
           'ReactToastify__toast-container', 
           'ReactToastify__toast-body', 
           'ReactToastify__progress-bar',
-          'load-spinner'
+          'load-spinner',
+          /^slick-/,
+          'slick-list',
+          'slick-track',
+          'slick-slide',
+          'slick-active',
+          'slick-current',
+          'slick-prev',
+          'slick-next',
         ],
       }
     }),
