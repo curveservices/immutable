@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,44 +9,47 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'leaflet/dist/leaflet.css';
 import Socials from "../../socials";
+import './index.scss'
 
 const Contact = () => {
   const refForm = useRef();
-  useEffect(() => {
-    import('./index.scss')
-      .catch((error) => {
-        console.error('error loading css',error);
-      });
-    return () => {
-      const styleSheets = Array.from(document.styleSheets);
-      const homeStyleSheet = styleSheets.find(
-        (sheet) => sheet.href && sheet.href.includes('index.scss')
-      );
-      if (homeStyleSheet) {
-        document.head.removeChild(homeStyleSheet.ownerNode)
-      }
-    };
-  }, []);
-  const sendEmail = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
+    const formEle = document.querySelector("form");
+    const formInput = new FormData(formEle);
+    try {
+      const googleSheetResponse = await fetch("https://script.google.com/macros/s/AKfycbxFNGbucNhUYJs3g6ivjAOk23L5EtZvtVOQ46uZTK4Qt2hCOkk0UfUY9YUq3HSWQ599/exec",
+        {
+          method: "POST",
+          body: formInput,
+        },
+      );
+      if (!googleSheetResponse.ok) {
+        throw new Error("Failed to send data to Google sheets");
+      }
+      const makeWebhookResponse = await fetch(
+        "https://hook.eu2.make.com/qkrmo1e96kq93ns7kov3kwwyw8gj8chx",
+        {
+          method: "POST",
+          body: formInput,
+        }
+      );
+      if (!makeWebhookResponse.ok) {
+        throw new Error("Failed to send data to Make.com webhook")
+      }
+      await emailjs.sendForm(
         "p.rossiter83@gmail.com",
         "contact_form",
         refForm.current,
         "w1ULsXxchzrjhuclR",
-      )
-      .then(
-        () => {
-          toast.success("Message successfully sent!");
-          refForm.current.reset();
-        },
-        () => {
-          toast.error(" Failed to send your message, pleease try again");
-        },
-      )
-  };
-
+      );
+      toast.success("Message successfully sent!");
+      formEle.reset();
+    } catch (error) {
+      console.error("Error", error);
+      toast.error("Failed to send your message, plaes try again")
+    }
+  }
   return (
     <>
       <div className="contact-page">
@@ -57,58 +60,66 @@ const Contact = () => {
             personal portfolio, landing page or AI solutions, We are able to
             help.
           </p>
-          <p className="fadeInUp">
-            However, don't hesitate to contact us with other requests or
-            questions using the form below.
-          </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Full Name"
-                    required
-                  />
-                </li>
-                <li className="half">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email address"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    name="message"
-                    placeholder="Your message"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="send" />
-                </li>
-                <li>
-                  <Link
-                    className="call-button"
-                    target="_blank"
-                    to="https://calendly.com/immutable-studio/website-consultancy"
-                  >
-                    <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
-                  </Link>
-                </li>
-              </ul>
+            <form ref={refForm} onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name" id="name">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email" id="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="your-email@example.com"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="subject" id="subject">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="source" id="source">Where Did You Find Us</label>
+                <select name="source" id="source" placeholder="select from options">
+                  <option value="Google">Google Search</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <textarea
+                name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  rows="5"
+              ></textarea>
+              </div>
+              <div className="btn-container">
+                <input className="submit-button" type="submit" value="Submit" />
+              <Link
+                className="submit-button"
+                target="_blank"
+                to="https://calendly.com/immutable-studio/website-consultancy"
+              >
+                <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
+              </Link>
+              </div>
             </form>
           </div>
         </section>

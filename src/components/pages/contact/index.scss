@@ -7,77 +7,78 @@
     margin-top: 2rem;
     padding: 0rem 6rem;
   }
-  .call-button {
-    color: #fff;
-    background: #000;
-    font-size: 18px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-  .contact-form {
-    width: 100%;
-    ul {
+.contact-form {
+  width: 100%;
+  padding: 2rem 2rem;
+  background: var(--second);
+  border-radius: 5px;
+  animation: fadeIn 3s forwards;
+  .form-group {
+      position: relative;
+      margin-bottom: 1.25rem;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      padding: 0;
-      li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 5px;
+  
+      label {
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        padding: 0 5px;
+        font-size: 0.9rem;
+        background: var(--second);
+        color: #2C5FE1;
+        z-index: 9999;
+        opacity: 0;
+        animation: fadeInUp 1s 1.5s forwards;
+        clear: both;
+      }
+      input,
+      select,
+      textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
         opacity: 0;
         animation: fadeInUp 1s 1.5s;
         animation-fill-mode: forwards;
         clear: both;
+
+        & :focus {
+          border: var(--primary);
+        }
       }
     }
-    input[type="text"],
-    input[type="email"] {
-      width: 100%;
-      border: 0;
-      background: var(--secondary);
-      height: 50px;
-      font-size: 18px;
-      color: #000;
-      padding: 20px;
-      box-sizing: border-box;
-      &:focus {
-        background: #fff;
-        border: 3px solid blue;
+    .btn-container {
+      display: flex;
+      align-items: start;
+      .submit-button {
+        text-transform: uppercase;
+        background: #000;
+        color: #fff;
+        letter-spacing: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        border: none;
+        min-width: fit-content;
+        box-shadow: var(--button-shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    
+        &:hover {
+          transform: translateY(-3px);
+          background: var(--main);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
       }
-    }
-    textarea {
-      width: 100%;
-      border: 0;
-      background: var(--secondary);
-      height: 50px;
-      font-size: 18px;
-      padding: 20px;
-      min-height: 100px;
-      box-sizing: border-box;
-      &:focus {
-        background: #fff;
-        border: 3px solid blue;
-      }
-    }
-    .flat-button {
-      color: #fff;
-      background: #000;
-      font-size: 18px;
-      letter-spacing: 3px;
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 10px;
-      border: 1px solid #000;
-      border-radius: 10px;
-      margin-right: 10px;
-    }
+    } 
   }
 }
 .info-map {
@@ -125,12 +126,15 @@
       padding: 0 2rem;
     }
     .info-map {
-      top: 55rem;
-      right: 30px;
+      top: 60rem;
+      left: 60px;
       font-size: 14px;
       span {
         font-size: 12px;
       }
+    }
+    .btn-container {
+      flex-direction: column;
     }
   }
   .map-wrap {
@@ -151,22 +155,11 @@
     }
     .contact-form {
       width: 100%;
-      ul {
-        gap: 15px;
-        li {
-          margin-bottom: 10px;
-        }
-      }
       input[type="text"],
       input[type="email"],
       textarea {
         font-size: 16px;
         padding: 15px;
-      }
-      .flat-button {
-        font-size: 16px;
-        padding: 8px;
-        margin-top: 1rem;
       }
     }
     .info-map {
