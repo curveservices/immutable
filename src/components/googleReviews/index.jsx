@@ -59,7 +59,6 @@ const GoogleReviews = () => {
 
   useEffect(() => {
     fetchReviews()
-    console.log(reviews);
   }, []);
 
   const renderStars = (rating) => {
