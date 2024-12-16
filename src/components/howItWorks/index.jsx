@@ -1,6 +1,6 @@
 import React from 'react';
 import SlideButton from '../buttonSlide';
-// import hat from "../../assets/images/santa-hat.png";
+import hat from "../../assets/images/santa-hat.webp";
 import Button from "../button";
 
 import './index.scss';
@@ -15,7 +15,7 @@ const HowitWorks = (props) => {
         <div className="steps-container">
             <div className="steps-card ">
                 <div className="img-outer">
-                  {/* <img src={hat} alt="santas hat" className='hat' /> */}
+                  <img src={hat} alt="santas hat" className='hat' />
                   <video className="icon" src={props.card1Gif} alt={`${props.card1Title} Gif`} autoPlay loop muted playsInline controls={false}></video>
                   <img src={props.card1Img} alt={`${props.card1Title}`} className="mobile-icon" />
                 </div>
@@ -25,7 +25,7 @@ const HowitWorks = (props) => {
             </div>
             <div className="steps-card">
                 <div className="img-outer">
-                  {/* <img src={hat} alt="santas hat" className='hat' style={{transform: "scaleX(-1)", left:"65px"}}/> */}
+                  <img src={hat} alt="santas hat" className='hat' style={{transform: "scaleX(-1)", left:"65px"}}/>
                   <video className="icon" src={props.card2Gif} alt={`${props.card2Title} Gif`} autoPlay loop muted playsInline controls={false}></video>
                   <img src={props.card2Img} alt={`${props.card2Title}`} className="mobile-icon" />
                 </div>
@@ -35,7 +35,7 @@ const HowitWorks = (props) => {
             </div>
             <div className="steps-card">
                 <div className="img-outer">
-                  {/* <img src={hat} alt="santas hat" className='hat' /> */}
+                  <img src={hat} alt="santas hat" className='hat' />
                   <video className="icon" src={props.card3Gif} alt={`${props.card3Title} Gif`} autoPlay loop muted playsInline controls={false}></video>
                   <img src={props.card3Img} alt={`${props.card3Title}`} className="mobile-icon" />
                 </div>
@@ -45,7 +45,7 @@ const HowitWorks = (props) => {
               </div>
               <div className="steps-card">
                 <div className="img-outer">
-                  {/* <img src={hat} alt="santas hat" className='hat' style={{transform: "scaleX(-1)", left:"65px"}}/> */}
+                  <img src={hat} alt="santas hat" className='hat' style={{transform: "scaleX(-1)", left:"65px"}}/>
                   <video className="icon" src={props.card4Gif} alt={`${props.card4Title} Gif`} autoPlay loop muted playsInline controls={false}></video>
                   <img src={props.card4Img} alt={`${props.card4Title}`} className="mobile-icon" />
                 </div>
