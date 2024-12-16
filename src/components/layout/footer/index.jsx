@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import Socials from "../../socials";
 import logo from "../../../assets/images/logo-desktop.webp";
-// import hat from "../../../assets/images/santa-hat.png"
+import hat from "../../../assets/images/santa-hat.webp"
 import "./index.scss";
 
 const Footer = () => {
@@ -20,12 +20,12 @@ const Footer = () => {
             </li>
             <li>
               <NavLink to="/">
-                {/* <img src={hat} alt="santa hat" className="hat"/> */}
+                <img src={hat} alt="santa hat" className="hat"/>
                 <img src={logo} alt="logo" className="footer-logo" />
               </NavLink>
             </li>
             <li>
-              <NavLink to="about">About</NavLink>
+              <NavLink to="about-us">About</NavLink>
             </li>
             <li>
               <NavLink to="contact">Contact</NavLink>
