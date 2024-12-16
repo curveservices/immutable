@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     font-family: "Coolvetica";
     background-image: url("../../../assets/images/blue.webp");
     background-repeat: no-repeat;
@@ -19,6 +18,14 @@
             width: 250px;
             padding: 0.5rem;
         }
+            .hat {
+                position: relative;
+                top: -7px;
+                left: 80px;
+                width: 50px;
+                height: 50px;
+                transform: scaleX(-1);
+                }
         .title {
             font-size: 48px;
             margin: 0;
@@ -112,6 +119,12 @@
             gap: 0rem;
             .logo {
                 width: 150px;
+            }
+            .hat {
+                top: 30px;
+                left: 163px;
+                width: 30px;
+                height: 30px;
             }
             .title {
                 font-size: 28px;

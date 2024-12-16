@@ -8,6 +8,8 @@ import "./index.scss";
 import { Link, redirect } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Helmet } from 'react-helmet';
+import Snow from '../../snow';
+import hat from '../../../assets/images/santa-hat.webp'; 
 
 const AuditFormPage = () => {
     const refForm = useRef();
@@ -42,7 +44,9 @@ const AuditFormPage = () => {
     return (
     <>
     <section className='audit-hero'>
+        <Snow/>
         <div className="hero-text">
+            <img src={hat} alt="santa hat" className='hat' />
             <Link to='https://immutable-studio.co.uk/'> <img className='logo' src={logo} alt="immutable studio logo" /></Link>
             <h1 className="title">Claim Your Free Performance Audit</h1>
             <p></p>
