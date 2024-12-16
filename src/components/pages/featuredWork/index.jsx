@@ -105,6 +105,7 @@ const FeaturedWork = () => {
                 url={tutor}
                 playing
                 loop
+                playsinline
               />
             </div>
           </div>
@@ -123,13 +124,14 @@ const FeaturedWork = () => {
                 url={morfbot}
                 playing
                 loop
+                playsinline
               />
             </div>
           </div>
           <div className={`featured-container ${thirdScroll ? "anim" : "none"}`}>
             <div className="text-box">
               <h2>Garland Surgical</h2>
-              <Link to="/services/chat-bots"><h3 className="link">AI CHAT BOT</h3></Link>
+              <Link to="/services/ai-assistants"><h3 className="link">AI ASSISTANT</h3></Link>
               <p>We created an AI chat assistant, fully trained on company details and the knowledge of Garlands website.
                 Built on BotPress, the assistant is available 24/7, answering FAQ's to alleviate the Garland team.
               </p>
@@ -141,6 +143,7 @@ const FeaturedWork = () => {
                 url={garland}
                 playing
                 loop
+                playsinline
               />
             </div>
           </div>
@@ -159,6 +162,7 @@ const FeaturedWork = () => {
                 url={vive}
                 playing
                 loop
+                playsinline
               />
             </div>
           </div>
