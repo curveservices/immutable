@@ -15,8 +15,6 @@ import webdev from "../../../assets/images/layout.mp4";
 import meeting from "../../../assets/images/online-meeting.mp4";
 import chatbot from "../../../assets/images/chat-bot.mp4";
 import design from "../../../assets/images/prototype.mp4";
-import GoogleReviews from "../../googleReviews";
-import Socials from "../../socials";
 
 const Services = () => {
   const [second, setSecond] = useState(false);
@@ -86,7 +84,7 @@ const Services = () => {
             </div>
             <Links
               webLink="web-development"
-              aiLink="chat-bots"
+              aiLink="ai-assistants"
               maintenanceLink="seo-website-maintenance"
               packagesLink="packages"
             />
@@ -120,20 +118,21 @@ const Services = () => {
                 card3Title="Draft & Completion"
                 card3P="As soon as the design is approved development begins. A draft will hosted for you to approve. Once approved your 
                         project is ready for completion"
-                link3="contact"
+                link3="/contact"
                 text3="contact us"
                 card4Gif={chatbot}
                 card4Title="Ongoing Support"
                 card4P="We offer ongoing support with hosting, website maintenance and SEO development. Our support gives you peace-of-mind, we'll be
                   on hand to help."
-                link4="services/seo-website-maintenance"
+                link4="seo-website-maintenance"
                 text4="maintenance & SEO"
+
                 text="Explore our Portfolio"
                 link="/portfolio"
               />
               <Links
                 webLink="web-development"
-                aiLink="chat-bots"
+                aiLink="ai-assistants"
                 maintenanceLink="seo-website-maintenance"
                 packagesLink="packages"
               />
@@ -147,7 +146,10 @@ const Services = () => {
           <div className="third-inner">
             <div className="subtitle"><i>Our Pricing</i></div>
             <div className={`${third ? "anim" : "none"}`}>
-              <div className="text-box">
+              <h2 className="price-title">OUR STARTING PRICES</h2>
+              <PriceCard name="pricing" color="#fff" />
+            </div>
+            <div className="text-box">
               <h2>Transparent Pricing</h2>
               <p>
                 We believe in transparency and building strong relationships
@@ -155,9 +157,6 @@ const Services = () => {
                 understand the importance of budgeting. Packages can be expanded
                 as your business grows.
               </p>
-            </div>
-              <h2 className="price-title">Our Starting Prices</h2>
-              <PriceCard name="pricing" color="#fff" />
             </div>
           </div>
         </section>

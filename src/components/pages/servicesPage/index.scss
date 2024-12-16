@@ -32,6 +32,7 @@
     .hero-inner {
       position: relative;
       display: flex;
+      justify-content: space-between;
       padding: 1rem 4rem 5rem;
       color: #fff;
       .text-box {
@@ -64,7 +65,7 @@
       padding: 1rem 1rem 6rem;
       text-align: center;
       .text-box {
-        padding: 1rem 5rem;
+        padding: 5rem 7rem 2rem;
         color: #fff;
       }
       .price-title {
@@ -90,6 +91,7 @@
     .hero {
       .hero-inner {
         flex-direction: column;
+        justify-content: initial;
         padding: 0rem;
         .text-box {
           width: 100%;
@@ -139,6 +141,7 @@
       .hero-inner {
         display: flex;
         flex-direction: column;
+        justify-content: initial;
         margin-bottom: 0;
         padding: 2rem;
         .text-box {
