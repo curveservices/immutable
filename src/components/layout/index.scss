@@ -16,8 +16,9 @@
   .featured-work,
   .client-page,
   .policy-page,
-  .client-discovery-form {
-    padding: 7rem 0rem 4rem;
+  .client-discovery-form,
+  .assistant-page {
+    padding: 5.5rem 0rem 4rem;
     animation: fadeIn 2s 0.3s backwards;
     h1 {
       font-size: 48px;
@@ -96,12 +97,16 @@
     .featured-work,
     .client-page,
     .policy-page,
-    .client-discovery-form {
+    .client-discovery-form,
+    .assistant-page {
       h1 {
         font-size: 28px;
       }
       h2 {
         font-size: 24px;
+      }
+      h3 {
+        font-size: 16px;
       }
       p {
         font-size: 14px;
@@ -132,9 +137,11 @@
       h2 {
         font-size: 28px;
       }
-
-      p {
+      h3 {
         font-size: 18px;
+      }
+      p {
+        font-size: 16px;
       }
 
       .btn-container {
