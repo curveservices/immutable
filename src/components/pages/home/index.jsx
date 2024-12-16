@@ -18,7 +18,8 @@ import packing from "../../../assets/images/packing.mp4";
 import HowitWorks from "../../howItWorks";
 import GoogleReviews from "../../googleReviews";
 import Socials from "../../socials";
-
+import Discount from "../../discountChristmas";
+const CountdownWidget = React.lazy(() => import("../../countdownWidget"));
 const Home = () => {
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
@@ -66,8 +67,8 @@ const Home = () => {
             fallback={fallback}
           />
           <div className="text-box">
-            <h1 className="main-title">Empowering Business with</h1>
-            <span className="mobile-view">Online Solutions.</span>
+            <h1 className="main-title">We Have Festive Discounts On</h1>
+            <span className="mobile-view">Website Solutions.</span>
             <div className="typewriter">
               <Typewriter
                 strings={[
@@ -85,9 +86,10 @@ const Home = () => {
             </div>
             <div className="text">
               <h2>
-                Web design &amp; development that will
-                transform your online presence.
+                {/* Web design &amp; development that will
+                transform your online presence. */}
               </h2>
+              <Discount/>
               <div className="btn-container">
                 <Button
                   link="https://calendly.com/immutable-studio/website-consultancy"
@@ -98,6 +100,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <CountdownWidget/>
         </section>
         <section className="second-section">
           <div className="second-inner">
@@ -124,7 +127,7 @@ const Home = () => {
               card3Title="AI Solutions"
               card3P="Our AI assistants are trained on your business and website pages. Answering FAQ's, taking bookings and more.
                     All seamlessly intergrated to your website and systems."
-              link3="services/chat-bots"
+              link3="services/ai-assistants"
               text3="find out more"
               card4Gif={packing}
               card4Title="Packages"
@@ -165,7 +168,7 @@ const Home = () => {
                       workflows &amp; AI solutions, tailored to your business
                       saving you time &amp; money with repetitive tasks powered
                       by AI."
-              link2="services/chat-bots"
+              link2="services/ai-assistants"
               text2="AI Solutions"
               card3Gif={webdev}
               card3Title="Seamless User Experience"
@@ -184,7 +187,7 @@ const Home = () => {
               link4="services/web-development"
               text4="web development"
               text="find out about us"
-              link="about"
+              link="about-us"
             />
             </div>
           </div>
