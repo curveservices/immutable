@@ -2,8 +2,9 @@ User-agent: *
 Allow: /services
 Allow: /web-development
 Allow: /seo-website-maintenance
-Allow: /chat-bots
+Allow: /ai-assistants
 Allow: /packages
 Allow: /portfolio
+Allow: /about-us
 Allow: /about
 Allow: /contact
