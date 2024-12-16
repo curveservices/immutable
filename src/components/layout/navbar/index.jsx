@@ -13,7 +13,7 @@ import Breadcrumbs from "../../breadcrumbs";
 import Button from "../../button";
 import logo from "../../../assets/images/logo-desktop.webp";
 import mobileLogo from "../../../assets/images/logo-mobile.webp";
-// import hat from "../../../assets/images/santa-hat.png";
+import hat from "../../../assets/images/santa-hat.webp";
 import "./index.scss";
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
     <header className={isScrolled ? "navbar-scroll" : ""}>
       <NavLink to="/" aria-label="home page">
         <div className="title-container">
-          {/* <img src={hat} alt="santa hat" className="hat"/> */}
+          <img src={hat} alt="santa hat" className="hat"/>
           <img src={mobileLogo} alt="Immutable studio logo" className="mobile-logo" />
           <img src={logo} alt="Immutable studio logo" className="logo" />
         </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
           </div>
         </NavLink>
         <NavLink
-          to="about"
+          to="about-us"
           title="About Us"
           aria-label="Link to about us page"
           className="about-link"
