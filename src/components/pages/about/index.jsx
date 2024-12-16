@@ -12,15 +12,7 @@ import LazyVideo from "../../LazyVideo";
 
 const About = () => {
   const [second, setSecond] = useState(false);
-
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollCard = window.scrollY;
-      setSecond(scrollCard > 250);
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
-    useEffect(() => {
     import('./index.scss')
       .catch((error) => {
         console.error('error loading css',error);
@@ -33,6 +25,16 @@ const About = () => {
       if (homeStyleSheet) {
         document.head.removeChild(homeStyleSheet.ownerNode)
       }
+    };
+  }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollCard = window.scrollY;
+      setSecond(scrollCard > 250);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
