@@ -11,6 +11,9 @@ const Contact = React.lazy(() => import("./components/pages/contact"));
 const Services = React.lazy(() => import("./components/pages/servicesPage"));
 const WebDev = React.lazy(() => import("./components/pages/webDev"));
 const ChatBots = React.lazy(() => import("./components/pages/chatBots"));
+const SocialMedia = React.lazy(() => import("./components/pages/assistants/socialMedia"));
+const CustomerService = React.lazy(() => import("./components/pages/assistants/customerService"));
+const Ecommerce = React.lazy(() => import("./components/pages/assistants/ecommerce"));
 const Packages = React.lazy(() => import("./components/pages/packagesPage"));
 const PrivacyPolicy = React.lazy(() => import("./components/pages/policy"));
 const FeaturedWork = React.lazy(() => import("./components/pages/featuredWork"));
@@ -29,11 +32,14 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<Layout />}>
         <Route index element={<Suspense fallback={<LoadingSpinner/>}><Home /></Suspense>} />
-        <Route path="about" element={<Suspense fallback={<LoadingSpinner/>}><About /></Suspense>} />
+        <Route path="about-us" element={<Suspense fallback={<LoadingSpinner/>}><About /></Suspense>} />
         <Route path="contact" element={<Suspense fallback={<LoadingSpinner/>}><Contact /></Suspense>} />
         <Route path="services" element={<Suspense fallback={<LoadingSpinner/>}><Services /></Suspense>} />
         <Route path=":id/web-development" element={<Suspense fallback={<LoadingSpinner/>}><WebDev /></Suspense>} />
-        <Route path=":id/chat-bots" element={<Suspense fallback={<LoadingSpinner/>}><ChatBots /></Suspense>} />
+        <Route path=":id/ai-assistants" element={<Suspense fallback={<LoadingSpinner />}><ChatBots /></Suspense>} />
+        <Route path="services/ai-assistants/social-media" element={<Suspense fallback={<LoadingSpinner />}><SocialMedia /></Suspense>} />
+        <Route path="services/ai-assistants/customer-service" element={<Suspense fallback={<LoadingSpinner />}><CustomerService /></Suspense>} />
+        <Route path="services/ai-assistants/ecommerce" element={<Suspense fallback={<LoadingSpinner />}><Ecommerce/></Suspense> } />
         <Route path=":id/packages" element={<Suspense fallback={<LoadingSpinner/>}><Packages /></Suspense>} />
         <Route path=":id/seo-website-maintenance" element={<Suspense fallback={<LoadingSpinner/>}><SeoMaintenance /></Suspense>} />
         <Route path="portfolio" element={<Suspense fallback={<LoadingSpinner/>}><FeaturedWork /></Suspense>} />
