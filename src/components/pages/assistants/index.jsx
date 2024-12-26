@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Button from '../../button';
 import HowitWorks from '../../howItWorks';
-import PriceCard from '../../cards/basicPrice';
+import PriceCard from '../../cards/fullPrice';
 import CallToAction from '../../CTA';
 import webdev from "../../../assets/images/layout.mp4";
 import meeting from "../../../assets/images/online-meeting.mp4";
@@ -52,9 +52,9 @@ const SingleAssistant = (props) => {
             </div>
         </section>
         <section className="third-section">
-            <h3 className="subtitle" style={{color: '#fff'}}><i>How {props.altName} Works</i></h3>
-                <div className="third-inner">
-                    <img src={props.thirdImg} alt={`cartoon image of ${props.altName}`} />
+        <h3 className="subtitle" style={{color: '#fff'}}><i>How {props.altName} Works</i></h3>
+            <div className="third-inner">
+                <img src={props.thirdImg} className='assistant' alt={`cartoon image of ${props.altName}`} />
                 <div className="text-box">
                     <h2>{props.altName} Will </h2>
                     <ul>
@@ -105,7 +105,10 @@ const SingleAssistant = (props) => {
         <section className="forth-section">
             <div className="forth-inner">
                 <h2 style={{color: "#fff"}} >OUR AI ASSISTANT PRICES</h2>
-                <PriceCard name='ChatBots'/>
+                <PriceCard 
+                    name='ChatBots'
+                    link="/discovery-form"    
+                />
             </div>
         </section>
         <section className="cta">
