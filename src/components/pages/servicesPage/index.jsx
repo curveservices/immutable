@@ -147,7 +147,11 @@ const Services = () => {
             <div className="subtitle"><i>Our Pricing</i></div>
             <div className={`${third ? "anim" : "none"}`}>
               <h2 className="price-title">OUR STARTING PRICES</h2>
-              <PriceCard name="pricing" color="#fff" />
+              <PriceCard
+                name="pricing"
+                color="#fff"
+                link="/discovery-form"
+              />
             </div>
             <div className="text-box">
               <h2>Transparent Pricing</h2>
