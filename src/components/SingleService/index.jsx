@@ -86,10 +86,10 @@ const Singleservices = (props) => {
             <div className={`ai-inner ${aiSection ? "anim" : "none"}`}>
               <h2 className="title">MEET OUR ASSISTANTS</h2>
               <div className="ai-container">
-                <div className="ai-card">
-                  <h2 className="ai-name">{props.assistant1}</h2>
-                  <h3 className="ai-title">{props.title1}</h3>
-                  <img src={props.img1} className="ai-img" alt="a 3d cartoon of a girl in pink space suit" />
+                <div className="ai-card launching">
+                  <h2 className="ai-name launching">{props.assistant1}</h2>
+                  <h3 className="ai-title launching" >{props.title1}</h3>
+                  <img src={props.img1} className="ai-img launching" alt="a 3d cartoon of a girl in pink space suit" />
                   {/* <SlideButton text="learn more" link="social-media"/> */}
                   <p>LAUNCHING SOON</p>
                 </div>
@@ -99,10 +99,10 @@ const Singleservices = (props) => {
                 <img src={props.img2} className="ai-img"alt="a 3d cartoon of a boy in a blue space suit" />
                 <SlideButton text="learn more" link="customer-service"/>
               </div>
-              <div className="ai-card">
-                <h2 className="ai-name">{props.assistant3}</h2>
-                <h3 className="ai-title">{props.title3}</h3>
-                <img src={props.img3} className="ai-img"alt="a 3d cartoon of a boy in a blue space suit" />
+              <div className="ai-card launching">
+                <h2 className="ai-name launching">{props.assistant3}</h2>
+                <h3 className="ai-title launching">{props.title3}</h3>
+                <img src={props.img3} className="ai-img launching"alt="a 3d cartoon of a boy in a blue space suit" />
                 {/* <SlideButton text="learn more" link="ecommerce"/> */}
                 <p>LAUNCHING SOON</p>
               </div>
@@ -152,7 +152,11 @@ const Singleservices = (props) => {
               <p>{props.thirdP}</p>
             </div>
             <div className={`${isScrolled ? 'contentAnim' : 'none' }`}>
-              <PriceCard name={props.name} color="#fff" />
+              <PriceCard
+                name={props.name}
+                color="#fff"
+                link="/discovery-form"
+              />
             </div>
           </div>
         </section>

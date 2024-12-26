@@ -89,6 +89,10 @@
           box-shadow: var(--button-shadow);
         }
       }
+      .launching {
+        background: #d2d2d2;
+        opacity: 0.75;
+      }
       .ai-title {
         font-size: 24px;
         font-weight: normal;
