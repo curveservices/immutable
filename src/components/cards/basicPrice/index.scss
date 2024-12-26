@@ -54,7 +54,8 @@
   justify-content: flex-end;
 }
 .priceTitle {
-  font-size: 1.1rem;
+  padding: 1rem 1rem 0;
+  font-size: 34px;
 }
 .priceCard {
   padding-bottom: 2rem;
@@ -70,7 +71,7 @@
   transform: scale(1.08);
 }
 .priceCard ul {
-  margin: 2.6rem;
+  margin: 0 2.6rem 2.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +111,7 @@
 }
 .discount {
   font-style: italic;
-  color: coral;
+  color: #d77f03;
 }
 @media screen and (max-width: 920px) {
   .cardContainer {

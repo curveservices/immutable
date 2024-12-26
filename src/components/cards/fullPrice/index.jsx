@@ -19,6 +19,7 @@ const PriceCard = (props) => {
         priceData.push({
           id: element.id,
           title: data.title,
+          subTitle: data.subTitle,
           price: data.price,
           month: data.month,
           link: data.link,
@@ -71,8 +72,9 @@ const PriceCard = (props) => {
               : 'priceCard';
           return (
             <div className={cardClass} key={item.id}>
+              <div className='priceTitle'>{item.title}</div>
+               <p>{item.subTitle}</p>
               <ul>
-                <li className='priceTitle'>{item.title}</li>
                 <li className='price'>
                   {isToggled ? item.month : item.price}
                 </li>
@@ -89,7 +91,7 @@ const PriceCard = (props) => {
               <div className='btnContainer'>
                 <Button
                   background="var(--primary)"
-                  link="/discovery-form"
+                  link={props.link}
                   text="Start now"
                 />
               </div>
