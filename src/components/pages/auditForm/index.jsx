@@ -6,8 +6,7 @@ import audit from '../../../assets/images/audit.webp';
 import logo from "../../../assets/images/logo-desktop.webp";
 import "./index.scss";
 import { Link, redirect } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import Snow from '../../snow';
 import hat from '../../../assets/images/santa-hat.webp'; 
 
@@ -95,7 +94,7 @@ const AuditFormPage = () => {
                         </select>
                     </div>
                     <label>
-                        <input type="checkbox" name="gdpr" required />I consent to having
+                        <input type="checkbox" name="gdpr" className='checkbox' required />I consent to having
                         this website store my submitted information.
                     </label>
                     <textarea
