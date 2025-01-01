@@ -47,19 +47,14 @@ footer {
     gap: 20px;
     font-size: 12px;
   }
-    .hat {
-      position: relative;
-      top: -15px;
-      left: 2.5rem;
-      transform: scaleX(-1);
-    }
 }
 @media screen and (max-width: 768px) {
   footer {
     .foot-title {
       .footer-logo {
-        width: 100px;
-        height: 25px;
+        width: 125px;
+        height: 31px;
+        margin: 0 0.5rem;
       }
     }
     .footer-container {
