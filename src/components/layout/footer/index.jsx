@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Socials from "../../socials";
 import logo from "../../../assets/images/logo-desktop.webp";
-import hat from "../../../assets/images/santa-hat.webp"
 import "./index.scss";
 
 const Footer = () => {
@@ -20,8 +19,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink to="/">
-                <img src={hat} alt="santa hat" className="hat"/>
-                <img src={logo} alt="logo" className="footer-logo" />
+                <img src={logo} alt="logo" className="footer-logo" lazyloading="true"/>
               </NavLink>
             </li>
             <li>
