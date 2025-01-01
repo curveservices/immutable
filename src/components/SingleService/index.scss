@@ -4,8 +4,8 @@
     padding-left: 6rem;
     color: #fff;
     .text-box {
-        padding: 2rem 0rem;
-      }
+      padding: 2rem 0rem;
+    }
     .gif {
       width: 600px;
       animation: fadeIn 4s forwards;
@@ -46,23 +46,23 @@
     color: #fff !important;
   }
   .anim {
-      animation: fadeIn 1.5s forwards;
-  
-      .ai-container {
-        .ai-card:nth-child(1) {
-          animation: fadeInUp 1s 0.2s backwards;
-        }
-        .ai-card:nth-child(2) {
-          animation: fadeInUp 1s 0.4s backwards;
-        }
-        .ai-card:nth-child(3) {
-          animation: fadeInUp 1s 0.6s backwards;
-        }
+    animation: fadeIn 1.5s forwards;
+
+    .ai-container {
+      .ai-card:nth-child(1) {
+        animation: fadeInUp 1s 0.2s backwards;
+      }
+      .ai-card:nth-child(2) {
+        animation: fadeInUp 1s 0.4s backwards;
+      }
+      .ai-card:nth-child(3) {
+        animation: fadeInUp 1s 0.6s backwards;
       }
     }
-    .none {
-      opacity: 0;
-    }
+  }
+  .none {
+    opacity: 0;
+  }
   .ai-inner {
     gap: 3rem;
     .title {
@@ -111,25 +111,25 @@
   padding-bottom: 4rem;
   background: var(--second);
   .anim-third {
-  animation: fadeIn 1.5s forwards;
-  .steps-container {
-    .steps-card:nth-child(1) {
-      animation: fadeInUp 1s 0.2s backwards;
-    }
+    animation: fadeIn 1.5s forwards;
+    .steps-container {
+      .steps-card:nth-child(1) {
+        animation: fadeInUp 1s 0.2s backwards;
+      }
 
-    .steps-card:nth-child(2) {
-      animation: fadeInUp 1s 0.4s backwards;
-    }
+      .steps-card:nth-child(2) {
+        animation: fadeInUp 1s 0.4s backwards;
+      }
 
-    .steps-card:nth-child(3) {
-      animation: fadeInUp 1s 0.6s backwards;
-    }
+      .steps-card:nth-child(3) {
+        animation: fadeInUp 1s 0.6s backwards;
+      }
 
-    .steps-card:nth-child(4) {
-      animation: fadeInUp 1s 0.8s backwards;
+      .steps-card:nth-child(4) {
+        animation: fadeInUp 1s 0.8s backwards;
+      }
     }
   }
-}
 }
 .third-none {
   opacity: 0;

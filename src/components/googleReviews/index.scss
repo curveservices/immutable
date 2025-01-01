@@ -1,148 +1,224 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 .reviews-title {
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
 }
 .google-reviews {
-    padding: 2rem 4rem 3rem;
-    .header {
+  padding: 2rem 4rem 3rem;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: bold;
+    margin: 2rem 2.2rem;
+    border-radius: 10px;
+    background: #fefffe;
+    .header-img {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .google-icon {
+      width: 128px;
+      height: 128px;
+    }
+
+    .yell-icon {
+      width: 128px;
+      height: 26px;
+    }
+    .star-rating {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .star,
+    .half-star {
+      font-size: 26px;
+      color: #ffd700;
+    }
+    .empty-star {
+      color: #ddd;
+    }
+    .total {
+      font-weight: 500;
+      font-size: 18px;
+      color: #777;
+    }
+  }
+  .slick-slider {
+    margin: 20px;
+    .slick-dots {
+      button {
+        bottom: -25px;
+        color: #ddd;
+        &::before {
+          color: #ffffff;
+        }
+      }
+    }
+    .slick-prev,
+    .slick-next,
+    .slick-arrow {
+      z-index: 1;
+      color: #fff;
+    }
+    .slick-track {
+      display: flex;
+      gap: 2rem;
+    }
+    .review {
+      display: flex;
+      background: #fefffe;
+      border-radius: 10px;
+      width: 400px;
+      min-height: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      box-shadow: var(--global);
+      cursor: pointer;
+      .profile {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 2rem;
-        font-weight: bold;
-        margin: 2rem 2.2rem;
-        border-radius: 10px;
-        background: #fefffe;
-        .header-img {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .google-icon {
-            width: 128px;
-            height: 128px;
-        }
+      }
+      .review-icon {
+        position: absolute;
+        top: 50px;
+        margin-left: 1.5rem;
+      }
+      .profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-        .yell-icon {
-            width: 128px;
-            height: 26px;
+      .profile-name {
+        font-size: 15px;
+        a {
+          text-decoration: none;
+          color: #000;
+          &:hover {
+            text-decoration: underline;
+          }
         }
-        .star-rating {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
+      }
+      .date {
+        color: #777;
+        font-size: 0.9em;
+      }
+      .profile-review {
+        font-size: 16px;
+      }
+      .review-text {
+        margin-left: 4.3rem;
+        .rating {
+          display: flex;
+          margin: 10px 0;
+          gap: 5px;
+          .star {
+            color: #ffd700;
+          }
         }
-        .star,
-        .half-star {
-            font-size: 26px;
-            color: #FFD700;
+        .read-more-btn {
+          background: none;
+          border: none;
+          color: var(--third-bg);
+          cursor: pointer;
+          font-weight: bold;
+          margin-top: 5px;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
         }
-        .empty-star {
-            color: #ddd;
-        }
-        .total {
-            font-weight: 500;
-            font-size: 18px;
-            color: #777;
-        }
+      }
     }
-    .slick-slider {
-        margin: 20px;
-        .slick-dots {
-            button {
-            bottom: -25px;
-            color: #ddd;
-                &::before {
-                    color: #ffffff;
-                }
-            }
-            
-        }
-        .slick-prev,
-        .slick-next,
-        .slick-arrow {
-            z-index: 1;
-            color: #fff;
-        }
-        .slick-track {
-            display: flex;
-            gap: 2rem;
-        }
-        .review {
-            display: flex;
-            background: #fefffe;
-            border-radius: 10px;
-            width: 400px;
-            min-height: 300px;
-            padding: 10px;
-            margin: 10px 0;
-            box-shadow: var(--global);
-            cursor: pointer;
-            .profile {
-                display: flex;
-                align-items: center;
-                gap: 2rem;
-            }
-            .review-icon {
-                position: absolute;
-                top: 50px;
-                margin-left: 1.5rem;
-            }
-            .profile-pic {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-
-            .profile-name {
-                
-                font-size: 15px;
-                a {
-                    text-decoration: none;
-                    color: #000;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-            .date {
-                color: #777;
-                font-size: 0.9em;
-            }
-            .profile-review {
-                font-size: 16px;
-            }
-            .review-text {
-                margin-left: 4.3rem;
-                .rating {
-                    display: flex;
-                    margin: 10px 0;
-                    gap: 5px;
-                    .star {
-                        color: #FFD700;
-                    }
-                }
-                .read-more-btn {
-                    background: none;
-                    border: none;
-                    color: var(--third-bg);
-                    cursor: pointer;
-                    font-weight: bold;
-                    margin-top: 5px;
-                    text-decoration: underline;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-            } 
-        }
-    }
+  }
 }
 .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Coolvetica", Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  .profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .modal-review {
+    margin-left: 4.5rem;
+  }
+  .rating {
+    color: #ffd700;
+    margin-top: 10px;
+  }
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .google-reviews {
+    padding: 0rem;
+    .header {
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem;
+      padding-bottom: 1.5rem;
+      .star-rating {
+        gap: 1rem;
+      }
+      .google-icon {
+        width: 75px;
+        height: 75px;
+      }
+      .star,
+      .half-star,
+      .total {
+        font-size: 16px;
+      }
+    }
+    .slick-slider {
+      .review {
+        .review-text {
+          margin-left: 4.5rem;
+        }
+      }
+    }
+  }
+  .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -153,8 +229,9 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-}
-.modal-content {
+  }
+
+  .modal-content {
     position: relative;
     background: white;
     padding: 20px;
@@ -163,120 +240,41 @@
     max-width: 600px;
     width: 90%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
     .profile {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
     }
+
     .profile-pic {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
     }
+
     .modal-review {
-        margin-left: 4.5rem;
+      margin-left: 4.5rem;
     }
-    .rating {
-        color: #FFD700;
-        margin-top: 10px;
-    }
-}
-.close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-    .google-reviews {
-        padding: 0rem;
-        .header {
-            flex-direction: column;
-            gap: 1rem;
-            margin: 2rem;
-            padding-bottom: 1.5rem;
-            .star-rating {
-                gap: 1rem;
-            }
-            .google-icon {
-                width: 75px;
-                height: 75px;
-            }
-            .star,
-            .half-star,
-            .total {
-                font-size: 16px;
-            }
-        }
-        .slick-slider {
-            .review {
-                .review-text {
-                    margin-left: 4.5rem;
-                }
-            }
-        }
-    }
-    .modal-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .modal-content {
-        position: relative;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        font-family: "Coolvetica", Arial, Helvetica, sans-serif;
-        max-width: 600px;
-        width: 90%;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-
-        .profile {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .profile-pic {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .modal-review {
-            margin-left: 4.5rem;
-        }
-    }
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .google-reviews {
-        .header {
-            margin: 2rem;
+  .google-reviews {
+    .header {
+      margin: 2rem;
 
-            .google-icon {
-                width: 75px;
-                height: 75px;
-            }
-        }
-        .slick-slider {
-            .review {
-                .review-text {
-                    margin-left: 4.5rem;
-                }
-            }
-        }
+      .google-icon {
+        width: 75px;
+        height: 75px;
+      }
     }
+    .slick-slider {
+      .review {
+        .review-text {
+          margin-left: 4.5rem;
+        }
+      }
+    }
+  }
 }

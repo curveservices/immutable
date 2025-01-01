@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
-import Button from '../button';
+import Button from "../button";
 
 const CountdownWidget = () => {
-  const [timeLeft, setTimeLeft] = useState( 5 * 60);
+  const [timeLeft, setTimeLeft] = useState(5 * 60);
   const [isOpen, setIsOpen] = useState(true);
-  
+
   const calculateTimeUnits = (time) => {
     const days = Math.floor(time / (60 * 60 * 24));
     const hours = Math.floor((time % (60 * 60 * 24)) / (60 * 60));
@@ -23,37 +23,36 @@ const CountdownWidget = () => {
     setIsOpen(false);
   };
   useEffect(() => {
-  const timer = setInterval(() => {
-    setTimeLeft((prevTime) => {
-      if (prevTime <= 1) {
-        clearInterval(timer); // Stop the timer
-        handleClose(); // Close the modal when time ends
-        return 0;
-      }
-      return prevTime - 1;
-    });
-    import('./index.scss')
-    .catch((error) => {
-        console.error('error loading css', error);
-    });
-  }, 1000);
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        if (prevTime <= 1) {
+          clearInterval(timer); // Stop the timer
+          handleClose(); // Close the modal when time ends
+          return 0;
+        }
+        return prevTime - 1;
+      });
+      import("./index.scss").catch((error) => {
+        console.error("error loading css", error);
+      });
+    }, 1000);
 
-  return () => clearInterval(timer); // Cleanup timer on component unmount
+    return () => clearInterval(timer); // Cleanup timer on component unmount
   }, [handleClose]);
   const timeUnits = calculateTimeUnits(timeLeft);
-  
+
   return (
     <Modal
-        isOpen={isOpen}
-        onRequestClose={handleClose}
-        className="christmas-banner-modal"
-        overlayClassName="christmas-banner-overlay"
-        alt="Christmas offer banner"
+      isOpen={isOpen}
+      onRequestClose={handleClose}
+      className="christmas-banner-modal"
+      overlayClassName="christmas-banner-overlay"
+      alt="Christmas offer banner"
     >
-        <div className='christmas-banner-content'>
-            <p className="banner-text">
-            🎉✨ <b>NEW YEAR FREEBIE - FREE Website Performance Audit  </b>✨🎉
-            </p>
+      <div className="christmas-banner-content">
+        <p className="banner-text">
+          🎉✨ <b>NEW YEAR FREEBIE - FREE Website Performance Audit </b>✨🎉
+        </p>
         <div className="countdown-timer">
           <div className="time-unit">
             <span className="time-value">{timeUnits.days}</span>
@@ -78,13 +77,12 @@ const CountdownWidget = () => {
           background="#fff708"
           color="#000"
         />
-        <button className='close-button' onClick={handleClose}>
+        <button className="close-button" onClick={handleClose}>
           x
         </button>
-        </div>
+      </div>
     </Modal>
-    
-  )
-}
+  );
+};
 
-export default CountdownWidget
+export default CountdownWidget;

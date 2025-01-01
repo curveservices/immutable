@@ -1,9 +1,8 @@
-import React from 'react';
-import Client from '../../../cards/ClientWork';
+import React from "react";
+import Client from "../../../cards/ClientWork";
 import video from "../../../../assets/images/garland.mp4";
 import header from "../../../../assets/images/garland-header.webp";
 import "../../../cards/ClientWork";
-
 
 const Garland = () => {
   return (
@@ -23,8 +22,8 @@ const Garland = () => {
         img2Break="We designed a helpful, modern AI chat bot with a simple user-friendly interface. This chat assistant also has room to be improved and upgraded to capture customer data
                 , take bookings and much more."
       />
-     </section>
-  )
-}
+    </section>
+  );
+};
 
-export default Garland
+export default Garland;

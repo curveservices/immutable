@@ -1,13 +1,13 @@
-import React from 'react'
-import Client from '../../../cards/ClientWork';
+import React from "react";
+import Client from "../../../cards/ClientWork";
 import video from "../../../../assets/images/vive.mp4";
 import header from "../../../../assets/images/vive-header.webp";
 
 const ViveLaCrepe = () => {
   return (
     <>
-      <section className='client-page'>
-          <Client
+      <section className="client-page">
+        <Client
           name="vive-la-crepe"
           src={header}
           titleP="Making a guilty pleasure innocent"
@@ -17,7 +17,7 @@ const ViveLaCrepe = () => {
             complete with a comprehensive sitemap and google analytics."
           img1P="We worked with the company colour palette, fonts, and images to develop a visually appealing and engaging user experience."
           img1Break="We where provided with their company copy to maintain brand consistency and deliver clear messaging. 
-            The result is a modern, simple, and user-friendly website to enhance their digital presence." 
+            The result is a modern, simple, and user-friendly website to enhance their digital presence."
           url={video}
           link="https://vive-la-crepe.netlify.app/"
           img2P="To create the best website possible, our team began by working closely with the Vive La Crepe team to understand their mission: 
@@ -27,8 +27,7 @@ const ViveLaCrepe = () => {
         />
       </section>
     </>
+  );
+};
 
-  )
-}
-
-export default ViveLaCrepe
+export default ViveLaCrepe;

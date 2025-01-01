@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 const Slider = React.lazy(() => import("react-slick"));
-import LoadingSpinner from '../loadingSpinner';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import google from '../../assets/images/google.webp';
-import googleIcon from '../../assets/images/google-icon.webp';
-import yell from '../../assets/images/yell-com.webp';
-import yellIcon from '../../assets/images/yell.webp'
-import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
-import Button from '../button';
-import ReactModal from 'react-modal';
+import LoadingSpinner from "../loadingSpinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import google from "../../assets/images/google.webp";
+import googleIcon from "../../assets/images/google-icon.webp";
+import yell from "../../assets/images/yell-com.webp";
+import yellIcon from "../../assets/images/yell.webp";
+import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
+import Button from "../button";
+import ReactModal from "react-modal";
 import placeholder from "../../assets/images/image-holder.webp";
-import "./index.scss"
+import "./index.scss";
 
 const GoogleReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -24,8 +24,8 @@ const GoogleReviews = () => {
   const range = "Sheet1!A:H";
 
   const fetchReviews = async () => {
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
-  try {
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
+    try {
       const response = await fetch(url);
       const data = await response.json();
       if (data.values && data.values.length > 1) {
@@ -47,7 +47,7 @@ const GoogleReviews = () => {
       setLoading(false);
     }
   };
-   const openModal = (review) => {
+  const openModal = (review) => {
     setModalContent(review);
     setIsModalOpen(true);
   };
@@ -58,7 +58,7 @@ const GoogleReviews = () => {
   };
 
   useEffect(() => {
-    fetchReviews()
+    fetchReviews();
   }, []);
 
   const renderStars = (rating) => {
@@ -69,11 +69,21 @@ const GoogleReviews = () => {
     return (
       <>
         {[...Array(fullStars)].map((_, i) => (
-          <FontAwesomeIcon key={`full-${i}`} icon={faStar} className="star full-star" />
+          <FontAwesomeIcon
+            key={`full-${i}`}
+            icon={faStar}
+            className="star full-star"
+          />
         ))}
-        {halfStar && <FontAwesomeIcon icon={faStarHalfAlt} className="star half-star" />}
+        {halfStar && (
+          <FontAwesomeIcon icon={faStarHalfAlt} className="star half-star" />
+        )}
         {[...Array(emptyStars)].map((_, i) => (
-          <FontAwesomeIcon key={`empty-${i}`} icon={faStar} className="star empty-star" />
+          <FontAwesomeIcon
+            key={`empty-${i}`}
+            icon={faStar}
+            className="star empty-star"
+          />
         ))}
       </>
     );
@@ -89,7 +99,7 @@ const GoogleReviews = () => {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -102,19 +112,17 @@ const GoogleReviews = () => {
   if (error) return <div>{error}</div>;
   return (
     <>
-      <h2 className='reviews-title'>What Our Clients Say</h2>
+      <h2 className="reviews-title">What Our Clients Say</h2>
       <div className="google-reviews">
         <div className="header">
           <div className="header-img">
-            <img src={google} alt="google icon" className='google-icon' />
-            <img src={yell} alt="yell icon" className='yell-icon'/>
+            <img src={google} alt="google icon" className="google-icon" />
+            <img src={yell} alt="yell icon" className="yell-icon" />
           </div>
           <div className="star-rating">
-            <h3>{averageRating }</h3>
-            <h3>
-              {renderStars(averageRating)} 
-            </h3>
-            <div className='total'>From ({reviews.length })</div>
+            <h3>{averageRating}</h3>
+            <h3>{renderStars(averageRating)}</h3>
+            <div className="total">From ({reviews.length})</div>
           </div>
           <Button
             text="Write a review"
@@ -123,22 +131,24 @@ const GoogleReviews = () => {
             target="_blank"
           />
         </div>
-          <Slider {...sliderSettings}>
+        <Slider {...sliderSettings}>
           {reviews.map((review, index) => (
             <div key={index} className="review">
               <div className="profile">
                 {review[4] && (
-                <img
-                  src={review[4] || placeholder}
-                  alt={`${review[0]}'s profile`}
-                  className="profile-pic"
-                  onError={(e) => (e.target.src = placeholder)}
-                />
+                  <img
+                    src={review[4] || placeholder}
+                    alt={`${review[0]}'s profile`}
+                    className="profile-pic"
+                    onError={(e) => (e.target.src = placeholder)}
+                  />
                 )}
                 <img
                   src={review[7] === "yell" ? yellIcon : googleIcon}
-                  alt={`${review[7]} icon`} className='review-icon' />
-                <h3 className='profile-name'>
+                  alt={`${review[7]} icon`}
+                  className="review-icon"
+                />
+                <h3 className="profile-name">
                   <a
                     href={`${review[6] || "/"}`}
                     target="_blank"
@@ -150,9 +160,14 @@ const GoogleReviews = () => {
               </div>
               <div className="review-text">
                 <div className="date">{review[3]}</div>
-                <div className="rating">{renderStars(parseFloat(review[2]))}</div>
-                <p className='profile-review'>{review[1].slice(0, 100)}...</p>
-                <button onClick={() => openModal(review)} className='read-more-btn'>
+                <div className="rating">
+                  {renderStars(parseFloat(review[2]))}
+                </div>
+                <p className="profile-review">{review[1].slice(0, 100)}...</p>
+                <button
+                  onClick={() => openModal(review)}
+                  className="read-more-btn"
+                >
                   Read more
                 </button>
               </div>
@@ -168,18 +183,23 @@ const GoogleReviews = () => {
             overlayClassName="modal-overlay"
           >
             <div className="modal">
-              <button onClick={closeModal} className="close-modal">x</button>
+              <button onClick={closeModal} className="close-modal">
+                x
+              </button>
               <div className="profile">
                 <img
                   src={modalContent[4] || placeholder}
                   alt={`${modalContent[0]}'s profile image`}
                   onError={(e) => (e.target.src = placeholder)}
-                  className="profile-pic" />
+                  className="profile-pic"
+                />
                 <h3>{modalContent[0]}</h3>
               </div>
               <div className="modal-review">
                 <div className="date">{modalContent[3]}</div>
-                <div className="rating">{renderStars(parseFloat(modalContent[2]))}</div>
+                <div className="rating">
+                  {renderStars(parseFloat(modalContent[2]))}
+                </div>
                 <p>{modalContent[1]}</p>
               </div>
             </div>
@@ -187,9 +207,7 @@ const GoogleReviews = () => {
         )}
       </div>
     </>
-    
-  )
-}
+  );
+};
 
 export default GoogleReviews;
-

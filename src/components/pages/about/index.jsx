@@ -13,17 +13,16 @@ import LazyVideo from "../../LazyVideo";
 const About = () => {
   const [second, setSecond] = useState(false);
   useEffect(() => {
-    import('./index.scss')
-      .catch((error) => {
-        console.error('error loading css',error);
-      });
+    import("./index.scss").catch((error) => {
+      console.error("error loading css", error);
+    });
     return () => {
       const styleSheets = Array.from(document.styleSheets);
       const homeStyleSheet = styleSheets.find(
-        (sheet) => sheet.href && sheet.href.includes('index.scss')
+        (sheet) => sheet.href && sheet.href.includes("index.scss"),
       );
       if (homeStyleSheet) {
-        document.head.removeChild(homeStyleSheet.ownerNode)
+        document.head.removeChild(homeStyleSheet.ownerNode);
       }
     };
   }, []);

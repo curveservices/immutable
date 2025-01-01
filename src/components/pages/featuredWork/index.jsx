@@ -15,7 +15,6 @@ import ReactPlayer from "react-player";
 import SlideButton from "../../buttonSlide";
 import { Link } from "react-router-dom";
 
-
 const FeaturedWork = () => {
   const [firstScroll, setFirstScrolll] = useState(false);
   const [secondScroll, setSecondScroll] = useState(false);
@@ -32,18 +31,17 @@ const FeaturedWork = () => {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-    useEffect(() => {
-    import('./index.scss')
-      .catch((error) => {
-        console.error('error loading css',error);
-      });
+  useEffect(() => {
+    import("./index.scss").catch((error) => {
+      console.error("error loading css", error);
+    });
     return () => {
       const styleSheets = Array.from(document.styleSheets);
       const homeStyleSheet = styleSheets.find(
-        (sheet) => sheet.href && sheet.href.includes('index.scss')
+        (sheet) => sheet.href && sheet.href.includes("index.scss"),
       );
       if (homeStyleSheet) {
-        document.head.removeChild(homeStyleSheet.ownerNode)
+        document.head.removeChild(homeStyleSheet.ownerNode);
       }
     };
   }, []);
@@ -83,21 +81,34 @@ const FeaturedWork = () => {
             <CubeSpinner />
           </div>
         </section>
-        <section className="clients" >
-          <h3 className="subtitle"><i>Our Portfolio</i></h3>
+        <section className="clients">
+          <h3 className="subtitle">
+            <i>Our Portfolio</i>
+          </h3>
           <div className="main-text">
-            
             <h2>Recent Projects</h2>
-            <p>Here’s a selection of our recent projects across the digital landscape.</p>
+            <p>
+              Here’s a selection of our recent projects across the digital
+              landscape.
+            </p>
           </div>
-          <div className={`featured-container ${firstScroll ? "anim" : "none"}`}>
+          <div
+            className={`featured-container ${firstScroll ? "anim" : "none"}`}
+          >
             <div className="text-box">
               <h2>Telegraph Hill Tutoring</h2>
-              <Link to="/services/web-development"><h3 className="link">WEBSITE DEVELOPMENT</h3></Link>
-              <p>We focused on creating a modern, playful, easy to understand and eye-catching website,
-                developing a visual identity to evoke feelings of saftey, professionalism and, peace of mind.
+              <Link to="/services/web-development">
+                <h3 className="link">WEBSITE DEVELOPMENT</h3>
+              </Link>
+              <p>
+                We focused on creating a modern, playful, easy to understand and
+                eye-catching website, developing a visual identity to evoke
+                feelings of saftey, professionalism and, peace of mind.
               </p>
-              <SlideButton text="Read case study" link="telegraph-hill-tutoring"/>
+              <SlideButton
+                text="Read case study"
+                link="telegraph-hill-tutoring"
+              />
             </div>
             <div className={`player-wrapper ${firstScroll ? "anim" : "none"}`}>
               <ReactPlayer
@@ -109,14 +120,21 @@ const FeaturedWork = () => {
               />
             </div>
           </div>
-           <div className={`featured-container ${secondScroll ? "anim" : "none"}`}>
+          <div
+            className={`featured-container ${secondScroll ? "anim" : "none"}`}
+          >
             <div className="text-box">
               <h2>MorfBot</h2>
-              <Link to="/services/web-development"><h3 className="link">WEBSITE DEVELOPMENT</h3></Link>
-              <p>We join forces with MorfBot to redesign their website. We created a professionl eye-catching site, built
-                with React.js for scalability. Using their colour palette and images, evoking a serious tech feel.
+              <Link to="/services/web-development">
+                <h3 className="link">WEBSITE DEVELOPMENT</h3>
+              </Link>
+              <p>
+                We join forces with MorfBot to redesign their website. We
+                created a professionl eye-catching site, built with React.js for
+                scalability. Using their colour palette and images, evoking a
+                serious tech feel.
               </p>
-              <SlideButton text="Read case study" link="morfbot"/>
+              <SlideButton text="Read case study" link="morfbot" />
             </div>
             <div className={`player-wrapper ${secondScroll ? "anim" : "none"}`}>
               <ReactPlayer
@@ -128,14 +146,21 @@ const FeaturedWork = () => {
               />
             </div>
           </div>
-          <div className={`featured-container ${thirdScroll ? "anim" : "none"}`}>
+          <div
+            className={`featured-container ${thirdScroll ? "anim" : "none"}`}
+          >
             <div className="text-box">
               <h2>Garland Surgical</h2>
-              <Link to="/services/ai-assistants"><h3 className="link">AI ASSISTANT</h3></Link>
-              <p>We created an AI chat assistant, fully trained on company details and the knowledge of Garlands website.
-                Built on BotPress, the assistant is available 24/7, answering FAQ's to alleviate the Garland team.
+              <Link to="/services/ai-assistants">
+                <h3 className="link">AI ASSISTANT</h3>
+              </Link>
+              <p>
+                We created an AI chat assistant, fully trained on company
+                details and the knowledge of Garlands website. Built on
+                BotPress, the assistant is available 24/7, answering FAQ's to
+                alleviate the Garland team.
               </p>
-              <SlideButton text="Read case study" link="garland-surgical"/>
+              <SlideButton text="Read case study" link="garland-surgical" />
             </div>
             <div className={`player-wrapper ${thirdScroll ? "anim" : "none"}`}>
               <ReactPlayer
@@ -147,14 +172,20 @@ const FeaturedWork = () => {
               />
             </div>
           </div>
-          <div className={`featured-container ${thirdScroll ? "anim" : "none"}`}>
+          <div
+            className={`featured-container ${thirdScroll ? "anim" : "none"}`}
+          >
             <div className="text-box">
               <h2>Vive La Crepe</h2>
-              <Link to="/services/web-development"><h3 className="link">WEBSITE DEVELOPMENT</h3></Link>
-              <p>We focused on creating a modern, playful, easy to understand and eye-catching website,
-                developing a visual identity to evoke feelings of saftey, professionalism and, peace of mind.
+              <Link to="/services/web-development">
+                <h3 className="link">WEBSITE DEVELOPMENT</h3>
+              </Link>
+              <p>
+                We focused on creating a modern, playful, easy to understand and
+                eye-catching website, developing a visual identity to evoke
+                feelings of saftey, professionalism and, peace of mind.
               </p>
-              <SlideButton text="Read case study" link="vive-la-crepe"/>
+              <SlideButton text="Read case study" link="vive-la-crepe" />
             </div>
             <div className={`player-wrapper ${thirdScroll ? "anim" : "none"}`}>
               <ReactPlayer
@@ -167,21 +198,27 @@ const FeaturedWork = () => {
             </div>
           </div>
           <div className="container-footer">
-            <h2 >Fill Out Our Client Discovery Form</h2>
-            <p>The ultimate worksheet to help you collect all the information, ideas and prep work you need before starting your project with us.</p>
+            <h2>Fill Out Our Client Discovery Form</h2>
+            <p>
+              The ultimate worksheet to help you collect all the information,
+              ideas and prep work you need before starting your project with us.
+            </p>
             <div className="btn-container">
               <Button text="client discovery form" link="/discovery-form" />
             </div>
-            
           </div>
         </section>
         <section className="featured">
           <div className="text-box">
             <h2>Our Starting Prices</h2>
-            <p>We believe in transparency and building strong relationships with our clients. We offer straightforward pricing and understand the importance of budgeting.
-            Packages can be expanded as your business grows.</p>
+            <p>
+              We believe in transparency and building strong relationships with
+              our clients. We offer straightforward pricing and understand the
+              importance of budgeting. Packages can be expanded as your business
+              grows.
+            </p>
           </div>
-         
+
           <PriceCard name="pricing" color="#fff" />
         </section>
         <section className="cta">

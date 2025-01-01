@@ -7,18 +7,18 @@
     margin-top: 2rem;
     padding: 0rem 6rem;
   }
-.contact-form {
-  width: 100%;
-  padding: 2rem 2rem;
-  background: var(--second);
-  border-radius: 5px;
-  animation: fadeIn 3s forwards;
-  .form-group {
+  .contact-form {
+    width: 100%;
+    padding: 2rem 2rem;
+    background: var(--second);
+    border-radius: 5px;
+    animation: fadeIn 3s forwards;
+    .form-group {
       position: relative;
       margin-bottom: 1.25rem;
       display: flex;
       flex-direction: column;
-  
+
       label {
         position: absolute;
         top: -10px;
@@ -26,7 +26,7 @@
         padding: 0 5px;
         font-size: 0.9rem;
         background: var(--second);
-        color: #2C5FE1;
+        color: #2c5fe1;
         z-index: 9999;
         opacity: 0;
         animation: fadeInUp 1s 1.5s forwards;
@@ -69,16 +69,18 @@
         border: none;
         min-width: fit-content;
         box-shadow: var(--button-shadow);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
         cursor: pointer;
-    
+
         &:hover {
           transform: translateY(-3px);
           background: var(--main);
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
         }
       }
-    } 
+    }
   }
 }
 .info-map {

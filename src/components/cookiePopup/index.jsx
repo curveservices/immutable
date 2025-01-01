@@ -8,12 +8,12 @@ Modal.setAppElement("#root");
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
-   useEffect(() => {
+  useEffect(() => {
     const consent = Cookies.get("cookie-consent");
     if (!consent) {
-        const timer = setTimeout(() => {
-            setIsVisible(true);
-        }, 2000);
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -34,13 +34,22 @@ const CookieConsent = () => {
       overlayClassName="cookie-modal-overlay"
     >
       <div className="cookie-content">
-        <video className="icon" src={cookieVideo} alt="Cookie" autoPlay loop muted playsInline controls={false} />
+        <video
+          className="icon"
+          src={cookieVideo}
+          alt="Cookie"
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls={false}
+        />
         <p>
-          We use cookies to improve your experience on our site. By using our site,
-          you consent to cookies. See our   
-            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
-                Privacy Policy
-            </a>
+          We use cookies to improve your experience on our site. By using our
+          site, you consent to cookies. See our
+          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+            Privacy Policy
+          </a>
         </p>
         <div className="cookie-buttons">
           <button onClick={handleAccept} className="accept-button">
@@ -56,4 +65,3 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
-

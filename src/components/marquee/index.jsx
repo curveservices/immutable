@@ -25,7 +25,12 @@ const MarqueeComp = () => {
       </div>
       <Marquee pauseOnHover="true" className="marquee">
         <Link to="https://wordpress.com/" noreferer="true" target="_blank">
-          <img src={wordpress} alt="wordpress icon" className="icon" loading="lazy"/>
+          <img
+            src={wordpress}
+            alt="wordpress icon"
+            className="icon"
+            loading="lazy"
+          />
         </Link>
         <div className="divider">|</div>
         <Link
@@ -33,7 +38,12 @@ const MarqueeComp = () => {
           noreferer="true"
           target="_blank"
         >
-          <img src={square} alt="squarespace icon" className="icon" loading="lazy" />
+          <img
+            src={square}
+            alt="squarespace icon"
+            className="icon"
+            loading="lazy"
+          />
         </Link>
         <div className="divider">|</div>
         <Link to="https://woocommerce.com/" noreferer="true" target="_blank">

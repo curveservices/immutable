@@ -1,5 +1,5 @@
-import React from 'react';
-import Client from '../../../cards/ClientWork';
+import React from "react";
+import Client from "../../../cards/ClientWork";
 import video from "../../../../assets/images/telehill.mp4";
 import header from "../../../../assets/images/telehill-head.webp";
 import "../../../cards/ClientWork";
@@ -7,8 +7,8 @@ import "../../../cards/ClientWork";
 const TelehillClient = () => {
   return (
     <>
-      <section className='client-page'>
-          <Client
+      <section className="client-page">
+        <Client
           name="telegraph-tutoring"
           src={header}
           titleP="Telegraph Hill Tutoring are dedicated to nuturing young learners in South East London"
@@ -18,7 +18,7 @@ const TelehillClient = () => {
             complete with a comprehensive sitemap and google analytics."
           img1P="We worked with Telegraph Hill Tutoring to create colour palette, fonts, and images to develop a visually appealing and engaging user experience."
           img1Break="We where provided with their company copy to maintain brand consistency and deliver clear messaging. 
-            The result is a modern, playful, efficient, and user-friendly website to enhance their digital presence." 
+            The result is a modern, playful, efficient, and user-friendly website to enhance their digital presence."
           url={video}
           link="https://telegraphhilltutoring.netlify.app/"
           img2P="To create the best website possible, our team began by working closely with Telegraph Hill Tutoring to understand their mission: 
@@ -28,8 +28,7 @@ const TelehillClient = () => {
         />
       </section>
     </>
+  );
+};
 
-  )
-}
-
-export default TelehillClient
+export default TelehillClient;

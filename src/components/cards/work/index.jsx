@@ -44,8 +44,8 @@ const WorkCard = () => {
           <p>
             Signing off on a new website is always a moment of pride and
             satisfaction for us. With each project, we take great care to
-            understand our clients' unique needs and deliver tailored
-            solutions. Here are some of our featured projects.
+            understand our clients' unique needs and deliver tailored solutions.
+            Here are some of our featured projects.
           </p>
         </div>
       </div>
@@ -54,19 +54,31 @@ const WorkCard = () => {
           return (
             <div className="flip-card" key={item.id}>
               <div className="flip-card-inner">
-                <div className="flip-card-front" >
-                  <img src={item.img} alt={`${item.name} featured images`} className="card-image" loading="lazy"
-                    style={{width:"300px",height:"300px", }}/>
-                </div>
-                <div className="flip-card-back" style={{background: item.color}}>
-                  <img src={item.back} alt={`${item.name} Home page`} className="card-back-image" loading="lazy"
-                    style={{width:"300px",height:"300px", }}
+                <div className="flip-card-front">
+                  <img
+                    src={item.img}
+                    alt={`${item.name} featured images`}
+                    className="card-image"
+                    loading="lazy"
+                    style={{ width: "300px", height: "300px" }}
                   />
-                  <h1 className="name" >{item.name}</h1>
+                </div>
+                <div
+                  className="flip-card-back"
+                  style={{ background: item.color }}
+                >
+                  <img
+                    src={item.back}
+                    alt={`${item.name} Home page`}
+                    className="card-back-image"
+                    loading="lazy"
+                    style={{ width: "300px", height: "300px" }}
+                  />
+                  <h1 className="name">{item.name}</h1>
                   <NavLink to={`/services/${item.productLink}`}>
                     <h2 className="product">{item.product}</h2>
                   </NavLink>
-                  <p className="desc" >{item.desc}</p>
+                  <p className="desc">{item.desc}</p>
                   <div className="btn-container">
                     <Button
                       text="View"
@@ -83,15 +95,15 @@ const WorkCard = () => {
       <div className="text-container">
         <div className="textBox">
           <p>
-            As our client base continues to expand, we are excited to
-            showcase the diverse and innovative work we do. Each project
-            that we complete represents a commitment to excellence and our
-            passion for helping businesses thrive online.
+            As our client base continues to expand, we are excited to showcase
+            the diverse and innovative work we do. Each project that we complete
+            represents a commitment to excellence and our passion for helping
+            businesses thrive online.
           </p>
         </div>
         <div className="btn-container">
-          <Button text="Our Portfolio" link="portfolio"/>
-          <Button text="Discovery Form" link="discovery-form"/>
+          <Button text="Our Portfolio" link="portfolio" />
+          <Button text="Discovery Form" link="discovery-form" />
         </div>
       </div>
     </>

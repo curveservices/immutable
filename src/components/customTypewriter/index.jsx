@@ -17,7 +17,7 @@ const Typewriter = ({
     if (!strings || strings.length === 0) return;
 
     const currentString = strings[stringIndex];
-      setPlaceholderLength(Math.max(...strings.map((str) => str.length)));
+    setPlaceholderLength(Math.max(...strings.map((str) => str.length)));
     let timeout;
 
     if (isDeleting) {
@@ -43,25 +43,34 @@ const Typewriter = ({
       // Move to the next string or reset
       setIsDeleting(false);
       setStringIndex((prev) =>
-        loop ? (prev + 1) % strings.length : Math.min(prev + 1, strings.length - 1)
+        loop
+          ? (prev + 1) % strings.length
+          : Math.min(prev + 1, strings.length - 1),
       );
     }
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, strings, stringIndex, typingSpeed, deletingSpeed, pauseTime, loop]);
+  }, [
+    charIndex,
+    isDeleting,
+    strings,
+    stringIndex,
+    typingSpeed,
+    deletingSpeed,
+    pauseTime,
+    loop,
+  ]);
 
   return (
-      <span
-          style={{
-              display: "inline-block",
-              minWidth: `${placeholderlength}ch`,
-          }}
-      >
-        {text}
+    <span
+      style={{
+        display: "inline-block",
+        minWidth: `${placeholderlength}ch`,
+      }}
+    >
+      {text}
     </span>
   );
 };
 
 export default Typewriter;
-
-

@@ -1,10 +1,9 @@
-import SingleAssistant from '..';
-import header from '../../../../assets/images/nyx-header.webp';
-import asst1 from '../../../../assets/images/nyx1.webp';
-import asst from '../../../../assets/images/nyx.webp';
-import asst2 from '../../../../assets/images/nyx2.webp';
+import SingleAssistant from "..";
+import header from "../../../../assets/images/nyx-header.webp";
+import asst1 from "../../../../assets/images/nyx1.webp";
+import asst from "../../../../assets/images/nyx.webp";
+import asst2 from "../../../../assets/images/nyx2.webp";
 const SocialMedia = () => {
- 
   return (
     <SingleAssistant
       header={header}
@@ -22,8 +21,7 @@ const SocialMedia = () => {
       care of your socials automatically and with ease."
       thirdImg={asst2}
     />
-  )
-}
+  );
+};
 
-export default SocialMedia
-
+export default SocialMedia;

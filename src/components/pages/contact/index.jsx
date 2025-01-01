@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import 'leaflet/dist/leaflet.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "leaflet/dist/leaflet.css";
 import Socials from "../../socials";
-import './index.scss'
+import "./index.scss";
 
 const Contact = () => {
   const refForm = useRef();
@@ -18,7 +18,8 @@ const Contact = () => {
     const formEle = document.querySelector("form");
     const formInput = new FormData(formEle);
     try {
-      const googleSheetResponse = await fetch("https://script.google.com/macros/s/AKfycbxFNGbucNhUYJs3g6ivjAOk23L5EtZvtVOQ46uZTK4Qt2hCOkk0UfUY9YUq3HSWQ599/exec",
+      const googleSheetResponse = await fetch(
+        "https://script.google.com/macros/s/AKfycbxFNGbucNhUYJs3g6ivjAOk23L5EtZvtVOQ46uZTK4Qt2hCOkk0UfUY9YUq3HSWQ599/exec",
         {
           method: "POST",
           body: formInput,
@@ -32,10 +33,10 @@ const Contact = () => {
         {
           method: "POST",
           body: formInput,
-        }
+        },
       );
       if (!makeWebhookResponse.ok) {
-        throw new Error("Failed to send data to Make.com webhook")
+        throw new Error("Failed to send data to Make.com webhook");
       }
       await emailjs.sendForm(
         "p.rossiter83@gmail.com",
@@ -47,9 +48,9 @@ const Contact = () => {
       formEle.reset();
     } catch (error) {
       console.error("Error", error);
-      toast.error("Failed to send your message, plaes try again")
+      toast.error("Failed to send your message, plaes try again");
     }
-  }
+  };
   return (
     <>
       <div className="contact-page">
@@ -63,7 +64,9 @@ const Contact = () => {
           <div className="contact-form">
             <form ref={refForm} onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name" id="name">Your Name</label>
+                <label htmlFor="name" id="name">
+                  Your Name
+                </label>
                 <input
                   type="text"
                   name="name"
@@ -73,7 +76,9 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email" id="email">Email Address</label>
+                <label htmlFor="email" id="email">
+                  Email Address
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -83,7 +88,9 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="subject" id="subject">Subject</label>
+                <label htmlFor="subject" id="subject">
+                  Subject
+                </label>
                 <input
                   type="text"
                   name="subject"
@@ -93,8 +100,14 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="source" id="source">Where Did You Find Us</label>
-                <select name="source" id="source" placeholder="select from options">
+                <label htmlFor="source" id="source">
+                  Where Did You Find Us
+                </label>
+                <select
+                  name="source"
+                  id="source"
+                  placeholder="select from options"
+                >
                   <option value="Google">Google Search</option>
                   <option value="LinkedIn">LinkedIn</option>
                   <option value="Facebook">Facebook</option>
@@ -104,21 +117,21 @@ const Contact = () => {
               </div>
               <div className="form-group">
                 <textarea
-                name="message"
+                  name="message"
                   id="message"
                   placeholder="Your Message"
                   rows="5"
-              ></textarea>
+                ></textarea>
               </div>
               <div className="btn-container">
                 <input className="submit-button" type="submit" value="Submit" />
-              <Link
-                className="submit-button"
-                target="_blank"
-                to="https://calendly.com/immutable-studio/website-consultancy"
-              >
-                <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
-              </Link>
+                <Link
+                  className="submit-button"
+                  target="_blank"
+                  to="https://calendly.com/immutable-studio/website-consultancy"
+                >
+                  <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
+                </Link>
               </div>
             </form>
           </div>
@@ -150,7 +163,13 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
+      <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        theme="colored"
+        closeOnClick
+        pauseOnHover
+      />
       <div>
         <HelmetProvider>
           <Helmet>

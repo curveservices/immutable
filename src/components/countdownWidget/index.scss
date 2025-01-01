@@ -1,88 +1,88 @@
 /* Modal Content Styling */
 .christmas-banner-modal {
-    background-image: url('../../assets/images/newyear.webp');
-    background-size: cover;
-    background-position-y: top;
-    position: fixed;
-    bottom: 0px;
-    z-index: 9999;
-    width: 100%;
-    padding: 0 2rem;
-    animation: fadeIn 1s forwards;
-    font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../../assets/images/newyear.webp");
+  background-size: cover;
+  background-position-y: top;
+  position: fixed;
+  bottom: 0px;
+  z-index: 9999;
+  width: 100%;
+  padding: 0 2rem;
+  animation: fadeIn 1s forwards;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  .christmas-banner-content {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    color: #fff;
+    .banner-text {
+      font-size: 18px;
+    }
+    .countdown-timer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    .time-unit {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .time-value {
+      font-size: 1.6rem;
+      font-weight: bold;
+      background: #fff;
+      color: #000;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 5px;
+    }
+    .time-label {
+      font-size: 0.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+  }
+  .close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    .christmas-banner-content {
-        display: flex;
-        gap: 7rem;
-        align-items: center;
-        color: #fff;
-        .banner-text {
-            font-size: 18px;
-        }
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 10px 0;
-        }
-        .time-unit {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .time-value {
-            font-size: 1.6rem;
-            font-weight: bold;
-            background: #fff;
-            color: #000;
-            border-radius: 5px;
-            width: fit-content;
-            padding: 5px;
-        }
-        .time-label {
-            font-size: 0.5rem;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 5px;
-        }
-    }
-    .close-button {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        position: fixed;
-        right: 15px;
-    }
+    position: fixed;
+    right: 15px;
+  }
 
-    .close-button:hover {
-        color: #ffeaea;
-    }      
+  .close-button:hover {
+    color: #ffeaea;
+  }
 }
 @media screen and (max-width: 768px) {
-    .christmas-banner-modal {
+  .christmas-banner-modal {
+    padding: 10px;
+    .christmas-banner-content {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0;
+      flex-wrap: nowrap;
+      padding: 0rem 0.2rem;
+      .banner-text {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .time-value {
+        font-size: 1rem;
         padding: 10px;
-        .christmas-banner-content {
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 0;
-            flex-wrap: nowrap;
-            padding: 0rem 0.2rem;
-            .banner-text {
-                font-size: 0.9rem;
-                text-align: center;
-                margin-bottom: 0;
-            }
-            .time-value {
-                font-size: 1rem;
-                padding: 10px;
-            }
-            .time-label {
-                font-weight: bold;
-            }
-        }
+      }
+      .time-label {
+        font-weight: bold;
+      }
     }
+  }
 }

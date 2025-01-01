@@ -1,149 +1,151 @@
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  .popup {
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 1000;
-    .popup {
-        display: flex;
-        align-items: center;
-        width: 75%;
-        height: auto;
-        font-family: "Coolvetica";
+    width: 75%;
+    height: auto;
+    font-family: "Coolvetica";
+    background: #fff;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: var(--global);
+    border: none;
+    & :focus,
+    :hover {
+      border: none;
+    }
+    .audit-img {
+      width: 400px;
+      max-width: 100%;
+      height: 600px;
+      max-height: 100%;
+      object-fit: fill;
+    }
+    .title {
+      margin: 1rem 0;
+      font-size: 24px;
+      animation: none;
+    }
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      padding: 0rem 2rem;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .popup-close {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 100%;
+    padding: 1rem 0 0;
+    .subject {
+      display: none;
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        position: absolute;
+        top: -10px;
+        left: 15px;
         background: #fff;
-        margin-top: 2rem;
-        text-align: center;
-        box-shadow: var(--global);
-        border: none;
-        & :focus, :hover {
-            border: none;
+        padding: 0 5px;
+        font-size: 0.9rem;
+        color: #2c5fe1;
+      }
+
+      input,
+      select {
+        max-width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        & :focus {
+          border: var(--primary);
         }
-        .audit-img {
-            width: 400px;
-            max-width:100%;
-            height: 600px;
-            max-height: 100%;
-            object-fit: fill;
+      }
+    }
+    .audit-button {
+      text-transform: uppercase;
+      background: #000;
+      color: #fff;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem;
+      float: left;
+      border-radius: 10px;
+      border: none;
+      min-width: fit-content;
+      box-shadow: var(--button-shadow);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-3px);
+        background: var(--primary);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .popup-overlay {
+    .popup {
+      flex-direction: column;
+      margin-top: 1rem;
+      .text-box {
+        padding: 0 1rem;
+        svg {
+          padding-right: 1rem;
         }
         .title {
-            margin: 1rem 0;
-            font-size: 24px;
-            animation: none;
+          font-size: 20px;
         }
-        .text-box {
-            display: flex;
-            flex-direction: column;
-            padding: 0rem 2rem;
-            p {
-                margin: 0;
-            }
-        }
+      }
+      .audit-img {
+        width: 800px;
+        height: 300px;
+      }
+      .popup-form {
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 2rem;
+      }
     }
-    .popup-close {
-        align-self: flex-end;
-        cursor: pointer;
+    .audit-button {
+      font-size: 10px;
+      margin: 0;
     }
-    .popup-form {
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-        max-width: 100%;
-        padding: 1rem 0 0;
-        .subject {
-            display: none;
-        }
-        .form-group {
-            position: relative;
-            margin-bottom: 1.5rem;
-            display: flex;
-            flex-direction: column;
-
-            label {
-                position: absolute;
-                top: -10px;
-                left: 15px;
-                background: #fff;
-                padding: 0 5px;
-                font-size: 0.9rem;
-                color: #2C5FE1;
-            }
-
-            input, select {
-                max-width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                font-size: 1rem;
-                & :focus {
-                    border: var(--primary);
-                }
-            }
-        }
-        .audit-button {
-            text-transform: uppercase;
-            background: #000;
-            color: #fff;
-            letter-spacing: 4px;
-            font-family: sans-serif;
-            font-weight: 600;
-            text-decoration: none;
-            text-align: center;
-            padding: 1rem;
-            float: left;
-            border-radius: 10px;
-            border: none;
-            min-width: fit-content;
-            box-shadow: var(--button-shadow);
-            transition:
-            transform 0.3s ease,
-            box-shadow 0.3s ease;
-            cursor: pointer;
-
-            &:hover {
-                transform: translateY(-3px);
-                background: var(--primary);
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            }
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-    }
-}
- @media screen and (max-width: 1024px) {
-    .popup-overlay {
-        .popup {
-            flex-direction: column;
-            margin-top: 1rem;
-            .text-box {
-                padding: 0 1rem;
-                svg {
-                    padding-right: 1rem;
-                }
-            .title {
-                    font-size: 20px;
-                }
-            }
-            .audit-img {
-                width: 800px;
-                height: 300px;
-            }
-        .popup-form {
-            flex-flow: column wrap;
-            justify-content: center;
-            padding: 2rem;
-        }      
-        }
-        .audit-button {
-            font-size: 10px;
-            margin: 0;
-        }
-    } 
+  }
 }

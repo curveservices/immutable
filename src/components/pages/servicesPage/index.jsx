@@ -34,24 +34,23 @@ const Services = () => {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-    useEffect(() => {
-    import('./index.scss')
-      .catch((error) => {
-        console.error('error loading css',error);
-      });
+  useEffect(() => {
+    import("./index.scss").catch((error) => {
+      console.error("error loading css", error);
+    });
     return () => {
       const styleSheets = Array.from(document.styleSheets);
       const homeStyleSheet = styleSheets.find(
-        (sheet) => sheet.href && sheet.href.includes('index.scss')
+        (sheet) => sheet.href && sheet.href.includes("index.scss"),
       );
       if (homeStyleSheet) {
-        document.head.removeChild(homeStyleSheet.ownerNode)
+        document.head.removeChild(homeStyleSheet.ownerNode);
       }
     };
   }, []);
   return (
     <>
-      <ExitIntentPopup/>
+      <ExitIntentPopup />
       <div className="serivces-page">
         <section className="hero">
           <LazyVideo
@@ -92,12 +91,10 @@ const Services = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div className="subtitle"><i>Our Services</i></div>
-            <div
-              className={`text-content ${
-                second ? "anim" : "none"
-              }`}
-            >
+            <div className="subtitle">
+              <i>Our Services</i>
+            </div>
+            <div className={`text-content ${second ? "anim" : "none"}`}>
               <HowitWorks
                 title="How it works"
                 mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
@@ -126,7 +123,6 @@ const Services = () => {
                   on hand to help."
                 link4="seo-website-maintenance"
                 text4="maintenance & SEO"
-
                 text="Explore our Portfolio"
                 link="/portfolio"
               />
@@ -144,14 +140,12 @@ const Services = () => {
         </section>
         <section className="third-section">
           <div className="third-inner">
-            <div className="subtitle"><i>Our Pricing</i></div>
+            <div className="subtitle">
+              <i>Our Pricing</i>
+            </div>
             <div className={`${third ? "anim" : "none"}`}>
               <h2 className="price-title">OUR STARTING PRICES</h2>
-              <PriceCard
-                name="pricing"
-                color="#fff"
-                link="/discovery-form"
-              />
+              <PriceCard name="pricing" color="#fff" link="/discovery-form" />
             </div>
             <div className="text-box">
               <h2>Transparent Pricing</h2>
@@ -167,7 +161,9 @@ const Services = () => {
         <section className="forth-section">
           <div className="forth-inner">
             <div className="subtitle">
-              <div><i>Our Portfolio</i></div>
+              <div>
+                <i>Our Portfolio</i>
+              </div>
             </div>
             <div className={`${forth ? "anim" : "none"}`}>
               <WorkCard />

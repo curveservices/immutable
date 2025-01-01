@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { HelmetProvider } from "react-helmet-async";
 import { Helmet } from "react-helmet";
 
@@ -145,7 +145,6 @@ const ClientDiscoveryForm = () => {
         </section>
 
         <form ref={refForm} onSubmit={handleSubmit} className="discovery-form">
-
           <section className="form-section">
             <h2>Client Information</h2>
             <label htmlFor="companyName">
@@ -715,7 +714,13 @@ const ClientDiscoveryForm = () => {
           </section>
         </form>
       </div>
-       <ToastContainer position='bottom-center' autoClose={2000} theme='colored' closeOnClick pauseOnHover />
+      <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        theme="colored"
+        closeOnClick
+        pauseOnHover
+      />
       <div>
         <HelmetProvider>
           <Helmet>

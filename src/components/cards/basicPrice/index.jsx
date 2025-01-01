@@ -48,46 +48,42 @@ const PriceCard = (props) => {
 
   return (
     <>
-      <div className='toggle'>
+      <div className="toggle">
         <label name="checkbox">Annually</label>
-        <div className='toggleButton'>
+        <div className="toggleButton">
           <input
             type="checkbox"
             id="checkbox"
-            className='checkbox'
+            className="checkbox"
             onClick={handleToggle}
           />
-          <label htmlFor="checkbox" id="sub" className='sub'>
-            <div className='price-circle'></div>
+          <label htmlFor="checkbox" id="sub" className="sub">
+            <div className="price-circle"></div>
           </label>
         </div>
         <label htmlFor="checkbox">Monthly</label>
       </div>
-      <div className='cardContainer'>
+      <div className="cardContainer">
         {priceCard.map((item, index) => {
           const cardClass =
-            index === 1
-              ? `${'priceCard'} ${'active'}`
-              : 'priceCard';
+            index === 1 ? `${"priceCard"} ${"active"}` : "priceCard";
           return (
             <div className={cardClass} key={item.id}>
-              <div className='priceTitle'>{item.title}</div>
-               <p>{item.subTitle}</p>
+              <div className="priceTitle">{item.title}</div>
+              <p>{item.subTitle}</p>
               <ul>
-                <li className='price'>
-                  {isToggled ? item.month : item.price}
-                </li>
-                <li className='discount'>{!isToggled && item.li0}</li>
-                <li className='bottomBar'>{item.li1}</li>
-                <li className='bottomBar'>{item.li2}</li>
-                <li className='bottomBar'>{item.li3}</li>
-                <li className='bottomBar'>{item.li4}</li>
-                <li className='bottomBar'>{item.li5}</li>
-                <li className='bottomBar'>{item.li6}</li>
-                <li className='bottomBar'>{item.li7}</li>
-                <li className='bottomBar'>{item.li8}</li>
+                <li className="price">{isToggled ? item.month : item.price}</li>
+                <li className="discount">{!isToggled && item.li0}</li>
+                <li className="bottomBar">{item.li1}</li>
+                <li className="bottomBar">{item.li2}</li>
+                <li className="bottomBar">{item.li3}</li>
+                <li className="bottomBar">{item.li4}</li>
+                <li className="bottomBar">{item.li5}</li>
+                <li className="bottomBar">{item.li6}</li>
+                <li className="bottomBar">{item.li7}</li>
+                <li className="bottomBar">{item.li8}</li>
               </ul>
-              <div className='btnContainer'>
+              <div className="btnContainer">
                 <Button
                   link={`${item.link}`}
                   text="Show more"
