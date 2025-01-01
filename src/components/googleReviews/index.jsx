@@ -107,7 +107,7 @@ const GoogleReviews = () => {
         <div className="header">
           <div className="header-img">
             <img src={google} alt="google icon" className='google-icon' />
-            <img src={yell} alt="yell icon" />
+            <img src={yell} alt="yell icon" className='yell-icon'/>
           </div>
           <div className="star-rating">
             <h3>{averageRating }</h3>
