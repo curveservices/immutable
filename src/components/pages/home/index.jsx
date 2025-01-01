@@ -19,6 +19,7 @@ import HowitWorks from "../../howItWorks";
 import GoogleReviews from "../../googleReviews";
 import Socials from "../../socials";
 import Discount from "../../discountChristmas";
+
 const CountdownWidget = React.lazy(() => import("../../countdownWidget"));
 const Home = () => {
   const [second, setSecond] = useState(false);
@@ -57,7 +58,7 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
-        <ExitIntentPopup/>
+        <ExitIntentPopup />
         <section className="hero">
           <LazyVideo
             alt="Video of the Royal College of Greenwich"
@@ -67,7 +68,7 @@ const Home = () => {
             fallback={fallback}
           />
           <div className="text-box">
-            <h1 className="main-title">We Have Festive Discounts On</h1>
+            <h1 className="main-title">Start the New Year with Expert</h1>
             <span className="mobile-view">Website Solutions.</span>
             <div className="typewriter">
               <Typewriter
