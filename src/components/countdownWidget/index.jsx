@@ -52,7 +52,7 @@ const CountdownWidget = () => {
     >
         <div className='christmas-banner-content'>
             <p className="banner-text">
-            🎄✨ <b>CHRISTMAS OFFER - FREE Website Performance Audit  </b>✨🎄
+            🎉✨ <b>NEW YEAR FREEBIE - FREE Website Performance Audit  </b>✨🎉
             </p>
         <div className="countdown-timer">
           <div className="time-unit">
