@@ -6,7 +6,6 @@ import Footer from "./footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import CookieConsent from "../cookiePopup";
-import Snow from "../snow";
 import "./index.scss";
 
 const Layout = () => {
@@ -29,15 +28,9 @@ const Layout = () => {
     });
   };
 
-  ScrollRestoration({
-    top: 0,
-    behavior: "smooth",
-  });
-
   return (
     <>
       <Navbar />
-      <Snow/>
       <main className="app">
         <CookieConsent/>
         <Outlet />
@@ -48,6 +41,7 @@ const Layout = () => {
         </button>
       )}
       <Footer />
+      <ScrollRestoration />
     </>
   );
 };
