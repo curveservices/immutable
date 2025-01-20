@@ -7,7 +7,7 @@ const Discount = () => {
   return (
     <div className="discount-container">
       <div className="offer">
-        <h2 className="percent">30% OFF</h2>
+        <h2 className="percent">20% OFF</h2>
         <div className="desktop">
           <SlideButton text="web development" link="services/web-development" />
         </div>
@@ -32,7 +32,7 @@ const Discount = () => {
         />
       </div>
       <div className="offer">
-        <h2 className="percent">30% OFF</h2>
+        <h2 className="percent">20% OFF</h2>
         <div className="desktop">
           <SlideButton text="ai assistants" link="services/ai-assistants" />
         </div>
