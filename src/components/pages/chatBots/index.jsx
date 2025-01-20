@@ -15,7 +15,7 @@ const ChatBots = () => {
               daily work load with our latest & greatest assistants. Our expert assistants
               will complete daily tasks using cutting-edge AI
               technology, streamlining your operations has never been easier."
-      HeroH2="Our tailor built AI asistants start from just £468, or £39 per month"
+      HeroH2="Our tailor built AI asistants start from just £420, or £50 per month"
       src={gif}
       secondH1="Want to alleviate your work load?"
       secondP="From social media to e-commerce our AI assistants are trained on your business. 
