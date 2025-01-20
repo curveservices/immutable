@@ -90,6 +90,9 @@
   color: #494c5f;
   padding: 2rem;
 }
+.priceCard.active .discount {
+  color: #CBF6D4;
+}
 .priceCard.active .price {
   color: #fff;
 }
@@ -111,7 +114,7 @@
 }
 .discount {
   font-style: italic;
-  color: #d77f03;
+  color: #0F4D1D;
 }
 @media screen and (max-width: 920px) {
   .cardContainer {
