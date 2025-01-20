@@ -49,9 +49,9 @@ const SingleAssistant = (props) => {
           </div>
         </section>
         <section className="second-section">
-          <h3 className="subtitle">
+          <div className="subtitle">
             <i>{props.altName}'s Commitments</i>
-          </h3>
+          </div>
           <div className="second-inner">
             <div className="text-box">
               <h2 className="title">What to expect.</h2>
@@ -65,9 +65,9 @@ const SingleAssistant = (props) => {
           </div>
         </section>
         <section className="third-section">
-          <h3 className="subtitle" style={{ color: "#fff" }}>
+          <div className="subtitle" style={{ color: "#fff" }}>
             <i>How {props.altName} Works</i>
-          </h3>
+          </div>
           <div className="third-inner">
             <img
               src={props.thirdImg}
