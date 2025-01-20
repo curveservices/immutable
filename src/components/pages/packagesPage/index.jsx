@@ -13,7 +13,7 @@ const Packages = () => {
               free domain name registration, SEO audits and monthly maintenance. We also offer AI automation
               for you business workflows to help streamline your day to day tasks.
                 "
-      HeroH2="We build tailer made business packages starting from just £849 or £99 per month."
+      HeroH2="We build tailer made business packages starting from just £960 or £100 per month."
       src={gif}
       secondH1="Need full online &amp; AI solutions?"
       secondP=" Our custom packages integrate cutting-edge AI solutions, from
