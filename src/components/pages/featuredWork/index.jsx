@@ -82,9 +82,9 @@ const FeaturedWork = () => {
           </div>
         </section>
         <section className="clients">
-          <h3 className="subtitle">
+          <div className="subtitle">
             <i>Our Portfolio</i>
-          </h3>
+          </div>
           <div className="main-text">
             <h2>Recent Projects</h2>
             <p>
