@@ -68,7 +68,6 @@ const Client = (props) => {
                     text="View Site"
                     link={props.link}
                     target="_blank"
-                    background={item.color}
                     noreferer
                   />
                 </div>
