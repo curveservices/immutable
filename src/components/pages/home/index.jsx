@@ -20,7 +20,6 @@ import GoogleReviews from "../../googleReviews";
 import Socials from "../../socials";
 import Discount from "../../discountChristmas";
 
-const CountdownWidget = React.lazy(() => import("../../countdownWidget"));
 const Home = () => {
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
@@ -100,7 +99,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <CountdownWidget />
         </section>
         <section className="second-section">
           <div className="second-inner">
