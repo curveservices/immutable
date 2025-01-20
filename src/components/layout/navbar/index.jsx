@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 import Breadcrumbs from "../../breadcrumbs";
 import Button from "../../button";
 import logo from "../../../assets/images/logo-desktop.webp";
-import mobileLogo from "../../../assets/images/logo-desktop.webp";
+import mobileLogo from "../../../assets/images/1-removebg-preview.webp";
 import "./index.scss";
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
         <NavLink to="/" aria-label="home page">
           <div className="title-container">
             <img
-              src={logo}
+              src={mobileLogo}
               alt="Immutable studio logo"
               className="mobile-logo"
             />

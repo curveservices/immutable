@@ -50,12 +50,19 @@ header {
   header {
     padding: 0rem 1rem;
     .logo {
+      display: none;
+      // display: block;
+      // margin: 20px;
+      // width: 125px;
+      // height: auto;
+      // object-fit: contain;
+      // padding: 0;
+    }
+    .mobile-logo {
       display: block;
-      margin: 20px;
-      width: 125px;
-      height: auto;
-      object-fit: contain;
-      padding: 0;
+      width: 50px;
+      height: 50px;
+      padding-top: 5px;
     }
     nav {
       display: none;
