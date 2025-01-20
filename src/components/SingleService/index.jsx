@@ -61,7 +61,7 @@ const Singleservices = (props) => {
                 />
               </div>
             </div>
-            <img src={props.src} alt="gif" className="gif" />
+            <img src={props.src} alt={`${props.HeroH1} Gif`} className="gif" />
           </div>
         </section>
         <section className="second-section">
@@ -94,7 +94,7 @@ const Singleservices = (props) => {
                     className="ai-img launching"
                     alt="a 3d cartoon of a girl in pink space suit"
                   />
-                  {/* <SlideButton text="learn more" link="social-media"/> */}
+                  {/* <SlideButton text={`more About ${props.assistant1}`} link="social-media"/> */}
                   <p>LAUNCHING SOON</p>
                 </div>
                 <div className="ai-card">
@@ -105,7 +105,7 @@ const Singleservices = (props) => {
                     className="ai-img"
                     alt="a 3d cartoon of a boy in a blue space suit"
                   />
-                  <SlideButton text="learn more" link="customer-service" />
+                  <SlideButton text={`more About ${props.assistant2}`} link="customer-service" />
                 </div>
                 <div className="ai-card launching">
                   <h2 className="ai-name launching">{props.assistant3}</h2>
@@ -115,7 +115,7 @@ const Singleservices = (props) => {
                     className="ai-img launching"
                     alt="a 3d cartoon of a boy in a blue space suit"
                   />
-                  {/* <SlideButton text="learn more" link="ecommerce"/> */}
+                  {/* <SlideButton text={`more About ${props.assistant3}`} link="ecommerce"/> */}
                   <p>LAUNCHING SOON</p>
                 </div>
               </div>
@@ -123,9 +123,9 @@ const Singleservices = (props) => {
           </section>
         )}
         <section className="howItWorks">
-          <h3 className="subtitle">
+          <div className="subtitle">
             <i>Our Services</i>
-          </h3>
+          </div>
           <div className={`${third ? "anim-third" : "third-none"}`}>
             <HowitWorks
               title="How it works"
