@@ -140,6 +140,7 @@ const GoogleReviews = () => {
                     src={review[4] || placeholder}
                     alt={`${review[0]}'s profile`}
                     className="profile-pic"
+                    loading="lazy"
                     onError={(e) => (e.target.src = placeholder)}
                   />
                 )}
@@ -190,6 +191,7 @@ const GoogleReviews = () => {
                 <img
                   src={modalContent[4] || placeholder}
                   alt={`${modalContent[0]}'s profile image`}
+                  loading="lazy"
                   onError={(e) => (e.target.src = placeholder)}
                   className="profile-pic"
                 />
