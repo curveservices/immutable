@@ -1,14 +1,13 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "leaflet/dist/leaflet.css";
 import Socials from "../../socials";
+import LeafletMap from "../../leafletMap";
 import "./index.scss";
 
 const Contact = () => {
@@ -155,12 +154,7 @@ const Contact = () => {
           </span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[51.5, 0.0192269]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[51.4852, 0.0175]}>
-              <Popup>We are here</Popup>
-            </Marker>
-          </MapContainer>
+          <LeafletMap/>
         </div>
       </div>
       <ToastContainer
@@ -171,13 +165,37 @@ const Contact = () => {
         pauseOnHover
       />
       <div>
-        <HelmetProvider>
+       <HelmetProvider>
           <Helmet>
-            <title>Contact Us | Immutable Studio: Web Development Agency</title>
+            <title>Contact Us | Immutable Studio – Creative Web Design & AI Solutions</title>
+            <link rel="canonical" href="https://immutable-studio.co.uk/contact" />
             <meta
               name="description"
-              content="Immutable Studio is a leading website development & website design agency. We build fast and responsive websites & create AI solutions for businesses."
+              content="Get expert website design, maintenance & AI solutions from Immutable Studio. Contact us today and bring your ideas to life!"
             />
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "ContactPage",
+                  "mainEntity": {
+                    "@type": "Organization",
+                    "name": "Immutable Studio",
+                    "url": "https://immutable-studio.co.uk",
+                    "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "+447980383484",
+                      "email": "hello@immutable-studio.co.uk",
+                      "contactType": "Customer Service",
+                      "areaServed": "GB",
+                      "availableLanguage": ["English"]
+                    }
+                  },
+                  "url": "https://immutable-studio.co.uk/contact"
+                }
+              `}
+            </script>
           </Helmet>
         </HelmetProvider>
       </div>

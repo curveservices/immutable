@@ -5,14 +5,14 @@
     width: 60%;
     color: #fff;
     margin-top: 2rem;
-    padding: 0rem 6rem;
+    padding: 0.5rem 6rem;
   }
   .contact-form {
     width: 100%;
     padding: 2rem 2rem;
     background: var(--second);
     border-radius: 5px;
-    animation: fadeIn 3s forwards;
+    animation: fadeInUp 1.5s;
     .form-group {
       position: relative;
       margin-bottom: 1.25rem;
@@ -29,7 +29,7 @@
         color: #2c5fe1;
         z-index: 9999;
         opacity: 0;
-        animation: fadeInUp 1s 1.5s forwards;
+        animation: fadeInUp 1s 1s forwards;
         clear: both;
       }
       input,
@@ -42,7 +42,7 @@
         border-radius: 10px;
         font-size: 1rem;
         opacity: 0;
-        animation: fadeInUp 1s 1.5s;
+        animation: fadeInUp 1s 1s;
         animation-fill-mode: forwards;
         clear: both;
 
