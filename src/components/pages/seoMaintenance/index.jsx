@@ -8,7 +8,9 @@ const SeoMaintenance = () => {
     <>
       <ExitIntentPopup />
       <Singleservices
+        page="maintenance"
         title="Website Maintenance and SEO"
+        canonicalUrl="https://immutable-studio.co.uk/services/seo-website-maintenance"
         keywords="website design, website maintenance, SEO, search engine optimization, hosting, website maintenance services, digital maintenance, Greenwich, London,Immutable Studio"
         HeroH1="Website Maintenance & SEO"
         HeroP="We can look after your website for you, everything from content to SEO, and we do it all in-house. If you're looking
@@ -21,6 +23,7 @@ const SeoMaintenance = () => {
       From a WordPress site to a custom-built site, we can help support and improve your website."
         p="We build SEO sitemaps and ensure your webite is up to date with best SEO practices, on and off page"
         img={img}
+        alt="Professional Website maintenance and SEO services in Greenwich London and South East London, UK"
         thirdH1="MAINTENANCE"
         thirdP="We prioritise transparent communication &amp; strong client bonds.
               Our services for SEO and website maintenance are based on a retainer model."
