@@ -100,7 +100,7 @@ const Services = () => {
                 mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
                       every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
                 card1Gif={meeting}
-                card1Title="Discovery Call"
+                card1Title="Onboarding"
                 card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
                           your projects needs."
                 link1="https://calendly.com/immutable-studio/website-consultancy"
@@ -177,11 +177,22 @@ const Services = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>Services | Immutable Studio Web Development Agency</title>
+            <title>Services | Immutable Studio – Creative Web Design & AI Solutions</title>
+            <link rel="canonical" href="https://immutable-studio.co.uk/services" />
+            <meta
+              name="description"
+              content="Explore our range of web design, development, and AI solutions at Immutable Studio. We offer services tailored to help businesses grow in the digital space."
+            />
             <meta
               name="keywords"
-              content="Website design agency, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, Greenwich London"
+              content="Website design agency, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, automated, Business, London, 
+              Greenwich London, custom website design services in London, AI chatbot solutions for small businesses in Greenwich,
+               web design agency in South East London, web design agency in London, web design agency in Greenwich,"
             />
+            <meta property="og:title" content="Services | Immutable Studio – Creative Web Design & AI Solutions" />
+            <meta property="og:description" content="Explore our range of web design, development, and AI solutions at Immutable Studio." />
+            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
+            <meta property="og:url" content="https://immutable-studio.co.uk/services" />
           </Helmet>
         </HelmetProvider>
       </div>
