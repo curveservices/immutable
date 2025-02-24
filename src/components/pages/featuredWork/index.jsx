@@ -121,7 +121,7 @@ const FeaturedWork = () => {
             </div>
           </div>
           <div
-            className={`featured-container ${secondScroll ? "anim" : "none"}`}
+            className={`featured-container oposite ${secondScroll ? "anim" : "none"}`}
           >
             <div className="text-box">
               <h2>MorfBot</h2>
@@ -136,9 +136,9 @@ const FeaturedWork = () => {
               </p>
               <SlideButton text="Read case study" link="morfbot" />
             </div>
-            <div className={`player-wrapper ${secondScroll ? "anim" : "none"}`}>
+            <div className={`player-wrapper oposite-video ${secondScroll ? "anim" : "none"}`}>
               <ReactPlayer
-                className="react-player"
+                className="react-player "
                 url={morfbot}
                 playing
                 loop
@@ -173,7 +173,7 @@ const FeaturedWork = () => {
             </div>
           </div>
           <div
-            className={`featured-container ${thirdScroll ? "anim" : "none"}`}
+            className={`featured-container oposite ${thirdScroll ? "anim" : "none"}`}
           >
             <div className="text-box">
               <h2>Vive La Crepe</h2>
@@ -228,15 +228,35 @@ const FeaturedWork = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>Portfolio | Immutable Studio Web Development Agency</title>
+            <title>Portfolio | Immutable Studio – Creative Web Design & AI Solutions</title>
+            <link rel="canonical" href="https://immutable-studio.co.uk/portfolio" />
             <meta
               name="description"
               content="Our featured work will help you understand what we do and who we work with. We build fast, responsive websites and create AI solutions."
             />
             <meta
               name="keywords"
-              content="featured work, website design agency, web development, Immutable Studio, web design, website design, AI solutions, chatbots, workflow automaion, automation, digital agency"
+              content="featured work, website design agency, web development, Immutable Studio, web design, website design, AI solutions, chatbots, workflow automation, automation, digital agency"
             />
+            <meta property="og:title" content="Portfolio | Immutable Studio – Creative Web Design & AI Solutions" />
+            <meta property="og:description" content="Check out our featured projects showcasing fast, responsive websites and AI solutions." />
+            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
+            <meta property="og:url" content="https://immutable-studio.co.uk/portfolio" />
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "CreativeWork",
+                  "name": "Portfolio",
+                  "author": {
+                    "@type": "Organization",
+                    "name": "Immutable Studio"
+                  },
+                  "url": "https://immutable-studio.co.uk/portfolio",
+                  "description": "A showcase of our featured work that includes website design and AI solutions."
+                }
+              `}
+            </script>
           </Helmet>
         </HelmetProvider>
       </div>
