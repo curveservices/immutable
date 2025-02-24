@@ -46,10 +46,11 @@
     .second-inner {
       display: flex;
       justify-content: space-around;
+      box-shadow: none;
       padding: 0rem 2rem 2rem;
       .text-box {
         padding-top: 1rem;
-        width: 60%;
+        width: 50%;
       }
       .assistant {
         width: 250px;
