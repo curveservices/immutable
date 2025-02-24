@@ -43,6 +43,9 @@ const Singleservices = (props) => {
     };
   }, []);
   const aiPage = props.page === "ai";
+  const webdevPage = props.page === "webdev";
+  const maintenancePage = props.page === "maintenance";
+  const packagePage = props.page === "package";
   return (
     <>
       <div className="single-service">
@@ -73,12 +76,13 @@ const Singleservices = (props) => {
             </div>
             <img
               src={props.img}
-              alt="title image"
+              alt={props.alt}
               className={`${second ? "anim-second-img" : "second-none"}`}
             />
           </div>
         </section>
         {aiPage && (
+          <>
           <section className="ai-section">
             <div className="subtitle">
               <i>Your AI Helpers</i>
@@ -121,8 +125,7 @@ const Singleservices = (props) => {
               </div>
             </div>
           </section>
-        )}
-        <section className="howItWorks">
+          <section className="howItWorks">
           <div className="subtitle">
             <i>Our Services</i>
           </div>
@@ -158,7 +161,49 @@ const Singleservices = (props) => {
               link="/portfolio"
             />
           </div>
+          </section>
+          </>
+        )}
+        {(!aiPage && (webdevPage || maintenancePage || packagePage)) && (
+        <section className="howItWorks">
+          <div className="subtitle">
+            <i>Our Services</i>
+          </div>
+          <div className={`${third ? "anim-third" : "third-none"}`}>
+            <HowitWorks
+              title="How it works"
+              mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
+                    every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
+              card1Gif={meeting}
+              card1Title="Discovery Call"
+              card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
+                        your projects needs."
+              link1="https://calendly.com/immutable-studio/website-consultancy"
+              text1="book a call"
+              card2Gif={design}
+              card2Title="Proposal and Design"
+              card2P="Once we fully understand your project a proposal is drawn up. We then start on design, we will create wireframe UI/UX designs
+                        for approval."
+              link2="/portfolio"
+              text2="our clients"
+              card3Gif={webdev}
+              card3Title="Draft & Completion"
+              card3P="As soon as the design is approved development begins. A draft will hosted for you to approve. Once approved your 
+                      project is ready for completion"
+              link3="/contact"
+              text3="contact us"
+              card4Gif={chatbot}
+              card4Title="Ongoing Support"
+              card4P="We offer ongoing support with hosting, website maintenance and SEO development. Our support gives you peace-of-mind, we'll be
+                on hand to help."
+              link4="seo-website-maintenance"
+              text4="maintenance & SEO"
+              text="Explore our Portfolio"
+              link="/portfolio"
+            />
+          </div>
         </section>
+        )}
         <section className="thirdSection">
           <div className="thirdInner">
             <div className="thirdTextBox">
@@ -182,9 +227,18 @@ const Singleservices = (props) => {
         <HelmetProvider>
           <Helmet>
             <title>
-              {props.title} | Immutable Studio Web Development Agency
+              {props.title} | Immutable Studio – Creative Web Design & AI Solutions
             </title>
+            <link rel="canonical" href={props.canonicalUrl || window.location.href} />
+            <meta name="description" content="Immutable Studio offers creative web design, fast, responsive websites, and AI solutions for businesses." />
             <meta name="keywords" content={props.keywords} />
+            <meta http-equiv="content-language" content="en" />
+
+            <meta property="og:title" content={props.title + " | Immutable Studio – Creative Web Design & AI Solutions"} />
+            <meta property="og:description" content={props.description || "Immutable Studio offers creative web design, fast, responsive websites, and AI solutions for businesses."} />
+            <meta property="og:url" content={props.canonicalUrl || window.location.href} />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
           </Helmet>
         </HelmetProvider>
       </div>
