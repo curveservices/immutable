@@ -39,10 +39,10 @@ const Navbar = () => {
           <div className="title-container">
             <img
               src={mobileLogo}
-              alt="Immutable studio logo"
+              alt="Immutable Studio, Custom website design services in London."
               className="mobile-logo"
             />
-            <img src={logo} alt="Immutable studio logo" className="logo" />
+            <img src={logo} alt="Immutable studio, Custom website design services in London" className="logo" />
           </div>
         </NavLink>
         <Breadcrumbs className={isScrolled ? "navbar-scroll" : ""} />
@@ -115,6 +115,7 @@ const Navbar = () => {
             background="#fff"
             color="#000"
             boxShadow="none"
+            onClick={() => setShowNav(false)}
           />
         </nav>
         <FontAwesomeIcon
