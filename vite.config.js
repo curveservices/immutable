@@ -5,6 +5,7 @@ import purgecss from "vite-plugin-purgecss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/",
   css: {
     preprocessorOptions: {
       sass: {
@@ -56,13 +57,13 @@ export default defineConfig({
     compression({
       algorithm: "gzip",
       ext: ".gz",
-      threshold: 1024,
+      threshold: 10240,
       filter: /\.(js|mjs|json|css|html|svg|ico|png|jpg|webp|woff|woff2)$/,
     }),
     compression({
       algorithm: "brotliCompress",
       ext: ".br",
-      threshold: 1024,
+      threshold: 10240,
       filter: /\.(js|mjs|json|css|html|svg|ico|png|jpg|webp|woff|woff2)$/,
     }),
   ],
