@@ -18,7 +18,6 @@ import packing from "../../../assets/images/packing.mp4";
 import HowitWorks from "../../howItWorks";
 import GoogleReviews from "../../googleReviews";
 import Socials from "../../socials";
-import Discount from "../../discountChristmas";
 
 const Home = () => {
   const [second, setSecond] = useState(false);
@@ -31,7 +30,7 @@ const Home = () => {
       const scrollThird = window.scrollY;
       const scrollForth = window.scrollY;
       const scrollFith = window.scrollY;
-      setSecond(scrollSecond > 250);
+      setSecond(scrollSecond > 125);
       setThird(scrollThird > 1500);
       setForth(scrollForth > 2500);
       setFith(scrollFith > 3300);
@@ -59,14 +58,14 @@ const Home = () => {
         <ExitIntentPopup />
         <section className="hero">
           <LazyVideo
-            alt="Video of the Royal College of Greenwich"
+            alt="Royal College of Greenwich, London"
             src={vid}
             type="video/mp4"
             className="video"
             fallback={fallback}
           />
           <div className="text-box">
-            <h1 className="main-title">Start the New Year with Expert</h1>
+            <h1 className="main-title">Empowing your Business with Expert</h1>
             <span className="mobile-view">Website Solutions.</span>
             <div className="typewriter">
               <Typewriter
@@ -85,10 +84,9 @@ const Home = () => {
             </div>
             <div className="text">
               <h2>
-                {/* Web design &amp; development that will
-                transform your online presence. */}
+                Design &amp; development that will
+                transform your online presence.
               </h2>
-              <Discount />
               <div className="btn-container">
                 <Button
                   link="https://calendly.com/immutable-studio/website-consultancy"
@@ -97,7 +95,7 @@ const Home = () => {
                 />
                 <Button link="discovery-form" text="discovery form" />
               </div>
-            </div>
+            </div> 
           </div>
         </section>
         <section className="second-section">
@@ -232,16 +230,45 @@ const Home = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Web Design Agency | Web Design London | Immutable Studio
+              Web Design Agency in London | Immutable Studio – Creative Web Design & AI Solutions
             </title>
+            <link rel="canonical" href="https://immutable-studio.co.uk" />
             <meta
               name="description"
-              content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."
+              content="Immutable Studio is a leading web design agency in London, offering website development, responsive design, and AI solutions to help your business grow."
             />
             <meta
               name="keywords"
-              content="Website, Website Design, Website Development, Web design, AI Solutions, Chatbot, workflows, London, Greenwich"
+              content="Website, Website Design, Website Development, Web design, AI Solutions,
+               Chatbot, workflows, London, Greenwich, london web studio, 
+               custom website design services in London, AI chatbot solutions for small businesses in Greenwich,
+               web design agency in South East London, web design agency in London, web design agency in Greenwich,"
             />
+            <meta property="og:title" content="Web Design Agency in London | Immutable Studio" />
+            <meta property="og:description" content="Explore Immutable Studio for innovative website design, development, and AI solutions tailored to your business needs." />
+            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
+            <meta property="og:url" content="https://immutable-studio.co.uk" />
+            <meta property="og:type" content="website" />
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "WebSite",
+                  "name": "Immutable Studio",
+                  "url": "https://immutable-studio.co.uk",
+                  "description": "Immutable Studio is a top web design agency specializing in responsive websites, AI solutions, and workflow automation for businesses in London.",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "Immutable Studio",
+                    "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+                  },
+                   "sameAs": [
+                    "https://www.linkedin.com/company/immutable-studio",
+                    "https://www.facebook.com/profile.php?id=61557552873479"
+                  ] 
+                }
+              `}
+            </script>
           </Helmet>
         </HelmetProvider>
       </div>
