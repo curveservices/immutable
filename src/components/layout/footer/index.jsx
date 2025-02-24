@@ -21,7 +21,7 @@ const Footer = () => {
                 <NavLink to="/">
                   <img
                     src={logo}
-                    alt="logo"
+                    alt="Immutable Studio, Custom website design services in London"
                     className="footer-logo"
                     lazyloading="true"
                   />
