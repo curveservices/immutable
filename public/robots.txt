@@ -6,5 +6,8 @@ Allow: /ai-assistants
 Allow: /packages
 Allow: /portfolio
 Allow: /about-us
-Allow: /about
 Allow: /contact
+Allow: /discovery-form
+Allow: /customer-service
+Allow: /privacy-policy
+Allow: /performance-audit-form
