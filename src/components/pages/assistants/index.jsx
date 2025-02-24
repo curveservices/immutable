@@ -54,7 +54,7 @@ const SingleAssistant = (props) => {
           </div>
           <div className="second-inner">
             <div className="text-box">
-              <h2 className="title">What to expect.</h2>
+              <h2>What to expect.</h2>
               <p>{props.secondP}</p>
             </div>
             <img
