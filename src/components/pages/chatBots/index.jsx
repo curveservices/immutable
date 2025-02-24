@@ -8,9 +8,11 @@ import Singleservices from "../../SingleService/";
 const ChatBots = () => {
   return (
     <Singleservices
+      page="ai"
       title="AI Assistants"
-      keywords="AI, AI Solutions, Chatbots, Automation, Website Development, digital agency, Immutable Studio, greenwich London, London, web design, website design, web development"
-      HeroH1="AI &amp; Automated Solutions"
+      canonicalUrl="https://immutable-studio.co.uk/services/ai-assistants"
+      keywords="AI, AI Solutions, Chatbots, ai website development in london, Website Development, immutable ai, ai web agency london, london ai agency, Immutable Studio, greenwich London, London, web design, website design, web development"
+      HeroH1="AI Automated Assistants"
       HeroP="Seeking AI solutions for your business? We can ease your
               daily work load with our latest & greatest assistants. Our expert assistants
               will complete daily tasks using cutting-edge AI
@@ -22,6 +24,7 @@ const ChatBots = () => {
               These helpful little workers will complete daily tasks, providing their services around the clock."
       p="Our range of assitants help in your day to day work helping to relieve pain points within your busness"
       img={img}
+      alt="AI assistants, ai web agency london, ai website development in london, Greenwich London and South East London, UK"
       thirdH1="ASSISTANT"
       thirdP="We emphasise clear communication and robust client relationships.
               Our business model is retainer based for AI &amp; automation services. 
@@ -38,7 +41,6 @@ const ChatBots = () => {
       assistant3="Chipo"
       title3="Warehouse Manager"
       name="ChatBots"
-      page="ai"
     />
   );
 };
