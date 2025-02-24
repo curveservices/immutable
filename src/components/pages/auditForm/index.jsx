@@ -45,8 +45,7 @@ const AuditFormPage = () => {
     <>
       <section className="audit-hero">
         <div className="hero-text">
-          <Link to="https://immutable-studio.co.uk/">
-            {" "}
+          <Link to="https://www.immutable-studio.co.uk/">
             <img className="logo" src={logo} alt="immutable studio logo" />
           </Link>
           <h1 className="title">Claim Your Free Performance Audit</h1>
@@ -70,7 +69,9 @@ const AuditFormPage = () => {
                 <input
                   type="text"
                   name="name"
+                  id="name"
                   placeholder="full name"
+                  autoComplete="name"
                   required
                 />
               </div>
@@ -79,7 +80,9 @@ const AuditFormPage = () => {
                 <input
                   type="email"
                   name="email"
+                  id="email"
                   placeholder="youremail@example.com"
+                  autoComplete="email"
                   required
                 />
               </div>
@@ -88,12 +91,13 @@ const AuditFormPage = () => {
                 <input
                   type="url"
                   name="subject"
+                  id="subject"
                   placeholder="https://your-webite.com"
                   required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="source" id="source" name="source" required>
+                <label htmlFor="source" name="source" required>
                   Where Did You Find Us
                 </label>
                 <select name="source" id="source">
@@ -108,6 +112,7 @@ const AuditFormPage = () => {
                 <input
                   type="checkbox"
                   name="gdpr"
+                  id="gdpr"
                   className="checkbox"
                   required
                 />
@@ -116,6 +121,7 @@ const AuditFormPage = () => {
               <textarea
                 name="message"
                 value="Free SEO & Performance Audit"
+                id="message"
                 readOnly
                 className="subject"
               ></textarea>
@@ -139,11 +145,12 @@ const AuditFormPage = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Free Performance Audit | Web Design London | Immutable Studio
+              Free Performance Audit | Immutable Studio – Creative Web Design & AI Solutions
             </title>
+             <link rel="canonical" href="https://immutable-studio.co.uk/performance-audit-form" />
             <meta
               name="description"
-              content="Immutable Studio is a leading website development and website design agency. We build fast and responsive websites and create AI solutions for businesses."
+              content="Claim your FREE website SEO and Performance audit."
             />
             <meta
               name="keywords"
