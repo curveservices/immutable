@@ -11,7 +11,7 @@
       color: #fff;
       .text-box {
         width: 50%;
-        margin: 2rem 2rem 5rem;
+        margin: 1.5rem 2rem 5rem;
       }
     }
     .spinner {
@@ -35,7 +35,7 @@
     .featured-container {
       display: flex;
       background: #e5e6ea;
-      margin: 0rem 3rem 2rem;
+      margin: 0rem 0rem 2rem;
       padding: 2rem 4rem;
       text-align: left;
       border-radius: 10px;
@@ -51,7 +51,7 @@
         .link {
           color: #000;
           padding: 0.5rem;
-          border-radius: 10px;
+          border-radius: 5px;
           max-width: fit-content;
           transition: all 0.2s ease-in-out;
           &:hover {
@@ -63,6 +63,9 @@
       .player-wrapper {
         display: flex;
       }
+    }
+    .oposite {
+      flex-direction: row-reverse;
     }
     .container-footer {
       display: flex;
