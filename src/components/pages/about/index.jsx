@@ -93,19 +93,51 @@ const About = () => {
         </section>
       </div>
       <div>
-        <HelmetProvider>
-          <Helmet>
-            <title>About Us | Immutable Studio Web Development Agency</title>
-            <meta
-              name="description"
-              content="Our team of developers, desingers and digital content creators will help your brands online presence."
-            />
-            <meta
-              name="keywords"
-              content="Immutable studio, Greenwich London, London, Web design, website design, website development, website design agency, AI Solutions"
-            />
-          </Helmet>
-        </HelmetProvider>
+       <HelmetProvider>
+        <Helmet>
+          <title>About Us | Immutable Studio – Creative Web Design & AI Solutions</title>
+          <link rel="canonical" href="https://immutable-studio.co.uk/about-us" />
+          <meta
+            name="description"
+            content="Our team of developers and designers is dedicated to helping your brand improve its online presence with expert web design and AI solutions."
+          />
+          <meta
+            name="keywords"
+            content="Immutable studio, Greenwich London, London, Web design, website design, website development, website design agency, AI Solutions"
+          />
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Immutable Studio",
+                "url": "https://immutable-studio.co.uk",
+                "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+447980383484",
+                  "email": "hello@immutable-studio.co.uk",
+                  "contactType": "Customer Service",
+                  "areaServed": "GB",
+                  "availableLanguage": ["English"]
+                },
+                "sameAs": [
+                  "https://www.linkedin.com/company/immutable-studio",
+                  "https://www.facebook.com/profile.php?id=61557552873479",
+                  "https://www.instagram.com/immutable_studio/"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Greenwich, London",
+                  "addressLocality": "London",
+                  "postalCode": "SE10 0LW",
+                  "addressCountry": "GB"
+                }
+              }
+            `}
+          </script>
+        </Helmet>
+      </HelmetProvider>
       </div>
     </>
   );
