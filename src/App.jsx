@@ -16,38 +16,18 @@ const Contact = React.lazy(() => import("./components/pages/contact"));
 const Services = React.lazy(() => import("./components/pages/servicesPage"));
 const WebDev = React.lazy(() => import("./components/pages/webDev"));
 const ChatBots = React.lazy(() => import("./components/pages/chatBots"));
-const SocialMedia = React.lazy(
-  () => import("./components/pages/assistants/socialMedia"),
-);
-const CustomerService = React.lazy(
-  () => import("./components/pages/assistants/customerService"),
-);
-const Ecommerce = React.lazy(
-  () => import("./components/pages/assistants/ecommerce"),
-);
+const SocialMedia = React.lazy(() => import("./components/pages/assistants/socialMedia"));
+const CustomerService = React.lazy(() => import("./components/pages/assistants/customerService"));
+const Ecommerce = React.lazy(() => import("./components/pages/assistants/ecommerce"));
 const Packages = React.lazy(() => import("./components/pages/packagesPage"));
 const PrivacyPolicy = React.lazy(() => import("./components/pages/policy"));
-const FeaturedWork = React.lazy(
-  () => import("./components/pages/featuredWork"),
-);
-const ClientDiscoveryForm = React.lazy(
-  () => import("./components/pages/clientForm"),
-);
-const SeoMaintenance = React.lazy(
-  () => import("./components/pages/seoMaintenance"),
-);
-const TelehillClient = React.lazy(
-  () => import("./components/pages/clientPages/clientTelehill"),
-);
-const Morbot = React.lazy(
-  () => import("./components/pages/clientPages/clientMorfbot"),
-);
-const ViveLaCrepe = React.lazy(
-  () => import("./components/pages/clientPages/clientViveLaCrepe"),
-);
-const Garland = React.lazy(
-  () => import("./components/pages/clientPages/clientGarland"),
-);
+const FeaturedWork = React.lazy(() => import("./components/pages/featuredWork"));
+const ClientDiscoveryForm = React.lazy(() => import("./components/pages/clientForm"));
+const SeoMaintenance = React.lazy(() => import("./components/pages/seoMaintenance"));
+const TelehillClient = React.lazy(() => import("./components/pages/clientPages/clientTelehill"));
+const Morbot = React.lazy(() => import("./components/pages/clientPages/clientMorfbot"));
+const ViveLaCrepe = React.lazy(() => import("./components/pages/clientPages/clientViveLaCrepe"));
+const Garland = React.lazy(() => import("./components/pages/clientPages/clientGarland"));
 const AuditFormPage = React.lazy(() => import("./components/pages/auditForm"));
 
 const loadPageCSS = (page) => import(`./components/pages/${page}.scss`);
@@ -219,11 +199,6 @@ const router = createBrowserRouter(
       />
     </>,
   ),
-  {
-    future: {
-      v7_startTransition: true,
-    },
-  },
 );
 
 function App() {
