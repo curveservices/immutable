@@ -41,8 +41,14 @@ const Navbar = () => {
               src={mobileLogo}
               alt="Immutable Studio, Custom website design services in London."
               className="mobile-logo"
+              loading="lazy"
             />
-            <img src={logo} alt="Immutable studio, Custom website design services in London" className="logo" />
+            <img
+              src={logo}
+              alt="Immutable studio, Custom website design services in London"
+              className="logo"
+              loading="lazy"
+            />
           </div>
         </NavLink>
         <Breadcrumbs className={isScrolled ? "navbar-scroll" : ""} />
@@ -52,7 +58,7 @@ const Navbar = () => {
             className="home-link"
             title="Home page"
             aria-label="home page"
-            activeclassname="active"
+            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
@@ -66,7 +72,7 @@ const Navbar = () => {
             title="Our Services"
             aria-label="Link to our services"
             className="services-link"
-            activeclassname="active"
+            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
@@ -80,7 +86,7 @@ const Navbar = () => {
             title="Portfolio"
             aria-label="Link to portfolio"
             className="services-link"
-            activeclassname="active"
+            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
@@ -94,7 +100,7 @@ const Navbar = () => {
             title="About Us"
             aria-label="Link to about us page"
             className="about-link"
-            activeclassname="active"
+            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
