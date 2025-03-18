@@ -63,7 +63,7 @@ const WorkCard = () => {
                     style={{ width: "300px", height: "300px" }}
                   />
                   <div className="front-title">
-                    <h3 className="name">{item.name}</h3>
+                    <h4 className="name">{item.name}</h4>
                   </div>
                 </div>
                 <div
@@ -86,7 +86,6 @@ const WorkCard = () => {
                     <Button
                       text="View"
                       link={`/portfolio${item.live}`}
-                      background="var(--services-link)"
                     />
                   </div>
                 </div>
