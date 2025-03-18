@@ -9,7 +9,6 @@ import vid from "../../../assets/images/london.mp4";
 import fallback from "../../../assets/images/london.webp";
 import WorkCard from "../../cards/work";
 import LazyVideo from "../../LazyVideo";
-import ExitIntentPopup from "../../exitIntentPopUp";
 import HowitWorks from "../../howItWorks";
 import webdev from "../../../assets/images/layout.mp4";
 import meeting from "../../../assets/images/online-meeting.mp4";
@@ -50,7 +49,6 @@ const Services = () => {
   }, []);
   return (
     <>
-      <ExitIntentPopup />
       <div className="serivces-page">
         <section className="hero">
           <LazyVideo
