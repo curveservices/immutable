@@ -55,7 +55,7 @@ const Navbar = () => {
         <nav className={showNav ? "mobile-show" : ""}>
           <NavLink
             to="/"
-            className="home-link"
+            className={({ isActive }) => isActive ? 'active' : ''}
             title="Home page"
             aria-label="home page"
             activeClassname="active"
@@ -71,7 +71,7 @@ const Navbar = () => {
             to="services"
             title="Our Services"
             aria-label="Link to our services"
-            className="services-link"
+            className={({ isActive }) => isActive ? 'active' : ''}
             activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
@@ -85,7 +85,7 @@ const Navbar = () => {
             to="portfolio"
             title="Portfolio"
             aria-label="Link to portfolio"
-            className="services-link"
+            className={({ isActive }) => isActive ? 'active' : ''}
             activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
@@ -99,7 +99,7 @@ const Navbar = () => {
             to="about-us"
             title="About Us"
             aria-label="Link to about us page"
-            className="about-link"
+            className={({ isActive }) => isActive ? 'active' : ''}
             activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}

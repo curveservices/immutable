@@ -25,15 +25,15 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
+    .active {
+        border-bottom: 2px solid #fff;
+      }
     a {
       text-align: center;
       line-height: 40px;
       font-size: 1.1rem;
       text-decoration: none;
       transition: all 0.3s;
-      &:hover {
-        color: #000;
-      }
     }
   }
 }
@@ -68,6 +68,9 @@ header {
       width: 100%;
       background: var(--primary);
       z-index: 2;
+      .active {
+          border-bottom: none;
+        }
       .desktop-icon {
         display: none;
       }
