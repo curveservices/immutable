@@ -1,6 +1,7 @@
 .about-page {
   .hero {
     display: grid;
+    height: 84vh;
     & > * {
       grid-column: 1;
       grid-row: 1;
