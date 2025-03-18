@@ -65,7 +65,7 @@ const Home = () => {
             fallback={fallback}
           />
           <div className="text-box">
-            <h1 className="main-title">Empowing your Business with Expert</h1>
+            <h1 className="main-title">Empowering your Business with Expert</h1>
             <span className="mobile-view">Website Solutions.</span>
             <div className="typewriter">
               <Typewriter
