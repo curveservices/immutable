@@ -62,6 +62,9 @@ const WorkCard = () => {
                     loading="lazy"
                     style={{ width: "300px", height: "300px" }}
                   />
+                  <div className="front-title">
+                    <h3 className="name">{item.name}</h3>
+                  </div>
                 </div>
                 <div
                   className="flip-card-back"
@@ -102,8 +105,8 @@ const WorkCard = () => {
           </p>
         </div>
         <div className="btn-container">
-          <Button text="Our Portfolio" link="portfolio" />
-          <Button text="Discovery Form" link="discovery-form" />
+          <Button text="Our Portfolio" link="/portfolio" />
+          <Button text="Discovery Form" link="/discovery-form" />
         </div>
       </div>
     </>
