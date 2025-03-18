@@ -9,23 +9,23 @@
   }
   .contact-form {
     width: 100%;
-    padding: 2rem 2rem;
-    background: var(--second);
+    padding: 2rem 0rem;
     border-radius: 5px;
     animation: fadeInUp 1.5s;
     .form-group {
       position: relative;
-      margin-bottom: 1.25rem;
+      margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
 
       label {
         position: absolute;
-        top: -10px;
+        top: -12px;
         left: 15px;
         padding: 0 5px;
         font-size: 0.9rem;
-        background: var(--second);
+        border-radius: 5px 5px 0px 0px;
+        background: #fff;
         color: #2c5fe1;
         z-index: 9999;
         opacity: 0;
@@ -39,7 +39,7 @@
         max-width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
-        border-radius: 10px;
+        border-radius: 5px;
         font-size: 1rem;
         opacity: 0;
         animation: fadeInUp 1s 1s;
