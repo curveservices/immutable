@@ -124,10 +124,10 @@ const ExitIntentPopup = () => {
                 Website URL
               </label>
               <input
-                type="text"
+                type="url"
                 name="subject"
                 id="subject"
-                placeholder="www.yourwebite.com"
+                placeholder="https://www.your-webite.com"
               />
             </div>
             <div className="form-group">
