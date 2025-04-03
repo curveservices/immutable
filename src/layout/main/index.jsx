@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Navbar from "../navbar";
+import Footer from "../footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import CookieConsent from "../cookiePopup";
+import CookieConsent from "../../components/cookiePopup";
 import "./index.scss";
 
 const Layout = () => {

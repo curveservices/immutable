@@ -10,7 +10,7 @@ import "./App.scss";
 
 const About = React.lazy(() => import("./pages/about"));
 const Home = React.lazy(() => import("./pages/home"));
-const Layout = React.lazy(() => import("./components/layout"));
+const Layout = React.lazy(() => import("./layout/main"));
 const NotFound = React.lazy(() => import("./pages/404"));
 const Contact = React.lazy(() => import("./pages/contact"));
 const Services = React.lazy(() => import("./pages/servicesPage"));

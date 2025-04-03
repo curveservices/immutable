@@ -9,10 +9,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import Breadcrumbs from "../../breadcrumbs";
-import Button from "../../button";
-import logo from "../../../assets/images/logo-desktop.webp";
-import mobileLogo from "../../../assets/images/1-removebg-preview.webp";
+import Breadcrumbs from "../../components/breadcrumbs";
+import Button from "../../components/button";
+import logo from "../../assets/images/logo-desktop.webp";
+import mobileLogo from "../../assets/images/1-removebg-preview.webp";
 import "./index.scss";
 
 const Navbar = () => {
