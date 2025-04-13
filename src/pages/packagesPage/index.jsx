@@ -7,7 +7,7 @@ const Packages = () => {
     <Singleservices
       page = "packages"
       title="Packages"
-      canonicalUrl="https://immutable-studio.co.uk/services/packages"
+      canonicalUrl="https://www.immutable-studio.co.uk/services/packages"
       keywords="website design agency, business packages , web development, AI solutions, chatbots, workflow automation, digital agency, Immutable Studio, web design"
       HeroH1="Business Packages"
       HeroP="Are you seeking an all-in-one website solution? We build comprhensive
