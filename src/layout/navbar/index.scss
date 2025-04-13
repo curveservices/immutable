@@ -88,11 +88,11 @@ header {
       &.mobile-show {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        align-items: flex-start;
         gap: 1rem;
-        padding: 5rem;
+        padding: 6rem 3rem 0;
         height: 100vh;
-        animation: bounceInRight 1s;
+        animation: slideInRight 0.5s;
         .text {
           font-size: 18px;
         }
