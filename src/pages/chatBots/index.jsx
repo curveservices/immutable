@@ -10,7 +10,7 @@ const ChatBots = () => {
     <Singleservices
       page="ai"
       title="AI Assistants"
-      canonicalUrl="https://immutable-studio.co.uk/services/ai-assistants"
+      canonicalUrl="https://www.immutable-studio.co.uk/services/ai-assistants"
       keywords="AI, AI Solutions, Chatbots, ai website development in london, Website Development, immutable ai, ai web agency london, london ai agency, Immutable Studio, greenwich London, London, web design, website design, web development"
       HeroH1="AI Automated Assistants"
       HeroP="Seeking AI solutions for your business? We can ease your
