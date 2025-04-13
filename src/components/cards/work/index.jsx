@@ -5,7 +5,10 @@ import Button from "../../button";
 import { NavLink } from "react-router-dom";
 import "./index.scss";
 
-const WorkCard = () => {
+const WorkCard = (props) => {
+  const cardStyle = {
+    background: props.background
+  }
   const [card, setCard] = useState([]);
 
   const fetchData = async () => {
@@ -38,32 +41,32 @@ const WorkCard = () => {
   }, []);
   return (
     <>
-      <div className="text-container">
-        <h2 className="title">EXPLORE OUR PORTFOLIO</h2>
-        <div className="textBox">
-          <p>
-            Signing off on a new website is always a moment of pride and
-            satisfaction for us. With each project, we take great care to
-            understand our clients' unique needs and deliver tailored solutions.
-            Here are some of our featured projects.
-          </p>
-        </div>
+      <div className="profile-text">
+
+          <i className="subtitle">our portfolio</i>
+          <h2 className="main-title">Explore Our Portfolio</h2>
+            <p>
+              Signing off on a new website is always a moment of pride and
+              satisfaction for us. With each project, we take great care to
+              understand our clients' unique needs and deliver tailored solutions.
+              Here are some of our featured projects.
+            </p>
+
       </div>
       <div className="card-container">
         {card.map((item) => {
           return (
             <div className="flip-card" key={item.id}>
               <div className="flip-card-inner">
-                <div className="flip-card-front">
+                <div className="flip-card-front" style={cardStyle}>
                   <img
                     src={item.img}
                     alt={`${item.name} featured images`}
                     className="card-image"
                     loading="lazy"
-                    style={{ width: "300px", height: "300px" }}
                   />
                   <div className="front-title">
-                    <h4 className="name">{item.name}</h4>
+                    <h3 className="name">{item.name}</h3>
                   </div>
                 </div>
                 <div
@@ -75,7 +78,6 @@ const WorkCard = () => {
                     alt={`${item.name} Home page`}
                     className="card-back-image"
                     loading="lazy"
-                    style={{ width: "300px", height: "300px" }}
                   />
                   <h1 className="name">{item.name}</h1>
                   <NavLink to={`/services/${item.productLink}`}>
@@ -86,6 +88,8 @@ const WorkCard = () => {
                     <Button
                       text="View"
                       link={`/portfolio${item.live}`}
+                      background='var(--third-bg)'
+                      color="#fff"
                     />
                   </div>
                 </div>
@@ -94,19 +98,26 @@ const WorkCard = () => {
           );
         })}
       </div>
-      <div className="text-container">
+      <div className="bottom-container">
         <div className="textBox">
-          <p>
-            As our client base continues to expand, we are excited to showcase
+          <i className="subtitle" style={{textAlign: "center"}}>
+            As our client base continues to expand
+          </i>
+          <p>We are excited to showcase
             the diverse and innovative work we do. Each project that we complete
             represents a commitment to excellence and our passion for helping
-            businesses thrive online.
-          </p>
-        </div>
-        <div className="btn-container">
+            businesses thrive online.</p>
+           <div className="btn-container">
           <Button text="Our Portfolio" link="/portfolio" />
-          <Button text="Discovery Form" link="/discovery-form" />
+          <Button
+            text="Discovery Form"
+            link="/discovery-form"
+            background="var(--third-bg)"
+            color="#fff"
+          />
         </div>
+        </div>
+       
       </div>
     </>
   );
