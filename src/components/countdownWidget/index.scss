@@ -1,0 +1,123 @@
+/* Modal Content Styling */
+.christmas-banner-modal {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    padding: 0.25rem 4.8rem;
+    background: var(--main);
+    animation: fadeIn 0.5s forwards;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+    .christmas-banner-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        .banner-text {
+            font-size: 16px;
+        }
+        .banner-right {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 0.6rem;
+        }
+        .time-unit {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .time-value {
+            font-size: 1.6rem;
+            font-weight: bold;
+            background: #fff;
+            color: #000;
+            border-radius: 5px;
+            width: fit-content;
+            padding: 5px;
+        }
+        .time-label {
+            font-size: 0.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0px;
+        }
+    }
+    .close-button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: bold;
+        cursor: pointer;
+        right: 25px;
+    }
+
+    .close-button:hover {
+        color: var(--third-bg);
+    }      
+}
+@media screen and (max-width: 768px) {
+    .christmas-banner-modal {
+        padding: 1rem 0.5rem;
+        bottom: 0rem;
+        .christmas-banner-content {
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 0rem;
+            .banner-text {
+                font-size: 12px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .banner-right {
+                gap: 0.5rem;
+            }
+            .time-value {
+                font-size: 0.75rem;
+                padding: 10px;
+            }
+            .time-label {
+                font-weight: bold;
+                padding-top: 5px;
+            }
+            .close-button {
+                position: absolute;
+                font-size: 14px;
+                top: 10px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .christmas-banner-modal {
+        padding: 2rem 2rem;
+        margin-bottom: 5rem;
+        .christmas-banner-content {
+            flex-direction: column;
+            gap: 1rem;
+            .banner-right {
+                gap: 4rem;
+            }
+            .time-value {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+            .time-label {
+                font-weight: bold;
+                padding-top: 5px;
+            }
+        }
+    }
+    
+}
