@@ -20,16 +20,16 @@
 
       label {
         position: absolute;
-        top: -12px;
-        left: 15px;
-        padding: 0 5px;
+        top: -20px;
+        left: 0px;
+        padding: 0 10px;
         font-size: 0.9rem;
         border-radius: 5px 5px 0px 0px;
         background: #fff;
         color: #2c5fe1;
         z-index: 9999;
         opacity: 0;
-        animation: fadeInUp 1s 1s forwards;
+        animation: fadeInUp 1s 0.5s forwards;
         clear: both;
       }
       input,
@@ -38,17 +38,15 @@
         font-family: Arial, Helvetica, sans-serif;
         max-width: 100%;
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #fff;
         border-radius: 5px;
         font-size: 1rem;
         opacity: 0;
-        animation: fadeInUp 1s 1s;
-        animation-fill-mode: forwards;
+        animation: fadeInUp 1s forwards;
         clear: both;
-
-        & :focus {
-          border: var(--primary);
-        }
+      }
+      &:focus {
+        border: 2px solid var(--main);
       }
     }
     .btn-container {
@@ -85,7 +83,7 @@
 }
 .info-map {
   position: absolute;
-  background: #000;
+  background: var(--primary);
   top: 120px;
   right: 100px;
   z-index: 99999;
@@ -96,8 +94,7 @@
   font-size: 18px;
   font-weight: 300;
   opacity: 0;
-  animation: fadeIn 2s 2s;
-  animation-fill-mode: forwards;
+  animation: fadeIn 2s 2s forwards;
   span {
     font-size: 14px;
     display: block;

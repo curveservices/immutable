@@ -168,7 +168,7 @@ const Contact = () => {
        <HelmetProvider>
           <Helmet>
             <title>Contact Us | Immutable Studio – Creative Web Design & AI Solutions</title>
-            <link rel="canonical" href="https://immutable-studio.co.uk/contact" />
+            <link rel="canonical" href="https://www.immutable-studio.co.uk/contact" />
             <meta
               name="description"
               content="Get expert website design, maintenance & AI solutions from Immutable Studio. Contact us today and bring your ideas to life!"
@@ -181,7 +181,7 @@ const Contact = () => {
                   "mainEntity": {
                     "@type": "Organization",
                     "name": "Immutable Studio",
-                    "url": "https://immutable-studio.co.uk",
+                    "url": "https://www.immutable-studio.co.uk",
                     "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                     "contactPoint": {
                       "@type": "ContactPoint",
@@ -192,7 +192,7 @@ const Contact = () => {
                       "availableLanguage": ["English"]
                     }
                   },
-                  "url": "https://immutable-studio.co.uk/contact"
+                  "url": "https://www.immutable-studio.co.uk/contact"
                 }
               `}
             </script>
