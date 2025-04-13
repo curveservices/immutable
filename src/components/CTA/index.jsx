@@ -17,7 +17,12 @@ const CallToAction = () => {
           link="https://calendly.com/immutable-studio/website-consultancy"
           target="_blank"
         />
-        <Button text="Discovery Form" link="/discovery-form" />
+        <Button
+          text="Discovery Form"
+          link="/discovery-form"
+          background="var(--third-bg)"
+          color="#fff"
+        />
       </div>
     </div>
   );

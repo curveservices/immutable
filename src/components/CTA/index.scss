@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   background: var(--second);
-  box-shadow: var(--global);
   .text-container {
     padding: 2rem 1rem;
     width: 50%;
@@ -29,13 +28,12 @@
   .cta {
     flex-direction: column;
     gap: 1rem;
-    margin: 3rem 0rem 0rem;
     box-shadow: none;
     .text-container {
-      padding: 0 1rem;
+      padding: 0 2rem;
       width: 100%;
       .cta-title {
-        padding: 1rem;
+        padding: 1rem 0;
         font-size: 1.5rem;
       }
       .cta-p {
