@@ -1,36 +1,21 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useEffect, useState } from "react";
-import morfbot from "../../assets/images/morfbot.mp4";
-import tutor from "../../assets/images/telehill.mp4";
-import garland from "../../assets/images/garland.mp4";
-import vive from "../../assets/images/vive.mp4";
 import Button from "../../components/button";
 import PriceCard from "../../components/cards/fullPrice";
 import CTA from "../../components/CTA";
 import vid from "../../assets/images/working.mp4";
 import working from "../../assets/images/working.webp";
 import LazyVideo from "../../components/LazyVideo";
-import ReactPlayer from "react-player";
-import SlideButton from "../../components/buttonSlide";
-import { Link } from "react-router-dom";
+
 import Socials from "../../components/socials";
+import PortfolioProject from "../../components/portfolioProject";
+import useFirestoreData from "../../components/useFirestoreData";
+import LoadingSpinner from '../../components/loadingSpinner';
+import GoogleReviews from "../../components/googleReviews";
 
 const FeaturedWork = () => {
-  const [firstScroll, setFirstScrolll] = useState(false);
-  const [secondScroll, setSecondScroll] = useState(false);
-  const [thirdScroll, setThirdScroll] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollFirst = window.scrollY;
-      const scrollSecond = window.scrollY;
-      const scrollThird = window.scrollY;
-      setFirstScrolll(scrollFirst > 250);
-      setSecondScroll(scrollSecond > 850);
-      setThirdScroll(scrollThird > 1300);
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+  const { cardsData, loading, error } = useFirestoreData('portfolio');
+ 
   useEffect(() => {
     import("./index.scss").catch((error) => {
       console.error("error loading css", error);
@@ -45,6 +30,8 @@ const FeaturedWork = () => {
       }
     };
   }, []);
+  if (loading) return <LoadingSpinner />;
+  if (error) return <div className="error-messsage">Error: {error}</div>;
   return (
     <>
       <div className="featured-work">
@@ -101,111 +88,7 @@ const FeaturedWork = () => {
               landscape.
             </p>
           </div>
-          <div
-            className={`featured-container ${firstScroll ? "anim" : "none"}`}
-          >
-            <div className="text-box">
-              <h2>Telegraph Hill Tutoring</h2>
-              <Link to="/services/web-development">
-                <h3 className="link">WEBSITE DEVELOPMENT</h3>
-              </Link>
-              <p>
-                We focused on creating a modern, playful, easy to understand and
-                eye-catching website, developing a visual identity to evoke
-                feelings of saftey, professionalism and, peace of mind.
-              </p>
-              <SlideButton
-                text="Read case study"
-                link="telegraph-hill-tutoring"
-              />
-            </div>
-            <div className={`player-wrapper ${firstScroll ? "anim" : "none"}`}>
-              <ReactPlayer
-                className="react-player"
-                url={tutor}
-                playing
-                loop
-                playsinline
-              />
-            </div>
-          </div>
-          <div
-            className={`featured-container oposite ${secondScroll ? "anim" : "none"}`}
-          >
-            <div className="text-box">
-              <h2>MorfBot</h2>
-              <Link to="/services/web-development">
-                <h3 className="link">WEBSITE DEVELOPMENT</h3>
-              </Link>
-              <p>
-                We join forces with MorfBot to redesign their website. We
-                created a professionl eye-catching site, built with React.js for
-                scalability. Using their colour palette and images, evoking a
-                serious tech feel.
-              </p>
-              <SlideButton text="Read case study" link="morfbot" />
-            </div>
-            <div className={`player-wrapper oposite-video ${secondScroll ? "anim" : "none"}`}>
-              <ReactPlayer
-                className="react-player "
-                url={morfbot}
-                playing
-                loop
-                playsinline
-              />
-            </div>
-          </div>
-          <div
-            className={`featured-container ${thirdScroll ? "anim" : "none"}`}
-          >
-            <div className="text-box">
-              <h2>Garland Surgical</h2>
-              <Link to="/services/ai-assistants">
-                <h3 className="link">AI ASSISTANT</h3>
-              </Link>
-              <p>
-                We created an AI chat assistant, fully trained on company
-                details and the knowledge of Garlands website. Built on
-                BotPress, the assistant is available 24/7, answering FAQ's to
-                alleviate the Garland team.
-              </p>
-              <SlideButton text="Read case study" link="garland-surgical" />
-            </div>
-            <div className={`player-wrapper ${thirdScroll ? "anim" : "none"}`}>
-              <ReactPlayer
-                className="react-player"
-                url={garland}
-                playing
-                loop
-                playsinline
-              />
-            </div>
-          </div>
-          <div
-            className={`featured-container oposite ${thirdScroll ? "anim" : "none"}`}
-          >
-            <div className="text-box">
-              <h2>Vive La Crepe</h2>
-              <Link to="/services/web-development">
-                <h3 className="link">WEBSITE DEVELOPMENT</h3>
-              </Link>
-              <p>
-                We focused on creating a modern, playful, easy to understand and
-                eye-catching website, developing a visual identity to evoke
-                feelings of saftey, professionalism and, peace of mind.
-              </p>
-              <SlideButton text="Read case study" link="vive-la-crepe" />
-            </div>
-            <div className={`player-wrapper ${thirdScroll ? "anim" : "none"}`}>
-              <ReactPlayer
-                className="react-player"
-                url={vive}
-                playing
-                loop
-                playsinline
-              />
-            </div>
-          </div>
+          <PortfolioProject cardsData={cardsData}/>
           <div className="container-footer">
             <h2>Fill Out Our Client Discovery Form</h2>
             <p>
@@ -222,18 +105,28 @@ const FeaturedWork = () => {
             </div>
           </div>
         </section>
-        <section className="featured">
-         
-              <div className="text-box">
-                <i className="subtitle">Transparent Pricing</i>
-                <h2 className="main-title">your starting prices</h2>
-                <p>At the heart of what we do is a commitment to transparency and building strong, lasting relationships with our clients. We believe clear communication and trust are key to successful partnerships, and we’re here to support you every step of the way.</p>
-                <p>Our pricing is straightforward, with no hidden fees—just honest, reliable services tailored to your goals. We understand the importance of budgeting, especially for growing businesses, so our packages are designed to scale with you as your needs evolve.</p>
-              </div>
-                <PriceCard name="pricing" color="#fff" link="/discovery-form" />
-                <div className="text-box">
-                </div>
+        <section className="featured"> 
+          <div className="text-box">
+            <i className="subtitle">Transparent Pricing</i>
+            <h2 className="main-title">our starting prices</h2>
+            <p>At the heart of what we do is a commitment to transparency and building strong, lasting relationships with our clients. We believe clear communication and trust are key to successful partnerships, and we’re here to support you every step of the way.</p>
+            <p>Our pricing is straightforward, with no hidden fees—just honest, reliable services tailored to your goals. We understand the importance of budgeting, especially for growing businesses, so our packages are designed to scale with you as your needs evolve.</p>
+          </div>
+          <PriceCard name="pricing" color="#fff" link="/discovery-form" />
+            <div className="text-box">
+            </div>
         </section>
+          <div className={`forth-section`}>
+              <GoogleReviews />
+              <div className="subtitle" style={{ textAlign: "center", paddingBottom: "2rem" }}>
+                <i>Stay Up To Date And Follow Us!</i>
+              </div>
+              <Socials
+                fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                lilink="https://www.linkedin.com/company/21439623"
+                instalink="https://www.instagram.com/immutable_studio/"
+              />
+            </div>
         <section className="cta">
           <CTA />
         </section>
