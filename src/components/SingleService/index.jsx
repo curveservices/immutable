@@ -70,22 +70,65 @@ const Singleservices = (props) => {
           </div>
         </section>
         <section className="second-section">
-          <div className="secondInner">
-            <div className={`${second ? "anim-second" : "second-none"}`}>
-              <h2>{props.secondH1}</h2>
-              <p>{props.secondP}</p>
-              <p>{props.p}</p>
+          <div className="second-inner">
+            <div className="top-container">
+              <div className="second-text">
+                <i className="subtitle">Web Development</i>
+                <h2 className="mian-title">{props.secondH1}</h2>
+                <p>{props.secondP}</p>
+                <p>{props.p}</p>
+              </div>
+              <div className="image-container">
+                <div className="square-shape"></div>
+                <img src={props.img} alt={props.alt} className="image" style={{marginBottom: '60px'}} />
+                <img src={props.img2} alt={props.alt} className="image" style={{ marginTop: '60px' }} />
+                <div className="circle-shape"></div>
+              </div>
             </div>
-            <img
-              src={props.img}
-              alt={props.alt}
-              className={`${second ? "anim-second-img" : "second-none"}`}
+          </div>
+          {(!aiPage && (webdevPage || maintenancePage || packagePage)) && (
+        <div className="howItWorks">
+          <div className="subtitle">
+            <i>Our Services</i>
+          </div>
+          <div className={`${third ? "anim-third" : "third-none"}`}>
+            <HowitWorks
+              title="How it works"
+              mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
+                    every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
+              card1Gif={meeting}
+              card1Title="Discovery Call"
+              card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
+                        your projects needs."
+              link1="https://calendly.com/immutable-studio/website-consultancy"
+              text1="book a call"
+              card2Gif={design}
+              card2Title="Proposal and Design"
+              card2P="Once we fully understand your project a proposal is drawn up. We then start on design, we will create wireframe UI/UX designs
+                        for approval."
+              link2="/portfolio"
+              text2="our clients"
+              card3Gif={webdev}
+              card3Title="Draft & Completion"
+              card3P="As soon as the design is approved development begins. A draft will hosted for you to approve. Once approved your 
+                      project is ready for completion"
+              link3="/contact"
+              text3="contact us"
+              card4Gif={chatbot}
+              card4Title="Ongoing Support"
+              card4P="We offer ongoing support with hosting, website maintenance and SEO development. Our support gives you peace-of-mind, we'll be
+                on hand to help."
+              link4="seo-website-maintenance"
+              text4="maintenance & SEO"
+              text="Explore our Portfolio"
+              link="/portfolio"
             />
           </div>
-        </section>
+        </div>
+        )}
         {aiPage && (
           <>
-          <section className="ai-section">
+          <div className="ai-section">
             <div className="subtitle">
               <i>Your AI Helpers</i>
             </div>
@@ -126,8 +169,8 @@ const Singleservices = (props) => {
                 </div>
               </div>
             </div>
-          </section>
-          <section className="howItWorks">
+          </div>
+          <div className="howItWorks">
           <div className="subtitle">
             <i>Our Services</i>
           </div>
@@ -163,52 +206,14 @@ const Singleservices = (props) => {
               link="/portfolio"
             />
           </div>
-          </section>
+          </div>
           </>
         )}
-        {(!aiPage && (webdevPage || maintenancePage || packagePage)) && (
-        <section className="howItWorks">
-          <div className="subtitle">
-            <i>Our Services</i>
-          </div>
-          <div className={`${third ? "anim-third" : "third-none"}`}>
-            <HowitWorks
-              title="How it works"
-              mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
-                    every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
-              card1Gif={meeting}
-              card1Title="Discovery Call"
-              card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
-                        your projects needs."
-              link1="https://calendly.com/immutable-studio/website-consultancy"
-              text1="book a call"
-              card2Gif={design}
-              card2Title="Proposal and Design"
-              card2P="Once we fully understand your project a proposal is drawn up. We then start on design, we will create wireframe UI/UX designs
-                        for approval."
-              link2="/portfolio"
-              text2="our clients"
-              card3Gif={webdev}
-              card3Title="Draft & Completion"
-              card3P="As soon as the design is approved development begins. A draft will hosted for you to approve. Once approved your 
-                      project is ready for completion"
-              link3="/contact"
-              text3="contact us"
-              card4Gif={chatbot}
-              card4Title="Ongoing Support"
-              card4P="We offer ongoing support with hosting, website maintenance and SEO development. Our support gives you peace-of-mind, we'll be
-                on hand to help."
-              link4="seo-website-maintenance"
-              text4="maintenance & SEO"
-              text="Explore our Portfolio"
-              link="/portfolio"
-            />
-          </div>
         </section>
-        )}
-        <section className="thirdSection">
-          <div className="thirdInner">
-            <div className="thirdTextBox">
+        
+        <section className="third-section">
+          <div className="third-inner">
+            <div className="text-box">
               <h2>OUR {props.thirdH1} PRICES</h2>
               <p>{props.thirdP}</p>
             </div>

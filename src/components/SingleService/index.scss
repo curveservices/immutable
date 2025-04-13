@@ -1,43 +1,22 @@
 .single-service {
+  .hero {
+    padding: 6rem 0 0 4.8rem !important;
+  }
   .inner-hero {
     display: flex;
     color: #fff;
     .text-box {
-      padding: 6rem 0 0 4.8rem;
+      padding-bottom: 4.8rem;
     }
     .gif {
+      position: relative;
+      bottom: 8rem;
       width: 650px;
       animation: fadeIn 4s forwards;
     }
     .btn-container {
       justify-content: flex-start;
     }
-  }
-}
-.second-section {
-  background: var(--second);
-  box-shadow: var(--global);
-  .secondInner {
-    display: flex;
-    margin: 0rem 1rem;
-    padding: 2rem;
-    min-height: 75vh;
-  }
-  .anim-second {
-    animation: fadeInLeft 2s forwards;
-    width: 50%;
-    padding: 3rem;
-    p {
-      animation: none;
-    }
-  }
-  .second-none {
-    display: none;
-  }
-  .anim-second-img {
-    animation: fadeIn 4s forwards;
-    width: 50%;
-    padding: 1rem;
   }
 }
 .ai-section {
@@ -106,9 +85,7 @@
   }
 }
 .howItWorks {
-  margin-top: 8rem;
   padding-bottom: 4rem;
-  background: var(--second);
   .anim-third {
     animation: fadeIn 1.5s forwards;
     .steps-container {
@@ -133,18 +110,9 @@
 .third-none {
   opacity: 0;
 }
-.thirdInner {
-  padding: 2rem 0;
-}
-.thirdTextBox {
-  margin: 3rem 3rem 0;
-  text-align: center;
-  padding: 0 8rem;
-  color: #fff;
-}
 .contentAnim {
   animation: fadeInUp 1s forwards;
-  margin: 2rem 2rem 6rem;
+  margin: 0rem 0rem 6rem;
 }
 .none {
   opacity: 0;
