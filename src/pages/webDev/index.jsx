@@ -7,7 +7,7 @@ const WebDev = () => {
     <Singleservices
       page="webdev"
       title="Website Development"
-      canonicalUrl="https://immutable-studio.co.uk/services/web-development"
+      canonicalUrl="https://www.immutable-studio.co.uk/services/web-development"
       keywords="web development, web design, website design, wordpress, woo-commerce, AI solutions, chatbots, workflow automation, Immutable Studio, greenwich, London"
       HeroH1="Website Development"
       HeroP="For a competitive edge, business elevation, and broader audience
