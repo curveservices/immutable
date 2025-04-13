@@ -13,17 +13,7 @@ import "./index.scss";
 const MarqueeComp = () => {
   return (
     <div className="marquee">
-      <div className="text-content">
-        <div className="marquee-title">
-          Web design is an art. At our Web Design Agency in London we are the
-          artists.
-        </div>
-        <p className="marquee-p">
-          We use the power of technology and make bespoke websites on all major
-          CMS and framworks.
-        </p>
-      </div>
-      <Marquee pauseOnHover="true" className="marquee">
+      <Marquee pauseOnHover="true">
         <Link to="https://wordpress.com/" noreferer="true" target="_blank">
           <img
             src={wordpress}
