@@ -16,25 +16,10 @@ import ai from "../../assets/images/ai.mp4";
 import code from "../../assets/images/service-1.webp";
 import paul from "../../assets/images/packages.webp";
 import Links from "../../components/links";
+import useScrollStates from "../../components/scrollState";
 
 const Services = () => {
-  const [second, setSecond] = useState(false);
-  const [third, setThird] = useState(false);
-  const [forth, setForth] = useState(false);
-  const [fith, setFith] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollSecond = window.scrollY;
-      const scrollThird = window.scrollY;
-      const scrollForth = window.scrollY;
-      const scrollFith = window.scrollY;
-      setSecond(scrollSecond > 150);
-      setThird(scrollThird > 1600);
-      setForth(scrollForth > 2600);
-      setFith(scrollFith > 2900);
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+  const { second, third, forth } = useScrollStates();
   useEffect(() => {
     import("./index.scss").catch((error) => {
       console.error("error loading css", error);
