@@ -58,7 +58,6 @@ const Navbar = () => {
             className={({ isActive }) => isActive ? 'active' : ''}
             title="Home page"
             aria-label="home page"
-            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
@@ -72,7 +71,6 @@ const Navbar = () => {
             title="Our Services"
             aria-label="Link to our services"
             className={({ isActive }) => isActive ? 'active' : ''}
-            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
@@ -86,7 +84,6 @@ const Navbar = () => {
             title="Portfolio"
             aria-label="Link to portfolio"
             className={({ isActive }) => isActive ? 'active' : ''}
-            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
@@ -100,7 +97,6 @@ const Navbar = () => {
             title="About Us"
             aria-label="Link to about us page"
             className={({ isActive }) => isActive ? 'active' : ''}
-            activeClassname="active"
             exact="true"
             onClick={() => setShowNav(false)}
           >
