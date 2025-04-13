@@ -18,25 +18,10 @@ import HowitWorks from "../../components/howItWorks";
 import GoogleReviews from "../../components/googleReviews";
 import Socials from "../../components/socials";
 import CountdownWidget from "../../components/countdownWidget";
+import useScrollStates from "../../components/scrollState";
 
 const Home = () => {
-  const [second, setSecond] = useState(false);
-  const [third, setThird] = useState(false);
-  const [forth, setForth] = useState(false);
-  const [fith, setFith] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollSecond = window.scrollY;
-      const scrollThird = window.scrollY;
-      const scrollForth = window.scrollY;
-      const scrollFith = window.scrollY;
-      setSecond(scrollSecond > 125);
-      setThird(scrollThird > 1600);
-      setForth(scrollForth > 1500);
-      setFith(scrollFith > 3300);
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+  const {second, third, forth} = useScrollStates();
 
   useEffect(() => {
     import("./index.scss").catch((error) => {
