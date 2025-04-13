@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import Button from "../../button";
-import HowitWorks from "../../howItWorks";
-import PriceCard from "../../cards/fullPrice";
-import CallToAction from "../../CTA";
-import webdev from "../../../assets/images/layout.mp4";
-import meeting from "../../../assets/images/online-meeting.mp4";
-import chatbot from "../../../assets/images/chat-bot.mp4";
-import design from "../../../assets/images/prototype.mp4";
+import Button from "../../components/button";
+import HowitWorks from "../../components/howItWorks";
+import PriceCard from "../../components/cards/fullPrice";
+import CallToAction from "../../components/CTA";
+import webdev from "../../assets/images/layout.mp4";
+import meeting from "../../assets/images/online-meeting.mp4";
+import chatbot from "../../assets/images/chat-bot.mp4";
+import design from "../../assets/images/prototype.mp4";
 import { HelmetProvider } from "react-helmet-async";
 
 const SingleAssistant = (props) => {
