@@ -1,101 +1,13 @@
-.serivces-page {
-  .anim {
-    animation: fadeIn 1.5s forwards;
 
-    .steps-container {
-      .steps-card:nth-child(1) {
-        animation: fadeInUp 1s 0.2s backwards;
-      }
-
-      .steps-card:nth-child(2) {
-        animation: fadeInUp 1s 0.4s backwards;
-      }
-
-      .steps-card:nth-child(3) {
-        animation: fadeInUp 1s 0.6s backwards;
-      }
-
-      .steps-card:nth-child(4) {
-        animation: fadeInUp 1s 0.8s backwards;
-      }
-    }
-  }
-  .none {
-    opacity: 0;
-  }
-  .hero {
-    display: grid;
-    & > * {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .hero-inner {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      padding: 2.2rem 4rem 5rem;
-      color: #fff;
-      .text-box {
-        padding: 0rem 2rem;
-        max-width: 700px;
-        line-height: 1.5;
-      }
-      .btn-container {
-        justify-content: flex-start;
-      }
-    }
-  }
-  .second-section {
-    box-shadow: var(--global);
-    position: relative;
-    .second-inner {
-      background-color: var(--second);
-      .link-container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding: 2rem 4rem;
-        margin: 3rem 0rem 2rem;
-        animation: none;
-      }
-    }
-  }
-  .third-section {
-    .third-inner {
-      padding: 1rem 1rem;
-      text-align: center;
-      .text-box {
-        padding: 5rem 7rem 2rem;
-        color: #fff;
-      }
-      .price-title {
-        color: #fff;
-      }
-      .subtitle {
-        color: #fff;
-      }
-    }
-  }
-  .forth-section {
-    .forth-inner {
-      box-shadow: var(--global);
-      background: var(--second);
-      padding: 1rem 1rem 4rem;
-      margin-bottom: 4rem;
-      text-align: center;
-    }
-  }
-}
 @media screen and (max-width: 768px) {
   .serivces-page {
     .hero {
       height: 80vh;
       .hero-inner {
-        flex-direction: column;
-        justify-content: initial;
         padding: 0rem;
         .text-box {
           width: 100%;
+          animation: fadeIn 2s forwards;
         }
         .fadeInUp,
         .btn-container {
@@ -104,75 +16,8 @@
         }
       }
     }
-    .second-section {
-      .second-inner {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0rem 1rem;
-        .anim-second {
-          width: 100%;
-          padding: 2rem 0;
-        }
-        .link-container {
-          display: none;
-        }
-      }
-    }
-    .third-section {
-      .third-inner {
-        padding: 1rem 2rem;
-        .price-title,
-        .text-box {
-          padding: 1rem;
-        }
-      }
-    }
-    .forth-section {
-      padding: 0rem;
-      .forth-inner {
-        padding: 0rem 0.5rem 1rem;
-      }
-    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .serivces-page {
-    .hero {
-      height: 80vh;
-      .hero-inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: initial;
-        margin-bottom: 0;
-        padding: 2rem;
-        .text-box {
-          width: 100%;
-          margin: 2rem 0rem;
-          line-height: 1.4;
-        }
-        .link-container {
-          padding: 2rem 10rem 5rem;
-        }
-      }
-    }
-    .second-section {
-      .second-inner {
-        padding: 0rem 3rem;
-        gap: 2rem;
-        .link-container {
-          display: none;
-        }
-      }
-    }
-    .third-section {
-      .third-inner {
-        padding: 1rem 2rem;
-      }
-    }
-    .forth-section {
-      .forth-inner {
-        padding: 0rem 3rem 3rem;
-      }
-    }
-  }
+
 }
