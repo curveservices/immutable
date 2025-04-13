@@ -5,7 +5,6 @@ import tutor from "../../assets/images/telehill.mp4";
 import garland from "../../assets/images/garland.mp4";
 import vive from "../../assets/images/vive.mp4";
 import Button from "../../components/button";
-import CubeSpinner from "../../components/Animations/cubespinner";
 import PriceCard from "../../components/cards/fullPrice";
 import CTA from "../../components/CTA";
 import vid from "../../assets/images/working.mp4";
@@ -14,6 +13,7 @@ import LazyVideo from "../../components/LazyVideo";
 import ReactPlayer from "react-player";
 import SlideButton from "../../components/buttonSlide";
 import { Link } from "react-router-dom";
+import Socials from "../../components/socials";
 
 const FeaturedWork = () => {
   const [firstScroll, setFirstScrolll] = useState(false);
@@ -55,7 +55,14 @@ const FeaturedWork = () => {
             fallback={working}
             className="video"
           />
-          <div className="inner-hero">
+           <div className="socials">
+            <Socials
+            fblink="https://www.facebook.com/profile.php?id=61557552873479"
+            lilink="https://www.linkedin.com/company/21439623"
+            instalink="https://www.instagram.com/immutable_studio/"
+          />
+          </div>
+          <div className="hero-inner">
             <div className="text-box">
               <h1 className="title">Featured Work</h1>
               <p>
@@ -73,12 +80,14 @@ const FeaturedWork = () => {
                   link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
                   noreferer
                 />
-                <Button text="Discovery form" link="/discovery-form" />
+                <Button
+                  text="Discovery form"
+                  link="/discovery-form"
+                  background="var(--third-bg)"
+                  color="var(--second)"
+                />
               </div>
             </div>
-          </div>
-          <div className="spinner">
-            <CubeSpinner />
           </div>
         </section>
         <section className="clients">
@@ -204,22 +213,26 @@ const FeaturedWork = () => {
               ideas and prep work you need before starting your project with us.
             </p>
             <div className="btn-container">
-              <Button text="client discovery form" link="/discovery-form" />
+              <Button
+                text="client discovery form"
+                link="/discovery-form"
+                background="var(--third-bg)"
+                color="var(--second)"
+              />
             </div>
           </div>
         </section>
         <section className="featured">
-          <div className="text-box">
-            <h2>Our Starting Prices</h2>
-            <p>
-              We believe in transparency and building strong relationships with
-              our clients. We offer straightforward pricing and understand the
-              importance of budgeting. Packages can be expanded as your business
-              grows.
-            </p>
-          </div>
-
-          <PriceCard name="pricing" color="#fff" />
+         
+              <div className="text-box">
+                <i className="subtitle">Transparent Pricing</i>
+                <h2 className="main-title">your starting prices</h2>
+                <p>At the heart of what we do is a commitment to transparency and building strong, lasting relationships with our clients. We believe clear communication and trust are key to successful partnerships, and we’re here to support you every step of the way.</p>
+                <p>Our pricing is straightforward, with no hidden fees—just honest, reliable services tailored to your goals. We understand the importance of budgeting, especially for growing businesses, so our packages are designed to scale with you as your needs evolve.</p>
+              </div>
+                <PriceCard name="pricing" color="#fff" link="/discovery-form" />
+                <div className="text-box">
+                </div>
         </section>
         <section className="cta">
           <CTA />
@@ -229,7 +242,7 @@ const FeaturedWork = () => {
         <HelmetProvider>
           <Helmet>
             <title>Portfolio | Immutable Studio – Creative Web Design & AI Solutions</title>
-            <link rel="canonical" href="https://immutable-studio.co.uk/portfolio" />
+            <link rel="canonical" href="https://www.immutable-studio.co.uk/portfolio" />
             <meta
               name="description"
               content="Our featured work will help you understand what we do and who we work with. We build fast, responsive websites and create AI solutions."
@@ -241,7 +254,7 @@ const FeaturedWork = () => {
             <meta property="og:title" content="Portfolio | Immutable Studio – Creative Web Design & AI Solutions" />
             <meta property="og:description" content="Check out our featured projects showcasing fast, responsive websites and AI solutions." />
             <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
-            <meta property="og:url" content="https://immutable-studio.co.uk/portfolio" />
+            <meta property="og:url" content="https://www.immutable-studio.co.uk/portfolio" />
             <script type="application/ld+json">
               {`
                 {
@@ -252,7 +265,7 @@ const FeaturedWork = () => {
                     "@type": "Organization",
                     "name": "Immutable Studio"
                   },
-                  "url": "https://immutable-studio.co.uk/portfolio",
+                  "url": "https://www.immutable-studio.co.uk/portfolio",
                   "description": "A showcase of our featured work that includes website design and AI solutions."
                 }
               `}
