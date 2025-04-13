@@ -86,7 +86,6 @@ const PriceCard = (props) => {
               </ul>
               <div className="btnContainer">
                 <Button
-                  background="var(--primary)"
                   link={props.link}
                   text="Start now"
                 />
