@@ -1,6 +1,6 @@
 import img from "../../assets/images/maintenance.webp";
 import gif from "../../assets/images/webDev.gif";
-import ExitIntentPopup from "../../components/exitIntentPopUp";
+import ExitIntentPopup from "../../components/exitIntentPopup";
 import Singleservices from "../../components/SingleService";
 
 const SeoMaintenance = () => {
@@ -10,7 +10,7 @@ const SeoMaintenance = () => {
       <Singleservices
         page="maintenance"
         title="Website Maintenance and SEO"
-        canonicalUrl="https://immutable-studio.co.uk/services/seo-website-maintenance"
+        canonicalUrl="https://www.immutable-studio.co.uk/services/seo-website-maintenance"
         keywords="website design, website maintenance, SEO, search engine optimization, hosting, website maintenance services, digital maintenance, Greenwich, London,Immutable Studio"
         HeroH1="Website Maintenance & SEO"
         HeroP="We can look after your website for you, everything from content to SEO, and we do it all in-house. If you're looking
