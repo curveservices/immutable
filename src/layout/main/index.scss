@@ -1,13 +1,7 @@
 .app {
-  position: relative;
   will-change: contents;
   transform-style: preserve-3d;
-  font-family: "Coolvetica", Arial, Helvetica, sans-serif;
-  background-image: url("../../assets/images/blue.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  font-family: "Inter", sans-serif;
   font-display: swap;
   .home-page,
   .about-page,
@@ -19,47 +13,191 @@
   .policy-page,
   .client-discovery-form,
   .assistant-page {
-    padding: 5.5rem 0rem 4rem;
-    animation: fadeIn 2s 0.3s backwards;
+    padding: 5rem 0rem 4rem;
+    animation: fadeIn 1.5s;
     h1 {
       font-size: 48px;
       font-weight: normal;
-      font-family: "Coolvetica";
       margin: 0;
     }
     h2 {
       font-size: 40px;
       font-weight: normal;
-      font-family: "Coolvetica";
-      margin: 0;
+      margin: 1rem 0;
     }
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-      font-family: Arial, Helvetica, sans-serif;
+    h3 {
+      font-size: 24px;
       font-weight: 600;
       margin: 0;
       padding: 0.5rem 0;
-      animation: fadeInUp 2s forwards;
+    }
+    h4 {
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0.5rem 0;
+      animation: fadeIn 2.5s forwards;
+    }
+    .reverse {
+      flex-direction: row-reverse;
+      padding: 0 0 0 2rem;
+    }
+    .main-title {
+      text-transform: capitalize;
+      color: #fff;
+      animation: fadeInUp 0.2s 0.5s backwards;
     }
     .title {
-      animation: fadeInLeft 2s forwards;
+      animation: fadeInUp 0.5s 0.5s backwards;
       margin: 0;
     }
     .subtitle {
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18.75px;
-      font-weight: 900;
-      padding: 1rem 0rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: capitalize;
+      padding: 2rem 0rem 0rem;
       margin: 0;
-      color: var(--third-bg);
+      color: rgb(177, 200, 254);
     }
     .btn-container {
       display: flex;
-      margin-top: 1rem;
+      margin-top: 2rem;
       gap: 1rem;
-      animation: fadeInUp 2s forwards;
+    }
+    .hero {
+      display: grid;
+      color: #fff;
+      height: 88vh;
+      padding: 6rem 4.8rem 0;
+      &>* {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .mobile-view {
+        display: none;
+      }
+      .text-box {
+        width: 55%;
+        animation: fadeIn 1.2s forwards;
+      }
+      .socials {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        animation: fadeInRight 1.5s forwards;
+        .iconList {
+          flex-direction: column;
+          padding-bottom: 10rem;
+        }
+      }
+      .hero-inner {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10rem;
+        position: relative;
+        color: #fff;
+
+        .text-box {
+          width: 50%;
+        }
+        .btn-container {
+          justify-content: left;
+        }
+      }
+    }
+    .second-section {
+      position: relative;
+      .second-inner {
+        color: #fff;
+        background: var(--second-section);
+        .top-container {
+          display: flex;
+          justify-content: space-between;
+          padding: 3rem 4.8rem 5rem;
+          .second-text {
+            margin: 0;
+            padding-right: 2rem;
+            width: 50%;
+          }
+          .image-container {
+            display: flex;
+            position: relative;
+            gap: 1rem;
+            padding-top: 2rem;
+            .image {
+              max-width: 240px;
+              height: 350px;
+              object-fit: cover;
+              border-radius: 5px;
+              opacity: 0.9;
+              box-shadow: var(--box);
+              filter: brightness(0.9);
+            }
+            .square-shape {
+              position: absolute;
+              right: -3em;
+              top: 0;
+              z-index: -1;
+              width: 150px;
+              height: 150px;
+              opacity: 0.7;
+              background-image: radial-gradient(#bbd3ff 2px, transparent 2px);
+              background-size: 16px 16px;
+            }
+            .circle-shape {
+              position: absolute;
+              left: -2.5rem;
+              bottom: -1rem;
+              z-index: -1;
+              width: 150px;
+              height: 150px;
+              opacity: 0.7;
+              background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) 0.8px, var(--third-bg) 1.6px, var(--third-bg) 3px, rgba(255, 255, 255, 0) 3.8px, rgb(255 0 0 / 0%) 10px);
+              border-radius: 100px;
+            }
+          }
+        }
+      }
+    }
+    .third-section {
+      background: var(--main);
+      padding: 3rem 4.8rem;
+      .text-box {
+        padding-bottom: 2rem;
+        color: #fff;
+        p {
+          padding: 1rem 4rem 0 0;
+          text-align: left;
+        }
+      }
+    }
+    .forth-section {
+      padding: 3rem 4.8rem;
+      .forth-inner {
+        background: #193563;
+      }
+    }
+    .anim {
+      animation: fadeIn 2s forwards;
+      .steps-container {
+        .steps-card {
+          animation: fadeInUp 1s backwards;
+        }
+      
+        @for $i from 1 through 10 {
+      
+          .steps-card:nth-child(#{$i}) {
+            animation-delay: #{0.4s + ($i * 0.2s)};
+          }
+        }
+      }
+    }
+    .none {
+      opacity: 0;
     }
     .stage-cube-cont,
     .wrapper {
@@ -71,6 +209,7 @@
   position: fixed;
   bottom: 15rem;
   right: 0;
+  z-index: 1;
   font-size: 28px;
   padding: 10px;
   margin: 0;
@@ -79,6 +218,7 @@
   width: 50px;
   height: 50px;
   border: none;
+  color: #000;
   box-shadow: var(--button-shadow);
   cursor: pointer;
   animation: fadeInRight 2s;
@@ -108,20 +248,87 @@
         font-size: 24px;
       }
       h3 {
-        font-size: 16px;
+        font-size: 18px;
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
+      }
+      .subtitle {
+        font-size: 20px;
       }
       .btn-container {
-        margin: 1rem 0 1.5rem;
-
+        margin: 1rem 0;
         align-items: center;
+      }
+      .hero {
+        padding: 3rem 2rem;
+        margin-bottom: 2rem;
+        .socials {
+          align-items: flex-end;
+          justify-content: flex-start;
+          .iconList {
+            flex-direction: row;
+          }
+        }
+        .text-box {
+          width: 100%;
+        }
+        .hero-inner {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          color: #fff;
+          .text-box {
+            width: 100%;
+          }
+        }
+      }
+      .second-section {
+        .second-inner {
+          .top-container {
+            flex-direction: column;
+            padding: 2rem;
+            .second-text {
+              width: 100%;
+              padding: 0;
+            }
+            .image-container {
+              justify-content: center;
+              .image {
+                width: 150px;
+                height: 225px;
+              }
+              .square-shape {
+                right: -2rem;
+              }
+              .circle-shape {
+                left: 0rem;
+              }
+            }
+          }
+        }
+      }
+      .third-section {
+        padding: 2rem;
+        .text-box {
+          padding: 2rem 0;
+          color: #fff;
+          p {
+            padding-right: 0;
+          }
+        }
+      }
+      .forth-section {
+        padding: 2rem;
+
+        .forth-inner {
+          background: #193563;
+        }
       }
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .app {
     .home-page,
     .about-page,
@@ -132,24 +339,48 @@
     .client-page,
     .policy-page,
     .client-discovery-form {
-      h1 {
-        font-size: 40px;
-      }
+      .hero {
+          .mobile-view {
+            display: none;
+          }
+          .socials {
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            margin-top: 8rem;
+          }
+          .hero-inner {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+      
+            .text-box {
+              max-width: 80%;
+            }
+          }
+        }
+      .second-section {
+        .second-inner {
+          .top-container {
+            flex-direction: column;
+            padding: 2rem 4.8rem 5rem;
+            .second-text {
+              width: 100%;
+            }
 
-      h2 {
-        font-size: 28px;
-      }
-      h3 {
-        font-size: 18px;
-      }
-      p {
-        font-size: 16px;
-      }
+            .image-container {
+              justify-content: center;
+              .square-shape {
+                right: 7rem;
+                top: 20px;
+              }
 
-      .btn-container {
-        margin: 1rem 0 1.5rem;
-
-        align-items: center;
+              .circle-shape {
+                left: 8rem;
+              }
+            }
+          }
+        }
       }
     }
   }

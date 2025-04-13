@@ -32,6 +32,10 @@ const Layout = () => {
     <>
       <Navbar />
       <main className="app">
+        <div className="circles">
+          <div className="circle-left"></div>
+          <div className="circle-right"></div>
+        </div>
         <CookieConsent />
         <Outlet />
       </main>
