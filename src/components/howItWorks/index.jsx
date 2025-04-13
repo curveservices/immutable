@@ -6,11 +6,7 @@ import "./index.scss";
 
 const HowitWorks = (props) => {
   return (
-    <section className="what-we-do">
-      <div className="text-box">
-        <h2 className="">{props.title}</h2>
-        <p className="main-text">{props.mainP}</p>
-      </div>
+    <div className="what-we-do">
       <div className="steps-container">
         <div className="steps-card ">
           <div className="img-outer">
@@ -102,9 +98,14 @@ const HowitWorks = (props) => {
         </div>
       </div>
       <div className="btn-container">
-        <Button text={props.text} link={props.link} />
+        <Button
+          text={props.text}
+          link={props.link}
+          background="var(--third-bg)"
+          color="#fff"
+        />
       </div>
-    </section>
+    </div>
   );
 };
 
