@@ -1,12 +1,13 @@
 :root {
   --primary: linear-gradient(to right, #064895, #2b66a7);
-  --secondary: linear-gradient(to right, #ffffff, #bbbbbb);
+  --secondary: linear-gradient(to right, #ffffff, #858585);
   --third-bg: #2d60e0;
   --main: #1b4d99;
-  --second: #f7f8ff;
+  --second-section: #193563;
+  --second: #f0f0f0;
   --services-link: radial-gradient(#6a9eda, 40%, #2d5fe1);
-  --global: 00px 10px 40px 0px rgba(0, 0, 0, 0.2);
-  --box: 0px 40px 40px 20px rgba(0, 0, 0, 0.5);
+  --global: 0px 10px 40px 0px rgba(0, 0, 0, 0.2);
+  --box: 0px 0px 10px 3px #afceff46;
   --button-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 * {
@@ -14,19 +15,35 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-#root {
-  padding-bottom: 10px;
-}
 html {
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background: var(--second-section);
 }
 body {
   margin: 0;
   letter-spacing: 2.5px;
-  line-height: 1.3;
-  background: var(--primary);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-oxs-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #454545;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--third-bg);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--second);
 }
