@@ -112,7 +112,10 @@ const GoogleReviews = () => {
   if (error) return <div>{error}</div>;
   return (
     <>
-      <h2 className="reviews-title">What Our Clients Say</h2>
+      <div className="reviews-title">
+        <i className="subtitle">5 Star Client Reviews</i>
+        <h2>What Our Clients Say</h2>
+      </div>
       <div className="google-reviews">
         <div className="header">
           <div className="header-img">
@@ -128,6 +131,7 @@ const GoogleReviews = () => {
             text="Write a review"
             link="https://www.google.com/search?hl=en-GB&gl=uk&q=Immutable+Studio,+13+Westerdale+Rd,+London+SE10+0LW&ludocid=11280482460380483345&lsig=AB86z5VH8Q02r_EzWpOFhC9Fc1wg#lrd=0x47d8a928abed5323:0x9c8c5307fa00cf11,3"
             background="var(--third-bg)"
+            color="#fff"
             target="_blank"
           />
         </div>
