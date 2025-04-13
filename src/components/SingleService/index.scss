@@ -1,13 +1,12 @@
 .single-service {
   .inner-hero {
     display: flex;
-    padding-left: 6rem;
     color: #fff;
     .text-box {
-      padding: 2rem 0rem;
+      padding: 6rem 0 0 4.8rem;
     }
     .gif {
-      width: 600px;
+      width: 650px;
       animation: fadeIn 4s forwards;
     }
     .btn-container {

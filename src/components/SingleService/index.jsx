@@ -61,6 +61,8 @@ const Singleservices = (props) => {
                   target="_blank"
                   text="book a call"
                   link="https://calendly.com/immutable-studio/website-consultancy"
+                  background="var(--third-bg)"
+                  color="var(--second)"
                 />
               </div>
             </div>
