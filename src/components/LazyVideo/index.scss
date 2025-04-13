@@ -22,8 +22,8 @@
   left: 0;
   width: 100%;
   height: auto;
-  min-height: 120vh;
-  opacity: 0.5;
+  min-height: 110vh;
+  opacity: 0.4;
   object-fit: cover;
   transition: opacity 0.5s ease;
   &.loading {
@@ -38,6 +38,5 @@
   .fallback {
     object-fit: cover;
     width: 100%;
-    height: auto;
   }
 }
