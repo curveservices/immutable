@@ -147,7 +147,7 @@ const AuditFormPage = () => {
             <title>
               Free Performance Audit | Immutable Studio – Creative Web Design & AI Solutions
             </title>
-             <link rel="canonical" href="https://immutable-studio.co.uk/performance-audit-form" />
+             <link rel="canonical" href="https://www.immutable-studio.co.uk/performance-audit-form" />
             <meta
               name="description"
               content="Claim your FREE website SEO and Performance audit."
