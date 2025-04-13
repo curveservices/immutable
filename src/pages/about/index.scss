@@ -1,60 +1,29 @@
 .about-page {
-  .hero {
-    display: grid;
-    height: 84vh;
-    & > * {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .inner-hero {
-      position: relative;
-      padding: 1rem 4rem;
-      color: #fff;
-      .cube-container {
-        width: 120px;
-        top: 45%;
-        right: 5%;
-        opacity: 0.5;
-      }
-      .text-box {
-        width: 70%;
-        margin: 1.5rem 2rem;
+  .second-section {
+      .second-inner {
+        position: relative;
+        background: var(--second);
+        box-shadow: var(--global);
+        
+        padding: 0 4rem 4rem;
+  
         .title {
-          animation: fadeInLeft 2s forwards;
+          text-align: center;
+          margin: 0;
         }
-        .social-container {
-          display: flex;
-          margin: 1rem 0;
-          animation: fadeInUp 2s forwards;
+  
+        .contentAnim {
+          margin-top: 0rem;
+          animation: fadeIn 1s forwards;
+        }
+  
+        .none {
+          opacity: 0;
         }
       }
-      .btn-container {
-        justify-content: flex-start;
-      }
     }
-  }
 }
-.second-section {
-  .second-inner {
-    position: relative;
-    background: var(--second);
-    box-shadow: var(--global);
-    margin: 2rem 0rem 4rem;
-    padding: 0 4rem 4rem;
-    .title {
-      text-align: center;
-      margin: 0;
-      padding: 3rem 5rem;
-    }
-    .contentAnim {
-      margin-top: 0rem;
-      animation: fadeIn 1s forwards;
-    }
-    .none {
-      opacity: 0;
-    }
-  }
-}
+
 @media screen and (max-width: 768px) {
   .about-page {
     .hero {

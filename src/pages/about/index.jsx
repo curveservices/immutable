@@ -46,8 +46,14 @@ const About = () => {
             type="video/mp4"
             className="video"
           />
-          <div className="inner-hero">
-            <StaticCubes />
+          <div className="socials">
+                <Socials
+                  fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                  lilink="https://www.linkedin.com/company/21439623"
+                  instalink="https://www.instagram.com/immutable_studio/"
+                />
+              </div>
+          <div className="hero-inner">
             <div className="text-box">
               <h1 className="title">About Us</h1>
               <p>
@@ -61,13 +67,6 @@ const About = () => {
                 marketing and strategies. We are passionate about tech, AI and
                 problem solving
               </p>
-              <div className="social-container">
-                <Socials
-                  fblink="https://www.facebook.com/profile.php?id=61557552873479"
-                  lilink="https://www.linkedin.com/company/21439623"
-                  instalink="https://www.instagram.com/immutable_studio/"
-                />
-              </div>
               <div className="btn-container">
                 <Button link="/contact" text="Contact us" />
                 <Button
@@ -75,6 +74,8 @@ const About = () => {
                   noreferer
                   text="Book a call"
                   target="_blank"
+                  background="var(--third-bg)"
+                  color="var(--second)"
                 />
               </div>
             </div>
@@ -82,6 +83,7 @@ const About = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
+            <div className="subtitle"><i>About us</i></div>
             <h2 className="title">MEET THE TEAM</h2>
             <div className={`${second ? "contentAnim" : "none"}`}>
               <TeamCard />
@@ -96,7 +98,7 @@ const About = () => {
        <HelmetProvider>
         <Helmet>
           <title>About Us | Immutable Studio – Creative Web Design & AI Solutions</title>
-          <link rel="canonical" href="https://immutable-studio.co.uk/about-us" />
+          <link rel="canonical" href="https://www.immutable-studio.co.uk/about-us" />
           <meta
             name="description"
             content="Our team of developers and designers is dedicated to helping your brand improve its online presence with expert web design and AI solutions."
@@ -111,7 +113,7 @@ const About = () => {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "Immutable Studio",
-                "url": "https://immutable-studio.co.uk",
+                "url": "https://www.immutable-studio.co.uk",
                 "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                 "contactPoint": {
                   "@type": "ContactPoint",
