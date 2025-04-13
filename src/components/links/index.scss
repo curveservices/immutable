@@ -1,56 +1,81 @@
 .link-container {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  gap: 25px;
-  margin: 3rem 1rem;
-  animation: bounceInDown 2s forwards;
+  gap: 2rem;
+  padding-top: 1rem;
+  animation: fadeInRight 1.5s 1s backwards;
 }
 .service-link {
-  --b: 0.1em;
-  --d: 10px;
-  --_s: calc(var(--d) + var(--b));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18.75px;
-  font-weight: bold;
-  width: 100%;
-  height: 75px;
-  color: #fff;
   text-align: center;
-  border: solid #0000;
-  border-width: var(--b) var(--b) var(--_s) var(--_s);
-  background: var(--services-link);
-  transform: translate(calc(var(--d) / -1), var(--d));
-  clip-path: polygon(
-    var(--d) 0%,
-    var(--d) 0%,
-    100% 0%,
-    100% calc(100% - var(--d)),
-    100% calc(100% - var(--d)),
-    var(--d) calc(100% - var(--d))
-  );
-  transition: 0.5s;
-  &:hover {
-    color: #000;
-    transform: translate(0, 0);
-    clip-path: polygon(
-      0% var(--d),
-      var(--d) 0%,
-      100% 0%,
-      100% calc(100% - var(--d)),
-      calc(100% - var(--d)) 100%,
-      0% 100%
-    );
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: var(--box);
+    border: 2px solid var(--main);
+    background: #54545460;
+    border-radius: 50px;
+    padding-right: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+    .text {
+      width: 300px;
+    }
+    &:hover {
+      background: var(--second-section);
+      border-color: var(--second-section);
+      box-shadow: var(--button-shadow);
+      transform: scale(1.01);
+    }
+  }
+.icon {
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: var(--global);
+    background: var(--secondary);
+    width: 50px;
+    height: 50px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .link-container {
-    width: 100%;
-    gap: 20px;
-    margin: 0rem 0rem 1rem;
-    padding: 0rem 1rem;
-    animation: fadeInUp 2s forwards;
+    animation: none;
+    width: 350px;
+    gap: 1rem;
   }
+
+  .service-link {
+    .link {
+      display: flex;
+      box-shadow: var(--box);
+      border: 2px solid var(--main);
+      border-radius: 50px;
+      padding-right: 1rem;
+      font-weight: 600;
+      transition: all 0.4s ease-in-out;
+      
+      .text {
+        width: 300px;
+      }
+
+      &:hover {
+        background: var(--second-section);
+        border-color: var(--second-section);
+        box-shadow: var(--button-shadow);
+        transform: scale(1.02);
+
+      }
+    }
+
+    .icon {
+      border-radius: 50%;
+      padding: 5px;
+      box-shadow: var(--global);
+      background: var(--secondary);
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
 }
