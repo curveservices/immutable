@@ -4,11 +4,23 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.discount {
+  transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+  opacity: 1;
+  height: 2rem;
+}
+
+.discount.hide {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
 .toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
   color: #fff;
   font-size: 2rem;
 }
@@ -64,11 +76,21 @@
   background: var(--secondary);
   border-radius: 5px;
   text-align: center;
+  transition: all 1s ease;
+  &:hover {
+    transform: scale(1.09);
+    box-shadow: var(--box);
+  }
 }
 .priceCard.active {
-  background: var(--third-bg);
+  background: var(--second-section);
   color: #fff;
   transform: scale(1.08);
+  transition: all 1s ease;
+    &:hover {
+      margin: 0 2rem;
+      box-shadow: var(--box);
+    }
 }
 .priceCard ul {
   margin: 0 2.6rem 2.6rem;
@@ -85,13 +107,13 @@
   width: 100%;
 }
 .price {
-  font-family: "Coolvetica";
+  font-family: "Inter", sans-serif;
   font-size: 3rem;
-  color: #494c5f;
+  color: #000000;
   padding: 2rem;
 }
 .priceCard.active .discount {
-  color: #CBF6D4;
+  color: #9cf0ae;
 }
 .priceCard.active .price {
   color: #fff;
@@ -107,16 +129,16 @@
   gap: 20px;
 }
 .bottomBar {
-  border-bottom: 2px solid hsl(240, 80%, 85%, 0.253);
+  border-bottom: 2px double hsla(212, 100%, 15%, 0.253);
 }
 .priceCard.active .bottomBar {
-  border-bottom: 2px solid hsl(240, 80%, 85%, 0.283);
+  border-bottom: 2px double hsl(240, 80%, 85%, 0.283);
 }
 .discount {
   font-style: italic;
-  color: #0F4D1D;
+  color: #1f6d31;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
   .cardContainer {
     margin-top: 4rem;
     flex-direction: column;
@@ -131,7 +153,6 @@
   }
   .price {
     font-size: 2rem;
-    color: #494c5f;
     padding: 1rem 2rem;
   }
   .heroContainer {

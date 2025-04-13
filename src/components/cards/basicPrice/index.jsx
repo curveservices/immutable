@@ -72,8 +72,9 @@ const PriceCard = (props) => {
               <div className="priceTitle">{item.title}</div>
               <p>{item.subTitle}</p>
               <ul>
-                <li className="price">{isToggled ? item.month : item.price}</li>
-                <li className="discount">{!isToggled && item.li0}</li>
+                <li className="price">
+                  {isToggled ? item.month : item.price}</li>
+                <li className={`discount ${isToggled ? "hide" : "show"}`}>{item.li0}</li>
                 <li className="bottomBar">{item.li1}</li>
                 <li className="bottomBar">{item.li2}</li>
                 <li className="bottomBar">{item.li3}</li>
@@ -87,7 +88,7 @@ const PriceCard = (props) => {
                 <Button
                   link={`${item.link}`}
                   text="Show more"
-                  background="var(--primary)"
+                  background="var(--second)"
                 />
               </div>
             </div>
