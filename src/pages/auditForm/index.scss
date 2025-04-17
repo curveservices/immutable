@@ -2,45 +2,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Coolvetica";
-  background-image: url("../../../assets/images/blue.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   text-align: center;
-  padding: 0.75rem;
+  font-family: 'Inter';
+  padding: 1rem 0;
   .hero-text {
     display: flex;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 5rem;
     color: #fff;
+    padding: 1rem;
     .logo {
       width: 250px;
-      padding: 0.5rem;
+      padding: 0 0.5rem;
     }
     .title {
-      font-size: 48px;
-      margin: 0;
+      font-size: 32px;
     }
   }
   .audit-container {
     display: flex;
     background: var(--second);
+    border-radius: 5px;
     .audit-img {
-      width: 100%;
-      max-width: 626px;
-      height: 600px;
+      width: 500px;
+      height: 500px;
       object-fit: fill;
     }
     .text-box {
       display: flex;
       flex-direction: column;
-      max-width: 600px;
-      padding: 0 2rem;
+      width: 500px;
+      padding: 0 1rem;
       .popup-form {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 1rem;
         .subject {
           display: none;
         }
@@ -63,12 +59,9 @@
             max-width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 10px;
+            border-radius: 5px;
             font-size: 1rem;
-
-            & :focus {
-              border: var(--primary);
-            }
+            border: none;
           }
         }
         .audit-button {
@@ -92,7 +85,6 @@
           cursor: pointer;
 
           &:hover {
-            transform: translateY(-3px);
             background: var(--primary);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
           }
@@ -103,8 +95,6 @@
 }
 @media screen and (max-width: 768px) {
   .audit-hero {
-    background-image: none;
-    padding: 1rem 0;
     .hero-text {
       display: flex;
       flex-direction: column;
@@ -114,29 +104,25 @@
         width: 150px;
       }
       .title {
-        font-size: 28px;
+        font-size: 20px;
       }
     }
     .audit-container {
       display: flex;
       flex-direction: column;
-      padding: 0;
+      align-items: center;
       .audit-img {
-        max-width: 700px;
-        max-height: 300px;
+        width: 375px;
+        height: 275px;
+      }
+      .popup-form {
+        padding: 1rem 0;
       }
       .text-box {
-        gap: 0.5rem;
-        padding: 0rem 1rem 2rem;
+        width: 375px;
+        padding: 0 1rem 1rem;
         h1 {
-          font-size: 16px;
-          margin-bottom: 0;
-        }
-        .popup-form {
-          gap: 0.5rem;
-          .checkbox {
-            font-size: 12px;
-          }
+          font-size: 18px;
         }
       }
     }
@@ -158,18 +144,18 @@
       margin-top: 5rem;
       padding: 0;
       .audit-img {
-        max-width: 900px;
-        max-height: 400px;
+        width: 100%;
       }
       .text-box {
-        gap: 0.5rem;
-        padding: 0rem 1rem 2rem;
+        width: 100%;
+        gap: 2rem;
+        padding: 2rem 2rem;
         h1 {
           font-size: 18px;
           margin-bottom: 0;
         }
         .popup-form {
-          gap: 0.5rem;
+          gap: 1rem;
         }
       }
     }

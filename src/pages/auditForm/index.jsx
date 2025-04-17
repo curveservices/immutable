@@ -59,10 +59,6 @@ const AuditFormPage = () => {
           />
           <div className="text-box">
             <h1>Free SEO & Performance Audit</h1>
-            <p>
-              Get your <b>FREE</b> SEO, performance &amp; Accessibility audit.
-              Find opportunities for improvement!
-            </p>
             <form ref={refForm} onSubmit={handleSubmit} className="popup-form">
               <div className="form-group">
                 <label htmlFor="name">Your Name</label>
