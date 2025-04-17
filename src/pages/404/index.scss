@@ -3,17 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background: var(--second-section);
   margin: 0em;
   overflow: hidden;
   height: 100vh;
   h1 {
-    color: red;
-    font-family: "Coolvetica";
+    color: rgb(255, 255, 255);
+    font-family: "Inter";
     padding-top: 2rem;
   }
   img {
     margin-top: 0rem;
-    width: 650px;
+    aspect-ratio: 16 / 9;
+    width: 500px;
+    height: 100%;
   }
 }
