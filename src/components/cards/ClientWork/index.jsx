@@ -5,9 +5,13 @@ import { db } from "../../../firbase.config";
 import Button from "../../button";
 import CallToAction from "../../CTA";
 import PriceCard from "../basicPrice";
+import LazyVideo from "../../LazyVideo";
+import Socials from "../../socials";
+import useScrollStates from "../../scrollState";
 
 const Client = (props) => {
   const [client, setClient] = useState([]);
+  const { second, third } = useScrollStates();
   const fetchData = async () => {
     try {
       const clientData = [];
@@ -55,39 +59,44 @@ const Client = (props) => {
   }, []);
   return (
     <>
-      <div className="client-container">
+      <div className="client-page">
         {client.map((item) => {
           return (
             <div key={item.id}>
-              <div className="inner-container">
-                <img src={props.src} className="hero-img" alt="" />
-                <div className="text-box">
-                  <h1 className="title">{item.client}</h1>
-                  <p>{props.titleP}</p>
-                  <Button
-                    text="View Site"
-                    link={props.link}
-                    target="_blank"
-                    noreferer
+              <section className="hero">
+                <LazyVideo src={props.url} type="video/mp4" className="video" />
+                <div className="socials">
+                  <Socials
+                    fblink="https://www.facebook.com/profile.php?id=61557552873479"
+                    lilink="https://www.linkedin.com/company/21439623"
+                    instalink="https://www.instagram.com/immutable_studio/"
                   />
                 </div>
-              </div>
-              <section className="second-section">
-                <h2 className="name" style={{ color: item.color }}>
-                  {item.product} for {item.client}
-                </h2>
-                <div className="top-container">
-                  <p>{props.p}</p>
-                  <div className="player-wrapper">
-                    <ReactPlayer
-                      className="react-player"
-                      alt={`${item.client} home page on a laptop`}
-                      url={props.url}
-                      playing
-                      loop
-                    />
+                <div className="hero-inner">
+                  <div className="text-box">
+                    <h1 className="main-title">{item.client}</h1>
+                    <p>{props.titleP}</p>
+                    <div className="btn-container">
+                      <Button
+                        text="View Site"
+                        link={props.link}
+                        target="_blank"
+                        noreferer
+                      />
+                    </div>
                   </div>
                 </div>
+              </section>
+              <section className="second-section">
+                <div className="second-inner">
+                  <i className="subtitle">Designs and development</i>
+                  <h2 className="main-title">
+                    {item.product} for {item.client}
+                  </h2>
+                  <p>{props.p}</p>
+                </div>
+
+                <div className="top-container"></div>
                 <div className="work-container">
                   <img
                     className="client-img"

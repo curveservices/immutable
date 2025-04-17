@@ -1,194 +1,163 @@
-.client-container {
-  .hero-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    min-height: 100vh;
-    opacity: 0.3;
-    object-fit: cover;
-  }
-  .inner-container {
-    height: 60vh;
-    padding: 0rem;
-    color: #fff;
-    .text-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 8rem 0;
-      button {
-        margin: 2rem 0;
-        animation: fadeInUp 2s forwards;
-      }
-    }
-  }
-  .second-section {
-    position: relative;
-    background: #e5e6ea;
-    padding: 0rem 5rem 3rem;
-    box-shadow: var(--global);
-    .name {
-      padding: 3rem 1rem 0rem;
-    }
-    .top-container {
-      display: flex;
-      align-items: center;
-      padding: 0 1rem;
-      .player-wrapper {
-        display: flex;
-        width: 50%;
-      }
-    }
+// .client-container {
+//   .second-section {
+//     .name {
+//       padding: 3rem 1rem 0rem;
+//     }
+//     .top-container {
+//       display: flex;
+//       align-items: center;
+//       padding: 0 1rem;
+//       .player-wrapper {
+//         display: flex;
+//         width: 50%;
+//       }
+//     }
 
-    .work-container {
-      display: flex;
-      gap: 5rem;
-      padding: 3rem 1rem;
-      h2 {
-        padding: 1rem 0rem;
-      }
-    }
-    .client-img {
-      border-radius: 20px;
-      width: 400px;
-      height: 400px;
-      --b: 5px;
-      --d: 20px;
-      --o: 15px;
-      --s: 1;
-      --_d: calc(var(--d) + var(--s) * 1em);
-      --_g: calc(100% - 2 * (var(--_d) + var(--b)));
-      --_m: conic-gradient(from 90deg at var(--_d) var(--_d), #0000 25%, #000 0)
-          0 0 / calc(100% - var(--_d)) calc(100% - var(--_d)),
-        linear-gradient(#000 0 0) 50% / var(--_g) var(--_g) no-repeat;
-      -webkit-mask: var(--_m);
-      mask: var(--_m);
-      font-size: 0;
-      cursor: pointer;
-      transition: 0.35s;
-      &:hover {
-        font-size: var(--o);
-      }
-    }
-  }
-  .third-section {
-    margin: 5rem 0rem 6rem;
-    .text-box {
-      text-align: center;
-      padding: 2rem 5rem;
-      color: #fff;
-    }
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .client-container {
-    .inner-container {
-      height: 80vh;
-      padding: 8rem 4rem;
-      .text-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 8rem 0;
-      }
-    }
-    .second-section {
-      .top-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .player-wrapper {
-          width: 100%;
-        }
-      }
-      .work-container {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 5rem;
-        padding: 3rem 1rem;
-      }
-      .container2 {
-        flex-direction: column;
-      }
-      .client-img {
-        border-radius: 20px;
-        width: 500px;
-        height: 500px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .client-container {
-    .inner-container {
-      padding: 0rem;
-      color: #fff;
-      height: 60vh;
-      .hero-img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        max-width: 100vw;
-        height: auto;
-        min-height: 100vh;
-        opacity: 0.4;
-        object-fit: cover;
-      }
-      .text-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 8rem 2rem;
-      }
-    }
-    .second-section {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      background: #e5e6ea;
-      padding: 0rem 2rem 3rem;
-      .name {
-        padding: 3rem 0rem 1rem;
-      }
-      .top-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        .player-wrapper {
-          width: 100%;
-        }
-      }
-      .work-container {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 3rem;
-        padding: 2rem 0rem;
-        .client-img {
-          width: 300px;
-          height: 300px;
-        }
-      }
-      .container2 {
-        flex-direction: column;
-      }
-    }
-    .third-section {
-      margin: 2rem 2rem 6rem;
+//     .work-container {
+//       display: flex;
+//       gap: 5rem;
+//       padding: 3rem 1rem;
+//       h2 {
+//         padding: 1rem 0rem;
+//       }
+//     }
+//     .client-img {
+//       border-radius: 20px;
+//       width: 400px;
+//       height: 400px;
+//       --b: 5px;
+//       --d: 20px;
+//       --o: 15px;
+//       --s: 1;
+//       --_d: calc(var(--d) + var(--s) * 1em);
+//       --_g: calc(100% - 2 * (var(--_d) + var(--b)));
+//       --_m: conic-gradient(from 90deg at var(--_d) var(--_d), #0000 25%, #000 0)
+//           0 0 / calc(100% - var(--_d)) calc(100% - var(--_d)),
+//         linear-gradient(#000 0 0) 50% / var(--_g) var(--_g) no-repeat;
+//       -webkit-mask: var(--_m);
+//       mask: var(--_m);
+//       font-size: 0;
+//       cursor: pointer;
+//       transition: 0.35s;
+//       &:hover {
+//         font-size: var(--o);
+//       }
+//     }
+//   }
+//   .third-section {
+//     margin: 5rem 0rem 6rem;
+//     .text-box {
+//       text-align: center;
+//       padding: 2rem 5rem;
+//       color: #fff;
+//     }
+//   }
+// }
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   .client-container {
+//     .inner-container {
+//       height: 80vh;
+//       padding: 8rem 4rem;
+//       .text-box {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         margin: 8rem 0;
+//       }
+//     }
+//     .second-section {
+//       .top-container {
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         .player-wrapper {
+//           width: 100%;
+//         }
+//       }
+//       .work-container {
+//         display: flex;
+//         flex-direction: column-reverse;
+//         align-items: center;
+//         gap: 5rem;
+//         padding: 3rem 1rem;
+//       }
+//       .container2 {
+//         flex-direction: column;
+//       }
+//       .client-img {
+//         border-radius: 20px;
+//         width: 500px;
+//         height: 500px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .client-container {
+//     .inner-container {
+//       padding: 0rem;
+//       color: #fff;
+//       height: 60vh;
+//       .hero-img {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         width: 100%;
+//         max-width: 100vw;
+//         height: auto;
+//         min-height: 100vh;
+//         opacity: 0.4;
+//         object-fit: cover;
+//       }
+//       .text-box {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
+//         margin: 8rem 2rem;
+//       }
+//     }
+//     .second-section {
+//       display: flex;
+//       flex-direction: column;
+//       position: relative;
+//       background: #e5e6ea;
+//       padding: 0rem 2rem 3rem;
+//       .name {
+//         padding: 3rem 0rem 1rem;
+//       }
+//       .top-container {
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 0;
+//         .player-wrapper {
+//           width: 100%;
+//         }
+//       }
+//       .work-container {
+//         display: flex;
+//         flex-direction: column-reverse;
+//         align-items: center;
+//         gap: 3rem;
+//         padding: 2rem 0rem;
+//         .client-img {
+//           width: 300px;
+//           height: 300px;
+//         }
+//       }
+//       .container2 {
+//         flex-direction: column;
+//       }
+//     }
+//     .third-section {
+//       margin: 2rem 2rem 6rem;
 
-      .text-box {
-        text-align: center;
-        padding: 2rem 0rem;
-        color: #fff;
-      }
-    }
-  }
-}
+//       .text-box {
+//         text-align: center;
+//         padding: 2rem 0rem;
+//         color: #fff;
+//       }
+//     }
+//   }
+// }
