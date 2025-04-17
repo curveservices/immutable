@@ -1,6 +1,6 @@
 /* Modal Content Styling */
 .christmas-banner-modal {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 0;
     width: 100%;
@@ -101,6 +101,8 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .christmas-banner-modal {
+        position: absolute;
+        bottom: -10rem;
         padding: 2rem 2rem;
         margin-bottom: 5rem;
         .christmas-banner-content {

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 const CountdownWidget = () => {
-  const [timeLeft, setTimeLeft] = useState( 15840 * 60);
+  const [timeLeft, setTimeLeft] = useState( 5 * 60);
   const [isOpen, setIsOpen] = useState(true);
   
   const calculateTimeUnits = (time) => {
