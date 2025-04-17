@@ -57,7 +57,6 @@ const Home = () => {
           </div>
           <div className="text-box">
             <h1 className="main-title">London Web Design Services</h1>
-            <span className="mobile-view">Website Solutions.</span>
             <div className="typewriter">
               <Typewriter
                 strings={[
