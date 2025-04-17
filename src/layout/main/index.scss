@@ -13,7 +13,7 @@
   .policy-page,
   .client-discovery-form,
   .assistant-page {
-    padding: 5rem 0rem 4rem;
+    padding: 5rem 0rem 0rem;
     animation: fadeIn 1.5s;
     h1 {
       font-size: 48px;
@@ -43,7 +43,7 @@
     }
     .reverse {
       flex-direction: row-reverse;
-      padding: 0 0 0 2rem;
+      padding: 0rem 0rem 0rem 2rem;
     }
     .main-title {
       text-transform: capitalize;
@@ -71,17 +71,14 @@
     .hero {
       display: grid;
       color: #fff;
-      height: 88vh;
+      height: 100vh;
       padding: 6rem 4.8rem 0;
       &>* {
         grid-column: 1;
         grid-row: 1;
       }
-      .mobile-view {
-        display: none;
-      }
       .text-box {
-        width: 55%;
+        width: 60%;
         animation: fadeIn 1.2s forwards;
       }
       .socials {
@@ -110,14 +107,14 @@
       }
     }
     .second-section {
-      position: relative;
+      padding: 4rem 4.8rem;
       .second-inner {
         color: #fff;
-        background: var(--second-section);
+
         .top-container {
           display: flex;
           justify-content: space-between;
-          padding: 3rem 4.8rem 5rem;
+          padding-bottom: 5rem;
           .second-text {
             margin: 0;
             padding-right: 2rem;
@@ -153,7 +150,7 @@
             .circle-shape {
               position: absolute;
               left: -2.5rem;
-              bottom: -1rem;
+              bottom: 0rem;
               z-index: -1;
               width: 150px;
               height: 150px;
@@ -256,6 +253,10 @@
       p {
         font-size: 16px;
       }
+      .reverse {
+        flex-direction: row-reverse;
+        padding: 0rem;
+      }
       .subtitle {
         font-size: 20px;
       }
@@ -276,6 +277,7 @@
         }
         .text-box {
           width: 100%;
+          display: block;
         }
         .hero-inner {
           display: flex;
@@ -288,10 +290,10 @@
         }
       }
       .second-section {
+        padding: 2rem;
         .second-inner {
           .top-container {
             flex-direction: column;
-            padding: 2rem;
             .second-text {
               width: 100%;
               padding: 0;
@@ -301,9 +303,10 @@
               .image {
                 width: 150px;
                 height: 225px;
+                margin-right: 0rem;
               }
               .square-shape {
-                right: -2rem;
+                right: -1rem;
               }
               .circle-shape {
                 left: 0rem;
@@ -315,8 +318,7 @@
       .third-section {
         padding: 2rem;
         .text-box {
-          padding: 2rem 0;
-          color: #fff;
+          padding-bottom: 2rem;
           p {
             padding-right: 0;
           }
@@ -344,8 +346,12 @@
     .policy-page,
     .client-discovery-form {
       .hero {
-          .mobile-view {
-            display: none;
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            width: 80%;
+            animation: fadeIn 1.2s forwards;
           }
           .socials {
             display: flex;
@@ -355,19 +361,20 @@
           }
           .hero-inner {
             display: flex;
-            gap: 2rem;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 8rem;
       
             .text-box {
-              max-width: 80%;
+              width: 100%;
             }
           }
         }
       .second-section {
+        padding: 3rem 3rem;
         .second-inner {
           .top-container {
             flex-direction: column;
-            padding: 2rem 4.8rem 5rem;
+            padding: 2rem 0rem 5rem;
             .second-text {
               width: 100%;
             }
