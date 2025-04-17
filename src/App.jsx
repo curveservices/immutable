@@ -7,6 +7,7 @@ import {
 import React, { Suspense } from "react";
 import LoadingSpinner from "./components/loadingSpinner";
 import "./App.scss";
+import ClientPage from "./pages/clientPages";
 
 const About = React.lazy(() => import("./pages/about"));
 const Home = React.lazy(() => import("./pages/home"));
@@ -24,10 +25,6 @@ const PrivacyPolicy = React.lazy(() => import("./pages/policy"));
 const FeaturedWork = React.lazy(() => import("./pages/featuredWork"));
 const ClientDiscoveryForm = React.lazy(() => import("./pages/clientForm"));
 const SeoMaintenance = React.lazy(() => import("./pages/seoMaintenance"));
-const TelehillClient = React.lazy(() => import("./pages/clientPages/clientTelehill"));
-const Morbot = React.lazy(() => import("./pages/clientPages/clientMorfbot"));
-const ViveLaCrepe = React.lazy(() => import("./pages/clientPages/clientViveLaCrepe"));
-const Garland = React.lazy(() => import("./pages/clientPages/clientGarland"));
 const AuditFormPage = React.lazy(() => import("./pages/auditForm"));
 
 const loadPageCSS = (page) => import(`./components/pages/${page}.scss`);
@@ -133,37 +130,13 @@ const router = createBrowserRouter(
           }
         />
         <Route
-          path=":id/telegraph-hill-tutoring"
+          path="/portfolio/:clientId"
           element={
             <Suspense fallback={<LoadingSpinner />}>
-              <TelehillClient />
+              <ClientPage/>
             </Suspense>
-          }
-        />
-        <Route
-          path=":id/morfbot"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Morbot />
-            </Suspense>
-          }
-        />
-        <Route
-          path=":id/vive-la-crepe"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ViveLaCrepe />
-            </Suspense>
-          }
-        />
-        <Route
-          path=":id/garland-surgical"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <Garland />
-            </Suspense>
-          }
-        />
+          } />
+
         <Route
           path="privacy-policy"
           element={
