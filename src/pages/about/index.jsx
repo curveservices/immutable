@@ -9,33 +9,10 @@ import StaticCubes from "../../components/Animations/staticCubes";
 import vid from "../../assets/images/about.mp4";
 import about from "../../assets/images/about.webp";
 import LazyVideo from "../../components/LazyVideo";
+import useScrollStates from "../../components/scrollState";
 
 const About = () => {
-  const [second, setSecond] = useState(false);
-  useEffect(() => {
-    import("./index.scss").catch((error) => {
-      console.error("error loading css", error);
-    });
-    return () => {
-      const styleSheets = Array.from(document.styleSheets);
-      const homeStyleSheet = styleSheets.find(
-        (sheet) => sheet.href && sheet.href.includes("index.scss"),
-      );
-      if (homeStyleSheet) {
-        document.head.removeChild(homeStyleSheet.ownerNode);
-      }
-    };
-  }, []);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollCard = window.scrollY;
-      setSecond(scrollCard > 250);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const { second, third } = useScrollStates();
   return (
     <>
       <div className="about-page">
@@ -85,7 +62,7 @@ const About = () => {
           <div className="second-inner">
             <div className="subtitle"><i>About us</i></div>
             <h2 className="title">MEET THE TEAM</h2>
-            <div className={`${second ? "contentAnim" : "none"}`}>
+            <div className={`${second ? "anim" : "none"}`}>
               <TeamCard />
             </div>
           </div>
