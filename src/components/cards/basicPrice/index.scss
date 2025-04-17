@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
 .discount {
   transition: opacity 0.4s ease-in-out, height 0.4s ease-in-out;
@@ -77,8 +78,8 @@
   border-radius: 5px;
   text-align: center;
   transition: all 1s ease;
+  cursor: pointer;
   &:hover {
-    transform: scale(1.09);
     box-shadow: var(--box);
   }
 }
@@ -146,10 +147,16 @@
   }
   .toggle {
     margin-bottom: 0;
+    padding: 0;
     font-size: 1.2rem;
   }
   .priceCard {
     max-width: 100%;
+  }
+  .priceCard.active {
+    &:hover {
+        margin: 0rem;
+      }
   }
   .price {
     font-size: 2rem;

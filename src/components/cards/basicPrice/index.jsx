@@ -7,8 +7,7 @@ import "./index.scss";
 const PriceCard = (props) => {
   const [priceCard, setPriceCard] = useState([]);
   const [isToggled, setIsToggled] = useState();
-
-  const fetchData = async () => {
+ const fetchData = async () => {
     try {
       const priceData = [];
       const snapshot = await getDocs(collection(db, props.name));
@@ -72,9 +71,10 @@ const PriceCard = (props) => {
               <div className="priceTitle">{item.title}</div>
               <p>{item.subTitle}</p>
               <ul>
-                <li className="price">
-                  {isToggled ? item.month : item.price}</li>
-                <li className={`discount ${isToggled ? "hide" : "show"}`}>{item.li0}</li>
+                <li className="price">{isToggled ? item.month : item.price}</li>
+                <li className={`discount ${isToggled ? "hide" : "show"}`}>
+                  {item.li0}
+                </li>
                 <li className="bottomBar">{item.li1}</li>
                 <li className="bottomBar">{item.li2}</li>
                 <li className="bottomBar">{item.li3}</li>
