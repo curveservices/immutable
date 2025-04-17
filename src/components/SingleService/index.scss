@@ -2,9 +2,8 @@
   .hero {
     padding: 6rem 0 0 4.8rem !important;
   }
-  .inner-hero {
+  .hero-inner{
     display: flex;
-    color: #fff;
     .text-box {
       padding-bottom: 4.8rem;
     }
@@ -20,31 +19,9 @@
   }
 }
 .ai-section {
-  .subtitle {
-    color: #fff !important;
-  }
-  .anim {
-    animation: fadeIn 1.5s forwards;
-
-    .ai-container {
-      .ai-card:nth-child(1) {
-        animation: fadeInUp 1s 0.2s backwards;
-      }
-      .ai-card:nth-child(2) {
-        animation: fadeInUp 1s 0.4s backwards;
-      }
-      .ai-card:nth-child(3) {
-        animation: fadeInUp 1s 0.6s backwards;
-      }
-    }
-  }
-  .none {
-    opacity: 0;
-  }
   .ai-inner {
     gap: 3rem;
     .title {
-      text-align: center;
       color: #fff;
     }
     .ai-container {
@@ -52,14 +29,15 @@
       flex-flow: row wrap;
       justify-content: center;
       gap: 2rem;
-      padding: 2rem;
+      padding: 2rem 0;
       .ai-card {
         padding: 2rem;
         width: 350px;
         background: var(--second);
-        border-radius: 10px;
+        border-radius: 5px;
+        color: #000;
         text-align: center;
-        box-shadow: var(--global);
+        box-shadow: var(--box);
         transition: 0.4s ease-in-out;
         cursor: pointer;
         &:hover {
@@ -69,7 +47,7 @@
       }
       .launching {
         background: #d2d2d2;
-        opacity: 0.75;
+        opacity: 0.7;
       }
       .ai-title {
         font-size: 24px;
@@ -84,118 +62,25 @@
     }
   }
 }
-.howItWorks {
-  padding-bottom: 4rem;
-  .anim-third {
-    animation: fadeIn 1.5s forwards;
-    .steps-container {
-      .steps-card:nth-child(1) {
-        animation: fadeInUp 1s 0.2s backwards;
-      }
-
-      .steps-card:nth-child(2) {
-        animation: fadeInUp 1s 0.4s backwards;
-      }
-
-      .steps-card:nth-child(3) {
-        animation: fadeInUp 1s 0.6s backwards;
-      }
-
-      .steps-card:nth-child(4) {
-        animation: fadeInUp 1s 0.8s backwards;
-      }
-    }
-  }
-}
-.third-none {
-  opacity: 0;
-}
-.contentAnim {
-  animation: fadeInUp 1s forwards;
-  margin: 0rem 0rem 6rem;
-}
-.none {
-  opacity: 0;
-}
 @media screen and (max-width: 768px) {
   .single-service {
-    .inner-hero {
+    .hero {
+      padding: 3rem 0rem 0rem 2rem !important;
+    }
+    .hero-inner {
       flex-direction: column;
-      padding: 0;
-      .text-box {
-        padding: 1rem 2rem;
-      }
-      .btn-container {
-        gap: 1rem;
-      }
       .gif {
         width: 100%;
-      }
-    }
-    .secondInner {
-      flex-direction: column;
-      justify-content: space-evenly;
-      gap: 1rem;
-      margin: 0rem;
-      padding: 2rem;
-      .anim-second {
-        width: 100%;
-        padding: 0rem;
-      }
-      .anim-second-img {
-        width: 100%;
-        padding: 0;
-      }
-    }
-    .thirdInner {
-      margin: 0rem;
-      padding: 2rem 1rem;
-      width: 100%;
-
-      .thirdTextBox {
-        padding: 0rem;
-        margin: 0;
-      }
-      .contentAnim {
-        margin: 1rem;
       }
     }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .inner-hero {
+  .hero-inner {
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    margin: 0;
-    .text-box {
-      padding: 2rem 6rem;
-    }
     .gif {
-      justify-self: flex-end;
-    }
-  }
-  .secondInner {
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 2rem;
-    .anim-second {
-      width: 100%;
-      padding: 2rem;
-    }
-    .anim-second-img {
-      width: 100%;
-      padding: 2rem;
-    }
-  }
-  .howItWorks {
-    padding: 0rem 3rem 4rem;
-  }
-  .thirdInner {
-    padding: 0rem 4rem;
-    .thirdTextBox {
-      padding: 1rem;
+      width: 600px;
+      align-self: flex-end;
     }
   }
 }
