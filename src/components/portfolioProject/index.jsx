@@ -6,14 +6,16 @@ import tutor from "../../assets/images/telehill.mp4";
 import morfbot from "../../assets/images/morfbot.mp4";
 import garland from "../../assets/images/garland.mp4";
 import vive from "../../assets/images/vive.mp4";
+import hollows from "../../assets/images/hollows.mp4";
 
 const PortfolioProject = ({ cardsData }) => {
   if (!cardsData || cardsData.length === 0) return <div className="error-message">No projects to show</div>
-     const videoMap = {
+  const videoMap = {
+       "hollows": hollows,
         "tutor": tutor,
         "morfbot": morfbot,
         "garland": garland,
-        "vive": vive,
+       "vive": vive,
       }
   return (
  <>
@@ -23,14 +25,14 @@ const PortfolioProject = ({ cardsData }) => {
         const direction = index % 2 === 0 ? "normal" : "reverse";
 
         return (
-          <div key={data.id} className={`featured-container ${direction === "reverse" ? "oposite" : ""}`}>
+          <div key={data.id} className={`featured ${direction === "reverse" ? "reverse" : ""}`}>
             <div className="text-box">
               <h2>{title}</h2>
               <Link to={categoryLink}>
-                <h3 className="link">{category?.toUpperCase()}</h3>
+                <div className="link">{category?.toUpperCase()}</div>
               </Link>
               <p>{description}</p>
-              <SlideButton text="Read case study" link={caseStudyLink} />
+              <SlideButton text="Read case study" color="#fff" link={caseStudyLink} />
             </div>
             <div className={`player-wrapper ${direction === "reverse" ? "oposite-video" : ""}`}>
               <ReactPlayer
