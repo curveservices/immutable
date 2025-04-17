@@ -23,9 +23,9 @@ const ChatBots = () => {
       secondP="From social media to e-commerce our AI assistants are trained on your business. 
               These helpful little workers will complete daily tasks, providing their services around the clock."
       p="Our range of assitants help in your day to day work helping to relieve pain points within your busness"
-      img={img}
-      alt="AI assistants, ai web agency london, ai website development in london, Greenwich London and South East London, UK"
-      thirdH1="ASSISTANT"
+      img={nyx}
+      alt="ai website development in london, Greenwich London, UK"
+      thirdH1="AI Assistant"
       thirdP="We emphasise clear communication and robust client relationships.
               Our business model is retainer based for AI &amp; automation services. 
               Solutions are hosted from our platforms, monthly audits and maintence are included 
