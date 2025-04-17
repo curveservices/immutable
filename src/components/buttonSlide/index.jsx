@@ -11,7 +11,7 @@ const SlideButton = (props) => {
   };
   return (
     <NavLink to={props.link} aria-label="link to case study">
-      <div className="btn btn-arrow-slide">
+      <div className="btn btn-arrow-slide" style={buttonStyle}>
         <button
           style={buttonStyle}
           className="btn-arrow-slide-cont btn-arrow-slide-cont--blue"
