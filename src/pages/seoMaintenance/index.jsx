@@ -1,4 +1,5 @@
 import img from "../../assets/images/maintenance.webp";
+import img2 from "../../assets/images/audit.webp";
 import gif from "../../assets/images/webDev.gif";
 import ExitIntentPopup from "../../components/exitIntentPopup";
 import Singleservices from "../../components/SingleService";
@@ -23,8 +24,9 @@ const SeoMaintenance = () => {
       From a WordPress site to a custom-built site, we can help support and improve your website."
         p="We build SEO sitemaps and ensure your webite is up to date with best SEO practices, on and off page"
         img={img}
+        img2={img2}
         alt="Professional Website maintenance and SEO services in Greenwich London and South East London, UK"
-        thirdH1="MAINTENANCE"
+        thirdH1="Maintenance"
         thirdP="We prioritise transparent communication &amp; strong client bonds.
               Our services for SEO and website maintenance are based on a retainer model."
         name="maintenance"
