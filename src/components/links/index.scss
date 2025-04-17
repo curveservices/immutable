@@ -78,4 +78,15 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
+  .link-container {
+    animation: none;
+    gap: 2rem;
+    .link {
+      width: 400px;
+      justify-content: space-evenly;
+    }
+  }
+  .service-link {
+    text-align: center;
+  }
 }
