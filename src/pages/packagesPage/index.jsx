@@ -1,5 +1,6 @@
 import gif from "../../assets/images/packages-unscreen.gif";
 import img from "../../assets/images/packages.webp";
+import img2 from "../../assets/images/code.webp";
 import Singleservices from "../../components/SingleService/";
 
 const Packages = () => {
@@ -23,8 +24,9 @@ const Packages = () => {
               goal is to alleviate your pain points, saving you time and money."
       p="Our full packages include site maintenance, hosting and unlimited AI usage  with GPT-4o and DALL·E."
       img={img}
-      alt="Business packages and AI solutions in Greenwich London and South East London, UK"
-      thirdH1="BUSINESS"
+      img2={img2}
+      alt="webdesign in London, UK"
+      thirdH1="Business"
       thirdP="We prioritise transparent communication and strong client bonds.
               Our services are retainer based. Through scalable packages, we ensure your website, 
               SEO and AI chat assistant evolves alongside your business."
