@@ -26,8 +26,8 @@ const WebDev = () => {
         We also offer help with maintence and hosting."
       img={img}
       img2={img2}
-      alt="Custom web development and design in Greenwich London and South East London"
-      thirdH1="WEBSITE"
+      alt="Custom web development and design in Greenwich, London"
+      thirdH1="Website"
       thirdP="We emphasise clear communication and robust client relationships.
               Our services are based on a retainer model which include maintence, full support and hosting."
       name="webDev"
