@@ -8,6 +8,7 @@ import Button from "../../components/button";
 import { Link } from "react-router-dom";
 import StaticCubes from "../../components/Animations/staticCubes";
 import "./index.scss";
+import Socials from "../../components/socials";
 
 const ClientDiscoveryForm = () => {
   const refForm = useRef();
@@ -126,6 +127,13 @@ const ClientDiscoveryForm = () => {
       <div className="client-discovery-form">
         <section className="hero">
           <StaticCubes />
+          <div className="socials">
+            <Socials
+              fblink="https://www.facebook.com/profile.php?id=61557552873479"
+              lilink="https://www.linkedin.com/company/21439623"
+              instalink="https://www.instagram.com/immutable_studio/"
+            />
+          </div>
           <div className="text-box">
             <h1 className="title">Client Discovery Form</h1>
             <p className="fadeInUp">

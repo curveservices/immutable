@@ -1,18 +1,10 @@
 .client-discovery-form {
-  color: #fff;
   .hero {
     position: relative;
-    padding: 0rem 5rem;
-    height: 60vh !important;
     .cube-container {
-      max-width: 80px;
       top: 30%;
-      right: 10%;
-      opacity: 0.4;
-    }
-    .text-box {
-      padding: 6rem 0 0;
-      width: 60%;
+      right: 20%;
+      opacity: 0.3;
     }
     .btn-container {
       justify-content: start;
@@ -103,22 +95,9 @@
   }
   @media screen and (max-width: 768px) {
     .hero {
-      padding: 0rem 2rem;
       .cube-container {
         width: 70px;
-        top: 20%;
-        right: 3%;
-      }
-      .title {
-        font-size: 30px;
-      }
-      .text-box {
-        width: 100%;
-        margin: 0rem;
-      }
-      .btn-container {
-        justify-content: center;
-        gap: 20px;
+        top: 30%;
       }
     }
     .discovery-form {
