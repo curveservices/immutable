@@ -1,5 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Button from "../../components/button";
 import PriceCard from "../../components/cards/fullPrice";
 import CTA from "../../components/CTA";
@@ -12,9 +12,11 @@ import PortfolioProject from "../../components/portfolioProject";
 import useFirestoreData from "../../components/useFirestoreData";
 import LoadingSpinner from '../../components/loadingSpinner';
 import GoogleReviews from "../../components/googleReviews";
+import useScrollState from '../../components/scrollState/index'
 
 const FeaturedWork = () => {
   const { cardsData, loading, error } = useFirestoreData('portfolio');
+  const {second, third, forth} = useScrollState()
  
   useEffect(() => {
     import("./index.scss").catch((error) => {
@@ -42,12 +44,12 @@ const FeaturedWork = () => {
             fallback={working}
             className="video"
           />
-           <div className="socials">
+          <div className="socials">
             <Socials
-            fblink="https://www.facebook.com/profile.php?id=61557552873479"
-            lilink="https://www.linkedin.com/company/21439623"
-            instalink="https://www.instagram.com/immutable_studio/"
-          />
+              fblink="https://www.facebook.com/profile.php?id=61557552873479"
+              lilink="https://www.linkedin.com/company/21439623"
+              instalink="https://www.instagram.com/immutable_studio/"
+            />
           </div>
           <div className="hero-inner">
             <div className="text-box">
@@ -78,17 +80,15 @@ const FeaturedWork = () => {
           </div>
         </section>
         <section className="clients">
-          <div className="subtitle">
-            <i>Our Portfolio</i>
-          </div>
-          <div className="main-text">
+          <div className={`main-text  ${second ? "anim" : "none"}`}>
+            <i className="subtitle">Our Portfolio</i>
             <h2>Recent Projects</h2>
             <p>
               Here’s a selection of our recent projects across the digital
               landscape.
             </p>
           </div>
-          <PortfolioProject cardsData={cardsData}/>
+          <PortfolioProject cardsData={cardsData} />
           <div className="container-footer">
             <h2>Fill Out Our Client Discovery Form</h2>
             <p>
@@ -105,28 +105,33 @@ const FeaturedWork = () => {
             </div>
           </div>
         </section>
-        <section className="featured"> 
+        <section className="third-section">
           <div className="text-box">
             <i className="subtitle">Transparent Pricing</i>
             <h2 className="main-title">our starting prices</h2>
-            <p>At the heart of what we do is a commitment to transparency and building strong, lasting relationships with our clients. We believe clear communication and trust are key to successful partnerships, and we’re here to support you every step of the way.</p>
-            <p>Our pricing is straightforward, with no hidden fees—just honest, reliable services tailored to your goals. We understand the importance of budgeting, especially for growing businesses, so our packages are designed to scale with you as your needs evolve.</p>
+            <p>
+              Our pricing is straightforward, with no hidden fees—just honest,
+              reliable services tailored to your goals. We understand the
+              importance of budgeting, especially for growing businesses, so our
+              packages are designed to scale with you as your needs evolve.
+            </p>
           </div>
           <PriceCard name="pricing" color="#fff" link="/discovery-form" />
-            <div className="text-box">
-            </div>
         </section>
-          <div className={`forth-section`}>
-              <GoogleReviews />
-              <div className="subtitle" style={{ textAlign: "center", paddingBottom: "2rem" }}>
-                <i>Stay Up To Date And Follow Us!</i>
-              </div>
-              <Socials
-                fblink="https://www.facebook.com/profile.php?id=61557552873479"
-                lilink="https://www.linkedin.com/company/21439623"
-                instalink="https://www.instagram.com/immutable_studio/"
-              />
-            </div>
+        <div className={`forth-section`}>
+          <GoogleReviews />
+          <div
+            className="subtitle"
+            style={{ textAlign: "center", paddingBottom: "2rem" }}
+          >
+            <i>Stay Up To Date And Follow Us!</i>
+          </div>
+          <Socials
+            fblink="https://www.facebook.com/profile.php?id=61557552873479"
+            lilink="https://www.linkedin.com/company/21439623"
+            instalink="https://www.instagram.com/immutable_studio/"
+          />
+        </div>
         <section className="cta">
           <CTA />
         </section>
@@ -134,8 +139,13 @@ const FeaturedWork = () => {
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>Portfolio | Immutable Studio – Creative Web Design & AI Solutions</title>
-            <link rel="canonical" href="https://www.immutable-studio.co.uk/portfolio" />
+            <title>
+              Portfolio | Immutable Studio – Creative Web Design & AI Solutions
+            </title>
+            <link
+              rel="canonical"
+              href="https://www.immutable-studio.co.uk/portfolio"
+            />
             <meta
               name="description"
               content="Our featured work will help you understand what we do and who we work with. We build fast, responsive websites and create AI solutions."
@@ -144,10 +154,22 @@ const FeaturedWork = () => {
               name="keywords"
               content="featured work, website design agency, web development, Immutable Studio, web design, website design, AI solutions, chatbots, workflow automation, automation, digital agency"
             />
-            <meta property="og:title" content="Portfolio | Immutable Studio – Creative Web Design & AI Solutions" />
-            <meta property="og:description" content="Check out our featured projects showcasing fast, responsive websites and AI solutions." />
-            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
-            <meta property="og:url" content="https://www.immutable-studio.co.uk/portfolio" />
+            <meta
+              property="og:title"
+              content="Portfolio | Immutable Studio – Creative Web Design & AI Solutions"
+            />
+            <meta
+              property="og:description"
+              content="Check out our featured projects showcasing fast, responsive websites and AI solutions."
+            />
+            <meta
+              property="og:image"
+              content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+            />
+            <meta
+              property="og:url"
+              content="https://www.immutable-studio.co.uk/portfolio"
+            />
             <script type="application/ld+json">
               {`
                 {

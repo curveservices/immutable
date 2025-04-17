@@ -2,42 +2,65 @@
   .clients {
     position: relative;
     background: var(--second-section);
-    padding: 1rem 4.8rem;
+    padding: 2rem 4.8rem;
     .main-text {
       margin-bottom: 2rem;
       color: #fff;
     }
-    .featured-container {
+    .featured {
       display: flex;
       background: #e5e6ea;
       margin: 0rem 0rem 2rem;
       padding: 2rem 4rem;
-      text-align: left;
       border-radius: 5px;
       cursor: pointer;
       .text-box {
-        padding: 1rem;
+        flex: 1;
+        padding-right: 2rem;
+        max-width: 600px;
         h2 {
           color: var(--third-bg);
         }
         p {
           padding: 0 0.5rem;
+          color: #000;
         }
         .link {
+          font-size: 1.3rem;
+          text-decoration: underline;
+          margin-bottom: 1.5rem;
+          display: inline-block;
+          font-weight: 500;
           color: #000;
-          padding: 0.5rem;
-          transition: all 0.2s ease-in-out;
+          transition: color 0.3s ease;
           &:hover {
-            color: var(--third-bg);
+            color: var(--main);
           }
         }
       }
       .player-wrapper {
-        display: flex;
+        flex: 1;
+        max-width: 700px;
+        aspect-ratio: 16 / 9;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        z-index: 1;
+        .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        &.oposite-video {
+          margin-right: 2rem;
+        }
+
+        &:hover {
+          transform: scale(1.01);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+        }
       }
-    }
-    .oposite {
-      flex-direction: row-reverse;
     }
     .container-footer {
       display: flex;
@@ -46,46 +69,48 @@
       text-align: center;
       margin: 4rem 6rem;
       padding: 2rem;
-      border-radius: 20px;
+      border-radius: 5px;
       box-shadow: var(--global);
       background: var(--main);
       color: #fff;
     }
   }
-  .featured {
-    padding: 3rem 4.8rem;
-    background: var(--main);
-    .text-box {
-      color: #fff;
-    }
-  }
-  .anim {
-    animation: fadeIn 2s forwards;
-  }
-  .none {
-    opacity: 0;
-  }
 }
 @media screen and (max-width: 768px) {
   .featured-work {
     .clients {
-      display: flex;
-      flex-direction: column;
       padding: 0 2rem;
-      .featured-container {
-        display: flex;
-        flex-direction: column;
-        margin: 0rem 0rem 4rem;
-        padding: 0rem;
+      .featured {
+        flex-direction: column !important;
+        gap: 1rem;
+        padding: 1rem;
+        .text-box {
+          padding-right: 0rem;
+          .link {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .player-wrapper {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        max-width: 100%;
+        overflow:visible;
+        .react-player {
+          max-width: 100%;
+          max-height: 100%;
+        }
+    
+        &:hover {
+          transform: none;
+          box-shadow: var(--box);
+        }
       }
       .container-footer {
-        margin: 1rem;
-      }
-    }
-    .featured {
-      padding: 2rem;
-      .text-box {
-        padding: 0rem 0rem 1rem;
+        margin: 2rem 0rem;
+        padding: 0 0.5rem;
+        border-radius: 5px;
       }
     }
   }
@@ -104,15 +129,9 @@
           line-height: 1.4;
         }
       }
-      .spinner {
-        position: absolute;
-        top: 7%;
-        left: 10%;
-        margin: 0;
-      }
     }
     .clients {
-      .featured-container {
+      .featured {
         flex-direction: column;
         margin: 2rem 0 4rem;
       }
