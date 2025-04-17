@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Button from "../../components/button";
 import PriceCard from "../../components/cards/basicPrice";
-import MarqueeComp from "../../components/marquee";
 import CallToAction from "../../components/CTA";
 import vid from "../../assets/images/london.mp4";
 import fallback from "../../assets/images/london.webp";
@@ -131,14 +130,11 @@ const Services = () => {
                       essential. Our designs are optimised for all devices,
                       ensuring a flawless experience on phones, tablets &amp;
                       desktops."
-                link4="/web-development"
+                link4="web-development"
                 text4="web development"
                 text="find out about us"
-                link="about-us"
+                link="/about-us"
               />
-            <div className="marquee">
-              <MarqueeComp />
-            </div>
             </div>
           </div>
         </section>
@@ -147,11 +143,11 @@ const Services = () => {
             <div className={`${third ? "anim" : "none"}`}>
               <div className="text-box">
                 <i className="subtitle">Transparent Pricing</i>
-                <h2 className="main-title">your starting prices</h2>
+                <h2 className="main-title">our starting prices</h2>
                 <p>At the heart of what we do is a commitment to transparency and building strong, lasting relationships with our clients. We believe clear communication and trust are key to successful partnerships, and we’re here to support you every step of the way.</p>
                 <p>Our pricing is straightforward, with no hidden fees—just honest, reliable services tailored to your goals. We understand the importance of budgeting, especially for growing businesses, so our packages are designed to scale with you as your needs evolve.</p>
               </div>
-                <PriceCard name="pricing" color="black" link="/discovery-form" />
+                <PriceCard name="pricing" link="/discovery-form"/>
                 <div className="text-box">
                 </div>
             </div>
