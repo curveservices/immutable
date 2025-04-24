@@ -101,7 +101,24 @@ const ClientPage = () => {
               <div className="square-shape" />
               {[clientData.img4, clientData.img5, clientData.img6].map(
                 (img, i) => (
-                  <div key={i} className="mobile-frame">
+                  <div
+                    key={i}
+                    className="mobile-frame"
+                    onMouseEnter={(e) => {
+                      const imgEl = e.currentTarget.querySelector("img");
+                      const frameHeight = e.currentTarget.offsetHeight;
+                      const imgHeight = imgEl.scrollHeight;
+                      const maxScroll = imgHeight - frameHeight;
+
+                      imgEl.style.transform = `translateY(-${maxScroll}px)`;
+                      imgEl.style.transition = "transform 10s ease";
+                    }}
+                    onMouseLeave={(e) => {
+                      const imgEl = e.currentTarget.querySelector("img");
+                      imgEl.style.transform = `translateY(0)`;
+                      imgEl.style.transition = "transform 0.5s ease";
+                    }}
+                  >
                     <div className="iphone-notch" />
                     <img
                       src={img}
@@ -141,7 +158,7 @@ const ClientPage = () => {
                       imgEl.style.transform = `translateY(0)`;
                       imgEl.style.transition = "transform 0.5s ease";
                     }}
-                    >
+                  >
                     <div className="mac-top-bar">
                       <span className="dot red" />
                       <span className="dot yellow" />
