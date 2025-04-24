@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import SlideButton from '../buttonSlide';
 import ReactPlayer from 'react-player';
 import tutor from "../../assets/images/telehill.mp4";
@@ -15,7 +15,7 @@ const PortfolioProject = ({ cardsData }) => {
         "tutor": tutor,
         "morfbot": morfbot,
         "garland": garland,
-       "vive": vive,
+        "vive": vive,
       }
   return (
  <>
@@ -25,16 +25,27 @@ const PortfolioProject = ({ cardsData }) => {
         const direction = index % 2 === 0 ? "normal" : "reverse";
 
         return (
-          <div key={data.id} className={`featured ${direction === "reverse" ? "reverse" : ""}`}>
+          <div
+            key={data.id}
+            className={`featured ${direction === "reverse" ? "reverse" : ""}`}
+          >
             <div className="text-box">
-              <h2>{title}</h2>
+              <NavLink to={caseStudyLink}>
+                <h2>{title}</h2>
+              </NavLink>
               <Link to={categoryLink}>
                 <div className="link">{category?.toUpperCase()}</div>
               </Link>
               <p>{description}</p>
-              <SlideButton text="Read case study" color="#fff" link={caseStudyLink} />
+              <SlideButton
+                text="Read case study"
+                color="#fff"
+                link={caseStudyLink}
+              />
             </div>
-            <div className={`player-wrapper ${direction === "reverse" ? "oposite-video" : ""}`}>
+            <div
+              className={`player-wrapper ${direction === "reverse" ? "oposite-video" : ""}`}
+            >
               <ReactPlayer
                 className="react-player"
                 url={video}
