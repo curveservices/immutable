@@ -1,8 +1,8 @@
 import SingleAssistant from "..";
-import header from "../../../../assets/images/nyx-header.webp";
-import asst1 from "../../../../assets/images/nyx1.webp";
-import asst from "../../../../assets/images/nyx.webp";
-import asst2 from "../../../../assets/images/nyx2.webp";
+import header from "../../../assets/images/nyx-header.webp";
+import asst1 from "../../../assets/images/nyx1.webp";
+import asst from "../../../assets/images/nyx.webp";
+import asst2 from "../../../assets/images/nyx2.webp";
 const SocialMedia = () => {
   return (
     <SingleAssistant
