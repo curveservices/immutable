@@ -13,7 +13,7 @@
     gap: 1rem;
     box-shadow: var(--box);
     border: 2px solid var(--main);
-    background: #54545460;
+    background: #3a3a3a60;
     border-radius: 50px;
     padding-right: 1rem;
     font-weight: 600;
@@ -22,8 +22,7 @@
       width: 300px;
     }
     &:hover {
-      background: var(--second-section);
-      border-color: var(--second-section);
+      background: var(--main);
       box-shadow: var(--button-shadow);
       transform: scale(1.01);
     }
