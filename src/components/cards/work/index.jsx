@@ -71,7 +71,6 @@ const WorkCard = (props) => {
                 </div>
                 <div
                   className="flip-card-back"
-                  style={{ background: item.color }}
                 >
                   <img
                     src={item.back}
@@ -79,9 +78,9 @@ const WorkCard = (props) => {
                     className="card-back-image"
                     loading="lazy"
                   />
-                  <h1 className="name">{item.name}</h1>
+                  <h3 className="name">{item.name}</h3>
                   <NavLink to={`/services/${item.productLink}`}>
-                    <h2 className="product">{item.product}</h2>
+                    <div className="product">{item.product}</div>
                   </NavLink>
                   <p className="desc">{item.desc}</p>
                   <div className="btn-container">
