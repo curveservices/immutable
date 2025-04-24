@@ -8,6 +8,7 @@ header {
   padding: 0rem 4.8rem;
   color: #fff;
   font-family: "Inter", sans-serif;
+  background: transparent;
   transition: all 1s;
   cursor: pointer;
   .logo {
@@ -74,7 +75,7 @@ header {
       position: absolute;
       right: 0;
       width: 100%;
-      background: var(--primary);
+      background: var(--second-section);
       z-index: 2;
       .active {
           border-bottom: none;
