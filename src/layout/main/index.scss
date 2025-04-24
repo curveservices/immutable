@@ -81,16 +81,7 @@
         width: 60%;
         animation: fadeIn 1.2s forwards;
       }
-      .socials {
-        display: flex;
-        justify-content: end;
-        position: relative;
-        animation: fadeInRight 1.5s;
-        .iconList {
-          flex-direction: column;
-          padding-bottom: 10rem;
-        }
-      }
+      
       .hero-inner {
         display: flex;
         justify-content: flex-start;
@@ -105,6 +96,18 @@
           justify-content: left;
         }
       }
+        .socials {
+          display: flex;
+          justify-content: end;
+          position: relative;
+          z-index: 9999;
+          animation: fadeInRight 1.5s;
+  
+          .iconList {
+            flex-direction: column;
+            padding-bottom: 10rem;
+          }
+        }
     }
     .second-section {
       padding: 4rem 4.8rem;
@@ -165,7 +168,7 @@
     }
     .third-section {
       background: var(--main);
-      padding: 3rem 4.8rem;
+      padding: 3rem 4.8rem 5rem;
       .text-box {
         padding-bottom: 2rem;
         color: #fff;
@@ -176,7 +179,7 @@
       }
     }
     .forth-section {
-      padding: 3rem 4.8rem;
+      padding: 3rem 4.8rem 5rem;
       .forth-inner {
         background: #193563;
       }
@@ -230,7 +233,6 @@
 }
 @media screen and (max-width: 768px) {
   .app {
-    background-image: none;
     .home-page,
     .about-page,
     .serivces-page,
@@ -265,12 +267,13 @@
         align-items: center;
       }
       .hero {
-        padding: 3rem 2rem;
-        margin-bottom: 2rem;
+        position: relative;
+        padding: 3rem 2rem 0;
         .socials {
           align-items: flex-end;
           justify-content: flex-start;
           animation: none;
+          top: -10%;
           .iconList {
             flex-direction: row;
           }
