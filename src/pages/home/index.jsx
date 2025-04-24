@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
-        {/* <ExitIntentPopup /> */}
+        <ExitIntentPopup />
         <section className="hero">
           <LazyVideo
             alt="Royal College of Greenwich, London"
