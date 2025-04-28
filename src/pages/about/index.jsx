@@ -5,7 +5,6 @@ import Button from "../../components/button";
 import Socials from "../../components/socials";
 import TeamCard from "../../components/cards/teamCard";
 import CallToAction from "../../components/CTA";
-import StaticCubes from "../../components/Animations/staticCubes";
 import vid from "../../assets/images/about.mp4";
 import about from "../../assets/images/about.webp";
 import LazyVideo from "../../components/LazyVideo";
@@ -24,12 +23,12 @@ const About = () => {
             className="video"
           />
           <div className="socials">
-                <Socials
-                  fblink="https://www.facebook.com/profile.php?id=61557552873479"
-                  lilink="https://www.linkedin.com/company/21439623"
-                  instalink="https://www.instagram.com/immutable_studio/"
-                />
-              </div>
+            <Socials
+              fblink="https://www.facebook.com/profile.php?id=61557552873479"
+              lilink="https://www.linkedin.com/company/21439623"
+              instalink="https://www.instagram.com/immutable_studio/"
+            />
+          </div>
           <div className="hero-inner">
             <div className="text-box">
               <h1 className="title">About Us</h1>
