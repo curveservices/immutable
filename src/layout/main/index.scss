@@ -1,7 +1,7 @@
 .app {
   will-change: contents;
   transform-style: preserve-3d;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", serif;
   font-display: swap;
   .home-page,
   .about-page,
@@ -36,7 +36,7 @@
     }
     p {
       font-size: 16px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins', serif;
       margin: 0;
       padding: 0.5rem 0;
       animation: fadeIn 2.5s forwards;
@@ -68,6 +68,17 @@
       margin-top: 2rem;
       gap: 1rem;
     }
+    .socials {
+      display: flex;
+      justify-content: end;
+      position: relative;
+      animation: fadeInRight 1.5s;
+
+      .iconList {
+        flex-direction: column;
+        padding-bottom: 10rem;
+      }
+    }
     .hero {
       display: grid;
       color: #fff;
@@ -86,7 +97,6 @@
         display: flex;
         justify-content: flex-start;
         gap: 10rem;
-        position: relative;
         color: #fff;
 
         .text-box {
@@ -96,18 +106,6 @@
           justify-content: left;
         }
       }
-        .socials {
-          display: flex;
-          justify-content: end;
-          position: relative;
-          z-index: 9999;
-          animation: fadeInRight 1.5s;
-  
-          .iconList {
-            flex-direction: column;
-            padding-bottom: 10rem;
-          }
-        }
     }
     .second-section {
       padding: 4rem 4.8rem;
