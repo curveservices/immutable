@@ -51,6 +51,7 @@ const CountdownWidget = () => {
       className="christmas-banner-modal"
       overlayClassName="christmas-banner-overlay"
       alt="seaonal offer banner"
+      role='popup banner'
     >
         <div className='christmas-banner-content'>
             <p className="banner-text">
