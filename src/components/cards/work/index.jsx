@@ -107,7 +107,7 @@ const WorkCard = (props) => {
             represents a commitment to excellence and our passion for helping
             businesses thrive online.</p>
            <div className="btn-container">
-          <Button text="Our Portfolio" link="/portfolio" />
+          <Button text="Our Portfolio" link="/portfolio" color='#000' />
           <Button
             text="Discovery Form"
             link="/discovery-form"
