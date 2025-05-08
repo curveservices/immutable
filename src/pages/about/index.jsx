@@ -66,9 +66,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="cta">
           <CallToAction />
-        </section>
       </div>
       <div>
        <HelmetProvider>
