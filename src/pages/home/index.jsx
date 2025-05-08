@@ -17,7 +17,6 @@ import code from "../../assets/images/code.webp";
 import HowitWorks from "../../components/howItWorks";
 import GoogleReviews from "../../components/googleReviews";
 import Socials from "../../components/socials";
-import CountdownWidget from "../../components/countdownWidget";
 import useScrollStates from "../../components/scrollState";
 
 const Home = () => {
@@ -93,7 +92,6 @@ const Home = () => {
               </div>
             </div> 
           </div>
-          <CountdownWidget />
         </section>
         <section className="second-section">
           <div className="second-inner">
@@ -176,9 +174,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="cta">
           <CallToAction />
-        </section>
       </div>
       <div>
         <HelmetProvider>
