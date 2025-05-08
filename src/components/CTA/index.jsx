@@ -5,9 +5,9 @@ const CallToAction = () => {
   return (
     <div className="cta">
       <div className="text-container">
-        <h2 className="cta-title">Ready to get started?</h2>
+        <h2 className="cta-title">Get started</h2>
         <p className="cta-p">
-          Contact us to discuss your project, book a discovery call with us or
+          Ready to discuss your project? Book a call or
           complete our online client discovery form to get started.
         </p>
       </div>

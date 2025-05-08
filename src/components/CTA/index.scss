@@ -1,26 +1,26 @@
 .cta {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--second);
+  justify-content: space-around;
+  margin: 3rem 4.8rem;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  box-shadow: var(--box);
+  background: var(--primary);
+  color: #fff;
   .text-container {
-    padding: 2rem 1rem;
-    width: 50%;
+    max-width: 50%;
     .cta-title {
       margin: 0;
-      padding: 0rem 4rem;
       font-size: 3rem;
     }
     .cta-p {
-      margin: 2rem 4rem;
+      font-weight: 600;
+      padding: 1rem 0rem;
     }
   }
   .btn-container {
     display: flex;
-    width: 50%;
-    height: 40%;
     gap: 2rem;
-    justify-content: center;
     align-items: center;
   }
 }
@@ -28,10 +28,10 @@
   .cta {
     flex-direction: column;
     gap: 1rem;
-    box-shadow: none;
+    margin: 2em;
+    padding: 2rem;
     .text-container {
-      padding: 0 2rem;
-      width: 100%;
+      max-width: 100%;
       .cta-title {
         padding: 1rem 0;
         font-size: 1.5rem;
@@ -43,7 +43,8 @@
       }
     }
     .btn-container {
-      width: 100%;
+      flex-direction: column;
+      padding-bottom: 1rem;
     }
   }
 }
