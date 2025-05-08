@@ -31,18 +31,12 @@
       box-shadow: var(--global);
       cursor: pointer;
       transition: all 0.6s ease-in-out;
-      p {
-        transition: all 0.4s ease-in-out;
-      }
       .icon {
         transition: all 0.4s ease-in-out;
       }
       &:hover {
         transform: scale(0.99);
         box-shadow: var(--box);
-        p {
-          font-size: 16.1px;
-        }
         .icon {
           box-shadow: var(--button-shadow);
           padding: 10px;
