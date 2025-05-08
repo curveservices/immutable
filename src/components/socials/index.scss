@@ -14,8 +14,9 @@
     display: block;
     font-size: 26px;
     line-height: 20px;
-    &:hover svg {
-      color: var(--services-link);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #b1c8fe;
       transform: scale(1.2);
     }
   }
