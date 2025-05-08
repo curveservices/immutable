@@ -57,7 +57,7 @@ const Services = () => {
                 pricing.
               </p>
               <div className="btn-container">
-                <Button text="Discovery form" link="/discovery-form" />
+                <Button text="Get Started" link="/discovery-form" />
                 <Button
                   text="book a call"
                   link="https://calendly.com/immutable-studio/website-consultancy"
@@ -67,35 +67,52 @@ const Services = () => {
                 />
               </div>
             </div>
-            <Links dev="web-development" seo="seo-website-maintenance" ai="ai-assistants" pack="packages"/>
+            <Links
+              dev="web-development"
+              seo="seo-website-maintenance"
+              ai="ai-assistants"
+              pack="packages"
+            />
           </div>
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div className={`top-container reverse ${second ? "anim" : "none"}`}>
+            <div
+              className={`top-container reverse ${second ? "anim" : "none"}`}
+            >
               <div className="second-text reverse">
                 <i className="subtitle">Our commitments</i>
                 <h2 className="main-title">Why choose us</h2>
-                <p style={{paddingBottom: '2rem'}}>We offer a full range of website design, SEO &amp; maintenance,
-                    AI chat assistants, and workflow automation services with
-                    flexible pricing. We can also package up all of these services as a
-                    convenient business pack.
+                <p style={{ paddingBottom: "2rem" }}>
+                  We offer a full range of website design, SEO &amp;
+                  maintenance, AI chat assistants, and workflow automation
+                  services with flexible pricing. We can also package up all of
+                  these services as a convenient business pack.
                 </p>
                 <i className="subtitle">Its about you</i>
                 <p>
                   Whether you are a small business or a large corporation, we
                   can help you achieve your goals. Our team of experts will work
-                  with you to create a custom solution that meets your needs.
-                  We are committed to providing you with the best possible
-                  service and support.
-
+                  with you to create a custom solution that meets your needs. We
+                  are committed to providing you with the best possible service
+                  and support.
                 </p>
               </div>
               <div className="image-container">
                 <div className="square-shape"></div>
-                <img src={code} alt="London website design" className="image" style={{marginBottom: '60px'}}/>
+                <img
+                  src={code}
+                  alt="London website design"
+                  className="image"
+                  style={{ marginBottom: "60px" }}
+                />
                 <div className="circle-shape"></div>
-                <img src={paul} alt="London Web Designers" className="image" style={{marginTop: '60px'}}/>
+                <img
+                  src={paul}
+                  alt="London Web Designers"
+                  className="image"
+                  style={{ marginTop: "60px" }}
+                />
               </div>
             </div>
             <div className={`${second ? "anim" : "none"}`}>
@@ -144,31 +161,44 @@ const Services = () => {
               <div className="text-box">
                 <i className="subtitle">Transparent Pricing</i>
                 <h2 className="main-title">our starting prices</h2>
-                <p>At the heart of what we do is a commitment to transparency and building strong, lasting relationships with our clients. We believe clear communication and trust are key to successful partnerships, and we’re here to support you every step of the way.</p>
-                <p>Our pricing is straightforward, with no hidden fees—just honest, reliable services tailored to your goals. We understand the importance of budgeting, especially for growing businesses, so our packages are designed to scale with you as your needs evolve.</p>
+                <p>
+                  At the heart of what we do is a commitment to transparency and
+                  building strong, lasting relationships with our clients. We
+                  believe clear communication and trust are key to successful
+                  partnerships, and we’re here to support you every step of the
+                  way.
+                </p>
+                <p>
+                  Our pricing is straightforward, with no hidden fees—just
+                  honest, reliable services tailored to your goals. We
+                  understand the importance of budgeting, especially for growing
+                  businesses, so our packages are designed to scale with you as
+                  your needs evolve.
+                </p>
               </div>
-                <PriceCard name="pricing" link="/discovery-form"/>
-                <div className="text-box">
-                </div>
+              <PriceCard name="pricing" link="/discovery-form" />
+              <CallToAction />
             </div>
           </div>
         </section>
         <section className="forth-section">
           <div className="forth-inner">
             <div className={`${forth ? "anim" : "none"}`}>
-              <WorkCard background='var(--second-section)'/>
+              <WorkCard background="var(--second-section)" />
             </div>
           </div>
-        </section>
-        <section className="cta">
-          <CallToAction />
         </section>
       </div>
       <div>
         <HelmetProvider>
           <Helmet>
-            <title>Services | Immutable Studio – Creative Web Design & AI Solutions</title>
-            <link rel="canonical" href="https://www.immutable-studio.co.uk/services" />
+            <title>
+              Services | Immutable Studio – Creative Web Design & AI Solutions
+            </title>
+            <link
+              rel="canonical"
+              href="https://www.immutable-studio.co.uk/services"
+            />
             <meta
               name="description"
               content="Explore our range of web design, development, and AI solutions at Immutable Studio. We offer services tailored to help businesses grow in the digital space."
@@ -179,10 +209,22 @@ const Services = () => {
               Greenwich London, custom website design services in London, AI chatbot solutions for small businesses in Greenwich,
                web design agency in South East London, web design agency in London, web design agency in Greenwich,"
             />
-            <meta property="og:title" content="Services | Immutable Studio – Creative Web Design & AI Solutions" />
-            <meta property="og:description" content="Explore our range of web design, development, and AI solutions at Immutable Studio." />
-            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
-            <meta property="og:url" content="https://www.immutable-studio.co.uk/services" />
+            <meta
+              property="og:title"
+              content="Services | Immutable Studio – Creative Web Design & AI Solutions"
+            />
+            <meta
+              property="og:description"
+              content="Explore our range of web design, development, and AI solutions at Immutable Studio."
+            />
+            <meta
+              property="og:image"
+              content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+            />
+            <meta
+              property="og:url"
+              content="https://www.immutable-studio.co.uk/services"
+            />
           </Helmet>
         </HelmetProvider>
       </div>
