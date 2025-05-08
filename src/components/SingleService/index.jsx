@@ -209,9 +209,6 @@ const Singleservices = (props) => {
             )}
           </div>
         </section>
-        <div className="portfolio-section">
-          <WorkCard background="var(--second-section)" />
-        </div>
         <section className="third-section">
           <div className={`third-inner ${third ? "anim" : "none"}`}>
             <div className="text-box">
@@ -222,7 +219,10 @@ const Singleservices = (props) => {
           </div>
           <PriceCard name={props.name} link="/discovery-form" />
         </section>
-          <CallToAction />
+        <div className="portfolio-section">
+          <WorkCard background="var(--second-section)" />
+        </div>
+        <CallToAction />
       </div>
       <div>
         <HelmetProvider>
