@@ -119,7 +119,6 @@ const Singleservices = (props) => {
                     link="/portfolio"
                   />
                 </div>
-                <WorkCard background="var(--second-section)" />
               </div>
             )}
             {aiPage && (
@@ -210,6 +209,9 @@ const Singleservices = (props) => {
             )}
           </div>
         </section>
+        <div className="portfolio-section">
+          <WorkCard background="var(--second-section)" />
+        </div>
         <section className="third-section">
           <div className={`third-inner ${third ? "anim" : "none"}`}>
             <div className="text-box">
@@ -220,9 +222,7 @@ const Singleservices = (props) => {
           </div>
           <PriceCard name={props.name} link="/discovery-form" />
         </section>
-        <section className="cta">
           <CallToAction />
-        </section>
       </div>
       <div>
         <HelmetProvider>

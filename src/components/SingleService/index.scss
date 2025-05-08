@@ -17,6 +17,9 @@
       justify-content: flex-start;
     }
   }
+  .portfolio-section {
+    padding: 4rem 4.6rem;
+  }
 }
 .ai-section {
   .ai-inner {
@@ -66,6 +69,7 @@
   .single-service {
     .hero {
       padding: 3rem 0rem 0rem 2rem !important;
+
     }
     .hero-inner {
       flex-direction: column;
@@ -73,14 +77,24 @@
         width: 100%;
       }
     }
+    .second-section {
+      margin-top: 3rem;
+    }
+    .portfolio-section {
+      padding: 0rem 2rem;
+    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .hero-inner {
-    flex-direction: column;
-    .gif {
-      width: 600px;
-      align-self: flex-end;
-    }
+  .single-service {
+    .hero-inner {
+        flex-direction: column;
+    
+        .gif {
+          width: 600px;
+          align-self: flex-end;
+        }
+      }
   }
+  
 }
