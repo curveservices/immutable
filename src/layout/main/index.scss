@@ -36,7 +36,7 @@
     }
     p {
       font-size: 16px;
-      font-family: 'Poppins', serif;
+      font-family: 'Poppins', serif !important;
       margin: 0;
       padding: 0.5rem 0;
       animation: fadeIn 2.5s forwards;
@@ -95,19 +95,18 @@
       
       .hero-inner {
         display: flex;
-        justify-content: flex-start;
-        gap: 10rem;
+        justify-content: space-between;
+        gap: 1rem;
         color: #fff;
 
         .text-box {
           width: 50%;
         }
-        .btn-container {
-          justify-content: left;
-        }
       }
     }
     .second-section {
+      position: relative;
+      z-index: 1;
       padding: 4rem 4.8rem;
       .second-inner {
         color: #fff;
@@ -151,12 +150,12 @@
             .circle-shape {
               position: absolute;
               left: -2.5rem;
-              bottom: 0rem;
+              bottom: 5rem;
               z-index: -1;
               width: 150px;
               height: 150px;
               opacity: 0.7;
-              z-index: 0;
+              z-index: -1;
               background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) 0.8px, var(--third-bg) 1.6px, var(--third-bg) 3px, rgba(255, 255, 255, 0) 3.8px, rgb(255 0 0 / 0%) 10px);
               border-radius: 100px;
             }
@@ -165,7 +164,6 @@
       }
     }
     .third-section {
-      background: var(--main);
       padding: 3rem 4.8rem 5rem;
       .text-box {
         padding-bottom: 2rem;
@@ -262,16 +260,18 @@
       }
       .btn-container {
         margin: 1rem 0;
-        align-items: center;
       }
       .hero {
         position: relative;
         padding: 3rem 2rem 0;
+        .hero-inner {
+          justify-content: initial;
+        }
         .socials {
           align-items: flex-end;
           justify-content: flex-start;
           animation: none;
-          top: -10%;
+          top: 0%;
           .iconList {
             flex-direction: row;
           }
@@ -310,6 +310,7 @@
                 right: -1rem;
               }
               .circle-shape {
+                top: 10em;
                 left: 0rem;
               }
             }
