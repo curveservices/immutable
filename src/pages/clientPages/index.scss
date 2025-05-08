@@ -1,4 +1,7 @@
 .client-page {
+    .image-container {
+        position: relative;
+    }
     .top-container {
         justify-content: flex-start;
         padding-top: 5rem;
@@ -6,6 +9,7 @@
     .text {
         width: 80%;
     }
+    
     .scrolling-imgs {
         display: flex;
         justify-content: center;
@@ -103,8 +107,16 @@
 }
 
 @media (max-width: 768px) {
-    .scrolling-imgs {
-        flex-wrap: wrap;
-        width: 350px;
+    .client-page {
+        .scrolling-imgs {
+            flex-wrap: wrap;
+            width: 350px;
+        }
+    
+        .mobile-frame {
+            width: 150px;
+            height: 250px;
+        }
     }
+   
 }

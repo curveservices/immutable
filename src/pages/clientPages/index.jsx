@@ -190,10 +190,7 @@ const ClientPage = () => {
         </div>
         <PriceCard name="pricing" />
       </section>
-
-      <div className="cta">
-        <CallToAction />
-      </div>
+      <CallToAction />
     </div>
   );
 }
