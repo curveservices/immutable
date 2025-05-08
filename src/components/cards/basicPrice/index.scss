@@ -74,7 +74,7 @@
   padding-bottom: 2rem;
   width: 400px;
   box-shadow: var(--global);
-  background: var(--secondary);
+  background: var(--second);
   border-radius: 5px;
   text-align: center;
   transition: all 1s ease;
@@ -84,7 +84,7 @@
   }
 }
 .priceCard.active {
-  background: var(--second-section);
+  background: var(--primary);
   color: #fff;
   transform: scale(1.08);
   transition: all 1s ease;
@@ -121,7 +121,7 @@
 }
 .priceCard.active button {
   background: var(--secondary) !important;
-  color: #000;
+  color: #000 !important;
 }
 .btnContainer {
   display: flex;

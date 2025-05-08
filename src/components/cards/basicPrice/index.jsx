@@ -88,7 +88,8 @@ const PriceCard = (props) => {
                 <Button
                   link={`${item.link}`}
                   text="Show more"
-                  background="var(--second)"
+                  background="var(--primary)"
+                  color="#fff"
                 />
               </div>
             </div>
