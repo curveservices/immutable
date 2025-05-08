@@ -6,7 +6,7 @@ import google from "../../assets/images/google.webp";
 import googleIcon from "../../assets/images/google-icon.webp";
 import yell from "../../assets/images/yell-com.webp";
 import yellIcon from "../../assets/images/yell.webp";
-import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
+import { faClose, faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import Button from "../button";
 import ReactModal from "react-modal";
 import placeholder from "../../assets/images/image-holder.webp";
@@ -189,7 +189,7 @@ const GoogleReviews = () => {
           >
             <div className="modal">
               <button onClick={closeModal} className="close-modal">
-                x
+                <FontAwesomeIcon icon={faClose} />
               </button>
               <div className="profile">
                 <img

@@ -1,7 +1,7 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+
 .reviews-title {
-  text-align: center;
   color: #fff;
   text-transform: capitalize;
   padding: 1rem 0;
@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 0rem 2.2rem;
     font-weight: bold;
     border-radius: 5px;
     background: var(--second);
@@ -162,6 +161,9 @@
   max-width: 600px;
   width: 90%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  &:focus, :active {
+    outline: none;
+  }
   .profile {
     display: flex;
     gap: 2rem;
@@ -183,8 +185,8 @@
 }
 .close-modal {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   font-size: 24px;
