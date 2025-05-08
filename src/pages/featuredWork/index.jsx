@@ -132,9 +132,7 @@ const FeaturedWork = () => {
             instalink="https://www.instagram.com/immutable_studio/"
           />
         </div>
-        <section className="cta">
           <CTA />
-        </section>
       </div>
       <div>
         <HelmetProvider>

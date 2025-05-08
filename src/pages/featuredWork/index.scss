@@ -72,6 +72,9 @@
       box-shadow: var(--global);
       background: var(--main);
       color: #fff;
+      .flat-btn {
+        margin: 1rem;
+      }
     }
   }
 }
@@ -108,8 +111,6 @@
       }
       .container-footer {
         margin: 2rem 0rem;
-        padding: 0 0.5rem;
-        border-radius: 5px;
       }
     }
   }
