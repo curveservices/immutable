@@ -1,16 +1,20 @@
 .profile-text {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
   color: #fff;
-  p {
-    max-width: 70%;
+  .title {
+    padding-bottom: 2rem;
+  }
+  .text-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    p {
+      padding: 1rem 0 !important;
+    }
   }
 }
-.textBox {
-  color: #fff;
-  .btn-container {
-    justify-content: flex-start;
-  }
-}
+
 .card-container {
   display: flex;    
   flex-wrap: wrap;
@@ -51,7 +55,6 @@
     border-radius: 5px;
   }
   .flip-card-front {
-    background: var(--main);
     box-shadow: var(--box);
     img {
       width: 400px;
@@ -123,33 +126,40 @@
     .btn-container {
       margin: 0;
       padding: 0;
+      justify-content: center;
     }
   }
 }
-.btn-container {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-}
+
 @media screen and (max-width: 768px) {
   .profile-text {
-    padding: 2rem 0rem;
-    text-align: left;
-    width: 100%;
-    p {
-      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .title {
+        padding-bottom: 2rem;
+      }
+  
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+  
+        p {
+          padding: 1rem 0 !important;
+        }
+      }
+      .btn-container {
+        padding-bottom: 4rem;
+      }
     }
-  }
 
   .card-container {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     padding: 0rem;
-  }
-  .textBox {
-    text-align: left;
-    padding: 2rem 0;
   }
   .flip-card {
     width: 100%;
