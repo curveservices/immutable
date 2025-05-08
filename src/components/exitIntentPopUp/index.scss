@@ -1,7 +1,6 @@
 .popup-overlay {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -12,22 +11,17 @@
   .popup {
     display: flex;
     align-items: center;
-    width: 75%;
-    height: auto;
+    margin: -2rem 8rem;
     font-family: "Inter", sans-serif;
     background: #fff;
     margin-top: 2rem;
     text-align: center;
-    box-shadow: var(--global);
-    border: none;
-    & :focus,
-    :hover {
-      border: none;
-    }
+    outline: none;
+    cursor: pointer;
     .audit-img {
-      width: 400px;
+      width: 550px;
       max-width: 100%;
-      height: 600px;
+      height: 575px;
       max-height: 100%;
       object-fit: fill;
     }
@@ -53,7 +47,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    max-width: 100%;
     padding: 1rem 0 0;
     .subject {
       display: none;
@@ -67,10 +60,10 @@
       label {
         position: absolute;
         top: -10px;
-        left: 15px;
+        left: 10px;
+        padding: 0 2px;
         background: #fff;
-        padding: 0 5px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: #2c5fe1;
       }
 
@@ -79,43 +72,28 @@
         max-width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
-        border-radius: 10px;
+        border-radius: 5px;
         font-size: 1rem;
-        & :focus {
-          border: var(--primary);
-        }
       }
     }
     .audit-button {
       text-transform: uppercase;
-      background: #000;
+      background: var(--primary);
       color: #fff;
-      letter-spacing: 4px;
-      font-family: sans-serif;
+      letter-spacing: 2.5px;
       font-weight: 600;
-      text-decoration: none;
-      text-align: center;
       padding: 1rem;
-      float: left;
-      border-radius: 10px;
+      border-radius: 5px;
       border: none;
-      min-width: fit-content;
       box-shadow: var(--button-shadow);
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+      transition: all 0.3s ease;
       cursor: pointer;
 
       &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-1px);
         background: var(--primary);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       }
-    }
-
-    a {
-      text-decoration: none;
-      color: #fff;
     }
   }
 }
