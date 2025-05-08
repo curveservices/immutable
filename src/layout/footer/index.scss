@@ -13,6 +13,7 @@ footer {
       margin-right: 2rem;
       width: 250px;
       height: 60px;
+      object-fit: contain;
     }
   }
   .footer-container {
@@ -51,18 +52,19 @@ footer {
 }
 @media screen and (max-width: 768px) {
   footer {
+    padding: 1em ;
     .foot-title {
       .footer-logo {
-        width: 125px;
-        height: 31px;
+        width: 100px;
+        height: 25px;
         margin: 0 0.5rem;
       }
     }
     .footer-container {
       margin: 0;
       .site-links {
-        font-size: 8px;
-        gap: 5px;
+        font-size: 9px;
+        gap: 6px;
       }
     }
     .div-line {
@@ -75,13 +77,6 @@ footer {
     }
     .copy {
       font-size: 8px;
-    }
-    .hat {
-      position: relative;
-      top: -4px;
-      left: 18px;
-      width: 30px;
-      transform: scaleX(-1);
     }
   }
 }
