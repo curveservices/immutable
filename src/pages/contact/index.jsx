@@ -1,13 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Socials from "../../components/socials";
 import LeafletMap from "../../components/leafletMap";
+import "react-toastify/dist/ReactToastify.css";
 import "./index.scss";
 
 const Contact = () => {
@@ -55,11 +52,6 @@ const Contact = () => {
       <div className="contact-page">
         <section className="text-box">
           <h1 className="title">Contact Us</h1>
-          <p className="fadeInUp">
-            Ready to get your project started? wheather it's a large project,
-            personal portfolio, landing page or AI solutions, We are able to
-            help.
-          </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={handleSubmit}>
               <div className="form-group">
@@ -124,13 +116,6 @@ const Contact = () => {
               </div>
               <div className="btn-container">
                 <input className="submit-button" type="submit" value="Submit" />
-                <Link
-                  className="submit-button"
-                  target="_blank"
-                  to="https://calendly.com/immutable-studio/website-consultancy"
-                >
-                  <FontAwesomeIcon icon={faCalendarWeek} /> Book a call
-                </Link>
               </div>
             </form>
           </div>
