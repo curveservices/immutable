@@ -142,9 +142,7 @@ const SingleAssistant = (props) => {
             />
           </div>
         </section>
-        <section className="cta">
           <CallToAction />
-        </section>
       </div>
       <HelmetProvider></HelmetProvider>
     </>
