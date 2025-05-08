@@ -6,13 +6,11 @@
   cursor: pointer;
   .icon {
     filter: grayscale(100%);
-    opacity: 0.5;
     width: 100px;
     height: 100px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover {
       filter: initial;
-      opacity: initial;
       transform: scale(1.04);
       
     }
