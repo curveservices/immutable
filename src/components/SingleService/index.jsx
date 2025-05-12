@@ -54,7 +54,12 @@ const Singleservices = (props) => {
                 />
               </div>
             </div>
-            <img src={props.src} alt={`${props.HeroH1} Gif`} className="gif" />
+            <img
+              src={props.src}
+              alt={`${props.HeroH1} Gif`}
+              className="gif"
+              loading="lazy"
+            />
           </div>
         </section>
         <section className="second-section">
@@ -83,36 +88,76 @@ const Singleservices = (props) => {
                 <div className="circle-shape"></div>
               </div>
             </div>
-            {!aiPage && (webdevPage || maintenancePage || packagePage) && (
+            {
+              (webdevPage || packagePage) && (
+                <div className="howItWorks">
+                  <i className="subtitle">how it works</i>
+                  <div className={`${second ? "anim" : "none"}`}>
+                    <HowitWorks
+                      title="How it works"
+                      mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
+                    every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
+                      card1Gif={meeting}
+                      card1Title="Discovery Call"
+                      card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
+                        your projects needs."
+                      link1="https://calendly.com/immutable-studio/website-consultancy"
+                      text1="book a call"
+                      card2Gif={design}
+                      card2Title="Proposal and Design"
+                      card2P="A proposal is drawn up and you will be invited to your client portal for you to track progress. We will then create designs for your approval."
+                      link2="/portfolio"
+                      text2="our clients"
+                      card3Gif={webdev}
+                      card3Title="Draft & Completion"
+                      card3P="When the design is approved development begins. A draft will be hosted for approval. Once approved your 
+                      site is ready to complete"
+                      link3="/contact"
+                      text3="contact us"
+                      card4Gif={chatbot}
+                      card4Title="Ongoing Support"
+                      card4P="We offer ongoing support with hosting, website maintenance and SEO. Our support gives you peace-of-mind, we'll be
+                            on hand to help."
+                      link4="/services/seo-website-maintenance"
+                      text4="maintenance & SEO"
+                      text="Explore our Portfolio"
+                      link="/portfolio"
+                    />
+                  </div>
+                </div>
+              )}
+            {maintenancePage && (
               <div className="howItWorks">
-                <i className="subtitle">how it works</i>
+                <i className="subtitle">how your maintenance package works</i>
+                <p>
+                  We’re passionate about helping our clients brand stand out
+                  online. Customer service is more than a commitment, it shapes
+                  every aspect of our business. From discovery to final
+                  delivery, we prioritise understanding your visions &amp;
+                  goals.
+                </p>
                 <div className={`${second ? "anim" : "none"}`}>
                   <HowitWorks
                     title="How it works"
-                    mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
-                    every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
+                    mainP=""
                     card1Gif={meeting}
                     card1Title="Discovery Call"
-                    card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
-                        your projects needs."
+                    card1P="A video call helps us to get to know each other. We will discuss your website maintenance and SEO development needs."
                     link1="https://calendly.com/immutable-studio/website-consultancy"
                     text1="book a call"
                     card2Gif={design}
-                    card2Title="Proposal and Design"
-                    card2P="Once we fully understand your project a proposal is drawn up. We then start on design, we will create wireframe UI/UX designs
-                        for approval."
+                    card2Title="Maintenance Plan"
+                    card2P="Once we understand your monthly needs, a proposal is drawn up and your client portal will be available. We will then run an audit on your site."
                     link2="/portfolio"
                     text2="our clients"
                     card3Gif={webdev}
-                    card3Title="Draft & Completion"
-                    card3P="As soon as the design is approved development begins. A draft will hosted for you to approve. Once approved your 
-                      project is ready for completion"
+                    card3Title="The Work"
+                    card3P="Monthly maintenance will commence. Your content, security and SEO will be updated and regular back ups will start"
                     link3="/contact"
                     text3="contact us"
                     card4Gif={chatbot}
                     card4Title="Ongoing Support"
-                    card4P="We offer ongoing support with hosting, website maintenance and SEO development. Our support gives you peace-of-mind, we'll be
-                on hand to help."
+                    card4P="Ongoing support with SEO and maintenance development. Our support gives you peace-of-mind."
                     link4="/services/seo-website-maintenance"
                     text4="maintenance & SEO"
                     text="Explore our Portfolio"
@@ -123,7 +168,7 @@ const Singleservices = (props) => {
             )}
             {aiPage && (
               <div className="howItWorks">
-                <i className="subtitle">how it works</i>
+                <i className="subtitle">how our ai assistants work</i>
                 <div className={`${second ? "anim" : "none"}`}>
                   <HowitWorks
                     title="How it works"
@@ -137,13 +182,13 @@ const Singleservices = (props) => {
                     text1="book a call"
                     card2Gif={design}
                     card2Title="Proposal and Build"
-                    card2P="Once we fully understand your needs a proposal is drawn up. We then start training your assistant on your specific needs."
+                    card2P="Once we understand your needs a proposal is drawn up and you client portal will be available. We then start training your assistant on your specific needs."
                     link2="/portfolio"
                     text2="Our clients"
                     card3Gif={webdev}
                     card3Title="Draft & Completion"
                     card3P="As soon as the assistant is built and trained we will send for your approved. Once approved, your 
-                      assistant is ready for launch."
+                      assistant is ready to launch."
                     link3="/contact"
                     text3="contact us"
                     card4Gif={chatbot}
