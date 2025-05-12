@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect} from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "../../components/customTypewriter";
 import MarqueeComp from "../../components/marquee";
 import Button from "../../components/button/index";
 import CallToAction from "../../components/CTA";
-import LazyVideo from "../../components/LazyVideo";
 import WorkCard from "../../components/cards/work";
 import vid from "../../assets/images/bg.mp4";
 import ExitIntentPopup from "../../components/exitIntentPopup";
@@ -18,9 +16,12 @@ import HowitWorks from "../../components/howItWorks";
 import GoogleReviews from "../../components/googleReviews";
 import Socials from "../../components/socials";
 import useScrollStates from "../../components/scrollState";
+import LoadingSpinner from "../../components/loadingSpinner";
+const LazyVideo = React.lazy(() => import("../../components/LazyVideo"));
+const Typewriter = React.lazy(() => import("../../components/customTypewriter"));
 
 const Home = () => {
-  const {second, third, forth} = useScrollStates();
+  const {second, third, fourth} = useScrollStates();
 
   useEffect(() => {
     import("./index.scss").catch((error) => {
@@ -41,40 +42,46 @@ const Home = () => {
       <div className="home-page">
         <ExitIntentPopup />
         <section className="hero">
-          <LazyVideo
-            alt="Royal College of Greenwich, London"
-            src={vid}
-            type="video/mp4"
-            className="video"
-          />
+          <Suspense fallback={<LoadingSpinner />}>
+            <LazyVideo
+              alt="Website design in Greenwich south east London, London"
+              src={vid}
+              type="video/mp4"
+              className="video"
+            />
+          </Suspense>
+
           <div className="socials">
             <Socials
-            fblink="https://www.facebook.com/profile.php?id=61557552873479"
-            lilink="https://www.linkedin.com/company/21439623"
-            instalink="https://www.instagram.com/immutable_studio/"
-          />
+              fblink="https://www.facebook.com/profile.php?id=61557552873479"
+              lilink="https://www.linkedin.com/company/21439623"
+              instalink="https://www.instagram.com/immutable_studio/"
+            />
           </div>
           <div className="text-box">
             <h1 className="main-title">London Web Design Services</h1>
             <div className="typewriter">
-              <Typewriter
-                strings={[
-                  "Website Development.",
-                  "Maintenance & SEO.",
-                  "AI Chat Assistants.",
-                  "Website Design.",
-                  "AI Solutions.",
-                ]}
-                typingSpeed={75}
-                deletingSpeed={40}
-                pauseTime={1500}
-                loop
-              />
+              <Suspense fallback={<LoadingSpinner />}>
+                <Typewriter
+                  strings={[
+                    "Website Development.",
+                    "Maintenance & SEO.",
+                    "AI Chat Assistants.",
+                    "Website Design.",
+                    "AI Solutions.",
+                  ]}
+                  typingSpeed={75}
+                  deletingSpeed={40}
+                  pauseTime={1500}
+                  loop
+                />
+              </Suspense>
             </div>
             <div className="text">
               <p>
-                We are a website design &amp; development agency based in London. Specialising in
-                a range of digital products from webite maintenance & SEO to re-design and AI assistants that will
+                We are a website design &amp; development agency based in
+                London. Specialising in a range of digital products from webite
+                maintenance & SEO to re-design and AI assistants that will
                 transform your online presence.
               </p>
               <div className="btn-container">
@@ -90,7 +97,7 @@ const Home = () => {
                   color="#fff"
                 />
               </div>
-            </div> 
+            </div>
           </div>
         </section>
         <section className="second-section">
@@ -100,20 +107,36 @@ const Home = () => {
                 <i className="subtitle">Our Services</i>
                 <h2 className="main-title">What We Do for you</h2>
                 <p style={{ paddingBottom: "2rem" }}>
-                  We’re passionate about helping your brand stand out online. Whether you need a custom built website,
-                  a complete website re-design, an AI assistant or website SEO &amp; maintenance. We’re here to bring your digital
-                  ideas to life and make a real impact for your business. Let’s work together to create something amazing
+                  We’re passionate about helping your brand stand out online.
+                  Whether you need a custom built website, a complete website
+                  re-design, an AI assistant or website SEO &amp; maintenance.
+                  We’re here to bring your digital ideas to life and make a real
+                  impact for your business. Let’s work together to create
+                  something amazing
                 </p>
                 <i className="subtitle">Web design is an art</i>
-                <p>At Immutable Studio in London we are the
-                  artists. We use the power of technology and design bespoke websites on all major
+                <p>
+                  At Immutable Studio in London we are the artists. We use the
+                  power of technology and design bespoke websites on all major
                   CMS and framworks.
                 </p>
               </div>
               <div className="image-container">
                 <div className="square-shape"></div>
-                <img src={code} alt="London website design" className="image" style={{marginBottom: '60px'}}/>
-                <img src={paul} alt="London Web Designers" className="image" style={{ marginTop: '60px' }} />
+                <img
+                  src={code}
+                  alt="London website design"
+                  className="image"
+                  style={{ marginBottom: "60px" }}
+                  loading="lazy"
+                />
+                <img
+                  src={paul}
+                  alt="London Web Designers"
+                  className="image"
+                  style={{ marginTop: "60px" }}
+                  loading="lazy"
+                />
                 <div className="circle-shape"></div>
               </div>
             </div>
@@ -145,8 +168,8 @@ const Home = () => {
                 text4="find out more"
                 text="See all our services"
                 link="services"
-                />
-            </div>    
+              />
+            </div>
             <div className={`home-marquee ${second ? "anim" : "none"}`}>
               <MarqueeComp />
             </div>
@@ -161,9 +184,12 @@ const Home = () => {
         </section>
         <section className="forth-section">
           <div className="forth-inner">
-            <div className={`${forth ? "anim" : "none"}`}>
+            <div className={`${fourth ? "anim" : "none"}`}>
               <GoogleReviews />
-              <div className="subtitle" style={{ textAlign: "center", paddingBottom: "2rem" }}>
+              <div
+                className="subtitle"
+                style={{ textAlign: "center", paddingBottom: "2rem" }}
+              >
                 <i>Stay Up To Date And Follow Us!</i>
               </div>
               <Socials
@@ -174,13 +200,14 @@ const Home = () => {
             </div>
           </div>
         </section>
-          <CallToAction />
+        <CallToAction />
       </div>
       <div>
         <HelmetProvider>
           <Helmet>
             <title>
-              Web Design Agency in London | Immutable Studio – Creative Web Design & AI Solutions
+              Web Design Agency in London | Immutable Studio – Creative Web
+              Design & AI Solutions
             </title>
             <link rel="canonical" href="https://www.immutable-studio.co.uk" />
             <meta
@@ -194,10 +221,22 @@ const Home = () => {
                custom website design services in London, AI chatbot solutions for small businesses in Greenwich,
                web design agency in South East London, web design agency in London, web design agency in Greenwich,"
             />
-            <meta property="og:title" content="Web Design Agency in London | Immutable Studio" />
-            <meta property="og:description" content="Explore Immutable Studio for innovative website design, development, and AI solutions tailored to your business needs." />
-            <meta property="og:image" content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp" />
-            <meta property="og:url" content="https://www.immutable-studio.co.uk" />
+            <meta
+              property="og:title"
+              content="Web Design Agency in London | Immutable Studio"
+            />
+            <meta
+              property="og:description"
+              content="Explore Immutable Studio for innovative website design, development, and AI solutions tailored to your business needs."
+            />
+            <meta
+              property="og:image"
+              content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+            />
+            <meta
+              property="og:url"
+              content="https://www.immutable-studio.co.uk"
+            />
             <meta property="og:type" content="website" />
             <script type="application/ld+json">
               {`
