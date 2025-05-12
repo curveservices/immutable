@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Button from "../../components/button";
 import PriceCard from "../../components/cards/basicPrice";
@@ -6,7 +6,6 @@ import CallToAction from "../../components/CTA";
 import vid from "../../assets/images/london.mp4";
 import fallback from "../../assets/images/london.webp";
 import WorkCard from "../../components/cards/work";
-import LazyVideo from "../../components/LazyVideo";
 import HowitWorks from "../../components/howItWorks";
 import webdev from "../../assets/images/layout.mp4";
 import client from "../../assets/images/client.mp4";
@@ -16,9 +15,12 @@ import code from "../../assets/images/service-1.webp";
 import paul from "../../assets/images/packages.webp";
 import Links from "../../components/links";
 import useScrollStates from "../../components/scrollState";
+import LoadingSpinner from "../../components/loadingSpinner";
+
+const LazyVideo = React.lazy(() => import("../../components/LazyVideo"));
 
 const Services = () => {
-  const { second, third, forth } = useScrollStates();
+  const { second, third, fourth } = useScrollStates();
   useEffect(() => {
     import("./index.scss").catch((error) => {
       console.error("error loading css", error);
@@ -37,13 +39,15 @@ const Services = () => {
     <>
       <div className="serivces-page">
         <section className="hero">
-          <LazyVideo
-            src={vid}
-            type="video/mp4"
-            className="video"
-            fallback={fallback}
-            alt="Web design in London"
-          />
+          <Suspense fallback={<LoadingSpinner />}>
+            <LazyVideo
+              src={vid}
+              type="video/mp4"
+              className="video"
+              fallback={fallback}
+              alt="Web design in greenwich south east London, London UK"
+            />
+          </Suspense>
           <div className="hero-inner">
             <div className="text-box">
               <h1 className="title">Our Services</h1>
@@ -183,7 +187,7 @@ const Services = () => {
         </section>
         <section className="forth-section">
           <div className="forth-inner">
-            <div className={`${forth ? "anim" : "none"}`}>
+            <div className={`${fourth ? "anim" : "none"}`}>
               <WorkCard background="var(--second-section)" />
             </div>
           </div>
