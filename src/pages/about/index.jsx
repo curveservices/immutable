@@ -1,5 +1,5 @@
+import React, { Suspense } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useState, useEffect } from "react";
 
 import Button from "../../components/button";
 import Socials from "../../components/socials";
@@ -7,8 +7,10 @@ import TeamCard from "../../components/cards/teamCard";
 import CallToAction from "../../components/CTA";
 import vid from "../../assets/images/about.mp4";
 import about from "../../assets/images/about.webp";
-import LazyVideo from "../../components/LazyVideo";
 import useScrollStates from "../../components/scrollState";
+import LoadingSpinner from "../../components/loadingSpinner";
+
+const LazyVideo = React.lazy(() => import("../../components/LazyVideo"));
 
 const About = () => {
   const { second, third } = useScrollStates();
@@ -16,12 +18,14 @@ const About = () => {
     <>
       <div className="about-page">
         <section className="hero">
-          <LazyVideo
-            src={vid}
-            fallback={about}
-            type="video/mp4"
-            className="video"
-          />
+          <Suspense fallback={<LoadingSpinner />}>
+            <LazyVideo
+              src={vid}
+              fallback={about}
+              type="video/mp4"
+              className="video"
+            />
+          </Suspense>
           <div className="socials">
             <Socials
               fblink="https://www.facebook.com/profile.php?id=61557552873479"
@@ -59,30 +63,37 @@ const About = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div className="subtitle"><i>About us</i></div>
+            <div className="subtitle">
+              <i>About us</i>
+            </div>
             <h2 className="title">MEET THE TEAM</h2>
             <div className={`${second ? "anim" : "none"}`}>
               <TeamCard />
             </div>
           </div>
         </section>
-          <CallToAction />
+        <CallToAction />
       </div>
       <div>
-       <HelmetProvider>
-        <Helmet>
-          <title>About Us | Immutable Studio – Creative Web Design & AI Solutions</title>
-          <link rel="canonical" href="https://www.immutable-studio.co.uk/about-us" />
-          <meta
-            name="description"
-            content="Our team of developers and designers is dedicated to helping your brand improve its online presence with expert web design and AI solutions."
-          />
-          <meta
-            name="keywords"
-            content="Immutable studio, Greenwich London, London, Web design, website design, website development, website design agency, AI Solutions"
-          />
-          <script type="application/ld+json">
-            {`
+        <HelmetProvider>
+          <Helmet>
+            <title>
+              About Us | Immutable Studio – Creative Web Design & AI Solutions
+            </title>
+            <link
+              rel="canonical"
+              href="https://www.immutable-studio.co.uk/about-us"
+            />
+            <meta
+              name="description"
+              content="Our team of developers and designers is dedicated to helping your brand improve its online presence with expert web design and AI solutions."
+            />
+            <meta
+              name="keywords"
+              content="Immutable studio, Greenwich London, London, Web design, website design, website development, website design agency, AI Solutions"
+            />
+            <script type="application/ld+json">
+              {`
               {
                 "@context": "https://schema.org",
                 "@type": "Organization",
@@ -111,9 +122,9 @@ const About = () => {
                 }
               }
             `}
-          </script>
-        </Helmet>
-      </HelmetProvider>
+            </script>
+          </Helmet>
+        </HelmetProvider>
       </div>
     </>
   );
