@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 const Slider = React.lazy(() => import("react-slick"));
 import LoadingSpinner from "../loadingSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -119,8 +119,18 @@ const GoogleReviews = () => {
       <div className="google-reviews">
         <div className="header">
           <div className="header-img">
-            <img src={google} alt="google icon" className="google-icon" />
-            <img src={yell} alt="yell icon" className="yell-icon" />
+            <img
+              src={google}
+              alt="google icon"
+              className="google-icon"
+              loading="lazy"
+            />
+            <img
+              src={yell}
+              alt="yell icon"
+              className="yell-icon"
+              loading="lazy"
+            />
           </div>
           <div className="star-rating">
             <h3>{averageRating}</h3>
@@ -135,50 +145,52 @@ const GoogleReviews = () => {
             target="_blank"
           />
         </div>
-        <Slider {...sliderSettings}>
-          {reviews.map((review, index) => (
-            <div key={index} className="review">
-              <div className="profile">
-                {review[4] && (
+        <Suspense fallback={<LoadingSpinner />}>
+          <Slider {...sliderSettings}>
+            {reviews.map((review, index) => (
+              <div key={index} className="review">
+                <div className="profile">
+                  {review[4] && (
+                    <img
+                      src={review[4] || placeholder}
+                      alt={`${review[0]}'s profile`}
+                      className="profile-pic"
+                      loading="lazy"
+                      onError={(e) => (e.target.src = placeholder)}
+                    />
+                  )}
                   <img
-                    src={review[4] || placeholder}
-                    alt={`${review[0]}'s profile`}
-                    className="profile-pic"
-                    loading="lazy"
-                    onError={(e) => (e.target.src = placeholder)}
+                    src={review[7] === "yell" ? yellIcon : googleIcon}
+                    alt={`${review[7]} icon`}
+                    className="review-icon"
                   />
-                )}
-                <img
-                  src={review[7] === "yell" ? yellIcon : googleIcon}
-                  alt={`${review[7]} icon`}
-                  className="review-icon"
-                />
-                <h3 className="profile-name">
-                  <a
-                    href={`${review[6] || "/"}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {review[0]}
-                  </a>
-                </h3>
-              </div>
-              <div className="review-text">
-                <div className="date">{review[3]}</div>
-                <div className="rating">
-                  {renderStars(parseFloat(review[2]))}
+                  <h3 className="profile-name">
+                    <a
+                      href={`${review[6] || "/"}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {review[0]}
+                    </a>
+                  </h3>
                 </div>
-                <p className="profile-review">{review[1].slice(0, 100)}...</p>
-                <button
-                  onClick={() => openModal(review)}
-                  className="read-more-btn"
-                >
-                  Read more
-                </button>
+                <div className="review-text">
+                  <div className="date">{review[3]}</div>
+                  <div className="rating">
+                    {renderStars(parseFloat(review[2]))}
+                  </div>
+                  <p className="profile-review">{review[1].slice(0, 100)}...</p>
+                  <button
+                    onClick={() => openModal(review)}
+                    className="read-more-btn"
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </Suspense>
         {modalContent && (
           <ReactModal
             isOpen={isModalOpen}
