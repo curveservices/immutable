@@ -7,7 +7,6 @@ import {
 import React, { Suspense } from "react";
 import LoadingSpinner from "./components/loadingSpinner";
 import "./App.scss";
-import ClientPage from "./pages/clientPages";
 
 const About = React.lazy(() => import("./pages/about"));
 const Home = React.lazy(() => import("./pages/home"));
@@ -26,6 +25,7 @@ const FeaturedWork = React.lazy(() => import("./pages/featuredWork"));
 const ClientDiscoveryForm = React.lazy(() => import("./pages/clientForm"));
 const SeoMaintenance = React.lazy(() => import("./pages/seoMaintenance"));
 const AuditFormPage = React.lazy(() => import("./pages/auditForm"));
+const ClientPage = React.lazy(() => import("./pages/clientPages"));
 
 const loadPageCSS = (page) => import(`./components/pages/${page}.scss`);
 
