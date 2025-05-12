@@ -37,11 +37,11 @@ const LazyVideo = ({ src, type, fallback, ariaLabel, ...props }) => {
           className="video"
         >
           <source src={src} type={type} />
-          <img lazyloading="true" src={fallback} alt="Fallback image" />
+          <img loading="lazy" src={fallback} alt="Fallback image" />
         </video>
       ) : (
         <img
-          lazyloading="true"
+          loading="lazy"
           className="fallback"
           src={fallback}
           alt="Loading video..."
