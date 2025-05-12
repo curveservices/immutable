@@ -1,9 +1,10 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ToastContainer, toast } from "react-toastify";
 import Socials from "../../components/socials";
-import LeafletMap from "../../components/leafletMap";
+import LoadingSpinner from "../../components/loadingSpinner";
+const LeafletMap = React.lazy(() => import("../../components/leafletMap"));
 import "react-toastify/dist/ReactToastify.css";
 import "./index.scss";
 
@@ -139,7 +140,9 @@ const Contact = () => {
           </span>
         </div>
         <div className="map-wrap">
-          <LeafletMap/>
+          <Suspense fallback={<LoadingSpinner />}>
+            <LeafletMap/>
+          </Suspense>
         </div>
       </div>
       <ToastContainer
