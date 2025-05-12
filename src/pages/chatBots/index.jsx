@@ -1,5 +1,4 @@
 import gif from "../../assets/images/chatbot-unscreen.gif";
-import img from "../../assets/images/assistants.webp";
 import nyx from "../../assets/images/nyx.webp";
 import immie from "../../assets/images/immie.webp";
 import chipo from "../../assets/images/chipo.webp";
