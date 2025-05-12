@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const useScrollStates = () => {
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
-  const [forth, setForth] = useState(false);
+  const [fourth, setForth] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +18,7 @@ const useScrollStates = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return { second, third, forth };
+  return { second, third, fourth };
 };
 
 export default useScrollStates;
