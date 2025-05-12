@@ -1,22 +1,21 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useEffect} from "react";
+import React, { Suspense, useEffect} from "react";
 import Button from "../../components/button";
 import PriceCard from "../../components/cards/fullPrice";
 import CTA from "../../components/CTA";
 import vid from "../../assets/images/working.mp4";
 import working from "../../assets/images/working.webp";
-import LazyVideo from "../../components/LazyVideo";
-
 import Socials from "../../components/socials";
 import PortfolioProject from "../../components/portfolioProject";
 import useFirestoreData from "../../components/useFirestoreData";
 import LoadingSpinner from '../../components/loadingSpinner';
 import GoogleReviews from "../../components/googleReviews";
-import useScrollState from '../../components/scrollState/index'
+import useScrollState from '../../components/scrollState/index';
+const LazyVideo = React.lazy(() => import("../../components/LazyVideo"));
 
 const FeaturedWork = () => {
   const { cardsData, loading, error } = useFirestoreData('portfolio');
-  const {second, third, forth} = useScrollState()
+  const {second } = useScrollState()
  
   useEffect(() => {
     import("./index.scss").catch((error) => {
@@ -38,12 +37,15 @@ const FeaturedWork = () => {
     <>
       <div className="featured-work">
         <section className="hero">
-          <LazyVideo
-            src={vid}
-            type="video/mp4"
-            fallback={working}
-            className="video"
-          />
+          <Suspense fallback={<LoadingSpinner />}>
+            <LazyVideo
+              src={vid}
+              type="video/mp4"
+              fallback={working}
+              className="video"
+              alt="Website design London"
+            />
+          </Suspense>
           <div className="socials">
             <Socials
               fblink="https://www.facebook.com/profile.php?id=61557552873479"
@@ -132,7 +134,7 @@ const FeaturedWork = () => {
             instalink="https://www.instagram.com/immutable_studio/"
           />
         </div>
-          <CTA />
+        <CTA />
       </div>
       <div>
         <HelmetProvider>
