@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { getDoc, doc } from 'firebase/firestore';
 import { db } from "../../firbase.config";
@@ -14,6 +14,7 @@ import Button from '../../components/button';
 import PriceCard from '../../components/cards/basicPrice';
 import CallToAction from '../../components/CTA';
 import './index.scss';
+import useScrollStates from '../../components/scrollState';
 const videoMap = {
   hollows: hollows,
   tutor: tutor,
@@ -23,6 +24,7 @@ const videoMap = {
 };
 
 const ClientPage = () => {
+  const { second, third } = useScrollStates();
     const { clientId } = useParams();
     const [clientData, setClientData] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -82,7 +84,7 @@ const ClientPage = () => {
         </div>
       </section>
 
-      <section className="second-section">
+      <section className={`second-section ${second ? "anim" : "none"}`}>
         <div className="second-inner">
           <i className="subtitle">Designs and development</i>
           <h2 className="main-title">
@@ -177,7 +179,7 @@ const ClientPage = () => {
         </div>
       </section>
 
-      <section className="third-section">
+      <section className={`third-section  ${third ? "anim" : "none"}`}>
         <div className="text-box">
           <i className="subtitle">Transparent Pricing</i>
           <h2 className="price-title">Our Starting Prices</h2>
