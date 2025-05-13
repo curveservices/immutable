@@ -9,6 +9,13 @@ import vid from "../../assets/images/about.mp4";
 import about from "../../assets/images/about.webp";
 import useScrollStates from "../../components/scrollState";
 import LoadingSpinner from "../../components/loadingSpinner";
+import HowitWorks from "../../components/howItWorks";
+import webdev from "../../assets/images/layout.mp4";
+import meeting from "../../assets/images/online-meeting.mp4";
+import chatbot from "../../assets/images/chat-bot.mp4";
+import design from "../../assets/images/prototype.mp4";
+import code from "../../assets/images/code.webp";
+import paul from "../../assets/images/servicesImg.webp";
 
 const LazyVideo = React.lazy(() => import("../../components/LazyVideo"));
 
@@ -38,7 +45,7 @@ const About = () => {
               <h1 className="title">About Us</h1>
               <p>
                 We are a proud south east London design studio specialising in
-                web development, AI solutions &amp; social media marketing. We
+                website design, development, and AI solutions. We
                 apply all of our skills to your challenges and ideas.
               </p>
               <p>
@@ -63,16 +70,87 @@ const About = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div className="subtitle">
-              <i>About us</i>
+            <div className={`top-container ${second ? "anim" : "none"}`}>
+              <div className="second-text">
+                <i className="subtitle">Our commitments</i>
+                <h2 className="main-title">Why Work With Us</h2>
+                <p style={{ paddingBottom: "2rem" }}>
+                  We design and develop modern websites, build AI chat
+                  assistants, and offer reliable SEO development and website
+                  maintenance services. Whether you need one service or a full
+                  package, our solutions are flexible, scalable, and tailored to
+                  your goals.
+                </p>
+                <i className="subtitle">Its about you</i>
+                <p>
+                  We're here to make your life easier. We collaborate closely
+                  with you to deliver results that are functional and impactful.
+                  Expect clear communication, transparent pricing, and ongoing
+                  support. Every business is different, that's why we listen
+                  first and build second. We craft solutions that fit so you can
+                  grow with confidence and focus on what matters most.
+                </p>
+              </div>
+              <div className="image-container">
+                <div className="square-shape"></div>
+                <img
+                  src={code}
+                  alt="London website design"
+                  className="image"
+                  style={{ marginBottom: "60px" }}
+                />
+                <div className="circle-shape"></div>
+                <img
+                  src={paul}
+                  alt="London Web Designers"
+                  className="image"
+                  style={{ marginTop: "60px" }}
+                />
+              </div>
             </div>
-            <h2 className="title">MEET THE TEAM</h2>
             <div className={`${second ? "anim" : "none"}`}>
-              <TeamCard />
+              <div className="subtitle">website Design Built Around You</div>
+              <h2 className="main-title">Our Client Focused Approach</h2>
+              <div className="divider" />
+
+              <HowitWorks
+                card1Gif={meeting}
+                card1Title="Discovery Call"
+                card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
+                  your projects needs."
+                link1="https://calendly.com/immutable-studio/website-consultancy"
+                text1="book a call"
+                card2Gif={design}
+                card2Title="Proposal and Design"
+                card2P="A proposal is drawn up and you will be invited to your client portal for you to track progress. We will then create designs for your approval."
+                link2="/portfolio"
+                text2="our clients"
+                card3Gif={webdev}
+                card3Title="Draft & Completion"
+                card3P="When the design is approved development begins. A draft will be hosted for approval. Once approved your 
+                site is ready to complete"
+                link3="/contact"
+                text3="contact us"
+                card4Gif={chatbot}
+                card4Title="Ongoing Support"
+                card4P="We offer ongoing support with hosting, website maintenance and SEO. Our support gives you peace-of-mind, we'll be
+                      on hand to help."
+                link4="/services/seo-website-maintenance"
+                text4="maintenance & SEO"
+                text="Explore our Portfolio"
+                link="/portfolio"
+              />
             </div>
           </div>
         </section>
-        <CallToAction />
+        <section className={`third-section ${third ? "anim" : ""}`}>
+          <div className="third-inner">
+            <div className={`${third ? "anim" : "none"}`}>
+              <TeamCard />
+            </div>
+          </div>
+          <CallToAction />
+        </section>
       </div>
       <div>
         <HelmetProvider>
