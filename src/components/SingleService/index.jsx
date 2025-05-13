@@ -88,44 +88,43 @@ const Singleservices = (props) => {
                 <div className="circle-shape"></div>
               </div>
             </div>
-            {
-              (webdevPage || packagePage) && (
-                <div className="howItWorks">
-                  <i className="subtitle">how it works</i>
-                  <div className={`${second ? "anim" : "none"}`}>
-                    <HowitWorks
-                      title="How it works"
-                      mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
+            {(webdevPage || packagePage) && (
+              <div className="howItWorks">
+                <i className="subtitle">how it works</i>
+                <div className={`${second ? "anim" : "none"}`}>
+                  <HowitWorks
+                    title="How it works"
+                    mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
                     every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
-                      card1Gif={meeting}
-                      card1Title="Discovery Call"
-                      card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
+                    card1Gif={meeting}
+                    card1Title="Discovery Call"
+                    card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
                         your projects needs."
-                      link1="https://calendly.com/immutable-studio/website-consultancy"
-                      text1="book a call"
-                      card2Gif={design}
-                      card2Title="Proposal and Design"
-                      card2P="A proposal is drawn up and you will be invited to your client portal for you to track progress. We will then create designs for your approval."
-                      link2="/portfolio"
-                      text2="our clients"
-                      card3Gif={webdev}
-                      card3Title="Draft & Completion"
-                      card3P="When the design is approved development begins. A draft will be hosted for approval. Once approved your 
+                    link1="https://calendly.com/immutable-studio/website-consultancy"
+                    text1="book a call"
+                    card2Gif={design}
+                    card2Title="Proposal and Design"
+                    card2P="A proposal is drawn up and you will be invited to your client portal for you to track progress. We will then create designs for your approval."
+                    link2="/portfolio"
+                    text2="our clients"
+                    card3Gif={webdev}
+                    card3Title="Draft & Completion"
+                    card3P="When the design is approved development begins. A draft will be hosted for approval. Once approved your 
                       site is ready to complete"
-                      link3="/contact"
-                      text3="contact us"
-                      card4Gif={chatbot}
-                      card4Title="Ongoing Support"
-                      card4P="We offer ongoing support with hosting, website maintenance and SEO. Our support gives you peace-of-mind, we'll be
+                    link3="/contact"
+                    text3="contact us"
+                    card4Gif={chatbot}
+                    card4Title="Ongoing Support"
+                    card4P="We offer ongoing support with hosting, website maintenance and SEO. Our support gives you peace-of-mind, we'll be
                             on hand to help."
-                      link4="/services/seo-website-maintenance"
-                      text4="maintenance & SEO"
-                      text="Explore our Portfolio"
-                      link="/portfolio"
-                    />
-                  </div>
+                    link4="/services/seo-website-maintenance"
+                    text4="maintenance & SEO"
+                    text="Explore our Portfolio"
+                    link="/portfolio"
+                  />
                 </div>
-              )}
+              </div>
+            )}
             {maintenancePage && (
               <div className="howItWorks">
                 <i className="subtitle">how your maintenance package works</i>
@@ -261,8 +260,8 @@ const Singleservices = (props) => {
               <h2 className="titie ">Our {props.thirdH1} Prices</h2>
               <p>{props.thirdP}</p>
             </div>
+            <PriceCard name={props.name} link="/discovery-form" />
           </div>
-          <PriceCard name={props.name} link="/discovery-form" />
         </section>
         <div className="portfolio-section">
           <WorkCard background="var(--second-section)" />
