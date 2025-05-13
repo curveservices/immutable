@@ -16,14 +16,11 @@
       cursor: pointer;
       .text-box {
         flex: 1;
-        padding-right: 2rem;
-        max-width: 500px;
         h2 {
-          color: var(--third-bg);
+          color: var(--second-section);
         }
         p {
-          padding: 0 0.5rem;
-          color: #000;
+          color: var(--second-section);
         }
         .link {
           font-size: 1.3rem;
@@ -39,21 +36,15 @@
         }
       }
       .player-wrapper {
-        flex: 1;
-        max-width: 700px;
         aspect-ratio: 16 / 9;
-        position: relative;
-        border-radius: 5px;
         overflow: hidden;
         transition: transform 0.3s ease;
-        z-index: 1;
         .react-player {
-        position: absolute;
         top: 0;
         left: 0;
         }
         &.oposite-video {
-          margin-right: 2rem;
+          margin-right: 1rem;
         }
 
         &:hover {

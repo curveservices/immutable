@@ -9,13 +9,12 @@ import Socials from "../../components/socials";
 import PortfolioProject from "../../components/portfolioProject";
 import useFirestoreData from "../../components/useFirestoreData";
 import LoadingSpinner from '../../components/loadingSpinner';
-import GoogleReviews from "../../components/googleReviews";
 import useScrollState from '../../components/scrollState/index';
 const LazyVideo = React.lazy(() => import("../../components/LazyVideo"));
 
 const FeaturedWork = () => {
   const { cardsData, loading, error } = useFirestoreData('portfolio');
-  const {second } = useScrollState()
+  const {second, fourth } = useScrollState()
  
   useEffect(() => {
     import("./index.scss").catch((error) => {
@@ -107,7 +106,7 @@ const FeaturedWork = () => {
             </div>
           </div>
         </section>
-        <section className="third-section">
+        <section className={`third-section ${fourth ? "anim" : "none"}`}>
           <div className="text-box">
             <i className="subtitle">Transparent Pricing</i>
             <h2 className="main-title">our starting prices</h2>
@@ -120,20 +119,6 @@ const FeaturedWork = () => {
           </div>
           <PriceCard name="pricing" color="#fff" link="/discovery-form" />
         </section>
-        <div className={`forth-section`}>
-          <GoogleReviews />
-          <div
-            className="subtitle"
-            style={{ textAlign: "center", paddingBottom: "2rem" }}
-          >
-            <i>Stay Up To Date And Follow Us!</i>
-          </div>
-          <Socials
-            fblink="https://www.facebook.com/profile.php?id=61557552873479"
-            lilink="https://www.linkedin.com/company/21439623"
-            instalink="https://www.instagram.com/immutable_studio/"
-          />
-        </div>
         <CTA />
       </div>
       <div>
