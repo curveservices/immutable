@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Button from "../../components/button";
 import PriceCard from "../../components/cards/basicPrice";
@@ -81,45 +81,15 @@ const Services = () => {
         </section>
         <section className="second-section">
           <div className="second-inner">
-            <div
-              className={`top-container reverse ${second ? "anim" : "none"}`}
-            >
-              <div className="second-text reverse">
-                <i className="subtitle">Our commitments</i>
-                <h2 className="main-title">Why choose us</h2>
-                <p style={{ paddingBottom: "2rem" }}>
-                  We offer a full range of website design, SEO &amp;
-                  maintenance, AI chat assistants, and workflow automation
-                  services with flexible pricing. We can also package up all of
-                  these services as a convenient business pack.
-                </p>
-                <i className="subtitle">Its about you</i>
-                <p>
-                  Whether you are a small business or a large corporation, we
-                  can help you achieve your goals. Our team of experts will work
-                  with you to create a custom solution that meets your needs. We
-                  are committed to providing you with the best possible service
-                  and support.
-                </p>
-              </div>
-              <div className="image-container">
-                <div className="square-shape"></div>
-                <img
-                  src={code}
-                  alt="London website design"
-                  className="image"
-                  style={{ marginBottom: "60px" }}
-                />
-                <div className="circle-shape"></div>
-                <img
-                  src={paul}
-                  alt="London Web Designers"
-                  className="image"
-                  style={{ marginTop: "60px" }}
-                />
-              </div>
-            </div>
             <div className={`${second ? "anim" : "none"}`}>
+              <i className="subtitle">Our commitments</i>
+              <h2 className="main-title">Why Choose Us</h2>
+              <p className="text-box">
+                We design modern websites, build AI chat assistants, streamline
+                business workflows, and offer reliable SEO and maintenance
+                services. Whether you need one service or a full package, our
+                solutions are flexible, scalable, and tailored to your goals.
+              </p>
               <HowitWorks
                 card1Gif={client}
                 card1Title="Excellent Client Service"
@@ -157,6 +127,43 @@ const Services = () => {
                 link="/about-us"
               />
             </div>
+            <div
+              className={`top-container reverse ${second ? "anim" : "none"}`}
+            >
+              <div className="second-text reverse">
+                <h2 className="main-title">What Drives Us</h2>
+                <p style={{ paddingBottom: "2rem" }}>
+                  We're here to make your life easier. From first concept to
+                  final launch, we collaborate closely with you to deliver
+                  results that are beautiful, functional, and impactful. Expect
+                  clear communication, transparent pricing, and ongoing support.
+                </p>
+                <i className="subtitle">Its about you</i>
+                <p>
+                  Whether you are a small business or a large corporation, we
+                  can help you achieve your goals. Our team of experts will work
+                  with you to create a custom solution that meets your needs. We
+                  are committed to providing you with the best possible service
+                  and support.
+                </p>
+              </div>
+              <div className="image-container">
+                <div className="square-shape"></div>
+                <img
+                  src={code}
+                  alt="London website design"
+                  className="image"
+                  style={{ marginBottom: "60px" }}
+                />
+                <div className="circle-shape"></div>
+                <img
+                  src={paul}
+                  alt="London Web Designers"
+                  className="image"
+                  style={{ marginTop: "60px" }}
+                />
+              </div>
+            </div>
           </div>
         </section>
         <section className="third-section">
@@ -169,7 +176,7 @@ const Services = () => {
                   At the heart of what we do is a commitment to transparency and
                   building strong, lasting relationships with our clients. We
                   believe clear communication and trust are key to successful
-                  partnerships, and we’re here to support you every step of the
+                  partnerships, and we're here to support you every step of the
                   way.
                 </p>
                 <p>
