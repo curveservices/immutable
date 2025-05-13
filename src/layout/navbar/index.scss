@@ -4,7 +4,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 9999;
-  letter-spacing: 3px;
   padding: 0rem 4.8rem;
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -23,38 +22,25 @@ header {
   nav {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
     .active {
         border-bottom: 2px solid var(--second);
       }
-    a {
-      text-align: center;
-      line-height: 40px;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
     .text:hover {
       transform: scaleX(1.02);
+      transition: all 0.3s ease-in-out;
     }
   }
 }
 .navbar-scroll {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.mobile-icon {
   display: none;
-  transition: 3s ease-in-out;
 }
-.mobile-icon,
-.hamburger,
-.close-icon {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  header {
-    .hamburger {
-      right: 2rem;
-    };
-  }
-}
+
 @media screen and (max-width: 1024px) {
   header {
     padding: 0rem 1.5rem;
@@ -69,14 +55,18 @@ header {
       padding-top: 5px;
     }
     nav {
-      display: none;
-    }
-    nav {
       position: absolute;
+      top: 0;
       right: 0;
       width: 100%;
       background: var(--second-section);
-      z-index: 2;
+      z-index: -1;
+      background-color: var(--second-section);
+      background-image: url(../../assets/images/nav-bg.webp);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-blend-mode:exclusion;
       .active {
           border-bottom: none;
         }
@@ -85,43 +75,28 @@ header {
       }
       .mobile-icon {
         display: block;
+        font-size: 18px;
       }
       &.mobile-show {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
-        padding: 6rem 3rem 0;
+        gap: 2.5rem;
+        padding: 8rem 5rem;
+        width: 100%;
         height: 100vh;
-        animation: slideInRight 0.5s;
+        font-weight: 600;
         .text {
-          font-size: 18px;
+          font-size: 24px;
         }
         .menu-container {
           display: flex;
           align-items: center;
-          width: 150px;
           gap: 40px;
           margin-top: 1rem;
+          border-bottom: none;
         }
       }
     }
-  }
-  .navbar-scroll {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 5.3rem;
-    font-size: 28px;
-  }
-  .close-icon {
-    display: block;
-    position: absolute;
-    right: 35px;
-    top: 20px;
-    font-size: 24px;
   }
 }
