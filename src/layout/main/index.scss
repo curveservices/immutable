@@ -43,7 +43,7 @@
     }
     .reverse {
       flex-direction: row-reverse;
-      padding: 0rem 0rem 0rem 2rem;
+      padding: 0rem 0rem 0rem 1rem;
     }
     .main-title {
       text-transform: capitalize;
@@ -107,7 +107,7 @@
     .second-section {
       position: relative;
       z-index: 1;
-      padding: 4rem 4.8rem;
+      padding: 4rem 4.8rem 0;
       .second-inner {
         color: #fff;
 
@@ -117,7 +117,7 @@
           padding-bottom: 5rem;
           .second-text {
             margin: 0;
-            padding-right: 2rem;
+            padding-right: 1rem;
             width: 50%;
           }
           .image-container {
@@ -126,8 +126,8 @@
             gap: 1rem;
             padding-top: 2rem;
             .image {
-              max-width: 240px;
-              height: 350px;
+              max-width: 220px;
+              height: 320px;
               object-fit: cover;
               border-radius: 5px;
               margin-right: 2rem;
@@ -137,25 +137,22 @@
             }
             .square-shape {
               position: absolute;
-              right: -3em;
+              right: 0em;
               top: 0;
-              z-index: -1;
               width: 150px;
               height: 150px;
               opacity: 0.7;
-              z-index: 0;
               background-image: radial-gradient(#bbd3ff 2px, transparent 2px);
               background-size: 16px 16px;
             }
             .circle-shape {
               position: absolute;
-              left: -2.5rem;
-              bottom: 5rem;
+              left: -2rem;
+              top: 15rem;
               z-index: -1;
               width: 150px;
               height: 150px;
               opacity: 0.7;
-              z-index: -1;
               background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) 0.8px, var(--third-bg) 1.6px, var(--third-bg) 3px, rgba(255, 255, 255, 0) 3.8px, rgb(255 0 0 / 0%) 10px);
               border-radius: 100px;
             }
@@ -164,7 +161,7 @@
       }
     }
     .third-section {
-      padding: 3rem 4.8rem 5rem;
+      padding: 3rem 4.8rem 0rem;
       .text-box {
         padding-bottom: 2rem;
         color: #fff;
