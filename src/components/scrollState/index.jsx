@@ -10,7 +10,7 @@ const useScrollStates = () => {
         const scrollY = window.scrollY;
         setSecond(scrollY > 100);
         setThird(scrollY > 1500);
-        setForth(scrollY > 1700);
+        setForth(scrollY > 3000);
     };
 
     window.addEventListener('scroll', handleScroll);
