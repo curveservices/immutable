@@ -53,15 +53,12 @@ const Services = () => {
               <h1 className="title">Our Services</h1>
               <p>
                 The services we provide will turn your ideas into amazing
-                solutions.
-              </p>
-              <p>
-                We offer a full range of website development, website
+                solutions. We offer a full range of website development, website
                 maintenance, hosting and, AI solutions services with flexible
                 pricing.
               </p>
               <div className="btn-container">
-                <Button text="Get Started" link="/discovery-form" />
+                <Button text="Get Started" link="/discovery-form" color='#000' />
                 <Button
                   text="book a call"
                   link="https://calendly.com/immutable-studio/website-consultancy"
@@ -92,33 +89,30 @@ const Services = () => {
               </p>
               <HowitWorks
                 card1Gif={client}
-                card1Title="Excellent Client Service"
+                card1Title="Client Service"
                 card1P=" Customer service is a commitment and it shapes
                       every aspect of our business. From discovery to final
-                      delivery, we prioritise understanding your visions &amp;
-                      goals."
+                      delivery."
                 link1="/portfolio"
                 text1="Our Clients"
                 card2Gif={ai}
-                card2Title="Automated AI Solutions"
-                card2P="Every business is unique. We create custom automated
+                card2Title="AI Solutions"
+                card2P="We create custom automated
                       workflows &amp; AI solutions, tailored to your business
-                      saving you time &amp; money with repetitive tasks powered
-                      by AI."
+                      saving you time &amp; money with repetitive tasks."
                 link2="ai-assistants"
                 text2="AI Solutions"
                 card3Gif={webdev}
-                card3Title="Seamless User Experience"
-                card3P=" User experience is vital. We design user journeys focusing
+                card3Title="User Experience"
+                card3P="We design user journeys focusing
                       on simplicity &amp; ease of use. By providing seamless
                       browsing, we engage visitors &amp; inspire them to take
                       action."
                 link3="/contact"
                 text3="get in touch"
                 card4Gif={mobile}
-                card4Title="A Mobile-First Approach"
-                card4P="It's a mobile-driven world &amp; a responsive website is
-                      essential. Our designs are optimised for all devices,
+                card4Title="Mobile-First"
+                card4P="It's a mobile-driven world! Our designs are optimised for all devices,
                       ensuring a flawless experience on phones, tablets &amp;
                       desktops."
                 link4="web-development"

@@ -89,6 +89,7 @@ const Home = () => {
                   link="https://calendly.com/immutable-studio/website-consultancy"
                   text="call us"
                   target="_blank"
+                  color='#000'
                 />
                 <Button
                   link="discovery-form"
@@ -111,13 +112,12 @@ const Home = () => {
                   Whether you need a custom built website, a complete website
                   re-design, an AI assistant or website SEO &amp; maintenance.
                   We’re here to bring your digital ideas to life and make a real
-                  impact for your business. Let’s work together to create
-                  something amazing
+                  impact for your business.
                 </p>
                 <i className="subtitle">Web design is an art</i>
                 <p>
                   At Immutable Studio in London we are the artists. We use the
-                  power of technology and design bespoke websites on all major
+                  power of technology to design bespoke websites on all major
                   CMS and framworks.
                 </p>
               </div>
@@ -144,7 +144,7 @@ const Home = () => {
               <HowitWorks
                 card1Gif={webdev}
                 card1Title="Website Design"
-                card1P=" We build responsive websites that look and feel amazing on all devices
+                card1P="We build responsive websites that look and feel amazing on all devices
                     – desktops, laptops and mobiles. Let us help you create the perfect website."
                 link1="/services/web-development"
                 text1="Find out more"
@@ -156,7 +156,7 @@ const Home = () => {
                 text2="find out more"
                 card3Gif={ai}
                 card3Title="AI Solutions"
-                card3P="Our AI assistants are trained on your business and website pages. Answering FAQ's, taking bookings and more.
+                card3P="Our AI assistants are trained on your business and website. Answering FAQ's, taking bookings and more.
                     All seamlessly intergrated to your website and systems."
                 link3="services/ai-assistants"
                 text3="find out more"
