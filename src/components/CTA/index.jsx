@@ -16,6 +16,7 @@ const CallToAction = () => {
           text="book a call"
           link="https://calendly.com/immutable-studio/website-consultancy"
           target="_blank"
+          color="#000"
         />
         <Button
           text="Discovery Form"

@@ -28,7 +28,7 @@
   .cta {
     flex-direction: column;
     gap: 1rem;
-    margin: 2em;
+    margin: 2em 0;
     padding: 2rem;
     .text-container {
       max-width: 100%;
@@ -43,7 +43,6 @@
       }
     }
     .btn-container {
-      flex-direction: column;
       padding-bottom: 1rem;
     }
   }
