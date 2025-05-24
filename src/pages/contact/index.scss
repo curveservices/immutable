@@ -10,7 +10,7 @@
   .contact-form {
     width: 100%;
     padding-top: 1rem;
-    animation: fadeInUp 1.5s;
+    animation: fadeIn 0.4s forwards;
     .form-group {
       position: relative;
       margin-bottom: 1.5rem;
@@ -19,28 +19,25 @@
 
       label {
         position: absolute;
-        top: -12px;
-        left: 10px;
+        top: -15px;
+        left: 1px;
         padding: 0 5px;
         font-size: 0.7rem;
-        border-radius: 5px ;
+        border-radius: 5px 5px 0 0;
         background: #fff;
         color: #2c5fe1;
         z-index: 9999;
-        opacity: 0;
-        animation: fadeInUp 1s 0.5s forwards;
         clear: both;
       }
       input,
       select,
       textarea {
         border: 1px solid var(--third-bg);
+        background: #fff;
         max-width: 100%;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 0px 5px 5px 5px ;
         font-size: 1rem;
-        opacity: 0;
-        animation: fadeInUp 1s forwards;
         clear: both;
         &:focus, :active {
           outline: none;
@@ -91,7 +88,7 @@
   font-size: 16px;
   font-weight: 500;
   opacity: 0;
-  animation: fadeIn 2s 2s forwards;
+  animation: fadeIn 1s 1.5s forwards;
   span {
     font-size: 12px;
     padding-top: 20px;
@@ -103,7 +100,7 @@
   float: right;
   width: 40%;
   height: 100%;
-  animation: backInRight 1s 1s forwards;
+  animation: backInRight 1s 0.3s forwards;
   opacity: 0;
 }
 .leaflet-container {
