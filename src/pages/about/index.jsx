@@ -45,14 +45,11 @@ const About = () => {
               <h1 className="title">About Us</h1>
               <p>
                 We are a proud south east London design studio specialising in
-                website design, development, and AI solutions. We
-                apply all of our skills to your challenges and ideas.
+                website design, development, and AI solutions.
               </p>
               <p>
                 Created in 2022, we have been delivering amazing websites and AI
-                solutions ever since. Our Digital team deliver social media
-                marketing and strategies. We are passionate about tech, AI and
-                problem solving
+                solutions ever since.
               </p>
               <div className="btn-container">
                 <Button link="/contact" text="Contact us" />
@@ -87,8 +84,7 @@ const About = () => {
                   with you to deliver results that are functional and impactful.
                   Expect clear communication, transparent pricing, and ongoing
                   support. Every business is different, that's why we listen
-                  first and build second. We craft solutions that fit so you can
-                  grow with confidence and focus on what matters most.
+                  first and build second.
                 </p>
               </div>
               <div className="image-container">
@@ -136,7 +132,7 @@ const About = () => {
                 card4P="We offer ongoing support with hosting, website maintenance and SEO. Our support gives you peace-of-mind, we'll be
                       on hand to help."
                 link4="/services/seo-website-maintenance"
-                text4="maintenance & SEO"
+                text4="maintenance"
                 text="Explore our Portfolio"
                 link="/portfolio"
               />
