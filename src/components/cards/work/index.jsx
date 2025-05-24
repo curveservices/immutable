@@ -43,7 +43,7 @@ const WorkCard = (props) => {
     <>
       <div className="profile-text">
         <div className="title">
-          <i className="subtitle">our portfolio</i>
+          <i className="subtitle">featured work</i>
           <h2 className="main-title">Explore Our Portfolio</h2>
         </div>
         <div className="text-box">
@@ -53,7 +53,7 @@ const WorkCard = (props) => {
               Signing off on a new website is always a moment of pride and
               satisfaction for us. With each project, we take great care to
               understand our clients' unique needs and deliver tailored
-              solutions. Here are some of our featured projects.
+              solutions.
             </p>
           </div>
 
