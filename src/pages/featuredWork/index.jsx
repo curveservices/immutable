@@ -69,6 +69,7 @@ const FeaturedWork = () => {
                   text="Book a Call"
                   link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
                   noreferer
+                  color='#000'
                 />
                 <Button
                   text="Discovery form"
