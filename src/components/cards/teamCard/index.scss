@@ -55,27 +55,29 @@
     }
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
+  .textBox {
+    flex-direction: column;
+      h1 {
+        font-size: 28px;
+      }
+  
+      h2 {
+        font-size: 20px;
+      }
+    }
   .team-container {
     flex-direction: column;
     gap: 10rem;
     color: #fff;
     .team-card {
       max-width: 100%;
-      margin: 0 2rem;
       .teamImg {
         top: -75px;
         width: 150px;
         height: 150px;
       }
-      .text-box {
-        h1 {
-          font-size: 28px;
-        }
-        h2 {
-          font-size: 20px;
-        }
-      }
+      
     }
   }
 }
