@@ -58,14 +58,10 @@ header {
       position: absolute;
       top: 0;
       right: 0;
-      width: 100%;
-      background: var(--second-section);
       z-index: -1;
       background-color: var(--second-section);
       background-image: url(../../assets/images/nav-bg.webp);
       background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
       background-blend-mode:exclusion;
       .active {
           border-bottom: none;
