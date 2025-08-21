@@ -8,6 +8,7 @@ import morfbot from "../../assets/images/morfbot.mp4";
 import garland from "../../assets/images/garland.mp4";
 import vive from "../../assets/images/vive.mp4";
 import hollows from "../../assets/images/hollows.mp4";
+import learners from "../../assets/images/little-learners.mp4";
 import LazyVideo from '../../components/LazyVideo';
 import Socials from '../../components/socials';
 import Button from '../../components/button';
@@ -16,6 +17,7 @@ import CallToAction from '../../components/CTA';
 import './index.scss';
 import useScrollStates from '../../components/scrollState';
 const videoMap = {
+  learners: learners,
   hollows: hollows,
   tutor: tutor,
   morfbot: morfbot,
@@ -190,7 +192,7 @@ const ClientPage = () => {
             grows.
           </p>
         </div>
-        <PriceCard name="pricing" />
+        <PriceCard name={clientData.pricing} />
       </section>
       <CallToAction />
     </div>
