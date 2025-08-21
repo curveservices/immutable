@@ -93,32 +93,28 @@ const Singleservices = (props) => {
                 <i className="subtitle">how it works</i>
                 <div className={`${second ? "anim" : "none"}`}>
                   <HowitWorks
-                    title="How it works"
                     mainP="We’re passionate about helping our clients brand stand out online. Customer service is more than a commitment, it shapes
                     every aspect of our business. From discovery to final delivery, we prioritise understanding your visions &amp; goals."
                     card1Gif={meeting}
                     card1Title="Discovery Call"
-                    card1P="Conducting a video call helps us to get to know each other. Discovery calls are important to help us understand
-                        your projects needs."
+                    card1P="We start with a relaxed video call to get to know you and your goals. It’s all about understanding your project needs."
                     link1="https://calendly.com/immutable-studio/website-consultancy"
                     text1="book a call"
                     card2Gif={design}
-                    card2Title="Proposal and Design"
-                    card2P="A proposal is drawn up and you will be invited to your client portal for you to track progress. We will then create designs for your approval."
+                    card2Title="Proposal & Design"
+                    card2P="After the call, you’ll receive a custom proposal and access to your client portal. Then we begin designing for your feedback and approval."
                     link2="/portfolio"
                     text2="our clients"
                     card3Gif={webdev}
                     card3Title="Draft & Completion"
-                    card3P="When the design is approved development begins. A draft will be hosted for approval. Once approved your 
-                      site is ready to complete"
+                    card3P="Once designs are signed off, development begins. You’ll get a live draft to review — we refine it together, then launch!"
                     link3="/contact"
                     text3="contact us"
                     card4Gif={chatbot}
                     card4Title="Ongoing Support"
-                    card4P="We offer ongoing support with hosting, website maintenance and SEO. Our support gives you peace-of-mind, we'll be
-                            on hand to help."
+                    card4P="From hosting and maintenance to SEO, we’re here for the long haul — ensuring your site stays fast, secure, and up to date."
                     link4="/services/seo-website-maintenance"
-                    text4="maintenance & SEO"
+                    text4="site maintenance"
                     text="Explore our Portfolio"
                     link="/portfolio"
                   />
