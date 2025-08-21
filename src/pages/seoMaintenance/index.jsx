@@ -1,13 +1,11 @@
 import img from "../../assets/images/maintenance.webp";
 import img2 from "../../assets/images/audit.webp";
 import gif from "../../assets/images/webDev.gif";
-import ExitIntentPopup from "../../components/exitIntentPopup";
 import Singleservices from "../../components/SingleService";
 
 const SeoMaintenance = () => {
   return (
     <>
-      <ExitIntentPopup />
       <Singleservices
         page="maintenance"
         title="Website Maintenance and SEO"
