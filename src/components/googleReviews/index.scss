@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
     gap: 2rem;
     font-weight: bold;
     border-radius: 5px;
@@ -224,7 +225,10 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .google-reviews {
     .header {
-      margin: 0rem;
+      gap: 0.5rem;
+      padding: 0rem 0 1.5rem;
+      margin: 0;
+      flex-direction: column;
 
       .google-icon {
         width: 75px;
