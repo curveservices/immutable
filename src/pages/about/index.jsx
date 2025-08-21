@@ -72,19 +72,15 @@ const About = () => {
                 <i className="subtitle">Our commitments</i>
                 <h2 className="main-title">Why Work With Us</h2>
                 <p style={{ paddingBottom: "2rem" }}>
-                  We design and develop modern websites, build AI chat
-                  assistants, and offer reliable SEO development and website
-                  maintenance services. Whether you need one service or a full
-                  package, our solutions are flexible, scalable, and tailored to
-                  your goals.
+                  We create modern websites, AI assistants, and provide
+                  dependable SEO and maintenance—flexible, scalable solutions
+                  tailored to your goals.
                 </p>
                 <i className="subtitle">Its about you</i>
                 <p>
-                  We're here to make your life easier. We collaborate closely
-                  with you to deliver results that are functional and impactful.
-                  Expect clear communication, transparent pricing, and ongoing
-                  support. Every business is different, that's why we listen
-                  first and build second.
+                  We make your life easier with clear communication, transparent
+                  pricing, and tailored solutions—built by listening first,
+                  always.
                 </p>
               </div>
               <div className="image-container">
@@ -117,7 +113,7 @@ const About = () => {
                 link1="https://calendly.com/immutable-studio/website-consultancy"
                 text1="book a call"
                 card2Gif={design}
-                card2Title="Proposal and Design"
+                card2Title="Proposal &amp; Design"
                 card2P="A proposal is drawn up and you will be invited to your client portal for you to track progress. We will then create designs for your approval."
                 link2="/portfolio"
                 text2="our clients"
