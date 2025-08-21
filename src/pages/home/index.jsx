@@ -79,9 +79,9 @@ const Home = () => {
             </div>
             <div className="text">
               <p>
-                We are a website design &amp; development agency based in
-                London. Specialising in a range of digital products from webite
-                maintenance & SEO to re-design and AI assistants that will
+                We are a website design agency based in Greenwich, London. We
+                Specialise in a range of digital products from webite
+                maintenance &amp; SEO to re-design &amp; AI assistants that will
                 transform your online presence.
               </p>
               <div className="btn-container">
@@ -89,7 +89,7 @@ const Home = () => {
                   link="https://calendly.com/immutable-studio/website-consultancy"
                   text="call us"
                   target="_blank"
-                  color='#000'
+                  color="#000"
                 />
                 <Button
                   link="discovery-form"
@@ -108,17 +108,16 @@ const Home = () => {
                 <i className="subtitle">Our Services</i>
                 <h2 className="main-title">What We Do for you</h2>
                 <p style={{ paddingBottom: "2rem" }}>
-                  We’re passionate about helping your brand stand out online.
-                  Whether you need a custom built website, a complete website
-                  re-design, an AI assistant or website SEO &amp; maintenance.
-                  We’re here to bring your digital ideas to life and make a real
-                  impact for your business.
+                  From custom websites to AI assistants and SEO, we bring your
+                  digital ideas to life—built to elevate your business online.
+                  We focus on smart, effective solutions that deliver real
+                  results.
                 </p>
                 <i className="subtitle">Web design is an art</i>
                 <p>
                   At Immutable Studio in London we are the artists. We use the
                   power of technology to design bespoke websites on all major
-                  CMS and framworks.
+                  CMS and frameworks.
                 </p>
               </div>
               <div className="image-container">
@@ -216,8 +215,8 @@ const Home = () => {
             />
             <meta
               name="keywords"
-              content="Website, Website Design, Website Development, Web design, AI Solutions,
-               Chatbot, workflows, London, Greenwich, london web studio, 
+              content="Website, Website Design, Website Development, Web design, AI Solutions, website management services, creative web design london,
+               Chatbot, web design greenwich, web design London, web design in Greenwich, london web studio, 
                custom website design services in London, AI chatbot solutions for small businesses in Greenwich,
                web design agency in South East London, web design agency in London, web design agency in Greenwich,"
             />
@@ -240,23 +239,34 @@ const Home = () => {
             <meta property="og:type" content="website" />
             <script type="application/ld+json">
               {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "WebSite",
-                  "name": "Immutable Studio",
-                  "url": "https://www.immutable-studio.co.uk",
-                  "description": "Immutable Studio is a top web design agency specializing in responsive websites, AI solutions, and workflow automation for businesses in London.",
-                  "publisher": {
-                    "@type": "Organization",
-                    "name": "Immutable Studio",
-                    "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
-                  },
-                   "sameAs": [
-                    "https://www.linkedin.com/company/immutable-studio",
-                    "https://www.facebook.com/profile.php?id=61557552873479"
-                  ] 
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Immutable Studio",
+                "url": "https://www.immutable-studio.co.uk",
+                "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+447980383484",
+                  "email": "hello@immutable-studio.co.uk",
+                  "contactType": "Customer Service",
+                  "areaServed": "GB",
+                  "availableLanguage": ["English"]
+                },
+                "sameAs": [
+                  "https://www.linkedin.com/company/immutable-studio",
+                  "https://www.facebook.com/profile.php?id=61557552873479",
+                  "https://www.instagram.com/immutable_studio/"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Greenwich, London",
+                  "addressLocality": "London",
+                  "postalCode": "SE10 0LW",
+                  "addressCountry": "GB"
                 }
-              `}
+              }
+            `}
             </script>
           </Helmet>
         </HelmetProvider>

@@ -9,8 +9,8 @@ import WorkCard from "../../components/cards/work";
 import HowitWorks from "../../components/howItWorks";
 import webdev from "../../assets/images/layout.mp4";
 import client from "../../assets/images/client.mp4";
-import mobile from "../../assets/images/mobile.mp4";
-import ai from "../../assets/images/ai.mp4";
+import chatbot from "../../assets/images/chat-bot.mp4";
+import meeting from "../../assets/images/online-meeting.mp4";
 import code from "../../assets/images/service-1.webp";
 import paul from "../../assets/images/packages.webp";
 import Links from "../../components/links";
@@ -58,7 +58,11 @@ const Services = () => {
                 pricing.
               </p>
               <div className="btn-container">
-                <Button text="Get Started" link="/discovery-form" color='#000' />
+                <Button
+                  text="Get Started"
+                  link="/discovery-form"
+                  color="#000"
+                />
                 <Button
                   text="book a call"
                   link="https://calendly.com/immutable-studio/website-consultancy"
@@ -90,33 +94,26 @@ const Services = () => {
               <HowitWorks
                 card1Gif={client}
                 card1Title="Client Service"
-                card1P=" Customer service is a commitment and it shapes
-                      every aspect of our business. From discovery to final
+                card1P=" Customer service shapes
+                      every aspect of our business. We prioritise your specific needs from discovery to final
                       delivery."
                 link1="/portfolio"
                 text1="Our Clients"
-                card2Gif={ai}
-                card2Title="AI Solutions"
-                card2P="We create custom automated
-                      workflows &amp; AI solutions, tailored to your business
-                      saving you time &amp; money with repetitive tasks."
-                link2="ai-assistants"
-                text2="AI Solutions"
+                card2Gif={meeting}
+                card2Title="Clear Communication"
+                card2P="No tech jargon. Just honest advice and plain-English updates, so you're always confident in what’s happening and why."
+                link2="/portfolio"
+                text2="Our portfolio"
                 card3Gif={webdev}
-                card3Title="User Experience"
-                card3P="We design user journeys focusing
-                      on simplicity &amp; ease of use. By providing seamless
-                      browsing, we engage visitors &amp; inspire them to take
-                      action."
+                card3Title="Tailored Solutions"
+                card3P="We don’t do one-size-fits-all. Every project is uniquely crafted to meet your goals, budget, and audience."
                 link3="/contact"
                 text3="get in touch"
-                card4Gif={mobile}
-                card4Title="Mobile-First"
-                card4P="It's a mobile-driven world! Our designs are optimised for all devices,
-                      ensuring a flawless experience on phones, tablets &amp;
-                      desktops."
-                link4="web-development"
-                text4="web development"
+                card4Gif={chatbot}
+                card4Title=" Ongoing Support"
+                card4P="We stick around long after launch — offering maintenance, SEO, and enhancements to keep your site sharp and future-ready."
+                link4="seo-website-maintenance"
+                text4="site maintenance"
                 text="find out about us"
                 link="/about-us"
               />

@@ -27,8 +27,7 @@ const SeoMaintenance = () => {
         img2={img2}
         alt="Professional Website maintenance and SEO services in Greenwich London and South East London, UK"
         thirdH1="Maintenance"
-        thirdP="We prioritise transparent communication &amp; strong client bonds.
-              Our services for SEO and website maintenance are based on a retainer model."
+        thirdP="We offer straightforward monthly or annual plans for website maintenance and SEO—no hidden costs, just reliable support and results."
         name="maintenance"
       />
     </>

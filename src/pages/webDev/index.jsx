@@ -22,14 +22,13 @@ const WebDev = () => {
       secondP="Frustrated with an outdated website that lacks engagement and
               conversions? We excel in crafting visually
               appealing, functional websites, elevating your online presence."
-      p="We offer a range of website solutions from Wordpress and Woo-commerce sites to custom built hard coded, scalable websites.
+      p="We offer a range of website solutions from Wordpress and Shopify sites to custom built hard coded, scalable websites.
         We also offer help with maintence and hosting."
       img={img}
       img2={img2}
       alt="Custom web development and design in Greenwich, London"
       thirdH1="Website"
-      thirdP="We emphasise clear communication and robust client relationships.
-              Our services are based on a retainer model which include maintence, full support and hosting."
+      thirdP="We prioritise clear communication and strong client relationships. Invest in a website that works hard for your business—with pricing that’s as straightforward as our process."
       name="webDev"
     />
   );
