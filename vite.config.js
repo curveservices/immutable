@@ -7,12 +7,6 @@ import purgecss from "vite-plugin-purgecss";
 export default defineConfig({
   base: "/",
   css: {
-    preprocessorOptions: {
-      sass: {
-        api: "modern",
-        silenceDeprecations: ["legacy-js-api"],
-      },
-    },
     modules: {
       localsConvention: "camelCase", // makes sure the classes are camelCase, like priceCard
     },
@@ -82,5 +76,4 @@ export default defineConfig({
       },
     },
   },
-  define: { "process.env": process.env },
 });
