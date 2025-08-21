@@ -30,6 +30,11 @@ const GoogleReviews = () => {
       const data = await response.json();
       if (data.values && data.values.length > 1) {
         const reviewsData = data.values.slice(1); // Skip header row
+        reviewsData.sort((a, b) => {
+          const dateA = new Date(a[3]);
+          const dateB = new Date(b[3]);
+          return dateB - dateA;
+        });
         setReviews(reviewsData);
 
         // Calculate average rating
