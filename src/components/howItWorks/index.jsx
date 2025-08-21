@@ -1,4 +1,3 @@
-import React from "react";
 import SlideButton from "../buttonSlide";
 import Button from "../button";
 
