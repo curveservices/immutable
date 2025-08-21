@@ -1,32 +1,32 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import SlideButton from '../buttonSlide';
-import ReactPlayer from 'react-player';
 import tutor from "../../assets/images/telehill.mp4";
 import morfbot from "../../assets/images/morfbot.mp4";
 import garland from "../../assets/images/garland.mp4";
 import vive from "../../assets/images/vive.mp4";
 import hollows from "../../assets/images/hollows.mp4";
+import learners from "../../assets/images/little-learners.mp4";
 
 const PortfolioProject = ({ cardsData }) => {
   if (!cardsData || cardsData.length === 0) return <div className="error-message">No projects to show</div>
   const videoMap = {
-       "hollows": hollows,
-        "tutor": tutor,
-        "morfbot": morfbot,
-        "garland": garland,
-        "vive": vive,
-      }
+    "learners": learners,
+    "hollows": hollows,
+    "tutor": tutor,
+    "morfbot": morfbot,
+    "garland": garland,
+    "vive": vive,
+  };
+  
   return (
  <>
         {cardsData.map((data, index) => {
         const { title, description, category, categoryLink, caseStudyLink } = data;
         const video = videoMap[data.video]
         const direction = index % 2 === 0 ? "normal" : "reverse";
-
         return (
           <div
-            key={data.id}
+            key={data.id || index}
             className={`featured ${direction === "reverse" ? "reverse" : ""}`}
           >
             <div className="text-box">
@@ -43,19 +43,16 @@ const PortfolioProject = ({ cardsData }) => {
                 link={caseStudyLink}
               />
             </div>
-            <div
-              className={`player-wrapper ${direction === "reverse" ? "oposite-video" : ""}`}
-            >
-              <ReactPlayer
-                className="react-player"
-                url={video}
-                playing
-                loop
-                playsinline
-                muted
-                controls={false}
-              />
-            </div>
+            <video
+              className="video-player"
+              src={video}
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop
+              loading="lazy"
+            />
           </div>
         );
       })}
