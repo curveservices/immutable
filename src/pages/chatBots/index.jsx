@@ -25,11 +25,7 @@ const ChatBots = () => {
       img={nyx}
       alt="ai website development in london, Greenwich London, UK"
       thirdH1="AI Assistant"
-      thirdP="We emphasise clear communication and robust client relationships.
-              Our business model is retainer based for AI &amp; automation services. 
-              Solutions are hosted from our platforms, monthly audits and maintence are included 
-              in the monthly fee. Packages can be expanded as your
-              business grows."
+      thirdP="Powerful AI, predictable pricing. Our packages include hosting, monthly check-ins, and room to scale as you grow."
       img1={nyx}
       assistant1="Nyx"
       title1="Social Media Agent"
