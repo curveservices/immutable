@@ -4,7 +4,7 @@ import LoadingSpinner from "../loadingSpinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import google from "../../assets/images/google.webp";
 import googleIcon from "../../assets/images/google-icon.webp";
-import yell from "../../assets/images/yell-com.webp";
+import yell from "../../assets/images/Yell-com.webp";
 import yellIcon from "../../assets/images/yell.webp";
 import { faClose, faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import Button from "../button";

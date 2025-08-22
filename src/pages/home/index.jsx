@@ -5,6 +5,7 @@ import Button from "../../components/button/index";
 import CallToAction from "../../components/CTA";
 import WorkCard from "../../components/cards/work";
 import vid from "../../assets/images/bg.mp4";
+import ExitIntentPopup from "../../components/exitIntentPopUp";
 import webdev from "../../assets/images/layout.mp4";
 import seo from "../../assets/images/keywords.mp4";
 import ai from "../../assets/images/ai.mp4";
@@ -39,6 +40,7 @@ const Home = () => {
   return (
     <>
       <div className="home-page">
+        <ExitIntentPopup />
         <section className="hero">
           <Suspense fallback={<LoadingSpinner />}>
             <LazyVideo
