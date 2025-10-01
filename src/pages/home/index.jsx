@@ -80,7 +80,7 @@ const Home = () => {
             <div className="text">
               <p>
                 We are a website design agency based in Greenwich, London. We
-                Specialise in a range of digital products from webite
+                Specialise in a range of digital products from website
                 maintenance &amp; SEO to re-design &amp; AI assistants that will
                 transform your online presence.
               </p>
