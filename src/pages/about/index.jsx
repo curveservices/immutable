@@ -168,7 +168,7 @@ const About = () => {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "Immutable Studio",
-                "url": "https://www.immutable-studio.co.uk",
+                "url": "https://www.immutable-studio.co.uk/about-us",
                 "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                 "contactPoint": {
                   "@type": "ContactPoint",
