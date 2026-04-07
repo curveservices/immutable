@@ -5,7 +5,7 @@ import morfbot from "../../assets/images/morfbot.mp4";
 import garland from "../../assets/images/garland.mp4";
 import vive from "../../assets/images/vive.mp4";
 import hollows from "../../assets/images/hollows.mp4";
-import learners from "../../assets/images/little-learners.mp4";
+import learners from "../../assets/images/little-learners1.mp4";
 
 const PortfolioProject = ({ cardsData }) => {
   if (!cardsData || cardsData.length === 0) return <div className="error-message">No projects to show</div>

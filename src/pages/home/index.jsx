@@ -91,12 +91,12 @@ const Home = () => {
                   target="_blank"
                   color="#000"
                 />
-                <Button
-                  link="discovery-form"
-                  text="get started"
-                  background="var(--third-bg)"
-                  color="#fff"
-                />
+              <Button
+                link="discovery-form"
+                text="get started"
+                background="var(--third-bg)"
+                color="#fff"
+              />
               </div>
             </div>
           </div>
