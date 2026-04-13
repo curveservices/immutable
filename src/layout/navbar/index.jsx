@@ -1,6 +1,8 @@
 import {
+  faEnvelopeOpen,
   faHouseChimney,
   faPersonCircleQuestion,
+  faPhone,
   faSuitcase,
   faTools,
   faUser,
@@ -15,6 +17,7 @@ import mobileLogo from "../../assets/images/1-removebg-preview.webp";
 import MenuToggle from "../../components/menuToggle"
 import "./index.scss";
 import { motion, AnimatePresence } from "framer-motion";
+import Socials from "../../components/socials";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -111,6 +114,18 @@ const Navbar = () => {
           <div className="text">About</div>
         </div>
       </NavLink>
+      <div className="contact-container">
+        <div className="text mobile-icon">
+          <b>Get In Touch</b>
+        </div>
+        <div className="mobile-icon text small menu-container">
+          <FontAwesomeIcon icon={faEnvelopeOpen} />
+          hello@immutable-studio.co.uk
+        </div>
+        <div className="mobile-icon text small menu-container">
+          <FontAwesomeIcon icon={faPhone} /> +44 (0) 7980 383 484
+        </div>
+      </div>
       <Button
         text="Contact Us"
         link="/contact"
@@ -119,6 +134,7 @@ const Navbar = () => {
         boxShadow="none"
         onClick={() => setShowNav(false)}
       />
+      <Socials />
     </>
   );
 
@@ -157,7 +173,7 @@ const Navbar = () => {
                 >
                   {links}
                 </motion.nav>
-              )}
+            )}
             </AnimatePresence>
           ) : (
             <nav>{links}</nav>
