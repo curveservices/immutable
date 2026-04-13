@@ -19,6 +19,9 @@ header {
   .mobile-logo {
     display: none;
   }
+  .iconList {
+    display: none;
+  }
   nav {
     display: flex;
     align-items: center;
@@ -46,6 +49,10 @@ header {
     padding: 0rem 1.5rem;
     .logo {
       display: none;
+    }
+    .iconList {
+      display: flex;
+
     }
     .mobile-logo {
       display: block;

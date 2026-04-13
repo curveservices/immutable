@@ -134,7 +134,12 @@ const Navbar = () => {
         boxShadow="none"
         onClick={() => setShowNav(false)}
       />
-      <Socials />
+      <Socials
+        className="mobile-icon"
+        fblink="https://www.facebook.com/profile.php?id=61557552873479"
+        lilink="https://www.linkedin.com/company/21439623"
+        instalink="https://www.instagram.com/immutable_studio/"
+      />
     </>
   );
 
