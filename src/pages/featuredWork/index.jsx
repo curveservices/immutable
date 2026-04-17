@@ -130,7 +130,7 @@ const FeaturedWork = () => {
             </title>
             <link
               rel="canonical"
-              href="https://www.immutable-studio.co.uk/portfolio"
+              href="https://immutable-studio.co.uk/portfolio"
             />
             <meta
               name="description"
@@ -154,7 +154,7 @@ const FeaturedWork = () => {
             />
             <meta
               property="og:url"
-              content="https://www.immutable-studio.co.uk/portfolio"
+              content="https://immutable-studio.co.uk/portfolio"
             />
             <script type="application/ld+json">
               {`
@@ -166,7 +166,7 @@ const FeaturedWork = () => {
                     "@type": "Organization",
                     "name": "Immutable Studio"
                   },
-                  "url": "https://www.immutable-studio.co.uk/portfolio",
+                  "url": "https://immutable-studio.co.uk/portfolio",
                   "description": "A showcase of our featured work that includes website design and AI solutions."
                 }
               `}

@@ -208,7 +208,7 @@ const Home = () => {
               Web Design Agency in London | Immutable Studio – Creative Web
               Design & AI Solutions
             </title>
-            <link rel="canonical" href="https://www.immutable-studio.co.uk" />
+            <link rel="canonical" href="https://immutable-studio.co.uk" />
             <meta
               name="description"
               content="Immutable Studio is a leading web design agency in London, offering website development, responsive design, and AI solutions to help your business grow."
@@ -234,7 +234,7 @@ const Home = () => {
             />
             <meta
               property="og:url"
-              content="https://www.immutable-studio.co.uk"
+              content="https://immutable-studio.co.uk"
             />
             <meta property="og:type" content="website" />
             <script type="application/ld+json">
@@ -243,7 +243,7 @@ const Home = () => {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "Immutable Studio",
-                "url": "https://www.immutable-studio.co.uk",
+                "url": "https://immutable-studio.co.uk",
                 "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                 "contactPoint": {
                   "@type": "ContactPoint",
