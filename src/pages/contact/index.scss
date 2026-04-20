@@ -112,8 +112,11 @@
   .contact-page {
     flex-direction: column;
     margin: 0rem;
+    .contact-form {
+      margin-top: 1rem;
+    }
     .text-box {
-      margin: 3rem 0 4rem;
+      margin: 2rem 0 4rem;
       width: 100%;
       padding: 0 2rem;
     }
