@@ -73,9 +73,11 @@
     }
     .hero-inner {
       flex-direction: column;
+      .text-box {
+        padding: 0;
+      }
       .gif {
         width: 100%;
-        bottom: 0;
       }
     }
     .second-section {
