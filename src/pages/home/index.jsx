@@ -91,12 +91,12 @@ const Home = () => {
                   target="_blank"
                   color="#000"
                 />
-              <Button
-                link="discovery-form"
-                text="get started"
-                background="var(--third-bg)"
-                color="#fff"
-              />
+                <Button
+                  link="discovery-form"
+                  text="get started"
+                  background="var(--third-bg)"
+                  color="#fff"
+                />
               </div>
             </div>
           </div>
@@ -205,8 +205,8 @@ const Home = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Web Design Agency in London | Immutable Studio – Creative Web
-              Design & AI Solutions
+              Web Design in Greenwich, London | Immutable Studio – Creative Web
+              Design & SEO
             </title>
             <link rel="canonical" href="https://immutable-studio.co.uk" />
             <meta
@@ -222,7 +222,8 @@ const Home = () => {
             />
             <meta
               property="og:title"
-              content="Web Design Agency in London | Immutable Studio"
+              content="Web Design in Greenwich, London | Immutable Studio – Creative Web
+              Design & SEO"
             />
             <meta
               property="og:description"
@@ -232,10 +233,7 @@ const Home = () => {
               property="og:image"
               content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
             />
-            <meta
-              property="og:url"
-              content="https://immutable-studio.co.uk"
-            />
+            <meta property="og:url" content="https://immutable-studio.co.uk" />
             <meta property="og:type" content="website" />
             <script type="application/ld+json">
               {`

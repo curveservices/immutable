@@ -69,7 +69,7 @@ const FeaturedWork = () => {
                   text="Book a Call"
                   link="https://calendly.com/immutable-studio/website-consultancy?month=2024-05"
                   noreferer
-                  color='#000'
+                  color="#000"
                 />
                 <Button
                   text="Discovery form"
@@ -126,7 +126,8 @@ const FeaturedWork = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Portfolio | Immutable Studio – Creative Web Design & AI Solutions
+              Our Portfolio | Immutable Studio – Creative Web Design in
+              Greenwich, London
             </title>
             <link
               rel="canonical"
@@ -138,11 +139,11 @@ const FeaturedWork = () => {
             />
             <meta
               name="keywords"
-              content="featured work, website design agency, web development, Immutable Studio, web design, website design, AI solutions, chatbots, workflow automation, automation, digital agency"
+              content="featured work, portfolio, website design agency, web development, Immutable Studio, web design, website design, AI solutions, chatbots, workflow automation, automation, digital agency"
             />
             <meta
               property="og:title"
-              content="Portfolio | Immutable Studio – Creative Web Design & AI Solutions"
+              content="Our Portfolio | Immutable Studio – Creative Web Design in Greenwich, London"
             />
             <meta
               property="og:description"

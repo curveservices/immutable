@@ -148,7 +148,8 @@ const About = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              About Us | Immutable Studio – Creative Web Design & AI Solutions
+              About Us | Immutable Studio – Creative Web Design in Greenwich,
+              London
             </title>
             <link
               rel="canonical"
@@ -161,6 +162,11 @@ const About = () => {
             <meta
               name="keywords"
               content="Immutable studio, Greenwich London, London, Web design, website design, website development, website design agency, AI Solutions"
+            />
+            <meta
+              property="og:title"
+              content="About Us | Immutable Studio – Creative Web Design in Greenwich,
+              London"
             />
             <script type="application/ld+json">
               {`
