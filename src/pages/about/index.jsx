@@ -44,11 +44,11 @@ const About = () => {
             <div className="text-box">
               <h1 className="title">About Us</h1>
               <p>
-                We are a proud south east London design studio specialising in
-                website design, development, and AI solutions.
+                We are a proud south east London design studio based in Greenwich, specialising in
+                website design, development, and SEO solutions.
               </p>
               <p>
-                Created in 2022, we have been delivering amazing websites and AI
+                Created in 2022, we have been delivering amazing websites and online
                 solutions ever since.
               </p>
               <div className="btn-container">
