@@ -208,7 +208,7 @@ const Home = () => {
               Web Design in Greenwich, London | Immutable Studio – Creative Web
               Design & SEO
             </title>
-            <link rel="canonical" href="https://immutable-studio.co.uk" />
+            <link rel="canonical" href="https://www.immutable-studio.co.uk" />
             <meta
               name="description"
               content="Immutable Studio is a leading web design agency in London, offering website development, responsive design, and AI solutions to help your business grow."
@@ -231,9 +231,9 @@ const Home = () => {
             />
             <meta
               property="og:image"
-              content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+              content="https://www.immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
             />
-            <meta property="og:url" content="https://immutable-studio.co.uk" />
+            <meta property="og:url" content="https://www.immutable-studio.co.uk" />
             <meta property="og:type" content="website" />
             <script type="application/ld+json">
               {`
@@ -241,8 +241,8 @@ const Home = () => {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "Immutable Studio",
-                "url": "https://immutable-studio.co.uk",
-                "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
+                "url": "https://www.immutable-studio.co.uk",
+                "logo": "https://www.immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "telephone": "+447980383484",

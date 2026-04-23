@@ -141,7 +141,7 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
           <Suspense fallback={<LoadingSpinner />}>
-            <LeafletMap/>
+            <LeafletMap />
           </Suspense>
         </div>
       </div>
@@ -153,13 +153,26 @@ const Contact = () => {
         pauseOnHover
       />
       <div>
-       <HelmetProvider>
+        <HelmetProvider>
           <Helmet>
-            <title>Contact Us | Immutable Studio – Creative Web Design & AI Solutions</title>
-            <link rel="canonical" href="https://immutable-studio.co.uk/contact" />
+            <title>
+              Contact Us | Immutable Studio – Creative Web Design & AI Solutions
+            </title>
+            <link
+              rel="canonical"
+              href="https://www.immutable-studio.co.uk/contact"
+            />
             <meta
               name="description"
               content="Get expert website design, maintenance & AI solutions from Immutable Studio. Contact us today and bring your ideas to life!"
+            />
+            <meta
+              property="og:image"
+              content="https://www.immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+            />
+            <meta
+              property="og:url"
+              content="https://www.immutable-studio.co.uk/contact"
             />
             <script type="application/ld+json">
               {`
@@ -169,8 +182,8 @@ const Contact = () => {
                   "mainEntity": {
                     "@type": "Organization",
                     "name": "Immutable Studio",
-                    "url": "https://immutable-studio.co.uk",
-                    "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
+                    "url": "https://www.immutable-studio.co.uk",
+                    "logo": "https://www.immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                     "contactPoint": {
                       "@type": "ContactPoint",
                       "telephone": "+447980383484",
@@ -180,7 +193,7 @@ const Contact = () => {
                       "availableLanguage": ["English"]
                     }
                   },
-                  "url": "https://immutable-studio.co.uk/contact"
+                  "url": "https://www.immutable-studio.co.uk/contact"
                 }
               `}
             </script>

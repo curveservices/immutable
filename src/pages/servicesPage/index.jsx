@@ -200,7 +200,7 @@ const Services = () => {
             </title>
             <link
               rel="canonical"
-              href="https://immutable-studio.co.uk/services"
+              href="https://www.immutable-studio.co.uk/services"
             />
             <meta
               name="description"
@@ -222,11 +222,11 @@ const Services = () => {
             />
             <meta
               property="og:image"
-              content="https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
+              content="https://www.immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp"
             />
             <meta
               property="og:url"
-              content="https://immutable-studio.co.uk/services"
+              content="https://www.immutable-studio.co.uk/services"
             />
           </Helmet>
         </HelmetProvider>

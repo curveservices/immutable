@@ -153,7 +153,7 @@ const About = () => {
             </title>
             <link
               rel="canonical"
-              href="https://immutable-studio.co.uk/about-us"
+              href="https://www.immutable-studio.co.uk/about-us"
             />
             <meta
               name="description"
@@ -174,8 +174,8 @@ const About = () => {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "name": "Immutable Studio",
-                "url": "https://immutable-studio.co.uk/about-us",
-                "logo": "https://immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
+                "url": "https://www.immutable-studio.co.uk/about-us",
+                "logo": "https://www.immutable-studio.co.uk/1-removebg-preview.OTVxQdl4.webp",
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "telephone": "+447980383484",
