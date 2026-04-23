@@ -195,7 +195,8 @@ const Services = () => {
         <HelmetProvider>
           <Helmet>
             <title>
-              Services | Immutable Studio – Creative Web Design & AI Solutions
+              Our Services | Immutable Studio – Creative Web Design & SEO in
+              Greenwich, London
             </title>
             <link
               rel="canonical"
@@ -213,7 +214,7 @@ const Services = () => {
             />
             <meta
               property="og:title"
-              content="Services | Immutable Studio – Creative Web Design & AI Solutions"
+              content="Our Services | Immutable Studio – Creative Web Design & SEO in Greenwich, London"
             />
             <meta
               property="og:description"
